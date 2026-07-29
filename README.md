@@ -1,4 +1,8 @@
-# 🔴 Red Pill — Demand-Driven Inventory Skill
+<p align="center">
+  <img src="assets/logo.png" alt="Red Pill logo" width="200">
+</p>
+
+# Red Pill — Demand-Driven Inventory Skill
 
 **Right SKU, right place, right time.** Red Pill turns a raw daily/weekly MIS
 stock report into two decisions you can act on the same day:

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="Red Pill logo" width="200">
+  <img src="assets/banner.png" alt="Red Pill — Right product, Right place, Right Time" width="100%">
 </p>
 
 # Red Pill — Demand-Driven Inventory Skill

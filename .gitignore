@@ -1,0 +1,20 @@
+# Engine run artifacts (regenerated; never commit)
+computed.csv
+summary.json
+data_gaps.csv
+redpill_input_template.csv
+.tmp_*.csv
+.tmp_*.json
+.tmp/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/

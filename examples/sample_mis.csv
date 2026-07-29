@@ -1,0 +1,12 @@
+sku,store,soh,qoo,ads,lead_time,unit_price
+Face Serum,Mumbai,3,0,12,7,450
+Face Serum,Goa,60,0,4,10,450
+Face Serum,Bangalore,90,0,5,6,450
+Vitamin C,Goa,200,0,6,10,320
+Vitamin C,Bangalore,0,0,7,6,320
+Vitamin C,Mumbai,40,20,8,7,320
+Protein Powder,Delhi,9,0,8,7,900
+Protein Powder,Mumbai,120,0,7,7,900
+Protein Powder,Goa,0,30,6,10,900
+Sunscreen,Bangalore,15,0,5,6,260
+Sunscreen,Delhi,80,0,3,7,260

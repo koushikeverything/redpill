@@ -1,0 +1,10 @@
+sku,store,soh,qoo,ads,lead_time,unit_price
+Face Serum,Mumbai,3,0,12,7,450
+# sku        = product name or code (required)
+# store      = store/location name (required)
+"# soh        = stock on hand, units on shelf right now (required, >= 0)"
+# qoo        = quantity on order / in transit (blank allowed -> treated as 0)
+# ads        = average daily sales in units/day for THIS sku at THIS store (required; use 0 only if truly no demand)
+"# lead_time  = supplier lead time in DAYS for THIS sku at THIS store (required, > 0)"
+# unit_price = per-unit price/cost (optional; enables order values & transfer savings)
+# One row per SKU x Store combination. Delete these # lines before running.

@@ -1,0 +1,35 @@
+name: Build .skill bundle
+
+# Repackages dist/redpill-inventory.skill whenever the skill source changes,
+# so the downloadable bundle is always in sync with skill/**.
+on:
+  push:
+    paths:
+      - "skill/**"
+      - "scripts/build_skill.sh"
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build .skill bundle
+        run: bash scripts/build_skill.sh
+
+      - name: Commit rebuilt bundle if it changed
+        run: |
+          if [[ -n "$(git status --porcelain dist/)" ]]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add dist/redpill-inventory.skill
+            git commit -m "ci: rebuild redpill-inventory.skill"
+            git push
+          else
+            echo "No change to dist/ — nothing to commit."
+          fi

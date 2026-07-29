@@ -1,0 +1,23 @@
+{
+  "name": "koushik-skills",
+  "owner": {
+    "name": "koushikeverything",
+    "url": "https://github.com/koushikeverything"
+  },
+  "plugins": [
+    {
+      "name": "redpill",
+      "source": "./",
+      "description": "Demand-driven inventory analysis (Theory of Constraints): buffer statuses, replenishment orders, and inter-store transfers from a SKU x Store stock report.",
+      "category": "productivity",
+      "tags": [
+        "inventory",
+        "retail",
+        "supply-chain",
+        "theory-of-constraints",
+        "replenishment",
+        "demand-planning"
+      ]
+    }
+  ]
+}

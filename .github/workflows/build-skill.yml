@@ -1,11 +1,11 @@
 name: Build .skill bundle
 
 # Repackages dist/redpill-inventory.skill whenever the skill source changes,
-# so the downloadable bundle is always in sync with skill/**.
+# so the downloadable bundle is always in sync with skills/**.
 on:
   push:
     paths:
-      - "skill/**"
+      - "skills/**"
       - "scripts/build_skill.sh"
     branches: [main]
   workflow_dispatch: {}

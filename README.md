@@ -35,7 +35,10 @@ redpill/
 ├── README.md                       ← you are here (the brief)
 ├── LICENSE                         ← MIT
 ├── Makefile                        ← `make build` / `make sync` / `make test`
-├── skill/
+├── .claude-plugin/                 ← makes this repo an installable Claude plugin marketplace
+│   ├── marketplace.json
+│   └── plugin.json
+├── skills/
 │   └── redpill-inventory/          ← the Skill source of truth
 │       ├── SKILL.md                ← the workflow Claude follows
 │       ├── references/
@@ -46,8 +49,8 @@ redpill/
 │       └── assets/
 │           └── mis_input_template.csv
 ├── scripts/
-│   ├── build_skill.sh              ← package skill/ → dist/redpill-inventory.skill
-│   └── sync_from_skill.sh          ← unpack an edited .skill back into skill/
+│   ├── build_skill.sh              ← package skills/ → dist/redpill-inventory.skill
+│   └── sync_from_skill.sh          ← unpack an edited .skill back into skills/
 ├── examples/
 │   └── sample_mis.csv              ← runnable example data
 └── dist/                           ← built .skill package (generated)
@@ -96,7 +99,7 @@ Transfer Qty  = MAX(0, MIN(donor.SOH − donor.Buffer, receiver.Buffer − recei
 Transfers are planned **before** fresh orders — moving overstock to a starved store
 is faster than a supplier lead time and costs nothing new.
 
-Full spec: [`skill/redpill-inventory/references/formulas.md`](skill/redpill-inventory/references/formulas.md).
+Full spec: [`skills/redpill-inventory/references/formulas.md`](skills/redpill-inventory/references/formulas.md).
 
 ---
 
@@ -106,18 +109,36 @@ Red Pill is designed to run inside Claude. Once installed, just give Claude your
 file and say **"run red pill"** — it maps your columns, corrects the demand rate from
 sales history, computes every status, and writes the report + demand plan.
 
-**Install into Claude Code:**
+### Install via the plugin marketplace (recommended — one command)
+
+This repo *is* a Claude Code plugin marketplace. In Claude Code, run:
+
+```bash
+/plugin marketplace add koushikeverything/redpill
+```
+
+```bash
+/plugin install redpill@koushik-skills
+```
+
+That's it — the `redpill` skill is now available in every session. Update later with
+`/plugin marketplace update koushik-skills`.
+
+> `owner/repo` sources clone over SSH by default. If you don't have SSH keys set up,
+> either add via the HTTPS URL — `/plugin marketplace add https://github.com/koushikeverything/redpill.git`
+> — or set `CLAUDE_CODE_PLUGIN_PREFER_HTTPS=1`.
+
+### Install manually (any Claude surface)
 
 ```bash
 # Personal skills live in ~/.claude/skills
 mkdir -p ~/.claude/skills
-cp -R skill/redpill-inventory ~/.claude/skills/
+cp -R skills/redpill-inventory ~/.claude/skills/
 ```
 
-Then in Claude Code, ask: *"Run red pill on this stock report"* and attach a CSV/XLSX.
-
-**Or hand over the packaged file** (`dist/redpill-inventory.skill`, produced by
-`make build`) anywhere that accepts a `.skill` bundle.
+Then ask: *"Run red pill on this stock report"* and attach a CSV/XLSX. Or hand over the
+packaged file (`dist/redpill-inventory.skill`, produced by `make build`) anywhere that
+accepts a `.skill` bundle.
 
 **Triggers** — the skill activates on phrases like: *run redpill*, *red pill report*,
 *stock health*, *which stores need stock*, *replenishment plan*, *stock transfer plan*,
@@ -132,11 +153,11 @@ The formula engine is pure Python (standard library only — no dependencies):
 
 ```bash
 # 1. Get the required input format
-python skill/redpill-inventory/scripts/redpill_engine.py --template
+python skills/redpill-inventory/scripts/redpill_engine.py --template
 #    → writes redpill_input_template.csv
 
 # 2. Run it on your data
-python skill/redpill-inventory/scripts/redpill_engine.py examples/sample_mis.csv
+python skills/redpill-inventory/scripts/redpill_engine.py examples/sample_mis.csv
 ```
 
 Outputs:
@@ -162,10 +183,10 @@ a normal `git commit && git push`.
 
 ### A. Edit the files directly (recommended)
 
-Edit anything under `skill/redpill-inventory/`, then:
+Edit anything under `skills/redpill-inventory/`, then:
 
 ```bash
-make build     # repackages skill/ → dist/redpill-inventory.skill
+make build     # repackages skills/ → dist/redpill-inventory.skill
 git add -A && git commit -m "Update skill" && git push
 ```
 
@@ -175,13 +196,13 @@ If Claude produced an updated `redpill-inventory.skill` bundle, fold it back in:
 
 ```bash
 make sync SKILL=~/Downloads/redpill-inventory.skill
-#   → unpacks it into skill/redpill-inventory/, then `git diff` shows what changed
+#   → unpacks it into skills/redpill-inventory/, then `git diff` shows what changed
 git add -A && git commit -m "Sync skill edits from Claude" && git push
 ```
 
 > **Optional automation:** enable the included GitHub Action (see
 > [CONTRIBUTING.md](CONTRIBUTING.md)) to rebuild `dist/redpill-inventory.skill`
-> automatically on every push that touches `skill/`, so the packaged download is
+> automatically on every push that touches `skills/`, so the packaged download is
 > always current without you running `make build`.
 
 ---

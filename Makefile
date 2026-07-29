@@ -1,7 +1,7 @@
 .PHONY: build sync test clean help
 .DEFAULT_GOAL := help
 
-ENGINE := skill/redpill-inventory/scripts/redpill_engine.py
+ENGINE := skills/redpill-inventory/scripts/redpill_engine.py
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -10,7 +10,7 @@ help: ## Show this help
 build: ## Package skill/ -> dist/redpill-inventory.skill
 	@bash scripts/build_skill.sh
 
-sync: ## Fold an edited .skill back into skill/  (usage: make sync SKILL=path/to.skill)
+sync: ## Fold an edited .skill back into skills/  (usage: make sync SKILL=path/to.skill)
 	@test -n "$(SKILL)" || { echo "usage: make sync SKILL=path/to.skill"; exit 1; }
 	@bash scripts/sync_from_skill.sh "$(SKILL)"
 

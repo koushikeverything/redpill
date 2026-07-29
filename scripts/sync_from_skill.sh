@@ -30,9 +30,9 @@ if [[ ! -d "$TMP/$NAME" ]]; then
 fi
 
 # Replace the source tree wholesale so deletions in the bundle propagate too.
-rm -rf "$ROOT/skill/$NAME"
-cp -R "$TMP/$NAME" "$ROOT/skill/$NAME"
+rm -rf "$ROOT/skills/$NAME"
+cp -R "$TMP/$NAME" "$ROOT/skills/$NAME"
 
-echo "Synced '$SRC' -> skill/$NAME"
+echo "Synced '$SRC' -> skills/$NAME"
 echo "Review changes, then commit:"
 echo "  git -C \"$ROOT\" add -A && git -C \"$ROOT\" status"

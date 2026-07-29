@@ -7,12 +7,13 @@ Skill plus a dependency-free Python engine — so the contribution loop is short
 
 | Path | What it is |
 |---|---|
-| `skill/redpill-inventory/` | **Source of truth** for the Skill. Edit here. |
-| `skill/redpill-inventory/SKILL.md` | The workflow Claude follows. |
-| `skill/redpill-inventory/references/formulas.md` | Authoritative formula + status spec. |
-| `skill/redpill-inventory/references/report-template.md` | Report + demand-plan layout. |
-| `skill/redpill-inventory/scripts/redpill_engine.py` | Deterministic calculator. |
-| `scripts/build_skill.sh` | Packages `skill/` → `dist/redpill-inventory.skill`. |
+| `.claude-plugin/` | Marketplace + plugin manifests that make this repo installable via `/plugin`. |
+| `skills/redpill-inventory/` | **Source of truth** for the Skill. Edit here. |
+| `skills/redpill-inventory/SKILL.md` | The workflow Claude follows. |
+| `skills/redpill-inventory/references/formulas.md` | Authoritative formula + status spec. |
+| `skills/redpill-inventory/references/report-template.md` | Report + demand-plan layout. |
+| `skills/redpill-inventory/scripts/redpill_engine.py` | Deterministic calculator. |
+| `scripts/build_skill.sh` | Packages `skills/` → `dist/redpill-inventory.skill`. |
 | `scripts/sync_from_skill.sh` | Unpacks an edited `.skill` back into `skill/`. |
 | `dist/` | Generated `.skill` package. |
 
@@ -34,7 +35,7 @@ make clean                       # remove generated computed.csv/summary.json/et
 
 ## Change → sync → commit
 
-1. Edit files under `skill/redpill-inventory/` (or `make sync` a Claude-edited bundle).
+1. Edit files under `skills/redpill-inventory/` (or `make sync` a Claude-edited bundle).
 2. `make test` to confirm the engine still runs and the numbers look right.
 3. `make build` to refresh `dist/redpill-inventory.skill`.
 4. `git add -A && git commit && git push`.
@@ -42,7 +43,7 @@ make clean                       # remove generated computed.csv/summary.json/et
 ## Optional: auto-build on push
 
 `.github/workflows/build-skill.yml` (if enabled) repackages the `.skill` on every push
-that touches `skill/**`, so the downloadable bundle is always current. It commits the
+that touches `skills/**`, so the downloadable bundle is always current. It commits the
 rebuilt `dist/redpill-inventory.skill` back to the branch.
 
 ## Formula or status changes

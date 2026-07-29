@@ -4,7 +4,7 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-SKILL_DIR="$ROOT/skill"
+SKILL_DIR="$ROOT/skills"
 NAME="redpill-inventory"
 OUT="$ROOT/dist/$NAME.skill"
 

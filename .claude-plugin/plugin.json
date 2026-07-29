@@ -1,0 +1,12 @@
+{
+  "name": "redpill",
+  "description": "Theory-of-Constraints demand-driven inventory analysis. Turns a raw SKU x Store stock report into buffer statuses, a health score, replenishment orders, and inter-store transfers — right SKU, right place, right time.",
+  "version": "1.0.0",
+  "author": {
+    "name": "koushikeverything",
+    "url": "https://github.com/koushikeverything"
+  },
+  "homepage": "https://github.com/koushikeverything/redpill",
+  "repository": "https://github.com/koushikeverything/redpill",
+  "license": "MIT"
+}

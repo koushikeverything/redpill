@@ -26,6 +26,23 @@ This repository packages Red Pill as a **[Claude Skill](https://docs.claude.com/
 you can install into Claude Code, the Claude apps, or the Agent SDK — plus a
 standalone Python engine you can run with no AI at all.
 
+## ⚡ Install (Claude Code)
+
+This repo **is** a Claude Code plugin marketplace. Add it and install the skill —
+two commands, then it's available in every session:
+
+```bash
+/plugin marketplace add koushikeverything/redpill
+```
+
+```bash
+/plugin install redpill@koushik-skills
+```
+
+Then just attach a stock/MIS file and say **"run red pill"**. That's it.
+
+<sub>No SSH keys? Add over HTTPS instead: `/plugin marketplace add https://github.com/koushikeverything/redpill.git`. Prefer not to use plugins, or on the Claude desktop/web app? See [manual install](#install-manually-any-claude-surface).</sub>
+
 ---
 
 ## What's in the box

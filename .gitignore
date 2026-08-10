@@ -13,6 +13,9 @@ __pycache__/
 .venv/
 venv/
 
+# Local-only project handoff/context notes (may reference account details — keep out of the public repo)
+handoff.md
+
 # OS / editor
 .DS_Store
 *.swp

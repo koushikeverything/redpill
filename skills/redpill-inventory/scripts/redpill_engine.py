@@ -47,8 +47,8 @@ import shutil
 import sys
 from datetime import date, timedelta
 
-ENGINE_VERSION = "2.1.0"
-SCHEMA_VERSION = "2.1.0"
+ENGINE_VERSION = "2.2.0"
+SCHEMA_VERSION = "2.2.0"
 
 STATUSES = ["OUT_OF_STOCK", "INCOMING", "CRITICAL", "REORDER", "OVERSTOCK", "OPTIMAL"]
 ACTIONABLE = {"OUT_OF_STOCK", "INCOMING", "CRITICAL", "REORDER"}
@@ -184,26 +184,62 @@ def compute_row(soh, qoo, ads, lt, bf, tf, price=None):
 
 
 # ---------------------------------------------------------------- transfers
-def build_transfers(rows, savings_rate, warnings):
+def sellable(r):
+    """ATP when reserved/damaged columns exist (G26/G52): what a donor may give."""
+    s_ = r["soh"] - (r["reserved"] or 0) - (r["damaged"] or 0)
+    return max(0.0, s_)
+
+
+def build_transfers(rows, savings_rate, warnings, transfer_days=0, policies=None):
     """Per-SKU greedy pairing: largest deficit <- largest surplus.
-    Donors keep their full buffer by construction (surplus = SOH - buffer)."""
+    Donors keep their full buffer by construction (surplus = sellable - buffer).
+    Gates (G22/G25): lane time vs supplier LT, case packs, lane blacklist,
+    protected donor stores. Every gate application is disclosed."""
+    pol = policies or {}
+    protected = {str(x).lower() for x in pol.get("protected_stores", [])}
+    blacklist = {(str(a).lower(), str(b).lower())
+                 for a, b in pol.get("no_transfer_lanes", [])}
+    notes = []
     transfers = []
     by_sku = {}
     for r in rows:
         by_sku.setdefault(r["sku"], []).append(r)
     for sku in sorted(by_sku):
         group = by_sku[sku]
-        donors = sorted([r for r in group if r["status"] == "OVERSTOCK"],
-                        key=lambda r: (-(r["soh"] - r["buffer"]), r["line"]))
+        donors = sorted([r for r in group if r["status"] == "OVERSTOCK"
+                         and r["store"].lower() not in protected],
+                        key=lambda r: (-(sellable(r) - r["buffer"]), r["line"]))
+        skipped_prot = [r["store"] for r in group if r["status"] == "OVERSTOCK"
+                        and r["store"].lower() in protected]
+        for st in skipped_prot:
+            notes.append(f"{sku}: {st} is a protected store — not used as donor")
         receivers = sorted([r for r in group
                             if r["status"] in ("OUT_OF_STOCK", "CRITICAL", "REORDER")],
                            key=lambda r: (-(r["buffer"] - r["pipeline"]), r["line"]))
-        surplus = {r["line"]: r["soh"] - r["buffer"] for r in donors}
+        surplus = {r["line"]: max(0.0, sellable(r) - r["buffer"]) for r in donors}
         deficit = {r["line"]: r["buffer"] - r["pipeline"] for r in receivers}
         for recv in receivers:
+            if transfer_days > 0 and recv["lead_time"] <= transfer_days:
+                notes.append(f"{sku} -> {recv['store']}: supplier "
+                             f"({recv['lead_time']:g}d) beats the truck "
+                             f"({transfer_days:g}d) — order fresh instead")
+                continue
             for don in donors:
+                if (don["store"].lower(), recv["store"].lower()) in blacklist:
+                    notes.append(f"{sku}: lane {don['store']} -> {recv['store']} "
+                                 f"blocked by policy")
+                    continue
                 qty = math.floor(round(max(0, min(surplus[don["line"]],
                                                   deficit[recv["line"]])), 9))
+                pack = don.get("case_pack") or recv.get("case_pack")
+                if pack and pack > 1 and qty > 0:
+                    whole = int(qty // pack) * int(pack)
+                    if whole == 0:
+                        notes.append(f"{sku} {don['store']} -> {recv['store']}: "
+                                     f"below one case pack of {pack:g} — skipped")
+                        qty = 0
+                    else:
+                        qty = whole
                 if qty <= 0:
                     continue
                 price = don.get("price")
@@ -221,7 +257,7 @@ def build_transfers(rows, savings_rate, warnings):
                 recv["reorder_qty_net"] = max(0, recv["reorder_qty_net"] - qty)
                 if deficit[recv["line"]] <= 0:
                     break
-    return transfers
+    return transfers, notes
 
 
 # ---------------------------------------------------------------- template
@@ -336,6 +372,152 @@ def build_candidates(gaps, rows, src):
     return gaps
 
 
+
+
+# ---------------------------------------------------------------- demand module (G18/G19/G29)
+SOLD_COL = re.compile(r"sold|sale")
+
+def _history(row):
+    """[(weeks_ago, units)] oldest-first from passthrough sales columns."""
+    out = []
+    for k, v in row["passthrough"].items():
+        n = norm_header(k)
+        if SOLD_COL.search(n):
+            m = NUM_IN_TEXT.search(n)
+            units, _ = fnum(v)
+            if m and units is not None:
+                out.append((int(float(m.group(1))), units))
+    return sorted(out, key=lambda x: -x[0])
+
+
+def _stats(vals):
+    m = sum(vals) / len(vals)
+    if m <= 0:
+        return m, 0.0
+    var = sum((v - m) ** 2 for v in vals) / len(vals)
+    return m, (var ** 0.5) / m
+
+
+def analyze_demand(rows, promo_weeks_ago):
+    """Engine-owned ADS analysis: censoring, promo exclusion, CV, confidence,
+    corrections, plausibility (verify-first). Returns (corrections, plausibility)."""
+    corrections, plausibility = [], []
+    promo_set = set(promo_weeks_ago or [])
+    for r in rows:
+        hist = _history(r)
+        if len(hist) < 4:
+            continue
+        excluded_promo = [w for w, _ in hist if w in promo_set]
+        usable = [(w, u) for w, u in hist if w not in promo_set]
+        censored = []
+        if r["soh"] == 0 and any(u > 0 for _, u in usable):
+            censored = [w for w, u in usable if u == 0]
+            usable = [(w, u) for w, u in usable if u > 0]   # G19: empty-shelf weeks out
+        if len(usable) < 3:
+            continue
+        weekly = [u for _, u in usable]
+        mean_w, cv = _stats(weekly)
+        nonzero = [u for u in weekly if u > 0]
+        med = sorted(weekly)[len(weekly) // 2]
+        # suspected promo: one week towers over the median of the others (G18)
+        suspected = [w for w, u in usable
+                     if len(nonzero) >= 4 and med > 0 and u > 2.5 * med]
+        recent = weekly[-4:]
+        actual = (med / 7.0) if cv > 0.6 else (sum(recent) / (7.0 * len(recent)))  # G29
+        r["cv"] = round(cv, 2)
+        stated = r["ads"]
+        conf = ("high" if len(usable) >= 6 and cv < 0.4 and not censored
+                else "low" if (censored or cv > 0.8 or len(usable) < 4) else "medium")
+        dev = None if stated <= 0 else (actual - stated) / stated
+        total_sold = sum(u for _, u in hist)
+        if dev is not None and dev > 1.0 and r["soh"] > 1.5 * total_sold > 0:
+            plausibility.append({
+                "sku": r["sku"], "store": r["store"],
+                "reason": (f"file claims ~{actual:.1f}/day sales but shelf holds "
+                           f"{r['soh']:g} (> 8 weeks of sales) — stock and sales "
+                           f"disagree; physically count before large actions")})
+            r["warnings"].append("verify count first — stock and claimed sales disagree")
+            r["mitigation"] = "verify count first"
+            continue   # don't also propose an ADS change on distrusted data
+        needs = (dev is not None and abs(dev) > 0.20) or cv > 0.6 or                 (stated == 0 and actual > 0.5)
+        if not needs:
+            continue
+        if stated == 0:
+            rec = f"stated ADS 0 but it sells ~{actual:.1f}/day — set master ADS"
+        elif cv > 0.6:
+            rec = ("volatile (CV {:.2f}) — median used; raise buffer factor to ~2.0 "
+                   "rather than chasing the mean".format(cv))
+        elif dev > 0:
+            rec = f"raise master ADS {stated:g} -> {round(actual)} (under-forecast)"
+        else:
+            rec = f"lower master ADS {stated:g} -> {round(actual)} (over-stated)"
+        corrections.append({
+            "sku": r["sku"], "store": r["store"], "line": r["line"],
+            "stated_ads": stated, "actual_ads": round(actual, 1),
+            "deviation_pct": None if dev is None else round(dev * 100),
+            "cv": round(cv, 2), "confidence": conf,
+            "weeks_used": len(usable),
+            "excluded": {"censored_weeks": len(censored),
+                         "promo_weeks": len(excluded_promo),
+                         "suspected_promo_weeks_ago": suspected},
+            "recommendation": rec})
+    return corrections, plausibility
+
+
+def segment_rows(rows):
+    """ABC by revenue-rate share (70/90 cumulative), XYZ by demand CV (G20)."""
+    priced = sorted([r for r in rows if r["price"] and r["ads"] > 0],
+                    key=lambda r: (-(r["ads"] * r["price"]), r["line"]))
+    total = sum(r["ads"] * r["price"] for r in priced) or 1.0
+    cum = 0.0
+    for r in rows:
+        r["abc"] = None
+        r["xyz"] = (None if "cv" not in r else
+                    "X" if r["cv"] < 0.25 else "Y" if r["cv"] < 0.6 else "Z")
+    for r in priced:
+        cum += r["ads"] * r["price"] / total
+        r["abc"] = "A" if cum <= 0.70 else "B" if cum <= 0.90 else "C"
+    opt_val = sum(r["ads"] * r["price"] for r in priced if r["status"] == "OPTIMAL")
+    all_val = sum(r["ads"] * r["price"] for r in priced) or 1.0
+    return round(100.0 * opt_val / all_val, 1)
+
+
+def size_curve_breaks(rows):
+    """Broken size runs within a style+colour family per store (G21)."""
+    fams = {}
+    for r in rows:
+        style = None
+        colour = None
+        size = None
+        for k, v in r["passthrough"].items():
+            n = norm_header(k)
+            if n in ("style", "style_name"):
+                style = str(v).strip()
+            elif n in ("colour", "color"):
+                colour = str(v).strip()
+            elif n == "size":
+                size = str(v).strip()
+        if style and colour and size:
+            fams.setdefault((r["store"], style, colour), []).append((size, r))
+    breaks = []
+    for (store, style, colour), members in sorted(fams.items()):
+        if len(members) < 2:
+            continue
+        missing = [(sz, r["sku"]) for sz, r in members
+                   if r["status"] in ("OUT_OF_STOCK", "CRITICAL")]
+        stranded = [(sz, r["sku"]) for sz, r in members if r["status"] == "OVERSTOCK"]
+        healthy = len(members) - len(missing)
+        if missing and healthy:
+            breaks.append({
+                "store": store, "style": style, "colour": colour,
+                "missing_sizes": [s for s, _ in missing],
+                "stranded_sizes": [s for s, _ in stranded],
+                "note": (f"{style} ({colour}) at {store}: size run broken — "
+                         f"{', '.join(s for s, _ in missing)} unavailable while other "
+                         f"sizes sit; customers see a broken rack")})
+    return breaks
+
+
 # ---------------------------------------------------------------- main pipeline
 def run(args):
     warnings, assumptions, provenance = [], [], []
@@ -359,6 +541,10 @@ def run(args):
     if getattr(args, "config", None) and os.path.exists(args.config):
         with open(args.config, encoding="utf-8") as f:
             config = json.load(f)
+    policies = None
+    if getattr(args, "policies", None) and os.path.exists(args.policies):
+        with open(args.policies, encoding="utf-8") as f:
+            policies = json.load(f)
 
     mapping, passthrough_cols, ambiguous = map_headers(headers, forced_map)
     missing = [t for t in REQUIRED if t not in mapping]
@@ -534,8 +720,71 @@ def run(args):
         sys.exit(f"No valid rows — all {len(gaps)} rows quarantined to {args.gaps}. "
                  f"Fix the 'reason' items and rerun.")
 
-    transfers = build_transfers(rows, args.savings_rate, warnings)
+    # ---- demand module (G18/G19/G29) + optional application (governed, G14) ----
+    promo_weeks = (config or {}).get("promo_weeks_ago", [])
+    ads_corrections, plausibility = analyze_demand(rows, promo_weeks)
+    if args.apply_ads_corrections:
+        by_line = {c["line"]: c for c in ads_corrections}
+        for r in rows:
+            c = by_line.get(r["line"])
+            if not c or c["confidence"] == "low":
+                continue
+            stated = r["ads"]
+            new = c["actual_ads"]
+            if stated > 0:
+                lo, hi = stated * (1 - args.max_ads_swing), stated * (1 + args.max_ads_swing)
+                capped = min(max(new, lo), hi)
+                if capped != new:
+                    r["warnings"].append(f"ads correction capped {new:g} -> {capped:g} "
+                                         f"(±{args.max_ads_swing*100:.0f}% swing cap)")
+                new = capped
+            r["provenance"].append(f"ads: engine correction {stated:g} -> {new:g} "
+                                   f"({c['confidence']} confidence) — applied by flag")
+            r["ads"] = new
+            d = compute_row(r["soh"], r["qoo"], r["ads"], r["lead_time"],
+                            args.buffer_factor, args.target_factor, r["price"])
+            r.update(d)
+            r["reorder_qty_net"] = r["reorder_qty"]
+    # clearance / no-reorder policy (G25)
+    if policies:
+        stop_skus = {str(x).lower() for x in policies.get("no_reorder_skus", [])}
+        for r in rows:
+            if r["sku"].lower() in stop_skus and r["reorder_qty"] > 0:
+                warnings.append(f"{r['sku']}/{r['store']}: fresh order suppressed by "
+                                f"no-reorder policy (clearance)")
+                r["reorder_qty"] = 0
+                r["reorder_qty_net"] = 0
+                r["order_value"] = 0.0
+
+    transfers, transfer_notes = build_transfers(
+        rows, args.savings_rate, warnings,
+        transfer_days=args.transfer_days, policies=policies)
     gaps = build_candidates(gaps, rows, src)
+
+    # overcommit flag (G24) + ATP disclosure (G26) + mitigations (G28)
+    overcommit = 0
+    for r in rows:
+        r["overcommit"] = (r["status"] not in ("OVERSTOCK",)
+                           and r["pipeline"] > 2 * r["buffer"])
+        if r["overcommit"]:
+            overcommit += 1
+            r["warnings"].append("over-committed: inbound orders exceed 2x buffer — "
+                                 "consider trimming the open order")
+        if (r["reserved"] or r["damaged"]) and sellable(r) != r["soh"]:
+            r["provenance"].append(f"sellable stock {sellable(r):g} "
+                                   f"(SOH {r['soh']:g} − reserved/damaged) used for donor math")
+        if r.get("mitigation") is None:
+            r["mitigation"] = None
+        if (r["status"] in ("OUT_OF_STOCK", "CRITICAL") and r["mitigation"] is None
+                and r["days_of_stock"] is not None
+                and r["days_of_stock"] < r["lead_time"]
+                and not any(t["to_store"] == r["store"] and t["sku"] == r["sku"]
+                            for t in transfers)):
+            r["mitigation"] = ("supply lands after the stockout — expedite, "
+                              "substitute, or hold remaining stock for full price")
+
+    weighted_health = segment_rows(rows)          # ABC-XYZ + weighted view (G20/#5)
+    curve_breaks = size_curve_breaks(rows)        # G21
 
     # G3: engine owns every total. Order totals are ACTIONABLE-ONLY by definition (G2).
     for r in rows:
@@ -570,7 +819,32 @@ def run(args):
             "missing_value_count": sum(1 for t in transfers if t["value"] is None),
         },
         "money_labels": {"order_values": "potential", "transfer_savings": "estimated"},
+        "overcommit_count": overcommit,
+        "weighted_health_pct": weighted_health,
+        "ads_corrections_count": len(ads_corrections),
+        "size_curve_breaks_count": len(curve_breaks),
     }
+    if args.budget and args.budget > 0:            # G23: within-budget / deferred split
+        remaining = args.budget
+        within_v = deferred_v = 0.0
+        deferred_n = 0
+        ordered = sorted([r for r in rows if r["reorder_qty_net"] > 0],
+                         key=lambda r: (r["days_of_stock"]
+                                        if r["days_of_stock"] is not None else 0.0,
+                                        r["line"]))
+        for r in ordered:
+            v = r["order_value_net"] or 0
+            if v <= remaining:
+                r["budget_status"] = "within"
+                remaining -= v
+                within_v += v
+            else:
+                r["budget_status"] = "deferred"
+                deferred_v += v
+                deferred_n += 1
+        kpis["budget"] = {"limit": args.budget, "within_value": round(within_v, 2),
+                          "deferred_value": round(deferred_v, 2),
+                          "deferred_lines": deferred_n}
 
     # Urgency: rows that need a human move now; nothing-to-do rows excluded (G8/R4).
     urgency = sorted(
@@ -605,6 +879,18 @@ def run(args):
         "kpis": kpis,
         "rows": sorted(rows, key=lambda r: r["line"]),
         "transfers": transfers,
+        "transfer_notes": transfer_notes,
+        "transfer_lanes": [
+            {"from_store": f, "to_store": t,
+             "transfers": sum(1 for x in transfers
+                              if x["from_store"] == f and x["to_store"] == t),
+             "units": sum(x["qty"] for x in transfers
+                          if x["from_store"] == f and x["to_store"] == t)}
+            for f, t in sorted({(x["from_store"], x["to_store"]) for x in transfers})],
+        "ads_corrections": ads_corrections,
+        "plausibility_flags": plausibility,
+        "size_curve_breaks": curve_breaks,
+        "policy_applications": [w for w in warnings if "policy" in w or "protected" in w],
         "urgency": [{"sku": r["sku"], "store": r["store"], "status": r["status"],
                      "days_of_stock": r["days_of_stock"],
                      "reorder_qty_net": r["reorder_qty_net"]} for r in urgency],
@@ -681,7 +967,7 @@ def setup_run_dir(args):
     args.gaps = os.path.join(rd, "quarantine.csv")
     args.report = os.path.join(rd, "report.json")
     for attr, name in (("overrides", "overrides.json"), ("mappings", "mappings.json"),
-                       ("config", "config.json")):
+                       ("config", "config.json"), ("policies", "policies.json")):
         src_path = getattr(args, attr, None)
         if src_path and os.path.exists(src_path):
             dst = os.path.join(rd, name)
@@ -726,7 +1012,9 @@ def rerun(run_dir):
         overrides=os.path.join(run_dir, "overrides.json"),
         mappings=os.path.join(run_dir, "mappings.json"),
         config=os.path.join(run_dir, "config.json"),
-        max_ads_swing=0.5,
+        max_ads_swing=0.5, transfer_days=0, budget=0,
+        policies=os.path.join(run_dir, "policies.json"),
+        apply_ads_corrections=False,
     )
     run(args)
     old = manifest["outputs"].get("report.json")
@@ -765,6 +1053,16 @@ def main():
     p.add_argument("--config", help="profile config json (echoed into report.run.config)")
     p.add_argument("--max-ads-swing", type=float, default=0.5,
                    help="warn when an ads override moves more than this fraction (G14)")
+    p.add_argument("--transfer-days", type=float, default=0,
+                   help="inter-store truck time in days; receivers whose supplier is "
+                        "faster get a fresh order instead (0 = gate off, G22)")
+    p.add_argument("--budget", type=float, default=0,
+                   help="purchase budget; orders split within/deferred by urgency (G23)")
+    p.add_argument("--policies", help="policies.json: protected_stores, "
+                   "no_transfer_lanes [[from,to]], no_reorder_skus (G25)")
+    p.add_argument("--apply-ads-corrections", action="store_true",
+                   help="apply engine ADS corrections (non-low confidence, capped) to "
+                        "this run's math — normally done after user approval (G14)")
     args = p.parse_args()
 
     if args.rerun:

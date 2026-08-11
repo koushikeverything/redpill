@@ -415,3 +415,46 @@ question-answers, no raw-Excel editing. Phase 3 (contract, commands, docs) may s
 
 **Gate:** Phase 3 exit criteria met to the extent verifiable in-session; the trigger eval is
 queued as the first item of the next live session. Phase 4 (model realism v1.5) may start.
+
+
+---
+
+## 12. Phase 4 exit record (2026-08-11) — model realism v1.5
+
+**Shipped (engine 2.2.0 / schema 2.2.0), all golden-safe (v1 reference numbers unchanged):**
+- **Demand module in the engine** (G18/G19/G29): weekly history parsed (week number = weeks
+  ago), stockout-censoring (zero-sale weeks excluded when currently OOS, confidence lowered),
+  promo weeks excluded via config + *suspected* promo spikes flagged for confirmation (never
+  auto-excluded), CV volatility, median-not-mean for volatile SKUs, confidence scores, and
+  plain-language correction proposals. **Verify-first gate** (G23/G50): stock-vs-sales
+  contradictions get "verify count first" and no ADS proposal.
+- **Governed application** (G14): corrections are proposals; `--apply-ads-corrections`
+  applies non-low-confidence ones capped at ±max-ads-swing, provenance-logged.
+- **Realism gates** (G22/G24/G25/G26): lane-time gate with disclosure ("supplier 2d beats the
+  truck 3d — order fresh"), case-pack rounding, policy enforcement (protected stores, blocked
+  lanes, no-reorder clearance SKUs), sellable-stock (ATP) donor math, overcommit flag,
+  transfer-lane batching summary.
+- **G23 budget split** (within/deferred by urgency, reconciles to net order value),
+  **G28 mitigations** (expedite/substitute/hold when supply lands after stockout),
+  **G20 ABC-XYZ + weighted health** second view, **G21 size-curve breaks** (10 found in the
+  fixture — broken racks with stranded sibling sizes).
+- **Cockpit**: Signal-fixes lens is now real (stated→actual, dev%, confidence, censoring/promo
+  annotations, approval reminder); drawer shows the per-store correction (R3 honored) and
+  mitigation fallbacks.
+- Docs synced: formulas.md v1.5 appendix, SKILL Step 4 rewritten (engine-owned corrections,
+  approval protocol), README limitations updated honestly.
+
+**Dry run / eval — the 12-storyline harness (SPEC §5 Phase 4 exit):**
+chronic under-forecast proposed (+186% high conf, "2 → 6") ✓ · volatile→median+buffer advice
+(16 SKU-stores, all CV≥0.6) ✓ · dead stock→donor (Phase 0) ✓ · censored weeks excluded (3, low
+conf) ✓ · promo excluded on confirm (correction disappears with config) ✓ · broken size curves
+(10) ✓ · overcommit flagged (1, the engineered row) ✓ · implausible row gated to count-first
+(exactly 1, no ADS proposal) ✓ · transfer gates honored with disclosure ✓ · all 10 quarantine
+reasons (Phase 0) ✓ · duplicate both orders (Phase 0 rule) ✓ · degraded/blocked banner
+(Phase 0 verdicts) ✓. **12/12.**
+
+**Tests:** 32 → **46**, all green (one in-phase test fix: CV rounding boundary — assertion
+matched to report precision). Bundle rebuilt.
+
+**Gate:** Phase 4 exit criteria met. Remaining for Phase 5: golden-per-storyline freeze,
+sample workbook into examples/, README screenshots, release.

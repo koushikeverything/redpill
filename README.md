@@ -107,18 +107,19 @@ the point at which deeper integration is worth discussing (see `roadmap.md`).
 
 ## Known limitations (honest list)
 
-- Transfers assume intra-network moves are fast and cheap (lane times/costs/case-packs land
-  in v1.5 — see `SPEC.md` gap register).
-- Demand-signal analysis (stockout-censored sales, promo exclusion, confidence scores) is
-  currently advisory commentary, not engine-computed — also v1.5.
+- Lane travel times/costs are opt-in (`--transfer-days`, policies) — unset, transfers assume
+  intra-network moves beat supplier lead times.
+- Demand corrections are proposals: censoring uses the "currently out of stock" heuristic
+  (no per-week availability data exists in an MIS); suspected promo weeks need your
+  confirmation. Applied to a run only via `--apply-ads-corrections` or approved overrides.
 - The 15% transfer-savings rate is a stated, tunable assumption, always labelled estimated.
 - One echelon only (stores); no DC/warehouse node yet. Apparel-first; no grocery/pharmacy
-  physics (expiry, substitution).
+  physics (expiry, substitution). No substitution/cannibalisation modelling.
 
 ## Development
 
 ```bash
-make test    # 32-test suite: goldens, property invariants, reproducibility
+make test    # 46-test suite: goldens, property invariants, reproducibility
 make build   # package skills/redpill-inventory -> dist/redpill-inventory.skill
 make smoke   # quick engine run on the bundled example
 ```

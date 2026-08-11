@@ -92,13 +92,18 @@ history). Turn those into bounded questions, collect answers, rerun:
 banner reasons in chat AND note the cockpit shows them. **blocked** → stop; relay reasons;
 do not present any plan numbers.
 
-### Step 4 — Demand-signal commentary (until the engine owns it)
+### Step 4 — Demand-signal corrections (engine-computed)
 
-Sales-history analysis (actual vs stated ADS, volatility, promo effects) is not yet engine-
-computed. You may *describe* patterns visible in the passthrough sales columns, but: quote
-raw sold values only, propose ADS changes only as approve/reject questions, apply approved
-values via `overrides.json` + rerun (the engine enforces the swing cap), and never inject a
-self-computed rate into any total. When in doubt, skip commentary — the plan stands without it.
+`report.json → ads_corrections` carries the engine's analysis: stated vs actual rate
+(stockout-censored, promo-aware, median for volatile SKUs), deviation, CV, confidence, and a
+plain recommendation. `plausibility_flags` lists rows where stock and claimed sales disagree —
+those get "verify count first" and no ADS proposal. Your job:
+- **Suspected promo weeks** (`excluded.suspected_promo_weeks_ago`) → one bounded question
+  ("was that week a promotion?"); if yes, add to `config.promo_weeks_ago` and rerun.
+- **Present corrections as approve/reject items** (before → after → basis → confidence).
+  On approval, rerun with `--apply-ads-corrections` (the engine caps swings) — or write the
+  approved values into master data outside Red Pill. Never apply silently.
+- Quote correction numbers verbatim; add no arithmetic of your own.
 
 ### Step 5 — Deliver
 

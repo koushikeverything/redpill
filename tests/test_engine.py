@@ -431,3 +431,134 @@ class TestBundleColdStart(unittest.TestCase):
                 body = f.read()
             self.assertTrue(body.startswith("---"), name)
             self.assertIn("description:", body.split("---")[1], name)
+
+
+class TestModelRealism(Base):
+    """Phase 4 (G18-G29): the demand module + realism gates, storyline by storyline."""
+
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        proc, rep = run_engine(cls.v2, os.path.join(cls.tmp, "run_v2r"))
+        assert proc.returncode == 0, proc.stderr
+        cls.r2 = jload(rep)
+
+    def corr(self, sku, store):
+        return next((c for c in self.r2["ads_corrections"]
+                     if c["sku"] == sku and c["store"] == store), None)
+
+    def test_chronic_underforecast_detected(self):          # G19/G29 core
+        c = self.corr("SWT-HOD-GRY-M", "Chandigarh")
+        self.assertEqual(c["deviation_pct"], 186)
+        self.assertEqual(c["confidence"], "high")
+        self.assertIn("raise master ADS 2 -> 6", c["recommendation"])
+
+    def test_stockout_censoring(self):                      # G19
+        c = self.corr("SWT-HOD-GRY-M", "Surat")
+        self.assertEqual(c["excluded"]["censored_weeks"], 3)
+        self.assertEqual(c["confidence"], "low")
+
+    def test_suspected_promo_flagged_not_assumed(self):     # G18
+        c = self.corr("TSH-CRW-WHT-L", "Surat")
+        self.assertEqual(c["excluded"]["suspected_promo_weeks_ago"], [4])
+
+    def test_promo_config_excludes_week(self):              # G18 confirmed path
+        cfg = os.path.join(self.tmp, "cfg_promo.json")
+        with open(cfg, "w") as f:
+            json.dump({"promo_weeks_ago": [4]}, f)
+        proc, rep = run_engine(self.v2, os.path.join(self.tmp, "run_promo"),
+                               extra=["--config", cfg])
+        r = jload(rep)
+        c = next((c for c in r["ads_corrections"]
+                  if c["sku"] == "TSH-CRW-WHT-L" and c["store"] == "Surat"), None)
+        self.assertIsNone(c)   # spike excluded -> deviation collapses -> no correction
+
+    def test_volatile_uses_median_and_recommends_buffer(self):   # G29
+        vol = [c for c in self.r2["ads_corrections"] if "volatile" in c["recommendation"]]
+        self.assertGreaterEqual(len(vol), 10)
+        self.assertTrue(all(c["cv"] >= 0.6 for c in vol))  # report cv is rounded 2dp
+
+    def test_verify_first_gate(self):                        # G23/G50
+        self.assertEqual(len(self.r2["plausibility_flags"]), 1)
+        f = self.r2["plausibility_flags"][0]
+        self.assertEqual((f["sku"], f["store"]), ("POL-TSH-RED-M", "Surat"))
+        row = next(r for r in self.r2["rows"]
+                   if r["sku"] == "POL-TSH-RED-M" and r["store"] == "Surat")
+        self.assertEqual(row["mitigation"], "verify count first")
+        self.assertIsNone(self.corr("POL-TSH-RED-M", "Surat"))  # no ADS change on distrusted data
+
+    def test_overcommit_flag(self):                          # G24
+        self.assertEqual(self.r2["kpis"]["overcommit_count"], 1)
+        row = next(r for r in self.r2["rows"]
+                   if r["sku"] == "TSH-CRW-BLK-M" and r["store"] == "Surat")
+        self.assertTrue(row["overcommit"])
+        self.assertEqual(row["status"], "OPTIMAL")
+
+    def test_lane_gate_with_disclosure(self):                # G22
+        proc, rep = run_engine(self.v2, os.path.join(self.tmp, "run_gate"),
+                               extra=["--transfer-days", "3"])
+        r = jload(rep)
+        self.assertFalse([t for t in r["transfers"] if t["to_store"] == "Thane"])
+        self.assertTrue(any("beats the truck" in n for n in r["transfer_notes"]))
+
+    def test_atp_disclosed(self):                            # G26/G52
+        row = next(r for r in self.r2["rows"]
+                   if r["sku"] == "SHR-RUN-BLK-M" and r["store"] == "Thane")
+        self.assertTrue(any("sellable stock 48" in p for p in row["provenance"]))
+
+    def test_segmentation_and_curves(self):                  # G20/G21/#5
+        k = self.r2["kpis"]
+        self.assertEqual(k["size_curve_breaks_count"], 10)
+        self.assertTrue(0 < k["weighted_health_pct"] < 100)
+        abcs = {r["abc"] for r in self.r2["rows"]}
+        self.assertTrue({"A", "B", "C"} <= abcs)
+        b = self.r2["size_curve_breaks"][0]
+        self.assertIn("size run broken", b["note"])
+
+    def test_budget_split(self):                             # G23
+        proc, rep = run_engine(self.v1, os.path.join(self.tmp, "run_budget"),
+                               extra=["--budget", "500000"])
+        r = jload(rep)
+        b = r["kpis"]["budget"]
+        self.assertLessEqual(b["within_value"], 500000)
+        self.assertGreater(b["deferred_lines"], 0)
+        self.assertAlmostEqual(b["within_value"] + b["deferred_value"],
+                               r["kpis"]["net_order_value"], places=2)
+
+    def test_policies_enforced_and_disclosed(self):          # G25
+        pol = os.path.join(self.tmp, "policies.json")
+        with open(pol, "w") as f:
+            json.dump({"protected_stores": ["Mumbai - Andheri"],
+                       "no_reorder_skus": ["SCF-WIN-GRY-OS"],
+                       "no_transfer_lanes": [["Kolkata", "Kochi"]]}, f)
+        proc, rep = run_engine(self.v1, os.path.join(self.tmp, "run_pol"),
+                               extra=["--policies", pol])
+        r = jload(rep)
+        self.assertFalse([t for t in r["transfers"]
+                          if t["from_store"] == "Mumbai - Andheri"])
+        self.assertFalse([t for t in r["transfers"]
+                          if t["from_store"] == "Kolkata" and t["to_store"] == "Kochi"])
+        self.assertTrue(r["policy_applications"])
+
+    def test_apply_corrections_changes_math_with_provenance(self):   # G14 governed apply
+        proc, rep = run_engine(self.v1, os.path.join(self.tmp, "run_apply"),
+                               extra=["--apply-ads-corrections"])
+        r = jload(rep)
+        self.assertNotEqual(r["kpis"]["net_order_value"], 11640751.0)
+        row = next(x for x in r["rows"]
+                   if x["sku"] == "SWT-HOD-GRY-M" and x["store"] == "Chandigarh")
+        self.assertTrue(any("engine correction" in p for p in row["provenance"]))
+
+    def test_case_pack_rounding(self):                       # G22 packs
+        with tempfile.TemporaryDirectory() as td:
+            f = os.path.join(td, "p.csv")
+            with open(f, "w") as fh:
+                fh.write("sku,store,soh,qoo,ads,lead_time,unit_price,case_pack\n"
+                         "A,Donor,100,0,2,5,100,12\n"
+                         "A,Recv,3,0,4,5,100,12\n")
+            proc, rep = run_engine(f, os.path.join(td, "run"))
+            r = jload(rep)
+            t = r["transfers"]
+            self.assertEqual(len(t), 1)
+            self.assertEqual(t[0]["qty"] % 12, 0)
+            self.assertEqual(t[0]["qty"], 24)   # deficit 27 floored to whole packs

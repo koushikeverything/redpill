@@ -101,3 +101,42 @@ Correction rules:
 - Post-promotion: exclude promo-period spikes from the trailing window unless the promo continues.
 
 Every correction applied must appear in the Final Report with before → after values and one-line reasoning.
+
+
+## v1.5 demand & realism rules (engine-computed, G18–G29)
+
+**Demand analysis** (needs ≥4 weeks of sales-history columns; week number = weeks ago):
+```
+Weekly rates   = units / 7 per usable week
+Censoring      : if current SOH = 0, zero-sale weeks are excluded (empty shelf ≠ no
+                 demand) and confidence drops              (G19)
+Promo weeks    : weeks listed in config promo_weeks_ago are excluded; a week
+                 > 2.5 × median of the others is flagged "suspected promo" and
+                 needs user confirmation — never auto-excluded          (G18)
+CV             = stdev / mean of usable weekly units       (volatility)
+ActualADS      = mean(last 4 usable)/7, or median(all usable)/7 when CV > 0.6 (G29)
+Correction     when |deviation| > 20% or CV > 0.6; confidence high/medium/low from
+               weeks used, CV, and exclusions. Corrections are PROPOSED — applied to
+               a run only via --apply-ads-corrections (capped ±max-ads-swing) or an
+               approved override. Master data changes by approval only.  (G14)
+Verify-first   : deviation > +100% AND SOH > 1.5 × 8-week sales ⇒ stock and sales
+                 disagree — the row gets "verify count first" and NO ADS proposal (G23/G50)
+```
+
+**Realism gates** (each application disclosed in the report):
+```
+Overcommit     : pipeline > 2 × Buffer while not OVERSTOCK ⇒ flag (trim the open order) (G24)
+Sellable (ATP) = SOH − reserved − damaged (when columns exist); donors give from
+                 sellable, never below their buffer                     (G26)
+Lane gate      : with --transfer-days T, a receiver whose supplier LT ≤ T orders
+                 fresh instead of receiving a slower truck              (G22)
+Case packs     : transfer quantities floor to whole packs; below one pack ⇒ skipped (G22)
+Policies       : protected donor stores · blocked lanes · no-reorder SKUs (clearance) (G25)
+Budget         : --budget B splits net orders (urgency order) into within / deferred (G23)
+Mitigation     : OOS/CRITICAL with no inbound and supply landing after the stockout ⇒
+                 "expedite, substitute, or hold remaining for full price" (G28)
+Segments       : ABC by revenue-rate share (70/90 cumulative), XYZ by CV
+                 (<0.25 / <0.6); weighted health = revenue-rate share in OPTIMAL (G20)
+Size curves    : per store × style × colour: some sizes OUT/CRITICAL while siblings
+                 sit ⇒ broken size run, stranded sizes are dead stock   (G21)
+```

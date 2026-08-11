@@ -150,6 +150,7 @@
   .lane .qv .v{font-size:11px;color:var(--ink-2);font-family:var(--font-num)}
   .tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:3px 8px;border-radius:99px;background:var(--surface-3);color:var(--ink-2)}
   .tag.warn{background:color-mix(in srgb,var(--s-reorder) 16%,transparent);color:var(--s-reorder)}
+  .tag.up{background:color-mix(in srgb,var(--s-critical) 14%,transparent);color:var(--s-critical)}
   .empty{text-align:center;color:var(--ink-3);padding:50px 20px;font-size:13px}
 
   .scrim{position:fixed;inset:0;background:rgba(20,14,15,.42);opacity:0;pointer-events:none;transition:opacity .2s;z-index:40}
@@ -438,9 +439,23 @@ function render(){
       <div class="qv"><div class="q">${x.qty}</div><div class="v">${x.value!=null?F0(x.value)+' moved · est. save '+F0(x.est_saving):'value n/a — donor price unreadable'}</div></div>
     </div></div>`).join('')}</div>`:empty();
   } else if(state.lens==='signal'){
-    html = adsFixes.length
-      ? `<div class="list">${adsFixes.map(a=>`<div class="card">${esc(JSON.stringify(a))}</div>`).join('')}</div>`
-      : `<div class="empty">No demand-signal corrections in this report.<br>They appear here when sales-history analysis runs.</div>`;
+    const fx=adsFixes.filter(a=>!state.q||(a.sku+' '+a.store).toLowerCase().includes(state.q))
+      .slice().sort((a,b)=>Math.abs(b.deviation_pct||0)-Math.abs(a.deviation_pct||0));
+    html = fx.length
+      ? `<div class="list">${fx.map(a=>{
+          const ex=a.excluded||{};
+          const bits=[];
+          if(ex.censored_weeks) bits.push(`${ex.censored_weeks} empty-shelf week(s) excluded`);
+          if(ex.promo_weeks) bits.push(`${ex.promo_weeks} promo week(s) excluded`);
+          if((ex.suspected_promo_weeks_ago||[]).length) bits.push(`suspected promo ${ex.suspected_promo_weeks_ago.map(w=>w+'w ago').join(', ')} — confirm`);
+          return `<div class="card"><div class="sigrowx" style="display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center">
+            <div class="num" style="font-size:15px;font-weight:600">${a.stated_ads}<span style="color:var(--ink-3)"> → </span><span style="color:var(--accent-ink)">${a.actual_ads}</span><span style="font-size:11px;color:var(--ink-2)">/day</span></div>
+            <div><div style="font-family:var(--font-num);font-weight:600;font-size:12.5px">${esc(a.sku)} · ${esc(a.store)}</div>
+              <div style="font-size:11.5px;color:var(--ink-2)">${esc(a.recommendation)}${bits.length?' · '+esc(bits.join(' · ')):''}</div></div>
+            <div style="display:flex;gap:6px;align-items:center">${a.deviation_pct!=null?`<span class="tag ${Math.abs(a.deviation_pct)>50?'up':'warn'}" style="${Math.abs(a.deviation_pct)>50?'':''}">${a.deviation_pct>0?'+':''}${a.deviation_pct}%</span>`:''}<span class="tag">${esc(a.confidence)} conf</span></div>
+          </div></div>`;}).join('')}</div>
+        <div class="card" style="margin-top:12px">Proposed master-data changes require your approval — nothing is applied automatically. CV = week-to-week volatility; corrections computed by the engine from your file's own sales history.</div>`
+      : `<div class="empty">No demand-signal corrections in this report — stated rates match recent sales.</div>`;
   } else if(state.lens==='quarantine'){
     html = R.quarantine.length?`<div class="list">${R.quarantine.map(g=>`<div class="card" style="border-left:3px solid var(--s-out)">
       <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
@@ -489,6 +504,8 @@ function openDrawer(sku,store){
     action=`<div class="action-box"><div class="a">Donor: ${Math.round(r.soh-r.buffer)} units above buffer</div>`+
       (dn.length?dn.map(t=>`<div class="a" style="font-weight:500;font-size:12.5px">→ send ${t.qty} to ${esc(t.to_store)}</div>`).join(''):`<div class="meta2">no matched receiver this run — hold or review for markdown</div>`)+`</div>`;
   }
+  if(r.mitigation) action+=`<div class="note" style="margin-top:8px;border-color:var(--s-reorder)"><b>Fallback:</b> ${esc(r.mitigation)}</div>`;
+  const fix=adsFixes.find(a=>a.sku===r.sku&&a.store===r.store);
   if(!action) action=`<div class="note">No action needed — buffer healthy.</div>`;
   const prov=(r.provenance||[]).concat(r.warnings||[]);
   drawer.innerHTML = `
@@ -515,6 +532,7 @@ function openDrawer(sku,store){
           <div class="cell"><div class="k">ROP</div><div class="v">${Math.round(r.rop)}</div></div>
           <div class="cell"><div class="k">Days of stock</div><div class="v">${dosTxt(r.days_of_stock)}</div></div>
         </div></div>
+      ${fix?`<div class="note"><b>Signal fix (this store).</b> Stated ${fix.stated_ads}/day vs actual ${fix.actual_ads}/day${fix.deviation_pct!=null?` (${fix.deviation_pct>0?'+':''}${fix.deviation_pct}%)`:''} — ${esc(fix.recommendation)} · ${esc(fix.confidence)} confidence.</div>`:''}
       ${rep?`<div class="note"><b>▲ Discrepancy.</b> Your file's status column says <b>${esc(rep)}</b>; the recomputed status is <b>${SM[r.status].lab}</b>. Recompute wins.</div>`:''}
       ${prov.length?`<div class="note"><b>Data notes.</b> ${prov.map(esc).join(' · ')}</div>`:''}
       <div class="whatif"><div class="sec-t">What-if — this row only (plan totals unchanged)</div>

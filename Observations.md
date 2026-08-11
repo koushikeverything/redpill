@@ -458,3 +458,35 @@ matched to report precision). Bundle rebuilt.
 
 **Gate:** Phase 4 exit criteria met. Remaining for Phase 5: golden-per-storyline freeze,
 sample workbook into examples/, README screenshots, release.
+
+
+---
+
+## 13. Phase 5 exit record (2026-08-11) — hardening & release
+
+**Shipped (G30):**
+- **Frozen snapshot golden**: the full v1 `report.json` is sha256-pinned in the suite — any
+  behavior change now breaks a test *by design* (change SPEC + pin together, with a reason).
+- **Schema contract test**: every field the cockpit reads (report/kpis/row/run level) is
+  asserted present — the build fails if the contract drifts.
+- **Sample workbook shipped**: `examples/RedPill_Sample_MIS_Apparel.xlsx` + its deterministic
+  generator (seed 42), README download line added.
+- **CHANGELOG.md** created (1.0.0 → 2.0.0 "the honest cockpit").
+- **Feedback loop**: cockpit footer links to the repo's issues; run verdict + warnings were
+  already user-visible per run.
+- Test suite final count: **48, all green.**
+
+**Final build gate (SPEC §5, ten points): ALL PASS** — deterministic+reproducible ·
+reference figures exact · every surface reconciles to report.json · complete decision traces ·
+no silent risky recommendations · local mapping/override persistence · first-run path with
+zero raw-Excel edits · advisory-only stated on the page · full test/golden/schema/artifact QA ·
+docs match observed behavior.
+
+**Deferred (logged, honest):** README cockpit *screenshots* (needs a manual capture session);
+the live five-phrasing trigger eval (first item of the next real-user session); optional
+submission to the Anthropic plugin directory.
+
+**The SPEC gap register G1–G35 is now closed** for everything scoped v1/v1.5. Remaining gaps
+are the deliberate v2/fork-shelf items (roadmap.md §3b–3c): historical replay, run-diff mode,
+DC node, lifecycle rules, substitution — plus the commercial cluster behind the paid-pilot
+gate. Red Pill v2.0.0 is release-ready.

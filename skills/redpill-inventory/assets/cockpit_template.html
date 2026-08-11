@@ -590,7 +590,8 @@ document.getElementById('foot').innerHTML =
    <div style="margin-top:6px">Every number on this page comes verbatim from <code>report.json</code> (schema ${esc(R.schema_version)}). `+
    `Money labels: order values are <b>potential</b> spend; transfer savings are <b>estimated</b> at the ${Math.round((PARAMS.savings_rate||0.15)*100)}% default rate; realised impact is not tracked. `+
    ((R.warnings||[]).length?`${R.warnings.length} data warning(s) — see row drawers and the Quarantine lens. `:'')+
-   `Assumptions: ${esc((R.assumptions||[]).join(' · ')||'none')}.</div>`;
+   `Assumptions: ${esc((R.assumptions||[]).join(' · ')||'none')}. `+
+   `<a href="https://github.com/koushikeverything/redpill/issues" style="color:var(--accent-ink)">Report an issue</a>.</div>`;
 
 render();
 </script>

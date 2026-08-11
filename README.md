@@ -76,7 +76,11 @@ arithmetic backwards).
 Required per row: **SKU · Store · stock on hand · average daily sales · lead time (days)**.
 Useful extras: on-order quantity (blank = 0, disclosed), unit price (enables ₹ values),
 weekly sales history (enables demand-signal checks), reserved/damaged stock, case-pack size.
-Get a ready template with `/redpill:template` or `python3 …/redpill_engine.py --template`.
+Get a ready template with `/redpill:template` or `python3 …/redpill_engine.py --template` —
+or **⬇ grab the ready-made sample workbook**
+[`examples/RedPill_Sample_MIS_Apparel.xlsx`](examples/RedPill_Sample_MIS_Apparel.xlsx)
+(25 apparel SKUs × 8 stores with realistic storylines + a fill-in template sheet) and run
+Red Pill on it as-is.
 
 Hard rules the engine enforces: **a blank is never treated as zero** · pre-computed statuses
 in your file are ignored, recomputed, and disagreements flagged · duplicate SKU×Store rows —
@@ -119,7 +123,7 @@ the point at which deeper integration is worth discussing (see `roadmap.md`).
 ## Development
 
 ```bash
-make test    # 46-test suite: goldens, property invariants, reproducibility
+make test    # 48-test suite: goldens, property invariants, reproducibility
 make build   # package skills/redpill-inventory -> dist/redpill-inventory.skill
 make smoke   # quick engine run on the bundled example
 ```

@@ -562,3 +562,41 @@ class TestModelRealism(Base):
             self.assertEqual(len(t), 1)
             self.assertEqual(t[0]["qty"] % 12, 0)
             self.assertEqual(t[0]["qty"], 24)   # deficit 27 floored to whole packs
+
+
+class TestReleaseHardening(Base):
+    """Phase 5 (G30): frozen snapshot golden + schema contract."""
+
+    # sha256 of the whole v1 report.json at engine 2.2.0 / as-of 2026-08-10.
+    # ANY behavior change breaks this on purpose: change SPEC + this pin together,
+    # in the same commit, with a reason.
+    REPORT_SHA256 = "bedfb5067aa844ef725372bdceea42f152bd65b7f782b3bc6cf3327b79a4cb7b"
+
+    def test_full_report_snapshot_frozen(self):
+        import hashlib
+        with open(os.path.join(self.rundir, "report.json"), "rb") as f:
+            self.assertEqual(hashlib.sha256(f.read()).hexdigest(), self.REPORT_SHA256)
+
+    def test_schema_contract_for_cockpit(self):
+        """Every field the cockpit template reads must exist (schema gate)."""
+        r = self.report
+        for key in ("schema_version", "engine", "run", "mapping", "kpis", "rows",
+                    "transfers", "transfer_notes", "transfer_lanes", "ads_corrections",
+                    "plausibility_flags", "size_curve_breaks", "urgency", "quarantine",
+                    "assumptions", "warnings"):
+            self.assertIn(key, r, key)
+        k = r["kpis"]
+        for key in ("rows", "quarantined", "status_counts", "health_pct",
+                    "action_rate_pct", "excess_rate_pct", "actionable_rows",
+                    "gross_order_value", "net_order_value", "transfers",
+                    "money_labels", "overcommit_count", "weighted_health_pct"):
+            self.assertIn(key, k, key)
+        row = r["rows"][0]
+        for key in ("line", "sku", "store", "soh", "qoo", "ads", "lead_time",
+                    "pipeline", "buffer", "rop", "days_of_stock", "status",
+                    "status_reason", "reorder_qty", "reorder_qty_net",
+                    "order_value_net", "expected_delivery", "passthrough",
+                    "provenance", "warnings", "mitigation", "abc"):
+            self.assertIn(key, row, key)
+        for run_key in ("verdict", "verdict_reasons", "as_of", "input_sha256"):
+            self.assertIn(run_key, r["run"], run_key)

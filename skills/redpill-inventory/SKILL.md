@@ -33,23 +33,34 @@ Accept Excel/CSV/pasted tables. Read with pandas/openpyxl. The minimum raw input
 
 Column names vary wildly in real MIS reports ("Closing Stock", "In Transit", "Avg Off-take", "Pending PO"). Map them intelligently, state the mapping you assumed, and ask only if genuinely ambiguous. Lead time and ADS live **per SKU × Store**, never per supplier — the same SKU can have different lead times in different stores.
 
-### Step 1.5 — Missing-information protocol (never guess, always ask with a form)
+### Step 1.5 — Missing-information protocol (never guess; ask with pre-guessed answers)
 
-If the report can't be processed — missing columns, or rows with unusable values — **do not silently default and compute.** A defaulted lead time of 0 or an "N/A" read as 0 produces confidently wrong statuses and phantom orders. Instead:
+If rows can't be processed, the engine quarantines them and — new in v2 — attaches
+**candidates**: deterministically inferred answers with a basis and confidence
+(`report.json → quarantine[].candidates`, e.g. lead time "used in 10 other stores for this
+SKU", a number found inside text like "7 days", ADS derived from the file's own sales history).
+Your job is to turn those into bounded questions, collect answers, and rerun. Protocol:
 
-1. **Process what's valid, quarantine what isn't.** The engine does this automatically: bad rows go to `data_gaps.csv` with a `reason` per row (blank ADS, missing lead time, negative/non-numeric stock, duplicate SKU+Store). Valid rows still get a full report, clearly marked partial.
-2. **Give the user a fill-in format, pre-populated with everything already known.** Present it as a table in chat (and/or hand them `data_gaps.csv` / the blank template from `assets/mis_input_template.csv` or `python redpill_engine.py --template`). Blank cells = exactly what's needed; nothing more. Example:
-
-   | sku | store | soh | qoo | ads | lead_time | unit_price | needed |
-   |---|---|---|---|---|---|---|---|
-   | Face Serum | Goa | 60 | 0 | 4 | **?** | 450 | supplier lead time in days for this SKU at Goa |
-   | Protein Powder | Mumbai | **?** | 0 | 8 | 7 | 900 | shelf stock — report said "N/A" |
-
-3. **Distinguish blank from zero.** Blank ADS ≠ zero demand; blank QOO → assume 0 (safe) and disclose. Missing lead time is never assumable.
-4. **When they reply with the filled values, merge and rerun** the full pipeline — never patch numbers into an old output.
-5. If *nothing* is processable (or no file at all), send the blank template with the one-line meaning of each column and one worked example row.
-
-
+1. **Batch by problem type** (all missing lead times together, all stock questions together)
+   and **cap at ~10 questions per run** — an interrogation kills trust. If more remain, fix the
+   biggest-value rows first and say what was deferred.
+2. **Ask with the candidate as the default.** The guaranteed baseline is **numbered choices in
+   chat** (works on every surface). Where the surface supports native selection cards
+   (e.g. the AskUserQuestion tool in Claude Code), use them as a progressive enhancement —
+   candidate first, then "enter a different value", then "skip this row". Never depend solely
+   on cards; never auto-apply a candidate the user didn't confirm.
+3. **Write answers to `overrides.json`** — never edit the raw file (it is immutable):
+   `{"rows": [{"line": 164, "set": {"lead_time": 7}}, {"line": 362, "skip": true}],
+     "mappings": {"Stok": "soh"}}`
+   Then **rerun the engine with `--overrides overrides.json`** — the whole analysis recomputes;
+   answers are provenance-logged per row. Never patch numbers into an old output.
+4. **Confirmed column mappings go to `mappings.json`** (project-local mapping memory): next
+   week's file with the same headers maps silently with confidence `user_confirmed`.
+5. **ADS changes are governed** (G14): an override that swings ADS beyond ±50% is applied for
+   the run but flagged for review — and a *master-data* change is only ever proposed to the
+   user as an explicit approve/reject question, listing before → after → basis.
+6. If *nothing* is processable, the engine writes a blocked-run `report.json` with reasons —
+   relay them and offer the blank template (`--template`).
 ### Step 2 — ADS correction (the AI layer)
 
 If sales history is present (a weekly MIS usually has day-wise or week-wise sales):
@@ -63,7 +74,7 @@ If no history is present, use the stated ADS and note that corrections weren't p
 
 ### Step 3 — Compute buffer statuses
 
-Run every row through the formula engine. Use `scripts/redpill_engine.py` for deterministic computation (pipe the normalized CSV through it), or apply the formulas directly for small datasets. **Full formula spec with evaluation order: `references/formulas.md` — read it before computing.** Summary:
+Run every row through the deterministic engine — **always**, never by hand: `python scripts/redpill_engine.py input.csv --run-dir runs/<date> --as-of <data-date>` emits the versioned `report.json` that owns every number downstream (plus computed.csv, quarantine.csv and a reproducibility manifest). You orchestrate and explain; you never recompute or re-total engine numbers. **Full formula spec with evaluation order: `references/formulas.md` — read it before computing.** Summary:
 
 ```
 Pipeline      = SOH + QOO
@@ -95,7 +106,7 @@ Health Score = Optimal rows ÷ total rows (as %). Target ≥ 70%.
 
 ### Step 5 — Produce the Final Report
 
-Follow the structure in `references/report-template.md`. Deliver as a Markdown file for routine runs; use the xlsx/docx skills if the user asks for those formats. Executive summary first (health score, count by status, top 3 urgent actions), then the detail tables, then the demand plan. Every number must trace back to a formula — no vibes.
+Default deliverable: render the interactive cockpit — `python scripts/render_cockpit.py --run-dir runs/<date>` — and publish `cockpit.html` as the run's artifact, every run. It reads only `report.json`. Markdown (`references/report-template.md` structure) or xlsx/docx only on explicit request. Executive summary first (health score, count by status, top 3 urgent actions), then the detail tables, then the demand plan. Every number must trace back to a formula — no vibes.
 
 ### Step 6 — Weekly vs daily cadence
 

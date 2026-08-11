@@ -337,3 +337,42 @@ labeled *potential* ✓.
 no hard-coded plan numbers in template). All green. Bundle rebuilt with template + renderer.
 
 **Gate:** Phase 1 exit criteria met. Phase 2 (native onboarding & ask-back) may start.
+
+
+---
+
+## 10. Phase 2 exit record (2026-08-11)
+
+**Shipped (G13, G14, G33-memory, engine 2.1.0 / schema 2.1.0):**
+- **Candidate inference** — every quarantined row now carries `ask` (plain-language question)
+  and `candidates` (deterministic pre-guessed answers with basis + confidence): peer lead times
+  ("used in N other stores"), numbers extracted from text ("7 days" → 7), ADS derived from the
+  file's own sales history, qoo→0, duplicate-resolution options.
+- **Overrides mechanism** — `--overrides overrides.json` (`rows[].set/skip` + `mappings`):
+  answers merge onto the immutable input, the whole analysis reruns, every override is
+  provenance-logged per row and counted in `run.overrides_applied`. Run dirs copy the overrides
+  file; the manifest hashes it; `--rerun` reproduces override runs identically.
+- **Mapping memory** — `--mappings mappings.json`: user-confirmed header→target maps applied
+  with confidence `user_confirmed` (tested with a fully alien header set).
+- **ADS governance cap** — an override swinging ADS >±50% (`--max-ads-swing`) is applied but
+  flagged for review; master-data changes remain propose-and-approve only (protocol in SKILL).
+- **SKILL.md Step 1.5 rewritten** to the v2 elicitation protocol (batch by type, ≤10 questions,
+  numbered-chat baseline + native cards as enhancement, overrides.json + full rerun, never edit
+  the raw file); Steps 3/5 synced to engine v2 + cockpit-always. Cockpit quarantine lens now
+  shows the suggested answers as chips.
+
+**Dry run (the closed loop, automated):** stress v1 with *no* manual cleaning → 10 quarantined
+with 9 inferred candidate values → overrides built from the engine's own candidates (simulating
+card taps; 2 values "typed" where nothing could be inferred: a counted shelf and a store name)
+→ rerun → **360 processed / 0 quarantined / verdict healthy / reproducibility MATCH**.
+Question-batching eval: 10 gaps collapse into **6 question groups** (3 lead-time, 2 ADS,
+2 stock, 1 qoo, 1 store, 1 duplicate) — under the ≤10 cap. Candidate chips verified rendering
+in the cockpit ("suggest 7 · number found in '7 days'").
+
+**Tests:** 26 → **30**, all green. Bundle rebuilt.
+
+**Notes for Phase 3:** G12 (the `/redpill:setup` card flow) is protocol + a stored config the
+engine already accepts (`--config`); it ships with the commands in Phase 3 where it belongs.
+
+**Gate:** Phase 2 exit criteria met — a fresh user's messy file closes its gap entirely via
+question-answers, no raw-Excel editing. Phase 3 (contract, commands, docs) may start.

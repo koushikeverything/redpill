@@ -298,3 +298,97 @@ class TestCockpitRenderer(Base):
             tpl = f.read()
         for forbidden in ("11640751", "4691490", "703723", "16332241"):
             self.assertNotIn(forbidden, tpl)
+
+
+class TestAskBack(Base):
+    """Phase 2 (G13/G14/G33): candidates, overrides merge->full rerun, mapping memory."""
+
+    def test_candidates_inferred(self):
+        q = {(g["sku"], g["store"]): g for g in self.report["quarantine"]}
+        # text extraction: '7 days' -> 7
+        pune = q[("SHT-OXF-WHT-L", "Pune")]
+        self.assertTrue(any(c["value"] == 7 and "number found" in c["basis"]
+                            for c in pune["candidates"]))
+        # peer lead time for the Kolkata oxford (other stores of same SKU)
+        kol = q[("SHT-OXF-BLU-M", "Kolkata")]
+        peer = [c for c in kol["candidates"] if "other store" in c["basis"]]
+        self.assertTrue(peer and peer[0]["value"] > 0)
+        # history-derived ads for the blank-ads row
+        che = q[("CHN-TRS-NVY-34", "Chennai")]
+        self.assertTrue(any("sales history" in c["basis"] for c in che["candidates"]))
+        # negative qoo -> candidate 0
+        koc = q[("LEG-YOG-BLK-S", "Kochi")]
+        self.assertTrue(any(c["value"] == 0 for c in koc["candidates"]))
+        # duplicate -> resolution options
+        dup = q[("TSH-CRW-WHT-L", "Pune")]
+        self.assertTrue(any(c["value"] == "keep_first" for c in dup["candidates"]))
+        # every gap carries a plain-language ask
+        for g in self.report["quarantine"]:
+            self.assertTrue(g.get("ask"))
+
+    def test_overrides_close_every_gap(self):
+        # build overrides from the engine's own candidates (the card-tap simulation)
+        ov_rows = []
+        for g in self.report["quarantine"]:
+            if "duplicate" in g["reason"]:
+                ov_rows.append({"line": g["line"], "skip": True,
+                                "reason": "user kept first occurrence"})
+                continue
+            sets = {}
+            for c in g["candidates"]:
+                if c["field"] in ("lead_time", "ads", "qoo") and isinstance(c["value"], (int, float)):
+                    sets.setdefault(c["field"], c["value"])
+            # answers no candidate could infer (user typed them)
+            if "soh" in g["reason"]:
+                sets["soh"] = 6            # physical count
+            if "store is blank" in g["reason"]:
+                sets["store"] = "Hyderabad"
+            ov_rows.append({"line": g["line"], "set": sets})
+        ovp = os.path.join(self.tmp, "overrides.json")
+        with open(ovp, "w") as f:
+            json.dump({"rows": ov_rows}, f)
+        rd = os.path.join(self.tmp, "run_ov")
+        proc, rep = run_engine(self.v1, rd, extra=["--overrides", ovp])
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        r2 = jload(rep)
+        self.assertEqual(r2["kpis"]["quarantined"], 0)
+        self.assertEqual(r2["kpis"]["rows"], 360)     # 351 + 9 fixed, dup skipped
+        self.assertEqual(r2["run"]["overrides_applied"], 10)
+        self.assertEqual(r2["run"]["verdict"], "healthy")
+        fixed = next(r for r in r2["rows"]
+                     if r["sku"] == "SHT-OXF-WHT-L" and r["store"] == "Pune")
+        self.assertTrue(any("user override" in p for p in fixed["provenance"]))
+        # reproducibility holds WITH overrides in the run dir
+        proc2 = subprocess.run([sys.executable, ENGINE, "--rerun", rd],
+                               capture_output=True, text=True)
+        self.assertIn("MATCH", proc2.stdout)
+
+    def test_ads_override_swing_cap_warns(self):
+        ovp = os.path.join(self.tmp, "ov_swing.json")
+        with open(ovp, "w") as f:
+            json.dump({"rows": [{"line": 3, "set": {"ads": 20}}]}, f)  # 8 -> 20
+        proc, rep = run_engine(self.v1, os.path.join(self.tmp, "run_swing"),
+                               extra=["--overrides", ovp])
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        r2 = jload(rep)
+        self.assertTrue(any("swings" in w and "cap" in w for w in r2["warnings"]))
+
+    def test_user_confirmed_mapping_memory(self):
+        with tempfile.TemporaryDirectory() as td:
+            f = os.path.join(td, "weird.csv")
+            with open(f, "w") as fh:
+                fh.write("Article No,Shop,Stok,Rate of Sale,Delivery Days\n"
+                         "A1,S1,10,2,5\n")
+            mp = os.path.join(td, "mappings.json")
+            with open(mp, "w") as fh:
+                json.dump({"Stok": "soh", "Rate of Sale": "ads",
+                           "Delivery Days": "lead_time", "Article No": "sku",
+                           "Shop": "store"}, fh)
+            proc, rep = run_engine(f, os.path.join(td, "run"),
+                                   extra=["--mappings", mp])
+            self.assertEqual(proc.returncode, 0, proc.stderr + proc.stdout)
+            r2 = jload(rep)
+            self.assertEqual(r2["kpis"]["rows"], 1)
+            for tgt in ("soh", "ads", "lead_time"):
+                self.assertEqual(r2["mapping"]["fields"][tgt]["confidence"],
+                                 "user_confirmed")

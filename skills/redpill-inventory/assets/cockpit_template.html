@@ -447,7 +447,9 @@ function render(){
         <div><span class="sku" style="font-family:var(--font-num);font-weight:600">${esc(g.sku||'—')}</span>
           <span class="st" style="color:var(--ink-2)"> · ${esc(g.store||'—')} · line ${g.line}</span></div>
         <span class="tag warn">needs answer</span></div>
-      <div style="font-size:12.5px;margin-top:6px">${esc(g.reason)}</div></div>`).join('')}</div>`
+      <div style="font-size:12.5px;margin-top:6px">${esc(g.reason)}</div>
+      ${g.ask?`<div style="font-size:11.5px;color:var(--ink-2);margin-top:4px">Needed: ${esc(g.ask)}</div>`:''}
+      ${(g.candidates&&g.candidates.length)?`<div style="margin-top:7px;display:flex;gap:6px;flex-wrap:wrap">${g.candidates.map(c=>`<span class="tag" title="${esc(c.basis)}">suggest ${esc(c.value)} · ${esc(c.basis)}</span>`).join('')}</div>`:''}</div>`).join('')}</div>`
       : `<div class="empty">Nothing quarantined — every row was usable. 🎉</div>`;
   }
   view.innerHTML = html;

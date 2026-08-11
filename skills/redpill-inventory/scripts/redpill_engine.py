@@ -47,8 +47,8 @@ import shutil
 import sys
 from datetime import date, timedelta
 
-ENGINE_VERSION = "2.0.0"
-SCHEMA_VERSION = "2.0.0"
+ENGINE_VERSION = "2.1.0"
+SCHEMA_VERSION = "2.1.0"
 
 STATUSES = ["OUT_OF_STOCK", "INCOMING", "CRITICAL", "REORDER", "OVERSTOCK", "OPTIMAL"]
 ACTIONABLE = {"OUT_OF_STOCK", "INCOMING", "CRITICAL", "REORDER"}
@@ -88,14 +88,23 @@ ALIASES = {
 REQUIRED = ["sku", "store", "soh", "ads", "lead_time"]
 
 
-def map_headers(headers):
-    """Return (mapping {target: {source, confidence}}, passthrough_columns, issues)."""
+def map_headers(headers, forced=None):
+    """Return (mapping {target: {source, confidence}}, passthrough_columns, issues).
+    `forced` maps source-header -> target with confidence "user_confirmed" (G33)."""
     normed = {h: norm_header(h) for h in headers}
     mapping, ambiguous = {}, []
     claimed = set()
+    for src_header, target in (forced or {}).items():
+        if src_header in headers and target in ALIASES:
+            mapping[target] = {"source": src_header, "confidence": "user_confirmed"}
+            claimed.add(src_header)
     for target, (exact, high) in ALIASES.items():
+        if target in mapping:
+            continue
         hits = []
         for h, n in normed.items():
+            if h in claimed:
+                continue
             if n in exact:
                 hits.append((h, "exact"))
             elif n in high:
@@ -258,6 +267,75 @@ def jdump(obj, path):
         f.write("\n")
 
 
+# ---------------------------------------------------------------- ask-back (G13)
+NUM_IN_TEXT = re.compile(r"(\d+(?:\.\d+)?)")
+
+def build_candidates(gaps, rows, src):
+    """Deterministic pre-guessed answers for quarantined rows, so the skill can
+    ask one-tap questions ('7 days in 10 other stores — use 7?')."""
+    lt_by_sku, ads_by_sku = {}, {}
+    for r in rows:
+        lt_by_sku.setdefault(r["sku"], []).append(r["lead_time"])
+        ads_by_sku.setdefault(r["sku"], []).append(r["ads"])
+
+    def mode(vals):
+        best, n = None, 0
+        for v in sorted(set(vals)):
+            c = vals.count(v)
+            if c > n:
+                best, n = v, c
+        return best, n
+
+    for g in gaps:
+        reason, cands = g["reason"], []
+        rawrow = g.pop("_rawrow", {})
+        if "lead_time" in reason:
+            m = NUM_IN_TEXT.search(str(g.get("lead_time", "")))
+            if m and float(m.group(1)) > 0:
+                cands.append({"field": "lead_time", "value": float(m.group(1)),
+                              "basis": f"number found in '{g['lead_time']}'",
+                              "confidence": "high"})
+            peers = lt_by_sku.get(g["sku"], [])
+            if peers:
+                v, n = mode(peers)
+                cands.append({"field": "lead_time", "value": v,
+                              "basis": f"used in {n} other store(s) for this SKU",
+                              "confidence": "high" if n >= 3 else "low"})
+            g["ask"] = "supplier lead time in days for this SKU at this store"
+        if "ads" in reason and "lead_time" not in reason:
+            sold = []
+            for k in sorted(rawrow.keys(), key=lambda h: norm_header(h)):
+                if "sold" in norm_header(k):
+                    v, _ = fnum(rawrow[k])
+                    sold.append((norm_header(k), v))
+            recent = [v for _, v in sorted(sold)[-4:] if v is not None]
+            if len(recent) == 4:
+                cands.append({"field": "ads", "value": round(sum(recent) / 28.0, 1),
+                              "basis": "≈ recent 4-week sales history in this file",
+                              "confidence": "medium"})
+            g["ask"] = "average daily sales (units/day) — blank is NOT zero demand"
+        if "soh" in reason:
+            g["ask"] = "shelf stock right now — needs a physical count if unknown"
+        if "qoo" in reason:
+            cands.append({"field": "qoo", "value": 0,
+                          "basis": "set 0 if nothing is actually in transit",
+                          "confidence": "medium"})
+            g["ask"] = "units genuinely on order / in transit"
+        if "store is blank" in reason or "sku is blank" in reason:
+            g["ask"] = "which SKU/store this row belongs to"
+        if "duplicate" in reason:
+            cands.append({"field": "resolution", "value": "keep_first",
+                          "basis": "keep the first occurrence (current behavior)",
+                          "confidence": "high"})
+            cands.append({"field": "resolution", "value": "use_this_row",
+                          "basis": "replace with this row's values via an override",
+                          "confidence": "low"})
+            g["ask"] = "which copy of this duplicated row is correct"
+        g.setdefault("ask", "correct value for the field named in the reason")
+        g["candidates"] = cands
+    return gaps
+
+
 # ---------------------------------------------------------------- main pipeline
 def run(args):
     warnings, assumptions, provenance = [], [], []
@@ -269,7 +347,20 @@ def run(args):
     if not raw:
         sys.exit("Empty input file. Run with --template to get the required format.")
 
-    mapping, passthrough_cols, ambiguous = map_headers(headers)
+    forced_map, ovmap, config = {}, {}, None
+    if getattr(args, "mappings", None) and os.path.exists(args.mappings):
+        with open(args.mappings, encoding="utf-8") as f:
+            forced_map = json.load(f)
+    if getattr(args, "overrides", None) and os.path.exists(args.overrides):
+        with open(args.overrides, encoding="utf-8") as f:
+            ov = json.load(f)
+        forced_map.update(ov.get("mappings", {}))
+        ovmap = {int(o["line"]): o for o in ov.get("rows", [])}
+    if getattr(args, "config", None) and os.path.exists(args.config):
+        with open(args.config, encoding="utf-8") as f:
+            config = json.load(f)
+
+    mapping, passthrough_cols, ambiguous = map_headers(headers, forced_map)
     missing = [t for t in REQUIRED if t not in mapping]
     report_min = {
         "schema_version": SCHEMA_VERSION,
@@ -297,10 +388,20 @@ def run(args):
 
     rows, gaps = [], []
     first_seen = {}   # key -> (line, kept_bool)  — deterministic duplicate rule (G8)
+    overrides_applied = 0
     for i, r in enumerate(raw, start=2):
-        sku = str(r[src["sku"]]).strip()
-        store = str(r[src["store"]]).strip()
+        ov = ovmap.get(i, {})
+        if ov.get("skip"):
+            assumptions.append(f"line {i}: row skipped by user override "
+                               f"({ov.get('reason', 'no reason given')})")
+            overrides_applied += 1
+            continue
+        sets = ov.get("set", {})
+        sku = str(sets.get("sku", r[src["sku"]])).strip()
+        store = str(sets.get("store", r[src["store"]])).strip()
         problems, row_prov, row_warn = [], [], []
+        if sets:
+            overrides_applied += 1
         if not sku:
             problems.append("sku is blank")
         if not store:
@@ -330,6 +431,36 @@ def run(args):
         damaged, _ = parse("damaged")
         case_pack, _ = parse("case_pack")
         eta = str(r.get(src.get("expected_receipt_date", ""), "")).strip() or None
+
+        # user overrides (G13/G14): explicit, provenance-logged, never silent
+        _local = {"soh": soh, "qoo": qoo, "ads": ads, "lead_time": lt, "price": price,
+                  "reserved": reserved, "damaged": damaged, "case_pack": case_pack}
+        for field, new in sets.items():
+            if field in ("sku", "store", "resolution"):
+                continue
+            newv, _ = fnum(new)
+            if newv is None:
+                problems.append(f"override for {field} is not a number ('{new}')")
+                continue
+            old = _local.get(field)
+            if field == "ads" and old is not None and old > 0:
+                swing = abs(newv - old) / old
+                if swing > args.max_ads_swing:
+                    row_warn.append(
+                        f"ads override {old:g} -> {newv:g} swings "
+                        f"{swing*100:.0f}% (> {args.max_ads_swing*100:.0f}% cap) — "
+                        f"applied, but review before changing master data")
+            row_prov.append(f"{field}: user override "
+                            f"{'(blank)' if old is None else f'{old:g}'} -> {newv:g}")
+            _local[field] = newv
+        soh, qoo, ads, lt = _local["soh"], _local["qoo"], _local["ads"], _local["lead_time"]
+        price, reserved = _local["price"], _local["reserved"]
+        damaged, case_pack = _local["damaged"], _local["case_pack"]
+        if sets:
+            soh_raw = str(sets.get("soh", soh_raw))
+            qoo_raw = str(sets.get("qoo", qoo_raw))
+            ads_raw = str(sets.get("ads", ads_raw))
+            lt_raw = str(sets.get("lead_time", lt_raw))
 
         if soh is None:
             problems.append(f"soh not a number ('{soh_raw}')")
@@ -376,7 +507,7 @@ def run(args):
             gap = {"line": i, "sku": sku, "store": store,
                    "soh": soh_raw, "qoo": qoo_raw, "ads": ads_raw,
                    "lead_time": lt_raw, "unit_price": price_raw,
-                   "reason": "; ".join(problems)}
+                   "reason": "; ".join(problems), "_rawrow": dict(r)}
             gaps.append(gap)
             if sku and store and key not in first_seen:
                 first_seen[key] = (i, False)
@@ -404,6 +535,7 @@ def run(args):
                  f"Fix the 'reason' items and rerun.")
 
     transfers = build_transfers(rows, args.savings_rate, warnings)
+    gaps = build_candidates(gaps, rows, src)
 
     # G3: engine owns every total. Order totals are ACTIONABLE-ONLY by definition (G2).
     for r in rows:
@@ -465,7 +597,10 @@ def run(args):
         "buffer_factor": args.buffer_factor, "target_factor": args.target_factor,
         "savings_rate": args.savings_rate}
     report["run"].update({"verdict": verdict, "verdict_reasons": reasons,
-                          "quarantine_pct": round(qpct, 1)})
+                          "quarantine_pct": round(qpct, 1),
+                          "overrides_applied": overrides_applied})
+    if config is not None:
+        report["run"]["config"] = config
     report.update({
         "kpis": kpis,
         "rows": sorted(rows, key=lambda r: r["line"]),
@@ -545,6 +680,14 @@ def setup_run_dir(args):
     args.summary = os.path.join(rd, "summary.json")
     args.gaps = os.path.join(rd, "quarantine.csv")
     args.report = os.path.join(rd, "report.json")
+    for attr, name in (("overrides", "overrides.json"), ("mappings", "mappings.json"),
+                       ("config", "config.json")):
+        src_path = getattr(args, attr, None)
+        if src_path and os.path.exists(src_path):
+            dst = os.path.join(rd, name)
+            if os.path.abspath(src_path) != os.path.abspath(dst):
+                shutil.copy2(src_path, dst)
+            setattr(args, attr, dst)
     jdump({"engine_version": ENGINE_VERSION, "schema_version": SCHEMA_VERSION,
            "as_of": args.as_of, "input_file": os.path.basename(input_copy),
            "parameters": {"buffer_factor": args.buffer_factor,
@@ -557,7 +700,8 @@ def setup_run_dir(args):
 def write_manifest(args):
     rd = args.run_dir
     outputs = {}
-    for name in ["report.json", "computed.csv", "summary.json", "quarantine.csv"]:
+    for name in ["report.json", "computed.csv", "summary.json", "quarantine.csv",
+                 "overrides.json", "mappings.json", "config.json"]:
         p = os.path.join(rd, name)
         if os.path.exists(p):
             outputs[name] = sha256(p)
@@ -579,6 +723,10 @@ def rerun(run_dir):
         savings_rate=cfg["parameters"]["savings_rate"],
         out=os.devnull, summary=os.devnull, gaps=os.devnull,
         report=os.path.join(run_dir, "report.rerun.json"),
+        overrides=os.path.join(run_dir, "overrides.json"),
+        mappings=os.path.join(run_dir, "mappings.json"),
+        config=os.path.join(run_dir, "config.json"),
+        max_ads_swing=0.5,
     )
     run(args)
     old = manifest["outputs"].get("report.json")
@@ -609,6 +757,14 @@ def main():
     p.add_argument("--buffer-factor", type=float, default=1.5)
     p.add_argument("--target-factor", type=float, default=2.5)
     p.add_argument("--savings-rate", type=float, default=0.15)
+    p.add_argument("--overrides", help="overrides.json: user-confirmed answers "
+                   "({rows:[{line,set:{field:value}|skip}],mappings:{header:target}}). "
+                   "Raw input stays immutable; the whole analysis reruns.")
+    p.add_argument("--mappings", help="mappings.json: user-confirmed header->target map "
+                   "(project-local mapping memory, G33)")
+    p.add_argument("--config", help="profile config json (echoed into report.run.config)")
+    p.add_argument("--max-ads-swing", type=float, default=0.5,
+                   help="warn when an ads override moves more than this fraction (G14)")
     args = p.parse_args()
 
     if args.rerun:

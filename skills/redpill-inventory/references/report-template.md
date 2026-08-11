@@ -1,6 +1,9 @@
-# Final Report + Demand Plan — Structure
+# Final Report + Demand Plan — Markdown structure (ON-REQUEST format)
 
-Output as Markdown by default. Use the xlsx skill if the user wants a workbook, docx for a formal document. Keep the executive summary on one screen — an operator should know their three most urgent moves in ten seconds.
+> The default deliverable is the interactive cockpit (`render_cockpit.py`). Use this
+> markdown structure only when the user explicitly asks for a text/markdown report.
+
+Output as Markdown Use the xlsx skill if the user wants a workbook, docx for a formal document. Keep the executive summary on one screen — an operator should know their three most urgent moves in ten seconds.
 
 ---
 

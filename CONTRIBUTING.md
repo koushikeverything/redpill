@@ -53,3 +53,13 @@ If you change any formula or the status decision order, update **both**
 drift apart. The evaluation order (OUT OF STOCK → INCOMING → CRITICAL → REORDER →
 OVERSTOCK → OPTIMAL, first match wins) is load-bearing — a known Excel v1 bug came from
 getting rules 1 and 2 out of order.
+
+## Standing rules (v2)
+
+- **The engine owns every number.** Parsing, validation, math, statuses, transfers, totals
+  live in `redpill_engine.py` and are emitted via `report.json`. No calculation logic in
+  SKILL.md, commands, or the cockpit template (the row-level what-if mirror is the one
+  documented exception).
+- **`make test` must be green before any commit.** The suite pins the SPEC.md §1 reference
+  numbers exactly; if you intend to change behavior, change SPEC.md and the goldens in the
+  same commit and say why.

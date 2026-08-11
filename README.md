@@ -2,34 +2,44 @@
   <img src="assets/banner.png" alt="Red Pill — Right product, Right place, Right Time" width="100%">
 </p>
 
-# Red Pill — Demand-Driven Inventory Skill
+# Red Pill — Demand-Driven Inventory Cockpit
 
-**Right SKU, right place, right time.** Red Pill turns a raw daily/weekly MIS
-stock report into two decisions you can act on the same day:
+**Upload your daily stock dump. Get back an approved-ready transfer and replenishment
+plan — in minutes, with every number traceable to arithmetic you can check by hand.**
 
-1. **Final Report** — inventory health across every `SKU × Store`: status colours,
-   a health score, an urgency ranking, and flagged exceptions.
-2. **Demand Plan** — the concrete moves: replenishment orders, inter-store
-   transfers, and demand-rate (ADS) corrections.
+Red Pill turns a raw daily/weekly **MIS report** (the routine stock Excel every retail
+chain already produces: one row per `SKU × Store` with stock, on-order, demand rate and
+lead time) into:
 
-It's grounded in **Theory of Constraints (ToC) buffer management**: don't forecast
-far ahead — hold a small dynamic buffer per SKU-location, watch buffer penetration
-daily, and react by replenishing, transferring, or correcting the demand signal.
-Stock should go where it *sells*, not where it *sits*.
+1. **An interactive cockpit** — "Today's Actions" ranked worst-first, health split into an
+   *action rate* (starving rows) and an *excess rate* (frozen cash), a decision-trace drawer
+   for every row, and downloadable transfer/order CSVs.
+2. **A Demand Plan** — inter-store transfers *first* (a truck beats a supplier lead time and
+   costs nothing new), then net replenishment orders, then proposed demand-rate fixes.
 
-> **Core invariant:** derived values are never trusted from the input file and
-> never stored — everything is recomputed from raw inputs every run. If the report
-> carries pre-computed statuses or reorder quantities, Red Pill recomputes them and
-> flags any mismatch.
+Grounded in **Theory of Constraints buffer management**: hold a small dynamic buffer per
+SKU-location, watch buffer penetration, react. Stock goes where it *sells*, not where it sits.
+Tuned for **apparel / lifestyle retail** (style-colour-size catalogs); other retail works with
+generic vocabulary. It is deliberately **not** a forecasting suite — the math stays simple
+enough to defend in a store meeting, and all the sophistication goes into making the numbers
+fed to that math trustworthy.
 
-This repository packages Red Pill as a **[Claude Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview)**
-you can install into Claude Code, the Claude apps, or the Agent SDK — plus a
-standalone Python engine you can run with no AI at all.
+## Product boundary (read this before trusting it with money)
+
+Red Pill is a **local planning and decision-support tool. All recommendations are advisory** —
+it recommends, you execute. It does **not**: modify ERP/POS/WMS data · submit purchase
+orders · dispatch or receive transfers · send messages · claim *realised* savings (order
+values are labelled **potential**, transfer savings **estimated**) · require any cloud
+service. The deterministic Python engine is the sole source of every number; the AI layer
+orchestrates, asks bounded questions, and explains — it never computes business figures.
+
+**Privacy:** the engine and renderer are stdlib Python making **no network calls and
+collecting no telemetry**; your stock file never leaves your machine except as part of your
+own Claude conversation when you run the skill there.
 
 ## ⚡ Install (Claude Code)
 
-This repo **is** a Claude Code plugin marketplace. Add it and install the skill —
-two commands, then it's available in every session:
+This repo **is** a Claude Code plugin marketplace:
 
 ```bash
 /plugin marketplace add koushikeverything/redpill
@@ -39,197 +49,95 @@ two commands, then it's available in every session:
 /plugin install redpill@koushik-skills
 ```
 
-Then just attach a stock/MIS file and say **"run red pill"**. That's it.
+> Cloning defaults to SSH; without SSH keys use
+> `/plugin marketplace add https://github.com/koushikeverything/redpill.git`.
 
-<sub>No SSH keys? Add over HTTPS instead: `/plugin marketplace add https://github.com/koushikeverything/redpill.git`. Prefer not to use plugins, or on the Claude desktop/web app? See [manual install](#install-manually-any-claude-surface).</sub>
+**Claude desktop/web (no `/plugin`):** copy `skills/redpill-inventory/` into
+`~/.claude/skills/`, or upload `dist/redpill-inventory.skill`.
 
----
+## First run
 
-## What's in the box
+1. *(Optional, once)* `/redpill:setup` — retail type, currency, which optional fields your
+   file tracks, business rules, budget. All skippable; defaults apply.
+2. Attach your MIS export and run `/redpill:run` (or just say *"run red pill on this"*).
+3. Red Pill maps your real headers ("Closing Stock", "Avg Off-take/Day", "Outlet", "MRP"…),
+   parses real-world values (`₹2,499`, `1,240`, blanks), and **quarantines anything it can't
+   trust instead of guessing** — then asks you one-tap questions with pre-guessed answers
+   ("Oxford Shirt is 7 days in 10 other stores — use 7 for Kolkata?").
+4. You get the cockpit + a five-line brief. Approve any proposed master-data fixes.
+   Download the plan CSVs for whoever executes.
 
-```
-redpill/
-├── README.md                       ← you are here (the brief)
-├── LICENSE                         ← MIT
-├── Makefile                        ← `make build` / `make sync` / `make test`
-├── .claude-plugin/                 ← makes this repo an installable Claude plugin marketplace
-│   ├── marketplace.json
-│   └── plugin.json
-├── skills/
-│   └── redpill-inventory/          ← the Skill source of truth
-│       ├── SKILL.md                ← the workflow Claude follows
-│       ├── references/
-│       │   ├── formulas.md         ← authoritative formula + status spec
-│       │   └── report-template.md  ← Final Report + Demand Plan layout
-│       ├── scripts/
-│       │   └── redpill_engine.py   ← deterministic calculator (no AI needed)
-│       └── assets/
-│           └── mis_input_template.csv
-├── scripts/
-│   ├── build_skill.sh              ← package skills/ → dist/redpill-inventory.skill
-│   └── sync_from_skill.sh          ← unpack an edited .skill back into skills/
-├── examples/
-│   └── sample_mis.csv              ← runnable example data
-└── dist/                           ← built .skill package (generated)
-```
+**Commands:** `/redpill:run` · `/redpill:setup` · `/redpill:template` (blank input form) ·
+`/redpill:policies` (business rules) · `/redpill:explain` (walk any recommendation's
+arithmetic backwards).
 
----
+## What the file needs
 
-## The model in 60 seconds
+Required per row: **SKU · Store · stock on hand · average daily sales · lead time (days)**.
+Useful extras: on-order quantity (blank = 0, disclosed), unit price (enables ₹ values),
+weekly sales history (enables demand-signal checks), reserved/damaged stock, case-pack size.
+Get a ready template with `/redpill:template` or `python3 …/redpill_engine.py --template`.
 
-Everything is computed **per `SKU × Store`** from raw inputs. Lead time and demand
-rate live per SKU-store — the same product can have a 7-day lead time in Mumbai and
-14 in Goa.
+Hard rules the engine enforces: **a blank is never treated as zero** · pre-computed statuses
+in your file are ignored, recomputed, and disagreements flagged · duplicate SKU×Store rows —
+first occurrence wins, later copies quarantined · a file that's mostly unusable gets a
+**degraded/blocked run verdict** instead of a confident wrong answer.
 
-| Symbol | Field | Notes |
-|---|---|---|
-| SOH | Stock on hand | units physically at the store |
-| QOO | Quantity on order | in transit / open POs (blank → treated as `0`, disclosed) |
-| ADS | Average daily sales | units/day, per SKU × Store |
-| LT  | Lead time (days) | per SKU × Store, **never** assumed |
-| Price | Unit price/cost | optional; unlocks order values + savings |
+## Standalone engine (no AI at all)
 
-**Derived values**
-
-```
-Pipeline      = SOH + QOO
-Buffer        = ADS × LT × 1.5          (buffer factor, tunable)
-ROP           = ADS × LT                (reorder point)
-Days of Stock = Pipeline / ADS          (0 if ADS = 0)
-Reorder Qty   = MAX(0, ROUNDUP(ADS × LT × 2.5 − SOH − QOO))
-Transfer Qty  = MAX(0, MIN(donor.SOH − donor.Buffer, receiver.Buffer − receiver.Pipeline))
-```
-
-**Status** — evaluated in this exact order, first match wins:
-
-| # | Condition | Status | |
-|---|---|---|---|
-| 1 | SOH = 0 and QOO = 0 | **OUT OF STOCK** | ⚫ |
-| 2 | SOH = 0 and QOO > 0 | **INCOMING** | 🟣 |
-| 3 | Pipeline < 0.5 × ROP | **CRITICAL** | 🔴 |
-| 4 | Pipeline < ROP | **REORDER** | 🟡 |
-| 5 | SOH > 2 × Buffer | **OVERSTOCK** | 🔵 |
-| 6 | otherwise | **OPTIMAL** | 🟢 |
-
-**Health Score** = optimal rows ÷ total rows. Target ≥ 70%; below 50% = same-day action.
-
-Transfers are planned **before** fresh orders — moving overstock to a starved store
-is faster than a supplier lead time and costs nothing new.
-
-Full spec: [`skills/redpill-inventory/references/formulas.md`](skills/redpill-inventory/references/formulas.md).
-
----
-
-## Use it as a Claude Skill
-
-Red Pill is designed to run inside Claude. Once installed, just give Claude your MIS
-file and say **"run red pill"** — it maps your columns, corrects the demand rate from
-sales history, computes every status, and writes the report + demand plan.
-
-### Install via the plugin marketplace (recommended — one command)
-
-This repo *is* a Claude Code plugin marketplace. In Claude Code, run:
+Pure-stdlib Python, deterministic, reproducible:
 
 ```bash
-/plugin marketplace add koushikeverything/redpill
+python3 skills/redpill-inventory/scripts/redpill_engine.py your_mis.csv \
+  --run-dir runs/2026-08-11 --as-of 2026-08-11
+python3 skills/redpill-inventory/scripts/render_cockpit.py --run-dir runs/2026-08-11
 ```
+
+The run directory holds `report.json` (versioned data contract), `cockpit.html`,
+`computed.csv`, `quarantine.csv` (a pre-filled fix-me form with suggested answers), an
+immutable input copy and a `run-manifest.json` — and `--rerun runs/2026-08-11` verifies the
+run reproduces byte-identically. User corrections go in an `overrides.json` (the raw file is
+never edited); confirmed header mappings persist in a `mappings.json`.
+
+## Outputs & integration ladder
+
+Files first, by design: cockpit HTML + plan/transfer CSVs you can hand to ops or import
+anywhere. No connectors, no API — if Red Pill earns a place in your weekly rhythm, that's
+the point at which deeper integration is worth discussing (see `roadmap.md`).
+
+## Known limitations (honest list)
+
+- Transfers assume intra-network moves are fast and cheap (lane times/costs/case-packs land
+  in v1.5 — see `SPEC.md` gap register).
+- Demand-signal analysis (stockout-censored sales, promo exclusion, confidence scores) is
+  currently advisory commentary, not engine-computed — also v1.5.
+- The 15% transfer-savings rate is a stated, tunable assumption, always labelled estimated.
+- One echelon only (stores); no DC/warehouse node yet. Apparel-first; no grocery/pharmacy
+  physics (expiry, substitution).
+
+## Development
 
 ```bash
-/plugin install redpill@koushik-skills
+make test    # 32-test suite: goldens, property invariants, reproducibility
+make build   # package skills/redpill-inventory -> dist/redpill-inventory.skill
+make smoke   # quick engine run on the bundled example
 ```
 
-That's it — the `redpill` skill is now available in every session. Update later with
-`/plugin marketplace update koushik-skills`.
+`SPEC.md` is the canonical scenario + gap register; `Observations.md` the living defect log;
+`roadmap.md` the triage of everything proposed and where it landed. CI runs the suite and
+rebuilds the bundle on every push touching the skill. See `CONTRIBUTING.md`.
 
-> `owner/repo` sources clone over SSH by default. If you don't have SSH keys set up,
-> either add via the HTTPS URL — `/plugin marketplace add https://github.com/koushikeverything/redpill.git`
-> — or set `CLAUDE_CODE_PLUGIN_PREFER_HTTPS=1`.
+## Troubleshooting
 
-### Install manually (any Claude surface)
-
-```bash
-# Personal skills live in ~/.claude/skills
-mkdir -p ~/.claude/skills
-cp -R skills/redpill-inventory ~/.claude/skills/
-```
-
-Then ask: *"Run red pill on this stock report"* and attach a CSV/XLSX. Or hand over the
-packaged file (`dist/redpill-inventory.skill`, produced by `make build`) anywhere that
-accepts a `.skill` bundle.
-
-**Triggers** — the skill activates on phrases like: *run redpill*, *red pill report*,
-*stock health*, *which stores need stock*, *replenishment plan*, *stock transfer plan*,
-*inventory health report*, *buffer status*, or any request to turn a `SKU × Store`
-stock file into ordering/transfer decisions.
-
----
-
-## Use the engine standalone (no AI)
-
-The formula engine is pure Python (standard library only — no dependencies):
-
-```bash
-# 1. Get the required input format
-python skills/redpill-inventory/scripts/redpill_engine.py --template
-#    → writes redpill_input_template.csv
-
-# 2. Run it on your data
-python skills/redpill-inventory/scripts/redpill_engine.py examples/sample_mis.csv
-```
-
-Outputs:
-
-- `computed.csv` — every row with pipeline, buffer, ROP, days-of-stock, status,
-  reorder qty (gross + net of transfers), order value, expected delivery.
-- `summary.json` — status counts, health score, urgency top-10, transfer plan, and
-  a `data_quality` block (assumptions made, warnings, quarantined rows).
-- `data_gaps.csv` — any rows with missing/bad data, quarantined with a reason each,
-  pre-filled as a fix-and-rerun form (Red Pill **never** silently guesses).
-
-Tunable flags: `--buffer-factor 1.5`, `--target-factor 2.5`, `--savings-rate 0.15`.
-
-**Input columns** (case-insensitive; common aliases like *Closing Stock*, *In Transit*,
-*Pending PO* are auto-mapped): `sku, store, soh, qoo, ads, lead_time[, unit_price]`.
-
----
-
-## Editing the skill & keeping this repo in sync
-
-**This repo is the source of truth.** There are two ways to make changes; both end in
-a normal `git commit && git push`.
-
-### A. Edit the files directly (recommended)
-
-Edit anything under `skills/redpill-inventory/`, then:
-
-```bash
-make build     # repackages skills/ → dist/redpill-inventory.skill
-git add -A && git commit -m "Update skill" && git push
-```
-
-### B. You edited the skill inside Claude and have a new `.skill`
-
-If Claude produced an updated `redpill-inventory.skill` bundle, fold it back in:
-
-```bash
-make sync SKILL=~/Downloads/redpill-inventory.skill
-#   → unpacks it into skills/redpill-inventory/, then `git diff` shows what changed
-git add -A && git commit -m "Sync skill edits from Claude" && git push
-```
-
-> **Optional automation:** enable the included GitHub Action (see
-> [CONTRIBUTING.md](CONTRIBUTING.md)) to rebuild `dist/redpill-inventory.skill`
-> automatically on every push that touches `skills/`, so the packaged download is
-> always current without you running `make build`.
-
----
-
-## Contributing
-
-Issues and PRs welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the layout, the
-build/sync commands, and the one rule that matters: **never store or trust derived
-values — recompute from raw inputs every run.**
+- **"Missing required columns"** — the engine writes the mapping it *did* find into
+  `report.json` and a fill-in template; either rename headers, or pass
+  `--mappings mappings.json` with `{"Your Header": "soh"}`.
+- **Everything quarantined / blocked verdict** — your file's values aren't parseable as
+  numbers; open `quarantine.csv`, each row has the reason and a suggested answer.
+- **Numbers differ from your ERP's status column** — by design: Red Pill recomputes from raw
+  inputs and flags the disagreements (that's usually how you find the ERP is stale).
+- **Plugin won't install over SSH** — use the HTTPS marketplace URL above.
 
 ## License
 
-[MIT](LICENSE) © 2026 Koushik
+MIT © 2026 — see [LICENSE](LICENSE).

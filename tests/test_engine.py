@@ -392,3 +392,42 @@ class TestAskBack(Base):
             for tgt in ("soh", "ads", "lead_time"):
                 self.assertEqual(r2["mapping"]["fields"][tgt]["confidence"],
                                  "user_confirmed")
+
+
+class TestBundleColdStart(unittest.TestCase):
+    """Phase 3: the shipped .skill bundle must be self-contained — engine and
+    renderer run from a fresh extraction with nothing but stdlib."""
+
+    def test_bundle_runs_standalone(self):
+        import zipfile
+        bundle = os.path.join(REPO, "dist", "redpill-inventory.skill")
+        with tempfile.TemporaryDirectory() as td:
+            with zipfile.ZipFile(bundle) as z:
+                z.extractall(td)
+            root = os.path.join(td, "redpill-inventory")
+            eng_path = os.path.join(root, "scripts", "redpill_engine.py")
+            self.assertTrue(os.path.exists(eng_path), os.listdir(td))
+            rd = os.path.join(td, "run")
+            proc = subprocess.run(
+                [sys.executable, eng_path,
+                 os.path.join(REPO, "examples", "sample_mis.csv"),
+                 "--as-of", AS_OF, "--run-dir", rd],
+                capture_output=True, text=True)
+            self.assertEqual(proc.returncode, 0, proc.stderr)
+            proc2 = subprocess.run(
+                [sys.executable, os.path.join(root, "scripts", "render_cockpit.py"),
+                 "--run-dir", rd], capture_output=True, text=True)
+            self.assertEqual(proc2.returncode, 0, proc2.stderr)
+            with open(os.path.join(rd, "cockpit.html"), encoding="utf-8") as f:
+                html = f.read()
+            self.assertNotIn("__REPORT_JSON__", html)
+
+    def test_command_files_valid(self):
+        cmds = os.path.join(REPO, "commands")
+        expected = {"run.md", "setup.md", "template.md", "policies.md", "explain.md"}
+        self.assertEqual(set(os.listdir(cmds)) & expected, expected)
+        for name in expected:
+            with open(os.path.join(cmds, name), encoding="utf-8") as f:
+                body = f.read()
+            self.assertTrue(body.startswith("---"), name)
+            self.assertIn("description:", body.split("---")[1], name)

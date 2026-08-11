@@ -376,3 +376,42 @@ engine already accepts (`--config`); it ships with the commands in Phase 3 where
 
 **Gate:** Phase 2 exit criteria met — a fresh user's messy file closes its gap entirely via
 question-answers, no raw-Excel editing. Phase 3 (contract, commands, docs) may start.
+
+
+---
+
+## 11. Phase 3 exit record (2026-08-11)
+
+**Shipped (G15, G16, G17, G31 + the G12 protocol):**
+- **`commands/`** — the five namespaced plugin commands (`/redpill:run`, `:setup`,
+  `:template`, `:policies`, `:explain`), each a bounded prompt that enforces the contract
+  (engine computes, cockpit always, advisory-only, report.json-verbatim numbers).
+  `/redpill:setup` implements G12 as protocol: five skippable questions → `.redpill/config.json`
+  + `.redpill/policies.json`, nothing written unconfirmed.
+- **SKILL.md fully rewritten** — leads with seven Non-negotiables (no LLM arithmetic,
+  cockpit-every-run, immutable raw file, never-guess, money labels, advisory-only,
+  approval-gated master data), then the operational workflow wired to engine v2
+  (`--run-dir .redpill/runs/<as-of>`, verdict triage, Step 1.5 elicitation, five-line chat
+  brief), plus explicit error handling. Step 4 honestly marks demand commentary as
+  model-side-until-Phase-4 with hard guardrails.
+- **README rewritten** — outcome-first ("stock dump in → approved-ready plan out"), the §0
+  product boundary + privacy statement (no network calls, no telemetry), first-run guide,
+  file requirements, standalone-engine usage, integration ladder (files first), an honest
+  known-limitations list, dev/test instructions, troubleshooting. CONTRIBUTING gains the two
+  standing rules; report-template.md marked on-request-only. Plugin version → 2.0.0.
+
+**Dry run / evals:**
+- **Bundle cold-start (automated):** `dist/redpill-inventory.skill` unzipped into a bare temp
+  dir runs engine + renderer on the bundled example with stdlib only — self-containment proven
+  in-suite. Command files validated (frontmatter + description).
+- Docs accuracy pass: every command/flag/file named in README + SKILL now exists and was
+  exercised by the suite this phase.
+- **Manual item (logged, not self-testable in this session):** live trigger-phrasing eval —
+  five natural phrasings ("run red pill", "stock health check", etc.) against a fresh install
+  in a clean Claude Code session. To be run on the next real-user session; SKILL description
+  unchanged from the version that triggered reliably in earlier sessions.
+
+**Tests:** 30 → **32**, all green. Bundle rebuilt.
+
+**Gate:** Phase 3 exit criteria met to the extent verifiable in-session; the trigger eval is
+queued as the first item of the next live session. Phase 4 (model realism v1.5) may start.

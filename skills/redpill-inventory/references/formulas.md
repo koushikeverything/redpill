@@ -21,11 +21,25 @@ Authoritative logic, ported from `RedPill_Inventory_System.xlsx`. Every derived 
 Pipeline       = SOH + QOO
 Buffer         = ADS × LT × BF                      (default BF = 1.5)
 ROP            = ADS × LT                           (reorder point)
-DaysOfStock    = Pipeline / ADS, or 0 if ADS = 0    (IFERROR semantics)
+DaysOfStock    = Pipeline / ADS, or null ("—") if ADS = 0 — never fabricated as 0
 ReorderQty     = MAX(0, ROUNDUP(ADS × LT × TF − SOH − QOO, 0))   (default TF = 2.5)
-OrderValue     = ReorderQty × Price
-ExpectedDeliv  = TODAY + LT days
+                 …but ONLY for actionable rows (OUT OF STOCK / INCOMING / CRITICAL /
+                 REORDER). A row that has not crossed its reorder point gets
+                 ReorderQty = 0 — you order when you cross ROP, that is the whole
+                 ToC discipline. Order totals therefore cover actionable rows only.
+ReorderQtyNet  = ReorderQty − units arriving via transfers (floor 0)
+OrderValue     = ReorderQty × Price        (gross)
+OrderValueNet  = ReorderQtyNet × Price     (what you actually spend)
+ExpectedDeliv  = AS-OF date + LT days      (as-of = the data snapshot date, stamped per run)
 ```
+
+**Engine ownership rule (SPEC §0):** every derived number above is computed by
+`scripts/redpill_engine.py` and emitted in its versioned `report.json`. No other layer —
+including the model — may re-derive or total these values.
+
+**Duplicate rows:** the first occurrence of a SKU × Store key wins; every later copy is
+quarantined with a reason naming the first occurrence's line (and whether it was itself kept or
+quarantined). Deterministic regardless of file order.
 
 ## Status logic — evaluate strictly in this order, first match wins
 

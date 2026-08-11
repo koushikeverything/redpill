@@ -1,104 +1,221 @@
 #!/usr/bin/env python3
-"""Red Pill deterministic formula engine.
+"""Red Pill deterministic engine (v2).
+
+The single source of truth for parsing, validation, math, statuses, transfers,
+ordering, totals, and report generation. Claude orchestrates and explains —
+it never computes business numbers (SPEC.md §0).
 
 Usage:
-    python redpill_engine.py input.csv [--out computed.csv] [--summary summary.json]
-                             [--buffer-factor 1.5] [--target-factor 2.5] [--savings-rate 0.15]
+    python redpill_engine.py input.csv [--run-dir runs/2026-08-11]
+                             [--as-of 2026-08-11] [--out computed.csv]
+                             [--summary summary.json] [--gaps quarantine.csv]
+                             [--report report.json]
+                             [--buffer-factor 1.5] [--target-factor 2.5]
+                             [--savings-rate 0.15]
+    python redpill_engine.py --template          # blank fill-in form
+    python redpill_engine.py --rerun RUN_DIR     # reproduce a prior run, verify identical
 
-Input CSV columns (case-insensitive; extra columns pass through untouched):
-    sku, store, soh, qoo, ads, lead_time  [, price]
+Outputs (all numbers every surface shows come from report.json):
+  report.json    versioned full data contract (schema {SCHEMA_VERSION})
+  computed.csv   per-row values incl. passthrough columns
+  quarantine.csv rows set aside, pre-filled fix-me form
+  summary.json   compact compatibility view (subset of report.json)
+With --run-dir, everything (plus an immutable input copy, config snapshot and
+run-manifest.json) is written inside the run directory.
 
-Outputs:
-  - computed.csv : input rows + pipeline, buffer, rop, days_of_stock, status,
-                   reorder_qty, reorder_qty_net (after transfers), order_value
-  - summary.json : status counts, health score, urgency ranking, transfer plan
-
-All logic mirrors references/formulas.md. Derived values are never read from
-the input — everything is recomputed here.
+Behavioral rules (SPEC.md gap register, Phase 0):
+  G1 currency/format parsing, warn on unparseable optional price — never silent
+  G2 reorder_qty = 0 unless status is actionable (OOS/INCOMING/CRITICAL/REORDER)
+  G3 engine owns gross AND net order values and all totals
+  G4 broad header aliases; punctuation-insensitive normalization
+  G5 unmapped input columns pass through untouched
+  G7 run-level verdict: healthy / degraded / blocked (+ as-of freshness stamp)
+  G8 ADS=0 -> days_of_stock null; deterministic duplicate rule (first occurrence
+     wins, later copies quarantined, quarantined-first documented per row);
+     fractional stock warned; one empty sentinel ("" everywhere)
+  G32 run directories, immutable input copy, provenance, reproducibility
+  G33 mapping confidence classes: exact / high / ambiguous / user_confirmed
 """
 import argparse
 import csv
+import hashlib
 import json
 import math
+import os
+import re
+import shutil
 import sys
 from datetime import date, timedelta
 
+ENGINE_VERSION = "2.0.0"
+SCHEMA_VERSION = "2.0.0"
+
 STATUSES = ["OUT_OF_STOCK", "INCOMING", "CRITICAL", "REORDER", "OVERSTOCK", "OPTIMAL"]
+ACTIONABLE = {"OUT_OF_STOCK", "INCOMING", "CRITICAL", "REORDER"}
+
+# ---------------------------------------------------------------- header mapping
+def norm_header(h):
+    """lower-case, collapse every non-alphanumeric run to '_' (G4)."""
+    return re.sub(r"_+", "_", re.sub(r"[^a-z0-9]+", "_", str(h).lower())).strip("_")
+
+# target -> (exact aliases, high-confidence aliases). Confidence classes per G33.
+ALIASES = {
+    "sku":       (["sku", "sku_code", "product", "item"],
+                  ["item_code", "article", "article_code", "style_code", "variant_code",
+                   "product_code", "sku_id"]),
+    "store":     (["store", "location", "branch", "outlet"],
+                  ["shop", "site", "store_name", "outlet_name", "store_code"]),
+    "soh":       (["soh", "stock_on_hand", "closing_stock", "stock"],
+                  ["current_stock", "on_hand", "qty_on_hand", "closing_qty", "stock_qty",
+                   "shelf_stock"]),
+    "qoo":       (["qoo", "quantity_on_order", "in_transit", "pending_po", "on_order"],
+                  ["open_po", "inbound", "po_qty", "intransit", "qty_on_order", "in_transit_qty"]),
+    "ads":       (["ads", "avg_daily_sales", "average_daily_sales", "daily_sales", "offtake"],
+                  ["off_take", "avg_off_take", "avg_off_take_day", "avg_offtake_day",
+                   "daily_offtake", "sales_per_day", "run_rate", "avg_sales_day"]),
+    "lead_time": (["lead_time", "lt", "lead_time_days", "leadtime"],
+                  ["leadtime_days", "supplier_lead_time", "replenishment_days",
+                   "lead_time_in_days"]),
+    "price":     (["price", "unit_price", "cost", "unit_cost", "mrp"],
+                  ["rate", "selling_price", "asp", "unit_mrp"]),
+    # optional, carried for later phases (schema hedges — G6/G26/G34)
+    "reserved":  (["reserved", "reserved_qty"], ["online_reserved", "reserved_stock"]),
+    "damaged":   (["damaged", "damaged_qty"], ["defective", "damaged_stock"]),
+    "case_pack": (["case_pack", "case_pack_size"], ["pack_size", "carton_size", "case_size"]),
+    "expected_receipt_date": (["expected_receipt_date", "eta"], ["po_eta", "receipt_date"]),
+    "buffer_factor": (["buffer_factor", "bf"], []),
+}
+REQUIRED = ["sku", "store", "soh", "ads", "lead_time"]
 
 
+def map_headers(headers):
+    """Return (mapping {target: {source, confidence}}, passthrough_columns, issues)."""
+    normed = {h: norm_header(h) for h in headers}
+    mapping, ambiguous = {}, []
+    claimed = set()
+    for target, (exact, high) in ALIASES.items():
+        hits = []
+        for h, n in normed.items():
+            if n in exact:
+                hits.append((h, "exact"))
+            elif n in high:
+                hits.append((h, "high"))
+        if not hits:
+            continue
+        hits.sort(key=lambda x: (x[1] != "exact", headers.index(x[0])))
+        src, conf = hits[0]
+        if len(hits) > 1:
+            ambiguous.append({"target": target, "chosen": src,
+                              "also_matched": [h for h, _ in hits[1:]]})
+            conf = "ambiguous"
+        mapping[target] = {"source": src, "confidence": conf}
+        claimed.add(src)
+    passthrough = [h for h in headers if h not in claimed]
+    return mapping, passthrough, ambiguous
+
+
+# ---------------------------------------------------------------- value parsing
+CURRENCY_RE = re.compile(r"^(rs\.?|inr|₹|\$|€|£)\s*", re.IGNORECASE)
+
+def fnum(v):
+    """Parse a real-world number: '₹2,499' '1,240' '  8 ' '(500)'.
+    Returns (value_or_None, provenance_note_or_None)."""
+    if v is None:
+        return None, None
+    raw = str(v).strip()
+    if raw == "":
+        return None, None
+    s = CURRENCY_RE.sub("", raw)
+    neg = False
+    if s.startswith("(") and s.endswith(")"):
+        neg, s = True, s[1:-1]
+    s = s.replace(",", "").replace(" ", "")
+    try:
+        val = -float(s) if neg else float(s)
+    except ValueError:
+        return None, None
+    note = None
+    if raw not in (str(val), f"{val:g}", s):
+        cleaned = raw != s and raw != f"({s})"
+        if cleaned or neg:
+            note = f"parsed '{raw}' -> {val:g}"
+    return val, note
+
+
+# ---------------------------------------------------------------- row math
 def compute_row(soh, qoo, ads, lt, bf, tf, price=None):
     pipeline = soh + qoo
     buffer = ads * lt * bf
     rop = ads * lt
-    days = (pipeline / ads) if ads > 0 else 0.0
-    reorder = max(0, math.ceil(round(ads * lt * tf - soh - qoo, 9)))
-    # Status: strict evaluation order, first match wins.
+    days = round(pipeline / ads, 2) if ads > 0 else None  # G8: never 0-for-unknown
+    # Status ladder — strict order, first match wins (formulas.md).
     if soh == 0 and qoo == 0:
-        status = "OUT_OF_STOCK"
-    elif soh == 0 and qoo > 0:
-        status = "INCOMING"
+        status, reason = "OUT_OF_STOCK", "SOH 0 and nothing on order — losing sales now"
+    elif soh == 0:
+        status, reason = "INCOMING", f"SOH 0 but {qoo:g} in transit"
     elif pipeline < 0.5 * rop:
-        status = "CRITICAL"
+        status, reason = "CRITICAL", (f"pipeline {pipeline:g} < half of reorder point "
+                                      f"{rop:g} — will stock out before replenishment lands")
     elif pipeline < rop:
-        status = "REORDER"
+        status, reason = "REORDER", f"pipeline {pipeline:g} < reorder point {rop:g} — order today"
     elif soh > 2 * buffer:
-        status = "OVERSTOCK"
+        status, reason = "OVERSTOCK", (f"SOH {soh:g} > 2x buffer {2*buffer:g} — "
+                                       f"capital tied up; transfer donor")
     else:
-        status = "OPTIMAL"
+        status, reason = "OPTIMAL", f"pipeline {pipeline:g} within buffer — healthy"
+    actionable = status in ACTIONABLE
+    # G2: refill-to-target orders exist only for actionable rows.
+    reorder = max(0, math.ceil(round(ads * lt * tf - soh - qoo, 9))) if actionable else 0
     return {
-        "pipeline": pipeline,
-        "buffer": round(buffer, 2),
-        "rop": round(rop, 2),
-        "days_of_stock": round(days, 2),
-        "status": status,
-        "reorder_qty": reorder,
-        "order_value": round(reorder * price, 2) if price is not None else "",
+        "pipeline": pipeline, "buffer": round(buffer, 2), "rop": round(rop, 2),
+        "days_of_stock": days, "status": status, "status_reason": reason,
+        "actionable": actionable, "reorder_qty": reorder,
+        "order_value": round(reorder * price, 2) if price is not None else None,
     }
 
 
-def build_transfers(rows, savings_rate):
-    """Per-SKU greedy pairing: largest deficit ← largest surplus."""
+# ---------------------------------------------------------------- transfers
+def build_transfers(rows, savings_rate, warnings):
+    """Per-SKU greedy pairing: largest deficit <- largest surplus.
+    Donors keep their full buffer by construction (surplus = SOH - buffer)."""
     transfers = []
     by_sku = {}
     for r in rows:
         by_sku.setdefault(r["sku"], []).append(r)
-    for sku, group in by_sku.items():
-        donors = sorted(
-            [r for r in group if r["status"] == "OVERSTOCK"],
-            key=lambda r: r["soh"] - r["buffer"], reverse=True)
-        receivers = sorted(
-            [r for r in group if r["status"] in ("OUT_OF_STOCK", "CRITICAL", "REORDER")],
-            key=lambda r: r["buffer"] - r["pipeline"], reverse=True)
-        surplus = {id(d): d["soh"] - d["buffer"] for d in donors}
-        deficit = {id(x): x["buffer"] - x["pipeline"] for x in receivers}
+    for sku in sorted(by_sku):
+        group = by_sku[sku]
+        donors = sorted([r for r in group if r["status"] == "OVERSTOCK"],
+                        key=lambda r: (-(r["soh"] - r["buffer"]), r["line"]))
+        receivers = sorted([r for r in group
+                            if r["status"] in ("OUT_OF_STOCK", "CRITICAL", "REORDER")],
+                           key=lambda r: (-(r["buffer"] - r["pipeline"]), r["line"]))
+        surplus = {r["line"]: r["soh"] - r["buffer"] for r in donors}
+        deficit = {r["line"]: r["buffer"] - r["pipeline"] for r in receivers}
         for recv in receivers:
             for don in donors:
-                qty = math.floor(round(max(0, min(surplus[id(don)], deficit[id(recv)])), 9))
+                qty = math.floor(round(max(0, min(surplus[don["line"]],
+                                                  deficit[recv["line"]])), 9))
                 if qty <= 0:
                     continue
                 price = don.get("price")
                 value = round(qty * price, 2) if price is not None else None
+                if value is None:
+                    warnings.append(f"transfer {sku} {don['store']}->{recv['store']}: "
+                                    f"donor price missing — value/saving omitted")
                 transfers.append({
                     "sku": sku, "from_store": don["store"], "to_store": recv["store"],
                     "qty": qty, "value": value,
                     "est_saving": round(value * savings_rate, 2) if value is not None else None,
                 })
-                surplus[id(don)] -= qty
-                deficit[id(recv)] -= qty
-                # Net the receiver's reorder quantity down by the incoming units.
-                recv["reorder_qty_net"] = max(0, recv.get("reorder_qty_net", recv["reorder_qty"]) - qty)
-                if deficit[id(recv)] <= 0:
+                surplus[don["line"]] -= qty
+                deficit[recv["line"]] -= qty
+                recv["reorder_qty_net"] = max(0, recv["reorder_qty_net"] - qty)
+                if deficit[recv["line"]] <= 0:
                     break
     return transfers
 
 
-def fnum(v, default=None):
-    try:
-        return float(str(v).replace(",", "").strip())
-    except (ValueError, AttributeError):
-        return default
-
-
+# ---------------------------------------------------------------- template
 TEMPLATE_HEADER = ["sku", "store", "soh", "qoo", "ads", "lead_time", "unit_price"]
 TEMPLATE_EXAMPLE = ["Face Serum", "Mumbai", "3", "0", "12", "7", "450"]
 TEMPLATE_LEGEND = [
@@ -106,16 +223,13 @@ TEMPLATE_LEGEND = [
     ["# store      = store/location name (required)"],
     ["# soh        = stock on hand, units on shelf right now (required, >= 0)"],
     ["# qoo        = quantity on order / in transit (blank allowed -> treated as 0)"],
-    ["# ads        = average daily sales in units/day for THIS sku at THIS store (required; use 0 only if truly no demand)"],
+    ["# ads        = average daily sales in units/day for THIS sku at THIS store (required)"],
     ["# lead_time  = supplier lead time in DAYS for THIS sku at THIS store (required, > 0)"],
     ["# unit_price = per-unit price/cost (optional; enables order values & transfer savings)"],
     ["# One row per SKU x Store combination. Delete these # lines before running."],
 ]
 
-
 def write_template(path, known_rows=None):
-    """Write a fill-in template. If known_rows given, pre-populate what we know
-    and leave blanks where data is needed."""
     with open(path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(TEMPLATE_HEADER)
@@ -129,178 +243,389 @@ def write_template(path, known_rows=None):
     return path
 
 
+# ---------------------------------------------------------------- helpers
+def sha256(path):
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(65536), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def jdump(obj, path):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(obj, f, indent=2, ensure_ascii=False, sort_keys=True)
+        f.write("\n")
+
+
+# ---------------------------------------------------------------- main pipeline
+def run(args):
+    warnings, assumptions, provenance = [], [], []
+
+    with open(args.input, newline="", encoding="utf-8-sig") as f:
+        reader = csv.DictReader(f)
+        raw = list(reader)
+        headers = reader.fieldnames or []
+    if not raw:
+        sys.exit("Empty input file. Run with --template to get the required format.")
+
+    mapping, passthrough_cols, ambiguous = map_headers(headers)
+    missing = [t for t in REQUIRED if t not in mapping]
+    report_min = {
+        "schema_version": SCHEMA_VERSION,
+        "engine": {"version": ENGINE_VERSION},
+        "run": {"as_of": args.as_of, "input_file": os.path.basename(args.input),
+                "input_sha256": sha256(args.input)},
+        "mapping": {"fields": mapping, "ambiguous": ambiguous,
+                    "passthrough_columns": passthrough_cols},
+    }
+    if missing:
+        report_min["run"]["verdict"] = "blocked"
+        report_min["run"]["verdict_reasons"] = [
+            f"required columns not found: {missing}",
+            f"columns seen: {[norm_header(h) for h in headers]}"]
+        jdump(report_min, args.report)
+        path = write_template("redpill_input_template.csv")
+        sys.exit(f"Missing required columns: {missing}. Mapping report -> {args.report}. "
+                 f"A fill-in template was written to {path}.")
+
+    src = {t: m["source"] for t, m in mapping.items()}
+    as_of = date.fromisoformat(args.as_of)
+
+    if "qoo" not in mapping:
+        assumptions.append("No QOO/in-transit column found: assumed QOO = 0 for ALL rows.")
+
+    rows, gaps = [], []
+    first_seen = {}   # key -> (line, kept_bool)  — deterministic duplicate rule (G8)
+    for i, r in enumerate(raw, start=2):
+        sku = str(r[src["sku"]]).strip()
+        store = str(r[src["store"]]).strip()
+        problems, row_prov, row_warn = [], [], []
+        if not sku:
+            problems.append("sku is blank")
+        if not store:
+            problems.append("store is blank")
+        key = (sku.lower(), store.lower())
+        if sku and store and key in first_seen:
+            fl, kept = first_seen[key]
+            problems.append(f"duplicate of line {fl} "
+                            f"({'kept' if kept else 'itself quarantined'}) — "
+                            f"first occurrence wins")
+
+        def parse(field, default_blank=None):
+            if field not in src:
+                return default_blank, ""
+            rawv = r.get(src[field], "")
+            v, note = fnum(rawv)
+            if note:
+                row_prov.append(f"{field}: {note}")
+            return v, str(rawv).strip()
+
+        soh, soh_raw = parse("soh")
+        qoo, qoo_raw = parse("qoo")
+        ads, ads_raw = parse("ads")
+        lt, lt_raw = parse("lead_time")
+        price, price_raw = parse("price")
+        reserved, _ = parse("reserved")
+        damaged, _ = parse("damaged")
+        case_pack, _ = parse("case_pack")
+        eta = str(r.get(src.get("expected_receipt_date", ""), "")).strip() or None
+
+        if soh is None:
+            problems.append(f"soh not a number ('{soh_raw}')")
+        elif soh < 0:
+            problems.append(f"soh negative ({soh:g}) — physical stock cannot be < 0")
+        elif soh != int(soh):
+            row_warn.append(f"soh fractional ({soh:g}) — physical units expected")
+        if qoo is None:
+            if qoo_raw == "" or "qoo" not in src:
+                qoo = 0.0
+                if "qoo" in src:
+                    assumptions.append(f"{sku}/{store}: blank QOO assumed 0")
+            else:
+                problems.append(f"qoo not a number ('{qoo_raw}')")
+        elif qoo < 0:
+            problems.append(f"qoo negative ({qoo:g})")
+        elif qoo != int(qoo):
+            row_warn.append(f"qoo fractional ({qoo:g})")
+        if ads is None:
+            problems.append("ads blank/non-numeric — blank is NOT zero demand; "
+                            "fill actual units/day")
+        elif ads < 0:
+            problems.append(f"ads negative ({ads:g})")
+        elif ads == 0:
+            row_warn.append("ADS = 0 stated — treated as zero demand (stock -> overstock "
+                            "donor; no reorder). Verify this is not missing master data")
+        if lt is None or lt <= 0:
+            problems.append(f"lead_time missing or <= 0 ('{lt_raw}') — need supplier days "
+                            f"for this SKU at this store")
+        if price is None and price_raw not in ("", None) and "price" in src:
+            row_warn.append(f"price unreadable ('{price_raw}') — order/transfer values "
+                            f"omitted for this row")  # G1: never silent
+        bf = args.buffer_factor
+        if "buffer_factor" in src and str(r.get(src["buffer_factor"], "")).strip():
+            bf_row, _ = fnum(r[src["buffer_factor"]])
+            if bf_row is None or bf_row <= 0:
+                problems.append(f"buffer_factor invalid ('{r[src['buffer_factor']]}')")
+            else:
+                bf = bf_row
+                if bf_row != args.buffer_factor:
+                    assumptions.append(f"{sku}/{store}: per-row buffer factor {bf_row:g} used")
+
+        if problems:
+            gap = {"line": i, "sku": sku, "store": store,
+                   "soh": soh_raw, "qoo": qoo_raw, "ads": ads_raw,
+                   "lead_time": lt_raw, "unit_price": price_raw,
+                   "reason": "; ".join(problems)}
+            gaps.append(gap)
+            if sku and store and key not in first_seen:
+                first_seen[key] = (i, False)
+            continue
+        first_seen[key] = (i, True)
+
+        d = compute_row(soh, qoo, ads, lt, bf, args.target_factor, price)
+        d.update({
+            "line": i, "sku": sku, "store": store, "soh": soh, "qoo": qoo,
+            "ads": ads, "lead_time": lt, "price": price,
+            "reserved": reserved, "damaged": damaged, "case_pack": case_pack,
+            "expected_receipt_date": eta,
+            "expected_delivery": (as_of + timedelta(days=int(lt))).isoformat(),
+            "reorder_qty_net": d["reorder_qty"],
+            "passthrough": {c: r.get(c, "") for c in passthrough_cols},   # G5
+            "provenance": row_prov, "warnings": row_warn,
+        })
+        rows.append(d)
+        warnings.extend(f"{sku}/{store}: {w}" for w in row_warn)
+        provenance.extend(f"{sku}/{store}: {p}" for p in row_prov)
+
+    if not rows:
+        _write_quarantine(args.gaps, gaps)
+        sys.exit(f"No valid rows — all {len(gaps)} rows quarantined to {args.gaps}. "
+                 f"Fix the 'reason' items and rerun.")
+
+    transfers = build_transfers(rows, args.savings_rate, warnings)
+
+    # G3: engine owns every total. Order totals are ACTIONABLE-ONLY by definition (G2).
+    for r in rows:
+        r["order_value_net"] = (round(r["reorder_qty_net"] * r["price"], 2)
+                                if r["price"] is not None else None)
+    gross_order = round(sum(r["order_value"] or 0 for r in rows), 2)
+    net_order = round(sum(r["order_value_net"] or 0 for r in rows), 2)
+    missing_price_orders = sum(1 for r in rows
+                               if r["reorder_qty_net"] > 0 and r["price"] is None)
+    if missing_price_orders:
+        warnings.append(f"{missing_price_orders} order line(s) have no readable price — "
+                        f"order totals understate true spend")
+
+    counts = {s: sum(1 for r in rows if r["status"] == s) for s in STATUSES}
+    n = len(rows)
+    actionable_rows = sum(counts[s] for s in ACTIONABLE)
+    kpis = {
+        "rows": n, "quarantined": len(gaps),
+        "status_counts": counts,
+        "health_pct": round(100.0 * counts["OPTIMAL"] / n, 1),
+        "action_rate_pct": round(100.0 * actionable_rows / n, 1),
+        "excess_rate_pct": round(100.0 * counts["OVERSTOCK"] / n, 1),
+        "actionable_rows": actionable_rows,
+        "gross_order_value": gross_order,
+        "net_order_value": net_order,
+        "order_lines_missing_price": missing_price_orders,
+        "transfers": {
+            "count": len(transfers),
+            "units": sum(t["qty"] for t in transfers),
+            "value": round(sum(t["value"] or 0 for t in transfers), 2),
+            "est_saving": round(sum(t["est_saving"] or 0 for t in transfers), 2),
+            "missing_value_count": sum(1 for t in transfers if t["value"] is None),
+        },
+        "money_labels": {"order_values": "potential", "transfer_savings": "estimated"},
+    }
+
+    # Urgency: rows that need a human move now; nothing-to-do rows excluded (G8/R4).
+    urgency = sorted(
+        [r for r in rows if r["actionable"]
+         and (r["reorder_qty_net"] > 0 or r["status"] == "INCOMING")],
+        key=lambda r: (r["days_of_stock"] if r["days_of_stock"] is not None else 0.0,
+                       r["line"]))
+
+    # Run verdict (G7)
+    qpct = 100.0 * len(gaps) / (n + len(gaps))
+    verdict, reasons = "healthy", []
+    if ambiguous:
+        verdict = "degraded"
+        reasons.append(f"{len(ambiguous)} ambiguous column mapping(s) — confirm before trusting")
+    if qpct > 20:
+        verdict = "degraded"
+        reasons.append(f"{qpct:.0f}% of rows quarantined — fill the gaps and rerun")
+    if qpct > 60:
+        verdict = "blocked"
+        reasons.append("majority of rows unusable — do not act on this run")
+
+    report = dict(report_min)
+    report["engine"]["parameters"] = {
+        "buffer_factor": args.buffer_factor, "target_factor": args.target_factor,
+        "savings_rate": args.savings_rate}
+    report["run"].update({"verdict": verdict, "verdict_reasons": reasons,
+                          "quarantine_pct": round(qpct, 1)})
+    report.update({
+        "kpis": kpis,
+        "rows": sorted(rows, key=lambda r: r["line"]),
+        "transfers": transfers,
+        "urgency": [{"sku": r["sku"], "store": r["store"], "status": r["status"],
+                     "days_of_stock": r["days_of_stock"],
+                     "reorder_qty_net": r["reorder_qty_net"]} for r in urgency],
+        "quarantine": gaps,
+        "assumptions": assumptions, "warnings": warnings, "provenance": provenance,
+    })
+    jdump(report, args.report)
+
+    # computed.csv — includes passthrough columns (G5); "" is the one empty sentinel (G8/C2)
+    out_fields = (["sku", "store", "soh", "qoo", "ads", "lead_time", "price",
+                   "pipeline", "buffer", "rop", "days_of_stock", "status",
+                   "status_reason", "reorder_qty", "reorder_qty_net",
+                   "order_value", "order_value_net", "expected_delivery"]
+                  + passthrough_cols)
+    with open(args.out, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(out_fields)
+        for r in sorted(rows, key=lambda x: (x["days_of_stock"]
+                                             if x["days_of_stock"] is not None else 0.0,
+                                             x["line"])):
+            base = [r["sku"], r["store"], r["soh"], r["qoo"], r["ads"], r["lead_time"],
+                    "" if r["price"] is None else r["price"],
+                    r["pipeline"], r["buffer"], r["rop"],
+                    "" if r["days_of_stock"] is None else r["days_of_stock"],
+                    r["status"], r["status_reason"], r["reorder_qty"], r["reorder_qty_net"],
+                    "" if r["order_value"] is None else r["order_value"],
+                    "" if r["order_value_net"] is None else r["order_value_net"],
+                    r["expected_delivery"]]
+            w.writerow(base + [r["passthrough"].get(c, "") for c in passthrough_cols])
+
+    if gaps:
+        _write_quarantine(args.gaps, gaps)
+
+    # compact compatibility summary (subset of report.json — never diverges)
+    jdump({"schema_version": SCHEMA_VERSION, "kpis": kpis,
+           "urgency_top10": report["urgency"][:10],
+           "transfer_plan": transfers,
+           "data_quality": {"quarantined": [{"line": g["line"], "sku": g["sku"],
+                                             "store": g["store"], "reason": g["reason"]}
+                                            for g in gaps],
+                            "assumptions": assumptions, "warnings": warnings},
+           "run": report["run"]}, args.summary)
+
+    msg = (f"[{verdict.upper()}] {n} rows -> {args.out}; report -> {args.report}; "
+           f"health {kpis['health_pct']}% (action {kpis['action_rate_pct']}% / "
+           f"excess {kpis['excess_rate_pct']}%); transfers {len(transfers)} "
+           f"(₹{kpis['transfers']['value']:,.0f} moved, est ₹{kpis['transfers']['est_saving']:,.0f}); "
+           f"orders net ₹{net_order:,.0f} (gross ₹{gross_order:,.0f})")
+    if gaps:
+        msg += f"\n⚠ {len(gaps)} row(s) quarantined -> {args.gaps} (fill-in form; fix and rerun)"
+    print(msg)
+    return report
+
+
+def _write_quarantine(path, gaps):
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        fields = TEMPLATE_HEADER + ["line", "reason"]
+        w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
+        w.writeheader()
+        for g in gaps:
+            w.writerow(g)
+
+
+# ---------------------------------------------------------------- run dirs (G32)
+def setup_run_dir(args):
+    rd = args.run_dir
+    os.makedirs(os.path.join(rd, "input"), exist_ok=True)
+    input_copy = os.path.join(rd, "input", os.path.basename(args.input))
+    if not os.path.exists(input_copy):
+        shutil.copy2(args.input, input_copy)
+    args.input = input_copy          # analyze the immutable copy
+    args.out = os.path.join(rd, "computed.csv")
+    args.summary = os.path.join(rd, "summary.json")
+    args.gaps = os.path.join(rd, "quarantine.csv")
+    args.report = os.path.join(rd, "report.json")
+    jdump({"engine_version": ENGINE_VERSION, "schema_version": SCHEMA_VERSION,
+           "as_of": args.as_of, "input_file": os.path.basename(input_copy),
+           "parameters": {"buffer_factor": args.buffer_factor,
+                          "target_factor": args.target_factor,
+                          "savings_rate": args.savings_rate}},
+          os.path.join(rd, "config_snapshot.json"))
+    return rd
+
+
+def write_manifest(args):
+    rd = args.run_dir
+    outputs = {}
+    for name in ["report.json", "computed.csv", "summary.json", "quarantine.csv"]:
+        p = os.path.join(rd, name)
+        if os.path.exists(p):
+            outputs[name] = sha256(p)
+    jdump({"engine_version": ENGINE_VERSION, "schema_version": SCHEMA_VERSION,
+           "as_of": args.as_of, "input_sha256": sha256(args.input),
+           "outputs": outputs},
+          os.path.join(rd, "run-manifest.json"))
+
+
+def rerun(run_dir):
+    """Reproduce a prior run from its directory and verify identical report.json."""
+    cfg = json.load(open(os.path.join(run_dir, "config_snapshot.json")))
+    manifest = json.load(open(os.path.join(run_dir, "run-manifest.json")))
+    args = argparse.Namespace(
+        input=os.path.join(run_dir, "input", cfg["input_file"]),
+        as_of=cfg["as_of"],
+        buffer_factor=cfg["parameters"]["buffer_factor"],
+        target_factor=cfg["parameters"]["target_factor"],
+        savings_rate=cfg["parameters"]["savings_rate"],
+        out=os.devnull, summary=os.devnull, gaps=os.devnull,
+        report=os.path.join(run_dir, "report.rerun.json"),
+    )
+    run(args)
+    old = manifest["outputs"].get("report.json")
+    new = sha256(args.report)
+    ok = old == new
+    print(f"reproducibility: {'MATCH' if ok else 'MISMATCH'} "
+          f"(report.json {new[:12]} vs recorded {str(old)[:12]})")
+    if ok:
+        os.remove(args.report)
+    return 0 if ok else 1
+
+
+# ---------------------------------------------------------------- CLI
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("input", nargs="?")
+    p.add_argument("--run-dir", help="write all outputs + input copy + manifest here (G32)")
+    p.add_argument("--rerun", metavar="RUN_DIR",
+                   help="reproduce a prior run directory and verify identical output")
+    p.add_argument("--as-of", default=None,
+                   help="data snapshot date YYYY-MM-DD (default: today). Drives "
+                        "expected-delivery dates and reproducibility.")
     p.add_argument("--out", default="computed.csv")
     p.add_argument("--summary", default="summary.json")
     p.add_argument("--gaps", default="data_gaps.csv")
-    p.add_argument("--template", action="store_true",
-                   help="Write a blank fill-in template (redpill_input_template.csv) and exit")
+    p.add_argument("--report", default="report.json")
+    p.add_argument("--template", action="store_true")
     p.add_argument("--buffer-factor", type=float, default=1.5)
     p.add_argument("--target-factor", type=float, default=2.5)
     p.add_argument("--savings-rate", type=float, default=0.15)
     args = p.parse_args()
 
+    if args.rerun:
+        sys.exit(rerun(args.rerun))
     if args.template or not args.input:
         path = write_template("redpill_input_template.csv")
         print(f"Template written to {path}. Fill it in (one row per SKU x Store) and rerun:")
         print(f"  python redpill_engine.py {path}")
         return
-
-    with open(args.input, newline="", encoding="utf-8-sig") as f:
-        reader = csv.DictReader(f)
-        raw = list(reader)
-    if not raw:
-        sys.exit("Empty input file. Run with --template to get the required format.")
-
-    cols = {c.lower().strip().replace(" ", "_").replace("-", "_"): c for c in raw[0].keys()}
-
-    def col(*names):
-        for n in names:
-            if n in cols:
-                return cols[n]
-        return None
-
-    c_sku = col("sku", "product", "item", "sku_code")
-    c_store = col("store", "location", "branch", "outlet")
-    c_soh = col("soh", "stock_on_hand", "closing_stock", "stock")
-    c_qoo = col("qoo", "quantity_on_order", "in_transit", "pending_po", "on_order")
-    c_ads = col("ads", "avg_daily_sales", "average_daily_sales", "daily_sales", "offtake")
-    c_lt = col("lead_time", "lt", "lead_time_days", "leadtime")
-    c_price = col("price", "unit_price", "cost", "unit_cost", "mrp")
-    c_bf = col("buffer_factor", "bf")  # optional per-row override of --buffer-factor
-    missing = [n for n, c in [("sku", c_sku), ("store", c_store), ("soh", c_soh),
-                              ("ads", c_ads), ("lead_time", c_lt)] if c is None]
-    if missing:
-        path = write_template("redpill_input_template.csv")
-        sys.exit(f"Missing required columns: {missing}. Found: {list(cols)}.\n"
-                 f"A fill-in template with the required format was written to {path}.")
-
-    # ---- Row-level validation: quarantine, never guess ----
-    rows, gaps, warnings, assumptions = [], [], [], []
-    if c_qoo is None:
-        assumptions.append("No QOO/in-transit column found: assumed QOO = 0 for ALL rows. "
-                           "Add a qoo column if orders are in transit.")
-    seen = set()
-    for i, r in enumerate(raw, start=2):  # 2 = first data line in the file
-        sku, store = str(r[c_sku]).strip(), str(r[c_store]).strip()
-        problems = []
-        if not sku or not store:
-            problems.append("blank sku/store")
-        key = (sku.lower(), store.lower())
-        if key in seen:
-            problems.append("duplicate SKU+Store row (first occurrence kept)")
-        soh = fnum(r[c_soh])
-        qoo_raw = r[c_qoo] if c_qoo else ""
-        qoo = fnum(qoo_raw)
-        ads = fnum(r[c_ads])
-        lt = fnum(r[c_lt])
-        price = fnum(r[c_price]) if c_price else None
-        if soh is None:
-            problems.append(f"soh not a number ('{r[c_soh]}')")
-        elif soh < 0:
-            problems.append(f"soh negative ({soh}) — physical stock cannot be < 0")
-        if qoo is None:
-            if str(qoo_raw).strip() == "":
-                qoo = 0.0
-                assumptions.append(f"{sku}/{store}: blank QOO assumed 0")
-            else:
-                problems.append(f"qoo not a number ('{qoo_raw}')")
-        elif qoo < 0:
-            problems.append(f"qoo negative ({qoo})")
-        if ads is None:
-            problems.append("ads blank/non-numeric — blank is NOT zero demand; fill actual units/day")
-        elif ads == 0:
-            warnings.append(f"{sku}/{store}: ADS = 0 stated — treated as zero demand "
-                            f"(any stock -> OVERSTOCK). Verify this is not missing master data.")
-        elif ads < 0:
-            problems.append(f"ads negative ({ads})")
-        if lt is None or (lt is not None and lt <= 0):
-            problems.append(f"lead_time missing or <= 0 ('{r[c_lt]}') — need supplier days for this SKU at this store")
-        bf = args.buffer_factor
-        if c_bf and str(r.get(c_bf, "")).strip():
-            bf_row = fnum(r[c_bf])
-            if bf_row is None or bf_row <= 0:
-                problems.append(f"buffer_factor invalid ('{r[c_bf]}') — must be a positive number (default 1.5)")
-            else:
-                bf = bf_row
-                if bf_row != args.buffer_factor:
-                    assumptions.append(f"{sku}/{store}: per-row buffer factor {bf_row} used (global default {args.buffer_factor})")
-        if problems:
-            gap = {c: str(r.get(orig, "")) for c, orig in
-                   [("sku", c_sku), ("store", c_store), ("soh", c_soh),
-                    ("qoo", c_qoo), ("ads", c_ads), ("lead_time", c_lt), ("unit_price", c_price)]
-                   if orig}
-            gap.update({"line": i, "reason": "; ".join(problems)})
-            gaps.append(gap)
-            continue
-        seen.add(key)
-        d = compute_row(soh, qoo, ads, lt, bf, args.target_factor, price)
-        d.update({"sku": sku, "store": store, "soh": soh, "qoo": qoo,
-                  "ads": ads, "lead_time": lt, "price": price,
-                  "expected_delivery": (date.today() + timedelta(days=int(lt))).isoformat(),
-                  "reorder_qty_net": d["reorder_qty"]})
-        rows.append(d)
-
-    if gaps:
-        # Quarantine file doubles as the fill-in form: known values pre-filled,
-        # bad/missing cells left for the user, reason column explains each.
-        with open(args.gaps, "w", newline="", encoding="utf-8") as f:
-            fields = TEMPLATE_HEADER + ["line", "reason"]
-            w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
-            w.writeheader()
-            for g in gaps:
-                w.writerow(g)
-    if not rows:
-        sys.exit(f"No valid rows to process — all {len(gaps)} rows quarantined to {args.gaps}. "
-                 f"Fix the 'reason' items and rerun.")
-
-    transfers = build_transfers(rows, args.savings_rate)
-
-    out_fields = ["sku", "store", "soh", "qoo", "ads", "lead_time", "pipeline", "buffer",
-                  "rop", "days_of_stock", "status", "reorder_qty", "reorder_qty_net",
-                  "order_value", "expected_delivery"]
-    with open(args.out, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=out_fields, extrasaction="ignore")
-        w.writeheader()
-        for r in sorted(rows, key=lambda x: x["days_of_stock"]):
-            w.writerow(r)
-
-    counts = {s: sum(1 for r in rows if r["status"] == s) for s in STATUSES}
-    health = round(100.0 * counts["OPTIMAL"] / len(rows), 1)
-    actionable = [r for r in rows if r["status"] in ("OUT_OF_STOCK", "INCOMING", "CRITICAL", "REORDER")]
-    summary = {
-        "rows": len(rows),
-        "status_counts": counts,
-        "health_score_pct": health,
-        "urgency_top10": [
-            {"sku": r["sku"], "store": r["store"], "status": r["status"],
-             "days_of_stock": r["days_of_stock"], "reorder_qty_net": r["reorder_qty_net"]}
-            for r in sorted(actionable, key=lambda x: x["days_of_stock"])[:10]],
-        "transfer_plan": transfers,
-        "total_transfer_savings": round(sum(t["est_saving"] or 0 for t in transfers), 2),
-        "data_quality": {
-            "rows_processed": len(rows),
-            "rows_quarantined": len(gaps),
-            "quarantine_file": args.gaps if gaps else None,
-            "quarantined": [{"line": g["line"], "sku": g.get("sku", ""),
-                             "store": g.get("store", ""), "reason": g["reason"]} for g in gaps],
-            "assumptions": assumptions,
-            "warnings": warnings,
-        },
-        "parameters": {"buffer_factor": args.buffer_factor,
-                       "target_factor": args.target_factor,
-                       "savings_rate": args.savings_rate},
-    }
-    with open(args.summary, "w", encoding="utf-8") as f:
-        json.dump(summary, f, indent=2)
-    msg = (f"Computed {len(rows)} rows → {args.out}; summary → {args.summary}; "
-           f"health {health}%; transfers: {len(transfers)}")
-    if gaps:
-        msg += (f"\n⚠ {len(gaps)} row(s) QUARANTINED → {args.gaps} (pre-filled fill-in form; "
-                f"complete the missing cells per the 'reason' column and rerun, or merge back into the input).")
-    print(msg)
+    if args.as_of is None:
+        args.as_of = date.today().isoformat()
+    date.fromisoformat(args.as_of)  # validate early
+    if args.run_dir:
+        setup_run_dir(args)
+    run(args)
+    if args.run_dir:
+        write_manifest(args)
 
 
 if __name__ == "__main__":

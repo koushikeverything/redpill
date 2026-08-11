@@ -2,6 +2,9 @@
 computed.csv
 summary.json
 data_gaps.csv
+quarantine.csv
+report.json
+runs/
 redpill_input_template.csv
 .tmp_*.csv
 .tmp_*.json

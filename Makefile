@@ -1,4 +1,4 @@
-.PHONY: build sync test clean help
+.PHONY: build sync test smoke clean help
 .DEFAULT_GOAL := help
 
 ENGINE := skills/redpill-inventory/scripts/redpill_engine.py
@@ -14,12 +14,16 @@ sync: ## Fold an edited .skill back into skills/  (usage: make sync SKILL=path/t
 	@test -n "$(SKILL)" || { echo "usage: make sync SKILL=path/to.skill"; exit 1; }
 	@bash scripts/sync_from_skill.sh "$(SKILL)"
 
-test: ## Run the engine on the example data
+test: ## Run the full test suite (goldens + property tests + reproducibility)
+	@python3 -m unittest discover -s tests
+
+smoke: ## Quick engine run on the bundled example
 	@python3 $(ENGINE) examples/sample_mis.csv \
-	  --out .tmp_computed.csv --summary .tmp_summary.json --gaps .tmp_gaps.csv
+	  --out .tmp_computed.csv --summary .tmp_summary.json --gaps .tmp_gaps.csv \
+	  --report .tmp_report.json
 	@echo "--- summary ---" && cat .tmp_summary.json
 
 clean: ## Remove generated run artifacts
 	@rm -f computed.csv summary.json data_gaps.csv redpill_input_template.csv \
-	       .tmp_computed.csv .tmp_summary.json .tmp_gaps.csv
+	       .tmp_computed.csv .tmp_summary.json .tmp_gaps.csv .tmp_report.json quarantine.csv report.json
 	@echo "cleaned"

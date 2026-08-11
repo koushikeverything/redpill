@@ -6,6 +6,7 @@ on:
   push:
     paths:
       - "skills/**"
+      - "tests/**"
       - "scripts/build_skill.sh"
     branches: [main]
   workflow_dispatch: {}
@@ -18,6 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Run test suite (goldens + properties + reproducibility)
+        run: python3 -m unittest discover -s tests
 
       - name: Build .skill bundle
         run: bash scripts/build_skill.sh

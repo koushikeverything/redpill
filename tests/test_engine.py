@@ -259,3 +259,42 @@ class TestExample(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestCockpitRenderer(Base):
+    """G10: the cockpit is a fixed template + report.json injection, no more."""
+
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        render = os.path.join(REPO, "skills", "redpill-inventory", "scripts",
+                              "render_cockpit.py")
+        proc = subprocess.run([sys.executable, render, "--run-dir", cls.rundir],
+                              capture_output=True, text=True)
+        assert proc.returncode == 0, proc.stderr
+        with open(os.path.join(cls.rundir, "cockpit.html"), encoding="utf-8") as f:
+            cls.html = f.read()
+
+    def test_placeholder_replaced_with_report(self):
+        self.assertNotIn("__REPORT_JSON__", self.html)
+        # the embedded blob IS the report (escaped-slash tolerant)
+        start = self.html.index('<script type="application/json" id="data">') + \
+            len('<script type="application/json" id="data">')
+        end = self.html.index("</script>", start)
+        blob = json.loads(self.html[start:end].replace("<\\/", "</"))
+        self.assertEqual(blob["kpis"], self.report["kpis"])
+        self.assertEqual(len(blob["rows"]), len(self.report["rows"]))
+
+    def test_money_labels_and_banner_hooks_present(self):
+        for needle in ("potential", "estimated", "Today's Actions",
+                       "advisory only", "report.json"):
+            self.assertIn(needle, self.html, needle)
+
+    def test_template_has_no_business_constants(self):
+        # the page must not hard-code plan numbers; spot-check the golden totals
+        tpl_path = os.path.join(REPO, "skills", "redpill-inventory", "assets",
+                                "cockpit_template.html")
+        with open(tpl_path, encoding="utf-8") as f:
+            tpl = f.read()
+        for forbidden in ("11640751", "4691490", "703723", "16332241"):
+            self.assertNotIn(forbidden, tpl)

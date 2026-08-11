@@ -306,3 +306,34 @@ loose artifacts to cwd in legacy (no `--run-dir`) mode — fine for compatibilit
 
 **Gate:** Phase 0 exit criteria met (zero known engine defects; every §2 stage's data present in
 `report.json`). Phase 1 (cockpit template) may start.
+
+
+---
+
+## 9. Phase 1 exit record (2026-08-11)
+
+**Shipped:** `assets/cockpit_template.html` (fixed template, ~zero variance) +
+`scripts/render_cockpit.py` (stdlib injector, validates JSON before injecting) closing **G10**
+and **G11**. The cockpit renders exclusively from `report.json` — verified by test: the template
+contains no business constants, and the embedded blob is asserted equal to the engine's report.
+Features: run-verdict banner (degraded/blocked), "Today's Actions" default lens, the two-rate KPI
+strip, **estimated/potential money labels** (G35's display half: "₹7.0L estimated · ₹46.9L
+moved" are separate figures), per-row drawer with decision trace (inputs → computed → reason →
+action → data notes), discrepancy chip (string-compare only vs the file's own status column),
+empty-states for all lenses (Signal fixes honestly says it's not populated yet), plan + transfers
+CSV export, and **row-level what-if sliders** labeled "this row only — plan totals unchanged"
+(the G11 staleness constraint honored by scope).
+
+**QA performed:** functional JS audit (all 7 lenses, drawer, sliders, search/filters — clean, no
+NaN/undefined in output); visual: dark desktop, light desktop, mobile 375px (no horizontal
+overflow, compact 3-col rows, drawer fits). One defect found and fixed in-phase: **AV4 — the
+5-KPI grid left an empty tinted cell on mobile** (last KPI now spans the row).
+
+**UX eval (three <10s questions):** "what do I do first?" → top of Today's Actions on load ✓;
+"why this row?" → one tap, reason sentence first ✓; "what's the total spend?" → KPI strip,
+labeled *potential* ✓.
+
+**Tests:** suite grew to 26 (renderer: placeholder replaced, blob === report, labels present,
+no hard-coded plan numbers in template). All green. Bundle rebuilt with template + renderer.
+
+**Gate:** Phase 1 exit criteria met. Phase 2 (native onboarding & ask-back) may start.

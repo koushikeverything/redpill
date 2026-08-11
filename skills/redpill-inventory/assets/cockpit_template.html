@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Red Pill — Inventory Cockpit</title>
+<style>
+  :root{
+    --ground:#FBF8F7; --surface:#FFFFFF; --surface-2:#F5EFED; --surface-3:#EFE7E5;
+    --ink:#241C1D; --ink-2:#6B5E60; --ink-3:#93878A; --hair:#E7DEDC; --hair-2:#DCD1CF;
+    --accent:#8E1D2B; --accent-soft:#F3E1E0; --accent-ink:#8E1D2B;
+    --shadow:0 1px 2px rgba(36,28,29,.06),0 8px 30px rgba(36,28,29,.10);
+    --shadow-drawer:-24px 0 60px rgba(36,28,29,.18);
+    --s-out:#1A1A1A; --s-incoming:#8B5CF6; --s-critical:#EF4444; --s-reorder:#F59E0B;
+    --s-overstock:#3B82F6; --s-optimal:#22C55E;
+    --font-ui:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --font-num:ui-monospace,"SF Mono","Cascadia Code","Roboto Mono",Menlo,Consolas,monospace;
+    --r:12px; --r-sm:8px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --ground:#151011; --surface:#1E1718; --surface-2:#251D1E; --surface-3:#2E2425;
+      --ink:#F4ECEA; --ink-2:#B7A9A8; --ink-3:#8A7C7C; --hair:#342829; --hair-2:#3F3132;
+      --accent:#E24660; --accent-soft:#3A2126; --accent-ink:#F0889A;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 34px rgba(0,0,0,.5);
+      --shadow-drawer:-24px 0 60px rgba(0,0,0,.55);
+      --s-out:#CBB9B8;
+    }
+  }
+  :root[data-theme="light"]{
+    --ground:#FBF8F7; --surface:#FFFFFF; --surface-2:#F5EFED; --surface-3:#EFE7E5;
+    --ink:#241C1D; --ink-2:#6B5E60; --ink-3:#93878A; --hair:#E7DEDC; --hair-2:#DCD1CF;
+    --accent:#8E1D2B; --accent-soft:#F3E1E0; --accent-ink:#8E1D2B;
+    --shadow:0 1px 2px rgba(36,28,29,.06),0 8px 30px rgba(36,28,29,.10);
+    --shadow-drawer:-24px 0 60px rgba(36,28,29,.18);
+    --s-out:#1A1A1A;
+  }
+  :root[data-theme="dark"]{
+    --ground:#151011; --surface:#1E1718; --surface-2:#251D1E; --surface-3:#2E2425;
+    --ink:#F4ECEA; --ink-2:#B7A9A8; --ink-3:#8A7C7C; --hair:#342829; --hair-2:#3F3132;
+    --accent:#E24660; --accent-soft:#3A2126; --accent-ink:#F0889A;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 34px rgba(0,0,0,.5);
+    --shadow-drawer:-24px 0 60px rgba(0,0,0,.55);
+    --s-out:#CBB9B8;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--font-ui);
+    font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased}
+  .num{font-family:var(--font-num);font-variant-numeric:tabular-nums}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+  /* verdict banner */
+  .banner{display:none;padding:10px 0;background:color-mix(in srgb,var(--s-reorder) 16%,var(--ground));
+    border-bottom:1px solid var(--s-reorder)}
+  .banner.blocked{background:color-mix(in srgb,var(--s-critical) 16%,var(--ground));border-color:var(--s-critical)}
+  .banner.show{display:block}
+  .banner .wrap{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;font-size:13px}
+  .banner b{text-transform:uppercase;letter-spacing:.06em;font-size:12px}
+
+  header{background:var(--surface);border-bottom:1px solid var(--hair)}
+  .head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0 16px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .pill{width:26px;height:26px;border-radius:50%;background:var(--accent);
+    box-shadow:0 0 0 4px var(--accent-soft);flex:none}
+  .brand h1{font-size:15px;margin:0;letter-spacing:.14em;font-weight:800;text-transform:uppercase}
+  .brand .sub{font-size:11px;color:var(--ink-3);letter-spacing:.03em;margin-top:2px}
+  .meta{text-align:right;font-size:12px;color:var(--ink-2);line-height:1.5}
+  .meta b{color:var(--ink);font-weight:600}
+
+  .kpis{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:1px;background:var(--hair);
+    border:1px solid var(--hair);border-radius:var(--r);overflow:hidden;margin:2px 0 18px}
+  .kpi{background:var(--surface);padding:14px 16px;min-width:0}
+  .kpi .lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-3);font-weight:600}
+  .kpi .val{font-family:var(--font-num);font-size:25px;font-weight:600;margin-top:5px;letter-spacing:-.01em}
+  .kpi .val small{font-size:13px;color:var(--ink-2);font-weight:500}
+  .kpi .hint{font-size:11px;color:var(--ink-2);margin-top:3px}
+  .track{height:5px;border-radius:3px;background:var(--surface-3);margin-top:8px;position:relative;overflow:hidden}
+  .track>i{display:block;height:100%;border-radius:3px}
+  .target{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink-2);opacity:.5}
+  .dot{width:8px;height:8px;border-radius:50%;display:inline-block;vertical-align:baseline}
+
+  .controls{position:sticky;top:0;z-index:20;background:var(--ground);
+    padding:12px 0;border-bottom:1px solid var(--hair)}
+  .lenses{display:flex;gap:4px;flex-wrap:wrap}
+  .lens{appearance:none;border:1px solid var(--hair-2);background:var(--surface);color:var(--ink-2);
+    font-family:inherit;font-size:12.5px;font-weight:600;padding:7px 12px;border-radius:99px;cursor:pointer;
+    display:inline-flex;align-items:center;gap:7px;transition:background .12s,color .12s,border-color .12s}
+  .lens:hover{border-color:var(--ink-3);color:var(--ink)}
+  .lens[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+  .lens .c{font-family:var(--font-num);font-size:11px;background:var(--surface-3);color:var(--ink-2);
+    padding:1px 7px;border-radius:99px;min-width:20px;text-align:center}
+  .lens[aria-pressed="true"] .c{background:rgba(255,255,255,.22);color:#fff}
+  .row2{display:flex;gap:10px;align-items:center;margin-top:10px;flex-wrap:wrap}
+  .search{flex:1;min-width:200px;position:relative}
+  .search input{width:100%;font-family:inherit;font-size:13px;padding:8px 12px 8px 32px;border-radius:var(--r-sm);
+    border:1px solid var(--hair-2);background:var(--surface);color:var(--ink)}
+  .search svg{position:absolute;left:10px;top:9px;color:var(--ink-3)}
+  .search input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+  .chips{display:flex;gap:5px;flex-wrap:wrap}
+  .chip{font-size:11px;font-weight:600;padding:5px 9px;border-radius:99px;cursor:pointer;
+    border:1px solid var(--hair-2);background:var(--surface);color:var(--ink-2);display:inline-flex;align-items:center;gap:6px;user-select:none}
+  .chip[aria-pressed="false"]{opacity:.4}
+  .btn{appearance:none;border:1px solid var(--hair-2);background:var(--surface);color:var(--ink);
+    font-family:inherit;font-size:12.5px;font-weight:600;padding:8px 12px;border-radius:var(--r-sm);cursor:pointer;display:inline-flex;gap:7px;align-items:center}
+  .btn:hover{border-color:var(--ink-3)}
+
+  main{padding:16px 0 60px;min-height:50vh}
+  .lens-note{font-size:12.5px;color:var(--ink-2);margin:0 0 12px}
+  .list{display:flex;flex-direction:column;gap:7px}
+  .grouphdr{display:flex;align-items:center;gap:12px;margin:18px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--hair)}
+  .grouphdr h3{margin:0;font-size:13px;letter-spacing:.02em}
+  .grouphdr .gh{font-size:11.5px;color:var(--ink-2);font-family:var(--font-num)}
+  .item{display:grid;grid-template-columns:auto 1.6fr 1.1fr 1fr auto;gap:14px;align-items:center;
+    background:var(--surface);border:1px solid var(--hair);border-left-width:3px;border-radius:var(--r-sm);
+    padding:11px 14px;cursor:pointer;transition:border-color .12s,transform .06s,box-shadow .12s;text-align:left;width:100%;font-family:inherit;color:inherit;font-size:inherit}
+  .item:hover{border-color:var(--hair-2);box-shadow:var(--shadow)}
+  .item:active{transform:translateY(1px)}
+  .item:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .idn{min-width:0}
+  .idn .sku{font-family:var(--font-num);font-size:12.5px;font-weight:600;letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .idn .desc{font-size:11.5px;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+  .store{font-size:12.5px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .store .flag{font-size:10.5px;color:var(--s-critical);font-weight:600;margin-top:2px;display:flex;gap:4px;align-items:center}
+  .metric{display:flex;flex-direction:column;gap:5px;min-width:0}
+  .pen{height:6px;border-radius:3px;background:var(--surface-3);overflow:hidden;position:relative}
+  .pen>i{display:block;height:100%}
+  .pen .rop{position:absolute;top:0;bottom:0;width:1.5px;background:var(--ink-3)}
+  .metric .cap{font-size:10.5px;color:var(--ink-2);font-family:var(--font-num)}
+  .act{text-align:right;min-width:96px}
+  .act .big{font-family:var(--font-num);font-size:15px;font-weight:600}
+  .act .k{font-size:10.5px;color:var(--ink-2);text-transform:uppercase;letter-spacing:.05em}
+
+  .badge{font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:99px;
+    display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+  .st-out{--sc:var(--s-out)} .st-incoming{--sc:var(--s-incoming)} .st-critical{--sc:var(--s-critical)}
+  .st-reorder{--sc:var(--s-reorder)} .st-overstock{--sc:var(--s-overstock)} .st-optimal{--sc:var(--s-optimal)}
+  .badge{color:var(--sc);background:color-mix(in srgb,var(--sc) 14%,transparent)}
+  .stripe-out{border-left-color:var(--s-out)} .stripe-incoming{border-left-color:var(--s-incoming)}
+  .stripe-critical{border-left-color:var(--s-critical)} .stripe-reorder{border-left-color:var(--s-reorder)}
+  .stripe-overstock{border-left-color:var(--s-overstock)} .stripe-optimal{border-left-color:var(--s-optimal)}
+
+  .card{background:var(--surface);border:1px solid var(--hair);border-radius:var(--r-sm);padding:13px 15px}
+  .lane{display:grid;grid-template-columns:1fr auto 1fr auto;gap:14px;align-items:center}
+  .lane .end{min-width:0}
+  .lane .arw{color:var(--accent-ink);font-size:18px}
+  .lane .sku{font-family:var(--font-num);font-size:12.5px;font-weight:600}
+  .lane .st{font-size:12px;color:var(--ink-2)}
+  .lane .qv{text-align:right}
+  .lane .qv .q{font-family:var(--font-num);font-size:16px;font-weight:600}
+  .lane .qv .v{font-size:11px;color:var(--ink-2);font-family:var(--font-num)}
+  .tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:3px 8px;border-radius:99px;background:var(--surface-3);color:var(--ink-2)}
+  .tag.warn{background:color-mix(in srgb,var(--s-reorder) 16%,transparent);color:var(--s-reorder)}
+  .empty{text-align:center;color:var(--ink-3);padding:50px 20px;font-size:13px}
+
+  .scrim{position:fixed;inset:0;background:rgba(20,14,15,.42);opacity:0;pointer-events:none;transition:opacity .2s;z-index:40}
+  .scrim.open{opacity:1;pointer-events:auto}
+  .drawer{position:fixed;top:0;right:0;height:100%;width:min(460px,94vw);background:var(--surface);
+    box-shadow:var(--shadow-drawer);transform:translateX(100%);transition:transform .24s cubic-bezier(.4,0,.2,1);z-index:50;
+    display:flex;flex-direction:column;border-left:1px solid var(--hair)}
+  .drawer.open{transform:none}
+  .dhead{padding:18px 20px 14px;border-bottom:1px solid var(--hair);position:relative}
+  .dhead .sku{font-family:var(--font-num);font-size:15px;font-weight:700}
+  .dhead .desc{font-size:12.5px;color:var(--ink-2);margin-top:2px}
+  .dhead .store{font-size:13px;margin-top:8px;font-weight:600}
+  .dclose{position:absolute;top:14px;right:14px;width:30px;height:30px;border-radius:8px;border:1px solid var(--hair-2);
+    background:var(--surface);color:var(--ink-2);cursor:pointer;font-size:16px;line-height:1}
+  .dclose:hover{color:var(--ink)}
+  .dbody{padding:16px 20px 30px;overflow-y:auto;display:flex;flex-direction:column;gap:16px}
+  .reason{font-size:13px;background:var(--surface-2);border-radius:var(--r-sm);padding:11px 13px;color:var(--ink);border:1px solid var(--hair)}
+  .sec-t{font-size:10.5px;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-3);font-weight:700;margin-bottom:8px}
+  .grid4{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--hair);border:1px solid var(--hair);border-radius:var(--r-sm);overflow:hidden}
+  .cell{background:var(--surface);padding:9px 12px}
+  .cell .k{font-size:10.5px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.05em}
+  .cell .v{font-family:var(--font-num);font-size:16px;font-weight:600;margin-top:2px}
+  .action-box{border:1px solid var(--accent);background:var(--accent-soft);border-radius:var(--r-sm);padding:12px 14px}
+  .action-box .a{font-size:13.5px;font-weight:600;color:var(--ink)}
+  .action-box .a + .a{margin-top:8px}
+  .action-box .meta2{font-size:11.5px;color:var(--ink-2);margin-top:4px;font-family:var(--font-num)}
+  .note{font-size:12.5px;color:var(--ink-2);padding:10px 12px;border-radius:var(--r-sm);background:var(--surface-2);border:1px solid var(--hair)}
+  .note b{color:var(--ink)}
+  .whatif label{display:flex;justify-content:space-between;font-size:11.5px;color:var(--ink-2);margin:10px 0 2px}
+  .whatif label output{font-family:var(--font-num);color:var(--ink)}
+  .whatif input[type=range]{width:100%;accent-color:var(--accent)}
+  .whatif .res{margin-top:10px}
+
+  footer{border-top:1px solid var(--hair);padding:20px 0 40px;color:var(--ink-3);font-size:11.5px;line-height:1.7}
+  footer code{font-family:var(--font-num);font-size:11px;background:var(--surface-2);padding:1px 5px;border-radius:4px;color:var(--ink-2)}
+
+  @media (max-width:720px){
+    .kpis{grid-template-columns:1fr 1fr}
+    .kpi:last-child{grid-column:1/-1}
+    .head{flex-direction:column;align-items:flex-start;gap:10px}
+    .meta{text-align:left}
+    .item{grid-template-columns:auto 1fr auto;gap:6px 12px}
+    .item .metric{display:none}
+    .item>span:first-child{grid-row:1/3;align-self:center}
+    .item .idn{grid-column:2;grid-row:1}
+    .item .store{grid-column:2;grid-row:2}
+    .item .act{grid-column:3;grid-row:1/3;align-self:center}
+    .lane{grid-template-columns:1fr auto 1fr}
+    .lane .qv{grid-column:1/-1;text-align:left;display:flex;gap:14px;align-items:baseline}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="banner" id="banner"><div class="wrap">
+  <b id="bTitle"></b><span id="bReasons"></span>
+</div></div>
+
+<header>
+  <div class="wrap">
+    <div class="head">
+      <div class="brand">
+        <span class="pill" aria-hidden="true"></span>
+        <div>
+          <h1>Red Pill</h1>
+          <div class="sub" id="sub"></div>
+        </div>
+      </div>
+      <div class="meta" id="meta"></div>
+    </div>
+    <div class="kpis" id="kpis"></div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="wrap">
+    <div class="lenses" id="lenses"></div>
+    <div class="row2">
+      <div class="search">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="q" type="search" placeholder="Search SKU, store, style…" autocomplete="off">
+      </div>
+      <div class="chips" id="chips"></div>
+      <button class="btn" id="dlPlan">↓ Plan CSV</button>
+      <button class="btn" id="dlTransfers">↓ Transfers CSV</button>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <p class="lens-note" id="lensNote"></p>
+  <div id="view"></div>
+</main>
+
+<footer class="wrap" id="foot"></footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="SKU detail"></aside>
+
+<script type="application/json" id="data">__REPORT_JSON__</script>
+<script>
+"use strict";
+const R = JSON.parse(document.getElementById('data').textContent);
+const K = R.kpis, RUN = R.run, PARAMS = (R.engine && R.engine.parameters) || {};
+const F0 = n => '₹' + Math.round(n).toLocaleString('en-IN');
+const F = n => n >= 1e7 ? '₹' + (n/1e7).toFixed(2) + 'cr' : n >= 1e5 ? '₹' + (n/1e5).toFixed(1) + 'L' : F0(n);
+const SM = {
+  OUT_OF_STOCK:{lab:'Out of stock',cls:'out',v:'--s-out'}, INCOMING:{lab:'Incoming',cls:'incoming',v:'--s-incoming'},
+  CRITICAL:{lab:'Critical',cls:'critical',v:'--s-critical'}, REORDER:{lab:'Reorder',cls:'reorder',v:'--s-reorder'},
+  OVERSTOCK:{lab:'Overstock',cls:'overstock',v:'--s-overstock'}, OPTIMAL:{lab:'Healthy',cls:'optimal',v:'--s-optimal'}
+};
+const SEV = ['OUT_OF_STOCK','CRITICAL','REORDER','INCOMING','OVERSTOCK','OPTIMAL'];
+const ACT = new Set(['OUT_OF_STOCK','INCOMING','CRITICAL','REORDER']);
+const badge = s => `<span class="badge st-${SM[s].cls}"><span class="dot" style="background:var(${SM[s].v})"></span>${SM[s].lab}</span>`;
+const esc = s => (s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const dosTxt = d => d==null ? '—' : d;
+
+/* passthrough helpers: raw headers vary per file — find by normalized name */
+function attr(r, names){
+  for(const k of Object.keys(r.passthrough||{})){
+    const n = k.toLowerCase().replace(/[^a-z0-9]+/g,'_');
+    if(names.includes(n)) return r.passthrough[k];
+  }
+  return '';
+}
+const descOf = r => [attr(r,['style','style_name']), attr(r,['colour','color']),
+                     attr(r,['size'])].filter(Boolean).join(' · ');
+function reportedStatus(r){
+  const v = attr(r,['system_status','status','reported_status']);
+  if(!v) return null;
+  const norm = s => String(s).toUpperCase().replace(/[^A-Z]+/g,' ').trim();
+  const ours = norm(r.status), theirs = norm(v);
+  const map = {'OUT OF STOCK':'OUT OF STOCK','IN TRANSIT':'INCOMING','URGENT':'CRITICAL',
+               'REORDER':'REORDER','EXCESS':'OVERSTOCK','OK':'OPTIMAL'};
+  const mapped = map[theirs] !== undefined ? norm(map[theirs]) : theirs;
+  return mapped === ours ? null : v;   /* string comparison only — no math */
+}
+
+const state = {lens:'action', q:'', st:new Set(Object.keys(SM))};
+
+/* ---- header / banner / KPIs (all values verbatim from report.json) ---- */
+document.getElementById('sub').textContent = 'Inventory cockpit · data as of ' + RUN.as_of;
+document.getElementById('meta').innerHTML =
+  `<div><b>${K.rows}</b> rows processed · <b>${K.quarantined}</b> quarantined</div>`+
+  `<div>${esc(RUN.input_file)} · BF ${PARAMS.buffer_factor} · TF ${PARAMS.target_factor} · engine ${esc(R.engine.version)}</div>`;
+
+if(RUN.verdict !== 'healthy'){
+  const b = document.getElementById('banner');
+  b.classList.add('show'); if(RUN.verdict==='blocked') b.classList.add('blocked');
+  document.getElementById('bTitle').textContent = RUN.verdict === 'blocked'
+    ? '⛔ Blocked run — do not act on this output.' : '⚠ Degraded run — verify before acting.';
+  document.getElementById('bReasons').textContent = ' ' + (RUN.verdict_reasons||[]).join(' · ');
+}
+
+const sc = K.status_counts;
+document.getElementById('kpis').innerHTML = `
+  <div class="kpi">
+    <div class="lab">Health score</div>
+    <div class="val" style="color:var(--accent-ink)">${K.health_pct}<small>%</small></div>
+    <div class="track"><i style="width:${Math.min(100,K.health_pct)}%;background:${K.health_pct<50?'var(--s-critical)':K.health_pct<70?'var(--s-reorder)':'var(--s-optimal)'}"></i><span class="target" style="left:70%"></span></div>
+    <div class="hint">target ≥ 70% · healthy rows</div>
+  </div>
+  <div class="kpi">
+    <div class="lab">Action rate</div><div class="val">${K.action_rate_pct}<small>%</small></div>
+    <div class="hint"><span class="dot" style="background:var(--s-critical)"></span> ${K.actionable_rows} rows need a move</div>
+  </div>
+  <div class="kpi">
+    <div class="lab">Excess rate</div><div class="val">${K.excess_rate_pct}<small>%</small></div>
+    <div class="hint"><span class="dot" style="background:var(--s-overstock)"></span> ${sc.OVERSTOCK} overstock rows</div>
+  </div>
+  <div class="kpi">
+    <div class="lab">Net new order</div><div class="val">${F(K.net_order_value)}</div>
+    <div class="hint">potential · after ${K.transfers.count} transfers</div>
+  </div>
+  <div class="kpi">
+    <div class="lab">Transfer saving</div><div class="val">${F(K.transfers.est_saving)}</div>
+    <div class="hint">estimated · ${F(K.transfers.value)} moved</div>
+  </div>`;
+
+/* ---- lenses ---- */
+const rowsAll = R.rows;
+const adsFixes = R.ads_corrections || [];
+const LENSES = [
+  {id:'action', label:"Today's Actions", count:()=>R.urgency.length},
+  {id:'store', label:'By store', count:()=>new Set(rowsAll.map(r=>r.store)).size},
+  {id:'transfers', label:'Transfers', count:()=>R.transfers.length},
+  {id:'reorders', label:'Reorders', count:()=>rowsAll.filter(r=>r.reorder_qty_net>0).length},
+  {id:'signal', label:'Signal fixes', count:()=>adsFixes.length},
+  {id:'overstock', label:'Overstock', count:()=>sc.OVERSTOCK},
+  {id:'quarantine', label:'Quarantine', count:()=>R.quarantine.length},
+];
+const NOTES = {
+  action:"Every row that needs a move today — ranked by days of stock. Tap any row for its full story.",
+  store:'Health by store, worst first. Action = starved rows, excess = capital tied up.',
+  transfers:'Execute these first — an inter-store truck beats a supplier lead time and costs nothing new. Values are estimated.',
+  reorders:'Fresh purchase orders, net of transfers, most urgent first. Order values are potential spend, not commitments.',
+  signal:'Where the master demand rate disagrees with recent sales. Populated when demand analysis runs (a later phase, or via the skill).',
+  overstock:'Capital and shelf tied up. These are your transfer donors.',
+  quarantine:'Rows Red Pill refused to guess on. Each needs one answer, then a rerun.'
+};
+const lensBar = document.getElementById('lenses');
+lensBar.innerHTML = LENSES.map(l=>`<button class="lens" data-l="${l.id}" aria-pressed="${l.id===state.lens}">${l.label}<span class="c">${l.count()}</span></button>`).join('');
+lensBar.addEventListener('click',e=>{const b=e.target.closest('.lens');if(!b)return;state.lens=b.dataset.l;
+  [...lensBar.children].forEach(x=>x.setAttribute('aria-pressed', x.dataset.l===state.lens));render();});
+
+const chips=document.getElementById('chips');
+chips.innerHTML = SEV.map(s=>`<span class="chip" data-s="${s}" aria-pressed="true" title="${SM[s].lab}" role="button" tabindex="0"><span class="dot" style="background:var(${SM[s].v})"></span>${sc[s]||0}</span>`).join('');
+chips.addEventListener('click',e=>{const c=e.target.closest('.chip');if(!c)return;const s=c.dataset.s;
+  state.st.has(s)?state.st.delete(s):state.st.add(s);c.setAttribute('aria-pressed',state.st.has(s));render();});
+document.getElementById('q').addEventListener('input',e=>{state.q=e.target.value.toLowerCase().trim();render();});
+
+/* ---- rendering ---- */
+const rowKey = {}; rowsAll.forEach(r=>rowKey[r.sku+'|'+r.store]=r);
+const urgencySet = new Set(R.urgency.map(u=>u.sku+'|'+u.store));
+const matchQ = r => !state.q || (r.sku+' '+r.store+' '+descOf(r)).toLowerCase().includes(state.q);
+const penBar = r => {
+  const cap = Math.max(r.buffer*2, r.pipeline, 1);
+  const w = Math.min(100, r.pipeline/cap*100);
+  const rp = Math.min(100, r.rop/cap*100);
+  return `<div class="pen"><i style="width:${w}%;background:var(${SM[r.status].v})"></i><span class="rop" style="left:${rp}%"></span></div>
+    <div class="cap">pipe ${r.pipeline} · buf ${Math.round(r.buffer)} · ${dosTxt(r.days_of_stock)} days</div>`;
+};
+const actionCell = r => {
+  if(r.status==='OVERSTOCK'){return `<div class="big">+${Math.round(r.soh-r.buffer)}</div><div class="k">surplus</div>`;}
+  if(r.reorder_qty_net>0) return `<div class="big">${r.reorder_qty_net}</div><div class="k">order</div>`;
+  if(r.status==='INCOMING') return `<div class="big">${r.qoo}</div><div class="k">in transit</div>`;
+  return `<div class="big">—</div><div class="k">${SM[r.status].lab}</div>`;
+};
+const itemHTML = r => {
+  const rep = reportedStatus(r);
+  return `<button class="item stripe-${SM[r.status].cls}" data-sku="${esc(r.sku)}" data-store="${esc(r.store)}">
+  <span>${badge(r.status)}</span>
+  <span class="idn"><div class="sku">${esc(r.sku)}</div><div class="desc">${esc(descOf(r))}</div></span>
+  <span class="store">${esc(r.store)}${rep?`<span class="flag">▲ file said “${esc(rep)}”</span>`:''}</span>
+  <span class="metric">${penBar(r)}</span>
+  <span class="act">${actionCell(r)}</span>
+</button>`;};
+
+const view=document.getElementById('view');
+function empty(){return `<div class="empty">Nothing matches this lens and filter.</div>`;}
+function render(){
+  document.getElementById('lensNote').textContent = NOTES[state.lens];
+  const showChips = ['action','store','reorders','overstock'].includes(state.lens);
+  chips.style.display = showChips?'flex':'none';
+  const passRow = r => matchQ(r) && (!showChips || state.st.has(r.status));
+  let html='';
+  if(state.lens==='action'){
+    const rows=rowsAll.filter(r=>urgencySet.has(r.sku+'|'+r.store)&&passRow(r))
+      .sort((a,b)=>((a.days_of_stock??0)-(b.days_of_stock??0))||a.line-b.line);
+    html = rows.length?`<div class="list">${rows.map(itemHTML).join('')}</div>`:empty();
+  } else if(state.lens==='reorders'){
+    const rows=rowsAll.filter(r=>r.reorder_qty_net>0&&passRow(r))
+      .sort((a,b)=>((a.days_of_stock??0)-(b.days_of_stock??0))||a.line-b.line);
+    html = (rows.length?`<div class="list">${rows.map(itemHTML).join('')}</div>`:empty())+
+      `<div class="card" style="margin-top:12px">Total net order value (all reorder lines): <b class="num">${F(K.net_order_value)}</b> — potential spend${K.order_lines_missing_price?` · ⚠ ${K.order_lines_missing_price} line(s) missing a readable price`:''}.</div>`;
+  } else if(state.lens==='overstock'){
+    const rows=rowsAll.filter(r=>r.status==='OVERSTOCK'&&passRow(r)).sort((a,b)=>(b.soh-b.buffer)-(a.soh-a.buffer));
+    html = rows.length?`<div class="list">${rows.map(itemHTML).join('')}</div>`:empty();
+  } else if(state.lens==='store'){
+    const stores=[...new Set(rowsAll.map(r=>r.store))];
+    const groups=stores.map(st=>{
+      const rs=rowsAll.filter(r=>r.store===st);
+      return {store:st, rows:rs,
+        health: Math.round(100*rs.filter(x=>x.status==='OPTIMAL').length/rs.length),
+        action: rs.filter(x=>ACT.has(x.status)).length,
+        excess: rs.filter(x=>x.status==='OVERSTOCK').length};
+    }).sort((a,b)=>a.health-b.health);
+    html = groups.map(g=>{
+      const rows=g.rows.filter(r=>state.st.has(r.status)&&matchQ(r))
+        .sort((a,b)=>SEV.indexOf(a.status)-SEV.indexOf(b.status)||((a.days_of_stock??0)-(b.days_of_stock??0)));
+      if(!rows.length) return '';
+      const hc = g.health<50?'var(--s-critical)':g.health<70?'var(--s-reorder)':'var(--s-optimal)';
+      return `<div class="grouphdr"><h3>${esc(g.store)}</h3>
+        <span class="gh" style="color:${hc}">${g.health}% healthy</span>
+        <span class="gh">${g.action} action · ${g.excess} excess · ${g.rows.length} rows</span></div>
+        <div class="list">${rows.map(itemHTML).join('')}</div>`;
+    }).join('') || empty();
+  } else if(state.lens==='transfers'){
+    const t=R.transfers.filter(x=>!state.q||(x.sku+' '+x.from_store+' '+x.to_store).toLowerCase().includes(state.q))
+      .sort((a,b)=>(b.est_saving||0)-(a.est_saving||0));
+    html = t.length?`<div class="list">${t.map(x=>`<div class="card"><div class="lane">
+      <div class="end"><div class="sku">${esc(x.sku)}</div><div class="st">${esc(x.from_store)} · overstock donor</div></div>
+      <div class="arw">→</div>
+      <div class="end"><div class="st">to</div><div class="sku" style="font-weight:600">${esc(x.to_store)}</div></div>
+      <div class="qv"><div class="q">${x.qty}</div><div class="v">${x.value!=null?F0(x.value)+' moved · est. save '+F0(x.est_saving):'value n/a — donor price unreadable'}</div></div>
+    </div></div>`).join('')}</div>`:empty();
+  } else if(state.lens==='signal'){
+    html = adsFixes.length
+      ? `<div class="list">${adsFixes.map(a=>`<div class="card">${esc(JSON.stringify(a))}</div>`).join('')}</div>`
+      : `<div class="empty">No demand-signal corrections in this report.<br>They appear here when sales-history analysis runs.</div>`;
+  } else if(state.lens==='quarantine'){
+    html = R.quarantine.length?`<div class="list">${R.quarantine.map(g=>`<div class="card" style="border-left:3px solid var(--s-out)">
+      <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+        <div><span class="sku" style="font-family:var(--font-num);font-weight:600">${esc(g.sku||'—')}</span>
+          <span class="st" style="color:var(--ink-2)"> · ${esc(g.store||'—')} · line ${g.line}</span></div>
+        <span class="tag warn">needs answer</span></div>
+      <div style="font-size:12.5px;margin-top:6px">${esc(g.reason)}</div></div>`).join('')}</div>`
+      : `<div class="empty">Nothing quarantined — every row was usable. 🎉</div>`;
+  }
+  view.innerHTML = html;
+}
+
+/* ---- drawer + row-level what-if (G11: this row only, never plan totals) ---- */
+const drawer=document.getElementById('drawer'), scrim=document.getElementById('scrim');
+const tin={}, tout={};
+R.transfers.forEach(t=>{
+  (tin[t.sku+'|'+t.to_store]=tin[t.sku+'|'+t.to_store]||[]).push(t);
+  (tout[t.sku+'|'+t.from_store]=tout[t.sku+'|'+t.from_store]||[]).push(t);
+});
+function ladder(soh,qoo,ads,lt,bf,tf){   /* mirror of formulas.md — hypothetical display only */
+  const pipe=soh+qoo, rop=ads*lt, buf=rop*bf;
+  let st;
+  if(soh===0&&qoo===0) st='OUT_OF_STOCK';
+  else if(soh===0) st='INCOMING';
+  else if(pipe<0.5*rop) st='CRITICAL';
+  else if(pipe<rop) st='REORDER';
+  else if(soh>2*buf) st='OVERSTOCK';
+  else st='OPTIMAL';
+  const act=ACT.has(st);
+  return {pipe,rop,buf,st,days:ads>0?(pipe/ads):null,
+          reorder:act?Math.max(0,Math.ceil(ads*lt*tf-pipe)):0};
+}
+function openDrawer(sku,store){
+  const r=rowKey[sku+'|'+store]; if(!r)return;
+  const key=sku+'|'+store, rep=reportedStatus(r);
+  let action='';
+  if(r.reorder_qty_net>0){
+    action+=`<div class="action-box"><div class="a">Order ${r.reorder_qty_net} units${r.reorder_qty!==r.reorder_qty_net?` <span style="color:var(--ink-2);font-weight:500">(gross ${r.reorder_qty}, −${r.reorder_qty-r.reorder_qty_net} covered by transfer)</span>`:''}</div>
+      <div class="meta2">${r.order_value_net!=null?F0(r.order_value_net)+' potential · ':''}arrives ${r.expected_delivery} (LT ${r.lead_time}d)</div></div>`;
+  }
+  (tin[key]||[]).forEach(t=>{action+=`<div class="action-box" style="margin-top:8px"><div class="a">Receive ${t.qty} from ${esc(t.from_store)} <span style="color:var(--ink-2);font-weight:500">— faster than a fresh order</span></div></div>`;});
+  if(r.status==='OVERSTOCK'){
+    const dn=(tout[key]||[]);
+    action=`<div class="action-box"><div class="a">Donor: ${Math.round(r.soh-r.buffer)} units above buffer</div>`+
+      (dn.length?dn.map(t=>`<div class="a" style="font-weight:500;font-size:12.5px">→ send ${t.qty} to ${esc(t.to_store)}</div>`).join(''):`<div class="meta2">no matched receiver this run — hold or review for markdown</div>`)+`</div>`;
+  }
+  if(!action) action=`<div class="note">No action needed — buffer healthy.</div>`;
+  const prov=(r.provenance||[]).concat(r.warnings||[]);
+  drawer.innerHTML = `
+    <div class="dhead">
+      <button class="dclose" id="dc" aria-label="Close">✕</button>
+      <div class="sku">${esc(r.sku)}</div>
+      <div class="desc">${esc(descOf(r))}${attr(r,['supplier'])?' · '+esc(attr(r,['supplier'])):''}</div>
+      <div class="store">${esc(r.store)} &nbsp; ${badge(r.status)}</div>
+    </div>
+    <div class="dbody">
+      <div class="reason">${esc(r.status_reason)}</div>
+      <div><div class="sec-t">Recommended action</div>${action}</div>
+      <div><div class="sec-t">Inputs (from your file)</div>
+        <div class="grid4">
+          <div class="cell"><div class="k">SOH</div><div class="v">${r.soh}</div></div>
+          <div class="cell"><div class="k">QOO (in transit)</div><div class="v">${r.qoo}</div></div>
+          <div class="cell"><div class="k">ADS · units/day</div><div class="v">${r.ads}</div></div>
+          <div class="cell"><div class="k">Lead time</div><div class="v">${r.lead_time}<small style="font-size:11px"> d</small></div></div>
+        </div></div>
+      <div><div class="sec-t">Computed (recomputed from raw — never trusted from the file)</div>
+        <div class="grid4">
+          <div class="cell"><div class="k">Pipeline</div><div class="v">${r.pipeline}</div></div>
+          <div class="cell"><div class="k">Buffer</div><div class="v">${Math.round(r.buffer)}</div></div>
+          <div class="cell"><div class="k">ROP</div><div class="v">${Math.round(r.rop)}</div></div>
+          <div class="cell"><div class="k">Days of stock</div><div class="v">${dosTxt(r.days_of_stock)}</div></div>
+        </div></div>
+      ${rep?`<div class="note"><b>▲ Discrepancy.</b> Your file's status column says <b>${esc(rep)}</b>; the recomputed status is <b>${SM[r.status].lab}</b>. Recompute wins.</div>`:''}
+      ${prov.length?`<div class="note"><b>Data notes.</b> ${prov.map(esc).join(' · ')}</div>`:''}
+      <div class="whatif"><div class="sec-t">What-if — this row only (plan totals unchanged)</div>
+        <label>Daily sales rate <output id="wAdsV">${r.ads}</output></label>
+        <input type="range" id="wAds" min="${Math.max(0,Math.floor(r.ads*0.5))}" max="${Math.max(2,Math.ceil(r.ads*2))}" step="0.5" value="${r.ads}">
+        <label>Lead time (days) <output id="wLtV">${r.lead_time}</output></label>
+        <input type="range" id="wLt" min="1" max="30" step="1" value="${r.lead_time}">
+        <label>Buffer factor <output id="wBfV">${PARAMS.buffer_factor}</output></label>
+        <input type="range" id="wBf" min="1" max="3" step="0.1" value="${PARAMS.buffer_factor}">
+        <div class="res note" id="wRes"></div>
+      </div>
+    </div>`;
+  drawer.classList.add('open');drawer.setAttribute('aria-hidden','false');scrim.classList.add('open');
+  document.getElementById('dc').onclick=closeDrawer;
+  const upd=()=>{
+    const ads=+document.getElementById('wAds').value, lt=+document.getElementById('wLt').value,
+          bf=+document.getElementById('wBf').value;
+    document.getElementById('wAdsV').textContent=ads;
+    document.getElementById('wLtV').textContent=lt;
+    document.getElementById('wBfV').textContent=bf.toFixed(1);
+    const h=ladder(r.soh,r.qoo,ads,lt,bf,PARAMS.target_factor);
+    document.getElementById('wRes').innerHTML =
+      `Hypothetical: ${badge(h.st)} · ROP ${Math.round(h.rop)} · buffer ${Math.round(h.buf)} · `+
+      `days ${h.days==null?'—':h.days.toFixed(1)} · order ${h.reorder}`;
+  };
+  ['wAds','wLt','wBf'].forEach(id=>document.getElementById(id).addEventListener('input',upd));
+  upd();
+}
+function closeDrawer(){drawer.classList.remove('open');drawer.setAttribute('aria-hidden','true');scrim.classList.remove('open');}
+scrim.addEventListener('click',closeDrawer);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
+view.addEventListener('click',e=>{const it=e.target.closest('.item');if(!it)return;openDrawer(it.dataset.sku,it.dataset.store);});
+
+/* ---- CSV downloads (values verbatim from report.json) ---- */
+function dl(name, lines){
+  const blob=new Blob([lines.join('\n')],{type:'text/csv'});const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);a.download=name;a.click();URL.revokeObjectURL(a.href);
+}
+const csvCell=v=>{if(v==null)return'';v=String(v);return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;};
+document.getElementById('dlPlan').addEventListener('click',()=>{
+  const head=['sku','store','status','soh','qoo','ads','lead_time','pipeline','buffer','rop',
+              'days_of_stock','reorder_qty','reorder_qty_net','order_value_net','expected_delivery'];
+  dl('redpill_plan.csv',[head.join(',')].concat(
+    rowsAll.map(r=>head.map(h=>csvCell(r[h])).join(','))));
+});
+document.getElementById('dlTransfers').addEventListener('click',()=>{
+  const head=['sku','from_store','to_store','qty','value','est_saving'];
+  dl('redpill_transfers.csv',[head.join(',')].concat(
+    R.transfers.map(t=>head.map(h=>csvCell(t[h])).join(','))));
+});
+
+/* ---- footer ---- */
+document.getElementById('foot').innerHTML =
+  `<div><b style="color:var(--ink-2)">Red Pill</b> — Theory-of-Constraints buffer management · advisory only: it recommends, you execute.</div>
+   <div style="margin-top:6px">Every number on this page comes verbatim from <code>report.json</code> (schema ${esc(R.schema_version)}). `+
+   `Money labels: order values are <b>potential</b> spend; transfer savings are <b>estimated</b> at the ${Math.round((PARAMS.savings_rate||0.15)*100)}% default rate; realised impact is not tracked. `+
+   ((R.warnings||[]).length?`${R.warnings.length} data warning(s) — see row drawers and the Quarantine lens. `:'')+
+   `Assumptions: ${esc((R.assumptions||[]).join(' · ')||'none')}.</div>`;
+
+render();
+</script>
+</body>
+</html>

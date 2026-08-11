@@ -436,7 +436,7 @@ function render(){
       <div class="end"><div class="sku">${esc(x.sku)}</div><div class="st">${esc(x.from_store)} · overstock donor</div></div>
       <div class="arw">→</div>
       <div class="end"><div class="st">to</div><div class="sku" style="font-weight:600">${esc(x.to_store)}</div></div>
-      <div class="qv"><div class="q">${x.qty}</div><div class="v">${x.value!=null?F0(x.value)+' moved · est. save '+F0(x.est_saving):'value n/a — donor price unreadable'}</div></div>
+      <div class="qv"><div class="q">${x.qty}</div><div class="v">${x.value!=null?F0(x.value)+' moved · est. save '+F0(x.est_saving)+(x.est_transfer_cost!=null?' · cost '+F0(x.est_transfer_cost)+' · net '+F0(x.net_benefit):''):'value n/a — donor price unreadable'}</div></div>
     </div></div>`).join('')}</div>`:empty();
   } else if(state.lens==='signal'){
     const fx=adsFixes.filter(a=>!state.q||(a.sku+' '+a.store).toLowerCase().includes(state.q))

@@ -567,10 +567,11 @@ class TestModelRealism(Base):
 class TestReleaseHardening(Base):
     """Phase 5 (G30): frozen snapshot golden + schema contract."""
 
-    # sha256 of the whole v1 report.json at engine 2.2.0 / as-of 2026-08-10.
+    # sha256 of the whole v1 report.json at engine 2.3.0 / as-of 2026-08-10.
     # ANY behavior change breaks this on purpose: change SPEC + this pin together,
     # in the same commit, with a reason.
-    REPORT_SHA256 = "bedfb5067aa844ef725372bdceea42f152bd65b7f782b3bc6cf3327b79a4cb7b"
+    # 2.3.0 pin update: G34 incoming-risk fields + G35 transfer-economics fields added.
+    REPORT_SHA256 = "03e2735e92f20547db5a55a8fd484b2e3309fb5265cbd16d0c1ec41db0bfaef7"
 
     def test_full_report_snapshot_frozen(self):
         import hashlib
@@ -589,7 +590,8 @@ class TestReleaseHardening(Base):
         for key in ("rows", "quarantined", "status_counts", "health_pct",
                     "action_rate_pct", "excess_rate_pct", "actionable_rows",
                     "gross_order_value", "net_order_value", "transfers",
-                    "money_labels", "overcommit_count", "weighted_health_pct"):
+                    "money_labels", "overcommit_count", "weighted_health_pct",
+                    "incoming_risk_count"):
             self.assertIn(key, k, key)
         row = r["rows"][0]
         for key in ("line", "sku", "store", "soh", "qoo", "ads", "lead_time",
@@ -600,3 +602,61 @@ class TestReleaseHardening(Base):
             self.assertIn(key, row, key)
         for run_key in ("verdict", "verdict_reasons", "as_of", "input_sha256"):
             self.assertIn(run_key, r["run"], run_key)
+
+
+class TestPartialsClosed(Base):
+    """G34 (incoming risk) and G35 (transfer economics) — closing the two partials."""
+
+    def test_incoming_insufficiency_flagged(self):           # G34
+        k = self.report["kpis"]
+        self.assertGreater(k["incoming_risk_count"], 0)
+        flagged = [r for r in self.report["rows"] if r["incoming_risk"]]
+        self.assertEqual(len(flagged), k["incoming_risk_count"])
+        for r in flagged:
+            self.assertEqual(r["status"], "INCOMING")
+            self.assertLess(r["pipeline"], r["rop"])         # only insufficient inbound flags
+        self.assertTrue(any("no expected receipt date" in a
+                            for a in self.report["assumptions"]))
+
+    def test_incoming_lateness_via_eta(self):                # G34 ETA path
+        with tempfile.TemporaryDirectory() as td:
+            f = os.path.join(td, "eta.csv")
+            with open(f, "w") as fh:
+                fh.write("sku,store,soh,qoo,ads,lead_time,expected_receipt_date\n"
+                         "A,S1,0,50,2,5,2026-08-25\n")   # arrives day 15 > LT 5
+            proc, rep = run_engine(f, os.path.join(td, "run"))
+            r = jload(rep)
+            row = r["rows"][0]
+            self.assertEqual(row["status"], "INCOMING")
+            self.assertIn("later than a fresh order", row["incoming_risk"])
+
+    def test_transfer_costs_and_net_benefit(self):           # G35
+        proc, rep = run_engine(self.v1, os.path.join(self.tmp, "run_cost"),
+                               extra=["--transfer-cost-per-unit", "5"])
+        r = jload(rep)
+        t0 = r["transfers"][0]
+        self.assertEqual(t0["est_transfer_cost"], t0["qty"] * 5)
+        self.assertAlmostEqual(t0["net_benefit"],
+                               t0["est_saving"] - t0["est_transfer_cost"], places=2)
+        k = r["kpis"]["transfers"]
+        self.assertAlmostEqual(k["net_benefit"], k["est_saving"] - k["est_cost"], places=2)
+
+    def test_cost_unknown_stays_null_not_zero(self):         # G35 honesty
+        for t in self.report["transfers"]:
+            self.assertIsNone(t["est_transfer_cost"])
+            self.assertIsNone(t["net_benefit"])
+        self.assertIsNone(self.report["kpis"]["transfers"]["est_cost"])
+
+    def test_per_lane_cost_policy(self):                     # G35 lane override
+        pol = os.path.join(self.tmp, "lane_cost.json")
+        with open(pol, "w") as f:
+            json.dump({"lane_costs": [["Mumbai - Andheri", "Chennai", 12]]}, f)
+        proc, rep = run_engine(self.v1, os.path.join(self.tmp, "run_lane"),
+                               extra=["--policies", pol])
+        r = jload(rep)
+        lane = [t for t in r["transfers"]
+                if t["from_store"] == "Mumbai - Andheri" and t["to_store"] == "Chennai"]
+        self.assertTrue(lane)
+        self.assertEqual(lane[0]["est_transfer_cost"], lane[0]["qty"] * 12)
+        other = [t for t in r["transfers"] if t["from_store"] != "Mumbai - Andheri"]
+        self.assertTrue(all(t["est_transfer_cost"] is None for t in other))

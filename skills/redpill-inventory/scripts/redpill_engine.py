@@ -47,8 +47,8 @@ import shutil
 import sys
 from datetime import date, timedelta
 
-ENGINE_VERSION = "2.2.0"
-SCHEMA_VERSION = "2.2.0"
+ENGINE_VERSION = "2.3.0"
+SCHEMA_VERSION = "2.3.0"
 
 STATUSES = ["OUT_OF_STOCK", "INCOMING", "CRITICAL", "REORDER", "OVERSTOCK", "OPTIMAL"]
 ACTIONABLE = {"OUT_OF_STOCK", "INCOMING", "CRITICAL", "REORDER"}
@@ -190,13 +190,16 @@ def sellable(r):
     return max(0.0, s_)
 
 
-def build_transfers(rows, savings_rate, warnings, transfer_days=0, policies=None):
+def build_transfers(rows, savings_rate, warnings, transfer_days=0, policies=None,
+                    cost_per_unit=0.0):
     """Per-SKU greedy pairing: largest deficit <- largest surplus.
     Donors keep their full buffer by construction (surplus = sellable - buffer).
     Gates (G22/G25): lane time vs supplier LT, case packs, lane blacklist,
     protected donor stores. Every gate application is disclosed."""
     pol = policies or {}
     protected = {str(x).lower() for x in pol.get("protected_stores", [])}
+    lane_cost = {(str(a).lower(), str(b).lower()): float(c)
+                 for a, b, c in pol.get("lane_costs", [])}
     blacklist = {(str(a).lower(), str(b).lower())
                  for a, b in pol.get("no_transfer_lanes", [])}
     notes = []
@@ -247,10 +250,18 @@ def build_transfers(rows, savings_rate, warnings, transfer_days=0, policies=None
                 if value is None:
                     warnings.append(f"transfer {sku} {don['store']}->{recv['store']}: "
                                     f"donor price missing — value/saving omitted")
+                cpu = lane_cost.get((don["store"].lower(), recv["store"].lower()),
+                                    cost_per_unit)
+                est_saving = round(value * savings_rate, 2) if value is not None else None
+                est_cost = round(qty * cpu, 2) if cpu else None          # G35: cost if known
+                net_benefit = (round(est_saving - est_cost, 2)
+                               if est_saving is not None and est_cost is not None else None)
                 transfers.append({
                     "sku": sku, "from_store": don["store"], "to_store": recv["store"],
                     "qty": qty, "value": value,
-                    "est_saving": round(value * savings_rate, 2) if value is not None else None,
+                    "est_saving": est_saving,
+                    "est_transfer_cost": est_cost,          # null = cost unknown, not zero
+                    "net_benefit": net_benefit,
                 })
                 surplus[don["line"]] -= qty
                 deficit[recv["line"]] -= qty
@@ -758,8 +769,40 @@ def run(args):
 
     transfers, transfer_notes = build_transfers(
         rows, args.savings_rate, warnings,
-        transfer_days=args.transfer_days, policies=policies)
+        transfer_days=args.transfer_days, policies=policies,
+        cost_per_unit=args.transfer_cost_per_unit)
     gaps = build_candidates(gaps, rows, src)
+
+    # INCOMING sufficiency/lateness risk (G34)
+    incoming_risk = 0
+    incoming_no_eta = False
+    for r in rows:
+        r["incoming_risk"] = None
+        if r["status"] != "INCOMING":
+            continue
+        risks = []
+        if r["pipeline"] < 0.5 * r["rop"]:
+            risks.append("inbound covers under half the danger line — order more now")
+        elif r["pipeline"] < r["rop"]:
+            risks.append("inbound stays below the reorder point — top-up order needed")
+        eta = r.get("expected_receipt_date")
+        if eta:
+            try:
+                eta_d = date.fromisoformat(str(eta))
+                if (eta_d - as_of).days > r["lead_time"]:
+                    risks.append(f"arrives {eta} — later than a fresh order "
+                                 f"({r['lead_time']:g}d) would")
+            except ValueError:
+                risks.append(f"expected receipt date '{eta}' unreadable")
+        else:
+            incoming_no_eta = True
+        if risks:
+            r["incoming_risk"] = "; ".join(risks)
+            r["warnings"].append("incoming risk: " + r["incoming_risk"])
+            incoming_risk += 1
+    if incoming_no_eta:
+        assumptions.append("INCOMING rows carry no expected receipt date — inbound is "
+                           "assumed to arrive within its lead time (lower confidence)")
 
     # overcommit flag (G24) + ATP disclosure (G26) + mitigations (G28)
     overcommit = 0
@@ -816,10 +859,19 @@ def run(args):
             "units": sum(t["qty"] for t in transfers),
             "value": round(sum(t["value"] or 0 for t in transfers), 2),
             "est_saving": round(sum(t["est_saving"] or 0 for t in transfers), 2),
+            "est_cost": (round(sum(t["est_transfer_cost"] for t in transfers
+                                   if t["est_transfer_cost"] is not None), 2)
+                         if any(t["est_transfer_cost"] is not None for t in transfers)
+                         else None),
+            "net_benefit": (round(sum(t["net_benefit"] for t in transfers
+                                      if t["net_benefit"] is not None), 2)
+                            if any(t["net_benefit"] is not None for t in transfers)
+                            else None),
             "missing_value_count": sum(1 for t in transfers if t["value"] is None),
         },
         "money_labels": {"order_values": "potential", "transfer_savings": "estimated"},
         "overcommit_count": overcommit,
+        "incoming_risk_count": incoming_risk,
         "weighted_health_pct": weighted_health,
         "ads_corrections_count": len(ads_corrections),
         "size_curve_breaks_count": len(curve_breaks),
@@ -1012,7 +1064,7 @@ def rerun(run_dir):
         overrides=os.path.join(run_dir, "overrides.json"),
         mappings=os.path.join(run_dir, "mappings.json"),
         config=os.path.join(run_dir, "config.json"),
-        max_ads_swing=0.5, transfer_days=0, budget=0,
+        max_ads_swing=0.5, transfer_days=0, budget=0, transfer_cost_per_unit=0,
         policies=os.path.join(run_dir, "policies.json"),
         apply_ads_corrections=False,
     )
@@ -1056,6 +1108,9 @@ def main():
     p.add_argument("--transfer-days", type=float, default=0,
                    help="inter-store truck time in days; receivers whose supplier is "
                         "faster get a fresh order instead (0 = gate off, G22)")
+    p.add_argument("--transfer-cost-per-unit", type=float, default=0,
+                   help="flat per-unit transfer cost; per-lane overrides via policies "
+                        "lane_costs [[from,to,cost]] (0 = unknown, fields stay null; G35)")
     p.add_argument("--budget", type=float, default=0,
                    help="purchase budget; orders split within/deferred by urgency (G23)")
     p.add_argument("--policies", help="policies.json: protected_stores, "

@@ -133,6 +133,13 @@ Lane gate      : with --transfer-days T, a receiver whose supplier LT ≤ T orde
 Case packs     : transfer quantities floor to whole packs; below one pack ⇒ skipped (G22)
 Policies       : protected donor stores · blocked lanes · no-reorder SKUs (clearance) (G25)
 Budget         : --budget B splits net orders (urgency order) into within / deferred (G23)
+Incoming risk  : INCOMING rows are graded — inbound below ½×ROP ("order more now") or
+                 below ROP ("top-up needed"); a known receipt date later than the lead
+                 time ⇒ "later than a fresh order would be"; no receipt date ⇒ disclosed
+                 assumption, lower confidence                            (G34)
+Transfer cost  : per-unit cost via --transfer-cost-per-unit or per-lane policies
+                 lane_costs; est cost and net benefit (saving − cost) emitted per
+                 transfer and in totals; unknown cost stays null, never zero (G35)
 Mitigation     : OOS/CRITICAL with no inbound and supply landing after the stockout ⇒
                  "expedite, substitute, or hold remaining for full price" (G28)
 Segments       : ABC by revenue-rate share (70/90 cumulative), XYZ by CV

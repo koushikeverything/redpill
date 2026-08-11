@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.0.1 — 2026-08-11
+
+Closes the two post-release partials found by the documentation completeness sweep
+(engine 2.3.0, snapshot golden re-pinned with reason):
+
+- **G34 — incoming risk**: INCOMING rows are graded — inbound insufficient (below the
+  reorder point / below half of it) or late (known receipt date beyond the lead time);
+  rows without a receipt date carry a disclosed assumption. `kpis.incoming_risk_count`.
+- **G35 — transfer economics**: per-transfer estimated cost (per-unit flag or per-lane
+  `lane_costs` policy) and net benefit (saving − cost); unknown cost stays null, never
+  zero. Totals in `kpis.transfers`. Cockpit transfer cards show cost/net when known.
+- Gap register: **G1–G35 fully closed.** Test suite: 53.
+
 ## 2.0.0 — 2026-08-11 · "the honest cockpit" release
 
 The v2 rebuild: from a markdown-report skill to a deterministic engine + interactive

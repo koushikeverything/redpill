@@ -490,3 +490,39 @@ submission to the Anthropic plugin directory.
 are the deliberate v2/fork-shelf items (roadmap.md §3b–3c): historical replay, run-diff mode,
 DC node, lifecycle rules, substitution — plus the commercial cluster behind the paid-pilot
 gate. Red Pill v2.0.0 is release-ready.
+
+
+---
+
+## 14. Post-release errata (found writing HOW-IT-WORKS.md, 2026-08-11)
+
+Documenting the build end-to-end surfaced two gap-register overstatements in §13's
+"G1–G35 closed" claim:
+
+- **G34 — partial.** The `expected_receipt_date` column is parsed and carried (schema hedge),
+  but the INCOMING sufficiency/lateness risk flag ("is the inbound enough, and will it arrive
+  in time?") was never implemented. Open item → next minor release.
+- **G35 — partial.** Value *moved* vs value *saved* are separated everywhere (engine +
+  cockpit labels), but per-lane estimated transfer cost and net-benefit fields don't exist.
+  Open item → pairs naturally with lane costs when a user supplies them.
+
+Neither affects any shipped number's correctness; both are absence-of-feature, disclosed in
+README's limitations by implication. Gap register status: **33 closed, 2 partial.**
+
+
+---
+
+## 15. Partials closed (2026-08-11, engine 2.3.0 / plugin 2.0.1)
+
+- **G34 closed**: INCOMING rows graded for sufficiency (inbound < ROP → "top-up needed";
+  < ½ROP → "order more now") and lateness (parsed `expected_receipt_date` beyond lead time →
+  "later than a fresh order would be"; unreadable dates flagged); rows without a date roll up
+  into one disclosed run assumption. `kpis.incoming_risk_count`; risks surface in row
+  warnings/drawer.
+- **G35 closed**: per-transfer `est_transfer_cost` (flat `--transfer-cost-per-unit` or
+  per-lane `policies.lane_costs [[from,to,cost]]`) and `net_benefit` = saving − cost; unknown
+  cost stays **null, never zero** (an honest unknown beats a fake number); totals in
+  `kpis.transfers`; cockpit transfer cards render cost/net when known.
+- Snapshot golden intentionally broke and was re-pinned with the reason in the same commit —
+  the freeze discipline working exactly as designed. Suite: 48 → **53 green**.
+- **Gap register final: G1–G35 all closed.**

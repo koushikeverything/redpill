@@ -526,3 +526,18 @@ README's limitations by implication. Gap register status: **33 closed, 2 partial
 - Snapshot golden intentionally broke and was re-pinned with the reason in the same commit —
   the freeze discipline working exactly as designed. Suite: 48 → **53 green**.
 - **Gap register final: G1–G35 all closed.**
+
+
+---
+
+## 16. Cockpit Claude-UI restyle (2026-08-12, plugin 2.0.2)
+
+User-approved restyle of the cockpit template to Claude's design language. **Style layer
+only** — markup, JS, and behavior byte-compatible; renderer tests unchanged and green (53).
+Tokens matched to claude.ai's shipped web design system (the referenced community Figma file
+is view-only, so the Figma MCP could not export values — the file's token tables visibly
+mirror the shipped tokens; a pixel-match pass is possible if the user duplicates the file to
+an editable copy). Additions: pixel-block RED PILL wordmark (inline SVG, theme-aware,
+accessible label), and a persistent light/dark toggle (data-theme override + localStorage,
+presentation-only). QA: both themes, toggle both directions + persistence, drawer/lenses/
+what-if functional, production-rendered output verified in-browser.

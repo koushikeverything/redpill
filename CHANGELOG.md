@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.0.2 — 2026-08-12
+
+Cockpit restyled in Claude's design language (UI only — markup, UX, and behavior untouched;
+all 53 tests green, no golden changes):
+- Claude web tokens: ivory/charcoal grounds, warm ink, terracotta accent, muted status hues
+  tuned for both themes; Claude-style pill toggles, buttons, and radii.
+- Pixel-block "RED PILL" wordmark (Claude Code style) as inline SVG — no font files.
+- New light/dark toggle (top right): overrides the system theme, persists locally,
+  presentation-only.
+
 ## 2.0.1 — 2026-08-11
 
 Closes the two post-release partials found by the documentation completeness sweep

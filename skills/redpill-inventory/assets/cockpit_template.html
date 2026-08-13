@@ -82,7 +82,7 @@
     :root:not([data-theme]) .theme-btn .ic-sun{display:block}}
   .meta b{color:var(--ink);font-weight:600}
 
-  .kpis{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:1px;background:var(--hair);
+  .kpis{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr 1fr;gap:1px;background:var(--hair);
     border:1px solid var(--hair);border-radius:var(--r);overflow:hidden;margin:2px 0 18px}
   .kpi{background:var(--surface);padding:14px 16px;min-width:0}
   .kpi .lab{font-size:11px;text-transform:none;letter-spacing:.01em;color:var(--ink-2);font-weight:500}
@@ -121,6 +121,23 @@
 
   main{padding:16px 0 60px;min-height:50vh}
   .lens-note{font-size:12.5px;color:var(--ink-2);margin:0 0 12px}
+  /* secondary segmented control — deliberately quieter than the lens pills */
+  .sortseg{display:inline-flex;gap:2px;background:var(--surface-2);border:1px solid var(--hair);
+    border-radius:999px;padding:2px;margin:0 0 10px}
+  .sortbtn{appearance:none;border:0;background:transparent;color:var(--ink-2);font:inherit;
+    font-size:11.5px;padding:4px 11px;border-radius:999px;cursor:pointer;transition:color .12s}
+  .sortbtn:hover{color:var(--ink)}
+  .sortbtn[aria-pressed="true"]{background:var(--surface);color:var(--ink);font-weight:600;
+    box-shadow:0 1px 2px rgba(31,30,29,.10)}
+  /* download menu (single button + dropdown) */
+  .dl{position:relative}
+  .dlmenu{position:absolute;right:0;top:calc(100% + 6px);background:var(--surface);
+    border:1px solid var(--hair-2);border-radius:var(--r-sm);box-shadow:var(--shadow);
+    min-width:180px;padding:4px;z-index:40}
+  .dlitem{display:block;width:100%;text-align:left;appearance:none;border:0;background:transparent;
+    color:var(--ink);font:inherit;font-size:12.5px;padding:8px 10px;border-radius:8px;cursor:pointer}
+  .dlitem:hover{background:var(--surface-2)}
+  .dlitem small{display:block;color:var(--ink-3);font-size:11px;margin-top:1px}
   .list{display:flex;flex-direction:column;gap:7px}
   .grouphdr{display:flex;align-items:center;gap:12px;margin:18px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--hair)}
   .grouphdr h3{margin:0;font-size:13px;letter-spacing:.02em}
@@ -255,8 +272,13 @@
         <input id="q" type="search" placeholder="Search SKU, store, style…" autocomplete="off">
       </div>
       <div class="chips" id="chips"></div>
-      <button class="btn" id="dlPlan">↓ Plan CSV</button>
-      <button class="btn" id="dlTransfers">↓ Transfers CSV</button>
+      <div class="dl">
+        <button class="btn" id="dlBtn" aria-haspopup="true" aria-expanded="false">↓ Download CSV</button>
+        <div class="dlmenu" id="dlMenu" role="menu" hidden>
+          <button class="dlitem" id="dlPlan" role="menuitem">Plan CSV<small>every row: statuses, covers, orders</small></button>
+          <button class="dlitem" id="dlTransfers" role="menuitem">Transfers CSV<small>the inter-store move list</small></button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -292,6 +314,8 @@
 })();
 const R = JSON.parse(document.getElementById('data').textContent);
 const K = R.kpis, RUN = R.run, PARAMS = (R.engine && R.engine.parameters) || {};
+const FI = K.financial_impact || {};
+const AP = R.assumptions_and_policies || {};
 const F0 = n => '₹' + Math.round(n).toLocaleString('en-IN');
 const F = n => n >= 1e7 ? '₹' + (n/1e7).toFixed(2) + 'cr' : n >= 1e5 ? '₹' + (n/1e5).toFixed(1) + 'L' : F0(n);
 const SM = {
@@ -326,7 +350,7 @@ function reportedStatus(r){
   return mapped === ours ? null : v;   /* string comparison only — no math */
 }
 
-const state = {lens:'action', q:'', st:new Set(Object.keys(SM))};
+const state = {lens:'action', q:'', st:new Set(Object.keys(SM)), sort:'urgency'};
 
 /* ---- header / banner / KPIs (all values verbatim from report.json) ---- */
 document.getElementById('sub').textContent = 'Inventory cockpit · data as of ' + RUN.as_of;
@@ -365,6 +389,10 @@ document.getElementById('kpis').innerHTML = `
   <div class="kpi">
     <div class="lab">Transfer saving</div><div class="val">${F(K.transfers.est_saving)}</div>
     <div class="hint">estimated · ${F(K.transfers.value)} moved</div>
+  </div>
+  <div class="kpi">
+    <div class="lab">Revenue at risk</div><div class="val">${F(FI.daily_revenue_at_risk||0)}<small>/day</small></div>
+    <div class="hint">estimated · while out-of-stock &amp; critical rows sit empty</div>
   </div>`;
 
 /* ---- lenses ---- */
@@ -378,6 +406,7 @@ const LENSES = [
   {id:'signal', label:'Signal fixes', count:()=>adsFixes.length},
   {id:'overstock', label:'Overstock', count:()=>sc.OVERSTOCK},
   {id:'quarantine', label:'Quarantine', count:()=>R.quarantine.length},
+  {id:'policy', label:'Assumptions', count:()=>((AP.assumptions||R.assumptions||[]).length+(AP.policy_applications||[]).length)},
 ];
 const NOTES = {
   action:"Every row that needs a move today — ranked by days of stock. Tap any row for its full story.",
@@ -386,7 +415,8 @@ const NOTES = {
   reorders:'Fresh purchase orders, net of transfers, most urgent first. Order values are potential spend, not commitments.',
   signal:'Where the master demand rate disagrees with recent sales — computed from your file\'s own history (empty-shelf and promo weeks handled). Changes need your approval.',
   overstock:'Capital and shelf tied up. These are your transfer donors.',
-  quarantine:'Rows Red Pill refused to guess on. Each needs one answer, then a rerun.'
+  quarantine:'Rows Red Pill refused to guess on. Each needs one answer, then a rerun.',
+  policy:'Every configurable business choice and disclosed assumption behind this run — policy values are choices someone can defend or change, not mathematical facts.'
 };
 const lensBar = document.getElementById('lenses');
 lensBar.innerHTML = LENSES.map(l=>`<button class="lens" data-l="${l.id}" aria-pressed="${l.id===state.lens}">${l.label}<span class="c">${l.count()}</span></button>`).join('');
@@ -408,7 +438,7 @@ const penBar = r => {
   const w = Math.min(100, r.pipeline/cap*100);
   const rp = Math.min(100, r.rop/cap*100);
   return `<div class="pen"><i style="width:${w}%;background:var(${SM[r.status].v})"></i><span class="rop" style="left:${rp}%"></span></div>
-    <div class="cap">pipe ${r.pipeline} · buf ${Math.round(r.buffer)} · ${dosTxt(r.days_of_stock)} days</div>`;
+    <div class="cap">pipe ${r.pipeline} · buf ${Math.round(r.buffer)} · ${dosTxt(r.days_of_stock)} days${r.daily_revenue_at_risk!=null?' · '+F0(r.daily_revenue_at_risk)+'/d at risk':''}</div>`;
 };
 const actionCell = r => {
   if(r.status==='OVERSTOCK'){return `<div class="big">+${Math.round(r.soh-r.buffer)}</div><div class="k">surplus</div>`;}
@@ -435,9 +465,15 @@ function render(){
   const passRow = r => matchQ(r) && (!showChips || state.st.has(r.status));
   let html='';
   if(state.lens==='action'){
+    const byValue = state.sort==='value';
     const rows=rowsAll.filter(r=>urgencySet.has(r.sku+'|'+r.store)&&passRow(r))
-      .sort((a,b)=>((a.days_of_stock??0)-(b.days_of_stock??0))||a.line-b.line);
-    html = rows.length?`<div class="list">${rows.map(itemHTML).join('')}</div>`:empty();
+      .sort(byValue
+        ?(a,b)=>((b.daily_revenue_at_risk??-1)-(a.daily_revenue_at_risk??-1))||((a.days_of_stock??0)-(b.days_of_stock??0))||a.line-b.line
+        :(a,b)=>((a.days_of_stock??0)-(b.days_of_stock??0))||a.line-b.line);
+    const ctl=`<div class="sortseg" role="group" aria-label="Ranking">
+      <button class="sortbtn" data-srt="urgency" aria-pressed="${!byValue}">Rank by urgency</button>
+      <button class="sortbtn" data-srt="value" aria-pressed="${byValue}">Rank by ₹ at risk</button></div>`;
+    html = ctl+(rows.length?`<div class="list">${rows.map(itemHTML).join('')}</div>`:empty());
   } else if(state.lens==='reorders'){
     const rows=rowsAll.filter(r=>r.reorder_qty_net>0&&passRow(r))
       .sort((a,b)=>((a.days_of_stock??0)-(b.days_of_stock??0))||a.line-b.line);
@@ -445,7 +481,8 @@ function render(){
       `<div class="card" style="margin-top:12px">Total net order value (all reorder lines): <b class="num">${F(K.net_order_value)}</b> — potential spend${K.order_lines_missing_price?` · ⚠ ${K.order_lines_missing_price} line(s) missing a readable price`:''}.</div>`;
   } else if(state.lens==='overstock'){
     const rows=rowsAll.filter(r=>r.status==='OVERSTOCK'&&passRow(r)).sort((a,b)=>(b.soh-b.buffer)-(a.soh-a.buffer));
-    html = rows.length?`<div class="list">${rows.map(itemHTML).join('')}</div>`:empty();
+    html = (rows.length?`<div class="list">${rows.map(itemHTML).join('')}</div>`:empty())+
+      (FI.capital_tied_up?`<div class="card" style="margin-top:12px">Capital tied up above buffer (all overstock rows): <b class="num">${F(FI.capital_tied_up)}</b> — estimated${FI.overstock_rows_missing_price?` · ⚠ ${FI.overstock_rows_missing_price} row(s) missing a readable price`:''}.</div>`:'');
   } else if(state.lens==='store'){
     const stores=[...new Set(rowsAll.map(r=>r.store))];
     const groups=stores.map(st=>{
@@ -472,7 +509,7 @@ function render(){
       <div class="end"><div class="sku">${esc(x.sku)}</div><div class="st">${esc(x.from_store)} · overstock donor</div></div>
       <div class="arw">→</div>
       <div class="end"><div class="st">to</div><div class="sku" style="font-weight:600">${esc(x.to_store)}</div></div>
-      <div class="qv"><div class="q">${x.qty}</div><div class="v">${x.value!=null?F0(x.value)+' moved · est. save '+F0(x.est_saving)+(x.est_transfer_cost!=null?' · cost '+F0(x.est_transfer_cost)+' · net '+F0(x.net_benefit):''):'value n/a — donor price unreadable'}</div></div>
+      <div class="qv"><div class="q">${x.qty}</div><div class="v">${x.value!=null?F0(x.value)+' moved · est. save '+F0(x.est_saving)+(x.est_transfer_cost!=null?' · cost '+F0(x.est_transfer_cost)+' · net '+F0(x.net_benefit):''):'value n/a — donor price unreadable'}${x.receiver_dry_before_arrival_days!=null?`<div style="color:var(--s-reorder);font-weight:600">⚠ receiver dry ${x.receiver_dry_before_arrival_days}d before the truck lands — expedite</div>`:''}</div></div>
     </div></div>`).join('')}</div>`:empty();
   } else if(state.lens==='signal'){
     const fx=adsFixes.filter(a=>!state.q||(a.sku+' '+a.store).toLowerCase().includes(state.q))
@@ -492,6 +529,32 @@ function render(){
           </div></div>`;}).join('')}</div>
         <div class="card" style="margin-top:12px">Proposed master-data changes require your approval — nothing is applied automatically. CV = week-to-week volatility; corrections computed by the engine from your file's own sales history.</div>`
       : `<div class="empty">No demand-signal corrections in this report — stated rates match recent sales.</div>`;
+  } else if(state.lens==='policy'){
+    const P = AP.policy_parameters || {};
+    const NAMES = {
+      buffer_factor:['Buffer factor','protection multiplier on lead-time demand — the safety-stock policy'],
+      target_factor:['Target factor','order-up-to level in lead-time-days of demand'],
+      savings_rate:['Transfer savings rate','fraction of transfer value counted as estimated saving vs a fresh order'],
+      critical_threshold_of_rop:['Critical threshold','CRITICAL when pipeline falls below this fraction of the reorder point'],
+      overstock_multiple_of_buffer:['Overstock threshold','OVERSTOCK when shelf stock exceeds this multiple of buffer'],
+      ads_correction_trigger_pct:['Correction trigger %','propose a demand-rate fix when stated vs actual deviates beyond this'],
+      volatility_cv_threshold:['Volatility threshold (CV)','above this, median replaces mean and a buffer raise is advised'],
+      max_ads_swing:['Max ADS swing','cap on any applied demand-rate change per run'],
+      transfer_days:['Transfer truck time (days)','inter-store transit; null = gate off'],
+      transfer_cost_per_unit:['Transfer cost / unit','null = unknown — costs never fabricated as zero'],
+      budget:['Purchase budget','null = no cap; orders split within / deferred when set']
+    };
+    const rowsP = Object.keys(NAMES).filter(k=>k in P).map(k=>`<div class="card" style="display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center">
+      <div class="num" style="font-size:15px;font-weight:600;min-width:52px">${P[k]==null?'—':P[k]}</div>
+      <div><div style="font-family:var(--font-num);font-weight:600;font-size:12.5px">${NAMES[k][0]}</div>
+        <div style="font-size:11.5px;color:var(--ink-2)">${NAMES[k][1]}</div></div>
+      <span class="tag">policy</span></div>`).join('');
+    const apps=(AP.policy_applications||[]).map(a=>`<div class="card" style="border-left:3px solid var(--s-reorder)"><div style="font-size:12.5px">${esc(a)}</div></div>`).join('');
+    const asm=(AP.assumptions||R.assumptions||[]).map(a=>`<div class="card"><div style="font-size:12.5px">${esc(a)}</div></div>`).join('');
+    html = `<div class="list">${rowsP}</div>`+
+      (apps?`<div class="grouphdr" style="margin-top:14px"><h3>Policies applied this run</h3></div><div class="list">${apps}</div>`:'')+
+      (asm?`<div class="grouphdr" style="margin-top:14px"><h3>Disclosed assumptions</h3></div><div class="list">${asm}</div>`:'')+
+      `<div class="card" style="margin-top:12px">${esc(AP.note||'')}</div>`;
   } else if(state.lens==='quarantine'){
     html = R.quarantine.length?`<div class="list">${R.quarantine.map(g=>`<div class="card" style="border-left:3px solid var(--s-out)">
       <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
@@ -566,8 +629,11 @@ function openDrawer(sku,store){
           <div class="cell"><div class="k">Pipeline</div><div class="v">${r.pipeline}</div></div>
           <div class="cell"><div class="k">Buffer</div><div class="v">${Math.round(r.buffer)}</div></div>
           <div class="cell"><div class="k">ROP</div><div class="v">${Math.round(r.rop)}</div></div>
-          <div class="cell"><div class="k">Days of stock</div><div class="v">${dosTxt(r.days_of_stock)}</div></div>
+          <div class="cell"><div class="k">Pipeline cover (incl. inbound)</div><div class="v">${dosTxt(r.days_of_stock)}<small style="font-size:11px"> d</small></div></div>
+          <div class="cell"><div class="k">Shelf cover (on-hand only)</div><div class="v">${dosTxt(r.current_cover)}<small style="font-size:11px"> d</small></div></div>
+          <div class="cell"><div class="k">Projected dry date</div><div class="v" style="font-size:14px">${r.projected_stockout_date||'—'}</div></div>
         </div></div>
+      ${r.stockout_before_inbound_days!=null?`<div class="note" style="border-color:var(--s-critical)"><b>⚠ Timing gap.</b> The shelf goes dry ${r.stockout_before_inbound_days} day(s) before the inbound lands — pipeline cover overstates safety here.</div>`:''}
       ${fix?`<div class="note"><b>Signal fix (this store).</b> Stated ${fix.stated_ads}/day vs actual ${fix.actual_ads}/day${fix.deviation_pct!=null?` (${fix.deviation_pct>0?'+':''}${fix.deviation_pct}%)`:''} — ${esc(fix.recommendation)} · ${esc(fix.confidence)} confidence.</div>`:''}
       ${rep?`<div class="note"><b>▲ Discrepancy.</b> Your file's status column says <b>${esc(rep)}</b>; the recomputed status is <b>${SM[r.status].lab}</b>. Recompute wins.</div>`:''}
       ${prov.length?`<div class="note"><b>Data notes.</b> ${prov.map(esc).join(' · ')}</div>`:''}
@@ -599,8 +665,11 @@ function openDrawer(sku,store){
 }
 function closeDrawer(){drawer.classList.remove('open');drawer.setAttribute('aria-hidden','true');scrim.classList.remove('open');}
 scrim.addEventListener('click',closeDrawer);
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
-view.addEventListener('click',e=>{const it=e.target.closest('.item');if(!it)return;openDrawer(it.dataset.sku,it.dataset.store);});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeDrawer();closeDlMenu();}});
+view.addEventListener('click',e=>{
+  const s=e.target.closest('[data-srt]');
+  if(s){state.sort=s.dataset.srt;render();return;}
+  const it=e.target.closest('.item');if(!it)return;openDrawer(it.dataset.sku,it.dataset.store);});
 
 /* ---- CSV downloads (values verbatim from report.json) ---- */
 function dl(name, lines){
@@ -608,9 +677,17 @@ function dl(name, lines){
   a.href=URL.createObjectURL(blob);a.download=name;a.click();URL.revokeObjectURL(a.href);
 }
 const csvCell=v=>{if(v==null)return'';v=String(v);return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;};
+const dlBtn=document.getElementById('dlBtn'), dlMenu=document.getElementById('dlMenu');
+function closeDlMenu(){dlMenu.hidden=true;dlBtn.setAttribute('aria-expanded','false');}
+dlBtn.addEventListener('click',e=>{e.stopPropagation();
+  const opening=dlMenu.hidden;dlMenu.hidden=!opening;dlBtn.setAttribute('aria-expanded',String(opening));});
+dlMenu.addEventListener('click',closeDlMenu);   /* choosing an item closes the menu */
+document.addEventListener('click',e=>{if(!dlMenu.hidden&&!e.target.closest('.dl'))closeDlMenu();});
 document.getElementById('dlPlan').addEventListener('click',()=>{
   const head=['sku','store','status','soh','qoo','ads','lead_time','pipeline','buffer','rop',
-              'days_of_stock','reorder_qty','reorder_qty_net','order_value_net','expected_delivery'];
+              'days_of_stock','current_cover','projected_stockout_date',
+              'daily_revenue_at_risk','capital_tied_up',
+              'reorder_qty','reorder_qty_net','order_value_net','expected_delivery'];
   dl('redpill_plan.csv',[head.join(',')].concat(
     rowsAll.map(r=>head.map(h=>csvCell(r[h])).join(','))));
 });
@@ -624,7 +701,7 @@ document.getElementById('dlTransfers').addEventListener('click',()=>{
 document.getElementById('foot').innerHTML =
   `<div><b style="color:var(--ink-2)">Red Pill</b> — Theory-of-Constraints buffer management · advisory only: it recommends, you execute.</div>
    <div style="margin-top:6px">Every number on this page comes verbatim from <code>report.json</code> (schema ${esc(R.schema_version)}). `+
-   `Money labels: order values are <b>potential</b> spend; transfer savings are <b>estimated</b> at the ${Math.round((PARAMS.savings_rate||0.15)*100)}% default rate; realised impact is not tracked. `+
+   `Money labels: order values are <b>potential</b> spend; transfer savings are <b>estimated</b> at the ${Math.round((PARAMS.savings_rate||0.15)*100)}% default rate; revenue-at-risk and capital-tied-up figures are <b>estimated</b>; realised impact is not tracked. `+
    ((R.warnings||[]).length?`${R.warnings.length} data warning(s) — see row drawers and the Quarantine lens. `:'')+
    `Assumptions: ${esc((R.assumptions||[]).join(' · ')||'none')}. `+
    `<a href="https://github.com/koushikeverything/redpill/issues" style="color:var(--accent-ink)">Report an issue</a>.</div>`;

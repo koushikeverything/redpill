@@ -20,8 +20,10 @@ Authoritative logic, ported from `RedPill_Inventory_System.xlsx`. Every derived 
 ```
 Pipeline       = SOH + QOO
 Buffer         = ADS × LT × BF                      (default BF = 1.5)
-ROP            = ADS × LT                           (reorder point)
+ROP            = ADS × LT                           (reorder point = lead-time demand)
 DaysOfStock    = Pipeline / ADS, or null ("—") if ADS = 0 — never fabricated as 0
+                 (= PIPELINE COVER: counts inbound that has not landed yet)
+CurrentCover   = SOH / ADS, or null if ADS = 0      (shelf-only days — v2.4/G36)
 ReorderQty     = MAX(0, ROUNDUP(ADS × LT × TF − SOH − QOO, 0))   (default TF = 2.5)
                  …but ONLY for actionable rows (OUT OF STOCK / INCOMING / CRITICAL /
                  REORDER). A row that has not crossed its reorder point gets
@@ -147,3 +149,68 @@ Segments       : ABC by revenue-rate share (70/90 cumulative), XYZ by CV
 Size curves    : per store × style × colour: some sizes OUT/CRITICAL while siblings
                  sit ⇒ broken size run, stranded sizes are dead stock   (G21)
 ```
+
+## v2.4 timing & impact rules (G36–G38)
+
+**Projected stockout (G36)** — the honest arithmetic version, not a simulation (with one
+aggregate QOO and at most one ETA per row, this IS the projection):
+```
+ProjectedStockout : shelf burns at ADS. Inbound extends the date only if it lands
+                    before the shelf runs dry — receipt date used when present,
+                    else arrival at LT is ASSUMED (disclosed); a receipt date in
+                    the past ⇒ "inbound overdue" warning, treated as landing now.
+DryGap            : when inbound lands AFTER the shelf runs dry, the row carries
+                    stockout_before_inbound_days and a warning — a row can be
+                    OPTIMAL on pipeline quantity yet dark for days in between.
+Transfer timing   : with --transfer-days T, a transfer whose receiver runs dry
+                    before day T is still recommended but flagged
+                    (receiver_dry_before_arrival_days) — expedite or bridge.
+```
+
+**Financial impact (G37)** — always labeled *estimated*; price missing ⇒ null, never 0:
+```
+DailyRevenueAtRisk = ADS × Price       (OUT OF STOCK / CRITICAL rows only)
+CapitalTiedUp      = (SOH − Buffer) × Price   (OVERSTOCK rows: stock above protection)
+```
+
+**Assumptions & policies (G38):** `report.json → assumptions_and_policies` lists every
+policy value, applied policy, and disclosed assumption for the run, in one place.
+
+## Glossary — what kind of statement is each number?
+
+Every value Red Pill emits is one of four kinds. The report keeps them separate; so
+should any conversation about the model.
+
+| Kind | Meaning | Examples |
+|---|---|---|
+| **Formula** | Pure arithmetic from inputs — deterministic, reproducible | `Pipeline = SOH + QOO` · `ROP = ADS × LT` · `TransferQty = min(surplus, deficit)` |
+| **Model estimate** | Computed from data, carries uncertainty — confidence-scored or labeled | ActualADS · CV · projected stockout date · revenue-at-risk · transfer savings |
+| **Policy** | A configurable business choice — defensible, tunable, never "proven" | BF 1.5 · TF 2.5 · SR 0.15 · ½×ROP critical line · 2×Buffer overstock line · ±20% correction trigger · CV 0.6 volatility line · ±50% swing cap |
+| **Assumption** | A stated guess where data is missing — always disclosed in the report | blank QOO = 0 · no-ETA inbound arrives within LT · SOH fully sellable when reserved/damaged columns are absent |
+
+### Vocabulary map (classical inventory theory ↔ Red Pill)
+
+| Classical term | Red Pill equivalent | Relationship |
+|---|---|---|
+| Lead-time demand | **ROP** = `ADS × LT` | identical — our reorder line *is* lead-time demand |
+| Safety stock | the buffer margin above ROP | `Buffer − ROP = ADS × LT × (BF − 1)` — BF is the safety-stock policy in one visible knob |
+| Protection level | **Buffer** = `ADS × LT × BF` | the ToC buffer folds lead-time demand + safety stock into one number |
+| Order-up-to / target stock | `ADS × LT × TF` | TF is the order-up-to policy factor |
+| Inventory position | **Pipeline** = `SOH + QOO` | commitments subtracted where the data exists (sellable/ATP governs donor math) |
+| Reorder trigger vs order quantity | status ladder vs `ReorderQty` | "when to order" = crossing ROP; "how much" = target − pipeline; computed separately, never conflated |
+| Days of cover | CurrentCover vs DaysOfStock | shelf-only vs including inbound — two different safety statements |
+
+Using fixed, visible buffer factors instead of a stochastic safety-stock model is a
+deliberate Theory-of-Constraints design choice (react fast to buffer penetration,
+stay explainable), not an oversight. Tune BF per SKU × Store; don't replace it silently.
+
+### Statistical definitions (implementation-exact)
+
+- **CV** = *population* standard deviation ÷ mean of usable weekly units (n divisor,
+  not n−1). Zero-sale weeks count unless excluded by stockout-censoring (empty shelf)
+  or a confirmed promo week.
+- **ActualADS** = mean(last 4 usable weeks) ÷ 7, switching to median(all usable) ÷ 7
+  when CV > 0.6.
+- **Deviation** = `(Actual − Stated) / Stated`, defined only when Stated > 0; a stated
+  ADS of 0 with real sales gets its own "set master ADS" recommendation instead of a
+  fabricated percentage.

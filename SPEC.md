@@ -49,6 +49,11 @@ raw file + config + session overrides + engine version.
 | Dead-stock rows in urgency | possible | excluded | R4 |
 | Hoodie Chandigarh correction | shown +149% (SKU aggregate) | **+186% (per-store)** | R2/R3 display rules |
 
+**v2.4.0 additions (G36–G38, same input file — all prior figures unchanged):**
+revenue at risk **₹4,96,507/day** (estimated, OOS+CRITICAL) · capital tied up above buffer
+**₹77,53,955** (estimated, overstock) · **23 rows** projected dry before their inbound lands
+(incl. OPTIMAL-by-pipeline rows — the pipeline blind spot, now visible).
+
 ---
 
 ## 2. The end-to-end scenario (the "finished product" walkthrough)
@@ -345,6 +350,9 @@ Everything that must change, consolidated from Observations.md (B/C/R/M/AV/UX) a
 | G33 | Mapping confidence classes in `report.json` (exact / high-confidence / ambiguous / unmapped / user-confirmed) + project-local **mapping memory** — confirmed mappings saved per source pattern, reviewable, low-confidence never applied silently | batch-5 | 0 (memory: 2) |
 | G34 | ETA-aware inbound stock: `expected_receipt_date` used when present (else disclosed assumption + lower confidence); INCOMING risk flag — insufficient (< ROP / < ½ROP) or late (ETA beyond lead time) | batch-5 | ✅ closed (2.3.0) |
 | G35 | Transfer economics as separate figures: value moved · est. saving · est. transfer cost (per-unit flag or per-lane policy; null when unknown) · net benefit — **moved never labelled saved** | batch-5, #45/62 | ✅ closed (2.3.0) |
+| G36 | Timing honesty: **current cover** (shelf-only) vs **pipeline cover** split; **projected stockout date** (ETA-aware; no-ETA arrival assumed at LT and disclosed; overdue ETA warned); `stockout_before_inbound_days` gap flag — a row can be OPTIMAL on pipeline yet dark for days; transfers flag `receiver_dry_before_arrival_days` when the truck lands after the shelf runs dry | batch-6 (friend list 2: #1/3/4/14/35) | ✅ closed (2.4.0) |
+| G37 | Financial impact, estimated-only: `daily_revenue_at_risk = ADS × price` (OOS/CRITICAL) and `capital_tied_up = (SOH − Buffer) × price` (overstock); row fields + `kpis.financial_impact` totals; null when price missing (counted, never zero); cockpit ₹-at-risk KPI + rank-by-value lens | batch-6 (#44/45/46) | ✅ closed (2.4.0) |
+| G38 | One **assumptions & policies** layer: named module constants for every policy threshold (critical ½×ROP, overstock 2×buffer, ±20% trigger, CV 0.6) so math and disclosure can't drift; `report.json → assumptions_and_policies` (policy values + applications + assumptions); cockpit Assumptions lens; glossary + statement-type table (formula / estimate / policy / assumption) and classical-vocabulary map in formulas.md | batch-6 (#5/56/58/59) | ✅ closed (2.4.0) |
 
 ---
 

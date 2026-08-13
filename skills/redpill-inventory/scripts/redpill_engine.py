@@ -47,11 +47,18 @@ import shutil
 import sys
 from datetime import date, timedelta
 
-ENGINE_VERSION = "2.3.0"
-SCHEMA_VERSION = "2.3.0"
+ENGINE_VERSION = "2.4.0"
+SCHEMA_VERSION = "2.4.0"
 
 STATUSES = ["OUT_OF_STOCK", "INCOMING", "CRITICAL", "REORDER", "OVERSTOCK", "OPTIMAL"]
 ACTIONABLE = {"OUT_OF_STOCK", "INCOMING", "CRITICAL", "REORDER"}
+
+# Policy thresholds (G38): business choices, not mathematical facts. Defined once
+# so the math and the report's assumptions_and_policies section can never drift.
+CRITICAL_FRACTION_OF_ROP = 0.5   # CRITICAL when pipeline < this fraction of ROP
+OVERSTOCK_X_BUFFER = 2.0         # OVERSTOCK when SOH > this multiple of buffer
+ADS_CORRECTION_TRIGGER = 0.20    # propose a correction when |deviation| exceeds this
+CV_VOLATILE = 0.6                # median + buffer-raise advice when CV exceeds this
 
 # ---------------------------------------------------------------- header mapping
 def norm_header(h):
@@ -157,18 +164,21 @@ def compute_row(soh, qoo, ads, lt, bf, tf, price=None):
     buffer = ads * lt * bf
     rop = ads * lt
     days = round(pipeline / ads, 2) if ads > 0 else None  # G8: never 0-for-unknown
+    # G36: pipeline cover (days_of_stock) counts inbound that hasn't landed;
+    # current cover counts only what is on the shelf right now.
+    current_cover = round(soh / ads, 2) if ads > 0 else None
     # Status ladder — strict order, first match wins (formulas.md).
     if soh == 0 and qoo == 0:
         status, reason = "OUT_OF_STOCK", "SOH 0 and nothing on order — losing sales now"
     elif soh == 0:
         status, reason = "INCOMING", f"SOH 0 but {qoo:g} in transit"
-    elif pipeline < 0.5 * rop:
+    elif pipeline < CRITICAL_FRACTION_OF_ROP * rop:
         status, reason = "CRITICAL", (f"pipeline {pipeline:g} < half of reorder point "
                                       f"{rop:g} — will stock out before replenishment lands")
     elif pipeline < rop:
         status, reason = "REORDER", f"pipeline {pipeline:g} < reorder point {rop:g} — order today"
-    elif soh > 2 * buffer:
-        status, reason = "OVERSTOCK", (f"SOH {soh:g} > 2x buffer {2*buffer:g} — "
+    elif soh > OVERSTOCK_X_BUFFER * buffer:
+        status, reason = "OVERSTOCK", (f"SOH {soh:g} > 2x buffer {OVERSTOCK_X_BUFFER*buffer:g} — "
                                        f"capital tied up; transfer donor")
     else:
         status, reason = "OPTIMAL", f"pipeline {pipeline:g} within buffer — healthy"
@@ -177,7 +187,8 @@ def compute_row(soh, qoo, ads, lt, bf, tf, price=None):
     reorder = max(0, math.ceil(round(ads * lt * tf - soh - qoo, 9))) if actionable else 0
     return {
         "pipeline": pipeline, "buffer": round(buffer, 2), "rop": round(rop, 2),
-        "days_of_stock": days, "status": status, "status_reason": reason,
+        "days_of_stock": days, "current_cover": current_cover,
+        "status": status, "status_reason": reason,
         "actionable": actionable, "reorder_qty": reorder,
         "order_value": round(reorder * price, 2) if price is not None else None,
     }
@@ -227,6 +238,17 @@ def build_transfers(rows, savings_rate, warnings, transfer_days=0, policies=None
                              f"({recv['lead_time']:g}d) beats the truck "
                              f"({transfer_days:g}d) — order fresh instead")
                 continue
+            # G36: transfer still worth sending, but flag when the receiver runs
+            # dry before the truck lands — a valid transfer can arrive too late.
+            dry_gap = None
+            if transfer_days > 0 and recv["ads"] > 0:
+                dry = recv["soh"] / recv["ads"]
+                if dry < transfer_days:
+                    dry_gap = round(transfer_days - dry, 1)
+                    notes.append(f"{sku} -> {recv['store']}: shelf runs dry ~day "
+                                 f"{dry:.0f}, {dry_gap:g}d before the truck "
+                                 f"({transfer_days:g}d) lands — expedite the move "
+                                 f"or bridge with the fresh order")
             for don in donors:
                 if (don["store"].lower(), recv["store"].lower()) in blacklist:
                     notes.append(f"{sku}: lane {don['store']} -> {recv['store']} "
@@ -262,6 +284,7 @@ def build_transfers(rows, savings_rate, warnings, transfer_days=0, policies=None
                     "est_saving": est_saving,
                     "est_transfer_cost": est_cost,          # null = cost unknown, not zero
                     "net_benefit": net_benefit,
+                    "receiver_dry_before_arrival_days": dry_gap,   # G36: null = arrives in time
                 })
                 surplus[don["line"]] -= qty
                 deficit[recv["line"]] -= qty
@@ -434,7 +457,7 @@ def analyze_demand(rows, promo_weeks_ago):
         suspected = [w for w, u in usable
                      if len(nonzero) >= 4 and med > 0 and u > 2.5 * med]
         recent = weekly[-4:]
-        actual = (med / 7.0) if cv > 0.6 else (sum(recent) / (7.0 * len(recent)))  # G29
+        actual = (med / 7.0) if cv > CV_VOLATILE else (sum(recent) / (7.0 * len(recent)))  # G29
         r["cv"] = round(cv, 2)
         stated = r["ads"]
         conf = ("high" if len(usable) >= 6 and cv < 0.4 and not censored
@@ -450,12 +473,12 @@ def analyze_demand(rows, promo_weeks_ago):
             r["warnings"].append("verify count first — stock and claimed sales disagree")
             r["mitigation"] = "verify count first"
             continue   # don't also propose an ADS change on distrusted data
-        needs = (dev is not None and abs(dev) > 0.20) or cv > 0.6 or                 (stated == 0 and actual > 0.5)
+        needs = (dev is not None and abs(dev) > ADS_CORRECTION_TRIGGER) or                 cv > CV_VOLATILE or (stated == 0 and actual > 0.5)
         if not needs:
             continue
         if stated == 0:
             rec = f"stated ADS 0 but it sells ~{actual:.1f}/day — set master ADS"
-        elif cv > 0.6:
+        elif cv > CV_VOLATILE:
             rec = ("volatile (CV {:.2f}) — median used; raise buffer factor to ~2.0 "
                    "rather than chasing the mean".format(cv))
         elif dev > 0:
@@ -781,7 +804,7 @@ def run(args):
         if r["status"] != "INCOMING":
             continue
         risks = []
-        if r["pipeline"] < 0.5 * r["rop"]:
+        if r["pipeline"] < CRITICAL_FRACTION_OF_ROP * r["rop"]:
             risks.append("inbound covers under half the danger line — order more now")
         elif r["pipeline"] < r["rop"]:
             risks.append("inbound stays below the reorder point — top-up order needed")
@@ -804,11 +827,60 @@ def run(args):
         assumptions.append("INCOMING rows carry no expected receipt date — inbound is "
                            "assumed to arrive within its lead time (lower confidence)")
 
+    # Projected stockout date (G36): when does the shelf actually reach zero?
+    # Honest arithmetic from the snapshot — current stock burns at ADS; inbound
+    # extends cover only if it lands before the shelf runs dry. Not a simulation:
+    # with one aggregate QOO and at most one ETA per row, this IS the projection.
+    eta_assumed = False
+    stockout_before_inbound = 0
+    for r in rows:
+        r["projected_stockout_date"] = None
+        r["stockout_before_inbound_days"] = None
+        if r["ads"] <= 0:
+            continue
+        dry_days = r["soh"] / r["ads"]
+        if r["qoo"] > 0:
+            eta_d = None
+            if r["expected_receipt_date"]:
+                try:
+                    eta_d = date.fromisoformat(str(r["expected_receipt_date"]))
+                except ValueError:
+                    eta_d = None
+            if eta_d is None:
+                eta_d = as_of + timedelta(days=int(r["lead_time"]))
+                eta_assumed = True
+            elif eta_d < as_of:      # promised date passed, PO still open — overdue
+                r["warnings"].append(f"inbound overdue — receipt date "
+                                     f"{eta_d.isoformat()} already passed; "
+                                     f"projection assumes it lands now")
+                eta_d = as_of
+            gap = (eta_d - as_of).days - dry_days
+            if gap > 0:      # shelf goes dark before the inbound lands
+                r["stockout_before_inbound_days"] = round(gap, 1)
+                r["projected_stockout_date"] = (
+                    as_of + timedelta(days=math.floor(dry_days))).isoformat()
+                stockout_before_inbound += 1
+                if r["soh"] > 0:   # empty-shelf rows already say INCOMING
+                    r["warnings"].append(
+                        f"projected dry {r['projected_stockout_date']} — "
+                        f"{r['stockout_before_inbound_days']:g} day(s) before "
+                        f"inbound lands ({eta_d.isoformat()})")
+            else:            # inbound lands in time; total pipeline sets the date
+                r["projected_stockout_date"] = (
+                    as_of + timedelta(days=math.floor((r["soh"] + r["qoo"])
+                                                      / r["ads"]))).isoformat()
+        else:
+            r["projected_stockout_date"] = (
+                as_of + timedelta(days=math.floor(dry_days))).isoformat()
+    if eta_assumed:
+        assumptions.append("rows with inbound but no expected receipt date: stockout "
+                           "projection assumes arrival at the supplier lead time")
+
     # overcommit flag (G24) + ATP disclosure (G26) + mitigations (G28)
     overcommit = 0
     for r in rows:
         r["overcommit"] = (r["status"] not in ("OVERSTOCK",)
-                           and r["pipeline"] > 2 * r["buffer"])
+                           and r["pipeline"] > OVERSTOCK_X_BUFFER * r["buffer"])
         if r["overcommit"]:
             overcommit += 1
             r["warnings"].append("over-committed: inbound orders exceed 2x buffer — "
@@ -828,6 +900,27 @@ def run(args):
 
     weighted_health = segment_rows(rows)          # ABC-XYZ + weighted view (G20/#5)
     curve_breaks = size_curve_breaks(rows)        # G21
+
+    # Financial impact (G37) — estimated, never "realised". Price missing => null
+    # (counted, never fabricated as zero).
+    rev_risk_total = capital_total = 0.0
+    rev_risk_missing = capital_missing = 0
+    for r in rows:
+        r["daily_revenue_at_risk"] = None
+        r["capital_tied_up"] = None
+        if r["status"] in ("OUT_OF_STOCK", "CRITICAL") and r["ads"] > 0:
+            if r["price"] is not None:
+                r["daily_revenue_at_risk"] = round(r["ads"] * r["price"], 2)
+                rev_risk_total += r["daily_revenue_at_risk"]
+            else:
+                rev_risk_missing += 1
+        if r["status"] == "OVERSTOCK":
+            excess = max(0.0, r["soh"] - r["buffer"])   # everything above protection
+            if r["price"] is not None:
+                r["capital_tied_up"] = round(excess * r["price"], 2)
+                capital_total += r["capital_tied_up"]
+            else:
+                capital_missing += 1
 
     # G3: engine owns every total. Order totals are ACTIONABLE-ONLY by definition (G2).
     for r in rows:
@@ -869,7 +962,15 @@ def run(args):
                             else None),
             "missing_value_count": sum(1 for t in transfers if t["value"] is None),
         },
-        "money_labels": {"order_values": "potential", "transfer_savings": "estimated"},
+        "money_labels": {"order_values": "potential", "transfer_savings": "estimated",
+                         "revenue_at_risk": "estimated", "capital_tied_up": "estimated"},
+        "financial_impact": {                                   # G37 — all estimated
+            "daily_revenue_at_risk": round(rev_risk_total, 2),
+            "at_risk_rows_missing_price": rev_risk_missing,
+            "capital_tied_up": round(capital_total, 2),
+            "overstock_rows_missing_price": capital_missing,
+        },
+        "stockout_before_inbound_count": stockout_before_inbound,   # G36
         "overcommit_count": overcommit,
         "incoming_risk_count": incoming_risk,
         "weighted_health_pct": weighted_health,
@@ -949,11 +1050,34 @@ def run(args):
         "quarantine": gaps,
         "assumptions": assumptions, "warnings": warnings, "provenance": provenance,
     })
+    # G38: one place that separates configurable business POLICY from computed math.
+    # Everything here is a choice someone can defend or change — not a formula result.
+    report["assumptions_and_policies"] = {
+        "note": ("business policies and disclosed assumptions in effect for this run — "
+                 "policy values are configurable choices, not mathematical facts"),
+        "policy_parameters": {
+            "buffer_factor": args.buffer_factor,
+            "target_factor": args.target_factor,
+            "savings_rate": args.savings_rate,
+            "critical_threshold_of_rop": CRITICAL_FRACTION_OF_ROP,
+            "overstock_multiple_of_buffer": OVERSTOCK_X_BUFFER,
+            "ads_correction_trigger_pct": round(ADS_CORRECTION_TRIGGER * 100),
+            "volatility_cv_threshold": CV_VOLATILE,
+            "max_ads_swing": args.max_ads_swing,
+            "transfer_days": args.transfer_days or None,
+            "transfer_cost_per_unit": args.transfer_cost_per_unit or None,
+            "budget": args.budget or None,
+        },
+        "policy_file_loaded": policies is not None,
+        "policy_applications": report["policy_applications"],
+        "assumptions": assumptions,
+    }
     jdump(report, args.report)
 
     # computed.csv — includes passthrough columns (G5); "" is the one empty sentinel (G8/C2)
     out_fields = (["sku", "store", "soh", "qoo", "ads", "lead_time", "price",
-                   "pipeline", "buffer", "rop", "days_of_stock", "status",
+                   "pipeline", "buffer", "rop", "days_of_stock", "current_cover",
+                   "projected_stockout_date", "status",
                    "status_reason", "reorder_qty", "reorder_qty_net",
                    "order_value", "order_value_net", "expected_delivery"]
                   + passthrough_cols)
@@ -967,6 +1091,9 @@ def run(args):
                     "" if r["price"] is None else r["price"],
                     r["pipeline"], r["buffer"], r["rop"],
                     "" if r["days_of_stock"] is None else r["days_of_stock"],
+                    "" if r["current_cover"] is None else r["current_cover"],
+                    "" if r["projected_stockout_date"] is None
+                    else r["projected_stockout_date"],
                     r["status"], r["status_reason"], r["reorder_qty"], r["reorder_qty_net"],
                     "" if r["order_value"] is None else r["order_value"],
                     "" if r["order_value_net"] is None else r["order_value_net"],

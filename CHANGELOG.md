@@ -1,5 +1,33 @@
 # Changelog
 
+## 2.1.0 — 2026-08-14 · "timing honesty" release
+
+Closes the three genuinely-new gaps from the second external review (66-point list,
+triaged as batch 6 in roadmap.md — most of its "critical" items were already built).
+Engine/schema 2.3.0 → **2.4.0**; snapshot golden re-pinned with reason; suite 53 → **62**.
+
+- **G36 — timing honesty**: `current_cover` (shelf-only days) split from `days_of_stock`
+  (pipeline cover); per-row **projected stockout date** — ETA-aware, no-ETA arrival
+  assumed at lead time (disclosed), overdue receipt dates warned; rows that go dark
+  before their inbound lands carry `stockout_before_inbound_days` (23 such rows in the
+  stress fixture, some OPTIMAL-by-pipeline — the blind spot this closes). Transfers get
+  `receiver_dry_before_arrival_days` when the truck arrives after the shelf runs dry
+  (flagged, not blocked).
+- **G37 — financial impact (estimated)**: `daily_revenue_at_risk = ADS × price` on
+  out-of-stock/critical rows; `capital_tied_up = (SOH − buffer) × price` on overstock
+  rows; totals in `kpis.financial_impact`; null when price missing, never fabricated.
+  Cockpit: ₹-at-risk KPI card, "Rank by ₹ at risk" toggle on Today's Actions,
+  capital-tied-up total on the Overstock lens.
+- **G38 — assumptions & policies layer**: every policy threshold is now a named engine
+  constant disclosed in `report.json → assumptions_and_policies` (values + applied
+  policies + assumptions in one place); new cockpit **Assumptions** lens; formulas.md
+  gains a glossary typing every statement (formula / model estimate / policy /
+  assumption) and a classical-inventory-theory vocabulary map (our ROP = lead-time
+  demand; Buffer = protection level; BF = the safety-stock policy).
+- Edge cases pinned by new tests: stated-ADS-0 never divides (no fake %), reserved >
+  SOH floors at zero, past-ETA inbound flagged overdue, cover-split invariants,
+  financial totals reconcile, drawer/CSV carry the new fields.
+
 ## 2.0.2 — 2026-08-12
 
 Cockpit restyled in Claude's design language (UI only — markup, UX, and behavior untouched;

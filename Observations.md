@@ -541,3 +541,57 @@ an editable copy). Additions: pixel-block RED PILL wordmark (inline SVG, theme-a
 accessible label), and a persistent light/dark toggle (data-theme override + localStorage,
 presentation-only). QA: both themes, toggle both directions + persistence, drawer/lenses/
 what-if functional, production-rendered output verified in-browser.
+
+
+---
+
+## 17. Batch-6 triage + timing-honesty release (2026-08-14, engine 2.4.0 / plugin 2.1.0)
+
+A second 66-point external review (same source as batches 1–5) was triaged **against the
+running 2.3.0 build, not the spec**. Verdict: ~26 points already built or "keep"
+confirmations, 8 genuinely new (adopted as G36–G38), ~26 parked onto the existing shelf,
+~6 rejected as core-disturbing or fake precision. Full record: roadmap.md §3d. Notable:
+the list's one "critical defect" claim (stated-ADS-0 division by zero) was **false** —
+the guard existed; it is now pinned by a test so it can never silently regress.
+
+Shipped (user approved the A–E batch before build):
+- **G36 timing honesty** — `current_cover` vs `days_of_stock` (pipeline cover) split;
+  per-row `projected_stockout_date` (ETA-aware; no-ETA arrival assumed at LT, disclosed;
+  overdue receipt dates warned, treated as landing now); `stockout_before_inbound_days`
+  gap flag; transfers carry `receiver_dry_before_arrival_days` under `--transfer-days`
+  (flagged, never blocked). Stress fixture: **23 rows** go dark before inbound lands —
+  several OPTIMAL-by-pipeline (e.g. TSH-CRW-WHT-L Pune, cover 5.1d, dry 0.9d early);
+  the exact blind spot the reviewer predicted, invisible until this release.
+- **G37 financial impact (estimated only)** — `daily_revenue_at_risk = ADS × price`
+  (OOS/CRITICAL), `capital_tied_up = (SOH − buffer) × price` (overstock);
+  `kpis.financial_impact`; null when price missing. Stress: ₹4,96,507/day at risk,
+  ₹77,53,955 tied up. Sample workbook: ₹2,22,257/day, ₹39,79,488, 12 dry-before-inbound.
+- **G38 assumptions & policies** — policy thresholds became named engine constants
+  (math and disclosure share one definition, cannot drift); one consolidated
+  `assumptions_and_policies` report section; cockpit **Assumptions** lens (policy cards
+  + applications + assumptions); formulas.md glossary typing every statement
+  (formula / model estimate / policy / assumption) + classical-vocabulary map
+  (our ROP ≡ lead-time demand; Buffer ≡ protection level; BF = safety-stock policy).
+- Cockpit additions: 6th KPI card (₹ at risk/day), "Rank by ₹ at risk" toggle on
+  Today's Actions, per-row ₹/d in the pen bar, capital total on Overstock lens,
+  too-late warning on transfer cards, drawer shows shelf-vs-pipeline cover + projected
+  dry date + timing-gap note; Plan CSV gains 4 columns. Verified via headless-Chrome
+  screenshots (action lens value-ranked; Assumptions lens) — renders clean, both lenses.
+- **Rejected on purpose** (guarding the core): `ROP = LTD + SS` restructure (identical
+  arithmetic — delivered as glossary instead, zero golden churn), day-by-day simulation
+  (one aggregate QOO cannot honestly support it), donor future-demand forecasting,
+  ATP-for-statuses (parked as possible config flag).
+- Dry runs: stress v1 351/10, all §1 reference figures byte-identical (health 45.0%,
+  net ₹1,16,40,751, 83 transfers); sample workbook 197 rows, prior figures unchanged.
+  Snapshot golden intentionally broke; re-pinned with reason in the same change.
+  Suite **53 → 62 green**, incl. new edge-case pins (stated-ADS-0, reserved > SOH,
+  past-ETA overdue, cover invariants, financial reconciliation, null-price honesty).
+- Self-caught during test design (not in the reviewer's list): a past-due
+  `expected_receipt_date` on an open PO was silently treated as on-time comfort — now
+  warned as "inbound overdue" and projected as landing today at earliest.
+- UI refinement after user review of the artifacts: (a) the action-queue sort chips
+  restyled as a subtle secondary segmented control (they visually competed with the lens
+  pills); (b) the two CSV buttons merged into one "↓ Download CSV" button with a
+  Drive-style dropdown (Plan CSV / Transfers CSV, with one-line descriptions; closes on
+  choose / outside click / Esc). Template-only; suite stays 62 green; verified live
+  (menu open/choose/close, sort toggle, dark theme).

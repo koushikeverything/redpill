@@ -149,6 +149,36 @@ ADS=0 → we use null/"—" (JSON-safe) instead.
 **Declined:** nothing material — this batch contained no wrong prescriptions, only scope we had
 already fenced off (its own non-goals list matches our fork shelf almost exactly).
 
+## 3d. Batch 6 — the 66-point "mathematical rigor" list (2026-08-14)
+
+A second full review arrived from the same source: 66 points centered on inventory-position
+logic, timing of inbound stock, and separating business policy from mathematical truth.
+Triaged against the **actual 2.3.0 build** (not the spec) — full analysis in the session
+record; verdict summary:
+
+- **~26 already built or "keep" confirmations.** Its flagship "critical" defect claim
+  (#26, stated-ADS-0 division by zero) was **false** — the guard exists (`dev = None if
+  stated <= 0`) and is now pinned by a test. Reorder trigger vs order-up-to (#8/10)
+  already separate; ETA grading (#3/13) was G34; proposed-vs-applied caps (#28) was G14;
+  factor configurability (#6/9/18) already existed — only the *labeling* was missing.
+- **8 genuinely new items adopted → G36/G37/G38, shipped in 2.1.0** (engine 2.4.0):
+  current-vs-pipeline cover + projected stockout date + too-late transfer flag (#1/4/35/14),
+  financial impact estimated-only (#44/45/46-lite), assumptions/policies layer + glossary +
+  statement typing (#56/58/59/5), edge-case tests (#60), overdue-ETA flag (found during
+  test design).
+- **~26 parked** onto the existing shelf (statistical safety stock #7, seasonality #31,
+  LT variability #33/34, promo calendars #32, outcome metrics #63, commercial #64–66 —
+  all match clusters already gated in §4).
+- **~6 rejected**: restructuring formulas as `ROP = LTD + SS` (identical arithmetic —
+  the entire defensibility benefit delivered as documentation instead, zero golden churn);
+  full day-by-day simulation (fake precision on one aggregate QOO); donor future-demand
+  forecasting (#14–16 full form); "inventory position with commitments" as a new canonical
+  quantity (needs order-book data an MIS doesn't carry); ATP-for-statuses (#12 full form —
+  parked as a possible config flag, disclosed via provenance today).
+
+The list's own bottom line — "the architecture is strong, don't rebuild" — matched the
+batch-1–5 verdicts, which held up under an independent second pass.
+
 ---
 
 ## 4. What this does to the build roadmap

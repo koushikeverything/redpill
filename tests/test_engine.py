@@ -564,14 +564,148 @@ class TestModelRealism(Base):
             self.assertEqual(t[0]["qty"], 24)   # deficit 27 floored to whole packs
 
 
+class TestTimingAndImpact(Base):
+    """G36 (cover split + projected stockout + too-late transfers), G37 (financial
+    impact), G38 (assumptions & policies) — plus the edge cases where inventory
+    models classically fail (friend-list batch 6, items 1/4/26/44/45/56/60)."""
+
+    def test_cover_split_invariants(self):               # G36
+        for r in self.report["rows"]:
+            if r["ads"] > 0:
+                self.assertIsNotNone(r["current_cover"])
+                self.assertIsNotNone(r["projected_stockout_date"])
+                self.assertLessEqual(r["current_cover"], r["days_of_stock"])
+                if r["qoo"] == 0:
+                    self.assertEqual(r["current_cover"], r["days_of_stock"])
+            else:
+                self.assertIsNone(r["current_cover"])
+                self.assertIsNone(r["projected_stockout_date"])
+
+    def test_stockout_before_inbound_counted(self):      # G36 — the pipeline blind spot
+        k = self.report["kpis"]
+        flagged = [r for r in self.report["rows"]
+                   if r["stockout_before_inbound_days"] is not None]
+        self.assertEqual(len(flagged), k["stockout_before_inbound_count"])
+        self.assertGreater(k["stockout_before_inbound_count"], 0)
+        for r in flagged:
+            self.assertGreater(r["qoo"], 0)              # only rows with inbound can gap
+        self.assertTrue(any("stockout projection assumes arrival" in a
+                            for a in self.report["assumptions"]))
+
+    def test_eta_in_past_flagged_overdue(self):          # G36 edge: late open PO
+        with tempfile.TemporaryDirectory() as td:
+            f = os.path.join(td, "late.csv")
+            with open(f, "w") as fh:
+                fh.write("sku,store,soh,qoo,ads,lead_time,expected_receipt_date\n"
+                         "A,S1,5,50,1,10,2026-08-01\n")   # promised 9 days ago
+            proc, rep = run_engine(f, os.path.join(td, "run"))
+            row = jload(rep)["rows"][0]
+            self.assertTrue(any("overdue" in w for w in row["warnings"]))
+            # lands "now" => no dry gap; pipeline sets the date (55 days out)
+            self.assertIsNone(row["stockout_before_inbound_days"])
+            self.assertEqual(row["projected_stockout_date"], "2026-10-04")
+
+    def test_transfer_too_late_flagged_not_blocked(self):   # G36 transfer slice
+        with tempfile.TemporaryDirectory() as td:
+            f = os.path.join(td, "late_t.csv")
+            with open(f, "w") as fh:
+                fh.write("sku,store,soh,qoo,ads,lead_time,price\n"
+                         "A,Donor,100,0,1,10,100\n"       # overstock donor
+                         "A,Recv,2,0,2,10,100\n")         # critical, dry on day 1
+            proc, rep = run_engine(f, os.path.join(td, "run"),
+                                   extra=["--transfer-days", "3"])
+            r = jload(rep)
+            self.assertEqual(len(r["transfers"]), 1)      # still recommended
+            self.assertEqual(r["transfers"][0]
+                             ["receiver_dry_before_arrival_days"], 2.0)
+            self.assertTrue(any("before the truck" in n
+                                for n in r["transfer_notes"]))
+            # and without the gate, the field stays null
+            proc2, rep2 = run_engine(f, os.path.join(td, "run2"))
+            self.assertIsNone(jload(rep2)["transfers"][0]
+                              ["receiver_dry_before_arrival_days"])
+
+    def test_stated_ads_zero_never_divides(self):        # item 26 — pinned, not new
+        with tempfile.TemporaryDirectory() as td:
+            f = os.path.join(td, "zero.csv")
+            with open(f, "w") as fh:
+                fh.write("sku,store,soh,qoo,ads,lead_time,"
+                         "sold_wk_4,sold_wk_3,sold_wk_2,sold_wk_1\n"
+                         "A,S1,10,0,0,7,7,7,7,7\n")       # stated 0, sells 1/day
+            proc, rep = run_engine(f, os.path.join(td, "run"))
+            self.assertEqual(proc.returncode, 0, proc.stderr)
+            c = jload(rep)["ads_corrections"][0]
+            self.assertIsNone(c["deviation_pct"])         # no divide-by-zero, no fake %
+            self.assertIn("set master ADS", c["recommendation"])
+
+    def test_reserved_exceeding_soh_floors_at_zero(self):   # G26 edge
+        with tempfile.TemporaryDirectory() as td:
+            f = os.path.join(td, "res.csv")
+            with open(f, "w") as fh:
+                fh.write("sku,store,soh,qoo,ads,lead_time,price,reserved\n"
+                         "A,Donor,100,0,1,10,100,150\n"   # reserved > SOH
+                         "A,Recv,0,0,2,10,100,\n")
+            proc, rep = run_engine(f, os.path.join(td, "run"))
+            self.assertEqual(proc.returncode, 0, proc.stderr)
+            self.assertEqual(jload(rep)["transfers"], [])   # nothing sellable to give
+
+    def test_financial_impact_totals_reconcile(self):    # G37
+        k = self.report["kpis"]["financial_impact"]
+        rows = self.report["rows"]
+        self.assertAlmostEqual(
+            k["daily_revenue_at_risk"],
+            round(sum(r["daily_revenue_at_risk"] or 0 for r in rows), 2), places=2)
+        self.assertAlmostEqual(
+            k["capital_tied_up"],
+            round(sum(r["capital_tied_up"] or 0 for r in rows), 2), places=2)
+        for r in rows:
+            if r["daily_revenue_at_risk"] is not None:
+                self.assertIn(r["status"], ("OUT_OF_STOCK", "CRITICAL"))
+            if r["capital_tied_up"] is not None:
+                self.assertEqual(r["status"], "OVERSTOCK")
+        ml = self.report["kpis"]["money_labels"]
+        self.assertEqual(ml["revenue_at_risk"], "estimated")
+        self.assertEqual(ml["capital_tied_up"], "estimated")
+
+    def test_financial_impact_null_without_price(self):  # G37 honesty
+        with tempfile.TemporaryDirectory() as td:
+            f = os.path.join(td, "nop.csv")
+            with open(f, "w") as fh:
+                fh.write("sku,store,soh,qoo,ads,lead_time\n"
+                         "A,S1,0,0,3,7\n")                # OOS, no price column
+            proc, rep = run_engine(f, os.path.join(td, "run"))
+            r = jload(rep)
+            self.assertIsNone(r["rows"][0]["daily_revenue_at_risk"])
+            fi = r["kpis"]["financial_impact"]
+            self.assertEqual(fi["daily_revenue_at_risk"], 0.0)
+            self.assertEqual(fi["at_risk_rows_missing_price"], 1)
+
+    def test_assumptions_and_policies_section(self):     # G38
+        ap = self.report["assumptions_and_policies"]
+        p = ap["policy_parameters"]
+        self.assertEqual(p["buffer_factor"], 1.5)
+        self.assertEqual(p["target_factor"], 2.5)
+        self.assertEqual(p["savings_rate"], 0.15)
+        self.assertEqual(p["critical_threshold_of_rop"], 0.5)
+        self.assertEqual(p["overstock_multiple_of_buffer"], 2.0)
+        self.assertEqual(p["ads_correction_trigger_pct"], 20)
+        self.assertEqual(p["volatility_cv_threshold"], 0.6)
+        self.assertIsNone(p["transfer_days"])             # off => null, never 0-means-off
+        self.assertIsNone(p["transfer_cost_per_unit"])
+        self.assertEqual(ap["assumptions"], self.report["assumptions"])
+        self.assertFalse(ap["policy_file_loaded"])
+
+
 class TestReleaseHardening(Base):
     """Phase 5 (G30): frozen snapshot golden + schema contract."""
 
-    # sha256 of the whole v1 report.json at engine 2.3.0 / as-of 2026-08-10.
+    # sha256 of the whole v1 report.json at engine 2.4.0 / as-of 2026-08-10.
     # ANY behavior change breaks this on purpose: change SPEC + this pin together,
     # in the same commit, with a reason.
-    # 2.3.0 pin update: G34 incoming-risk fields + G35 transfer-economics fields added.
-    REPORT_SHA256 = "03e2735e92f20547db5a55a8fd484b2e3309fb5265cbd16d0c1ec41db0bfaef7"
+    # 2.4.0 pin update: G36 cover split + projected stockout + too-late transfer
+    # flag, G37 financial impact (revenue-at-risk / capital-tied-up), G38
+    # assumptions_and_policies section. All prior business figures unchanged.
+    REPORT_SHA256 = "b98c64645b93bb73424ffd114f1f91ff786dd49834090aa448f1251dea5ab028"
 
     def test_full_report_snapshot_frozen(self):
         import hashlib
@@ -584,18 +718,21 @@ class TestReleaseHardening(Base):
         for key in ("schema_version", "engine", "run", "mapping", "kpis", "rows",
                     "transfers", "transfer_notes", "transfer_lanes", "ads_corrections",
                     "plausibility_flags", "size_curve_breaks", "urgency", "quarantine",
-                    "assumptions", "warnings"):
+                    "assumptions", "warnings", "assumptions_and_policies"):
             self.assertIn(key, r, key)
         k = r["kpis"]
         for key in ("rows", "quarantined", "status_counts", "health_pct",
                     "action_rate_pct", "excess_rate_pct", "actionable_rows",
                     "gross_order_value", "net_order_value", "transfers",
                     "money_labels", "overcommit_count", "weighted_health_pct",
-                    "incoming_risk_count"):
+                    "incoming_risk_count", "financial_impact",
+                    "stockout_before_inbound_count"):
             self.assertIn(key, k, key)
         row = r["rows"][0]
         for key in ("line", "sku", "store", "soh", "qoo", "ads", "lead_time",
-                    "pipeline", "buffer", "rop", "days_of_stock", "status",
+                    "pipeline", "buffer", "rop", "days_of_stock", "current_cover",
+                    "projected_stockout_date", "stockout_before_inbound_days",
+                    "daily_revenue_at_risk", "capital_tied_up", "status",
                     "status_reason", "reorder_qty", "reorder_qty_net",
                     "order_value_net", "expected_delivery", "passthrough",
                     "provenance", "warnings", "mitigation", "abc"):

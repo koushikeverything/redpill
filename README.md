@@ -6,6 +6,16 @@
 
 **A smart inventory decision system for retail — explained so anyone can understand it.**
 
+<p>
+  <a href="https://github.com/koushikeverything/redpill/actions/workflows/build-skill.yml"><img src="https://github.com/koushikeverything/redpill/actions/workflows/build-skill.yml/badge.svg" alt="CI"></a>
+  <img src="https://img.shields.io/badge/plugin-2.1.0-C96442" alt="Plugin 2.1.0">
+  <img src="https://img.shields.io/badge/engine-2.4.0-C96442" alt="Engine 2.4.0">
+  <img src="https://img.shields.io/badge/tests-62%20passing-3E7B4F" alt="62 tests passing">
+  <img src="https://img.shields.io/badge/python-3.8%2B%20stdlib%20only-1F1E1D" alt="Python 3.8+, stdlib only">
+  <img src="https://img.shields.io/badge/advisory--only-no%20telemetry-3670B2" alt="Advisory only, no telemetry">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-6E6A63" alt="MIT license"></a>
+</p>
+
 ---
 
 ## What is it?

@@ -384,7 +384,7 @@ const NOTES = {
   store:'Health by store, worst first. Action = starved rows, excess = capital tied up.',
   transfers:'Execute these first — an inter-store truck beats a supplier lead time and costs nothing new. Values are estimated.',
   reorders:'Fresh purchase orders, net of transfers, most urgent first. Order values are potential spend, not commitments.',
-  signal:'Where the master demand rate disagrees with recent sales. Populated when demand analysis runs (a later phase, or via the skill).',
+  signal:'Where the master demand rate disagrees with recent sales — computed from your file\'s own history (empty-shelf and promo weeks handled). Changes need your approval.',
   overstock:'Capital and shelf tied up. These are your transfer donors.',
   quarantine:'Rows Red Pill refused to guess on. Each needs one answer, then a rerun.'
 };

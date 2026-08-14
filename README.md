@@ -2,6 +2,10 @@
   <img src="assets/banner.png" alt="Red Pill — Right product, Right place, Right Time" width="100%">
 </p>
 
+<p align="center">
+  <a href="assets/product-video.mp4"><b>▶ Watch the 3-minute product tour</b></a> — what Red Pill does, every cockpit view, and how to use it.
+</p>
+
 # Red Pill
 
 **A smart inventory decision system for retail — explained so anyone can understand it.**

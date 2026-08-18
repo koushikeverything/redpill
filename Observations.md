@@ -595,3 +595,34 @@ Shipped (user approved the A–E batch before build):
   Drive-style dropdown (Plan CSV / Transfers CSV, with one-line descriptions; closes on
   choose / outside click / Esc). Template-only; suite stays 62 green; verified live
   (menu open/choose/close, sort toggle, dark theme).
+
+
+---
+
+## 18. S-track Phase S0 — Shopify adapter truth (2026-08-14, G39/G40)
+
+S-track opened (user-approved; SPEC-SHOPIFY.md is canonical, roadmap §3e records the
+strategy). S0 delivers the intake swap's foundation with the engine untouched:
+
+- `scripts/shopify_snapshot.py` — stdlib adapter: Shopify Bulk-Operation JSONL →
+  `shopify_mis.csv` (the exact engine contract) + `pull-manifest.json` (API version,
+  query sha-256, pulled_at, counts, artifact checksums) + `adapter-provenance.json`
+  (every column → its API path). Replay mode only; live mode deliberately lands with
+  S3 validation — both share one normalizer by design.
+- `tests/fixtures/gen_shopify_fixture.py` — deterministic Bulk JSONL storyline:
+  3 locations × 8 active tracked variants = 24 rows; all six statuses; 3 transfers;
+  blank-SKU (×3), missing-lead-time (×6), negative-count (×1) analogs; 1 archived +
+  1 untracked variant skipped **with counts**.
+- Policy proven by the dry run: adapter never guesses — bad rows pass through and the
+  UNCHANGED engine quarantines them (24 → 14 processed / 10 quarantined, verdict
+  honestly DEGRADED at 41.7% quarantine). ATP consumed committed+reserved (donor
+  sellable 106 of 120). The Delhi incoming row exercised G34+G36 on connector data:
+  receipt 2026-08-24 > LT 7 → "later than a fresh order" + 10-day dark-shelf gap.
+  Transfers matched the designed storyline exactly (18/8/9 units, Mumbai donating).
+- Lead time confirmed as THE missing Shopify input: metafield → vendor default
+  (`leadtimes.json`) → quarantine + ask-back. Jogger rows produced the ask correctly;
+  vendor-sibling candidates are S2 scope.
+- Suite 62 → **79 green** (17 adapter tests: CSV golden sha-pinned, byte-identical
+  rerun, manifest contract, provenance coverage, skip counts, pass-through analogs,
+  vendor defaults, receipt-only-with-inbound, and 8 engine-integration assertions).
+  Engine goldens untouched — the S-track adds beside, never inside.

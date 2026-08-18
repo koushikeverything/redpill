@@ -181,6 +181,20 @@ batch-1–5 verdicts, which held up under an independent second pass.
 
 ---
 
+## 3e. S-track — Red Pill for Shopify (2026-08-14, user-approved)
+
+The e-commerce direction, adopted in its **Claude-native form**: the MIS Excel replaced by a
+Shopify snapshot adapter feeding the exact same engine contract — an *intake swap, not a
+product fork*. No server, no persistence, no execution ⇒ the SaaS-fork gates (#48/#61) stay
+closed; a public App Store listing would be a separate decision (and trips the #44 rename
+gate). Canonical spec: [SPEC-SHOPIFY.md](SPEC-SHOPIFY.md) (mapping table, gaps G39–G45,
+phases S0–S5, ecosystem ranking). UX artifact:
+https://claude.ai/code/artifact/068ce71e-d61f-4cd3-993c-830c07623f31
+Expansion order after Shopify: BigCommerce → WooCommerce → India aggregators
+(Unicommerce/EasyEcom) → Zoho → Magento MSI → Amazon SP-API (different slice; no transfers).
+
+---
+
 ## 4. What this does to the build roadmap
 
 **Scorecard (all 63 + GS):** 13 ✅ genuine · 16 🟡 partial · 33 🅿️ parked · 1 ❌ wrong

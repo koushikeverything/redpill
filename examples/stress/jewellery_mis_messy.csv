@@ -1,0 +1,389 @@
+Design Code,Showroom,Stock,Incoming,Daily Sales,Lead Time,Tag Price,Sold-W8,Sold-W7,Sold-W6,Sold-W5,Sold-W4,Sold-W3,Sold-W2,Sold-W1
+JW-GOLD-01,Mumbai Showroom,6,0,0.3,20,49999,2,2,2,3,2,2,2,2
+JW-GOLD-01,Delhi Showroom,8,0,0.4,20,49999,2,3,2,3,3,3,3,3
+JW-GOLD-01,Bengaluru Showroom,27,11,0.5,20,"₹49,999",3,3,4,4,4,4,3,4
+JW-GOLD-01,Hyderabad Showroom,21,0,0.3,30,49999,2,2,2,2,2,2,2,2
+JW-GOLD-01,Chennai Showroom,24,15,0.5,30,49999,3,3,3,3,4,4,3,3
+JW-GOLD-01,Kolkata Showroom,4,0,0.2,20,"Rs. 49,999",2,2,2,3,3,2,2,2
+JW-GOLD-01,Pune Showroom,18,0,0.6,30,49999,4,4,4,4,3,5,3,5
+JW-GOLD-01,Ahmedabad Showroom,16,11,0.5,20,"₹49,999",4,3,3,4,3,3,4,3
+JW-GOLD-02,Mumbai Showroom,112,0,0.5,30,"₹9,999",7,7,7,7,7,7,7,7
+JW-GOLD-02,Delhi Showroom,6,2,0.1,20,9999,2,3,2,2,2,3,2,2
+JW-GOLD-02,Bengaluru Showroom,16,0,0.2,45,"₹9,999",2,2,2,3,3,2,2,2
+JW-GOLD-02,Hyderabad Showroom,32,0,0.6,30,9999,5,5,4,4,5,4,5,5
+JW-GOLD-02,Chennai Showroom,3,0,0.3,30,9999,2,2,2,3,2,2,2,2
+JW-GOLD-02,Kolkata Showroom,31,0,0.5,30,9999,4,4,3,3,4,3,3,3
+JW-GOLD-02,Pune Showroom, 18 ,0,0.4,45,9999,2,2,3,3,3,3,3,3
+JW-GOLD-02,Ahmedabad Showroom,7,0,0.2,30,9999,2,2,2,2,2,2,2,2
+JW-GOLD-03,Mumbai Showroom,44,0,0.5,30,24999,3,4,4,3,3,4,3,3
+JW-GOLD-03,Delhi Showroom,4,0,0.2,20,"Rs. 24,999",2,2,2,3,2,2,2,3
+JW-GOLD-03,Bengaluru Showroom,62,0,0.6,45,"₹24,999",3,4,5,5,3,5,5,5
+JW-GOLD-03,Hyderabad Showroom,4,0,0.2,30,"₹24,999",2,2,2,2,2,3,2,2
+JW-GOLD-03,Chennai Showroom,33, 13 ,0.3,45,"24,999.00",2,2,2,2,2,2,2,3
+JW-GOLD-03,Kolkata Showroom,12,0,0.4,30,"₹24,999",3,3,3,2,2,3,3,2
+JW-GOLD-03,Pune Showroom,5,0,0.1,20,24999,2,2,3,3,2,2,2,3
+JW-GOLD-03,Ahmedabad Showroom,3,0,0.1,45,"Rs. 24,999",2,2,2,2,2,2,2,2
+JW-GOLD-04,Mumbai Showroom,14,0,0.1,45,9999,2,2,2,2,2,2,2,2
+JW-GOLD-04,Delhi Showroom,45.5,0,0.6,30,9999,3,5,5,4,5,3,5,3
+JW-GOLD-04,Bengaluru Showroom,53,0,0.4,45,"₹9,999",3,3,3,2,2,3,3,3
+JW-GOLD-04,Hyderabad Showroom,112,0,0.3,20,9999,4,4,4,4,4,4,4,4
+JW-GOLD-04,Chennai Showroom,0,0,0.2,20,N/A,2,2,3,2,2,2,2,2
+JW-GOLD-04,Kolkata Showroom,7,33,0.6,45,"₹9,999",3,4,4,4,5,5,4,3
+JW-GOLD-04,Pune Showroom,41,0,0.4,45,"9,999.00",3,3,3,3,3,2,3,2
+JW-GOLD-04,Ahmedabad Showroom,0,0,0.2,45,"₹9,999",3,2,2,2,2,3,2,2
+JW-GOLD-05,Mumbai Showroom,38,13,0.4,30,"₹4,999",3,3,2,3,3,3,3,2
+JW-GOLD-05,Delhi Showroom,32,0,0.5,30,4999,3,4,4,4,4,4,3,4
+JW-GOLD-05,Bengaluru Showroom,22,-17,0.6,45,4999,4,3,3,4,5,4,3,4
+JW-GOLD-05,Hyderabad Showroom,17,0,0.5,,"₹4,999",4,3,3,3,4,4,4,4
+JW-GOLD-05,Chennai Showroom,3,0,0.4,45,"Rs. 4,999",3,3,3,2,2,3,3,3
+JW-GOLD-05,Kolkata Showroom, 15 ,0,0.4,30,"₹4,999",3,3,3,3,3,3,3,2
+JW-GOLD-05,Pune Showroom,7,2,0.1,30 days,4999,2,2,2,2,2,2,3,2
+JW-GOLD-05,Ahmedabad Showroom,50,0,0.5,30,"Rs. 4,999",4,3,4,4,3,3,3,3
+JW-GOLD-06,Mumbai Showroom,10,0,,45,89999,2,2,2,2,2,2,2,2
+JW-GOLD-06,Delhi Showroom,14,0,0.4,20,89999,2,3,3,3,3,3,3,3
+JW-GOLD-06,Bengaluru Showroom,1,0,0.4,20,89999,3,3,3,3,2,3,3,2
+JW-GOLD-06,Hyderabad Showroom,(8),0,0.6,30,89999,4,4,4,4,4,5,4,4
+JW-GOLD-06,Chennai Showroom,14,0,0.1,45,89999,2,2,2,2,2,2,2,2
+JW-GOLD-06,Kolkata Showroom,4,0,0.1,20,"₹89,999",3,3,2,3,2,2,2,2
+JW-GOLD-06,Pune Showroom,112,0,0.5,45,"₹89,999",7,7,7,7,7,7,7,7
+JW-GOLD-06,Ahmedabad Showroom,13,0,0.4,30,89999,2,3,2,3,2,3,3,3
+JW-GOLD-06,Ahmedabad Showroom,13,0,0.4,30,89999,2,3,2,3,2,3,3,3
+JW-SILV-07,Mumbai Showroom,41,0,0.5,45,"₹4,999",3,3,4,4,3,4,4,3
+,Delhi Showroom,4,0,0.1,30,4999,3,3,2,3,2,2,3,2
+JW-SILV-07,Bengaluru Showroom,19,0,0.3,20,4999,2,2,3,2,2,3,2,2
+JW-SILV-07,Hyderabad Showroom,19,0,0.4,45,4999,2,2,3,2,3,3,3,3
+JW-SILV-07,Chennai Showroom,6,0,0.1,20,"4,999.00",2,2,2,2,2,3,2,2
+JW-SILV-07,Kolkata Showroom,34,0,0.4,30,4999,3,3,2,3,3,3,3,3
+JW-SILV-07,Pune Showroom,1,0,0.2,30,4999,2,2,2,2,3,2,2,2
+JW-SILV-07,Ahmedabad Showroom,11,6,0.4,20,"4,999.00",3,3,3,2,3,3,3,2
+JW-SILV-08,Mumbai Showroom,0,0,0.3,20,"Rs. 24,999",2,2,2,2,2,2,3,2
+JW-SILV-08,Delhi Showroom,7,0,0.2,45,24999,2,2,2,2,2,2,2,2
+JW-SILV-08,Bengaluru Showroom,6,0,0.2,30,24999,2,2,2,2,2,3,2,2
+JW-SILV-08,Hyderabad Showroom,12,0,0.2,20,"Rs. 24,999",2,2,3,2,2,2,2,2
+JW-SILV-08,Chennai Showroom,49,0,0.5,45,"Rs. 24,999",4,4,4,3,3,3,4,3
+JW-SILV-08,Kolkata Showroom,3,0,0.2,30,24999,2,2,2,2,2,2,3,2
+JW-SILV-08,Pune Showroom,2,0,0.3,45,"Rs. 24,999",2,2,2,2,2,2,2,2
+JW-SILV-08,Ahmedabad Showroom,13,3,0.2,30,24999,2,2,2,2,2,2,2,2
+JW-SILV-09,Mumbai Showroom,6,0,0.1,30,"₹49,999",2,2,2,2,2,2,2,3
+JW-SILV-09,Delhi Showroom,112,0,0.5,30,49999,7,7,7,7,7,7,7,7
+JW-SILV-09,Bengaluru Showroom,33,11,0.6,20,49999,5,5,3,4,4,5,4,5
+JW-SILV-09,Hyderabad Showroom,2,0,0.2,45,"Rs. 49,999",3,2,2,2,2,2,2,2
+JW-SILV-09,Chennai Showroom,9,0,0.1,30,"Rs. 49,999",2,2,2,2,3,2,2,2
+JW-SILV-09,Kolkata Showroom,10,0,0.1,45,49999,2,2,2,2,2,2,2,2
+JW-SILV-09,Pune Showroom,13,0,0.2,45,"49,999.00",2,2,2,2,3,2,2,2
+JW-SILV-09,Ahmedabad Showroom,3,0,0.1,30,"Rs. 49,999",2,2,2,2,2,2,2,3
+JW-SILV-10,Mumbai Showroom,14,22,0.4,45,9999,3,3,2,2,3,3,2,3
+JW-SILV-10,Delhi Showroom,25,6,0.6,20,"9,999.00",4,3,5,5,5,4,4,5
+JW-SILV-10,Bengaluru Showroom,20,8,0.2,45,"Rs. 9,999",2,2,2,2,3,2,2,2
+JW-SILV-10,Hyderabad Showroom,13,0,0.1,45,9999,2,2,2,3,2,2,2,2
+JW-SILV-10,Chennai Showroom,33,12,0.5,45,"9,999.00",3,4,3,3,4,4,4,4
+JW-SILV-10,Kolkata Showroom,24,0,0.3,30,"9,999.00",2,2,3,2,2,2,2,2
+JW-SILV-10,Pune Showroom,21.5,0,0.3,30,"Rs. 9,999",3,2,2,2,2,2,2,2
+JW-SILV-10,Ahmedabad Showroom,21,0,0.2,45,9999,2,2,3,2,3,3,2,2
+JW-SILV-11,Mumbai Showroom,7,2,0.3,20,"₹9,999",2,2,2,2,3,2,3,2
+JW-SILV-11,Delhi Showroom,36,0,0.5,30,"₹9,999",3,4,3,3,4,3,3,4
+JW-SILV-11,Bengaluru Showroom,6,0,0.1,20,9999,2,2,2,2,3,2,2,2
+JW-SILV-11,Hyderabad Showroom,35,0,0.4,45,9999,3,3,3,3,3,3,3,3
+JW-SILV-11,Chennai Showroom,112,0,0.1,45,9999,1,1,1,1,1,1,1,1
+JW-SILV-11,Kolkata Showroom,38,0,0.3,45,9999,2,2,2,3,2,3,2,2
+JW-SILV-11,Pune Showroom,18,9,0.5,45,"9,999.00",4,4,3,4,4,4,3,3
+JW-SILV-11,Ahmedabad Showroom,16,0,0.5,20,N/A,3,4,3,4,4,3,4,3
+JW-SILV-12,Mumbai Showroom,26,6,0.3,45,"₹4,999",2,2,2,2,2,2,2,2
+JW-SILV-12,Delhi Showroom,6,0,0.2,20,"₹4,999",2,2,3,2,2,2,3,3
+JW-SILV-12,Bengaluru Showroom,3,0,0.4,45,"₹4,999",3,3,3,2,3,3,3,3
+JW-SILV-12,Hyderabad Showroom,22,0,0.4,30,4999,3,3,3,3,2,3,2,2
+JW-SILV-12,Chennai Showroom,2,0,0.4,30,"₹4,999",3,3,2,3,3,2,3,3
+JW-SILV-12,Kolkata Showroom,15,0,0.5,20,4999,3,4,4,4,3,4,4,3
+JW-SILV-12,Pune Showroom,19,15,0.6,30,"₹4,999",5,4,4,5,4,5,4,5
+JW-SILV-12,Ahmedabad Showroom,4,8,0.2,30,"₹4,999",3,2,2,2,2,2,2,2
+JW-DIAM-13,Mumbai Showroom,30,0,0.4,45,9999,3,2,3,3,3,3,3,3
+JW-DIAM-13,Delhi Showroom,43,0,0.5,30,"₹9,999",4,3,3,3,4,3,3,3
+JW-DIAM-13,Bengaluru Showroom,26,0,0.4,20,"₹9,999",3,3,2,3,3,3,2,3
+JW-DIAM-13,Hyderabad Showroom,24,17,0.3,45,9999,2,2,2,2,2,2,2,2
+JW-DIAM-13,Chennai Showroom,57,18,0.4,45,"Rs. 9,999",3,3,3,3,2,2,2,3
+JW-DIAM-13,Kolkata Showroom,20,4,0.3,20,"Rs. 9,999",2,2,2,2,3,2,2,2
+JW-DIAM-13,Pune Showroom,6,0,0.1,20,9999,2,2,2,2,2,2,2,2
+JW-DIAM-13,Ahmedabad Showroom,112,0,0.3,45,9999,4,4,4,4,4,4,4,4
+JW-DIAM-14,Mumbai Showroom,36,0,0.6,45,89999,4,4,4,5,5,3,5,5
+JW-DIAM-14,Delhi Showroom,6,-20,0.1,45,89999,2,2,2,2,2,2,2,2
+JW-DIAM-14,Bengaluru Showroom,24,0,0.5,20,89999,3,3,4,4,3,4,3,4
+JW-DIAM-14,Hyderabad Showroom,10,0,0.5,30,89999,3,4,3,4,4,4,4,3
+JW-DIAM-14,Chennai Showroom,13,0,0.4,,"Rs. 89,999",3,2,3,2,2,2,3,3
+JW-DIAM-14,Kolkata Showroom,35,0,0.3,45,89999,2,2,2,2,2,3,2,2
+JW-DIAM-14,Pune Showroom,17,0,0.4,45,89999,2,3,3,2,3,3,3,3
+JW-DIAM-14,Ahmedabad Showroom,24,7,0.4,20,89999,3,3,3,3,2,3,3,2
+JW-DIAM-15,Mumbai Showroom,24,0,0.4,20,"₹9,999",3,3,3,3,3,2,2,3
+JW-DIAM-15,Delhi Showroom,18,4,0.4,20,"Rs. 9,999",2,3,3,3,3,3,3,2
+JW-DIAM-15,Bengaluru Showroom,2,0,0.1,30,"9,999.00",2,2,2,2,3,2,2,2
+JW-DIAM-15,Hyderabad Showroom,1,0,0.1,30,9999,2,2,2,2,2,3,2,2
+JW-DIAM-15,Chennai Showroom,12,0,0.6,20,"₹9,999",5,5,4,5,5,5,5,3
+JW-DIAM-15,Kolkata Showroom,53,0,0.4,45 days,"9,999.00",3,3,3,2,2,3,3,3
+JW-DIAM-15,Pune Showroom, 7 ,0,0.3,20,9999,2,2,2,2,2,3,2,2
+JW-DIAM-15,Ahmedabad Showroom,17,0,0.4,20,9999,2,2,3,3,3,3,3,3
+JW-DIAM-16,Mumbai Showroom,3,0,0.1,20,"₹49,999",2,2,2,3,2,2,2,3
+JW-DIAM-16,Delhi Showroom,14,19,0.4,45,"49,999.00",3,3,2,3,3,3,2,2
+JW-DIAM-16,Bengaluru Showroom,112,5,0.2,20,"₹49,999",3,3,3,3,3,3,3,3
+JW-DIAM-16,Hyderabad Showroom,4,0,,45,49999,2,2,3,2,2,2,2,2
+JW-DIAM-16,Chennai Showroom,5,10,0.4,45,49999,2,3,2,2,2,2,2,3
+JW-DIAM-16,Kolkata Showroom,3,0,0.1,20,"₹49,999",2,2,2,2,2,2,2,2
+JW-DIAM-16,Pune Showroom,13,0,0.1,45,"₹49,999",2,2,2,2,2,2,2,3
+JW-DIAM-16,Ahmedabad Showroom,36,0,0.4,45,"₹49,999",2,3,3,2,2,3,3,3
+JW-DIAM-17,Mumbai Showroom,6,0,0.2,30,49999,3,2,2,3,2,2,2,2
+JW-DIAM-17,Delhi Showroom,2,1,0.1,20,"₹49,999",2,2,2,2,2,2,2,2
+JW-DIAM-17,Bengaluru Showroom,56,0,0.6,30,49999,4,4,5,4,5,5,3,4
+JW-DIAM-17,Hyderabad Showroom,11.5,0,0.2,30,49999,2,2,2,2,2,2,2,2
+JW-DIAM-17,Chennai Showroom,(9),0,0.4,20,49999,2,3,3,3,3,2,3,3
+JW-DIAM-17,Kolkata Showroom,51,0,0.5,45,49999,4,3,4,3,3,4,3,4
+JW-DIAM-17,Pune Showroom,7,12,0.4,30,49999,2,2,3,3,2,3,2,3
+JW-DIAM-17,Ahmedabad Showroom,27,0,0.2,45,49999,3,2,2,2,2,2,2,2
+JW-DIAM-18,Mumbai Showroom,9,0,0.4,20,"₹24,999",2,3,3,3,3,2,3,3
+JW-DIAM-18,Delhi Showroom,28,0,0.6,20,"24,999.00",4,4,3,4,5,4,5,4
+JW-DIAM-18,Bengaluru Showroom,48,0,0.5,30,"₹24,999",4,4,3,4,3,4,4,3
+JW-DIAM-18,Hyderabad Showroom,35,0,0.4,45,24999,2,3,3,3,3,3,3,2
+JW-DIAM-18,Chennai Showroom,39,14,0.6,20,24999,4,4,5,4,4,5,4,4
+JW-DIAM-18,Kolkata Showroom,112,4,0.4,20,"24,999.00",6,6,6,6,6,6,6,6
+JW-DIAM-18,Pune Showroom,32,14,0.4,30,"Rs. 24,999",3,3,2,3,3,3,2,3
+JW-DIAM-18,Ahmedabad Showroom,14,0,0.3,20,"₹24,999",2,2,3,3,2,2,2,2
+JW-PEAR-19,Mumbai Showroom,65,0,0.5,45,"₹49,999",3,4,3,3,3,4,3,4
+JW-PEAR-19,Mumbai Showroom,65,0,0.5,45,"₹49,999",3,4,3,3,3,4,3,4
+JW-PEAR-19,Delhi Showroom,24,0,0.5,20,"₹49,999",3,3,3,3,4,4,3,4
+JW-PEAR-19,Bengaluru Showroom,16,0,0.3,30,N/A,2,2,2,2,2,2,2,2
+JW-PEAR-19,Hyderabad Showroom,16,4,0.3,20,"Rs. 49,999",2,2,2,2,2,2,2,2
+JW-PEAR-19,Chennai Showroom,22,0,0.4,20,"₹49,999",3,3,2,3,2,3,3,3
+JW-PEAR-19,Kolkata Showroom,55,18,0.5,45,49999,3,3,4,4,3,3,3,3
+,Pune Showroom,42,0,0.5,30,49999,3,3,3,3,3,4,4,3
+JW-PEAR-19,Ahmedabad Showroom,4,11,0.6,45,49999,5,4,4,3,5,5,4,3
+JW-PEAR-20,Mumbai Showroom,34,10,0.4,45,"Rs. 9,999",2,2,2,3,3,2,3,3
+JW-PEAR-20,Delhi Showroom,2,4,0.2,20,"9,999.00",2,2,2,2,2,2,2,2
+JW-PEAR-20,Bengaluru Showroom,43,0,0.5,45,"₹9,999",4,3,3,4,4,4,3,3
+JW-PEAR-20,Hyderabad Showroom,19,3,0.2,30,9999,2,2,2,2,3,2,2,2
+JW-PEAR-20,Chennai Showroom,3,0,0.3,30,"9,999.00",2,2,2,2,2,3,2,2
+JW-PEAR-20,Kolkata Showroom,5,0,0.2,20,9999,2,2,2,2,2,2,2,2
+JW-PEAR-20,Pune Showroom,9,0,0.3,30,9999,3,2,3,2,2,2,2,2
+JW-PEAR-20,Ahmedabad Showroom,32,0,0.5,20,9999,3,4,3,3,3,3,3,4
+JW-PEAR-21,Mumbai Showroom,112,1,0.1,30,"24,999.00",1,1,1,1,1,1,1,1
+JW-PEAR-21,Delhi Showroom,20,11,0.4,30,"24,999.00",3,3,3,3,3,3,3,2
+JW-PEAR-21,Bengaluru Showroom,5,0,0.4,30,24999,3,3,3,3,3,3,2,3
+JW-PEAR-21,Hyderabad Showroom,4,0,0.1,30,24999,3,2,2,2,2,2,3,3
+JW-PEAR-21,Chennai Showroom,1,5,0.4,20,24999,3,3,3,2,3,3,3,3
+JW-PEAR-21,Kolkata Showroom,18,0,0.3,45,"₹24,999",2,2,2,2,2,2,2,2
+JW-PEAR-21,Pune Showroom,20,0,0.5,20,24999,3,3,4,3,4,4,3,4
+JW-PEAR-21,Ahmedabad Showroom,9,0,0.1,30,24999,2,3,2,2,3,2,2,2
+JW-PEAR-22,Mumbai Showroom,38,0,0.3,45,9999,2,3,3,2,2,2,2,2
+JW-PEAR-22,Delhi Showroom,6,0,0.5,20,9999,3,4,4,4,4,3,3,4
+JW-PEAR-22,Bengaluru Showroom,47,0,0.5,45,"Rs. 9,999",3,4,3,3,3,4,4,4
+JW-PEAR-22,Hyderabad Showroom,5,7,0.5,30,"Rs. 9,999",3,3,4,4,3,4,4,3
+JW-PEAR-22,Chennai Showroom,16,3,0.4,20,"₹9,999",3,3,2,3,3,2,2,3
+JW-PEAR-22,Kolkata Showroom,20,0,0.2,45,"₹9,999",2,2,3,3,2,2,2,2
+JW-PEAR-22,Pune Showroom,14,0,0.2,30,"9,999.00",2,2,2,2,2,2,2,2
+JW-PEAR-22,Ahmedabad Showroom,73,0,0.6,45,9999,4,5,5,5,5,4,4,4
+JW-PEAR-23,Mumbai Showroom,3,-9,0.3,45,"Rs. 4,999",2,2,2,3,2,2,2,3
+JW-PEAR-23,Delhi Showroom,25,10,0.6,20,4999,5,3,4,4,3,5,3,4
+JW-PEAR-23,Bengaluru Showroom, 12 ,8,0.4,45,"Rs. 4,999",2,3,3,3,3,3,3,2
+JW-PEAR-23,Hyderabad Showroom,112,0,0.5,30,"₹4,999",7,7,7,7,7,7,7,7
+JW-PEAR-23,Chennai Showroom,29,6,0.2,45,4999,2,2,2,3,2,2,2,2
+JW-PEAR-23,Kolkata Showroom,31,0,0.5,,"₹4,999",3,3,3,3,3,3,3,3
+JW-PEAR-23,Pune Showroom,9,0,0.4,30,4999,3,3,3,3,2,3,3,2
+JW-PEAR-23,Ahmedabad Showroom,7,0,0.4,20,4999,2,3,2,3,3,3,3,3
+JW-PEAR-24,Mumbai Showroom,2.5,0,0.6,30,"49,999.00",5,5,5,3,4,4,5,4
+JW-PEAR-24,Delhi Showroom,7,4,0.1,30,49999,2,2,2,2,2,2,2,2
+JW-PEAR-24,Bengaluru Showroom,16,0,0.2,45,"₹49,999",2,2,2,2,3,2,2,3
+JW-PEAR-24,Hyderabad Showroom,23,0,0.4,30,49999,3,3,2,3,3,3,3,3
+JW-PEAR-24,Chennai Showroom,13,0,0.1,45,"Rs. 49,999",2,3,2,2,2,2,2,2
+JW-PEAR-24,Kolkata Showroom,9,0,0.2,20,49999,2,2,2,2,2,2,2,2
+JW-PEAR-24,Pune Showroom, 10 ,11,0.6,30,"₹49,999",5,4,3,4,5,4,3,4
+JW-PEAR-24,Ahmedabad Showroom,7,0,0.1,30,49999,2,2,2,2,3,2,2,2
+JW-KADA-25,Mumbai Showroom,14,0,0.6,20,24999,4,4,3,4,5,5,3,4
+JW-KADA-25,Delhi Showroom,7,0,0.3,20,24999,3,2,2,2,2,3,2,2
+JW-KADA-25,Bengaluru Showroom, 31 ,0,0.4,30,"₹24,999",3,3,3,3,3,3,3,2
+JW-KADA-25,Hyderabad Showroom,6,0,0.4,30,"Rs. 24,999",3,3,2,3,3,3,3,3
+JW-KADA-25,Chennai Showroom,17,0,0.4,45 days,24999,3,3,3,3,3,2,3,2
+JW-KADA-25,Kolkata Showroom,74,0,0.6,45,24999,4,4,4,4,5,4,5,5
+JW-KADA-25,Pune Showroom,112, 6 ,0.5,20,"₹24,999",7,7,7,7,7,7,7,7
+JW-KADA-25,Ahmedabad Showroom,17,13,0.5,30,24999,4,3,4,3,3,3,3,3
+JW-KADA-26,Mumbai Showroom,1,0,0.1,45,4999,2,2,3,3,2,2,2,2
+JW-KADA-26,Delhi Showroom,22,0,0.5,30,"₹4,999",3,3,4,4,3,4,4,4
+JW-KADA-26,Bengaluru Showroom, 0 ,1,0.1,20,4999,2,2,2,2,2,2,2,2
+JW-KADA-26,Hyderabad Showroom,15,7,0.4,20,"Rs. 4,999",2,3,2,2,3,3,3,2
+JW-KADA-26,Chennai Showroom,2,0,0.1,20,4999,2,2,2,2,2,2,2,2
+JW-KADA-26,Kolkata Showroom,12,2,0.2,20,N/A,2,2,2,2,2,2,2,2
+JW-KADA-26,Pune Showroom,4,0,,20,"₹4,999",4,4,5,5,5,5,4,5
+JW-KADA-26,Ahmedabad Showroom,0,0,0.5,20,"₹4,999",4,3,3,4,3,3,3,3
+JW-KADA-27,Mumbai Showroom,8, 4 ,0.4,20,"9,999.00",3,3,2,2,3,2,3,2
+JW-KADA-27,Delhi Showroom,9,0,0.2,30,"9,999.00",2,3,2,2,2,2,2,2
+JW-KADA-27,Bengaluru Showroom,9,0,0.2,30,"Rs. 9,999",2,2,2,2,2,2,2,2
+JW-KADA-27,Hyderabad Showroom,24,0,0.5,20,"₹9,999",4,4,3,4,4,3,4,4
+JW-KADA-27,Chennai Showroom,47,0,0.4,45,"₹9,999",3,3,3,3,3,3,3,3
+JW-KADA-27,Kolkata Showroom,18,0,0.3,45,9999,2,2,2,2,2,2,2,2
+JW-KADA-27,Pune Showroom,10,0,0.6,30,"Rs. 9,999",3,5,4,4,3,3,5,4
+JW-KADA-27,Ahmedabad Showroom,6,0,0.1,20,"Rs. 9,999",2,3,2,2,2,2,2,3
+JW-KADA-28,Mumbai Showroom,1,3,0.4,20,"₹9,999",2,3,3,3,3,2,2,3
+JW-KADA-28,Delhi Showroom,112,0,0.2,45,"9,999.00",3,3,3,3,3,3,3,3
+JW-KADA-28,Bengaluru Showroom,11,0,0.2,20,9999,3,2,2,2,2,2,2,3
+JW-KADA-28,Hyderabad Showroom,16, 3 ,0.2,30,"9,999.00",2,2,2,2,2,2,2,2
+JW-KADA-28,Chennai Showroom,56,0,0.6,45,"9,999.00",5,5,5,3,4,3,4,3
+JW-KADA-28,Kolkata Showroom,-1,0,0.5,45,"₹9,999",4,3,3,4,4,3,4,4
+JW-KADA-28,Pune Showroom,4,0,0.1,30,"Rs. 9,999",2,3,3,2,2,2,2,2
+JW-KADA-28,Ahmedabad Showroom,0,0,0.3,30,"Rs. 9,999",2,2,2,2,2,2,2,2
+JW-KADA-29,Mumbai Showroom,4,6,0.4,30,49999,3,3,3,2,2,3,3,2
+JW-KADA-29,Delhi Showroom,5,0,0.3,30,"Rs. 49,999",2,2,2,2,2,2,2,2
+JW-KADA-29,Bengaluru Showroom, 23 ,0,0.4,20,49999,2,3,3,3,3,3,3,3
+JW-KADA-29,Hyderabad Showroom,12,0,0.5,30,49999,3,3,3,4,3,3,3,4
+JW-KADA-29,Chennai Showroom,12,1,0.1,45,"₹49,999",2,2,3,2,2,2,2,2
+JW-KADA-29,Kolkata Showroom,31,0,0.5,20,"Rs. 49,999",4,4,3,4,3,4,3,4
+JW-KADA-29,Pune Showroom,25,3,0.4,20,"Rs. 49,999",3,3,3,3,3,2,3,3
+JW-KADA-29,Ahmedabad Showroom,4,0,0.1,30,"Rs. 49,999",2,2,2,2,2,3,2,2
+JW-KADA-30,Mumbai Showroom,2,11,0.5,30,"₹9,999",3,4,4,3,4,4,3,3
+JW-KADA-30,Delhi Showroom, 6 ,13,0.5,20,"Rs. 9,999",3,3,3,4,3,3,4,3
+JW-KADA-30,Bengaluru Showroom,53,14,0.4,45,"₹9,999",3,2,3,2,3,3,2,3
+JW-KADA-30,Hyderabad Showroom,2,4,0.2,30,"9,999.00",2,2,2,3,2,2,2,2
+JW-KADA-30,Chennai Showroom,112,3,0.2,20,"₹9,999",3,3,3,3,3,3,3,3
+JW-KADA-30,Kolkata Showroom,69.5,0,0.5,45,9999,3,4,4,4,3,3,4,4
+JW-KADA-30,Pune Showroom,12,0,0.3,30,9999,2,2,2,2,2,2,2,3
+JW-KADA-30,Ahmedabad Showroom,13, 4 ,0.2,45,9999,3,2,2,2,2,2,2,2
+JW-NOSE-31,Mumbai Showroom,5,15,0.5,30,"₹9,999",4,3,3,3,4,3,4,3
+JW-NOSE-31,Delhi Showroom,9,0,0.5,45,9999,3,3,3,3,3,3,3,4
+JW-NOSE-31,Delhi Showroom,9,0,0.5,45,9999,3,3,3,3,3,3,3,4
+JW-NOSE-31,Bengaluru Showroom,10,0,0.5,30,"₹9,999",3,3,4,3,4,4,4,4
+JW-NOSE-31,Hyderabad Showroom,3,0,0.5,20,9999,3,4,3,4,4,4,4,3
+JW-NOSE-31,Chennai Showroom,45,0,0.5,30,9999,4,3,3,3,3,3,3,3
+JW-NOSE-31,Kolkata Showroom,26,7,0.5,30,9999,4,4,4,4,3,4,3,3
+JW-NOSE-31,Pune Showroom,0,0,0.2,45,9999,2,2,2,2,2,2,2,3
+JW-NOSE-31,Ahmedabad Showroom,19,-2,0.5,20,"₹9,999",3,4,4,4,3,3,3,4
+JW-NOSE-32,Mumbai Showroom,19,0,0.5,20,9999,3,3,3,3,3,3,4,3
+JW-NOSE-32,Delhi Showroom,4,0,0.5,30,9999,4,3,3,4,3,3,3,4
+JW-NOSE-32,Bengaluru Showroom,25,8,0.3,30,9999,2,2,2,2,2,2,2,2
+,Hyderabad Showroom,15,0,0.4,20,9999,3,2,3,3,3,2,2,3
+JW-NOSE-32,Chennai Showroom,7,0,0.2,20,9999,2,2,2,2,2,2,2,2
+JW-NOSE-32,Kolkata Showroom, 56 ,0,0.6,45,9999,3,4,3,3,4,4,5,4
+JW-NOSE-32,Pune Showroom,47,12,0.6,,"₹9,999",4,4,4,5,5,4,5,4
+JW-NOSE-32,Ahmedabad Showroom,112,0,0.1,20,"9,999.00",1,1,1,1,1,1,1,1
+JW-NOSE-33,Mumbai Showroom,8,0,0.1,30,"Rs. 4,999",2,3,2,2,2,2,2,2
+JW-NOSE-33,Delhi Showroom,30,0,0.4,30,4999,2,2,3,3,3,3,2,3
+JW-NOSE-33,Bengaluru Showroom,16, 8 ,0.4,20,"₹4,999",2,2,3,3,3,3,3,3
+JW-NOSE-33,Hyderabad Showroom,2,0,0.4,20,4999,2,3,3,2,3,2,2,3
+JW-NOSE-33,Chennai Showroom,4,0,0.1,30,4999,2,2,3,2,3,2,2,2
+JW-NOSE-33,Kolkata Showroom,18,0,0.3,30,"Rs. 4,999",2,2,2,3,2,2,2,2
+JW-NOSE-33,Pune Showroom,1,3,0.2,30,"₹4,999",2,2,2,2,2,2,3,2
+JW-NOSE-33,Ahmedabad Showroom, 10 ,7,0.3,20,4999,2,2,2,2,2,3,2,2
+JW-NOSE-34,Mumbai Showroom, 2 ,0,0.2,20,N/A,2,3,2,3,2,2,2,2
+JW-NOSE-34,Delhi Showroom,3,0,0.2,20,"₹9,999",2,2,2,2,2,2,2,2
+JW-NOSE-34,Bengaluru Showroom,16,3,0.3,20,9999,2,2,2,2,2,2,3,2
+JW-NOSE-34,Hyderabad Showroom, 15 ,18,0.5,30,9999,3,3,4,4,4,3,4,3
+JW-NOSE-34,Chennai Showroom,2,5,0.2,30,9999,2,2,2,2,2,2,2,2
+JW-NOSE-34,Kolkata Showroom,15,0,0.3,30,"Rs. 9,999",2,2,2,2,2,2,2,3
+JW-NOSE-34,Pune Showroom,34,0,0.6,45,"₹9,999",3,5,4,4,4,3,3,4
+JW-NOSE-34,Ahmedabad Showroom,3,0,0.3,30,"₹9,999",3,2,2,2,2,2,2,2
+JW-NOSE-35,Mumbai Showroom,21,8,0.3,45,"₹89,999",2,2,2,2,3,2,2,2
+JW-NOSE-35,Delhi Showroom,4,0,0.1,20,89999,2,2,2,2,2,2,2,2
+JW-NOSE-35,Bengaluru Showroom,112,0,0.2,20,89999,3,3,3,3,3,3,3,3
+JW-NOSE-35,Hyderabad Showroom, 51 ,0,0.4,45 days,89999,2,3,3,3,2,3,2,2
+JW-NOSE-35,Chennai Showroom,5,0,0.1,20,"₹89,999",2,2,2,2,2,3,2,2
+JW-NOSE-35,Kolkata Showroom,28,8,0.4,30,"₹89,999",2,3,3,2,3,2,3,3
+JW-NOSE-35,Pune Showroom,1,10,0.3,30,"Rs. 89,999",2,3,2,2,2,2,2,2
+JW-NOSE-35,Ahmedabad Showroom,73,0,0.6,45,89999,4,4,3,3,4,4,5,4
+JW-NOSE-36,Mumbai Showroom,37,0,0.5,30,"₹49,999",4,4,4,4,4,4,4,4
+JW-NOSE-36,Delhi Showroom,75,0,0.6,45,49999,5,4,5,4,5,5,3,4
+JW-NOSE-36,Bengaluru Showroom,6,0,0.2,30,49999,2,2,2,3,2,2,2,2
+JW-NOSE-36,Hyderabad Showroom,4,0,0.3,20,"Rs. 49,999",3,2,2,2,2,2,2,2
+JW-NOSE-36,Chennai Showroom,30,0,0.5,20,"₹49,999",3,3,4,3,3,4,4,4
+JW-NOSE-36,Kolkata Showroom,4,0,0.1,45,"₹49,999",2,2,2,2,2,2,2,2
+JW-NOSE-36,Pune Showroom,34,0,0.6,45,"Rs. 49,999",5,5,5,5,5,4,4,5
+JW-NOSE-36,Ahmedabad Showroom,9,0,0.2,45,"Rs. 49,999",2,3,2,3,2,2,2,2
+JW-TENN-37,Mumbai Showroom,1,0,0.1,20,"₹89,999",2,2,2,2,2,2,2,2
+JW-TENN-37,Delhi Showroom,20,8,,30,"89,999.00",4,3,4,4,3,3,3,3
+JW-TENN-37,Bengaluru Showroom,20.5,0,0.5,30,89999,4,4,4,3,3,3,4,3
+JW-TENN-37,Hyderabad Showroom,6,0,0.1,30,89999,2,3,2,2,2,2,2,2
+JW-TENN-37,Chennai Showroom,50,0,0.5,30,"₹89,999",3,4,4,4,4,3,3,3
+JW-TENN-37,Kolkata Showroom,112,0,0.2,45,"₹89,999",3,3,3,3,3,3,3,3
+JW-TENN-37,Pune Showroom,0,2,0.1,20,89999,2,2,2,2,2,2,2,2
+JW-TENN-37,Ahmedabad Showroom,18,6,0.5,20,89999,3,4,3,4,4,4,3,4
+JW-TENN-38,Mumbai Showroom,5,3,0.2,20,"₹4,999",2,2,2,2,2,2,3,2
+JW-TENN-38,Delhi Showroom,40,0,0.6,20,"₹4,999",5,4,5,4,5,5,5,5
+JW-TENN-38,Bengaluru Showroom,2,0,0.1,20,4999,2,2,2,2,2,2,3,3
+JW-TENN-38,Hyderabad Showroom,3,0,0.2,20,"₹4,999",2,2,2,2,2,2,2,2
+JW-TENN-38,Chennai Showroom,9,0,0.5,30,"₹4,999",3,3,3,4,3,3,4,4
+JW-TENN-38,Kolkata Showroom,2,0,0.1,20,"₹4,999",2,2,2,2,2,3,2,2
+JW-TENN-38,Pune Showroom,20,0,0.3,30,"₹4,999",2,2,2,2,2,2,2,2
+JW-TENN-38,Ahmedabad Showroom,17,0,0.5,20,4999,4,3,4,3,3,4,3,3
+JW-TENN-39,Mumbai Showroom, 16 ,0,0.2,45,49999,2,2,2,2,2,2,2,2
+JW-TENN-39,Delhi Showroom,3,0,0.2,45,49999,2,2,2,2,2,2,2,2
+JW-TENN-39,Bengaluru Showroom,8,5,0.2,30,49999,3,3,2,2,2,2,2,2
+JW-TENN-39,Hyderabad Showroom,23,4,0.4,20,"Rs. 49,999",3,3,3,3,3,2,2,3
+JW-TENN-39,Chennai Showroom,3,0,0.5,45,49999,4,4,4,3,3,3,3,4
+JW-TENN-39,Kolkata Showroom,8,0,0.1,30,"Rs. 49,999",2,2,2,2,2,2,2,2
+JW-TENN-39,Pune Showroom,(7),0,0.5,30,49999,4,4,3,4,3,3,4,4
+JW-TENN-39,Ahmedabad Showroom,44,10,0.3,45,"Rs. 49,999",2,3,2,2,2,2,2,2
+JW-TENN-40,Mumbai Showroom,112,0,0.6,20,49999,9,9,9,9,9,9,9,9
+JW-TENN-40,Delhi Showroom,9,0,0.1,45,49999,2,2,2,2,2,2,2,2
+JW-TENN-40,Bengaluru Showroom,8,0,0.1,30,49999,2,2,2,2,2,2,2,3
+JW-TENN-40,Hyderabad Showroom,9,0,0.1,30,"₹49,999",2,2,3,2,2,3,3,2
+JW-TENN-40,Chennai Showroom,2,0,0.4,30,49999,3,3,3,3,3,2,2,3
+JW-TENN-40,Kolkata Showroom,7,0,0.1,30,"₹49,999",2,3,2,2,2,2,2,2
+JW-TENN-40,Pune Showroom,17,-11,0.4,20,"49,999.00",3,2,3,3,3,3,3,3
+JW-TENN-40,Ahmedabad Showroom,9,0,0.1,45,49999,2,3,2,2,2,2,2,2
+JW-TENN-41,Mumbai Showroom,26,0,0.6,30,"Rs. 89,999",5,4,4,5,5,4,4,4
+JW-TENN-41,Delhi Showroom,15,0,0.4,30,"₹89,999",3,3,2,3,3,3,3,2
+JW-TENN-41,Bengaluru Showroom,14,0,0.1,45,89999,2,2,2,2,2,2,2,2
+JW-TENN-41,Hyderabad Showroom,5,0,0.2,45,N/A,2,2,2,3,2,2,2,2
+JW-TENN-41,Chennai Showroom,54,14,0.6,30,"89,999.00",3,4,5,3,5,4,4,4
+JW-TENN-41,Kolkata Showroom,31,0,0.5,30,89999,3,3,4,3,4,3,3,3
+JW-TENN-41,Pune Showroom,9,10,0.4,20,89999,3,2,3,3,2,3,3,2
+JW-TENN-41,Ahmedabad Showroom,8,7,0.3,,89999,2,2,2,2,2,2,2,2
+JW-TENN-42,Mumbai Showroom,14,0,0.1,45,49999,2,2,2,2,2,2,2,2
+JW-TENN-42,Delhi Showroom, 1 ,0,0.5,30,"₹49,999",3,3,4,4,3,4,4,4
+JW-TENN-42,Bengaluru Showroom,19,0,0.6,20,49999,4,4,5,4,4,4,4,4
+JW-TENN-42,Hyderabad Showroom,112,0,0.3,20,49999,4,4,4,4,4,4,4,4
+JW-TENN-42,Chennai Showroom,22,17,0.3,45,49999,2,2,2,2,2,2,2,2
+JW-TENN-42,Kolkata Showroom,0,0,0.4,30,49999,3,3,3,2,3,3,2,2
+JW-TENN-42,Pune Showroom,38,0,0.6,20,49999,5,5,5,4,4,5,5,5
+JW-TENN-42,Ahmedabad Showroom,14,0,0.2,30,"Rs. 49,999",2,2,2,2,2,2,2,2
+JW-TEMP-43,Mumbai Showroom,16,0,0.4,45,49999,2,2,3,2,3,3,3,3
+JW-TEMP-43,Delhi Showroom,1,0,0.2,20,"₹49,999",2,2,2,2,3,2,2,2
+JW-TEMP-43,Bengaluru Showroom,3,0,0.1,20,"₹49,999",2,2,2,2,2,3,2,2
+JW-TEMP-43,Bengaluru Showroom,3,0,0.1,20,"₹49,999",2,2,2,2,2,3,2,2
+JW-TEMP-43,Hyderabad Showroom,5,0,0.1,20,"₹49,999",2,2,2,2,2,3,2,2
+JW-TEMP-43,Chennai Showroom,26,18,0.5,30,49999,3,3,3,3,3,4,4,4
+JW-TEMP-43,Kolkata Showroom,30,0,0.5,45,49999,4,4,3,3,3,3,4,4
+JW-TEMP-43,Pune Showroom,6,0,0.3,45,"₹49,999",2,2,2,2,2,2,2,2
+JW-TEMP-43,Ahmedabad Showroom,9.5,1,0.1,30,49999,2,2,3,2,2,2,2,2
+JW-TEMP-44,Mumbai Showroom,55,0,0.4,45,89999,3,2,3,3,3,3,3,3
+JW-TEMP-44,Delhi Showroom,13,0,0.1,45,89999,2,2,2,2,2,2,2,2
+JW-TEMP-44,Bengaluru Showroom,1,0,0.1,45,89999,3,2,2,2,2,2,2,2
+JW-TEMP-44,Hyderabad Showroom,21,17,0.6,45,89999,5,3,3,5,4,4,4,5
+JW-TEMP-44,Chennai Showroom,13,10,0.5,30,89999,3,3,3,3,4,3,3,3
+JW-TEMP-44,Kolkata Showroom,12,0,0.6,20,89999,5,4,4,4,5,4,5,4
+JW-TEMP-44,Pune Showroom,112,0,0.3,20,"89,999.00",4,4,4,4,4,4,4,4
+JW-TEMP-44,Ahmedabad Showroom,29,0,0.5,30,89999,3,3,4,4,4,4,3,3
+,Mumbai Showroom,29,0,0.2,45,"₹4,999",2,2,2,3,2,2,2,2
+JW-TEMP-45,Delhi Showroom, 11 ,4,0.1,45,4999,2,2,3,2,2,2,2,2
+JW-TEMP-45,Bengaluru Showroom,13,0,0.5,20 days,4999,4,3,3,3,4,4,4,4
+JW-TEMP-45,Hyderabad Showroom,35,0,0.3,45,"₹4,999",2,2,2,2,2,3,2,2
+JW-TEMP-45,Chennai Showroom,4,0,0.1,30,"4,999.00",2,2,2,2,2,2,2,2
+JW-TEMP-45,Kolkata Showroom,24,16,0.3,45,"Rs. 4,999",2,2,2,2,2,2,2,2
+JW-TEMP-45,Pune Showroom,10,0,0.2,30,"Rs. 4,999",2,2,2,2,3,2,2,2
+JW-TEMP-45,Ahmedabad Showroom,1,0,0.2,30,4999,2,2,3,2,2,2,2,2
+JW-TEMP-46,Mumbai Showroom,6,0,0.2,20,49999,3,2,2,2,2,2,2,2
+JW-TEMP-46,Delhi Showroom,13,0,0.2,30,49999,2,2,2,2,2,2,2,2
+JW-TEMP-46,Bengaluru Showroom,14,3,0.1,45,49999,2,2,3,2,3,2,2,2
+JW-TEMP-46,Hyderabad Showroom,8,0,0.4,30,49999,3,2,3,2,3,3,3,2
+JW-TEMP-46,Chennai Showroom,26,0,0.6,20,"Rs. 49,999",5,3,3,4,4,3,4,4
+JW-TEMP-46,Kolkata Showroom,3,0,0.2,30,"₹49,999",2,3,2,2,2,2,2,2
+JW-TEMP-46,Pune Showroom,0,0,0.1,30,"49,999.00",2,2,3,2,2,3,3,2
+JW-TEMP-46,Ahmedabad Showroom,26,0,0.3,45,49999,2,2,2,3,2,2,2,2
+JW-TEMP-47,Mumbai Showroom,11,0,0.2,45,"Rs. 9,999",2,2,2,2,2,2,2,3
+JW-TEMP-47,Delhi Showroom,112,14,0.4,45,9999,6,6,6,6,6,6,6,6
+JW-TEMP-47,Bengaluru Showroom,5,1,0.1,20,"₹9,999",2,2,2,2,2,2,2,2
+JW-TEMP-47,Hyderabad Showroom,45,0,0.3,45,"Rs. 9,999",2,2,2,2,2,2,2,2
+JW-TEMP-47,Chennai Showroom,0,0,,30,9999,2,2,2,2,2,2,2,3
+JW-TEMP-47,Kolkata Showroom,42,0,0.5,30,"9,999.00",3,4,3,4,4,3,4,3
+JW-TEMP-47,Pune Showroom,4,0,0.1,20,"₹9,999",2,2,2,2,2,2,2,2
+JW-TEMP-47,Ahmedabad Showroom,5,0,0.2,20,"9,999.00",2,3,2,3,3,3,2,2
+JW-TEMP-48,Mumbai Showroom,21,0,0.6,20,49999,4,4,4,4,4,3,5,3
+JW-TEMP-48,Delhi Showroom,0,0,0.1,30,"₹49,999",2,2,2,2,2,2,2,2
+JW-TEMP-48,Bengaluru Showroom,0,0,0.1,30,"49,999.00",2,3,2,2,2,2,2,2
+JW-TEMP-48,Hyderabad Showroom,20,3,0.3,20,49999,2,2,2,2,2,2,3,2
+JW-TEMP-48,Chennai Showroom,6,7,0.3,30,"₹49,999",2,2,3,2,2,3,2,2
+JW-TEMP-48,Kolkata Showroom,14,0,0.4,20,"₹49,999",3,2,3,3,3,3,3,3
+JW-TEMP-48,Pune Showroom,19,0,0.4,20,N/A,3,3,2,3,3,2,3,3
+JW-TEMP-48,Ahmedabad Showroom,11,0,0.6,30,49999,3,3,4,4,4,5,5,4

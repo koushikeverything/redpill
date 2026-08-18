@@ -699,13 +699,18 @@ class TestTimingAndImpact(Base):
 class TestReleaseHardening(Base):
     """Phase 5 (G30): frozen snapshot golden + schema contract."""
 
-    # sha256 of the whole v1 report.json at engine 2.4.0 / as-of 2026-08-10.
+    # sha256 of the whole v1 report.json at engine 2.4.2 / as-of 2026-08-10.
     # ANY behavior change breaks this on purpose: change SPEC + this pin together,
     # in the same commit, with a reason.
-    # 2.4.0 pin update: G36 cover split + projected stockout + too-late transfer
-    # flag, G37 financial impact (revenue-at-risk / capital-tied-up), G38
-    # assumptions_and_policies section. All prior business figures unchanged.
-    REPORT_SHA256 = "b98c64645b93bb73424ffd114f1f91ff786dd49834090aa448f1251dea5ab028"
+    # 2.4.1 pin update: stress-pack alias hardening (sku: product_code→exact,
+    # +design_code/isbn/isbn_sku; store: +showroom; qoo: +incoming; price:
+    # +tag_price). Verified byte-identical to the 2.4.0 report after normalizing
+    # the version string — every business figure unchanged.
+    # 2.4.2 pin update: side-output placement only (data_gaps.csv / fill-in
+    # template written next to --out/--report instead of the CWD). Verified
+    # byte-identical to the 2.4.1 report after normalizing the version string —
+    # every business figure unchanged.
+    REPORT_SHA256 = "c8f67d76b4c45fcb564fcb233d409b44be7892a9bbc5dbf0a25a67834ed8205b"
 
     def test_full_report_snapshot_frozen(self):
         import hashlib
@@ -797,3 +802,36 @@ class TestPartialsClosed(Base):
         self.assertEqual(lane[0]["est_transfer_cost"], lane[0]["qty"] * 12)
         other = [t for t in r["transfers"] if t["from_store"] != "Mumbai - Andheri"]
         self.assertTrue(all(t["est_transfer_cost"] is None for t in other))
+
+
+class TestSideOutputPlacement(Base):
+    """2.4.2: a bare run (no --run-dir) pointed at another directory must not
+    drop side files (data_gaps.csv, fill-in template) into the caller's CWD."""
+
+    def test_gap_file_lands_next_to_out_not_cwd(self):
+        with tempfile.TemporaryDirectory() as cwd, \
+             tempfile.TemporaryDirectory() as dest:
+            proc = subprocess.run(
+                [sys.executable, ENGINE, self.v1, "--as-of", AS_OF,
+                 "--out", os.path.join(dest, "computed.csv"),
+                 "--summary", os.path.join(dest, "summary.json"),
+                 "--report", os.path.join(dest, "report.json")],
+                capture_output=True, text=True, cwd=cwd)
+            self.assertEqual(proc.returncode, 0, proc.stderr)
+            self.assertTrue(os.path.exists(os.path.join(dest, "data_gaps.csv")))
+            self.assertEqual(os.listdir(cwd), [])   # v1 quarantines 10 rows — none land here
+
+    def test_blocked_run_template_lands_next_to_report_not_cwd(self):
+        with tempfile.TemporaryDirectory() as cwd, \
+             tempfile.TemporaryDirectory() as dest:
+            bad = os.path.join(dest, "bad.csv")
+            with open(bad, "w") as fh:
+                fh.write("sku,store,soh\nA,S1,5\n")
+            proc = subprocess.run(
+                [sys.executable, ENGINE, bad, "--as-of", AS_OF,
+                 "--report", os.path.join(dest, "report.json")],
+                capture_output=True, text=True, cwd=cwd)
+            self.assertNotEqual(proc.returncode, 0)
+            self.assertTrue(os.path.exists(
+                os.path.join(dest, "redpill_input_template.csv")))
+            self.assertEqual(os.listdir(cwd), [])

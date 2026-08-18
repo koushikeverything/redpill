@@ -1,0 +1,1820 @@
+item,shop,current_stock,intransit,avg_off_take_day,lt,price,Gear,bf,Units Sold Week 8,Units Sold Week 7,Units Sold Week 6,Units Sold Week 5,Units Sold Week 4,Units Sold Week 3,Units Sold Week 2,Units Sold Week 1
+SP-YOGA-01,Mumbai,25,0,0.8,10,299,Yoga Mat Pro,,6,6,7,6,6,5,6,4
+SP-YOGA-01,Delhi,111,0,4.5,10,299,Yoga Mat Pro,2.0,39,29,37,35,35,39,27,29
+SP-YOGA-01,Bengaluru,39,0,5.7,7,299,Yoga Mat Pro,2.0,46,38,36,38,30,32,39,38
+SP-YOGA-01,Hyderabad,61,0,3.5,7,Rs. 299,Yoga Mat Pro,,23,30,30,21,30,28,28,22
+SP-YOGA-01,Chennai,42,0,3.7,10,Rs. 299,Yoga Mat Pro,,21,20,29,30,20,20,30,27
+SP-YOGA-01,Kolkata,59,0,4.7,7,Rs. 299,Yoga Mat Pro,2.2,34,39,29,40,37,33,36,28
+SP-YOGA-01,Pune,44,26,3.1,7,₹299,Yoga Mat Pro,,24,18,18,19,18,19,17,16
+SP-YOGA-01,Ahmedabad,48,0,3.7,7,299,Yoga Mat Pro,,46,46,56,5,10,10,10,10
+SP-YOGA-01,Jaipur,22,0,5.7,14,299,Yoga Mat Pro,,32,34,43,45,49,35,45,48
+SP-YOGA-01,Lucknow,36,57,5.0,10,₹299,Yoga Mat Pro,,43,30,36,42,36,42,39,39
+SP-YOGA-01,Surat,49,13,2.4,7,299,Yoga Mat Pro,,20,19,21,18,16,19,19,17
+SP-YOGA-01,Indore,42,30,3.4,7,299,Yoga Mat Pro,,27,20,22,28,21,20,23,27
+SP-YOGA-01,Nagpur,85,0,5.3,10,₹299,Yoga Mat Pro,,29,39,34,39,37,32,45,28
+SP-YOGA-01,Kochi,14,0,0.5,14,Rs. 299,Yoga Mat Pro,,4,3,3,4,3,4,4,4
+SP-YOGA-01,Chandigarh, 231 ,0,5.8,14,Rs. 299,Yoga Mat Pro,,50,34,42,33,44,38,42,35
+SP-YOGA-01,Bhopal,51,23,3.1,14,₹299,Yoga Mat Pro,,23,21,23,16,19,22,24,25
+SP-YOGA-01,Patna,15,0,1.9,10,₹299,Yoga Mat Pro,,13,14,16,14,16,11,12,14
+SP-YOGA-01,Vadodara,77,0,4.8,7,299,Yoga Mat Pro,2.0,26,38,42,27,36,33,37,40
+SP-YOGA-01,Ludhiana,129,0,4.7,10,299.00,Yoga Mat Pro,,34,40,39,40,36,37,34,35
+SP-YOGA-01,Agra,63,0,3.3,10,299.00,Yoga Mat Pro,,20,19,25,19,20,21,24,22
+SP-YOGA-02,Mumbai,162,27,4.8,14,999,Yoga Mat Pro,2.2,38,42,28,33,33,28,38,37
+SP-YOGA-02,Delhi,108,0,3.7,14,999,Yoga Mat Pro,2.2,23,27,32,24,20,28,26,24
+SP-YOGA-02,Bengaluru,6,0,0.6,7,999,Yoga Mat Pro,2.0,4,3,4,4,5,3,5,5
+SP-YOGA-02,Hyderabad,46,13,2.5,7,999,Yoga Mat Pro,,14,14,20,19,19,14,17,21
+SP-YOGA-02,Chennai,49,0,3.9,14,₹999,Yoga Mat Pro,,10,49,5,10,49,5,5,5
+SP-YOGA-02,Kolkata,26.5,0,3.4,14,₹999,Yoga Mat Pro,2.2,22,24,27,19,26,29,21,23
+SP-YOGA-02,Pune,74,51,4.4,14,999.00,Yoga Mat Pro,,32,24,28,30,32,26,33,29
+SP-YOGA-02,Ahmedabad,28,0,1.0,10,999,Yoga Mat Pro,,6,6,8,8,9,6,6,7
+SP-YOGA-02,Jaipur,61,0,5.6,10,N/A,Yoga Mat Pro,,40,41,43,33,46,42,44,46
+SP-YOGA-02,Lucknow,38,0,1.8,10,999,Yoga Mat Pro,2.0,15,12,11,12,11,10,10,12
+SP-YOGA-02,Surat, 6 ,0,0.7,10,999,Yoga Mat Pro,,4,5,6,4,4,6,5,4
+SP-YOGA-02,Indore,2,0,1.6,14,999,Yoga Mat Pro,2.2,12,11,12,10,9,12,12,9
+SP-YOGA-02,Nagpur,8,0,1.5,10,999,Yoga Mat Pro,,9,12,8,12,8,11,10,11
+SP-YOGA-02,Kochi,139,76,5.5,10,₹999,Yoga Mat Pro,2.0,41,35,45,41,44,41,41,46
+SP-YOGA-02,Chandigarh,35,-11,2.0,7,Rs. 999,Yoga Mat Pro,,17,16,13,16,17,16,14,11
+SP-YOGA-02,Bhopal,53,17,1.5,,Rs. 999,Yoga Mat Pro,2.0,8,9,10,9,11,13,12,9
+SP-YOGA-02,Patna,86,0,5.3,7,999,Yoga Mat Pro,,43,42,43,39,36,45,39,44
+SP-YOGA-02,Vadodara,69,0,3.1,10,Rs. 999,Yoga Mat Pro,,17,19,26,20,18,20,22,19
+SP-YOGA-02,Ludhiana,23,64,5.2,14 days,₹999,Yoga Mat Pro,2.2,32,40,45,29,43,44,41,35
+SP-YOGA-02,Agra,95,0,5.0,10,999,Yoga Mat Pro,,39,39,29,27,30,40,29,38
+SP-YOGA-03,Mumbai,18,0,,14,"₹1,899",Yoga Mat Pro,,34,34,23,25,35,25,34,26
+SP-YOGA-03,Delhi,43,0,4.0,14,1899,Yoga Mat Pro,,50,5,50,5,11,50,11,61
+SP-YOGA-03,Bengaluru,54,0,3.3,10,1899,Yoga Mat Pro,,21,26,25,27,19,28,22,28
+SP-YOGA-03,Hyderabad,-7,0,3.9,14,"₹1,899",Yoga Mat Pro,2.0,32,21,31,32,29,26,33,21
+SP-YOGA-03,Chennai,158,0,5.3,10,"₹1,899",Yoga Mat Pro,,46,37,33,37,34,38,39,32
+SP-YOGA-03,Kolkata,148,0,5.8,14,"₹1,899",Yoga Mat Pro,,37,40,47,46,37,31,37,31
+SP-YOGA-03,Pune,172,0,5.4,10,1899,Yoga Mat Pro,,37,33,42,29,33,38,32,39
+SP-YOGA-03,Ahmedabad,72,38,4.9,7,"1,899.00",Yoga Mat Pro,,36,28,42,28,35,32,35,30
+SP-YOGA-03,Ahmedabad,72,38,4.9,7,"1,899.00",Yoga Mat Pro,,36,28,42,28,35,32,35,30
+SP-YOGA-03,Jaipur,18,0,0.9,14,"1,899.00",Yoga Mat Pro,2.2,8,8,5,8,6,7,6,7
+,Lucknow,82,0,5.0,14,"₹1,899",Yoga Mat Pro,2.2,42,29,35,34,28,39,28,35
+SP-YOGA-03,Surat,73,0,3.9,10,1899,Yoga Mat Pro,,22,30,31,30,25,33,33,23
+SP-YOGA-03,Indore,34,0,5.1,10,"Rs. 1,899",Yoga Mat Pro,2.2,35,30,42,31,39,29,40,43
+SP-YOGA-03,Nagpur,95,0,4.2,10,"₹1,899",Yoga Mat Pro,,29,32,34,23,32,35,31,23
+SP-YOGA-03,Kochi,48,0,3.6,10,1899,Yoga Mat Pro,,23,31,23,27,29,21,23,21
+SP-YOGA-03,Chandigarh,9,4,0.5,10,1899,Yoga Mat Pro,,4,3,4,4,3,4,3,4
+SP-YOGA-03,Bhopal,30,0,2.0,10,1899,Yoga Mat Pro,,16,13,12,16,12,16,13,12
+SP-YOGA-03,Patna,6,0,0.5,10,"₹1,899",Yoga Mat Pro,2.0,3,3,3,4,4,4,4,4
+SP-YOGA-03,Vadodara,92,0,3.7,10,1899,Yoga Mat Pro,,26,22,27,31,20,27,26,26
+SP-YOGA-03,Ludhiana,34,0,0.9,14,1899,Yoga Mat Pro,,13,13,11,2,11,2,13,13
+SP-YOGA-03,Agra, 90 ,0,4.7,14,"₹1,899",Yoga Mat Pro,2.2,27,34,31,28,33,35,36,37
+SP-YOGA-04,Mumbai,88,0,5.4,7,599,Yoga Mat Pro,,47,41,41,39,32,31,38,34
+SP-YOGA-04,Delhi,19,0,0.8,10,599,Yoga Mat Pro,2.2,6,6,6,6,4,7,6,5
+SP-YOGA-04,Bengaluru,48,0,4.8,10,₹599,Yoga Mat Pro,,37,31,25,34,35,39,26,28
+SP-YOGA-04,Hyderabad,28,0,2.6,10,Rs. 599,Yoga Mat Pro,2.0,17,22,15,17,14,20,14,14
+SP-YOGA-04,Chennai,31,0,1.4,7,599,Yoga Mat Pro,2.2,11,9,10,8,12,10,10,10
+SP-YOGA-04,Kolkata,6,23,3.3,14,599,Yoga Mat Pro,,24,25,28,25,27,19,23,22
+SP-YOGA-04,Pune,13,0,3.8,10,599.00,Yoga Mat Pro,2.0,29,21,29,33,25,22,22,21
+SP-YOGA-04,Ahmedabad,20,0,0.7,14,₹599,Yoga Mat Pro,,5,4,5,5,4,5,5,5
+SP-YOGA-04,Jaipur,13,0,4.4,10,Rs. 599,Yoga Mat Pro,2.2,38,29,37,35,37,34,34,27
+SP-YOGA-04,Lucknow,130,45,5.7,10,599,Yoga Mat Pro,,37,39,40,32,33,33,36,38
+SP-YOGA-04,Surat,26,10,1.4,7,₹599,Yoga Mat Pro,,10,12,9,12,10,11,11,7
+SP-YOGA-04,Indore,22,0,2.8,10,₹599,Yoga Mat Pro,,20,24,24,20,18,18,21,21
+SP-YOGA-04,Nagpur,137,0,4.5,10,599,Yoga Mat Pro,2.0,31,32,34,25,35,26,27,29
+SP-YOGA-04,Kochi,32,0,4.1,14,599,Yoga Mat Pro,,29,32,34,34,35,34,27,28
+SP-YOGA-04,Chandigarh,16,0,0.8,14,599,Yoga Mat Pro,,4,5,4,6,5,7,4,5
+SP-YOGA-04,Bhopal,90,0,3.9,7,599,Yoga Mat Pro,2.0,49,5,5,60,10,49,49,60
+SP-YOGA-04,Patna,209,0,4.5,14,599.00,Yoga Mat Pro,2.2,28,28,27,27,30,30,30,35
+SP-YOGA-04,Vadodara,30,0,2.7,14,599,Yoga Mat Pro,,19,20,20,21,20,19,20,19
+SP-YOGA-04,Ludhiana,5.5,0,2.7,14,599,Yoga Mat Pro,2.2,18,19,17,14,16,19,23,21
+SP-YOGA-04,Agra,22,36,2.8,10,599,Yoga Mat Pro,2.2,23,21,16,15,20,22,19,20
+SP-YOGA-05,Mumbai, 96 ,33,3.4,14,1899,Yoga Mat Pro,2.2,20,20,22,25,26,23,20,23
+SP-YOGA-05,Delhi,48,0,3.5,7,1899,Yoga Mat Pro,2.2,23,25,21,29,29,30,24,22
+SP-YOGA-05,Bengaluru,99,0,2.2,14,"₹1,899",Yoga Mat Pro,2.2,14,12,18,12,13,15,15,16
+SP-YOGA-05,Hyderabad,22,0,1.7,14,"₹1,899",Yoga Mat Pro,,10,10,14,13,13,12,11,11
+SP-YOGA-05,Chennai,88,0,5.0,14,"1,899.00",Yoga Mat Pro,,41,38,42,37,41,29,39,39
+SP-YOGA-05,Kolkata,111,0,4.7,7,1899,Yoga Mat Pro,2.2,30,25,41,27,39,37,35,25
+SP-YOGA-05,Pune,70,0,3.5,10,1899,Yoga Mat Pro,,29,25,25,20,25,25,22,21
+SP-YOGA-05,Ahmedabad, 19 ,0,1.1,14,N/A,Yoga Mat Pro,,9,9,7,8,8,8,7,7
+SP-YOGA-05,Jaipur,57,19,2.6,10,"₹1,899",Yoga Mat Pro,2.2,15,19,15,18,16,15,18,18
+SP-YOGA-05,Lucknow,38,0,3.7,10,1899,Yoga Mat Pro,,21,28,32,25,21,29,30,21
+SP-YOGA-05,Surat,100,34,3.3,10,"₹1,899",Yoga Mat Pro,,26,26,24,19,19,19,24,20
+SP-YOGA-05,Indore,68,0,2.2,14,"1,899.00",Yoga Mat Pro,,12,17,17,14,14,14,12,12
+SP-YOGA-05,Nagpur,21,0,2.3,14,1899,Yoga Mat Pro,,3,3,3,6,35,6,28,6
+SP-YOGA-05,Kochi,155,0,3.4,14,1899,Yoga Mat Pro,,29,29,30,19,28,27,24,20
+SP-YOGA-05,Chandigarh,82,13,3.0,10,1899,Yoga Mat Pro,,26,24,24,24,20,20,22,23
+SP-YOGA-05,Bhopal,15,0,1.1,14,1899,Yoga Mat Pro,,7,10,6,6,7,9,8,7
+SP-YOGA-05,Patna,15,0,0.7,14,1899,Yoga Mat Pro,2.0,5,6,5,5,4,5,4,5
+SP-YOGA-05,Vadodara,44,0,1.7,10,1899,Yoga Mat Pro,,11,13,9,13,10,15,14,14
+SP-YOGA-05,Ludhiana,118,0,3.1,14,"Rs. 1,899",Yoga Mat Pro,,25,22,18,20,22,18,26,20
+SP-YOGA-05,Agra,36,0,2.7,14,1899,Yoga Mat Pro,,23,16,17,17,21,16,16,19
+SP-YOGA-06,Mumbai,149,0,4.6,14,Rs. 999,Yoga Mat Pro,,38,34,25,34,31,31,36,25
+SP-YOGA-06,Delhi,7,0,0.9,10,Rs. 999,Yoga Mat Pro,,5,6,6,7,6,7,7,5
+SP-YOGA-06,Bengaluru,160,0,5.0,14,999,Yoga Mat Pro,2.2,34,36,39,29,36,43,36,36
+SP-YOGA-06,Hyderabad,52,0,2.9,7,Rs. 999,Yoga Mat Pro,2.0,20,15,24,21,18,18,24,25
+SP-YOGA-06,Chennai,4,42,3.0,14,999,Yoga Mat Pro,,25,26,21,26,25,25,17,19
+SP-YOGA-06,Kolkata,25,-6,0.6,14,999,Yoga Mat Pro,,5,3,5,5,4,4,5,4
+SP-YOGA-06,Pune,19,0,0.5,14,₹999,Yoga Mat Pro,,3,3,4,4,4,3,3,3
+SP-YOGA-06,Ahmedabad,19,40,3.9,10,₹999,Yoga Mat Pro,,21,28,27,30,24,28,24,33
+SP-YOGA-06,Jaipur,136,0,5.0,,₹999,Yoga Mat Pro,,27,34,36,28,32,40,37,36
+SP-YOGA-06,Lucknow,102,22,4.7,7,Rs. 999,Yoga Mat Pro,,72,13,6,6,59,72,59,6
+SP-YOGA-06,Surat,36,13,1.8,14,999,Yoga Mat Pro,,11,10,13,10,14,12,12,15
+SP-YOGA-06,Indore,70,0,3.3,7,₹999,Yoga Mat Pro,2.0,28,26,20,26,29,19,19,21
+SP-YOGA-06,Nagpur,78,0,3.5,7,₹999,Yoga Mat Pro,,23,28,20,29,20,19,21,29
+SP-YOGA-06,Kochi, 92 ,0,3.5,10,999,Yoga Mat Pro,2.2,27,26,23,23,27,21,24,24
+SP-YOGA-06,Chandigarh,16,0,1.7,10,999,Yoga Mat Pro,2.2,12,15,13,13,11,9,10,14
+SP-YOGA-06,Bhopal,26,12,1.7,10,₹999,Yoga Mat Pro,,10,11,15,11,13,9,12,12
+SP-YOGA-06,Patna,66, 26 ,3.9,7,999,Yoga Mat Pro,2.2,29,28,22,32,28,31,27,32
+SP-YOGA-06,Vadodara,50,0,2.6,14 days,999,Yoga Mat Pro,2.2,20,23,15,17,15,19,21,20
+SP-YOGA-06,Ludhiana,132,0,3.8,14,999,Yoga Mat Pro,,22,29,22,24,23,21,32,25
+SP-YOGA-06,Agra,22,0,2.7,7,999.00,Yoga Mat Pro,2.2,23,18,16,17,17,16,19,17
+SP-YOGA-07,Mumbai,21,0,1.7,10,₹999,Yoga Mat Pro,2.2,11,12,9,13,13,15,13,14
+SP-YOGA-07,Delhi,47,0,1.3,14,999.00,Yoga Mat Pro,,11,7,10,7,7,10,9,10
+SP-YOGA-07,Bengaluru,8, 15 ,0.9,14,999.00,Yoga Mat Pro,,5,7,7,7,6,6,6,5
+SP-YOGA-07,Hyderabad,75,0,,7,999,Yoga Mat Pro,2.0,41,47,36,34,41,29,30,31
+SP-YOGA-07,Chennai,0,3,0.7,10,999.00,Yoga Mat Pro,2.0,4,5,5,4,5,5,5,4
+SP-YOGA-07,Kolkata,41,0,2.0,7,₹999,Yoga Mat Pro,2.2,13,15,11,12,13,13,13,14
+SP-YOGA-07,Pune,36,0,5.3,7,999,Yoga Mat Pro,2.2,66,81,14,7,81,81,14,7
+SP-YOGA-07,Ahmedabad,31,0,4.5,10,Rs. 999,Yoga Mat Pro,,24,39,36,35,29,34,29,25
+SP-YOGA-07,Jaipur,127,36,5.4,14,₹999,Yoga Mat Pro,,32,35,31,32,47,31,32,31
+SP-YOGA-07,Lucknow,57,0,3.9,10,Rs. 999,Yoga Mat Pro,,33,30,24,22,30,22,33,26
+SP-YOGA-07,Surat,48,0,5.1,7,999,Yoga Mat Pro,2.0,33,43,41,34,44,43,36,28
+SP-YOGA-07,Indore,231.5,0,5.2,14,999.00,Yoga Mat Pro,,39,45,43,44,32,44,41,40
+SP-YOGA-07,Nagpur,-3,0,5.7,10,999,Yoga Mat Pro,,49,45,42,32,37,47,39,40
+SP-YOGA-07,Kochi,5,35,2.8,14,₹999,Yoga Mat Pro,,19,24,24,18,16,24,22,23
+SP-YOGA-07,Chandigarh,41,19,1.9,10,₹999,Yoga Mat Pro,2.2,14,11,13,14,12,14,14,13
+SP-YOGA-07,Bhopal,136,0,5.5,10,999,Yoga Mat Pro,2.0,31,46,43,29,41,30,29,42
+SP-YOGA-07,Patna,29,0,4.5,10,₹999,Yoga Mat Pro,2.2,36,31,30,38,25,29,25,37
+SP-YOGA-07,Vadodara,20,50,2.6,14,₹999,Yoga Mat Pro,,17,21,15,15,22,22,23,18
+SP-YOGA-07,Ludhiana,94,32,5.7,14,Rs. 999,Yoga Mat Pro,,30,36,37,40,42,34,32,40
+SP-YOGA-07,Agra, 36 ,0,2.1,7,999,Yoga Mat Pro,,17,13,18,16,16,12,15,15
+SP-YOGA-08,Mumbai,17,0,3.3,14,"₹3,499",Yoga Mat Pro,2.2,28,28,22,23,21,26,25,27
+SP-YOGA-08,Delhi, 32 ,6,1.0,10,"₹3,499",Yoga Mat Pro,2.0,8,6,6,6,7,8,6,7
+SP-YOGA-08,Bengaluru,33,0,1.6,10,"3,499.00",Yoga Mat Pro,,11,13,13,10,11,12,12,14
+SP-YOGA-08,Hyderabad,100,0,5.5,10,"₹3,499",Yoga Mat Pro,2.2,69,84,7,84,69,69,84,7
+SP-YOGA-08,Chennai,4,0,2.0,10,3499,Yoga Mat Pro,2.0,17,14,15,15,11,16,14,14
+SP-YOGA-08,Chennai,4,0,2.0,10,3499,Yoga Mat Pro,2.0,17,14,15,15,11,16,14,14
+SP-YOGA-08,Kolkata,24,9,1.3,7,3499,Yoga Mat Pro,,10,11,8,9,7,11,10,11
+SP-YOGA-08,Pune,34,0,2.0,10,N/A,Yoga Mat Pro,,15,12,16,12,15,11,11,17
+SP-YOGA-08,Ahmedabad,10,0,2.1,14,3499,Yoga Mat Pro,,13,15,18,15,18,13,13,13
+SP-YOGA-08,Jaipur,131,0,3.0,14,"₹3,499",Yoga Mat Pro,2.2,22,21,19,22,19,22,26,22
+SP-YOGA-08,Lucknow, 58 ,0,1.3,14,"3,499.00",Yoga Mat Pro,2.0,8,8,11,10,11,8,8,8
+,Surat,16,6,0.7,7,"Rs. 3,499",Yoga Mat Pro,,6,6,5,5,5,4,4,6
+SP-YOGA-08,Indore,1,0,0.9,7,3499,Yoga Mat Pro,2.0,5,8,7,5,6,7,6,8
+SP-YOGA-08,Nagpur, 166 ,0,5.5,10,"₹3,499",Yoga Mat Pro,,47,39,40,44,33,36,35,42
+SP-YOGA-08,Kochi,61,0,3.2,7,3499,Yoga Mat Pro,,20,18,26,25,19,26,20,24
+SP-YOGA-08,Chandigarh,3,20,3.2,7,3499,Yoga Mat Pro,,18,19,26,27,25,18,23,18
+SP-YOGA-08,Bhopal,4,0,0.7,7,"Rs. 3,499",Yoga Mat Pro,,4,5,4,6,5,5,4,5
+SP-YOGA-08,Patna,81,0,5.9,7,"₹3,499",Yoga Mat Pro,2.2,46,46,41,42,45,46,48,38
+SP-YOGA-08,Vadodara,60,0,1.7,14,"₹3,499",Yoga Mat Pro,,9,11,13,14,13,9,12,14
+SP-YOGA-08,Ludhiana, 110 , 40 ,3.9,14,"3,499.00",Yoga Mat Pro,,32,27,32,31,31,27,25,22
+SP-YOGA-08,Agra,154,0,3.8,14,3499,Yoga Mat Pro,,25,29,31,32,25,31,21,30
+SP-YOGA-09,Mumbai,0,0,1.2,14,Rs. 299,Yoga Mat Pro,,1,18,3,15,3,18,3,15
+SP-YOGA-09,Delhi,19,0,4.5,7,299,Yoga Mat Pro,,24,24,38,28,37,26,38,39
+SP-YOGA-09,Bengaluru,3,6,0.5,14,299,Yoga Mat Pro,,4,4,3,3,4,3,4,3
+SP-YOGA-09,Hyderabad,64,0,4.9,14,Rs. 299,Yoga Mat Pro,2.0,38,27,31,34,36,30,36,28
+SP-YOGA-09,Chennai,1,0,5.6,10,299,Yoga Mat Pro,,30,42,43,42,33,44,48,32
+SP-YOGA-09,Kolkata,42,0,1.8,10,299,Yoga Mat Pro,,12,12,12,11,11,13,16,12
+SP-YOGA-09,Pune,16,0,0.7,7,299,Yoga Mat Pro,,5,5,4,5,6,6,5,4
+SP-YOGA-09,Ahmedabad,179,0,5.6,10,299.00,Yoga Mat Pro,,43,35,39,44,41,46,45,44
+SP-YOGA-09,Jaipur,10,6,0.8,7,₹299,Yoga Mat Pro,,5,5,5,6,5,5,7,7
+SP-YOGA-09,Lucknow,28,0,4.3,10,Rs. 299,Yoga Mat Pro,2.2,32,31,37,24,35,30,26,34
+SP-YOGA-09,Surat,20,0,2.2,10,299,Yoga Mat Pro,,18,17,19,18,12,16,15,13
+SP-YOGA-09,Indore,27,0,0.8,10,Rs. 299,Yoga Mat Pro,2.2,6,6,5,5,5,5,4,7
+SP-YOGA-09,Nagpur,47,0,1.0,14,Rs. 299,Yoga Mat Pro,,6,6,9,6,6,8,6,6
+SP-YOGA-09,Kochi,28,0,2.2,14,299,Yoga Mat Pro,,15,13,13,15,17,17,17,17
+SP-YOGA-09,Chandigarh,37,21,2.5,10,299,Yoga Mat Pro,2.2,21,14,15,19,16,18,16,18
+SP-YOGA-09,Bhopal,17,0,3.5,10,₹299,Yoga Mat Pro,,20,25,24,24,18,29,26,25
+SP-YOGA-09,Patna,180,-12,4.7,14,299,Yoga Mat Pro,,41,39,26,40,27,30,30,32
+SP-YOGA-09,Vadodara,46,30,3.1,10,299.00,Yoga Mat Pro,,39,39,4,8,4,39,8,8
+SP-YOGA-09,Ludhiana,33,0,1.6,7,299,Yoga Mat Pro,,12,9,12,10,14,11,9,13
+SP-YOGA-09,Agra,29,0,1.1,14,299,Yoga Mat Pro,2.0,6,8,9,8,6,6,8,9
+SP-YOGA-10,Mumbai,4,0,0.5,7,"1,899.00",Yoga Mat Pro,,3,3,3,4,4,4,4,3
+SP-YOGA-10,Delhi,88,33,4.3,,"₹1,899",Yoga Mat Pro,2.0,23,33,27,26,29,30,31,32
+SP-YOGA-10,Bengaluru,98,0,4.7,7,"Rs. 1,899",Yoga Mat Pro,2.2,34,33,39,32,33,35,39,33
+SP-YOGA-10,Hyderabad,2,17,2.1,7,"₹1,899",Yoga Mat Pro,2.0,11,16,12,11,15,12,16,16
+SP-YOGA-10,Chennai,23.5,0,3.5,10,1899,Yoga Mat Pro,,26,29,21,30,21,26,30,24
+SP-YOGA-10,Kolkata,48,0,5.7,7,"Rs. 1,899",Yoga Mat Pro,2.2,40,41,37,34,45,50,33,40
+SP-YOGA-10,Pune,163,0,4.5,14,1899,Yoga Mat Pro,,32,31,34,25,24,34,35,27
+SP-YOGA-10,Ahmedabad,110,52,5.2,10,"1,899.00",Yoga Mat Pro,2.2,39,29,39,40,32,31,28,31
+SP-YOGA-10,Jaipur,27,17,3.6,7,"₹1,899",Yoga Mat Pro,2.0,19,28,26,27,29,22,26,29
+SP-YOGA-10,Lucknow,156,0,3.6,14,1899,Yoga Mat Pro,2.0,29,25,21,24,22,28,22,25
+SP-YOGA-10,Surat,53,0,2.5,10,1899,Yoga Mat Pro,,15,17,20,19,17,15,20,14
+SP-YOGA-10,Indore,19,0,2.2,14,"₹1,899",Yoga Mat Pro,2.2,18,17,18,17,12,16,13,18
+SP-YOGA-10,Nagpur,23,0,5.4,14,1899,Yoga Mat Pro,,30,41,35,31,40,35,45,33
+SP-YOGA-10,Kochi, 77 ,0,3.3,7,1899,Yoga Mat Pro,2.2,28,25,23,20,18,17,27,25
+SP-YOGA-10,Chandigarh,1,0,0.5,10,"₹1,899",Yoga Mat Pro,,7,7,7,7,7,1,6,0
+SP-YOGA-10,Bhopal,41,0,4.3,10,1899,Yoga Mat Pro,,34,25,30,34,27,32,23,23
+SP-YOGA-10,Patna,89,33,4.5,14 days,"₹1,899",Yoga Mat Pro,,26,34,32,33,39,30,34,32
+SP-YOGA-10,Vadodara, 11 ,0,1.7,7,"₹1,899",Yoga Mat Pro,2.2,13,11,12,11,11,14,11,12
+SP-YOGA-10,Ludhiana,106,61,5.2,10,"Rs. 1,899",Yoga Mat Pro,2.0,37,27,45,40,28,29,42,37
+SP-YOGA-10,Agra,120,0,5.2,14,"Rs. 1,899",Yoga Mat Pro,,37,35,43,36,32,32,32,37
+SP-DUMB-11,Mumbai,13,0,4.4,7,Rs. 599,Dumbbell 5kg,2.2,28,33,33,36,29,29,31,34
+SP-DUMB-11,Delhi,14,4,0.7,10,599,Dumbbell 5kg,2.2,4,6,4,4,4,5,5,5
+SP-DUMB-11,Bengaluru,13,0,0.6,10,Rs. 599,Dumbbell 5kg,,5,4,4,3,4,4,4,4
+SP-DUMB-11,Hyderabad,54,0,2.3,10,599.00,Dumbbell 5kg,,16,15,15,15,12,15,14,13
+SP-DUMB-11,Chennai,2,0,5.8,10,Rs. 599,Dumbbell 5kg,,46,44,36,46,43,38,34,31
+SP-DUMB-11,Kolkata,43,0,2.0,14,N/A,Dumbbell 5kg,2.2,13,11,14,15,14,12,14,12
+SP-DUMB-11,Pune,14,0,,7,599.00,Dumbbell 5kg,,9,6,8,8,8,8,9,9
+SP-DUMB-11,Ahmedabad,0,0,1.3,10,₹599,Dumbbell 5kg,,9,9,7,9,9,10,10,10
+SP-DUMB-11,Jaipur,67,0,5.8,7,599,Dumbbell 5kg,2.2,38,33,36,39,35,46,46,48
+SP-DUMB-11,Lucknow,86,0,5.9,7,₹599,Dumbbell 5kg,2.2,46,33,33,51,43,52,40,32
+SP-DUMB-11,Surat,92,36,5.9,7,Rs. 599,Dumbbell 5kg,,38,31,33,51,34,31,46,51
+SP-DUMB-11,Indore,35,0,4.1,7,599.00,Dumbbell 5kg,,51,51,63,63,63,5,5,11
+SP-DUMB-11,Nagpur, 39 ,0,2.4,7,599,Dumbbell 5kg,,21,15,17,16,20,15,13,20
+SP-DUMB-11,Kochi,29,0,3.3,10,Rs. 599,Dumbbell 5kg,,25,25,26,24,20,21,18,22
+SP-DUMB-11,Chandigarh,10,0,2.0,14,599.00,Dumbbell 5kg,,13,11,12,17,17,11,13,16
+SP-DUMB-11,Bhopal,39,0,2.8,7,599.00,Dumbbell 5kg,2.0,16,24,22,17,24,22,19,17
+SP-DUMB-11,Patna,30,0,5.6,10,₹599,Dumbbell 5kg,,41,32,33,48,34,48,47,33
+SP-DUMB-11,Vadodara,92,0,4.8,10,599,Dumbbell 5kg,2.0,29,33,29,25,38,35,39,33
+SP-DUMB-11,Ludhiana,20,0,3.5,7,599,Dumbbell 5kg,,26,21,30,21,27,23,28,19
+SP-DUMB-11,Agra,68,0,2.7,10,599,Dumbbell 5kg,,19,16,16,15,23,15,17,18
+SP-DUMB-12,Mumbai,39,0,1.7,14,"Rs. 1,899",Dumbbell 5kg,2.2,15,12,13,14,11,10,11,12
+SP-DUMB-12,Delhi,-8,13,2.7,7,1899,Dumbbell 5kg,2.2,17,22,22,16,21,17,18,19
+SP-DUMB-12,Bengaluru,13,0,4.2,10,1899,Dumbbell 5kg,2.0,23,28,24,32,33,30,33,24
+SP-DUMB-12,Hyderabad,14,0,3.0,7,1899,Dumbbell 5kg,2.0,18,21,22,19,25,16,23,16
+SP-DUMB-12,Chennai, 91 ,0,2.9,10,"1,899.00",Dumbbell 5kg,2.2,21,25,25,19,24,22,16,23
+SP-DUMB-12,Kolkata,6,3,0.4,14,1899,Dumbbell 5kg,,3,2,3,3,3,3,2,3
+SP-DUMB-12,Pune,51,39,5.0,7,"₹1,899",Dumbbell 5kg,,28,35,41,34,38,31,31,27
+SP-DUMB-12,Ahmedabad,16,0,3.0,10,1899,Dumbbell 5kg,2.2,20,18,21,18,22,20,21,18
+SP-DUMB-12,Jaipur, 51 ,0,2.4,14,1899,Dumbbell 5kg,2.2,6,36,3,36,30,3,36,6
+SP-DUMB-12,Lucknow,32,0,2.0,14,1899,Dumbbell 5kg,,13,11,16,12,13,16,14,16
+SP-DUMB-12,Surat,200,0,5.9,14,"1,899.00",Dumbbell 5kg,,45,51,34,50,43,46,41,37
+SP-DUMB-12,Indore,11,6,0.6,10,1899,Dumbbell 5kg,,4,3,4,4,4,4,4,5
+SP-DUMB-12,Nagpur,161,0,5.4,10,1899,Dumbbell 5kg,2.2,36,45,33,30,46,33,44,41
+SP-DUMB-12,Kochi,26,48,3.2,14,"₹1,899",Dumbbell 5kg,,21,17,26,23,18,18,23,20
+SP-DUMB-12,Chandigarh,134,0,4.7,14,1899,Dumbbell 5kg,,35,31,37,27,38,28,31,28
+SP-DUMB-12,Bhopal,35,0,2.0,7,1899,Dumbbell 5kg,2.2,17,17,13,14,11,16,14,17
+SP-DUMB-12,Patna,27,0,2.6,7,1899,Dumbbell 5kg,,20,19,19,17,14,21,19,20
+SP-DUMB-12,Vadodara,8.5,0,0.6,10,"₹1,899",Dumbbell 5kg,,5,5,4,4,4,4,3,3
+SP-DUMB-12,Ludhiana,87,28,4.0,10,1899,Dumbbell 5kg,,30,26,27,30,29,30,26,22
+SP-DUMB-12,Agra,48,0,3.9,10,"₹1,899",Dumbbell 5kg,2.0,25,21,28,33,24,33,24,25
+SP-DUMB-13,Mumbai,28,0,5.7,14,3499,Dumbbell 5kg,,38,47,31,32,30,49,40,47
+SP-DUMB-13,Delhi,8,0,2.2,10,"Rs. 3,499",Dumbbell 5kg,,19,14,13,17,13,16,19,14
+SP-DUMB-13,Delhi,8,0,2.2,10,"Rs. 3,499",Dumbbell 5kg,,19,14,13,17,13,16,19,14
+SP-DUMB-13,Bengaluru,24,11,1.0,10,3499,Dumbbell 5kg,,7,8,5,8,8,7,7,9
+SP-DUMB-13,Hyderabad,149,0,5.8,10,"₹3,499",Dumbbell 5kg,2.2,47,35,41,47,43,41,45,43
+SP-DUMB-13,Chennai,26,0,1.9,14,"₹3,499",Dumbbell 5kg,,13,11,15,15,16,12,13,14
+SP-DUMB-13,Kolkata,104,0,3.6,10,3499,Dumbbell 5kg,,5,45,45,5,10,10,55,10
+SP-DUMB-13,Pune,18,0,1.4,7,"3,499.00",Dumbbell 5kg,,12,11,9,10,12,12,9,11
+SP-DUMB-13,Ahmedabad,99,-12,5.3,7,"₹3,499",Dumbbell 5kg,,30,36,39,34,36,45,34,37
+SP-DUMB-13,Jaipur, 49 ,0,2.2,14,"₹3,499",Dumbbell 5kg,,17,19,17,13,18,12,16,15
+SP-DUMB-13,Lucknow,66,0,2.5,10,3499,Dumbbell 5kg,2.2,19,19,19,19,19,17,16,21
+SP-DUMB-13,Surat,74,0,3.3,7,3499,Dumbbell 5kg,2.2,28,29,26,21,21,19,26,19
+,Indore,17,0,3.1,7,3499,Dumbbell 5kg,,26,25,18,21,22,27,21,21
+SP-DUMB-13,Nagpur, 103 ,33,3.6,14,"3,499.00",Dumbbell 5kg,,22,29,25,20,27,31,26,22
+SP-DUMB-13,Kochi, 121 ,51,2.8,14,3499,Dumbbell 5kg,2.0,19,20,17,16,20,15,18,18
+SP-DUMB-13,Chandigarh,44,0,2.0,,3499,Dumbbell 5kg,2.2,15,13,12,12,17,13,16,17
+SP-DUMB-13,Bhopal,73,0,2.6,10,"3,499.00",Dumbbell 5kg,2.0,19,14,22,14,18,17,18,17
+SP-DUMB-13,Patna,12,0,0.9,7,"₹3,499",Dumbbell 5kg,,5,6,8,7,6,7,7,5
+SP-DUMB-13,Vadodara,7,0,2.8,10,"₹3,499",Dumbbell 5kg,,17,18,22,19,16,15,20,23
+SP-DUMB-13,Ludhiana,116,29,3.4,14,"Rs. 3,499",Dumbbell 5kg,,27,25,20,19,26,29,26,23
+SP-DUMB-13,Agra,120,46,5.1,10,"Rs. 3,499",Dumbbell 5kg,,28,34,30,38,37,30,28,33
+SP-DUMB-14,Mumbai,5,0,2.4,14,599,Dumbbell 5kg,2.2,14,17,13,13,20,21,15,17
+SP-DUMB-14,Delhi,37, 44 ,4.6,7,₹599,Dumbbell 5kg,2.2,35,37,35,36,34,34,30,29
+SP-DUMB-14,Bengaluru,68,24,3.8,7,599.00,Dumbbell 5kg,,5,47,47,58,47,47,58,5
+SP-DUMB-14,Hyderabad,72,0,4.4,14,₹599,Dumbbell 5kg,,36,36,38,29,29,29,26,32
+SP-DUMB-14,Chennai,39,0,1.7,14,N/A,Dumbbell 5kg,,10,14,14,11,14,12,9,9
+SP-DUMB-14,Kolkata,11,0,4.8,14,₹599,Dumbbell 5kg,,36,32,41,32,41,41,39,27
+SP-DUMB-14,Pune,186,0,5.8,10,599,Dumbbell 5kg,,36,36,35,35,48,34,43,43
+SP-DUMB-14,Ahmedabad,75, 40 ,5.8,10,₹599,Dumbbell 5kg,,32,47,50,38,50,39,42,40
+SP-DUMB-14,Jaipur,18, 10 ,3.3,7,599.00,Dumbbell 5kg,,21,27,23,21,28,29,25,24
+SP-DUMB-14,Lucknow,24,0,1.2,10,Rs. 599,Dumbbell 5kg,,10,9,9,6,8,9,7,10
+SP-DUMB-14,Surat,31,28,3.3,7,599,Dumbbell 5kg,2.2,21,18,25,23,23,26,22,25
+SP-DUMB-14,Indore,67,0,2.5,14,₹599,Dumbbell 5kg,2.2,18,15,16,21,14,16,17,17
+SP-DUMB-14,Nagpur,18,0,1.1,7,599.00,Dumbbell 5kg,,9,6,7,6,8,7,7,6
+SP-DUMB-14,Kochi,77,0,1.9,14,599,Dumbbell 5kg,,11,13,15,14,14,12,13,14
+SP-DUMB-14,Chandigarh,36,18,1.8,14,599,Dumbbell 5kg,,11,12,15,11,10,12,14,15
+SP-DUMB-14,Bhopal,4,0,0.8,10 days,599,Dumbbell 5kg,,4,7,6,5,5,5,7,5
+SP-DUMB-14,Patna,0,8,0.9,10,599,Dumbbell 5kg,,6,6,6,7,7,7,6,5
+SP-DUMB-14,Vadodara, 49 ,0,4.5,7,₹599,Dumbbell 5kg,2.2,31,33,38,27,30,34,39,24
+SP-DUMB-14,Ludhiana,0,0,0.5,10,599,Dumbbell 5kg,,3,3,3,4,3,3,3,4
+SP-DUMB-14,Agra,11,0,0.7,10,₹599,Dumbbell 5kg,2.0,1,8,0,8,10,8,10,10
+SP-DUMB-15,Mumbai,32,0,3.2,14,Rs. 299,Dumbbell 5kg,,25,23,19,24,26,18,19,28
+SP-DUMB-15,Delhi,20,0,2.7,14,Rs. 299,Dumbbell 5kg,2.0,19,14,15,18,21,18,15,22
+SP-DUMB-15,Bengaluru,46,17,3.8,7,299,Dumbbell 5kg,2.2,31,27,21,23,23,21,31,33
+SP-DUMB-15,Hyderabad,161,40,5.2,14,Rs. 299,Dumbbell 5kg,2.2,43,32,28,43,41,41,33,38
+SP-DUMB-15,Chennai,58,0,3.8,10,299,Dumbbell 5kg,2.2,22,21,25,23,32,24,21,25
+SP-DUMB-15,Kolkata, 80 ,0,2.6,14,299,Dumbbell 5kg,2.0,15,16,22,17,19,18,16,14
+SP-DUMB-15,Pune,33,0,4.7,7,299,Dumbbell 5kg,,30,36,36,26,30,27,36,38
+SP-DUMB-15,Ahmedabad,120,0,3.9,10,₹299,Dumbbell 5kg,,26,32,32,27,32,30,24,25
+SP-DUMB-15,Jaipur,122,0,3.4,14,₹299,Dumbbell 5kg,2.2,21,28,29,21,26,27,21,22
+SP-DUMB-15,Lucknow,58,29,,14,₹299,Dumbbell 5kg,,16,22,22,19,23,21,18,16
+SP-DUMB-15,Surat,18.5,0,1.1,14,299,Dumbbell 5kg,2.2,9,8,8,9,7,9,7,6
+SP-DUMB-15,Indore,32,0,2.6,14,₹299,Dumbbell 5kg,,16,18,17,19,16,20,19,17
+SP-DUMB-15,Nagpur,127,31,5.6,7,299,Dumbbell 5kg,,44,48,39,40,45,40,41,32
+SP-DUMB-15,Kochi,31,0,2.4,14,299,Dumbbell 5kg,,21,13,14,20,20,18,19,16
+SP-DUMB-15,Chandigarh,160,68,3.7,14,₹299,Dumbbell 5kg,2.0,31,28,22,28,20,30,20,26
+SP-DUMB-15,Bhopal,137,62,3.4,14,299,Dumbbell 5kg,2.0,19,19,27,28,18,25,19,24
+SP-DUMB-15,Patna,57,0,2.2,10,₹299,Dumbbell 5kg,2.0,33,33,33,27,6,3,6,6
+SP-DUMB-15,Vadodara,92,0,3.0,14,299,Dumbbell 5kg,2.2,24,23,19,25,17,19,21,21
+SP-DUMB-15,Ludhiana,4,28,3.2,7,299,Dumbbell 5kg,2.0,18,20,22,25,21,27,18,19
+SP-DUMB-15,Agra,4,0,1.4,7,299,Dumbbell 5kg,,8,8,8,9,8,12,12,8
+SP-DUMB-16,Mumbai,40,19,1.5,10,999,Dumbbell 5kg,2.2,10,12,12,11,12,10,10,11
+SP-DUMB-16,Delhi,116,0,5.7,10,₹999,Dumbbell 5kg,2.2,32,34,48,50,35,35,39,43
+SP-DUMB-16,Bengaluru,16,0,4.4,10,₹999,Dumbbell 5kg,2.2,26,32,31,36,32,24,27,38
+SP-DUMB-16,Hyderabad,89,0,4.5,10,Rs. 999,Dumbbell 5kg,,33,25,37,37,29,25,29,28
+SP-DUMB-16,Chennai,74,0,2.3,10,999,Dumbbell 5kg,2.2,15,16,12,20,19,16,17,14
+SP-DUMB-16,Kolkata,46,0,1.7,14,999,Dumbbell 5kg,2.0,13,9,12,14,11,10,10,10
+SP-DUMB-16,Pune,6,0,3.1,10,Rs. 999,Dumbbell 5kg,2.0,19,17,25,24,23,23,25,17
+SP-DUMB-16,Ahmedabad,9,0,3.9,7,₹999,Dumbbell 5kg,,33,27,25,27,24,24,25,29
+SP-DUMB-16,Jaipur,41,0,1.5,10,Rs. 999,Dumbbell 5kg,,12,12,9,12,11,10,11,12
+SP-DUMB-16,Lucknow,113,33,5.3,14,₹999,Dumbbell 5kg,,44,30,45,41,34,46,39,31
+SP-DUMB-16,Surat,-6,0,3.2,10,₹999,Dumbbell 5kg,2.2,23,20,17,20,22,19,22,27
+SP-DUMB-16,Indore,9,0,2.5,7,999,Dumbbell 5kg,2.2,21,21,15,21,18,17,19,19
+SP-DUMB-16,Nagpur,10,0,0.4,10,999,Dumbbell 5kg,,3,3,2,3,2,2,3,3
+SP-DUMB-16,Kochi,58,0,2.7,10,Rs. 999,Dumbbell 5kg,2.0,34,7,3,7,3,41,34,7
+SP-DUMB-16,Chandigarh,32,0,2.3,14,999,Dumbbell 5kg,2.0,13,14,19,14,20,14,16,14
+SP-DUMB-16,Bhopal,43,0,5.3,7,999.00,Dumbbell 5kg,,46,44,32,29,42,37,40,45
+SP-DUMB-16,Patna, 60 ,0,1.8,10,Rs. 999,Dumbbell 5kg,,11,15,10,14,11,13,10,16
+SP-DUMB-16,Vadodara,59,0,2.0,10,999,Dumbbell 5kg,,14,16,16,11,14,11,11,16
+SP-DUMB-16,Ludhiana,30,-7,6.0,7,₹999,Dumbbell 5kg,2.0,52,36,49,41,43,39,50,47
+SP-DUMB-16,Agra,21,6,1.0,10,₹999,Dumbbell 5kg,,6,8,6,8,7,6,6,6
+SP-DUMB-17,Mumbai,7,0,5.2,7,₹599,Dumbbell 5kg,,35,32,37,40,30,36,40,33
+SP-DUMB-17,Delhi,25,11,0.7,14,599,Dumbbell 5kg,2.0,5,5,5,6,5,4,5,4
+SP-DUMB-17,Bengaluru,0,0,0.7,7,Rs. 599,Dumbbell 5kg,,5,5,4,4,5,4,6,4
+SP-DUMB-17,Hyderabad,18,0,0.5,14,N/A,Dumbbell 5kg,2.2,4,4,3,3,3,4,4,4
+SP-DUMB-17,Chennai,33,9,2.0,7,599,Dumbbell 5kg,,14,12,14,16,16,16,15,15
+SP-DUMB-17,Kolkata,19,0,0.7,14,599.00,Dumbbell 5kg,,5,5,6,4,4,6,6,5
+SP-DUMB-17,Pune, 59 ,0,2.1,14,₹599,Dumbbell 5kg,,17,13,13,14,14,13,16,17
+SP-DUMB-17,Ahmedabad,86,32,5.0,,599,Dumbbell 5kg,,31,35,43,34,29,27,32,36
+SP-DUMB-17,Jaipur,18,0,1.0,10,Rs. 599,Dumbbell 5kg,,7,6,9,9,7,9,6,9
+SP-DUMB-17,Lucknow,8,3,0.5,10,₹599,Dumbbell 5kg,,3,4,4,3,4,4,4,4
+SP-DUMB-17,Surat,78,31,3.4,7,599,Dumbbell 5kg,,52,52,42,42,42,9,42,9
+SP-DUMB-17,Indore,117,0,5.5,10,599.00,Dumbbell 5kg,,33,33,38,48,36,39,47,40
+SP-DUMB-17,Nagpur,82,0,5.2,7,599,Dumbbell 5kg,2.0,42,37,28,40,36,34,33,29
+SP-DUMB-17,Kochi,5,3,0.7,10,599,Dumbbell 5kg,2.0,4,4,6,5,6,6,5,6
+SP-DUMB-17,Chandigarh,82,0,1.9,14,₹599,Dumbbell 5kg,2.2,16,10,16,16,16,11,13,15
+SP-DUMB-17,Bhopal,22,0,5.7,7,599,Dumbbell 5kg,,40,44,42,38,48,39,34,37
+SP-DUMB-17,Patna,2,3,0.7,10,₹599,Dumbbell 5kg,,5,5,5,6,5,5,5,5
+SP-DUMB-17,Vadodara,107,34,4.6,10,Rs. 599,Dumbbell 5kg,,33,31,35,33,37,27,27,28
+SP-DUMB-17,Ludhiana,69,0,5.3,10,₹599,Dumbbell 5kg,2.2,41,46,35,34,40,37,46,42
+SP-DUMB-17,Ludhiana,69,0,5.3,10,₹599,Dumbbell 5kg,2.2,41,46,35,34,40,37,46,42
+SP-DUMB-17,Agra,10,54,4.0,14,₹599,Dumbbell 5kg,2.0,30,31,25,22,30,35,31,25
+SP-DUMB-18,Mumbai,31,26,4.3,14,1899,Dumbbell 5kg,,27,36,27,30,25,32,32,27
+SP-DUMB-18,Delhi,50,33,4.4,7,"₹1,899",Dumbbell 5kg,,31,29,29,38,28,36,26,37
+SP-DUMB-18,Bengaluru,20,8,0.9,7,1899,Dumbbell 5kg,,7,7,7,7,5,7,6,5
+SP-DUMB-18,Hyderabad,12.5,0,1.0,7,1899,Dumbbell 5kg,,6,7,6,7,5,6,6,8
+SP-DUMB-18,Chennai,104,0,5.9,10,"1,899.00",Dumbbell 5kg,,41,51,51,31,37,45,51,46
+SP-DUMB-18,Kolkata,11,10,1.5,10,"Rs. 1,899",Dumbbell 5kg,,10,9,9,11,11,11,11,12
+SP-DUMB-18,Pune,5,0,0.7,10,"1,899.00",Dumbbell 5kg,2.2,5,5,5,5,5,5,4,6
+SP-DUMB-18,Ahmedabad,9,12,2.0,10,1899,Dumbbell 5kg,2.0,2,30,25,25,2,25,25,5
+SP-DUMB-18,Jaipur,59,0,3.0,10,1899,Dumbbell 5kg,,23,22,25,19,17,22,26,24
+SP-DUMB-18,Lucknow,48,0,5.8,7,"₹1,899",Dumbbell 5kg,2.0,31,31,39,44,41,48,41,33
+SP-DUMB-18,Surat,124,0,4.7,10,"₹1,899",Dumbbell 5kg,2.0,32,41,40,32,28,40,27,30
+SP-DUMB-18,Indore,12,0,3.7,14,"1,899.00",Dumbbell 5kg,2.2,28,30,24,26,24,22,25,25
+,Nagpur,1,0,0.5,7,"₹1,899",Dumbbell 5kg,,3,3,4,4,3,4,4,3
+SP-DUMB-18,Kochi,218,0,4.6,14,"₹1,899",Dumbbell 5kg,,38,27,29,39,33,34,37,26
+SP-DUMB-18,Chandigarh,45,0,3.1,7 days,1899,Dumbbell 5kg,,18,17,23,17,26,22,18,19
+SP-DUMB-18,Bhopal,76,0,2.8,14,"Rs. 1,899",Dumbbell 5kg,,20,20,18,24,19,22,15,24
+SP-DUMB-18,Patna,27,0,2.6,10,1899,Dumbbell 5kg,,19,18,17,16,18,15,17,19
+SP-DUMB-18,Vadodara,65,0,2.8,10,1899,Dumbbell 5kg,,22,17,17,21,16,19,21,22
+SP-DUMB-18,Ludhiana,135,52,3.1,14,1899,Dumbbell 5kg,,26,21,21,27,21,16,19,25
+SP-DUMB-18,Agra,74,0,3.6,10,1899,Dumbbell 5kg,,21,31,21,31,27,25,31,24
+SP-DUMB-19,Mumbai,93,0,3.9,10,"₹1,899",Dumbbell 5kg,,31,28,30,31,33,22,24,22
+SP-DUMB-19,Delhi,72,52,4.5,10,"₹1,899",Dumbbell 5kg,,29,27,34,31,30,26,34,24
+SP-DUMB-19,Bengaluru,50, 28 ,5.6,10,"1,899.00",Dumbbell 5kg,,36,48,48,48,48,39,47,35
+SP-DUMB-19,Hyderabad,40,0,4.3,10,"1,899.00",Dumbbell 5kg,,28,33,26,23,29,37,36,29
+SP-DUMB-19,Chennai,28,14,2.0,7,1899,Dumbbell 5kg,,2,5,25,25,5,30,2,25
+SP-DUMB-19,Kolkata,102,0,4.9,10,1899,Dumbbell 5kg,2.0,27,29,28,27,29,29,26,37
+SP-DUMB-19,Pune,25,0,4.4,7,1899,Dumbbell 5kg,2.0,27,36,25,24,33,35,31,38
+SP-DUMB-19,Ahmedabad,27,0,0.8,10,1899,Dumbbell 5kg,,7,6,7,6,6,6,6,6
+SP-DUMB-19,Jaipur,25,9,1.4,7,"₹1,899",Dumbbell 5kg,,12,10,8,12,12,10,11,9
+SP-DUMB-19,Lucknow,19,0,5.3,10,1899,Dumbbell 5kg,2.0,33,45,33,32,39,33,38,35
+SP-DUMB-19,Surat,116,56,5.0,14,"₹1,899",Dumbbell 5kg,2.2,41,28,31,36,39,32,43,31
+SP-DUMB-19,Indore,90,0,5.8,14,1899,Dumbbell 5kg,,32,40,35,50,50,34,48,49
+SP-DUMB-19,Nagpur,106,0,,14,1899,Dumbbell 5kg,,20,22,18,21,21,21,22,24
+SP-DUMB-19,Kochi,32,11,3.1,7,"₹1,899",Dumbbell 5kg,,24,21,24,20,26,18,17,17
+SP-DUMB-19,Chandigarh,11,0,1.9,7,"Rs. 1,899",Dumbbell 5kg,2.0,16,14,14,14,13,13,11,16
+SP-DUMB-19,Bhopal,4,0,4.8,7,1899,Dumbbell 5kg,2.2,41,29,26,33,35,29,26,29
+SP-DUMB-19,Patna,102,0,5.3,10,"₹1,899",Dumbbell 5kg,2.2,30,33,37,34,29,30,36,34
+SP-DUMB-19,Vadodara,14,0,1.6,10,1899,Dumbbell 5kg,,13,9,14,9,11,11,11,12
+SP-DUMB-19,Ludhiana,2,0,0.9,14,"₹1,899",Dumbbell 5kg,2.2,5,7,5,7,6,5,6,7
+SP-DUMB-19,Agra,8,0,0.6,10,"₹1,899",Dumbbell 5kg,2.0,4,4,4,5,5,4,4,4
+SP-DUMB-20,Mumbai,46,0,2.8,14,3499,Dumbbell 5kg,2.0,24,22,24,23,19,23,16,24
+SP-DUMB-20,Delhi,28,0,2.6,7,3499,Dumbbell 5kg,2.2,3,32,7,3,40,40,32,7
+SP-DUMB-20,Bengaluru,100,0,4.6,7,N/A,Dumbbell 5kg,2.0,40,26,40,28,32,39,26,31
+SP-DUMB-20,Hyderabad,44,22,5.1,10,"₹3,499",Dumbbell 5kg,,39,27,41,44,31,41,32,28
+SP-DUMB-20,Chennai,61,0,4.8,14,3499,Dumbbell 5kg,,25,37,38,29,28,36,25,38
+SP-DUMB-20,Kolkata,20,0,4.9,7,3499,Dumbbell 5kg,2.2,40,28,41,27,41,40,41,41
+SP-DUMB-20,Pune,19,0,3.1,7,"Rs. 3,499",Dumbbell 5kg,2.2,19,26,23,16,25,18,26,22
+SP-DUMB-20,Ahmedabad,28,0,3.4,7,"₹3,499",Dumbbell 5kg,2.2,24,19,19,26,22,28,24,19
+SP-DUMB-20,Jaipur,29,11,2.6,7,3499,Dumbbell 5kg,,19,14,17,22,20,16,18,16
+SP-DUMB-20,Lucknow,12,-2,1.2,14,"₹3,499",Dumbbell 5kg,,8,8,6,7,7,7,8,9
+SP-DUMB-20,Surat,56,0,3.3,14,3499,Dumbbell 5kg,,27,17,25,28,25,21,24,20
+SP-DUMB-20,Indore,228,0,5.0,14,"Rs. 3,499",Dumbbell 5kg,2.0,35,40,41,37,32,31,34,32
+SP-DUMB-20,Nagpur,161,0,5.4,10,3499,Dumbbell 5kg,2.0,38,38,37,39,46,38,42,40
+SP-DUMB-20,Kochi,49,0,3.7,10,"3,499.00",Dumbbell 5kg,,30,23,28,23,28,32,30,30
+SP-DUMB-20,Chandigarh,115,0,3.9,14,3499,Dumbbell 5kg,,30,34,34,27,27,29,22,28
+SP-DUMB-20,Bhopal,11,0,1.3,7,"3,499.00",Dumbbell 5kg,,11,10,11,11,7,9,10,9
+SP-DUMB-20,Patna,6.5,4,0.6,14,3499,Dumbbell 5kg,,5,3,5,5,5,3,5,4
+SP-DUMB-20,Vadodara,123,0,5.9,10,"Rs. 3,499",Dumbbell 5kg,2.2,42,38,41,42,45,41,37,43
+SP-DUMB-20,Ludhiana,33,0,2.2,7,3499,Dumbbell 5kg,2.0,33,3,3,33,27,3,3,3
+SP-DUMB-20,Agra,-5,0,5.6,7,"₹3,499",Dumbbell 5kg,2.2,31,34,38,45,37,40,36,45
+SP-RESI-21,Mumbai,7,0,5.5,,₹299,Resistance Band,,44,35,41,32,30,29,43,44
+SP-RESI-21,Delhi,85,0,5.0,7,299,Resistance Band,,36,36,30,33,28,40,36,39
+SP-RESI-21,Bengaluru,5,0,1.8,7,299,Resistance Band,,10,15,13,13,12,12,16,13
+SP-RESI-21,Hyderabad,17,0,1.2,7,299,Resistance Band,,8,10,9,7,10,9,10,9
+SP-RESI-21,Chennai,129,0,4.9,14,Rs. 299,Resistance Band,,34,34,40,43,41,36,33,40
+SP-RESI-21,Kolkata,28,0,1.5,14,299,Resistance Band,,13,10,12,8,11,10,8,9
+SP-RESI-21,Pune,51,0,3.1,10,299,Resistance Band,2.2,23,18,26,20,16,17,19,22
+SP-RESI-21,Ahmedabad,49,0,2.6,14,299,Resistance Band,,15,22,20,23,20,15,15,19
+SP-RESI-21,Jaipur,68,16,2.3,10,Rs. 299,Resistance Band,,13,15,19,16,17,17,18,18
+SP-RESI-21,Lucknow,15,0,5.7,10,Rs. 299,Resistance Band,2.2,31,45,37,45,48,42,50,47
+SP-RESI-21,Surat,17,0,3.2,7,299.00,Resistance Band,2.2,26,19,21,17,23,19,21,26
+SP-RESI-21,Indore,39,0,5.6,7,Rs. 299,Resistance Band,,40,44,37,30,46,38,46,38
+SP-RESI-21,Nagpur,190,0,5.0,14,₹299,Resistance Band,,38,27,43,37,42,36,40,34
+SP-RESI-21,Kochi,47,0,3.6,10,₹299,Resistance Band,,21,31,19,26,20,21,25,25
+SP-RESI-21,Chandigarh,190,0,4.4,14,Rs. 299,Resistance Band,2.2,31,30,28,25,31,29,36,38
+SP-RESI-21,Bhopal, 30 ,0,3.7,7,299,Resistance Band,2.2,10,56,5,5,56,5,5,56
+SP-RESI-21,Patna,23, 15 ,2.6,7,299,Resistance Band,2.2,18,19,20,20,18,16,22,18
+SP-RESI-21,Vadodara,49,0,2.8,7,299.00,Resistance Band,2.0,22,18,21,15,23,19,19,17
+SP-RESI-21,Ludhiana,152,71,4.6,14,Rs. 299,Resistance Band,,30,31,29,31,35,25,34,39
+SP-RESI-21,Agra,6,0,0.4,14,299,Resistance Band,2.0,3,3,3,2,3,3,3,3
+SP-RESI-22,Mumbai,31,0,3.5,7,"Rs. 3,499",Resistance Band,2.0,19,24,20,29,24,19,29,23
+SP-RESI-22,Delhi,36,0,4.4,7,3499,Resistance Band,,38,28,31,34,37,27,33,31
+SP-RESI-22,Bengaluru, 74 ,0,4.5,7,"3,499.00",Resistance Band,2.0,27,32,26,32,32,24,36,27
+SP-RESI-22,Hyderabad,14,0,0.9,10,3499,Resistance Band,,5,6,8,5,5,5,7,5
+SP-RESI-22,Chennai,8,0,4.3,7,3499,Resistance Band,,25,32,25,26,35,30,34,32
+SP-RESI-22,Kolkata,70,20,4.1,10,3499,Resistance Band,2.0,24,32,33,30,32,26,30,23
+SP-RESI-22,Pune,47,32,2.9,14,"₹3,499",Resistance Band,,17,20,23,15,24,17,15,23
+SP-RESI-22,Ahmedabad,99,54,4.7,10,3499,Resistance Band,,40,26,37,36,34,30,38,29
+SP-RESI-22,Jaipur,17,23,4.5,7,"Rs. 3,499",Resistance Band,,28,25,26,34,28,35,37,28
+SP-RESI-22,Lucknow,87,35,5.1,10,3499,Resistance Band,,37,37,44,30,28,27,40,29
+SP-RESI-22,Surat,25,11,0.9,14,"₹3,499",Resistance Band,2.0,7,7,6,6,7,5,8,7
+SP-RESI-22,Indore,22,0,1.1,10,"3,499.00",Resistance Band,,8,9,8,7,8,6,8,9
+SP-RESI-22,Nagpur,40,0,3.5,10,3499,Resistance Band,,44,44,53,4,9,53,44,44
+SP-RESI-22,Kochi,197,0,5.2,14 days,3499,Resistance Band,,31,34,31,34,40,44,44,44
+SP-RESI-22,Chandigarh,123,0,4.8,14,"₹3,499",Resistance Band,2.0,40,28,39,34,32,27,39,38
+SP-RESI-22,Bhopal,38,0,4.4,7,3499,Resistance Band,2.2,34,36,36,27,37,23,25,35
+SP-RESI-22,Bhopal,38,0,4.4,7,3499,Resistance Band,2.2,34,36,36,27,37,23,25,35
+SP-RESI-22,Patna,5,5,0.8,14,"Rs. 3,499",Resistance Band,,6,7,5,6,5,5,7,5
+SP-RESI-22,Vadodara,19,0,0.7,14,3499,Resistance Band,,5,5,4,5,4,4,4,4
+SP-RESI-22,Ludhiana,26,13,1.0,10,"Rs. 3,499",Resistance Band,,9,8,6,6,6,8,8,6
+SP-RESI-22,Agra,54,0,4.2,7,3499,Resistance Band,,28,31,36,34,26,34,27,33
+SP-RESI-23,Mumbai,13,0,0.8,7,₹299,Resistance Band,2.0,6,5,6,7,5,7,6,6
+SP-RESI-23,Delhi,21,0,0.7,14,N/A,Resistance Band,,5,5,5,5,4,5,4,5
+SP-RESI-23,Bengaluru,53,0,1.6,14,299,Resistance Band,2.2,12,12,12,10,9,11,13,9
+SP-RESI-23,Hyderabad,31,0,2.3,7,₹299,Resistance Band,,17,17,12,16,15,14,13,17
+SP-RESI-23,Chennai,58,0,2.3,10,299,Resistance Band,2.0,18,19,14,13,12,17,14,18
+SP-RESI-23,Kolkata,27,11,1.0,10,299,Resistance Band,2.0,9,9,9,6,6,7,7,6
+SP-RESI-23,Pune,107,0,4.9,14,₹299,Resistance Band,,42,31,41,30,27,35,28,34
+SP-RESI-23,Ahmedabad,50,0,2.0,10,299.00,Resistance Band,2.2,11,11,15,14,12,14,11,16
+SP-RESI-23,Jaipur,26,0,0.8,10,Rs. 299,Resistance Band,,5,6,4,7,7,7,6,5
+SP-RESI-23,Lucknow,42.5,0,3.1,14,299,Resistance Band,,4,39,39,47,39,8,39,47
+SP-RESI-23,Surat,5,48,4.2,10,299.00,Resistance Band,,22,34,22,27,28,31,32,24
+SP-RESI-23,Indore,20,36,3.2,14,299,Resistance Band,,22,22,24,19,17,22,17,27
+SP-RESI-23,Nagpur, 94 ,64,3.4,14,₹299,Resistance Band,2.0,19,30,18,23,23,25,25,18
+,Kochi,92,0,2.6,14,₹299,Resistance Band,2.0,20,20,15,16,16,18,14,21
+SP-RESI-23,Chandigarh,39,20,2.6,14,299.00,Resistance Band,2.2,18,18,21,21,15,21,19,20
+SP-RESI-23,Bhopal,3,0,,10,299,Resistance Band,,9,12,12,13,12,13,13,13
+SP-RESI-23,Patna,32,0,1.7,7,299.00,Resistance Band,,10,13,13,12,11,13,13,15
+SP-RESI-23,Vadodara,102,0,2.7,14,₹299,Resistance Band,2.0,20,21,23,16,18,16,22,21
+SP-RESI-23,Ludhiana,11,0,2.1,10,299,Resistance Band,,14,18,14,12,13,14,15,17
+SP-RESI-23,Agra,49,0,4.3,7,₹299,Resistance Band,,32,24,36,23,34,32,25,26
+SP-RESI-24,Mumbai,69,-17,3.8,7,"₹1,899",Resistance Band,,30,24,21,24,32,22,23,31
+SP-RESI-24,Delhi,5,0,2.6,7,"₹1,899",Resistance Band,,22,16,19,19,18,21,16,21
+SP-RESI-24,Bengaluru,95,0,2.9,10,1899,Resistance Band,,24,19,20,23,21,22,16,18
+SP-RESI-24,Hyderabad,99,29,5.4,7,"₹1,899",Resistance Band,,46,35,32,43,38,39,35,37
+SP-RESI-24,Chennai,103,0,3.9,14,1899,Resistance Band,,33,26,29,25,26,24,22,24
+SP-RESI-24,Kolkata,104,65,5.5,10,1899,Resistance Band,,33,42,32,40,41,43,38,40
+SP-RESI-24,Pune,101,0,3.5,10,"₹1,899",Resistance Band,2.2,53,4,4,9,4,9,4,44
+SP-RESI-24,Ahmedabad,6,26,3.3,10,1899,Resistance Band,,27,27,29,26,19,28,18,23
+SP-RESI-24,Jaipur,129,0,5.9,10,1899,Resistance Band,2.0,32,35,32,38,48,31,51,47
+SP-RESI-24,Lucknow,23,0,2.6,10,1899,Resistance Band,,17,16,14,20,14,15,20,19
+SP-RESI-24,Surat,75,0,1.9,14,"Rs. 1,899",Resistance Band,,12,11,11,10,17,14,15,16
+SP-RESI-24,Indore,26,0,1.3,10,"Rs. 1,899",Resistance Band,,9,8,7,11,9,10,8,8
+SP-RESI-24,Nagpur,16,4,0.5,10,"₹1,899",Resistance Band,,4,3,4,3,3,4,3,3
+SP-RESI-24,Kochi,28,0,1.5,,"Rs. 1,899",Resistance Band,,13,10,13,9,9,11,9,8
+SP-RESI-24,Chandigarh,99,0,5.2,7,1899,Resistance Band,2.2,43,29,42,28,36,39,36,44
+SP-RESI-24,Bhopal,4,0,1.2,14,1899,Resistance Band,2.0,10,7,7,9,7,10,10,10
+SP-RESI-24,Patna,102,16,3.9,10,"₹1,899",Resistance Band,2.2,27,34,27,23,25,32,23,33
+SP-RESI-24,Vadodara,52,0,3.2,14,1899,Resistance Band,,22,26,19,22,26,23,20,26
+SP-RESI-24,Ludhiana,14,0,1.7,10,1899,Resistance Band,2.0,13,13,9,12,11,14,10,10
+SP-RESI-24,Agra,88,25,4.3,14,"1,899.00",Resistance Band,,33,30,29,24,26,32,31,31
+SP-RESI-25,Mumbai,37,0,4.8,7,599.00,Resistance Band,,40,32,33,27,33,39,38,33
+SP-RESI-25,Delhi,166,0,4.0,14,599.00,Resistance Band,,29,21,33,34,34,29,33,22
+SP-RESI-25,Bengaluru,44,0,2.8,10,599,Resistance Band,,19,15,16,15,21,21,16,21
+SP-RESI-25,Hyderabad,79,44,5.7,7,Rs. 599,Resistance Band,2.0,71,71,15,71,15,71,87,7
+SP-RESI-25,Chennai,12,0,0.6,7,599,Resistance Band,,4,4,4,3,4,4,4,5
+SP-RESI-25,Kolkata,88,0,2.0,14,₹599,Resistance Band,,15,11,11,13,12,14,11,14
+SP-RESI-25,Pune,15,11,2.3,7,599,Resistance Band,2.0,13,16,14,17,16,19,14,16
+SP-RESI-25,Ahmedabad,150,58,3.8,14,599,Resistance Band,,29,32,25,30,32,22,27,33
+SP-RESI-25,Jaipur,(6),0,2.9,7,₹599,Resistance Band,,25,16,18,24,15,25,22,22
+SP-RESI-25,Lucknow,169,0,5.2,14,599,Resistance Band,,41,37,39,32,43,32,43,30
+SP-RESI-25,Surat,28,0,4.0,14,599,Resistance Band,2.2,25,32,25,23,23,29,34,27
+SP-RESI-25,Indore,19,0,4.9,7,599,Resistance Band,,39,28,36,33,36,31,35,31
+SP-RESI-25,Nagpur,125,0,3.1,14,₹599,Resistance Band,,23,25,25,23,20,19,27,21
+SP-RESI-25,Kochi,53,0,2.2,14,599,Resistance Band,2.0,14,16,14,17,13,16,17,15
+SP-RESI-25,Chandigarh,23,29,3.6,14,₹599,Resistance Band,,30,22,23,21,22,27,28,22
+SP-RESI-25,Bhopal,45,0,5.1,7,599,Resistance Band,2.0,39,43,42,42,32,39,29,40
+SP-RESI-25,Patna,31,0,1.4,7,₹599,Resistance Band,2.2,8,9,8,10,10,11,9,8
+SP-RESI-25,Vadodara,118,0,5.7,10,599,Resistance Band,2.2,48,42,45,30,45,39,37,45
+SP-RESI-25,Ludhiana,6,0,2.1,10,599,Resistance Band,,15,12,14,16,12,16,16,15
+SP-RESI-25,Agra,60,0,2.1,14,599,Resistance Band,,18,17,17,16,15,14,11,11
+SP-RESI-26,Mumbai,61,0,2.6,14,N/A,Resistance Band,,32,32,7,7,3,3,40,40
+SP-RESI-26,Delhi,45,19,5.1,7,₹999,Resistance Band,,36,34,32,42,27,37,35,38
+SP-RESI-26,Bengaluru,137.5,0,4.3,14,999,Resistance Band,,35,27,24,31,35,28,37,36
+SP-RESI-26,Hyderabad,43,13,2.0,7,₹999,Resistance Band,2.0,11,16,14,14,17,17,15,14
+SP-RESI-26,Chennai,98,51,5.3,7,999,Resistance Band,2.0,36,30,33,40,42,44,45,32
+SP-RESI-26,Kolkata,51, 15 ,1.6,10,999,Resistance Band,,13,13,9,10,13,9,11,14
+SP-RESI-26,Pune,60,36,3.5,14,999.00,Resistance Band,,21,19,29,30,29,23,24,29
+SP-RESI-26,Ahmedabad,63,25,2.1,10,999,Resistance Band,,15,15,13,15,17,11,18,12
+SP-RESI-26,Jaipur,34,0,3.3,10,₹999,Resistance Band,2.0,27,26,26,25,28,27,26,21
+SP-RESI-26,Lucknow,39,0,2.2,10,Rs. 999,Resistance Band,,16,16,12,18,18,16,16,15
+SP-RESI-26,Surat,31,0,1.8,7,Rs. 999,Resistance Band,2.2,13,11,13,12,11,11,13,14
+SP-RESI-26,Indore,5,0,1.4,7,999,Resistance Band,,11,11,8,10,10,11,8,9
+SP-RESI-26,Nagpur,65,78,5.7,10 days,999,Resistance Band,,37,45,47,31,42,31,39,38
+SP-RESI-26,Kochi,3,0,0.4,7,Rs. 999,Resistance Band,,2,2,3,2,2,3,3,3
+SP-RESI-26,Chandigarh,57,0,5.1,7,₹999,Resistance Band,2.0,27,41,28,27,35,38,28,31
+SP-RESI-26,Bhopal,61,25,3.9,10,₹999,Resistance Band,,27,22,27,28,32,24,29,24
+SP-RESI-26,Patna,124,0,4.2,10,₹999,Resistance Band,2.0,35,29,28,30,29,27,32,35
+SP-RESI-26,Vadodara,23,14,1.1,14,999,Resistance Band,2.0,1,13,3,3,16,13,13,1
+SP-RESI-26,Ludhiana,38,0,2.5,7,999,Resistance Band,,21,21,20,18,20,16,16,19
+SP-RESI-26,Agra,41, 18 ,3.0,10,999,Resistance Band,2.0,24,23,21,26,20,25,26,19
+SP-RESI-27,Mumbai,96,0,4.1,10,₹299,Resistance Band,,22,32,27,32,22,28,25,22
+SP-RESI-27,Delhi,7,0,0.5,14,299,Resistance Band,,3,3,3,3,3,3,4,3
+SP-RESI-27,Bengaluru,28,0,1.8,7,299,Resistance Band,,12,11,13,12,11,13,12,10
+SP-RESI-27,Hyderabad,112,0,3.7,10,299,Resistance Band,2.0,32,23,29,31,26,21,20,27
+SP-RESI-27,Chennai,31,0,4.5,10,299,Resistance Band,,33,38,26,38,27,26,29,36
+SP-RESI-27,Kolkata,29,6,1.3,7,₹299,Resistance Band,2.0,7,10,9,10,10,11,7,10
+SP-RESI-27,Pune,0,0,2.9,10,299,Resistance Band,,16,17,22,17,22,23,16,16
+SP-RESI-27,Ahmedabad,111, 32 ,5.3,7,299,Resistance Band,,28,40,43,41,32,32,37,34
+SP-RESI-27,Jaipur,74,0,3.7,7,₹299,Resistance Band,,28,27,31,21,25,27,23,20
+SP-RESI-27,Lucknow,100,0,2.9,14,299,Resistance Band,,24,19,22,17,18,22,20,25
+SP-RESI-27,Surat,69,35,2.8,14,299.00,Resistance Band,2.2,24,21,22,23,24,21,18,18
+SP-RESI-27,Indore,110,-19,3.0,14,299,Resistance Band,,21,22,19,24,22,17,21,17
+SP-RESI-27,Nagpur,9,0,2.9,7,299,Resistance Band,,23,24,17,16,16,16,17,16
+SP-RESI-27,Nagpur,9,0,2.9,7,299,Resistance Band,,23,24,17,16,16,16,17,16
+SP-RESI-27,Kochi,36,0,5.8,7,Rs. 299,Resistance Band,2.0,32,35,41,45,36,40,48,38
+SP-RESI-27,Chandigarh,1,44,4.7,14,299,Resistance Band,,72,13,13,59,6,72,6,72
+SP-RESI-27,Bhopal,43,0,5.3,7,₹299,Resistance Band,,42,41,39,32,41,28,36,33
+SP-RESI-27,Patna,82,0,4.6,7,299,Resistance Band,,35,29,39,33,33,35,35,40
+SP-RESI-27,Vadodara,3,3,0.6,10,299,Resistance Band,,5,4,4,4,3,4,5,4
+SP-RESI-27,Ludhiana,55,0,,10,Rs. 299,Resistance Band,,15,13,12,17,14,16,15,16
+SP-RESI-27,Agra,1,0,3.1,10,299.00,Resistance Band,,27,23,21,25,25,21,26,21
+SP-RESI-28,Mumbai,115,70,5.9,14,299,Resistance Band,,41,47,41,49,38,48,41,47
+SP-RESI-28,Delhi, 15 ,0,0.7,14,₹299,Resistance Band,,4,5,4,6,4,5,6,4
+SP-RESI-28,Bengaluru,2,0,3.1,7,299,Resistance Band,2.0,18,26,27,24,22,22,23,26
+SP-RESI-28,Hyderabad,6,29,3.8,10,₹299,Resistance Band,,32,25,27,23,27,27,31,22
+SP-RESI-28,Chennai, 23 ,0,0.6,14,₹299,Resistance Band,,4,4,4,4,5,3,3,4
+SP-RESI-28,Kolkata,18, 34 ,4.7,7,₹299,Resistance Band,,28,32,36,35,30,26,26,39
+SP-RESI-28,Pune,135,0,3.9,,₹299,Resistance Band,2.0,23,31,22,21,29,24,32,21
+SP-RESI-28,Ahmedabad,71,0,5.5,7,299,Resistance Band,,36,44,41,41,37,44,46,42
+SP-RESI-28,Jaipur,5,0,1.5,7,Rs. 299,Resistance Band,,11,10,11,10,9,8,12,11
+SP-RESI-28,Lucknow,66,0,4.1,7,₹299,Resistance Band,,30,29,26,34,22,35,23,26
+SP-RESI-28,Surat,57,0,1.4,14,299,Resistance Band,2.2,11,8,12,8,12,11,8,10
+SP-RESI-28,Indore,162,108,5.9,14,₹299,Resistance Band,,74,16,8,90,74,8,8,16
+SP-RESI-28,Nagpur,117,53,5.9,7,299,Resistance Band,,37,31,32,50,36,51,34,40
+SP-RESI-28,Kochi,41,30,3.0,10,Rs. 299,Resistance Band,,17,25,24,18,23,21,24,26
+,Chandigarh,107,73,4.8,14,₹299,Resistance Band,2.0,27,41,38,33,29,32,38,39
+SP-RESI-28,Bhopal,14.5,0,1.4,14,299,Resistance Band,,12,8,8,10,9,10,11,8
+SP-RESI-28,Patna,7,40,3.3,14,299,Resistance Band,,27,26,26,25,19,25,26,19
+SP-RESI-28,Vadodara,49,0,1.7,10,299,Resistance Band,,13,15,14,13,11,14,14,11
+SP-RESI-28,Ludhiana,137,0,6.0,10,299.00,Resistance Band,2.0,49,38,43,49,36,41,43,35
+SP-RESI-28,Agra,6,0,0.8,10,N/A,Resistance Band,2.0,5,6,6,6,4,6,7,4
+SP-RESI-29,Mumbai,38,0,4.3,10,599,Resistance Band,,30,26,25,24,27,36,35,28
+SP-RESI-29,Delhi,20,9,3.4,7,₹599,Resistance Band,,27,24,19,22,26,20,27,21
+SP-RESI-29,Bengaluru,48,15,1.8,14,599,Resistance Band,,10,10,12,16,15,12,11,11
+SP-RESI-29,Hyderabad,3,30,3.5,7,₹599,Resistance Band,,29,18,27,24,24,23,26,20
+SP-RESI-29,Chennai,40,0,4.4,7,599,Resistance Band,,31,26,29,29,36,37,36,34
+SP-RESI-29,Kolkata,129,0,4.9,10,599,Resistance Band,,32,35,33,28,35,26,43,29
+SP-RESI-29,Pune,146,0,4.5,10,599,Resistance Band,,26,25,34,32,37,29,34,28
+SP-RESI-29,Ahmedabad,70,0,3.9,10,₹599,Resistance Band,2.0,27,28,29,24,26,21,30,32
+SP-RESI-29,Jaipur,13,14,2.8,7,599,Resistance Band,2.0,43,43,43,3,7,3,7,43
+SP-RESI-29,Lucknow,116,0,5.5,7,₹599,Resistance Band,,41,39,41,32,43,42,36,39
+SP-RESI-29,Surat,55,58,5.0,14,Rs. 599,Resistance Band,2.2,27,32,35,43,30,28,35,30
+SP-RESI-29,Indore,62,12,2.8,10,₹599,Resistance Band,,23,23,19,18,24,20,21,22
+SP-RESI-29,Nagpur,17,0,2.3,7,₹599,Resistance Band,,14,17,20,13,18,20,16,14
+SP-RESI-29,Kochi,61,0,5.1,7,Rs. 599,Resistance Band,2.0,40,28,38,43,43,30,42,32
+SP-RESI-29,Chandigarh,51,32,5.3,7,599,Resistance Band,,28,43,35,41,36,29,30,33
+SP-RESI-29,Bhopal,78,0,2.2,14,599,Resistance Band,2.2,14,18,15,17,19,19,16,18
+SP-RESI-29,Patna,60,0,1.8,14,Rs. 599,Resistance Band,2.2,11,10,12,11,12,10,13,11
+SP-RESI-29,Vadodara,-6,0,5.4,7,599,Resistance Band,,40,41,40,46,45,37,34,37
+SP-RESI-29,Ludhiana,128,0,5.4,14,₹599,Resistance Band,,35,38,45,31,38,39,33,33
+SP-RESI-29,Agra,6,14,3.1,7,₹599,Resistance Band,,24,18,20,19,20,26,22,17
+SP-RESI-30,Mumbai,21,0,5.7,10,"Rs. 1,899",Resistance Band,2.2,35,39,39,41,36,46,42,39
+SP-RESI-30,Delhi,55,0,2.9,10,1899,Resistance Band,2.0,18,21,18,25,22,20,16,23
+SP-RESI-30,Bengaluru,96,27,3.7,10,"₹1,899",Resistance Band,2.2,24,32,28,26,23,20,22,20
+SP-RESI-30,Hyderabad,22,0,4.3,7,1899,Resistance Band,,37,30,24,27,26,23,31,35
+SP-RESI-30,Chennai,79,0,5.3,10,1899,Resistance Band,2.0,38,30,31,40,37,46,30,28
+SP-RESI-30,Kolkata,42,0,1.8,7,1899,Resistance Band,,2,2,5,5,5,2,22,27
+SP-RESI-30,Pune,97,29,2.1,14,"Rs. 1,899",Resistance Band,2.2,15,12,16,18,15,14,16,13
+SP-RESI-30,Ahmedabad,113,0,5.5,7,"₹1,899",Resistance Band,,44,46,43,31,32,30,33,30
+SP-RESI-30,Jaipur,33,0,4.3,7,1899,Resistance Band,,35,25,24,30,35,26,27,28
+SP-RESI-30,Lucknow,29,0,5.9,14,"Rs. 1,899",Resistance Band,,38,42,49,50,38,36,48,43
+SP-RESI-30,Surat,33,0,1.0,14,"₹1,899",Resistance Band,,7,8,9,8,8,6,8,8
+SP-RESI-30,Indore,41,0,5.6,14 days,"₹1,899",Resistance Band,,36,38,48,48,33,40,32,47
+SP-RESI-30,Nagpur,23,0,0.8,10,"₹1,899",Resistance Band,,6,6,7,4,4,6,6,5
+SP-RESI-30,Kochi,16,11,2.8,10,1899,Resistance Band,,19,23,22,15,18,15,17,18
+SP-RESI-30,Chandigarh,147,0,5.5,10,1899,Resistance Band,,43,34,45,41,44,46,34,35
+SP-RESI-30,Bhopal,13,0,0.6,7,"Rs. 1,899",Resistance Band,,4,4,5,5,5,3,4,4
+SP-RESI-30,Patna,40,0,2.0,7,1899,Resistance Band,2.2,15,11,15,13,15,11,13,16
+SP-RESI-30,Vadodara,61, 10 ,2.4,10,"₹1,899",Resistance Band,2.0,17,21,13,14,18,15,20,17
+SP-RESI-30,Ludhiana,52,0,3.9,7,1899,Resistance Band,2.2,23,21,27,27,24,32,34,23
+SP-RESI-30,Agra,17,6,1.4,7,"Rs. 1,899",Resistance Band,,10,9,12,12,9,9,9,10
+SP-CRIC-31,Mumbai,88,0,2.6,10,"Rs. 3,499",Cricket Bat,,15,20,16,16,18,23,19,19
+SP-CRIC-31,Delhi,74,0,5.8,7,3499,Cricket Bat,,43,44,35,41,32,38,35,44
+SP-CRIC-31,Bengaluru,20,-18,0.8,10,"₹3,499",Cricket Bat,,2,2,1,10,10,12,1,1
+SP-CRIC-31,Hyderabad,0,0,0.4,14,3499,Cricket Bat,,2,2,2,3,2,3,3,2
+SP-CRIC-31,Chennai,107,41,2.4,14,"₹3,499",Cricket Bat,,19,19,17,18,17,17,17,20
+SP-CRIC-31,Kolkata,88,0,5.8,10,"3,499.00",Cricket Bat,2.0,34,37,50,44,37,34,34,39
+SP-CRIC-31,Pune,15,0,1.8,14,3499,Cricket Bat,,12,10,14,10,10,12,10,10
+SP-CRIC-31,Ahmedabad,44,0,2.6,7,3499,Cricket Bat,2.2,14,18,14,18,21,14,22,17
+SP-CRIC-31,Jaipur,38.5,44,5.1,7,"₹3,499",Cricket Bat,2.0,36,30,37,27,40,42,32,33
+SP-CRIC-31,Lucknow,142,0,4.3,10,3499,Cricket Bat,2.0,29,23,29,29,33,26,23,25
+SP-CRIC-31,Surat,72,0,2.1,14,3499,Cricket Bat,2.2,18,16,13,16,12,13,18,17
+SP-CRIC-31,Indore,120,29,5.2,7,3499,Cricket Bat,2.2,35,31,29,35,44,39,34,29
+SP-CRIC-31,Nagpur,44,0,5.3,7,3499,Cricket Bat,2.2,32,42,33,29,33,45,41,42
+SP-CRIC-31,Kochi,32,0,3.6,7,3499,Cricket Bat,,26,27,25,24,22,25,28,27
+SP-CRIC-31,Chandigarh,157,0,4.0,14,"₹3,499",Cricket Bat,,29,27,32,33,26,29,24,23
+SP-CRIC-31,Bhopal,117,0,5.8,14,"₹3,499",Cricket Bat,,42,42,48,38,44,35,39,45
+SP-CRIC-31,Patna,106,0,2.6,14,3499,Cricket Bat,,16,21,17,18,20,23,15,16
+SP-CRIC-31,Vadodara,8,0,5.2,10,"Rs. 3,499",Cricket Bat,,41,45,42,38,43,42,40,34
+SP-CRIC-31,Ludhiana,32,0,1.6,7,N/A,Cricket Bat,,12,14,13,13,9,11,12,12
+SP-CRIC-31,Agra,88,0,5.5,,"3,499.00",Cricket Bat,,84,7,69,84,84,84,69,7
+SP-CRIC-32,Mumbai,82,0,2.8,10,₹599,Cricket Bat,,21,19,18,21,16,23,19,19
+SP-CRIC-32,Delhi,10,0,,7,Rs. 599,Cricket Bat,,7,6,7,6,6,6,7,7
+SP-CRIC-32,Bengaluru,88,0,4.2,14,599,Cricket Bat,,28,23,24,36,33,32,31,27
+SP-CRIC-32,Hyderabad,43,0,4.5,7,₹599,Cricket Bat,,36,33,29,25,33,29,31,24
+SP-CRIC-32,Chennai,97,0,5.9,10,599,Cricket Bat,2.0,32,40,40,46,35,45,41,40
+SP-CRIC-32,Kolkata,83,0,5.2,10,₹599,Cricket Bat,2.2,41,41,36,31,28,28,36,38
+SP-CRIC-32,Pune,40,0,4.7,7,599.00,Cricket Bat,,41,39,32,28,25,32,38,38
+SP-CRIC-32,Ahmedabad,60,34,2.8,10,₹599,Cricket Bat,,16,17,23,24,21,16,16,19
+SP-CRIC-32,Jaipur,35,0,1.6,7,599,Cricket Bat,2.2,12,11,12,14,13,13,13,9
+SP-CRIC-32,Lucknow,20,0,3.1,10,599,Cricket Bat,,23,22,22,17,22,27,21,24
+SP-CRIC-32,Lucknow,20,0,3.1,10,599,Cricket Bat,,23,22,22,17,22,27,21,24
+SP-CRIC-32,Surat,196,0,4.9,14,₹599,Cricket Bat,,28,30,41,26,38,38,30,39
+SP-CRIC-32,Indore,72,16,1.6,14,599,Cricket Bat,,11,11,13,13,14,13,12,10
+SP-CRIC-32,Nagpur,60,0,2.0,14,Rs. 599,Cricket Bat,,16,17,16,17,11,16,15,17
+SP-CRIC-32,Kochi,49,0,1.1,14,Rs. 599,Cricket Bat,,8,9,8,8,6,7,8,9
+SP-CRIC-32,Chandigarh,54,0,1.4,14,599.00,Cricket Bat,,10,11,9,11,8,11,11,8
+SP-CRIC-32,Bhopal,1,0,1.0,14,599,Cricket Bat,,7,5,5,8,7,7,9,6
+SP-CRIC-32,Patna,2,0,0.6,10,599,Cricket Bat,,9,7,0,0,7,9,0,1
+SP-CRIC-32,Vadodara,117,0,5.1,10,599,Cricket Bat,,33,32,40,35,28,32,42,35
+SP-CRIC-32,Ludhiana, 104 ,0,2.4,14,599,Cricket Bat,2.0,15,17,18,18,16,16,20,16
+SP-CRIC-32,Agra, 1 ,0,1.8,7,599,Cricket Bat,2.0,14,13,14,11,13,10,14,15
+SP-CRIC-33,Mumbai,27,0,5.2,10,₹999,Cricket Bat,2.0,31,38,44,28,35,35,27,39
+SP-CRIC-33,Delhi,11,0,3.5,14,₹999,Cricket Bat,2.2,20,19,21,23,25,26,19,22
+SP-CRIC-33,Bengaluru,46,0,1.6,10,999,Cricket Bat,,13,11,9,11,8,11,10,11
+SP-CRIC-33,Hyderabad,48,0,3.0,10,999.00,Cricket Bat,,17,20,16,20,20,25,22,18
+SP-CRIC-33,Chennai,149,0,3.8,14,Rs. 999,Cricket Bat,,31,21,21,21,21,22,30,26
+SP-CRIC-33,Kolkata,6,7,1.1,10,Rs. 999,Cricket Bat,2.2,8,7,8,9,6,8,7,8
+SP-CRIC-33,Pune,145,0,5.3,10,Rs. 999,Cricket Bat,,45,45,42,38,39,41,37,32
+SP-CRIC-33,Ahmedabad,52,51,3.9,10,999,Cricket Bat,,29,26,27,29,25,26,28,28
+SP-CRIC-33,Jaipur,35,0,0.8,14,₹999,Cricket Bat,2.2,7,6,4,5,7,5,6,5
+SP-CRIC-33,Lucknow,32,67,5.4,10,999,Cricket Bat,2.0,47,43,42,43,30,40,43,47
+SP-CRIC-33,Surat,94,48,5.8,10,₹999,Cricket Bat,,50,36,41,40,47,42,50,31
+SP-CRIC-33,Indore,30,0,2.6,10,Rs. 999,Cricket Bat,,15,22,22,18,16,20,15,19
+SP-CRIC-33,Nagpur,18,0,1.9,7,₹999,Cricket Bat,,16,16,16,10,14,11,13,13
+SP-CRIC-33,Kochi,29,13,4.2,7,₹999,Cricket Bat,,52,11,11,64,11,11,5,11
+SP-CRIC-33,Chandigarh,11,0,0.4,10,999,Cricket Bat,2.0,3,3,3,3,2,3,2,2
+,Bhopal, 18 ,0,1.2,10,Rs. 999,Cricket Bat,,10,8,9,9,8,8,10,8
+SP-CRIC-33,Patna,11,36,2.3,14,₹999,Cricket Bat,,18,17,19,18,17,16,17,18
+SP-CRIC-33,Vadodara,6,0,3.7,7,999,Cricket Bat,,26,27,23,29,22,23,25,20
+SP-CRIC-33,Ludhiana,67,0,3.4,7,Rs. 999,Cricket Bat,2.0,20,18,25,24,20,28,23,24
+SP-CRIC-33,Agra,77,0,3.7,14,999,Cricket Bat,,27,21,28,24,27,29,25,24
+SP-CRIC-34,Mumbai,131,0,4.4,14,"Rs. 3,499",Cricket Bat,,35,33,32,30,33,24,31,35
+SP-CRIC-34,Delhi,191.5,0,5.2,14,3499,Cricket Bat,2.2,43,38,40,36,34,33,36,30
+SP-CRIC-34,Bengaluru,2,0,0.6,7,3499,Cricket Bat,2.2,5,5,5,3,3,4,3,4
+SP-CRIC-34,Hyderabad,34,0,1.1,14,3499,Cricket Bat,,9,6,8,6,6,8,6,9
+SP-CRIC-34,Chennai,1,25,3.2,7,"₹3,499",Cricket Bat,,24,26,25,24,24,27,24,17
+SP-CRIC-34,Kolkata,69,0,1.6,14,3499,Cricket Bat,,13,9,13,9,13,12,13,13
+SP-CRIC-34,Pune,-8,0,5.4,10,3499,Cricket Bat,2.0,35,43,44,32,33,46,46,45
+SP-CRIC-34,Ahmedabad,41,21,1.3,14,"₹3,499",Cricket Bat,,11,9,7,10,11,9,9,11
+SP-CRIC-34,Jaipur,91,0,2.1,14,3499,Cricket Bat,,17,17,17,15,16,15,12,12
+SP-CRIC-34,Lucknow,43,0,2.7,7,"Rs. 3,499",Cricket Bat,2.0,22,23,18,15,15,24,23,19
+SP-CRIC-34,Surat,42,0,2.8,14 days,3499,Cricket Bat,2.2,43,35,7,35,43,35,7,3
+SP-CRIC-34,Indore,118,0,5.8,7,"₹3,499",Cricket Bat,,33,50,31,35,31,47,46,36
+SP-CRIC-34,Nagpur,7,0,1.3,7,"3,499.00",Cricket Bat,,11,8,11,9,11,11,7,9
+SP-CRIC-34,Kochi,42,-9,4.0,14,"₹3,499",Cricket Bat,2.0,34,33,33,23,30,22,34,28
+SP-CRIC-34,Chandigarh,61,0,3.1,7,3499,Cricket Bat,2.0,17,22,19,25,27,25,23,23
+SP-CRIC-34,Bhopal, 81 ,68,3.8,14,"3,499.00",Cricket Bat,,29,26,32,27,22,25,24,28
+SP-CRIC-34,Patna,106,0,5.5,10,"Rs. 3,499",Cricket Bat,2.0,40,45,46,44,36,44,38,31
+SP-CRIC-34,Vadodara,75,0,2.2,14,N/A,Cricket Bat,,18,18,13,14,17,17,14,15
+SP-CRIC-34,Ludhiana,213,71,5.0,14,"Rs. 3,499",Cricket Bat,,29,41,40,38,38,36,28,32
+SP-CRIC-34,Agra,26,0,0.8,14,"₹3,499",Cricket Bat,,5,5,6,6,6,4,6,7
+SP-CRIC-35,Mumbai,11,0,1.2,14,1899,Cricket Bat,,9,10,9,8,10,9,9,9
+SP-CRIC-35,Delhi,8,0,6.0,7,"₹1,899",Cricket Bat,,51,39,52,34,36,34,40,39
+SP-CRIC-35,Bengaluru,12,0,0.5,14,1899,Cricket Bat,,4,3,4,4,4,4,4,4
+SP-CRIC-35,Hyderabad,127,34,3.1,14,1899,Cricket Bat,2.0,18,24,18,23,20,25,23,19
+SP-CRIC-35,Chennai,40,0,2.9,7,"1,899.00",Cricket Bat,2.2,22,17,23,23,16,22,24,19
+SP-CRIC-35,Kolkata,2,0,0.4,10,"₹1,899",Cricket Bat,,2,3,3,2,3,2,3,2
+SP-CRIC-35,Pune,18,0,0.7,14,"1,899.00",Cricket Bat,,4,5,4,6,4,6,4,6
+SP-CRIC-35,Ahmedabad,20,0,1.2,14,"₹1,899",Cricket Bat,,15,15,3,3,15,15,1,15
+SP-CRIC-35,Jaipur,3,0,0.5,7,"₹1,899",Cricket Bat,2.0,4,3,4,4,3,3,4,4
+SP-CRIC-35,Lucknow,7,0,2.4,10,"Rs. 1,899",Cricket Bat,2.2,16,20,17,20,13,18,17,14
+SP-CRIC-35,Surat,36,0,1.2,14,1899,Cricket Bat,2.2,9,10,9,8,10,8,7,7
+SP-CRIC-35,Indore,5,0,0.6,14,1899,Cricket Bat,2.0,5,4,5,3,4,5,4,5
+SP-CRIC-35,Nagpur, 10 ,21,2.5,,"₹1,899",Cricket Bat,,21,16,20,22,18,13,19,18
+SP-CRIC-35,Kochi,48,0,2.7,10,1899,Cricket Bat,2.0,19,22,19,19,18,20,19,14
+SP-CRIC-35,Chandigarh,17,0,4.9,14,1899,Cricket Bat,2.2,27,30,40,29,36,28,27,26
+SP-CRIC-35,Bhopal, 80 ,0,5.4,7,1899,Cricket Bat,2.0,41,29,41,40,40,35,36,32
+SP-CRIC-35,Patna,9,0,3.5,14,"₹1,899",Cricket Bat,2.2,22,28,23,22,24,19,24,26
+SP-CRIC-35,Vadodara,19,0,0.6,14,1899,Cricket Bat,2.2,4,4,4,4,4,3,5,4
+SP-CRIC-35,Ludhiana,5,0,2.2,7,1899,Cricket Bat,2.0,14,16,12,15,15,13,19,13
+SP-CRIC-35,Agra,88,0,4.6,14,"₹1,899",Cricket Bat,2.0,33,40,32,29,31,25,33,34
+SP-CRIC-36,Mumbai,14,14,0.9,14,999,Cricket Bat,,5,8,5,5,6,5,8,8
+SP-CRIC-36,Delhi, 67 ,0,5.5,7,999,Cricket Bat,,33,39,40,30,37,39,44,42
+SP-CRIC-36,Bengaluru,52,37,3.9,10,999,Cricket Bat,,27,25,28,26,24,24,25,33
+SP-CRIC-36,Hyderabad,34,39,4.8,7,Rs. 999,Cricket Bat,,26,35,26,38,31,33,41,31
+SP-CRIC-36,Chennai,77,0,,7,999,Cricket Bat,2.0,56,56,69,12,6,69,69,12
+SP-CRIC-36,Kolkata,116,0,5.2,14,999,Cricket Bat,,41,39,45,34,30,37,40,30
+SP-CRIC-36,Pune,121,0,2.8,14,Rs. 999,Cricket Bat,2.0,18,20,15,19,20,24,15,23
+SP-CRIC-36,Ahmedabad,94,43,3.2,10,Rs. 999,Cricket Bat,,25,18,25,24,24,17,21,24
+SP-CRIC-36,Jaipur,91,51,3.7,10,999,Cricket Bat,,22,27,24,28,28,24,25,28
+SP-CRIC-36,Lucknow,1,0,0.6,7,999,Cricket Bat,,4,5,5,5,5,4,4,5
+SP-CRIC-36,Surat,63,0,4.5,7,999,Cricket Bat,2.0,25,31,35,25,37,35,29,24
+SP-CRIC-36,Indore,11,0,1.6,10,Rs. 999,Cricket Bat,,13,10,10,8,11,10,14,9
+SP-CRIC-36,Nagpur,48,0,3.2,7,₹999,Cricket Bat,2.0,28,22,17,26,22,17,25,22
+SP-CRIC-36,Kochi,14,0,2.6,7,₹999,Cricket Bat,,14,21,22,19,15,18,18,22
+SP-CRIC-36,Chandigarh,45.5,0,3.4,7,₹999,Cricket Bat,2.0,28,27,28,28,19,21,28,29
+SP-CRIC-36,Bhopal,49,0,2.3,7,₹999,Cricket Bat,,14,17,18,19,17,17,15,15
+SP-CRIC-36,Patna,181,0,5.3,14,999.00,Cricket Bat,2.2,32,34,44,39,44,37,40,39
+SP-CRIC-36,Vadodara,16,0,5.1,14,999,Cricket Bat,2.0,28,37,40,41,34,29,31,32
+SP-CRIC-36,Ludhiana,47,63,5.3,14,₹999,Cricket Bat,2.0,43,42,34,36,38,41,29,42
+SP-CRIC-36,Agra,29,10,1.6,10,999,Cricket Bat,,11,12,14,10,13,10,13,14
+SP-CRIC-37,Mumbai,27,0,1.0,14,599,Cricket Bat,2.0,5,6,7,7,7,6,9,6
+SP-CRIC-37,Delhi,102,0,4.5,7,599,Cricket Bat,2.2,56,12,56,69,12,69,56,12
+SP-CRIC-37,Bengaluru, 127 ,0,5.6,7,599,Cricket Bat,2.0,48,42,39,43,38,44,34,48
+SP-CRIC-37,Hyderabad,14,0,2.9,7,599,Cricket Bat,,19,24,21,17,19,21,23,20
+SP-CRIC-37,Chennai,22,0,0.5,14,₹599,Cricket Bat,2.0,4,3,4,4,4,4,4,4
+SP-CRIC-37,Kolkata,109,0,3.6,10,599,Cricket Bat,,31,31,23,19,31,25,23,31
+SP-CRIC-37,Pune,101,0,6.0,14,599,Cricket Bat,2.0,49,37,42,50,37,37,48,40
+SP-CRIC-37,Pune,101,0,6.0,14,599,Cricket Bat,2.0,49,37,42,50,37,37,48,40
+SP-CRIC-37,Ahmedabad,70,0,4.3,14,599,Cricket Bat,,37,36,33,36,31,34,37,30
+SP-CRIC-37,Jaipur,50,26,2.1,10,599,Cricket Bat,2.2,16,15,12,17,12,12,13,15
+SP-CRIC-37,Lucknow,14,0,1.5,14,599,Cricket Bat,,8,11,10,9,9,12,11,11
+SP-CRIC-37,Surat, 0 ,0,0.5,7,599,Cricket Bat,2.2,3,3,4,3,4,3,3,3
+SP-CRIC-37,Indore,9,0,4.2,10,₹599,Cricket Bat,,32,34,23,36,33,28,34,24
+SP-CRIC-37,Nagpur,56,0,3.7,7,599.00,Cricket Bat,,21,19,23,26,24,20,26,28
+SP-CRIC-37,Kochi,32,0,1.6,10,Rs. 599,Cricket Bat,2.0,14,11,10,11,12,13,14,10
+SP-CRIC-37,Chandigarh,75,0,3.4,7,599,Cricket Bat,2.2,22,21,29,22,21,29,18,23
+SP-CRIC-37,Bhopal,58,0,3.4,14,₹599,Cricket Bat,2.0,26,20,21,24,23,23,25,29
+SP-CRIC-37,Patna,31,17,2.9,7,N/A,Cricket Bat,,18,22,22,16,17,19,18,25
+SP-CRIC-37,Vadodara,39,0,0.9,14,599,Cricket Bat,2.0,7,6,5,6,5,7,7,6
+SP-CRIC-37,Ludhiana,0,0,1.1,14,₹599,Cricket Bat,,3,13,3,13,13,3,3,3
+SP-CRIC-37,Agra,7,13,1.2,14,Rs. 599,Cricket Bat,2.0,9,7,10,7,10,7,9,10
+SP-CRIC-38,Mumbai,21, 16 ,2.2,10,999.00,Cricket Bat,2.0,17,14,15,17,12,19,12,14
+SP-CRIC-38,Delhi,7,82,4.7,14,999,Cricket Bat,,31,34,28,27,28,34,39,38
+SP-CRIC-38,Bengaluru,117,0,5.1,7,999,Cricket Bat,,32,44,43,30,39,29,31,30
+SP-CRIC-38,Hyderabad, 20 ,0,2.6,7,999,Cricket Bat,2.2,20,14,16,19,16,14,21,15
+SP-CRIC-38,Chennai,120,-9,5.1,7,₹999,Cricket Bat,2.2,44,27,28,28,44,29,39,31
+SP-CRIC-38,Kolkata,3,0,0.6,7,999.00,Cricket Bat,2.0,4,3,4,4,5,4,3,5
+SP-CRIC-38,Pune,64,0,5.4,10,999.00,Cricket Bat,2.0,30,43,45,37,44,37,41,35
+SP-CRIC-38,Ahmedabad, 89 ,0,4.7,10,999.00,Cricket Bat,2.0,36,40,32,34,38,30,38,30
+SP-CRIC-38,Jaipur,17,26,4.1,14,999,Cricket Bat,,27,34,31,30,24,27,26,31
+SP-CRIC-38,Lucknow,7,29,5.9,7 days,999,Cricket Bat,,43,33,47,32,42,41,46,38
+SP-CRIC-38,Surat,94,0,4.3,7,999,Cricket Bat,,37,29,33,24,30,34,24,37
+SP-CRIC-38,Indore,135,24,4.5,10,₹999,Cricket Bat,2.0,26,34,28,33,29,31,38,28
+SP-CRIC-38,Nagpur,128,0,4.6,14,₹999,Cricket Bat,,33,33,25,26,32,30,24,33
+SP-CRIC-38,Kochi,27,0,2.0,14,₹999,Cricket Bat,,16,11,16,17,16,17,17,16
+SP-CRIC-38,Chandigarh,16,0,5.1,7,₹999,Cricket Bat,,30,37,41,30,36,42,42,36
+SP-CRIC-38,Bhopal,-5,0,1.6,7,₹999,Cricket Bat,,24,24,4,24,20,4,24,24
+,Patna,67,0,3.3,10,999,Cricket Bat,,21,21,27,23,23,20,26,24
+SP-CRIC-38,Vadodara,25,0,0.6,14,₹999,Cricket Bat,2.0,4,4,4,4,3,5,4,3
+SP-CRIC-38,Ludhiana,9,0,0.6,14,999,Cricket Bat,,3,4,5,4,4,5,4,3
+SP-CRIC-38,Agra,9,0,1.3,10,₹999,Cricket Bat,2.0,10,7,11,11,11,9,10,8
+SP-CRIC-39,Mumbai,22,14,4.7,7,299,Cricket Bat,2.0,27,36,29,36,29,33,29,28
+SP-CRIC-39,Delhi,6,0,0.8,7,299,Cricket Bat,,6,6,6,5,5,5,5,5
+SP-CRIC-39,Bengaluru,87,0,4.7,7,299,Cricket Bat,2.0,40,26,41,31,34,40,28,35
+SP-CRIC-39,Hyderabad,42,104,5.4,14,299,Cricket Bat,2.0,47,43,47,43,36,41,46,40
+SP-CRIC-39,Chennai,14,0,1.0,7,₹299,Cricket Bat,,6,8,6,7,8,6,6,6
+SP-CRIC-39,Kolkata,17,11,1.4,,299,Cricket Bat,,8,10,10,9,9,9,8,8
+SP-CRIC-39,Pune,82,0,4.2,10,Rs. 299,Cricket Bat,2.2,26,22,30,28,28,36,26,35
+SP-CRIC-39,Ahmedabad,18.5,0,5.3,14,299,Cricket Bat,,32,35,31,45,37,32,45,37
+SP-CRIC-39,Jaipur,150,0,3.3,14,299,Cricket Bat,,18,19,19,21,23,23,28,23
+SP-CRIC-39,Lucknow,78,0,4.1,7,299,Cricket Bat,2.2,32,29,35,24,29,34,30,31
+SP-CRIC-39,Surat,132,0,3.4,14,299,Cricket Bat,,19,24,27,28,27,27,23,24
+SP-CRIC-39,Indore,9,0,5.9,7,₹299,Cricket Bat,2.2,49,34,40,34,45,51,48,41
+SP-CRIC-39,Nagpur,7,0,4.6,7,Rs. 299,Cricket Bat,2.0,57,70,70,70,70,57,57,12
+SP-CRIC-39,Kochi,47,0,2.5,14,299,Cricket Bat,2.2,21,18,16,20,20,13,18,16
+SP-CRIC-39,Chandigarh, 121 ,23,5.8,7,299.00,Cricket Bat,,35,32,39,37,34,35,40,49
+SP-CRIC-39,Bhopal,12,0,0.8,10,₹299,Cricket Bat,,6,6,4,4,5,5,6,5
+SP-CRIC-39,Patna,31,0,1.8,7,₹299,Cricket Bat,,10,14,12,11,13,10,11,12
+SP-CRIC-39,Vadodara,19,0,1.1,10,299,Cricket Bat,2.2,9,8,6,6,7,9,9,8
+SP-CRIC-39,Ludhiana,48,0,3.0,10,299,Cricket Bat,2.2,26,24,17,22,24,22,16,23
+SP-CRIC-39,Agra, 86 ,0,2.6,10,299,Cricket Bat,,20,16,22,16,14,21,14,21
+SP-CRIC-40,Mumbai,168,0,3.9,14,599,Cricket Bat,2.2,30,28,26,30,32,27,29,23
+SP-CRIC-40,Delhi,89,0,2.2,14,599,Cricket Bat,2.2,14,18,13,14,12,12,19,15
+SP-CRIC-40,Bengaluru,50,14,3.7,7,₹599,Cricket Bat,2.2,24,24,28,24,20,21,26,25
+SP-CRIC-40,Hyderabad,21,0,5.0,7,₹599,Cricket Bat,,30,42,41,39,31,29,33,35
+SP-CRIC-40,Chennai,26,0,5.6,10,599,Cricket Bat,,39,42,39,41,36,35,42,31
+SP-CRIC-40,Kolkata,46,0,5.0,14,599,Cricket Bat,,31,36,42,38,40,27,27,32
+SP-CRIC-40,Pune,7,43,5.1,7,Rs. 599,Cricket Bat,2.2,35,40,43,32,31,29,40,43
+SP-CRIC-40,Ahmedabad,185,0,,10,599.00,Cricket Bat,2.0,32,32,31,50,35,42,50,31
+SP-CRIC-40,Jaipur,72,40,2.3,14,₹599,Cricket Bat,2.2,14,13,16,19,20,12,18,19
+SP-CRIC-40,Lucknow,17,0,1.3,10,599,Cricket Bat,2.2,20,1,3,3,1,20,3,3
+SP-CRIC-40,Surat,82,0,1.8,14,Rs. 599,Cricket Bat,2.2,11,10,12,14,10,15,13,10
+SP-CRIC-40,Indore,100,0,2.6,14,Rs. 599,Cricket Bat,,19,21,21,14,17,15,20,18
+SP-CRIC-40,Nagpur,73,0,5.2,14,₹599,Cricket Bat,,41,40,29,40,28,35,42,38
+SP-CRIC-40,Kochi,29,32,4.2,7,Rs. 599,Cricket Bat,2.2,24,29,35,34,35,24,30,26
+SP-CRIC-40,Chandigarh,6,0,0.7,10,599,Cricket Bat,,6,5,5,4,4,5,4,4
+SP-CRIC-40,Bhopal,7,0,5.3,7,N/A,Cricket Bat,2.2,45,34,30,38,31,31,30,33
+SP-CRIC-40,Patna, 54 ,0,2.5,7,₹599,Cricket Bat,,18,21,19,16,14,17,21,14
+SP-CRIC-40,Vadodara,88,18,2.7,10,599,Cricket Bat,,21,22,19,16,19,15,24,19
+SP-CRIC-40,Ludhiana,37,0,5.8,7,Rs. 599,Cricket Bat,,32,37,38,46,36,39,33,37
+SP-CRIC-40,Agra,48,0,5.7,7,₹599,Cricket Bat,2.2,35,39,43,44,38,46,39,43
+SP-FOOT-41,Mumbai,123,0,4.2,10,999.00,Football Sz5,,27,36,31,34,35,22,23,34
+SP-FOOT-41,Delhi,3,0,0.6,14,999.00,Football Sz5,2.0,5,4,5,5,4,5,4,5
+SP-FOOT-41,Bengaluru,4,0,2.9,10,999.00,Football Sz5,,23,17,24,17,20,24,19,23
+SP-FOOT-41,Hyderabad,123,0,3.2,14,₹999,Football Sz5,,17,20,26,17,19,24,25,26
+SP-FOOT-41,Chennai,3,0,0.8,14,999,Football Sz5,2.0,6,6,5,7,7,4,7,7
+SP-FOOT-41,Kolkata,153,0,5.5,14,Rs. 999,Football Sz5,2.2,44,34,38,44,31,36,31,36
+SP-FOOT-41,Pune,21,0,4.0,7,₹999,Football Sz5,,5,5,61,50,11,61,50,61
+SP-FOOT-41,Ahmedabad,79,30,4.7,7,Rs. 999,Football Sz5,,39,29,41,26,36,26,40,25
+SP-FOOT-41,Jaipur,19,19,2.2,7,999,Football Sz5,2.2,15,18,12,15,17,12,19,13
+SP-FOOT-41,Lucknow,7,7,1.6,7,₹999,Football Sz5,,12,10,12,14,10,9,9,13
+SP-FOOT-41,Surat,53,19,2.7,7,999,Football Sz5,,21,18,20,16,23,19,17,16
+SP-FOOT-41,Indore,28,0,2.3,10,999,Football Sz5,,16,20,17,17,18,18,16,17
+SP-FOOT-41,Nagpur,99,0,2.8,14,999,Football Sz5,,17,23,23,15,22,19,23,16
+SP-FOOT-41,Kochi,14,67,3.7,14,₹999,Football Sz5,,29,23,25,27,28,24,31,22
+SP-FOOT-41,Chandigarh,189,0,5.9,10,999,Football Sz5,,51,35,34,46,46,35,39,47
+SP-FOOT-41,Bhopal,36,-11,5.3,7,₹999,Football Sz5,,34,35,35,40,38,41,43,45
+SP-FOOT-41,Patna,76,0,3.4,7,₹999,Football Sz5,,30,27,21,29,21,26,27,22
+SP-FOOT-41,Vadodara,9,0,1.0,7,₹999,Football Sz5,,7,8,6,5,6,7,8,8
+SP-FOOT-41,Ludhiana,36,0,2.1,14,999,Football Sz5,,17,18,17,18,15,16,15,14
+SP-FOOT-41,Agra,68,0,3.9,14,999,Football Sz5,,21,33,34,25,30,26,32,32
+SP-FOOT-42,Mumbai,31.5,0,2.7,10,999,Football Sz5,,16,23,22,18,19,20,19,17
+SP-FOOT-42,Delhi,48,0,3.4,7,999,Football Sz5,,18,24,29,28,27,25,19,23
+SP-FOOT-42,Bengaluru,111,0,5.3,14,999,Football Sz5,,44,36,40,38,46,36,41,36
+SP-FOOT-42,Hyderabad,14,0,2.9,7,Rs. 999,Football Sz5,2.0,8,4,44,8,8,8,44,8
+SP-FOOT-42,Hyderabad,14,0,2.9,7,Rs. 999,Football Sz5,2.0,8,4,44,8,8,8,44,8
+SP-FOOT-42,Chennai,43,0,1.6,14,999,Football Sz5,,14,9,10,11,9,13,12,9
+SP-FOOT-42,Kolkata, 97 ,0,6.0,7,999,Football Sz5,,52,32,44,52,39,35,35,41
+SP-FOOT-42,Pune,14,0,4.2,7,Rs. 999,Football Sz5,2.2,26,26,37,36,31,31,34,35
+SP-FOOT-42,Ahmedabad,23,0,1.8,10,Rs. 999,Football Sz5,,13,15,15,12,11,14,11,12
+SP-FOOT-42,Jaipur,2,0,1.3,10 days,₹999,Football Sz5,,7,10,11,11,7,7,9,10
+SP-FOOT-42,Lucknow,88,0,4.0,7,₹999,Football Sz5,2.2,33,22,31,27,32,24,32,24
+SP-FOOT-42,Surat,49,0,2.1,7,₹999,Football Sz5,2.0,17,17,13,13,14,12,16,18
+SP-FOOT-42,Indore,28,0,1.4,10,999,Football Sz5,,10,10,12,8,10,11,11,9
+SP-FOOT-42,Nagpur,26,0,1.0,10,999,Football Sz5,,6,9,8,7,6,6,7,6
+SP-FOOT-42,Kochi,36,10,0.8,14,999,Football Sz5,2.0,5,5,5,5,7,5,5,6
+SP-FOOT-42,Chandigarh, 34 ,62,5.7,14,₹999,Football Sz5,,42,47,41,33,37,45,48,41
+SP-FOOT-42,Bhopal, 10 ,45,4.8,14,999,Football Sz5,,31,41,31,36,29,39,33,36
+SP-FOOT-42,Patna,28,0,1.9,10,₹999,Football Sz5,,15,11,14,16,11,11,13,14
+SP-FOOT-42,Vadodara,52,22,2.4,10,₹999,Football Sz5,2.2,13,20,13,15,19,15,18,20
+SP-FOOT-42,Ludhiana,23,0,1.9,,₹999,Football Sz5,,12,11,10,16,14,15,11,16
+SP-FOOT-42,Agra,111,26,4.9,10,999.00,Football Sz5,2.2,41,31,31,38,41,37,35,38
+SP-FOOT-43,Mumbai,12,0,4.0,7,"₹1,899",Football Sz5,,11,61,61,5,50,50,11,5
+SP-FOOT-43,Delhi,104,0,5.6,7,"₹1,899",Football Sz5,,46,41,32,30,37,44,46,43
+SP-FOOT-43,Bengaluru,19,0,2.0,7,"₹1,899",Football Sz5,2.0,13,11,17,15,17,16,13,17
+SP-FOOT-43,Hyderabad,3,0,2.0,10,1899,Football Sz5,,13,17,16,13,12,11,14,11
+SP-FOOT-43,Chennai,-8,0,2.4,7,1899,Football Sz5,2.0,17,17,15,15,14,20,13,19
+SP-FOOT-43,Kolkata,38,18,2.7,14,"₹1,899",Football Sz5,,14,21,16,23,16,15,23,24
+SP-FOOT-43,Pune,40,0,2.4,10,1899,Football Sz5,2.0,14,14,18,19,19,13,16,15
+SP-FOOT-43,Ahmedabad,23,0,2.7,7,1899,Football Sz5,,18,19,15,16,18,18,21,20
+SP-FOOT-43,Jaipur,28,0,1.3,14,"₹1,899",Football Sz5,,8,11,10,7,7,8,11,8
+SP-FOOT-43,Lucknow,54,0,3.3,7,1899,Football Sz5,2.0,22,24,18,23,27,23,26,26
+SP-FOOT-43,Surat,104,0,4.9,10,1899,Football Sz5,,34,42,38,29,41,34,35,41
+SP-FOOT-43,Indore,160,0,3.6,14,"Rs. 1,899",Football Sz5,2.2,24,22,24,31,19,24,28,24
+SP-FOOT-43,Nagpur,34,0,1.9,10,1899,Football Sz5,2.0,15,15,15,14,15,11,15,11
+SP-FOOT-43,Kochi,40,42,5.7,10,1899,Football Sz5,,40,38,46,34,45,33,33,49
+SP-FOOT-43,Chandigarh,8, 14 ,1.5,7,N/A,Football Sz5,,9,11,9,10,11,11,11,10
+SP-FOOT-43,Bhopal,60,0,3.9,10,1899,Football Sz5,2.2,22,29,22,26,34,30,32,30
+SP-FOOT-43,Patna,13,8,0.8,10,1899,Football Sz5,,5,4,5,7,4,5,6,5
+,Vadodara,5,0,1.7,14,1899,Football Sz5,2.2,26,2,26,26,26,21,21,26
+SP-FOOT-43,Ludhiana,52,0,3.3,14,"₹1,899",Football Sz5,,24,18,26,19,22,20,25,18
+SP-FOOT-43,Agra,65,0,5.1,7,1899,Football Sz5,,34,38,44,35,39,41,31,42
+SP-FOOT-44,Mumbai,71,12,3.1,7,299,Football Sz5,,18,18,21,17,19,25,27,23
+SP-FOOT-44,Delhi,22,0,1.4,14,Rs. 299,Football Sz5,,9,12,10,12,9,8,11,9
+SP-FOOT-44,Bengaluru,32,0,3.0,7,Rs. 299,Football Sz5,,21,18,26,24,22,24,20,18
+SP-FOOT-44,Hyderabad,93,0,4.2,10,299,Football Sz5,,29,27,27,29,33,30,29,24
+SP-FOOT-44,Chennai,21,0,0.7,14,299,Football Sz5,,5,4,4,4,5,4,4,4
+SP-FOOT-44,Kolkata,1,0,0.4,7,Rs. 299,Football Sz5,,3,2,3,3,3,2,3,3
+SP-FOOT-44,Pune,1,0,3.1,10,299,Football Sz5,,26,26,17,20,24,25,23,19
+SP-FOOT-44,Ahmedabad,45,0,2.4,7,₹299,Football Sz5,,17,19,13,19,16,15,19,16
+SP-FOOT-44,Jaipur,8,0,0.9,7,Rs. 299,Football Sz5,,6,7,6,5,6,7,7,6
+SP-FOOT-44,Lucknow,176,0,5.6,10,₹299,Football Sz5,,45,30,35,46,40,39,42,37
+SP-FOOT-44,Surat,23,0,,10,299,Football Sz5,,16,16,15,11,13,11,14,14
+SP-FOOT-44,Indore,8,0,0.7,14,299,Football Sz5,2.0,6,4,5,6,5,4,5,5
+SP-FOOT-44,Nagpur,91,0,4.0,7,299.00,Football Sz5,,29,23,30,31,28,27,34,23
+SP-FOOT-44,Kochi,104.5,0,5.0,7,299,Football Sz5,,42,37,28,43,32,37,38,37
+SP-FOOT-44,Chandigarh,94,0,4.1,7,299,Football Sz5,2.0,5,5,51,5,51,63,5,11
+SP-FOOT-44,Bhopal,24,0,2.8,10,299.00,Football Sz5,2.2,15,21,18,24,18,23,15,24
+SP-FOOT-44,Patna,1,0,3.7,10,₹299,Football Sz5,2.0,28,32,24,25,21,25,24,23
+SP-FOOT-44,Vadodara,25,4,1.5,7,₹299,Football Sz5,,8,9,11,10,9,9,13,13
+SP-FOOT-44,Ludhiana,51,0,5.7,7,299,Football Sz5,,40,38,38,38,31,30,30,31
+SP-FOOT-44,Agra,29,7,0.8,14,299.00,Football Sz5,2.2,5,7,7,6,5,5,6,6
+SP-FOOT-45,Mumbai,15,0,4.5,7,999,Football Sz5,2.2,35,37,38,34,35,27,25,38
+SP-FOOT-45,Delhi,36,0,3.3,7,₹999,Football Sz5,,18,18,21,26,27,25,20,27
+SP-FOOT-45,Bengaluru,194,0,5.1,14,Rs. 999,Football Sz5,,33,29,31,28,34,44,35,35
+SP-FOOT-45,Hyderabad,77,0,2.6,14,₹999,Football Sz5,,22,19,17,21,18,19,16,18
+SP-FOOT-45,Chennai,17,0,1.9,7,Rs. 999,Football Sz5,2.0,15,14,13,15,14,15,16,16
+SP-FOOT-45,Kolkata,146,0,3.3,14,Rs. 999,Football Sz5,,25,24,19,26,24,24,28,17
+SP-FOOT-45,Pune,28,-7,4.9,7,999,Football Sz5,,27,41,38,35,28,28,33,31
+SP-FOOT-45,Ahmedabad,18,19,2.9,14,999.00,Football Sz5,,16,17,17,23,17,21,23,17
+SP-FOOT-45,Jaipur,91,0,3.9,10,999,Football Sz5,2.0,22,30,28,29,26,29,23,25
+SP-FOOT-45,Lucknow,81,23,3.6,7,999,Football Sz5,2.2,29,25,21,23,27,30,28,29
+SP-FOOT-45,Surat,17,0,1.3,7,₹999,Football Sz5,2.0,9,7,8,11,11,9,11,10
+SP-FOOT-45,Indore,0,0,2.2,10,999,Football Sz5,,6,33,6,6,27,3,27,6
+SP-FOOT-45,Nagpur,5,0,2.2,7,Rs. 999,Football Sz5,2.0,18,19,16,16,17,14,14,16
+SP-FOOT-45,Kochi,13,20,3.4,10,999,Football Sz5,,24,21,20,26,19,23,23,23
+SP-FOOT-45,Chandigarh,44,0,3.2,7,999,Football Sz5,,18,22,20,23,26,26,21,21
+SP-FOOT-45,Bhopal,51,0,2.0,14,999,Football Sz5,2.2,17,11,15,15,12,17,14,15
+SP-FOOT-45,Patna,63,0,3.6,7,999.00,Football Sz5,,28,27,30,23,28,24,22,25
+SP-FOOT-45,Vadodara,46,8,1.4,14,999.00,Football Sz5,,10,9,9,9,7,9,9,11
+SP-FOOT-45,Ludhiana,5,0,3.7,7,₹999,Football Sz5,2.2,24,30,25,28,20,25,27,24
+SP-FOOT-45,Agra,98,0,3.1,10,Rs. 999,Football Sz5,2.2,20,18,27,18,25,17,16,27
+SP-FOOT-46,Mumbai,11,0,0.7,7,₹299,Football Sz5,2.2,4,5,6,6,6,5,5,6
+SP-FOOT-46,Delhi,60,0,3.2,7,Rs. 299,Football Sz5,2.0,24,17,23,19,27,18,21,28
+SP-FOOT-46,Bengaluru,113,0,6.0,10,299,Football Sz5,2.2,52,33,43,50,39,50,44,50
+SP-FOOT-46,Hyderabad,7,4,0.6,7,₹299,Football Sz5,,4,4,5,4,5,3,3,5
+SP-FOOT-46,Chennai,60,0,3.2,14,Rs. 299,Football Sz5,,26,21,18,25,26,18,24,19
+SP-FOOT-46,Kolkata,35,0,3.9,7,299.00,Football Sz5,2.2,27,24,24,28,29,30,26,23
+SP-FOOT-46,Pune,42,0,2.3,10,299,Football Sz5,2.0,15,16,14,12,14,13,15,17
+SP-FOOT-46,Ahmedabad,115,0,2.8,14 days,Rs. 299,Football Sz5,,19,19,17,19,16,23,21,20
+SP-FOOT-46,Jaipur,21,12,0.7,14,299,Football Sz5,2.2,8,10,8,1,10,10,8,0
+SP-FOOT-46,Lucknow,48,0,2.2,10,Rs. 299,Football Sz5,,14,17,13,15,13,18,15,13
+SP-FOOT-46,Surat,72,0,4.5,7,₹299,Football Sz5,,38,26,31,32,29,30,35,28
+SP-FOOT-46,Indore,73,0,3.4,,299,Football Sz5,2.0,27,25,21,29,21,20,26,20
+SP-FOOT-46,Nagpur,40,0,3.3,10,₹299,Football Sz5,,23,25,28,27,21,18,20,19
+SP-FOOT-46,Kochi,10,0,0.5,7,N/A,Football Sz5,,4,3,3,4,3,4,3,4
+SP-FOOT-46,Chandigarh,34,0,5.6,14,299,Football Sz5,,32,40,37,44,41,31,47,30
+SP-FOOT-46,Bhopal,51,0,5.1,10,299,Football Sz5,2.2,29,43,39,43,33,36,40,41
+SP-FOOT-46,Patna,49,0,2.2,7,₹299,Football Sz5,,15,19,15,14,13,12,14,18
+SP-FOOT-46,Vadodara,25,0,2.2,14,Rs. 299,Football Sz5,2.0,15,12,18,14,17,17,14,14
+SP-FOOT-46,Ludhiana,22,0,1.2,7,299,Football Sz5,,10,9,7,10,10,9,10,10
+SP-FOOT-46,Agra,7,0,0.7,7,₹299,Football Sz5,2.2,4,5,4,4,4,5,6,5
+SP-FOOT-47,Mumbai,47,0,1.9,14,"₹1,899",Football Sz5,,10,11,12,11,14,14,12,14
+SP-FOOT-47,Mumbai,47,0,1.9,14,"₹1,899",Football Sz5,,10,11,12,11,14,14,12,14
+SP-FOOT-47,Delhi,79,28,3.5,10,1899,Football Sz5,,29,20,30,27,27,30,25,21
+SP-FOOT-47,Bengaluru,9,17,2.4,14,"₹1,899",Football Sz5,,20,14,15,17,16,14,15,19
+SP-FOOT-47,Hyderabad,65,0,4.4,14,"Rs. 1,899",Football Sz5,2.2,32,27,25,38,36,34,30,28
+SP-FOOT-47,Chennai,31,0,3.2,7,"₹1,899",Football Sz5,,17,19,19,22,20,21,18,24
+SP-FOOT-47,Kolkata,18,0,1.1,7,1899,Football Sz5,2.0,1,16,16,1,13,16,16,16
+SP-FOOT-47,Pune,29.5,0,2.1,14,"₹1,899",Football Sz5,,11,17,14,13,17,15,17,16
+SP-FOOT-47,Ahmedabad,58,0,4.4,7,"₹1,899",Football Sz5,2.2,24,34,34,32,37,34,32,36
+SP-FOOT-47,Jaipur,33,0,3.7,7,1899,Football Sz5,,24,28,21,32,23,22,31,22
+SP-FOOT-47,Lucknow,87,0,5.2,10,1899,Football Sz5,2.0,35,42,40,35,43,41,36,41
+SP-FOOT-47,Surat,47,0,5.3,7,1899,Football Sz5,,34,39,38,32,40,45,46,35
+SP-FOOT-47,Indore,107,0,5.7,7,"Rs. 1,899",Football Sz5,2.2,48,50,45,39,35,40,44,40
+SP-FOOT-47,Nagpur,54,0,3.5,10,1899,Football Sz5,2.0,20,23,23,29,20,25,29,24
+SP-FOOT-47,Kochi,-5,0,3.4,10,"₹1,899",Football Sz5,2.0,23,24,21,20,20,25,22,20
+SP-FOOT-47,Chandigarh, 19 ,20,2.2,10,"₹1,899",Football Sz5,,15,19,15,12,13,13,18,18
+SP-FOOT-47,Bhopal,34,0,1.5,7,1899,Football Sz5,2.2,12,12,9,9,12,12,10,9
+SP-FOOT-47,Patna,28,43,4.0,10,1899,Football Sz5,,21,24,31,27,30,25,28,33
+SP-FOOT-47,Vadodara,16,0,3.4,10,"₹1,899",Football Sz5,,29,24,23,28,25,22,28,24
+SP-FOOT-47,Ludhiana,154,0,3.8,14,1899,Football Sz5,,22,33,25,30,29,21,33,20
+SP-FOOT-47,Agra,56,0,1.8,14,1899,Football Sz5,2.2,12,14,15,13,16,12,15,12
+SP-FOOT-48,Mumbai,6,0,5.4,7,999,Football Sz5,,39,37,36,46,34,35,44,36
+SP-FOOT-48,Delhi,18,36,3.0,14,999.00,Football Sz5,,19,19,20,20,24,24,25,23
+SP-FOOT-48,Bengaluru,47,0,3.5,7,999,Football Sz5,2.2,44,44,4,9,4,9,9,9
+SP-FOOT-48,Hyderabad,0,0,5.1,10,999,Football Sz5,,32,28,34,32,39,35,34,31
+SP-FOOT-48,Chennai,43,0,5.4,14,999,Football Sz5,2.0,35,40,38,43,30,38,41,29
+SP-FOOT-48,Kolkata,1, 19 ,1.7,14,999,Football Sz5,2.0,11,9,14,14,9,13,11,12
+SP-FOOT-48,Pune, 10 ,0,5.5,10,Rs. 999,Football Sz5,,47,41,43,48,46,37,37,33
+SP-FOOT-48,Ahmedabad,10,0,1.8,10,999,Football Sz5,,15,14,14,14,11,11,14,14
+SP-FOOT-48,Jaipur,151,0,5.9,10,999,Football Sz5,,43,40,38,46,36,44,50,35
+SP-FOOT-48,Lucknow,3,0,0.9,10,999.00,Football Sz5,2.0,7,7,7,6,8,6,5,6
+SP-FOOT-48,Surat,11,0,0.6,7,999,Football Sz5,2.0,3,4,4,4,5,3,3,5
+SP-FOOT-48,Indore,34,0,1.1,10,999.00,Football Sz5,2.2,6,9,8,8,7,8,7,7
+SP-FOOT-48,Nagpur,97,0,4.8,14,₹999,Football Sz5,2.0,35,41,35,28,33,27,28,25
+SP-FOOT-48,Kochi, 11 ,0,,7,Rs. 999,Football Sz5,,4,3,4,3,4,5,3,3
+SP-FOOT-48,Chandigarh,131,0,4.6,14,999.00,Football Sz5,2.0,27,39,35,26,38,34,29,39
+SP-FOOT-48,Bhopal,40,0,0.9,14,999,Football Sz5,,6,6,7,6,5,5,6,5
+SP-FOOT-48,Patna,114,0,5.2,10,999,Football Sz5,,31,29,42,38,45,45,30,32
+SP-FOOT-48,Vadodara,44,-4,3.3,10,999,Football Sz5,2.0,28,28,22,18,18,24,25,19
+,Ludhiana,18,0,1.5,10,999,Football Sz5,,12,12,12,9,11,8,12,8
+SP-FOOT-48,Agra,80,32,4.5,10,999,Football Sz5,,12,6,69,6,69,56,6,56
+SP-FOOT-49,Mumbai,10,0,1.0,10,₹299,Football Sz5,,6,6,9,6,6,6,7,8
+SP-FOOT-49,Delhi,57,0,3.5,7,Rs. 299,Football Sz5,,29,25,27,26,23,30,21,27
+SP-FOOT-49,Bengaluru,87,0,3.9,10,Rs. 299,Football Sz5,,26,29,29,26,21,33,21,33
+SP-FOOT-49,Hyderabad, 12 ,6,1.0,10,Rs. 299,Football Sz5,2.2,6,8,5,7,6,6,6,8
+SP-FOOT-49,Chennai,50,0,3.2,7,Rs. 299,Football Sz5,2.0,21,24,25,23,19,19,23,24
+SP-FOOT-49,Kolkata,144,27,4.7,10,299,Football Sz5,2.0,29,25,34,28,25,27,35,28
+SP-FOOT-49,Pune,1,0,4.4,10,₹299,Football Sz5,,28,34,37,25,27,29,27,32
+SP-FOOT-49,Ahmedabad,14,6,1.0,10,299,Football Sz5,2.0,8,6,8,5,7,7,8,7
+SP-FOOT-49,Jaipur, 107 ,37,3.3,10,₹299,Football Sz5,2.2,27,18,27,20,28,25,22,18
+SP-FOOT-49,Lucknow, 19 ,0,1.9,10,₹299,Football Sz5,2.2,16,11,12,11,11,11,12,11
+SP-FOOT-49,Surat,7,0,3.5,7,299.00,Football Sz5,2.2,20,24,27,22,30,29,19,29
+SP-FOOT-49,Indore,5,0,4.8,10,299.00,Football Sz5,,33,36,33,26,41,31,26,29
+SP-FOOT-49,Nagpur,53,71,5.9,14,N/A,Football Sz5,2.2,42,38,37,50,40,49,48,36
+SP-FOOT-49,Kochi,121,0,2.7,14,Rs. 299,Football Sz5,2.0,17,15,23,20,16,15,22,22
+SP-FOOT-49,Chandigarh,12,0,2.4,14,299,Football Sz5,,17,17,14,19,14,15,16,13
+SP-FOOT-49,Bhopal,56,0,2.3,14,299,Football Sz5,,15,17,16,15,15,14,16,16
+SP-FOOT-49,Patna,109,0,4.6,7,₹299,Football Sz5,2.0,12,70,6,57,57,6,12,12
+SP-FOOT-49,Vadodara,15,0,1.0,14,Rs. 299,Football Sz5,,6,7,8,8,6,9,6,6
+SP-FOOT-49,Ludhiana,32,0,2.2,7,299,Football Sz5,2.0,17,14,19,12,13,17,14,15
+SP-FOOT-49,Agra,3.5,0,2.3,7,Rs. 299,Football Sz5,2.0,13,16,16,14,18,17,13,18
+SP-FOOT-50,Mumbai,90,0,4.6,14,3499,Football Sz5,,36,36,35,25,31,28,39,33
+SP-FOOT-50,Delhi,6,0,0.5,7,3499,Football Sz5,,3,4,3,3,3,3,3,3
+SP-FOOT-50,Bengaluru,36,0,2.7,14,"₹3,499",Football Sz5,,19,23,23,15,21,18,14,17
+SP-FOOT-50,Hyderabad,90,25,4.7,7,3499,Football Sz5,,41,37,26,33,33,38,25,40
+SP-FOOT-50,Chennai,3,0,2.6,,"3,499.00",Football Sz5,,15,17,17,14,15,21,21,16
+SP-FOOT-50,Kolkata,38,0,5.6,7,3499,Football Sz5,,41,33,36,31,35,44,30,37
+SP-FOOT-50,Pune,23,0,1.4,14 days,3499,Football Sz5,2.2,8,11,8,10,8,8,9,10
+SP-FOOT-50,Ahmedabad,41,9,2.1,10,3499,Football Sz5,,15,15,12,16,15,11,18,18
+SP-FOOT-50,Jaipur,4,0,0.6,10,"Rs. 3,499",Football Sz5,2.0,4,3,4,4,5,5,5,4
+SP-FOOT-50,Lucknow,245,0,5.2,14,3499,Football Sz5,2.0,32,43,43,45,41,38,43,28
+SP-FOOT-50,Surat, 54 ,0,4.0,7,"₹3,499",Football Sz5,,27,32,34,32,21,22,29,31
+SP-FOOT-50,Indore,88,0,2.6,14,"₹3,499",Football Sz5,,22,21,16,15,18,14,16,20
+SP-FOOT-50,Nagpur,24, 26 ,4.7,7,"₹3,499",Football Sz5,2.0,31,40,25,29,40,36,32,29
+SP-FOOT-50,Kochi,28,0,4.5,10,"₹3,499",Football Sz5,2.0,56,6,12,6,56,12,12,6
+SP-FOOT-50,Chandigarh,5,26,3.0,14,3499,Football Sz5,,19,22,22,25,25,16,16,23
+SP-FOOT-50,Bhopal,7,4,0.8,14,"₹3,499",Football Sz5,,5,5,4,6,6,5,5,5
+SP-FOOT-50,Patna,30, 13 ,2.0,7,"₹3,499",Football Sz5,,17,12,12,17,11,12,13,14
+SP-FOOT-50,Vadodara,14,0,2.5,7,3499,Football Sz5,,14,21,21,15,19,22,18,18
+SP-FOOT-50,Ludhiana,38,0,2.1,7,3499,Football Sz5,,14,12,14,16,17,14,13,15
+SP-FOOT-50,Agra,64,65,3.6,14,"₹3,499",Football Sz5,2.0,26,25,25,29,26,20,25,23
+SP-SKIP-51,Mumbai,48,0,4.3,7,Rs. 299,Skipping Rope,2.0,26,23,30,33,36,33,28,26
+SP-SKIP-51,Delhi,199,0,6.0,14,299.00,Skipping Rope,,38,48,47,43,40,42,48,34
+SP-SKIP-51,Bengaluru,38,0,5.8,7,299,Skipping Rope,,48,32,41,34,46,40,48,44
+SP-SKIP-51,Hyderabad, 285 ,0,6.0,14,299,Skipping Rope,,50,36,51,44,52,41,49,48
+SP-SKIP-51,Chennai,14,0,3.4,14,₹299,Skipping Rope,,21,26,28,23,25,26,29,24
+SP-SKIP-51,Kolkata, 134 ,0,4.3,10,299,Skipping Rope,2.2,35,36,30,33,33,31,24,23
+SP-SKIP-51,Pune, 64 ,0,5.2,7,299,Skipping Rope,,30,37,44,39,28,45,43,31
+SP-SKIP-51,Ahmedabad,131,0,5.8,7,Rs. 299,Skipping Rope,,38,32,36,36,48,38,40,36
+SP-SKIP-51,Jaipur,43,0,4.3,14,299,Skipping Rope,2.2,35,31,31,36,32,36,29,24
+SP-SKIP-51,Lucknow, 71 ,0,5.3,10,299,Skipping Rope,2.0,42,41,38,34,41,41,30,30
+SP-SKIP-51,Surat,126,0,5.6,10,₹299,Skipping Rope,,86,7,15,15,7,7,86,15
+SP-SKIP-51,Indore,38,0,4.2,14,Rs. 299,Skipping Rope,,27,24,35,30,36,24,29,30
+SP-SKIP-51,Nagpur,30,0,4.5,14,₹299,Skipping Rope,,36,30,27,24,24,29,38,31
+SP-SKIP-51,Kochi,63,0,2.4,14,₹299,Skipping Rope,2.0,21,13,13,16,15,16,19,16
+SP-SKIP-51,Chandigarh,1,0,2.8,7,299.00,Skipping Rope,2.0,20,20,19,22,21,23,21,22
+SP-SKIP-51,Bhopal,32,21,5.5,7,Rs. 299,Skipping Rope,2.0,37,38,42,37,38,36,38,47
+SP-SKIP-51,Patna,38, 9 ,1.9,7,299.00,Skipping Rope,,15,14,13,15,13,14,10,11
+SP-SKIP-51,Vadodara,157,64,5.0,10,Rs. 299,Skipping Rope,,44,26,37,27,36,38,40,34
+SP-SKIP-51,Vadodara,157,64,5.0,10,Rs. 299,Skipping Rope,,44,26,37,27,36,38,40,34
+SP-SKIP-51,Ludhiana,143,0,4.6,14,299,Skipping Rope,,24,30,28,39,35,24,39,39
+SP-SKIP-51,Agra,8,0,0.4,7,299,Skipping Rope,,3,3,3,3,3,3,2,3
+SP-SKIP-52,Mumbai,66,13,1.4,14,₹999,Skipping Rope,2.2,8,11,8,9,9,12,10,11
+SP-SKIP-52,Delhi,73,0,3.4,7,₹999,Skipping Rope,,27,25,30,25,29,21,27,28
+SP-SKIP-52,Bengaluru,(3),0,3.6,7,₹999,Skipping Rope,,21,21,31,19,28,24,29,25
+SP-SKIP-52,Hyderabad,67,0,5.8,14,₹999,Skipping Rope,2.0,39,48,39,39,46,44,32,43
+SP-SKIP-52,Chennai,62,35,2.5,14,₹999,Skipping Rope,,17,17,21,20,16,13,16,22
+SP-SKIP-52,Kolkata,127,0,3.9,14,₹999,Skipping Rope,,30,22,28,34,28,31,23,31
+SP-SKIP-52,Pune,18,0,5.4,14,999,Skipping Rope,,29,41,38,43,46,32,29,42
+SP-SKIP-52,Ahmedabad,21,9,1.0,7,999,Skipping Rope,,2,1,15,12,2,1,2,2
+SP-SKIP-52,Jaipur,51,-9,3.2,14,₹999,Skipping Rope,2.0,23,25,22,25,19,26,26,19
+SP-SKIP-52,Lucknow, 51 ,50,2.6,14,999,Skipping Rope,,21,21,16,20,14,18,17,20
+SP-SKIP-52,Surat,1,53,5.2,10,₹999,Skipping Rope,2.2,34,45,33,40,39,28,45,37
+SP-SKIP-52,Indore,117,0,3.5,10,N/A,Skipping Rope,,20,22,19,27,30,19,28,24
+SP-SKIP-52,Nagpur,53.5,0,3.1,14,999,Skipping Rope,,27,19,21,17,17,23,17,22
+SP-SKIP-52,Kochi,54,0,3.0,10,₹999,Skipping Rope,,26,23,22,21,22,24,19,21
+SP-SKIP-52,Chandigarh,43,0,2.6,7,999.00,Skipping Rope,,22,17,21,18,14,19,18,22
+SP-SKIP-52,Bhopal,62,0,3.0,14,Rs. 999,Skipping Rope,2.2,20,25,21,22,21,25,17,18
+SP-SKIP-52,Patna,41,0,,10,999,Skipping Rope,2.0,52,36,48,49,52,50,50,49
+SP-SKIP-52,Vadodara,31,0,0.7,14,₹999,Skipping Rope,,6,5,6,4,6,5,5,5
+SP-SKIP-52,Ludhiana,64,0,3.9,7,999,Skipping Rope,2.0,28,34,24,23,21,25,29,21
+SP-SKIP-52,Agra,103,0,4.7,7,Rs. 999,Skipping Rope,2.0,35,38,40,38,26,26,26,28
+SP-SKIP-53,Mumbai,37,0,1.4,10,"Rs. 1,899",Skipping Rope,2.0,11,12,11,10,8,10,11,10
+SP-SKIP-53,Delhi,46,0,1.3,14,1899,Skipping Rope,2.0,9,10,8,11,9,7,9,11
+SP-SKIP-53,Bengaluru,19,12,1.3,10,"₹1,899",Skipping Rope,,11,11,10,8,7,8,10,9
+SP-SKIP-53,Hyderabad,94,0,3.9,10,"Rs. 1,899",Skipping Rope,2.2,34,28,24,29,25,22,29,31
+SP-SKIP-53,Chennai, 53 ,0,4.2,7,1899,Skipping Rope,,52,11,64,64,5,64,11,5
+SP-SKIP-53,Kolkata,21,0,3.3,10,1899,Skipping Rope,,25,25,21,25,26,18,25,29
+SP-SKIP-53,Pune, 5 ,3,0.5,7,"1,899.00",Skipping Rope,,4,3,3,4,4,3,4,3
+SP-SKIP-53,Ahmedabad,52,0,3.3,7,"₹1,899",Skipping Rope,,19,24,20,27,18,28,26,18
+SP-SKIP-53,Jaipur,21,0,4.5,7,"₹1,899",Skipping Rope,,37,35,28,31,36,26,27,24
+SP-SKIP-53,Lucknow,5,0,2.8,7,1899,Skipping Rope,2.0,19,17,15,16,21,18,22,18
+SP-SKIP-53,Surat,47,14,2.4,7,1899,Skipping Rope,,21,20,19,16,14,18,17,20
+SP-SKIP-53,Indore,63,0,2.9,7,1899,Skipping Rope,,24,21,25,19,17,24,21,16
+SP-SKIP-53,Nagpur,9,0,2.5,10,"Rs. 1,899",Skipping Rope,,15,14,14,17,21,13,21,22
+SP-SKIP-53,Kochi,23,0,1.2,7,1899,Skipping Rope,,8,10,7,10,9,7,9,7
+SP-SKIP-53,Chandigarh, 16 ,0,1.0,7,1899,Skipping Rope,,7,5,6,7,6,9,7,6
+SP-SKIP-53,Bhopal,124, 25 ,3.6,14,"1,899.00",Skipping Rope,,23,26,30,20,21,25,28,25
+SP-SKIP-53,Patna,15,0,1.0,7,"₹1,899",Skipping Rope,,6,8,7,8,7,6,6,8
+SP-SKIP-53,Vadodara,152,0,4.6,,"₹1,899",Skipping Rope,,28,40,29,34,33,31,25,38
+SP-SKIP-53,Ludhiana,46,0,1.6,14,"₹1,899",Skipping Rope,,12,11,13,14,12,12,14,10
+,Agra, 58 ,0,5.8,14,"₹1,899",Skipping Rope,2.0,45,35,39,35,36,39,40,37
+SP-SKIP-54,Mumbai,3,0,3.4,7,3499,Skipping Rope,2.0,18,28,27,25,21,22,25,29
+SP-SKIP-54,Delhi,46,0,4.9,10,3499,Skipping Rope,2.0,13,6,6,75,6,6,13,61
+SP-SKIP-54,Bengaluru,8,0,0.7,10,"₹3,499",Skipping Rope,,4,5,4,4,6,4,6,4
+SP-SKIP-54,Hyderabad,36, 56 ,3.1,14,"₹3,499",Skipping Rope,2.0,18,21,17,25,19,20,26,22
+SP-SKIP-54,Chennai,6,0,0.5,10,3499,Skipping Rope,,4,3,3,4,3,4,4,4
+SP-SKIP-54,Kolkata,15,0,4.3,10 days,3499,Skipping Rope,,34,31,36,36,25,37,25,28
+SP-SKIP-54,Pune,61,0,2.4,10,3499,Skipping Rope,,13,19,21,17,18,13,20,21
+SP-SKIP-54,Ahmedabad,12,0,0.5,14,"₹3,499",Skipping Rope,,3,4,3,4,4,3,4,3
+SP-SKIP-54,Jaipur,54,32,2.0,14,3499,Skipping Rope,,12,13,13,16,15,14,12,11
+SP-SKIP-54,Lucknow,26,0,4.7,7,"₹3,499",Skipping Rope,,35,36,34,39,41,33,37,33
+SP-SKIP-54,Surat,29,0,1.2,10,"₹3,499",Skipping Rope,2.0,9,6,9,8,9,7,8,8
+SP-SKIP-54,Indore,187,0,5.9,14,"3,499.00",Skipping Rope,,38,31,50,44,44,38,37,40
+SP-SKIP-54,Nagpur,58,0,4.5,10,3499,Skipping Rope,,27,34,34,33,33,24,34,39
+SP-SKIP-54,Kochi,85,0,3.7,7,"₹3,499",Skipping Rope,2.0,26,20,25,21,27,30,22,32
+SP-SKIP-54,Chandigarh,15,0,1.7,7,3499,Skipping Rope,,13,10,12,10,13,15,11,12
+SP-SKIP-54,Bhopal,50,0,1.6,10,3499,Skipping Rope,,11,10,12,11,13,13,13,13
+SP-SKIP-54,Patna,2,20,2.2,7,"Rs. 3,499",Skipping Rope,2.0,18,16,16,17,18,13,13,14
+SP-SKIP-54,Vadodara,19,14,1.6,14,3499,Skipping Rope,,10,10,8,13,9,10,13,12
+SP-SKIP-54,Ludhiana,40,15,3.8,7,"₹3,499",Skipping Rope,2.0,47,47,58,10,58,5,10,10
+SP-SKIP-54,Agra,5,42,5.1,7,"₹3,499",Skipping Rope,2.2,42,40,43,39,39,32,38,31
+SP-SKIP-55,Mumbai, 21 ,31,4.0,7,1899,Skipping Rope,,24,33,27,25,32,32,31,29
+SP-SKIP-55,Delhi,18,0,0.7,14,"₹1,899",Skipping Rope,,4,5,4,6,4,5,4,6
+SP-SKIP-55,Bengaluru,61, 14 ,2.9,7,"1,899.00",Skipping Rope,2.2,17,17,22,21,23,16,18,23
+SP-SKIP-55,Hyderabad,25,18,3.1,7,"₹1,899",Skipping Rope,2.0,25,22,17,26,18,23,24,22
+SP-SKIP-55,Chennai,37,0,5.8,7,1899,Skipping Rope,,47,50,36,48,45,36,46,48
+SP-SKIP-55,Kolkata,12.5,0,0.9,14,"Rs. 1,899",Skipping Rope,2.2,7,5,6,6,6,7,6,7
+SP-SKIP-55,Pune,179,107,5.6,14,"₹1,899",Skipping Rope,2.2,48,40,45,42,38,45,40,42
+SP-SKIP-55,Ahmedabad,154,24,5.5,10,1899,Skipping Rope,,32,35,29,45,37,37,42,35
+SP-SKIP-55,Jaipur,28,0,0.9,10,1899,Skipping Rope,,7,6,7,7,5,6,8,5
+SP-SKIP-55,Lucknow,32,23,5.3,7,"Rs. 1,899",Skipping Rope,2.2,40,33,41,29,44,33,29,45
+SP-SKIP-55,Surat,35,30,3.2,7,N/A,Skipping Rope,2.0,27,17,18,19,24,22,27,23
+SP-SKIP-55,Indore,70,0,3.2,10,"Rs. 1,899",Skipping Rope,,26,25,24,28,22,17,18,24
+SP-SKIP-55,Nagpur,10,2,0.5,7,1899,Skipping Rope,,3,3,3,4,4,4,3,3
+SP-SKIP-55,Kochi, 13 ,0,1.9,14,"1,899.00",Skipping Rope,,15,15,11,11,14,12,11,13
+SP-SKIP-55,Chandigarh,29,0,1.7,7,1899,Skipping Rope,,13,9,14,10,15,14,12,15
+SP-SKIP-55,Bhopal,73,25,3.4,7,1899,Skipping Rope,,4,42,42,42,9,9,42,9
+SP-SKIP-55,Patna,31,0,5.3,14,1899,Skipping Rope,2.2,43,43,28,36,34,38,40,34
+SP-SKIP-55,Vadodara,107,25,4.3,10,1899,Skipping Rope,,30,26,27,26,31,25,36,31
+SP-SKIP-55,Ludhiana,16,0,2.7,10,1899,Skipping Rope,2.0,22,23,17,21,22,17,15,21
+SP-SKIP-55,Agra,31,-13,2.0,7,1899,Skipping Rope,,14,14,13,16,11,13,11,11
+SP-SKIP-56,Mumbai,7,9,2.6,7,299,Skipping Rope,,17,18,15,17,20,20,14,16
+SP-SKIP-56,Delhi,29,0,5.5,7,₹299,Skipping Rope,,46,45,39,47,33,34,36,36
+SP-SKIP-56,Bengaluru,17,0,4.7,10,₹299,Skipping Rope,,38,25,37,31,40,39,37,29
+SP-SKIP-56,Hyderabad,10,0,2.0,10,299,Skipping Rope,,12,13,15,15,15,17,11,14
+SP-SKIP-56,Chennai,32,0,1.4,10,299.00,Skipping Rope,2.2,11,12,10,8,11,11,11,9
+SP-SKIP-56,Kolkata,48,9,1.1,14,299,Skipping Rope,2.0,8,7,9,7,8,7,7,6
+SP-SKIP-56,Pune,98,0,5.8,10,299,Skipping Rope,,33,43,33,42,36,42,48,35
+SP-SKIP-56,Ahmedabad,9,0,0.7,7,299,Skipping Rope,2.2,6,4,5,5,5,5,5,6
+SP-SKIP-56,Jaipur,85,0,4.5,10,299,Skipping Rope,2.2,32,25,25,29,32,25,33,30
+SP-SKIP-56,Lucknow,125,0,3.8,14,₹299,Skipping Rope,2.2,25,21,26,32,33,27,27,32
+SP-SKIP-56,Surat,28,113,6.0,14,₹299,Skipping Rope,2.0,33,44,39,49,33,35,37,43
+SP-SKIP-56,Indore,(4),0,1.1,7,₹299,Skipping Rope,2.2,9,9,9,8,9,8,9,7
+SP-SKIP-56,Nagpur,18,10,1.7,14,₹299,Skipping Rope,,26,4,21,21,26,21,4,21
+SP-SKIP-56,Kochi,28,0,1.7,14,299,Skipping Rope,2.2,15,11,15,12,12,11,11,13
+SP-SKIP-56,Chandigarh,26,0,1.2,10,₹299,Skipping Rope,2.2,9,8,10,7,9,10,8,7
+SP-SKIP-56,Chandigarh,26,0,1.2,10,₹299,Skipping Rope,2.2,9,8,10,7,9,10,8,7
+SP-SKIP-56,Bhopal,77,12,2.2,14,299,Skipping Rope,,16,16,12,14,17,12,16,15
+SP-SKIP-56,Patna,104,0,5.8,7,Rs. 299,Skipping Rope,,39,47,37,35,46,44,48,47
+SP-SKIP-56,Vadodara,42,0,2.4,10,299,Skipping Rope,,16,21,15,13,20,16,14,13
+SP-SKIP-56,Ludhiana, 42 ,0,1.7,10,299,Skipping Rope,,10,9,14,11,12,10,15,15
+SP-SKIP-56,Agra,14,19,,10,299,Skipping Rope,2.2,19,19,15,18,17,12,15,12
+SP-SKIP-57,Mumbai,29,0,4.7,10,"1,899.00",Skipping Rope,,32,32,32,40,41,25,34,34
+SP-SKIP-57,Delhi,0,0,0.6,7,"₹1,899",Skipping Rope,2.0,5,4,3,4,4,4,4,5
+SP-SKIP-57,Bengaluru,8,0,3.0,10,1899,Skipping Rope,,24,20,25,21,16,23,17,19
+SP-SKIP-57,Hyderabad,61,0,3.2,14,1899,Skipping Rope,,22,19,27,26,27,24,22,19
+SP-SKIP-57,Chennai,63,0,1.9,14,"Rs. 1,899",Skipping Rope,,15,15,15,10,11,11,16,11
+SP-SKIP-57,Kolkata,2,38,5.3,10,1899,Skipping Rope,,41,32,29,42,28,40,33,39
+SP-SKIP-57,Pune,23,0,0.9,14,"Rs. 1,899",Skipping Rope,,6,5,6,5,6,6,7,7
+SP-SKIP-57,Ahmedabad,125,39,4.6,10,1899,Skipping Rope,2.2,33,35,27,32,36,25,37,33
+SP-SKIP-57,Jaipur,0,0,4.7,7,"Rs. 1,899",Skipping Rope,,40,29,33,34,34,37,30,37
+SP-SKIP-57,Lucknow,48,17,3.8,7,"1,899.00",Skipping Rope,2.0,47,5,5,10,47,10,58,10
+SP-SKIP-57,Surat,8,0,1.4,,"₹1,899",Skipping Rope,2.0,9,9,11,8,9,10,12,7
+SP-SKIP-57,Indore,13,0,1.4,7,"₹1,899",Skipping Rope,2.0,11,9,9,11,12,11,9,11
+SP-SKIP-57,Nagpur,33,0,1.6,14,"Rs. 1,899",Skipping Rope,,11,13,12,13,9,12,12,9
+SP-SKIP-57,Kochi, 17 ,0,4.7,7,"Rs. 1,899",Skipping Rope,,35,34,38,39,26,28,33,37
+SP-SKIP-57,Chandigarh,6,0,0.7,10,"Rs. 1,899",Skipping Rope,,6,4,4,6,6,6,4,4
+SP-SKIP-57,Bhopal,11,63,4.2,14,1899,Skipping Rope,2.0,29,32,34,27,23,33,24,34
+SP-SKIP-57,Patna, 130 ,0,4.6,14,"Rs. 1,899",Skipping Rope,,38,33,29,36,27,27,25,28
+SP-SKIP-57,Vadodara,102,41,4.6,10,1899,Skipping Rope,,31,31,38,32,34,35,27,40
+SP-SKIP-57,Ludhiana,38.5,0,1.9,10,1899,Skipping Rope,,14,16,16,17,13,13,11,11
+SP-SKIP-57,Agra, 51 ,25,4.8,7,"₹1,899",Skipping Rope,2.2,40,33,35,41,25,26,39,33
+SP-SKIP-58,Mumbai,35,0,2.1,10,"₹3,499",Skipping Rope,,13,14,15,14,11,18,14,18
+SP-SKIP-58,Delhi,14,8,0.5,14,3499,Skipping Rope,2.2,3,4,4,3,4,4,3,4
+SP-SKIP-58,Bengaluru,36,0,5.3,7,"₹3,499",Skipping Rope,2.2,40,46,46,45,46,36,29,37
+SP-SKIP-58,Hyderabad,50,0,5.7,10,"3,499.00",Skipping Rope,,33,37,35,38,46,33,46,42
+SP-SKIP-58,Chennai, 33 ,0,4.3,7 days,"Rs. 3,499",Skipping Rope,,26,34,23,32,30,35,31,29
+SP-SKIP-58,Kolkata,119,0,3.4,14,"Rs. 3,499",Skipping Rope,,26,27,28,25,24,26,28,25
+SP-SKIP-58,Pune,35,20,2.6,10,"₹3,499",Skipping Rope,,3,32,32,32,32,32,3,40
+SP-SKIP-58,Ahmedabad,84,0,4.8,14,"3,499.00",Skipping Rope,,42,36,28,35,33,31,33,27
+SP-SKIP-58,Jaipur,32,0,2.3,10,3499,Skipping Rope,,14,12,20,18,18,17,18,19
+SP-SKIP-58,Lucknow,21,13,2.5,10,N/A,Skipping Rope,2.0,15,16,22,17,19,16,16,18
+SP-SKIP-58,Surat,102,0,5.8,7,3499,Skipping Rope,,36,42,35,31,47,42,36,40
+SP-SKIP-58,Indore,95,0,2.5,14,3499,Skipping Rope,,14,18,18,19,18,14,15,16
+SP-SKIP-58,Nagpur,67,0,2.3,10,3499,Skipping Rope,,14,13,14,17,19,15,15,14
+SP-SKIP-58,Kochi,62,0,4.7,7,"Rs. 3,499",Skipping Rope,,35,30,32,27,27,28,30,39
+SP-SKIP-58,Chandigarh,12,0,1.0,7,"₹3,499",Skipping Rope,2.0,5,7,6,7,5,7,7,9
+SP-SKIP-58,Bhopal,11,0,1.8,7,3499,Skipping Rope,2.2,13,11,12,11,10,10,15,15
+SP-SKIP-58,Patna,94,0,5.4,10,3499,Skipping Rope,,39,45,29,45,32,44,30,43
+SP-SKIP-58,Vadodara,94,0,3.1,14,3499,Skipping Rope,,23,17,24,20,20,23,25,27
+SP-SKIP-58,Ludhiana,226,0,4.8,14,"₹3,499",Skipping Rope,,31,34,32,34,30,35,28,29
+SP-SKIP-58,Agra,9,0,1.7,7,"₹3,499",Skipping Rope,,14,11,13,12,13,10,13,12
+,Mumbai,99,51,4.3,10,299,Skipping Rope,,28,31,23,28,34,28,36,33
+SP-SKIP-59,Delhi,13,0,0.9,14,299,Skipping Rope,,7,5,7,7,5,6,8,6
+SP-SKIP-59,Bengaluru,47,0,1.9,14,299,Skipping Rope,2.2,16,14,14,15,16,16,12,14
+SP-SKIP-59,Hyderabad,5,3,0.7,7,299,Skipping Rope,2.0,8,10,0,8,1,1,0,10
+SP-SKIP-59,Chennai,17,42,5.9,7,299,Skipping Rope,,38,43,32,33,35,39,40,35
+SP-SKIP-59,Kolkata,23,0,2.1,10,Rs. 299,Skipping Rope,2.2,14,13,15,13,18,16,17,15
+SP-SKIP-59,Pune,62,71,4.4,14,Rs. 299,Skipping Rope,,29,31,27,38,35,37,26,25
+SP-SKIP-59,Ahmedabad,44,41,4.0,14,₹299,Skipping Rope,,29,24,30,24,30,29,31,35
+SP-SKIP-59,Jaipur,81,0,5.7,7,299,Skipping Rope,,38,37,35,33,45,48,37,37
+SP-SKIP-59,Lucknow,3,58,5.4,14,₹299,Skipping Rope,2.2,42,41,46,29,44,40,36,36
+SP-SKIP-59,Surat,45,-12,5.4,10,299.00,Skipping Rope,,46,39,31,36,32,40,31,46
+SP-SKIP-59,Indore,52,0,2.2,7,299.00,Skipping Rope,2.0,16,17,14,16,14,17,19,17
+SP-SKIP-59,Nagpur,34,10,2.1,7,₹299,Skipping Rope,,16,15,16,13,18,16,13,18
+SP-SKIP-59,Kochi,158,0,4.6,14,299,Skipping Rope,,32,29,31,28,36,34,30,31
+SP-SKIP-59,Chandigarh,36,0,2.7,7,299.00,Skipping Rope,2.0,17,18,18,20,17,18,20,16
+SP-SKIP-59,Bhopal,53,0,1.7,10,299,Skipping Rope,,15,13,10,14,13,13,9,10
+SP-SKIP-59,Patna,53,43,5.3,7,Rs. 299,Skipping Rope,,39,37,34,37,45,32,32,31
+SP-SKIP-59,Vadodara,77,0,2.4,10,299,Skipping Rope,,15,19,15,19,16,19,14,13
+SP-SKIP-59,Ludhiana,9,0,1.5,14,₹299,Skipping Rope,,9,12,12,11,13,8,13,12
+SP-SKIP-59,Agra,11,19,1.3,14,299,Skipping Rope,,10,9,8,7,10,11,10,8
+SP-SKIP-60,Mumbai,84, 23 ,2.7,10,3499,Skipping Rope,2.2,7,3,3,3,34,3,7,7
+SP-SKIP-60,Delhi,15,0,3.4,7,3499,Skipping Rope,2.0,26,27,28,29,26,25,21,25
+SP-SKIP-60,Bengaluru,80,0,5.6,14,"Rs. 3,499",Skipping Rope,,42,30,41,49,34,44,47,45
+SP-SKIP-60,Hyderabad,61,0,5.1,7,3499,Skipping Rope,,35,35,42,33,44,38,32,38
+SP-SKIP-60,Chennai,21,31,3.2,14,"₹3,499",Skipping Rope,2.0,21,17,20,26,27,24,23,17
+SP-SKIP-60,Kolkata,33,0,2.2,14,3499,Skipping Rope,,19,13,17,18,15,15,18,15
+SP-SKIP-60,Pune,9,3,0.6,7,"₹3,499",Skipping Rope,,4,5,5,3,5,4,4,4
+SP-SKIP-60,Ahmedabad,14,3,0.8,10,"₹3,499",Skipping Rope,2.0,4,5,6,5,6,7,5,7
+SP-SKIP-60,Jaipur,14,0,0.7,10,3499,Skipping Rope,,5,5,5,6,6,6,5,6
+SP-SKIP-60,Lucknow,13,0,0.7,10,3499,Skipping Rope,,4,6,4,5,4,6,5,6
+SP-SKIP-60,Surat,157,0,4.8,10,"₹3,499",Skipping Rope,,29,39,40,26,35,35,31,41
+SP-SKIP-60,Indore,9.5,0,1.8,7,3499,Skipping Rope,2.2,12,11,11,15,15,11,10,11
+SP-SKIP-60,Nagpur,4,3,0.6,14,"₹3,499",Skipping Rope,,4,3,3,4,3,4,3,5
+SP-SKIP-60,Kochi,25,0,1.3,7,3499,Skipping Rope,,9,10,10,10,10,10,7,9
+SP-SKIP-60,Chandigarh,9,0,0.8,10,3499,Skipping Rope,,7,5,6,6,7,7,5,5
+SP-SKIP-60,Bhopal,85,0,3.6,10,"₹3,499",Skipping Rope,,22,30,21,26,25,20,20,27
+SP-SKIP-60,Patna,6,0,2.4,10,3499,Skipping Rope,,19,19,18,17,17,13,13,13
+SP-SKIP-60,Vadodara,12,0,0.8,10,3499,Skipping Rope,2.0,2,10,12,10,12,10,12,1
+SP-SKIP-60,Ludhiana,27,49,5.3,7,3499,Skipping Rope,,28,44,31,42,29,32,28,40
+SP-SKIP-60,Agra,12,0,2.1,14,"₹3,499",Skipping Rope,,15,12,14,12,14,12,12,13
+SP-GYM-61,Mumbai,(6),0,0.6,7,1899,Gym Gloves,,5,4,5,5,5,3,4,5
+SP-GYM-61,Delhi,28,0,2.0,10,1899,Gym Gloves,,14,14,12,16,17,13,13,14
+SP-GYM-61,Bengaluru,82,0,,14,1899,Gym Gloves,2.2,34,23,33,24,32,32,27,26
+SP-GYM-61,Hyderabad,13,0,0.6,,1899,Gym Gloves,2.0,5,5,5,5,4,5,4,4
+SP-GYM-61,Chennai,20,0,5.9,10,"₹1,899",Gym Gloves,,39,40,39,50,38,44,33,46
+SP-GYM-61,Kolkata,16,4,0.9,10,1899,Gym Gloves,2.0,5,8,5,8,5,6,5,6
+SP-GYM-61,Pune,23,0,4.3,14,"₹1,899",Gym Gloves,,29,27,25,23,25,30,32,30
+SP-GYM-61,Ahmedabad,20,0,3.4,14,"₹1,899",Gym Gloves,,20,22,19,22,23,29,20,24
+SP-GYM-61,Jaipur,53,0,4.8,14,N/A,Gym Gloves,,36,27,35,30,40,40,39,38
+SP-GYM-61,Lucknow,93,37,2.2,14,"₹1,899",Gym Gloves,2.2,17,17,17,18,14,18,15,13
+SP-GYM-61,Surat,13,0,1.9,14,1899,Gym Gloves,,11,14,15,14,16,14,10,12
+SP-GYM-61,Indore,209,33,5.6,14,1899,Gym Gloves,2.2,38,48,32,44,40,37,46,45
+SP-GYM-61,Indore,209,33,5.6,14,1899,Gym Gloves,2.2,38,48,32,44,40,37,46,45
+SP-GYM-61,Nagpur,20,0,6.0,10,"₹1,899",Gym Gloves,,41,41,34,50,37,42,39,48
+SP-GYM-61,Kochi,27,0,2.1,7,1899,Gym Gloves,,18,18,13,13,17,15,15,15
+SP-GYM-61,Chandigarh,21,0,3.4,10,"Rs. 1,899",Gym Gloves,,4,52,9,4,52,4,4,9
+SP-GYM-61,Bhopal,0,0,3.4,7,1899,Gym Gloves,2.2,24,22,24,26,28,25,21,27
+SP-GYM-61,Patna,31,0,2.2,14,"₹1,899",Gym Gloves,,13,17,18,19,13,18,19,13
+SP-GYM-61,Vadodara,34,0,2.1,7,1899,Gym Gloves,,15,17,12,14,18,17,14,13
+SP-GYM-61,Ludhiana,77,0,5.1,7,1899,Gym Gloves,,31,42,39,29,33,30,32,42
+SP-GYM-61,Agra, 4 ,14,1.8,10,1899,Gym Gloves,,12,13,15,16,10,11,12,15
+SP-GYM-62,Mumbai,25,0,2.9,7,999,Gym Gloves,,24,18,16,23,19,21,21,18
+SP-GYM-62,Delhi,175,25,6.0,10,999,Gym Gloves,2.0,39,35,38,41,41,43,44,46
+SP-GYM-62,Bengaluru,11,0,2.6,7,999,Gym Gloves,,18,18,19,17,22,22,16,20
+SP-GYM-62,Hyderabad,69,0,2.8,10 days,₹999,Gym Gloves,2.2,21,20,20,18,17,21,17,21
+SP-GYM-62,Chennai,57,0,4.3,10,999,Gym Gloves,,27,27,28,34,23,28,26,33
+SP-GYM-62,Kolkata,92,0,5.2,7,999,Gym Gloves,,33,44,36,33,39,34,45,44
+SP-GYM-62,Pune,249,0,5.5,14,999,Gym Gloves,2.2,42,43,38,38,38,43,47,45
+SP-GYM-62,Ahmedabad,67,0,2.7,14,999,Gym Gloves,,16,16,24,21,19,19,16,19
+SP-GYM-62,Jaipur,27,0,0.9,14,999.00,Gym Gloves,,6,6,7,7,6,6,5,7
+SP-GYM-62,Lucknow,17,8,1.2,10,₹999,Gym Gloves,2.2,8,10,8,7,9,9,8,7
+SP-GYM-62,Surat,76,20,3.5,10,Rs. 999,Gym Gloves,2.0,28,23,22,23,24,24,25,22
+SP-GYM-62,Indore,173,0,3.9,14,999.00,Gym Gloves,,49,5,49,49,5,5,60,49
+SP-GYM-62,Nagpur,8,0,1.0,14,₹999,Gym Gloves,2.0,7,7,6,7,8,7,8,6
+SP-GYM-62,Kochi,35,19,3.5,10,Rs. 999,Gym Gloves,2.2,24,23,24,27,24,19,21,27
+SP-GYM-62,Chandigarh, 60 ,0,1.9,14,999,Gym Gloves,,14,16,16,12,14,14,16,15
+SP-GYM-62,Bhopal,30,0,4.2,14,Rs. 999,Gym Gloves,2.0,32,26,31,26,24,26,26,26
+SP-GYM-62,Patna,2,0,0.5,14,₹999,Gym Gloves,,4,3,3,3,4,3,4,3
+SP-GYM-62,Vadodara,76,0,2.3,14,999,Gym Gloves,,19,16,18,20,15,18,16,18
+SP-GYM-62,Ludhiana,122,0,3.2,14,Rs. 999,Gym Gloves,,27,27,17,20,21,27,18,25
+SP-GYM-62,Agra,31,0,5.2,7,₹999,Gym Gloves,2.0,44,41,37,30,41,43,31,35
+SP-GYM-63,Mumbai,30,0,1.4,7,"₹1,899",Gym Gloves,2.2,9,11,9,10,11,11,8,10
+SP-GYM-63,Delhi,90,-4,4.5,10,1899,Gym Gloves,,33,38,30,32,38,33,35,25
+SP-GYM-63,Bengaluru,125,0,4.0,10,"₹1,899",Gym Gloves,2.0,33,32,29,21,22,33,21,33
+SP-GYM-63,Hyderabad,26,0,4.4,10,"₹1,899",Gym Gloves,,26,37,25,27,35,27,23,29
+SP-GYM-63,Chennai,0.5,36,3.9,7,"Rs. 1,899",Gym Gloves,,31,32,25,26,27,21,31,30
+SP-GYM-63,Kolkata,65,0,1.9,14,1899,Gym Gloves,,15,11,12,16,16,15,14,13
+SP-GYM-63,Pune,45,0,5.6,7,"₹1,899",Gym Gloves,2.0,32,38,30,40,40,46,41,46
+SP-GYM-63,Ahmedabad,59,0,5.2,14,"Rs. 1,899",Gym Gloves,2.0,39,42,42,45,29,40,45,34
+SP-GYM-63,Jaipur,16,0,0.8,10,"Rs. 1,899",Gym Gloves,2.0,1,2,10,12,12,12,10,12
+SP-GYM-63,Lucknow,67,23,3.4,7,"₹1,899",Gym Gloves,2.0,27,23,19,28,20,30,19,20
+SP-GYM-63,Surat, 161 ,68,5.6,14,"₹1,899",Gym Gloves,,41,38,44,40,35,33,43,48
+SP-GYM-63,Indore,101,0,4.4,7,1899,Gym Gloves,,33,30,30,36,28,30,35,28
+SP-GYM-63,Nagpur,23,0,2.2,7,"₹1,899",Gym Gloves,,19,15,13,19,12,12,13,14
+SP-GYM-63,Kochi,24,0,1.3,14,"₹1,899",Gym Gloves,,8,7,10,11,10,10,10,11
+SP-GYM-63,Chandigarh,18,0,5.0,7,"Rs. 1,899",Gym Gloves,2.0,34,39,42,40,31,40,38,43
+SP-GYM-63,Bhopal,75,0,3.9,7,"Rs. 1,899",Gym Gloves,2.2,34,28,25,21,25,24,23,25
+SP-GYM-63,Patna,33,0,5.3,7,1899,Gym Gloves,2.2,35,31,44,29,32,37,46,40
+SP-GYM-63,Vadodara,52,0,3.3,10,"₹1,899",Gym Gloves,,19,29,28,26,21,24,25,27
+SP-GYM-63,Ludhiana,35,0,2.4,14,1899,Gym Gloves,2.0,13,15,20,18,18,15,21,16
+SP-GYM-63,Agra,35,0,4.3,7,1899,Gym Gloves,2.2,37,28,24,25,29,34,32,37
+SP-GYM-64,Mumbai,15,0,1.1,14,₹999,Gym Gloves,,9,8,6,9,8,9,8,9
+,Delhi,114,0,5.3,7,999,Gym Gloves,,35,34,44,41,41,40,32,43
+SP-GYM-64,Bengaluru,70,0,2.3,14,999,Gym Gloves,,14,17,17,19,12,17,16,13
+SP-GYM-64,Hyderabad,20,0,2.8,10,Rs. 999,Gym Gloves,2.2,15,19,18,17,20,17,17,23
+SP-GYM-64,Chennai,60,0,2.4,10,999,Gym Gloves,,16,17,17,20,18,14,17,21
+SP-GYM-64,Kolkata,18,0,4.6,10,₹999,Gym Gloves,,6,57,57,57,12,70,57,12
+SP-GYM-64,Pune,133,41,5.3,14,999,Gym Gloves,2.2,35,33,39,43,44,40,34,45
+SP-GYM-64,Ahmedabad,8,0,1.0,14,N/A,Gym Gloves,,8,6,6,6,8,7,6,7
+SP-GYM-64,Jaipur,75,13,3.3,10,Rs. 999,Gym Gloves,,18,28,20,29,24,23,18,21
+SP-GYM-64,Lucknow,51,13,2.6,10,999,Gym Gloves,2.2,17,16,21,16,18,17,19,14
+SP-GYM-64,Surat,2,0,0.7,10,999,Gym Gloves,2.2,4,4,4,5,6,4,4,5
+SP-GYM-64,Indore,64,18,3.2,10,999,Gym Gloves,,19,25,26,19,26,26,24,23
+SP-GYM-64,Nagpur,53,0,5.1,7,999.00,Gym Gloves,2.2,29,44,42,38,39,39,28,43
+SP-GYM-64,Kochi,137,46,3.3,14,999,Gym Gloves,2.2,20,22,27,22,29,22,22,25
+SP-GYM-64,Chandigarh,2,0,0.4,14,₹999,Gym Gloves,,2,3,3,3,2,2,3,3
+SP-GYM-64,Bhopal,20,0,2.3,7,999.00,Gym Gloves,,17,14,14,17,20,16,17,13
+SP-GYM-64,Patna,67,26,2.0,,₹999,Gym Gloves,,17,13,11,13,15,11,12,11
+SP-GYM-64,Vadodara,56,0,1.7,14,Rs. 999,Gym Gloves,,14,14,14,14,13,13,12,11
+SP-GYM-64,Ludhiana,4,0,0.6,10,₹999,Gym Gloves,,4,4,4,3,4,4,5,4
+SP-GYM-64,Agra,146,0,4.5,10,999,Gym Gloves,,36,37,34,35,29,27,30,25
+SP-GYM-65,Mumbai,23,0,1.7,14,999,Gym Gloves,2.0,12,12,11,11,15,11,12,13
+SP-GYM-65,Delhi,112,0,3.2,14,₹999,Gym Gloves,,24,25,26,27,26,21,25,22
+SP-GYM-65,Bengaluru,0,0,1.9,10,999,Gym Gloves,2.2,29,23,5,2,2,2,29,2
+SP-GYM-65,Hyderabad,83,0,4.5,10,999,Gym Gloves,,29,36,28,37,28,27,32,26
+SP-GYM-65,Chennai,10,0,0.5,10,₹999,Gym Gloves,,4,4,3,3,3,3,3,4
+SP-GYM-65,Kolkata,13,0,,10,₹999,Gym Gloves,,22,20,25,19,20,16,22,24
+SP-GYM-65,Pune,45,0,5.6,7,999,Gym Gloves,2.2,46,36,48,48,45,38,40,36
+SP-GYM-65,Ahmedabad,105,0,3.4,14,₹999,Gym Gloves,2.0,30,18,23,21,30,29,29,28
+SP-GYM-65,Jaipur,39,0,1.5,14,999,Gym Gloves,2.0,9,10,9,9,8,12,11,13
+SP-GYM-65,Lucknow,(2),0,4.0,7,999.00,Gym Gloves,2.2,29,21,32,32,26,21,35,29
+SP-GYM-65,Surat,198,0,4.3,14,₹999,Gym Gloves,2.0,30,34,31,24,23,32,25,26
+SP-GYM-65,Indore,9,0,5.3,14,999,Gym Gloves,,43,44,33,37,43,42,44,33
+SP-GYM-65,Nagpur, 13 ,0,3.2,7,999.00,Gym Gloves,,20,25,26,18,27,22,21,25
+SP-GYM-65,Kochi, 73 ,0,3.3,7,₹999,Gym Gloves,,18,27,26,19,20,27,29,23
+SP-GYM-65,Chandigarh,42,0,3.3,7,₹999,Gym Gloves,,27,25,25,21,27,27,23,27
+SP-GYM-65,Bhopal,12,45,4.7,7,999,Gym Gloves,,35,37,30,27,31,27,36,39
+SP-GYM-65,Patna,28,0,3.7,7,999,Gym Gloves,,32,23,23,27,23,31,24,22
+SP-GYM-65,Vadodara,266.5,0,5.8,14,999,Gym Gloves,,34,44,48,35,33,43,45,48
+SP-GYM-65,Ludhiana,2,0,1.3,14,999.00,Gym Gloves,2.2,8,9,10,8,11,8,11,9
+SP-GYM-65,Agra,38,0,4.7,7,Rs. 999,Gym Gloves,,13,13,59,72,13,72,59,13
+SP-GYM-66,Mumbai,61,0,2.1,10,Rs. 599,Gym Gloves,,18,13,12,18,16,16,17,11
+SP-GYM-66,Delhi,83,0,5.8,10,599,Gym Gloves,2.0,43,31,42,32,43,32,46,34
+SP-GYM-66,Bengaluru,35,0,1.9,7 days,599,Gym Gloves,,12,13,14,14,16,12,11,16
+SP-GYM-66,Hyderabad,152,0,3.5,14,599,Gym Gloves,,26,28,22,26,29,24,28,26
+SP-GYM-66,Chennai,19,0,0.9,14,599,Gym Gloves,2.0,6,7,7,5,5,7,7,5
+SP-GYM-66,Kolkata, 61 ,0,4.2,7,₹599,Gym Gloves,,36,30,33,23,33,33,25,30
+SP-GYM-66,Pune,5,0,3.8,7,599,Gym Gloves,2.0,26,24,32,25,31,22,27,23
+SP-GYM-66,Ahmedabad,11,40,5.7,7,Rs. 599,Gym Gloves,,49,45,31,31,40,46,44,40
+SP-GYM-66,Jaipur,102,0,3.4,10,599,Gym Gloves,2.0,18,22,22,21,22,25,21,27
+SP-GYM-66,Jaipur,102,0,3.4,10,599,Gym Gloves,2.0,18,22,22,21,22,25,21,27
+SP-GYM-66,Lucknow,195,0,4.9,14,599,Gym Gloves,,30,37,35,32,30,30,42,32
+SP-GYM-66,Surat,21,0,3.0,14,599,Gym Gloves,,25,24,23,21,22,18,21,18
+SP-GYM-66,Indore,137,0,4.0,14,Rs. 599,Gym Gloves,2.0,27,32,30,23,28,28,26,23
+SP-GYM-66,Nagpur,106,-5,5.7,7,599,Gym Gloves,2.2,34,38,38,45,30,49,44,35
+SP-GYM-66,Kochi, 19 ,6,0.5,14,599,Gym Gloves,2.0,3,4,4,4,3,3,4,3
+SP-GYM-66,Chandigarh,21,15,2.0,7,₹599,Gym Gloves,2.0,11,16,14,14,14,16,12,12
+SP-GYM-66,Bhopal,57,0,2.8,7,599,Gym Gloves,,18,15,21,20,20,20,24,19
+SP-GYM-66,Patna,49,0,2.7,14,Rs. 599,Gym Gloves,,7,34,41,7,3,34,34,41
+SP-GYM-66,Vadodara,23,0,4.9,10,Rs. 599,Gym Gloves,2.2,34,36,38,31,33,37,30,35
+SP-GYM-66,Ludhiana,73,0,3.3,7,₹599,Gym Gloves,,28,22,19,27,21,19,24,25
+SP-GYM-66,Agra,75,0,5.1,7,599.00,Gym Gloves,,30,41,32,36,27,34,39,32
+SP-GYM-67,Mumbai,149,0,6.0,14,599,Gym Gloves,2.2,43,40,36,35,43,35,52,35
+SP-GYM-67,Delhi,161,0,3.4,14,599,Gym Gloves,2.2,28,29,18,26,23,24,19,24
+SP-GYM-67,Bengaluru,76,0,3.1,10,599,Gym Gloves,2.2,26,23,26,18,20,22,17,22
+SP-GYM-67,Hyderabad, 41 ,0,2.6,14,₹599,Gym Gloves,2.0,22,21,14,18,14,23,20,16
+SP-GYM-67,Chennai,15,0,4.5,7,599,Gym Gloves,2.0,32,37,37,32,37,32,35,34
+SP-GYM-67,Kolkata,15,25,3.5,10,599,Gym Gloves,,30,23,25,30,21,28,24,30
+SP-GYM-67,Pune,99,64,3.6,14,N/A,Gym Gloves,,29,22,22,31,28,29,22,30
+SP-GYM-67,Ahmedabad,46,67,3.6,14,599,Gym Gloves,2.2,21,30,24,19,21,22,27,30
+SP-GYM-67,Jaipur, 22 ,0,1.1,14,599,Gym Gloves,2.0,6,7,7,6,6,8,7,8
+SP-GYM-67,Lucknow,107,0,2.3,14,599,Gym Gloves,2.2,14,12,13,18,15,14,15,18
+SP-GYM-67,Surat,107,0,5.4,14,₹599,Gym Gloves,,29,45,31,43,42,43,29,47
+SP-GYM-67,Indore,7,0,1.8,7,599,Gym Gloves,2.2,14,11,12,12,11,13,10,13
+SP-GYM-67,Nagpur, 45 ,25,3.0,10,₹599,Gym Gloves,,20,24,21,20,25,16,20,18
+SP-GYM-67,Kochi,97,0,5.0,7,599,Gym Gloves,2.2,77,77,63,63,7,77,14,7
+SP-GYM-67,Chandigarh,37,0,2.0,14,599,Gym Gloves,2.2,12,12,11,14,13,13,15,14
+SP-GYM-67,Bhopal,66,0,3.9,14,Rs. 599,Gym Gloves,,32,21,22,21,28,26,22,21
+SP-GYM-67,Patna,0,39,4.7,7,599,Gym Gloves,,37,38,39,32,28,27,29,28
+SP-GYM-67,Vadodara,67,23,1.8,14,599,Gym Gloves,,11,14,10,15,13,15,10,12
+SP-GYM-67,Ludhiana,60,0,1.3,14,599,Gym Gloves,,9,9,8,9,8,9,7,11
+SP-GYM-67,Agra,50,0,5.6,10,599,Gym Gloves,2.2,43,49,40,47,48,48,43,37
+SP-GYM-68,Mumbai,16,0,4.0,10,299,Gym Gloves,2.0,34,24,33,30,33,28,23,28
+SP-GYM-68,Delhi,204,0,5.7,14,Rs. 299,Gym Gloves,,36,43,45,45,35,38,50,35
+SP-GYM-68,Bengaluru,21,0,5.3,10,299,Gym Gloves,,40,39,39,31,40,32,41,29
+SP-GYM-68,Hyderabad,203,0,4.9,14,299,Gym Gloves,,34,34,41,26,42,35,39,38
+SP-GYM-68,Chennai,1,0,0.6,10,₹299,Gym Gloves,,3,4,4,4,4,4,3,4
+SP-GYM-68,Kolkata,10,0,0.6,10,299,Gym Gloves,2.0,5,4,5,5,5,5,4,4
+SP-GYM-68,Pune,8,0,0.7,7,299,Gym Gloves,,4,5,5,6,5,6,4,6
+SP-GYM-68,Ahmedabad,86,51,5.3,7,299,Gym Gloves,2.2,30,31,31,46,35,37,37,46
+SP-GYM-68,Jaipur,122,0,4.7,10,299,Gym Gloves,,28,29,30,30,38,34,41,33
+SP-GYM-68,Lucknow,15,0,1.6,,299,Gym Gloves,,13,11,9,10,11,11,9,14
+SP-GYM-68,Surat,91.5,0,3.3,10,₹299,Gym Gloves,,41,50,41,9,50,9,41,50
+SP-GYM-68,Indore,32,0,1.2,10,299,Gym Gloves,,8,10,7,8,9,7,9,8
+SP-GYM-68,Nagpur,60,0,5.8,7,299,Gym Gloves,,41,39,43,49,47,35,31,39
+SP-GYM-68,Kochi,74,28,4.8,7,₹299,Gym Gloves,2.2,40,34,30,32,39,40,36,27
+SP-GYM-68,Chandigarh, 3 ,0,4.7,7,299,Gym Gloves,,34,32,26,41,28,39,35,29
+SP-GYM-68,Bhopal,121,0,4.7,14,299,Gym Gloves,,26,30,29,25,39,34,36,26
+SP-GYM-68,Patna,18,6,1.3,7,299,Gym Gloves,2.2,7,8,11,10,10,9,11,7
+SP-GYM-68,Vadodara,56,0,3.0,10,₹299,Gym Gloves,,22,23,17,24,22,16,26,17
+SP-GYM-68,Ludhiana,11,0,0.5,7,299,Gym Gloves,,3,4,3,3,4,3,3,4
+SP-GYM-68,Agra,76,0,2.0,14,299.00,Gym Gloves,,11,14,16,11,15,11,13,12
+SP-GYM-69,Mumbai,3,0,1.5,7,999,Gym Gloves,,10,8,11,10,10,12,11,10
+SP-GYM-69,Delhi,56, 22 ,3.4,14,999,Gym Gloves,,20,26,19,27,23,26,26,21
+,Bengaluru,78,0,5.4,14,₹999,Gym Gloves,,29,41,34,34,37,29,35,36
+SP-GYM-69,Hyderabad,50,0,4.1,7,₹999,Gym Gloves,2.2,29,32,31,32,33,28,26,23
+SP-GYM-69,Chennai,14,0,0.9,10,999,Gym Gloves,2.0,5,7,6,6,7,7,6,7
+SP-GYM-69,Kolkata,75,0,3.5,10,₹999,Gym Gloves,2.0,22,24,26,25,25,27,28,25
+SP-GYM-69,Pune,36,0,3.0,14,999.00,Gym Gloves,2.2,16,25,21,19,22,18,17,26
+SP-GYM-69,Ahmedabad,8,0,4.8,10,999,Gym Gloves,,60,60,60,60,13,60,60,60
+SP-GYM-69,Jaipur,74,44,,14,999,Gym Gloves,,25,25,22,26,26,22,17,19
+SP-GYM-69,Lucknow,29,0,3.5,10,₹999,Gym Gloves,,21,26,25,20,26,21,28,26
+SP-GYM-69,Surat,20,83,5.0,14,₹999,Gym Gloves,2.2,38,40,27,35,31,40,36,32
+SP-GYM-69,Indore,186,38,5.9,10,₹999,Gym Gloves,2.0,41,39,32,45,34,33,43,33
+SP-GYM-69,Nagpur,47,8,1.0,14,999,Gym Gloves,,8,8,6,8,7,8,6,7
+SP-GYM-69,Kochi,7,0,2.7,10,999.00,Gym Gloves,2.0,19,16,17,23,16,23,16,18
+SP-GYM-69,Chandigarh,2,0,0.9,7,₹999,Gym Gloves,,5,5,7,5,8,8,6,7
+SP-GYM-69,Bhopal, 44 ,0,4.1,7,999,Gym Gloves,,23,28,25,22,32,31,33,25
+SP-GYM-69,Patna,92,31,4.3,7,999,Gym Gloves,,26,35,27,30,25,30,25,37
+SP-GYM-69,Vadodara,13,0,2.8,14,₹999,Gym Gloves,,17,18,23,21,18,22,20,18
+SP-GYM-69,Ludhiana,-2,26,5.3,7,999,Gym Gloves,,44,31,30,32,40,29,46,37
+SP-GYM-69,Agra,59,0,3.7,14,Rs. 999,Gym Gloves,,22,30,21,21,29,30,28,27
+SP-GYM-70,Mumbai,86,0,3.0,14,₹999,Gym Gloves,2.2,18,17,19,16,17,24,22,19
+SP-GYM-70,Delhi, 14 ,0,4.0,14 days,₹999,Gym Gloves,2.2,32,23,31,26,27,23,32,27
+SP-GYM-70,Bengaluru,45,0,3.3,7,Rs. 999,Gym Gloves,,25,23,28,29,21,21,28,25
+SP-GYM-70,Hyderabad,60,-9,2.6,7,Rs. 999,Gym Gloves,,18,21,15,20,22,14,17,14
+SP-GYM-70,Chennai,3,5,1.5,7,Rs. 999,Gym Gloves,,23,4,18,23,18,4,18,4
+SP-GYM-70,Kolkata,31,0,2.0,14,N/A,Gym Gloves,,13,16,14,13,12,16,12,16
+SP-GYM-70,Pune,70,0,5.1,10,₹999,Gym Gloves,,28,34,43,35,27,42,45,40
+SP-GYM-70,Ahmedabad,97,0,4.2,7,999,Gym Gloves,,27,32,30,27,24,32,23,34
+SP-GYM-70,Jaipur,52,0,5.5,7,999,Gym Gloves,,34,43,47,29,32,47,32,42
+SP-GYM-70,Lucknow,108,0,3.9,14,₹999,Gym Gloves,,24,33,22,29,27,34,30,28
+SP-GYM-70,Surat,29,0,0.7,14,₹999,Gym Gloves,2.2,5,6,5,4,5,6,5,6
+SP-GYM-70,Indore,6,0,3.0,14,999,Gym Gloves,,22,16,24,24,25,23,22,17
+SP-GYM-70,Nagpur,27,0,1.8,10,₹999,Gym Gloves,2.0,10,15,14,13,14,15,13,12
+SP-GYM-70,Kochi,140,46,4.4,10,Rs. 999,Gym Gloves,,25,24,31,30,35,27,24,27
+SP-GYM-70,Chandigarh,190,0,4.9,14,₹999,Gym Gloves,,34,43,41,43,31,35,32,29
+SP-GYM-70,Bhopal,16,0,1.5,10,999,Gym Gloves,2.2,12,11,11,12,10,10,13,12
+SP-GYM-70,Patna,134,33,3.0,14,999,Gym Gloves,2.2,21,25,16,25,22,19,21,20
+SP-GYM-70,Vadodara,52,0,3.1,14,Rs. 999,Gym Gloves,,17,24,20,21,26,17,23,16
+SP-GYM-70,Ludhiana,93,0,5.1,10,999,Gym Gloves,2.0,38,34,29,28,29,34,37,42
+SP-GYM-70,Agra,102,0,3.3,10,999,Gym Gloves,2.0,22,28,24,17,26,19,25,27
+SP-SHAK-71,Mumbai,14,0,1.0,14,299,Shaker 700ml,,6,7,8,8,7,6,6,5
+SP-SHAK-71,Delhi, 22 , 21 ,2.1,10,299,Shaker 700ml,,32,5,2,2,2,5,2,5
+SP-SHAK-71,Bengaluru,34,0,1.9,7,₹299,Shaker 700ml,,14,11,11,12,15,16,16,15
+SP-SHAK-71,Hyderabad,102.5,0,4.1,10,₹299,Shaker 700ml,2.0,28,23,32,33,26,27,32,29
+SP-SHAK-71,Chennai, 133 ,0,5.7,7,₹299,Shaker 700ml,,37,49,41,48,44,39,47,49
+SP-SHAK-71,Kolkata,12,23,2.7,7,₹299,Shaker 700ml,,17,20,16,15,16,22,20,16
+SP-SHAK-71,Kolkata,12,23,2.7,7,₹299,Shaker 700ml,,17,20,16,15,16,22,20,16
+SP-SHAK-71,Pune,133,0,3.8,14,₹299,Shaker 700ml,2.0,24,32,22,25,31,21,32,25
+SP-SHAK-71,Ahmedabad,5,0,1.5,7,299,Shaker 700ml,2.0,13,9,11,11,11,12,11,12
+SP-SHAK-71,Jaipur,17,0,2.5,10,₹299,Shaker 700ml,,21,15,21,14,19,19,14,22
+SP-SHAK-71,Lucknow,24,25,3.6,7,₹299,Shaker 700ml,2.2,19,25,26,30,25,31,28,31
+SP-SHAK-71,Surat,1,0,2.0,10,299,Shaker 700ml,,15,17,15,17,12,14,11,14
+SP-SHAK-71,Indore,79,0,4.8,7,299,Shaker 700ml,,30,41,26,36,34,35,32,33
+SP-SHAK-71,Nagpur,34,9,2.0,10,Rs. 299,Shaker 700ml,2.2,14,14,17,12,14,12,12,14
+SP-SHAK-71,Kochi,4,0,3.3,14,₹299,Shaker 700ml,2.0,25,29,18,27,23,23,26,27
+SP-SHAK-71,Chandigarh, 27 ,7,1.1,14,299,Shaker 700ml,2.2,8,8,7,7,6,8,6,7
+SP-SHAK-71,Bhopal,79,0,2.1,14,Rs. 299,Shaker 700ml,,13,18,18,13,15,18,12,12
+SP-SHAK-71,Patna,77,26,2.8,10,Rs. 299,Shaker 700ml,2.2,15,24,20,20,18,15,17,17
+SP-SHAK-71,Vadodara,168,0,4.8,14,299,Shaker 700ml,2.2,27,34,33,29,28,39,40,37
+SP-SHAK-71,Ludhiana,41,0,2.2,14,299,Shaker 700ml,,33,27,3,3,33,6,3,3
+SP-SHAK-71,Agra,45,0,1.3,14,299,Shaker 700ml,,9,8,11,8,8,8,11,8
+SP-SHAK-72,Mumbai,59,30,2.4,14,₹999,Shaker 700ml,,18,15,19,15,21,13,13,19
+SP-SHAK-72,Delhi,132,0,3.8,14,999,Shaker 700ml,2.2,28,26,28,23,31,28,25,31
+SP-SHAK-72,Bengaluru,34,41,2.3,,₹999,Shaker 700ml,,18,20,13,18,18,14,15,20
+SP-SHAK-72,Hyderabad,10,0,2.5,7,₹999,Shaker 700ml,2.0,20,21,15,18,18,15,22,19
+SP-SHAK-72,Chennai,7,0,1.6,10,Rs. 999,Shaker 700ml,2.0,10,9,10,13,14,12,13,10
+SP-SHAK-72,Kolkata,2,0,0.4,7,999,Shaker 700ml,2.0,3,3,2,2,3,3,3,3
+SP-SHAK-72,Pune,6,0,3.6,7,999,Shaker 700ml,,20,30,20,26,26,31,24,24
+SP-SHAK-72,Ahmedabad,79,0,2.4,10,₹999,Shaker 700ml,,21,17,19,15,18,20,15,16
+SP-SHAK-72,Jaipur,2,0,4.3,7,999,Shaker 700ml,2.2,25,35,29,33,37,27,25,26
+SP-SHAK-72,Lucknow,13,10,2.3,7,999,Shaker 700ml,,13,16,12,18,13,19,16,13
+SP-SHAK-72,Surat,1,0,1.6,7,₹999,Shaker 700ml,,13,12,14,10,10,9,10,11
+SP-SHAK-72,Indore,20,0,3.5,14,₹999,Shaker 700ml,,19,26,21,22,20,21,25,21
+SP-SHAK-72,Nagpur,5,0,1.9,10,₹999,Shaker 700ml,2.0,11,15,13,14,13,14,15,17
+SP-SHAK-72,Kochi,87,0,4.9,7,₹999,Shaker 700ml,2.2,28,42,32,41,39,28,38,40
+SP-SHAK-72,Chandigarh, 16 ,0,1.2,7,₹999,Shaker 700ml,,9,9,7,7,8,10,9,6
+SP-SHAK-72,Bhopal,101,0,5.4,10,₹999,Shaker 700ml,2.0,83,83,7,68,83,7,83,15
+SP-SHAK-72,Patna,15,0,0.6,10,Rs. 999,Shaker 700ml,,4,4,4,5,5,5,4,5
+SP-SHAK-72,Vadodara,8,5,0.6,7,999,Shaker 700ml,,4,5,4,4,5,4,5,5
+SP-SHAK-72,Ludhiana,19,14,2.3,7,999,Shaker 700ml,,19,14,17,17,18,20,17,17
+SP-SHAK-72,Agra,255,0,5.9,14,999.00,Shaker 700ml,,49,31,48,50,50,33,43,32
+SP-SHAK-73,Mumbai,55,0,4.8,7,"Rs. 1,899",Shaker 700ml,,39,26,26,29,28,37,27,37
+SP-SHAK-73,Delhi,59,0,4.6,14,"₹1,899",Shaker 700ml,2.0,38,35,39,35,34,27,32,28
+SP-SHAK-73,Bengaluru,3,0,1.3,7,"Rs. 1,899",Shaker 700ml,,7,8,7,8,7,7,9,7
+SP-SHAK-73,Hyderabad,2,0,5.1,10,"₹1,899",Shaker 700ml,,34,32,31,36,34,37,34,32
+SP-SHAK-73,Chennai,51,0,3.5,14,N/A,Shaker 700ml,,19,30,31,20,29,24,23,30
+SP-SHAK-73,Kolkata,49,16,2.2,7,"1,899.00",Shaker 700ml,,15,19,12,14,18,14,16,13
+SP-SHAK-73,Pune,14,0,2.6,14,"Rs. 1,899",Shaker 700ml,,15,15,22,14,16,19,19,19
+SP-SHAK-73,Ahmedabad,37,34,5.2,7,1899,Shaker 700ml,,41,33,34,45,28,35,44,35
+SP-SHAK-73,Jaipur,104,47,3.6,10,1899,Shaker 700ml,,22,29,23,28,23,28,22,20
+SP-SHAK-73,Lucknow,37,0,4.8,7,1899,Shaker 700ml,,33,39,41,35,26,32,41,31
+SP-SHAK-73,Surat,110,50,5.5,7,"Rs. 1,899",Shaker 700ml,,35,30,33,35,36,46,31,30
+SP-SHAK-73,Indore,57,0,,14,"1,899.00",Shaker 700ml,,19,18,16,22,20,23,25,17
+SP-SHAK-73,Nagpur,47,69,5.1,14,1899,Shaker 700ml,,7,7,14,78,64,78,14,14
+SP-SHAK-73,Kochi,101,0,5.6,10,1899,Shaker 700ml,,36,42,37,43,36,41,47,37
+SP-SHAK-73,Chandigarh,40,-17,1.8,14,1899,Shaker 700ml,,11,14,11,11,10,13,13,14
+SP-SHAK-73,Bhopal,36,0,1.3,14,1899,Shaker 700ml,,9,8,9,8,9,7,7,9
+SP-SHAK-73,Patna,95.5,30,5.2,7,1899,Shaker 700ml,2.2,29,43,43,33,31,40,35,32
+SP-SHAK-73,Vadodara,125,0,3.3,14,1899,Shaker 700ml,,18,23,25,28,21,22,20,19
+SP-SHAK-73,Ludhiana, 82 ,0,3.0,14,1899,Shaker 700ml,,24,24,18,23,18,25,16,18
+SP-SHAK-73,Agra,24,46,3.9,10,1899,Shaker 700ml,2.0,25,31,26,23,26,25,21,31
+SP-SHAK-74,Mumbai,80,28,5.1,10 days,₹999,Shaker 700ml,,41,35,41,31,39,38,29,33
+SP-SHAK-74,Delhi,16,0,1.9,10,999,Shaker 700ml,,13,16,15,10,10,11,11,13
+SP-SHAK-74,Bengaluru,82,0,4.3,7,Rs. 999,Shaker 700ml,,34,27,31,38,23,31,32,35
+,Hyderabad,28,0,1.4,7,999,Shaker 700ml,,7,11,11,12,11,10,11,7
+SP-SHAK-74,Chennai,14,13,2.7,7,Rs. 999,Shaker 700ml,,17,21,19,22,23,18,20,16
+SP-SHAK-74,Kolkata,11,0,1.1,7,999,Shaker 700ml,,7,7,9,7,9,6,8,8
+SP-SHAK-74,Pune,169,0,5.8,14,₹999,Shaker 700ml,,31,50,47,43,40,49,48,37
+SP-SHAK-74,Ahmedabad,-7,0,3.4,14,999.00,Shaker 700ml,,29,27,25,24,28,24,19,19
+SP-SHAK-74,Jaipur,28,10,3.6,7,999,Shaker 700ml,,24,19,25,21,27,23,26,20
+SP-SHAK-74,Lucknow,92,0,5.1,7,₹999,Shaker 700ml,,7,78,64,64,64,14,14,64
+SP-SHAK-74,Surat,53,0,3.8,7,999,Shaker 700ml,,30,29,22,30,33,20,32,24
+SP-SHAK-74,Indore,225,0,5.4,14,999,Shaker 700ml,2.0,45,43,36,44,41,46,41,40
+SP-SHAK-74,Nagpur,1,0,3.5,7,999,Shaker 700ml,2.2,19,22,23,21,21,21,20,24
+SP-SHAK-74,Kochi,70,0,5.4,7,Rs. 999,Shaker 700ml,,40,47,39,46,44,39,32,41
+SP-SHAK-74,Chandigarh,73,0,3.3,7,999,Shaker 700ml,,29,22,21,20,18,20,22,23
+SP-SHAK-74,Bhopal,15,0,0.7,7,999.00,Shaker 700ml,2.2,4,5,6,5,4,4,4,4
+SP-SHAK-74,Patna,3,0,1.1,14,999,Shaker 700ml,,7,7,7,10,8,8,9,6
+SP-SHAK-74,Vadodara,17,0,4.0,10,999,Shaker 700ml,,35,31,32,30,28,23,29,28
+SP-SHAK-74,Ludhiana,9,0,1.2,10,Rs. 999,Shaker 700ml,,10,10,7,7,6,7,9,8
+SP-SHAK-74,Agra,37,0,0.9,14,₹999,Shaker 700ml,2.0,6,7,5,8,7,7,8,7
+SP-SHAK-75,Mumbai,49,16,3.2,10,"₹3,499",Shaker 700ml,,28,23,23,18,27,24,21,24
+SP-SHAK-75,Delhi,8,0,0.8,14,3499,Shaker 700ml,2.0,7,7,6,5,4,7,4,5
+SP-SHAK-75,Bengaluru, 48 ,0,3.4,10,3499,Shaker 700ml,,23,21,22,28,24,19,23,20
+SP-SHAK-75,Hyderabad,66,0,2.7,10,3499,Shaker 700ml,,23,18,15,18,17,19,15,21
+SP-SHAK-75,Chennai,35,0,2.1,7,"3,499.00",Shaker 700ml,2.0,16,14,11,14,18,18,17,14
+SP-SHAK-75,Kolkata,34,0,1.3,10,"₹3,499",Shaker 700ml,2.0,10,8,9,11,10,8,7,9
+SP-SHAK-75,Pune, 46 ,0,4.2,7,"₹3,499",Shaker 700ml,,52,52,64,11,64,11,64,52
+SP-SHAK-75,Ahmedabad, 66 ,0,2.9,14,"₹3,499",Shaker 700ml,,18,20,16,16,16,21,17,25
+SP-SHAK-75,Jaipur,16,0,0.8,10,"₹3,499",Shaker 700ml,,7,5,5,4,5,5,6,7
+SP-SHAK-75,Lucknow,115,0,3.4,10,3499,Shaker 700ml,,24,19,28,18,21,18,29,28
+SP-SHAK-75,Surat,149,65,4.8,10,"₹3,499",Shaker 700ml,2.2,40,33,34,39,33,34,36,37
+SP-SHAK-75,Indore,46,0,5.3,7,"3,499.00",Shaker 700ml,2.2,34,28,35,43,45,33,34,41
+SP-SHAK-75,Nagpur,202,0,5.1,14,"₹3,499",Shaker 700ml,,44,35,34,29,29,27,37,34
+SP-SHAK-75,Kochi,9,0,1.7,7,"₹3,499",Shaker 700ml,,10,9,12,11,11,14,12,11
+SP-SHAK-75,Chandigarh,0,19,2.1,7,"₹3,499",Shaker 700ml,2.0,15,13,12,14,12,11,18,14
+SP-SHAK-75,Bhopal,14,0,0.9,,3499,Shaker 700ml,,7,6,5,8,7,6,6,7
+SP-SHAK-75,Patna,93,0,4.4,10,"₹3,499",Shaker 700ml,2.2,28,30,23,26,26,36,35,31
+SP-SHAK-75,Vadodara,26,34,1.9,14,3499,Shaker 700ml,2.2,13,15,15,13,11,11,10,14
+SP-SHAK-75,Ludhiana,116,0,4.4,10,"₹3,499",Shaker 700ml,,31,36,24,35,31,38,32,36
+SP-SHAK-75,Agra,210,36,5.9,14,3499,Shaker 700ml,2.2,40,46,32,37,36,36,33,45
+SP-SHAK-76,Mumbai,37,0,1.7,14,1899,Shaker 700ml,,14,11,12,14,13,14,14,14
+SP-SHAK-76,Delhi,133,37,6.0,14,1899,Shaker 700ml,,34,36,47,50,45,37,33,34
+SP-SHAK-76,Bengaluru,18,0,4.5,7,1899,Shaker 700ml,,34,26,25,27,24,30,27,35
+SP-SHAK-76,Bengaluru,18,0,4.5,7,1899,Shaker 700ml,,34,26,25,27,24,30,27,35
+SP-SHAK-76,Hyderabad,19,0,3.5,10,N/A,Shaker 700ml,,9,44,9,4,4,44,44,44
+SP-SHAK-76,Chennai,2,0,0.7,14,"₹1,899",Shaker 700ml,,5,6,5,5,5,6,6,4
+SP-SHAK-76,Kolkata,84,34,2.9,14,1899,Shaker 700ml,2.0,19,20,22,22,17,20,16,20
+SP-SHAK-76,Pune,209,0,5.9,14,1899,Shaker 700ml,,33,44,39,33,42,36,40,39
+SP-SHAK-76,Ahmedabad, 99 ,0,5.4,7,1899,Shaker 700ml,2.0,40,36,46,35,39,46,30,45
+SP-SHAK-76,Jaipur,21,0,1.5,14,1899,Shaker 700ml,,9,10,9,9,9,13,12,13
+SP-SHAK-76,Lucknow,22.5,0,2.1,7,1899,Shaker 700ml,,17,13,11,16,12,14,14,16
+SP-SHAK-76,Surat,104,0,3.5,10,"₹1,899",Shaker 700ml,,24,26,27,28,27,25,24,22
+SP-SHAK-76,Indore,37,18,2.4,7,"Rs. 1,899",Shaker 700ml,,15,15,20,18,19,21,17,19
+SP-SHAK-76,Nagpur,30,0,3.0,10,1899,Shaker 700ml,,18,25,16,19,23,20,17,20
+SP-SHAK-76,Kochi,81,0,3.2,14,"1,899.00",Shaker 700ml,,27,21,20,23,22,17,22,19
+SP-SHAK-76,Chandigarh,10,28,2.6,10,1899,Shaker 700ml,,15,15,16,20,21,18,20,18
+SP-SHAK-76,Bhopal,121,0,4.1,10,"₹1,899",Shaker 700ml,,36,26,33,29,34,22,31,34
+SP-SHAK-76,Patna,18,12,2.7,7,1899,Shaker 700ml,2.2,17,23,14,18,17,19,19,23
+SP-SHAK-76,Vadodara,92,41,4.3,14,"₹1,899",Shaker 700ml,,36,37,31,31,36,33,24,34
+SP-SHAK-76,Ludhiana,2,0,1.4,14,"₹1,899",Shaker 700ml,,9,10,12,12,10,9,10,9
+SP-SHAK-76,Agra,110, 38 ,3.3,10,"₹1,899",Shaker 700ml,2.0,25,21,26,25,26,22,21,20
+SP-SHAK-77,Mumbai,230,0,4.9,14,999,Shaker 700ml,,6,6,6,13,75,13,61,13
+SP-SHAK-77,Delhi,12,2,0.4,10,999.00,Shaker 700ml,,3,3,3,2,3,3,3,3
+SP-SHAK-77,Bengaluru,56,0,1.5,14,₹999,Shaker 700ml,,8,10,13,12,8,8,8,12
+SP-SHAK-77,Hyderabad,8,0,2.1,10,₹999,Shaker 700ml,2.2,17,17,14,13,16,17,15,13
+SP-SHAK-77,Chennai, 18 ,0,1.4,7,₹999,Shaker 700ml,2.2,9,11,10,9,10,12,11,11
+SP-SHAK-77,Kolkata,3,-4,5.3,10,Rs. 999,Shaker 700ml,,38,43,36,45,40,38,41,39
+SP-SHAK-77,Pune,6,19,1.9,14,999,Shaker 700ml,,16,14,15,13,16,12,11,11
+SP-SHAK-77,Ahmedabad,4,0,1.1,10,999.00,Shaker 700ml,,7,6,8,6,9,6,8,9
+SP-SHAK-77,Jaipur,160,0,5.8,10,₹999,Shaker 700ml,,33,36,41,32,48,42,42,31
+SP-SHAK-77,Lucknow, 40 ,19,3.1,7,₹999,Shaker 700ml,,16,17,26,23,24,20,21,24
+SP-SHAK-77,Surat,32,8,2.8,7,₹999,Shaker 700ml,2.2,21,19,17,23,17,17,15,15
+SP-SHAK-77,Indore,77,0,2.3,10,999,Shaker 700ml,,19,15,13,14,17,15,17,14
+SP-SHAK-77,Nagpur,41,0,5.0,7,Rs. 999,Shaker 700ml,2.0,26,41,30,35,33,43,42,39
+SP-SHAK-77,Kochi, 20 ,0,5.9,14,₹999,Shaker 700ml,2.0,51,42,38,36,31,42,42,44
+SP-SHAK-77,Chandigarh,37,0,,14,999,Shaker 700ml,2.0,29,43,33,31,32,35,43,36
+SP-SHAK-77,Bhopal,105,60,4.8,10,999.00,Shaker 700ml,2.0,39,31,28,40,35,41,26,34
+SP-SHAK-77,Patna, 99 ,0,5.8,10,₹999,Shaker 700ml,,38,44,47,49,47,47,44,45
+SP-SHAK-77,Vadodara,35,45,3.1,14,999,Shaker 700ml,,47,8,8,39,39,47,39,4
+SP-SHAK-77,Ludhiana,41,0,4.0,7,₹999,Shaker 700ml,,24,28,24,32,32,31,33,33
+SP-SHAK-77,Agra,203,0,5.8,14 days,999.00,Shaker 700ml,,39,31,45,50,43,50,40,45
+SP-SHAK-78,Mumbai,167,0,6.0,10,299,Shaker 700ml,2.2,46,39,48,41,33,33,48,43
+SP-SHAK-78,Delhi,14,69,3.7,14,Rs. 299,Shaker 700ml,2.0,23,30,20,28,32,24,24,28
+SP-SHAK-78,Bengaluru,9,0,1.1,7,299,Shaker 700ml,,7,9,7,7,10,9,7,8
+SP-SHAK-78,Hyderabad,11,0,1.5,14,299,Shaker 700ml,,12,12,8,11,9,11,13,8
+SP-SHAK-78,Chennai,32,0,1.0,14,299,Shaker 700ml,,6,7,8,7,6,7,5,7
+SP-SHAK-78,Kolkata,21,0,1.5,10,299,Shaker 700ml,,13,13,13,12,9,10,10,12
+SP-SHAK-78,Pune,46,0,3.2,10,₹299,Shaker 700ml,2.0,22,22,28,23,20,20,20,21
+SP-SHAK-78,Ahmedabad,64,0,4.9,14,299.00,Shaker 700ml,,37,29,41,42,43,42,37,29
+SP-SHAK-78,Jaipur, 12 ,0,1.7,10,₹299,Shaker 700ml,,14,14,11,10,9,12,14,13
+SP-SHAK-78,Lucknow,44,80,4.9,14,₹299,Shaker 700ml,,38,29,32,35,40,38,39,38
+SP-SHAK-78,Surat,177,0,4.8,14,299,Shaker 700ml,,40,28,33,34,30,38,28,31
+SP-SHAK-78,Indore,10,0,4.9,7,299,Shaker 700ml,2.2,40,36,40,41,28,28,35,34
+SP-SHAK-78,Nagpur,72, 36 ,4.5,14,299,Shaker 700ml,2.0,39,30,29,28,37,39,37,30
+SP-SHAK-78,Kochi,255,0,5.5,14,299,Shaker 700ml,2.2,31,46,37,47,31,42,34,41
+SP-SHAK-78,Chandigarh,49,0,3.5,14,299,Shaker 700ml,2.2,44,4,44,44,44,4,9,4
+SP-SHAK-78,Bhopal,43, 26 ,1.5,14,299,Shaker 700ml,,8,10,13,10,11,12,10,10
+SP-SHAK-78,Patna,-9,0,5.7,14,₹299,Shaker 700ml,,39,50,39,42,30,49,33,38
+SP-SHAK-78,Vadodara,110,41,3.2,14,Rs. 299,Shaker 700ml,,19,23,23,23,17,20,22,18
+SP-SHAK-78,Ludhiana,207,0,4.5,14,₹299,Shaker 700ml,,31,33,36,33,36,37,38,38
+SP-SHAK-78,Agra, 9 ,13,2.1,10,₹299,Shaker 700ml,,15,13,17,15,17,11,12,15
+SP-SHAK-79,Mumbai,56,38,4.7,7,3499,Shaker 700ml,,34,25,27,31,40,39,33,34
+SP-SHAK-79,Delhi,22,0,1.2,14,"₹3,499",Shaker 700ml,2.2,8,7,9,8,8,7,9,8
+SP-SHAK-79,Bengaluru,51.5,0,2.3,14,N/A,Shaker 700ml,,13,12,17,16,14,12,15,16
+SP-SHAK-79,Hyderabad,74,0,3.2,14,"₹3,499",Shaker 700ml,,20,22,25,22,24,18,22,27
+,Chennai,114,0,3.7,14,3499,Shaker 700ml,,26,23,31,25,30,30,26,21
+SP-SHAK-79,Kolkata,28,0,4.0,7,3499,Shaker 700ml,2.0,30,28,26,24,25,24,34,32
+SP-SHAK-79,Pune,75,0,2.7,14,"₹3,499",Shaker 700ml,,18,15,21,24,15,18,17,20
+SP-SHAK-79,Ahmedabad,47,36,4.9,7,3499,Shaker 700ml,,40,30,37,33,37,27,26,33
+SP-SHAK-79,Jaipur,110,0,2.8,,3499,Shaker 700ml,,24,18,20,22,22,18,19,19
+SP-SHAK-79,Lucknow,65,0,5.1,7,"₹3,499",Shaker 700ml,,28,32,37,33,43,35,44,27
+SP-SHAK-79,Surat,25,0,1.2,10,3499,Shaker 700ml,,9,8,8,9,8,9,8,6
+SP-SHAK-79,Indore,50,0,2.1,10,3499,Shaker 700ml,,5,32,5,32,2,32,2,2
+SP-SHAK-79,Nagpur,17,0,3.3,10,"Rs. 3,499",Shaker 700ml,2.2,22,24,21,18,25,27,20,22
+SP-SHAK-79,Kochi,114,45,3.6,10,"3,499.00",Shaker 700ml,,24,26,24,24,26,26,22,27
+SP-SHAK-79,Chandigarh,109,47,6.0,7,"3,499.00",Shaker 700ml,,39,34,40,34,47,39,37,36
+SP-SHAK-79,Bhopal,14,0,1.5,10,3499,Shaker 700ml,2.0,9,9,10,11,12,8,12,10
+SP-SHAK-79,Patna,72,0,5.0,7,"₹3,499",Shaker 700ml,,35,27,30,35,39,33,32,30
+SP-SHAK-79,Vadodara,70,0,3.4,7,3499,Shaker 700ml,,27,24,29,29,27,26,18,25
+SP-SHAK-79,Ludhiana,25,0,1.7,7,3499,Shaker 700ml,2.2,13,13,12,10,11,14,14,11
+SP-SHAK-79,Agra,68,0,5.9,7,3499,Shaker 700ml,,52,44,50,45,50,41,50,43
+SP-SHAK-80,Mumbai,9,0,0.9,7,3499,Shaker 700ml,,5,5,6,5,7,5,7,7
+SP-SHAK-80,Delhi,17,22,2.6,10,3499,Shaker 700ml,,22,15,20,15,22,14,20,19
+SP-SHAK-80,Bengaluru,73,0,3.5,7,"₹3,499",Shaker 700ml,,24,21,30,23,20,30,30,28
+SP-SHAK-80,Hyderabad,99,0,4.2,10,3499,Shaker 700ml,,28,35,36,36,31,34,24,29
+SP-SHAK-80,Chennai,30,0,1.2,14,3499,Shaker 700ml,2.2,10,9,7,8,7,9,7,9
+SP-SHAK-80,Kolkata,18,0,0.9,10,"₹3,499",Shaker 700ml,,7,7,7,6,6,7,7,7
+SP-SHAK-80,Pune,46,0,2.0,14,"3,499.00",Shaker 700ml,,15,13,12,17,15,16,14,17
+SP-SHAK-80,Ahmedabad,16,0,1.3,7,3499,Shaker 700ml,2.2,8,9,9,10,11,9,8,7
+SP-SHAK-80,Jaipur,103,31,3.5,10,"₹3,499",Shaker 700ml,,9,9,53,4,44,44,9,53
+SP-SHAK-80,Lucknow,42,0,5.6,10,"3,499.00",Shaker 700ml,,33,39,37,36,37,42,47,44
+SP-SHAK-80,Surat, 85 ,0,3.8,10,3499,Shaker 700ml,,26,26,30,24,20,31,30,23
+SP-SHAK-80,Indore,25,0,1.2,10,3499,Shaker 700ml,,9,9,9,10,10,10,10,10
+SP-SHAK-80,Nagpur, 7 ,0,0.5,7,"₹3,499",Shaker 700ml,2.2,3,3,4,3,3,4,3,4
+SP-SHAK-80,Kochi,46,17,1.1,14,3499,Shaker 700ml,,7,7,7,7,6,7,9,6
+SP-SHAK-80,Chandigarh, 21 ,0,4.5,7,"3,499.00",Shaker 700ml,2.0,32,24,34,25,31,29,33,34
+SP-SHAK-80,Bhopal,140,58,4.8,10,3499,Shaker 700ml,,26,31,35,32,25,38,39,42
+SP-SHAK-80,Patna,78,-19,5.0,7,"₹3,499",Shaker 700ml,,27,28,35,40,43,41,28,28
+SP-SHAK-80,Vadodara,58,0,1.8,14,"Rs. 3,499",Shaker 700ml,2.0,12,15,10,10,13,13,13,14
+SP-SHAK-80,Ludhiana,70,61,3.5,14,3499,Shaker 700ml,2.0,27,26,21,28,20,22,31,19
+SP-SHAK-80,Agra,26,0,0.8,10,3499,Shaker 700ml,,6,7,6,6,5,5,6,5
+SP-SHAK-80,Agra,26,0,0.8,10,3499,Shaker 700ml,,6,7,6,6,5,5,6,5
+SP-BADM-81,Mumbai,11,11,1.6,10,Rs. 599,Badminton Racq,2.2,9,11,12,11,14,11,10,13
+SP-BADM-81,Delhi,101,0,3.0,10,599,Badminton Racq,2.0,19,16,18,25,20,19,17,23
+SP-BADM-81,Bengaluru, 10 ,2,0.5,7,₹599,Badminton Racq,,4,4,3,4,4,3,4,4
+SP-BADM-81,Hyderabad,118,0,6.0,10,Rs. 599,Badminton Racq,2.0,51,49,36,48,37,42,49,44
+SP-BADM-81,Chennai,37,0,5.6,7,599,Badminton Racq,,43,43,33,35,44,41,38,47
+SP-BADM-81,Kolkata,85,37,3.3,10,₹599,Badminton Racq,,41,9,9,9,9,50,4,4
+SP-BADM-81,Pune,130,0,4.1,10,Rs. 599,Badminton Racq,2.0,27,36,23,23,33,26,32,27
+SP-BADM-81,Ahmedabad,2,0,4.9,7,₹599,Badminton Racq,,43,30,35,34,32,40,27,31
+SP-BADM-81,Jaipur,14,0,0.6,10,599,Badminton Racq,2.2,5,5,5,5,3,4,4,4
+SP-BADM-81,Lucknow,13,13,1.5,7,₹599,Badminton Racq,2.0,10,12,9,12,11,13,9,8
+SP-BADM-81,Surat,79,0,4.8,7,599,Badminton Racq,2.2,40,40,31,27,36,34,37,33
+SP-BADM-81,Indore,41,0,4.6,14,599,Badminton Racq,,36,39,26,25,30,31,25,28
+SP-BADM-81,Nagpur,154,0,5.6,14,599,Badminton Racq,2.0,45,41,34,44,42,48,36,31
+SP-BADM-81,Kochi,4,0,2.8,7,599,Badminton Racq,2.2,15,17,24,18,15,24,18,19
+SP-BADM-81,Chandigarh,42,0,1.4,14,₹599,Badminton Racq,,12,7,12,10,8,10,11,8
+SP-BADM-81,Bhopal,80.5,0,4.7,7,Rs. 599,Badminton Racq,,28,31,30,35,25,39,33,32
+SP-BADM-81,Patna,20,0,0.9,7,₹599,Badminton Racq,2.0,6,5,5,5,6,6,5,8
+SP-BADM-81,Vadodara,180,62,,14,Rs. 599,Badminton Racq,2.0,34,30,29,45,40,37,37,41
+SP-BADM-81,Ludhiana,14,26,4.1,14 days,₹599,Badminton Racq,,25,31,22,31,33,24,34,22
+SP-BADM-81,Agra,57,0,5.2,10,599,Badminton Racq,,34,30,36,33,37,37,36,30
+SP-BADM-82,Mumbai,52,0,4.7,10,999.00,Badminton Racq,,28,27,26,38,31,28,32,31
+SP-BADM-82,Delhi,91,16,5.6,7,N/A,Badminton Racq,2.0,38,38,42,35,39,48,48,31
+SP-BADM-82,Bengaluru,74,0,3.0,10,₹999,Badminton Racq,2.2,8,37,46,8,4,46,4,37
+SP-BADM-82,Hyderabad,20,24,5.6,7,999,Badminton Racq,,38,35,36,46,45,49,38,46
+SP-BADM-82,Chennai,10,0,4.5,7,₹999,Badminton Racq,,27,37,26,31,27,37,26,25
+SP-BADM-82,Kolkata,68,0,4.0,7,999.00,Badminton Racq,2.0,25,32,28,35,22,27,23,29
+SP-BADM-82,Pune,40,0,2.7,7,999.00,Badminton Racq,,16,15,21,16,18,23,23,16
+SP-BADM-82,Ahmedabad,139,0,4.7,14,999,Badminton Racq,2.0,37,30,32,38,27,26,35,27
+SP-BADM-82,Jaipur,0,0,2.7,7,999,Badminton Racq,,21,23,23,20,20,17,17,24
+SP-BADM-82,Lucknow,42,0,4.5,7,Rs. 999,Badminton Racq,2.0,24,29,31,30,32,32,32,28
+SP-BADM-82,Surat,22,0,3.1,14,999,Badminton Racq,,21,25,26,18,18,18,18,23
+SP-BADM-82,Indore,82,33,2.6,10,Rs. 999,Badminton Racq,2.2,22,16,20,22,18,15,22,17
+SP-BADM-82,Nagpur,11,0,3.7,7,Rs. 999,Badminton Racq,,21,21,23,26,23,30,22,26
+SP-BADM-82,Kochi,29,9,1.8,10,999,Badminton Racq,,11,11,12,11,13,13,14,12
+SP-BADM-82,Chandigarh,21,0,1.2,10,₹999,Badminton Racq,2.0,9,8,10,9,10,10,8,10
+SP-BADM-82,Bhopal,2,0,0.4,14,999.00,Badminton Racq,,3,3,3,2,3,3,2,2
+SP-BADM-82,Patna,27,0,1.5,7,Rs. 999,Badminton Racq,2.2,11,12,12,13,11,8,9,12
+SP-BADM-82,Vadodara,30,0,5.0,7,Rs. 999,Badminton Racq,2.2,37,29,27,28,35,31,34,41
+SP-BADM-82,Ludhiana,182,0,5.9,14,999,Badminton Racq,2.2,31,42,40,49,33,47,47,33
+SP-BADM-82,Agra,27, 19 ,3.4,7,999,Badminton Racq,,42,4,42,4,42,4,52,4
+SP-BADM-83,Mumbai,58,54,5.6,10,999.00,Badminton Racq,,37,45,45,34,38,30,34,42
+SP-BADM-83,Delhi, 17 ,0,3.4,,999.00,Badminton Racq,,27,21,23,24,23,20,29,22
+SP-BADM-83,Bengaluru,75,41,4.8,10,999,Badminton Racq,2.0,30,39,27,30,33,41,29,29
+SP-BADM-83,Hyderabad,60,0,3.4,10,999,Badminton Racq,,19,20,20,29,21,22,25,27
+SP-BADM-83,Chennai,137,0,3.2,14,₹999,Badminton Racq,,20,23,22,23,27,27,20,23
+SP-BADM-83,Kolkata,-9,0,1.9,14,999.00,Badminton Racq,,16,11,10,12,12,16,15,16
+SP-BADM-83,Pune,78,35,4.0,7,999,Badminton Racq,,31,34,32,33,35,23,24,30
+SP-BADM-83,Ahmedabad,21,0,0.8,10,999,Badminton Racq,,6,4,6,6,5,5,5,4
+SP-BADM-83,Jaipur,33,54,5.4,14,999,Badminton Racq,2.2,35,41,45,37,29,41,47,37
+SP-BADM-83,Lucknow,34,0,2.1,10,999,Badminton Racq,,16,12,16,16,12,13,11,18
+SP-BADM-83,Surat,57,36,2.0,14,999,Badminton Racq,,13,11,12,12,15,13,17,17
+SP-BADM-83,Indore, 32 ,0,3.7,7,999,Badminton Racq,,23,20,20,20,29,26,23,26
+SP-BADM-83,Nagpur,16,0,1.7,14,Rs. 999,Badminton Racq,2.0,15,14,12,13,10,11,12,10
+SP-BADM-83,Kochi,14,0,2.1,7,999,Badminton Racq,,13,14,13,18,17,15,14,12
+SP-BADM-83,Chandigarh,38,0,4.9,7,₹999,Badminton Racq,,34,39,26,31,31,29,29,27
+SP-BADM-83,Bhopal,48,0,2.2,10,999,Badminton Racq,,12,14,19,13,18,14,18,19
+SP-BADM-83,Patna,3,0,0.7,10,₹999,Badminton Racq,,0,8,10,8,0,1,8,10
+SP-BADM-83,Vadodara,92,0,2.3,14,999,Badminton Racq,2.0,15,13,19,16,14,13,16,16
+SP-BADM-83,Ludhiana,65,0,3.8,7,₹999,Badminton Racq,,32,28,30,32,33,23,26,30
+SP-BADM-83,Agra,60,0,4.2,7,Rs. 999,Badminton Racq,2.0,33,28,27,35,34,27,36,28
+SP-BADM-84,Mumbai,97,53,4.6,10,₹299,Badminton Racq,,30,34,35,31,28,34,40,36
+SP-BADM-84,Delhi,33,0,1.5,10,299,Badminton Racq,,9,8,13,8,11,13,11,13
+SP-BADM-84,Bengaluru,14,0,2.3,7,₹299,Badminton Racq,2.0,18,17,13,14,14,14,13,16
+SP-BADM-84,Hyderabad,60,23,4.3,7,₹299,Badminton Racq,,23,27,25,26,23,30,36,36
+SP-BADM-84,Chennai, 72 ,72,5.6,10,Rs. 299,Badminton Racq,,36,48,33,47,44,37,47,48
+,Kolkata,173,0,5.4,10,₹299,Badminton Racq,2.2,44,38,47,31,41,45,40,32
+SP-BADM-84,Pune,73,0,5.1,14,299,Badminton Racq,2.2,39,38,38,35,34,29,44,44
+SP-BADM-84,Ahmedabad,60,-9,3.9,7,₹299,Badminton Racq,,28,31,30,26,31,22,21,28
+SP-BADM-84,Jaipur,29.5,0,5.2,7,Rs. 299,Badminton Racq,,29,44,28,45,40,41,35,28
+SP-BADM-84,Lucknow,173,0,5.1,14,299,Badminton Racq,2.2,30,33,29,35,28,39,40,35
+SP-BADM-84,Surat,11,0,4.4,7,299,Badminton Racq,,24,32,33,28,33,32,30,36
+SP-BADM-84,Indore,62,20,2.7,10,Rs. 299,Badminton Racq,,20,16,18,19,21,16,14,16
+SP-BADM-84,Nagpur,121,52,4.6,14,₹299,Badminton Racq,,29,26,30,39,37,36,28,29
+SP-BADM-84,Kochi,19,0,0.9,14,299,Badminton Racq,2.0,2,2,2,11,11,13,13,13
+SP-BADM-84,Chandigarh,52,0,3.5,14,Rs. 299,Badminton Racq,,27,24,25,27,26,25,21,23
+SP-BADM-84,Bhopal,76,0,4.6,7,299,Badminton Racq,,33,28,32,25,38,30,29,27
+SP-BADM-84,Patna,54,0,5.4,7,₹299,Badminton Racq,,35,36,44,39,34,44,35,40
+SP-BADM-84,Vadodara,8,0,1.6,14,299,Badminton Racq,2.2,10,12,10,13,11,14,10,12
+SP-BADM-84,Ludhiana,19,0,4.9,7,Rs. 299,Badminton Racq,2.2,32,29,37,32,31,31,29,26
+SP-BADM-84,Agra,9,19,1.2,14,299,Badminton Racq,,8,7,10,7,10,10,6,7
+SP-BADM-85,Mumbai,2,0,0.5,14,N/A,Badminton Racq,,4,4,3,3,3,3,3,4
+SP-BADM-85,Delhi,193,0,5.5,14,999,Badminton Racq,,45,37,45,31,43,42,35,42
+SP-BADM-85,Bengaluru,95,0,5.7,7,999,Badminton Racq,,34,31,35,35,30,39,35,48
+SP-BADM-85,Hyderabad,84,0,3.2,14,₹999,Badminton Racq,,20,23,18,24,22,21,22,27
+SP-BADM-85,Chennai,221,45,5.8,14,999,Badminton Racq,,36,41,39,48,34,39,35,35
+SP-BADM-85,Kolkata,53,22,1.9,10,999,Badminton Racq,,17,11,16,12,15,13,12,12
+SP-BADM-85,Pune,240,0,5.8,14,999.00,Badminton Racq,2.2,41,35,31,36,48,36,46,33
+SP-BADM-85,Ahmedabad,35,0,2.0,14,₹999,Badminton Racq,,15,13,17,17,17,12,12,15
+SP-BADM-85,Jaipur,134,0,4.7,10,₹999,Badminton Racq,2.2,37,32,37,29,34,36,28,36
+SP-BADM-85,Lucknow,118,0,5.7,10,999,Badminton Racq,2.2,39,30,45,39,43,35,35,44
+SP-BADM-85,Surat,143,0,5.1,14,Rs. 999,Badminton Racq,2.0,14,14,64,78,7,7,78,64
+SP-BADM-85,Indore,12,47,5.3,7,999,Badminton Racq,,46,33,42,41,32,36,35,36
+SP-BADM-85,Nagpur,31,0,1.7,10,₹999,Badminton Racq,,13,13,12,10,12,14,11,10
+SP-BADM-85,Kochi,32,0,5.2,10,999,Badminton Racq,,31,40,31,38,43,37,37,44
+SP-BADM-85,Chandigarh,10,0,2.4,7,₹999,Badminton Racq,2.0,18,17,18,13,18,15,14,13
+SP-BADM-85,Bhopal,22,0,2.5,7,₹999,Badminton Racq,2.0,14,15,20,16,21,17,19,18
+SP-BADM-85,Patna,27,0,0.8,14,999,Badminton Racq,,5,7,6,6,6,6,5,5
+SP-BADM-85,Patna,27,0,0.8,14,999,Badminton Racq,,5,7,6,6,6,6,5,5
+SP-BADM-85,Vadodara,2,0,0.5,7 days,₹999,Badminton Racq,,4,3,3,3,3,4,4,4
+SP-BADM-85,Ludhiana,32,0,1.6,7,999,Badminton Racq,,14,11,9,11,11,9,12,12
+SP-BADM-85,Agra,199,0,6.0,14,₹999,Badminton Racq,2.2,34,47,34,36,41,41,51,49
+SP-BADM-86,Mumbai,180,0,,10,299,Badminton Racq,,33,45,30,36,41,48,39,29
+SP-BADM-86,Delhi,106,0,5.2,14,299,Badminton Racq,2.0,41,34,30,42,36,42,33,36
+SP-BADM-86,Bengaluru,137,67,5.0,14,299,Badminton Racq,,28,35,30,42,30,29,27,27
+SP-BADM-86,Hyderabad, 11 ,0,4.4,14,299,Badminton Racq,2.2,36,32,23,38,31,24,32,31
+SP-BADM-86,Chennai, 4 ,5,1.8,7,299,Badminton Racq,,14,16,10,11,16,14,10,15
+SP-BADM-86,Kolkata,41,0,3.8,10,299,Badminton Racq,,23,31,29,21,23,25,29,26
+SP-BADM-86,Pune,15,0,1.7,10,299,Badminton Racq,,11,12,12,13,10,12,9,9
+SP-BADM-86,Ahmedabad,46,28,1.7,14,299,Badminton Racq,2.2,2,4,4,26,2,2,26,21
+SP-BADM-86,Jaipur,3,0,1.2,14,299.00,Badminton Racq,,9,7,7,9,8,10,9,8
+SP-BADM-86,Lucknow,11,0,1.7,14,299,Badminton Racq,,14,14,13,11,14,14,14,12
+SP-BADM-86,Surat,51,0,1.2,14,299,Badminton Racq,2.2,8,10,10,10,7,10,8,10
+SP-BADM-86,Indore,9,0,5.2,14,₹299,Badminton Racq,2.2,29,38,35,32,36,41,32,41
+SP-BADM-86,Nagpur,0,0,3.8,14,Rs. 299,Badminton Racq,,20,23,21,25,24,28,25,24
+SP-BADM-86,Kochi,11,0,0.6,10,₹299,Badminton Racq,2.0,5,5,5,5,4,4,4,4
+SP-BADM-86,Chandigarh,138,0,3.4,,₹299,Badminton Racq,,24,24,25,29,28,25,24,24
+SP-BADM-86,Bhopal,7,0,0.7,7,299,Badminton Racq,2.0,4,5,4,5,4,5,5,4
+SP-BADM-86,Patna,22,0,4.2,7,Rs. 299,Badminton Racq,,33,35,24,31,28,30,29,27
+SP-BADM-86,Vadodara,21,0,2.1,7,299,Badminton Racq,,17,14,14,15,11,12,13,16
+SP-BADM-86,Ludhiana,30,0,1.4,14,299,Badminton Racq,,10,11,8,7,8,12,8,10
+SP-BADM-86,Agra,145,0,4.1,14,299.00,Badminton Racq,,32,34,33,22,32,28,22,25
+SP-BADM-87,Mumbai,109,42,3.4,10,999,Badminton Racq,,28,29,20,18,24,22,29,24
+SP-BADM-87,Delhi,111.5,0,5.7,14,999.00,Badminton Racq,,37,34,43,41,37,35,35,31
+SP-BADM-87,Bengaluru,140,0,5.1,14,Rs. 999,Badminton Racq,,31,34,41,33,44,39,35,34
+SP-BADM-87,Hyderabad,43,19,3.3,7,999.00,Badminton Racq,2.0,29,27,26,26,26,19,22,18
+SP-BADM-87,Chennai,25,39,3.8,10,Rs. 999,Badminton Racq,,10,58,58,5,5,58,58,5
+SP-BADM-87,Kolkata,28,38,3.3,14,₹999,Badminton Racq,,22,18,26,21,21,22,21,25
+SP-BADM-87,Pune,21,0,4.4,10,₹999,Badminton Racq,,34,26,28,24,30,38,25,28
+SP-BADM-87,Ahmedabad,71,0,3.8,10,999,Badminton Racq,,31,21,23,22,30,26,25,27
+SP-BADM-87,Jaipur,35,0,2.9,10,999,Badminton Racq,2.0,23,24,18,18,23,17,18,20
+SP-BADM-87,Lucknow,11,0,2.8,14,999,Badminton Racq,2.0,15,20,18,21,19,23,16,21
+SP-BADM-87,Surat,25,49,2.9,14,₹999,Badminton Racq,2.2,18,23,25,20,25,25,17,21
+SP-BADM-87,Indore,102,0,5.2,10,999.00,Badminton Racq,2.2,45,28,30,30,32,38,30,38
+SP-BADM-87,Nagpur,118,42,4.0,10,999.00,Badminton Racq,,33,28,30,21,24,24,22,33
+SP-BADM-87,Kochi,69,0,5.5,7,999,Badminton Racq,,47,40,32,41,41,41,47,41
+SP-BADM-87,Chandigarh,-7,0,0.5,14,999,Badminton Racq,,3,3,3,3,4,4,3,4
+SP-BADM-87,Bhopal,30,0,3.5,10,999,Badminton Racq,2.0,30,26,28,22,28,26,23,30
+SP-BADM-87,Patna,89,31,3.7,14,999,Badminton Racq,,25,25,32,21,29,26,23,28
+SP-BADM-87,Vadodara,59,0,3.9,7,₹999,Badminton Racq,,31,28,25,32,28,27,25,29
+SP-BADM-87,Ludhiana,3,-15,1.1,14,₹999,Badminton Racq,2.0,6,8,10,7,7,7,9,9
+SP-BADM-87,Agra,3,9,0.7,14,N/A,Badminton Racq,,5,5,4,5,5,4,6,5
+SP-BADM-88,Mumbai,33,0,1.1,10,₹299,Badminton Racq,2.0,8,7,8,8,9,7,9,6
+SP-BADM-88,Delhi,59,0,3.9,10,₹299,Badminton Racq,,5,5,10,60,10,60,5,60
+SP-BADM-88,Bengaluru,210,0,5.4,14,Rs. 299,Badminton Racq,,40,35,35,40,42,38,32,32
+SP-BADM-88,Hyderabad,7,9,3.1,7,299,Badminton Racq,,20,24,18,22,21,22,20,21
+SP-BADM-88,Chennai,54,0,3.8,10,Rs. 299,Badminton Racq,,29,24,20,25,27,28,22,23
+SP-BADM-88,Kolkata,45,17,2.3,10,299,Badminton Racq,,14,19,17,13,19,15,17,18
+SP-BADM-88,Pune,26,26,1.9,14,299,Badminton Racq,2.2,11,11,14,16,10,12,11,16
+SP-BADM-88,Ahmedabad,10,0,1.0,10,Rs. 299,Badminton Racq,2.0,9,9,5,9,9,6,7,8
+SP-BADM-88,Jaipur,24,0,2.6,10,299,Badminton Racq,2.0,18,23,23,17,17,15,21,15
+SP-BADM-88,Lucknow,9,0,2.4,7,₹299,Badminton Racq,2.2,15,21,15,13,16,17,15,15
+SP-BADM-88,Surat,141,0,5.8,14,299.00,Badminton Racq,,46,42,45,45,39,37,32,37
+SP-BADM-88,Indore,83,41,5.3,7,₹299,Badminton Racq,2.0,46,46,30,39,29,40,44,37
+SP-BADM-88,Nagpur,13,0,2.0,7,299,Badminton Racq,,16,13,15,11,12,17,12,13
+SP-BADM-88,Kochi,100,0,3.4,14,299,Badminton Racq,2.2,29,25,28,24,19,24,23,27
+SP-BADM-88,Chandigarh,0,0,1.7,14,₹299,Badminton Racq,2.0,11,13,15,10,12,10,12,10
+SP-BADM-88,Bhopal,65,0,2.0,10,299,Badminton Racq,,13,13,15,11,13,17,13,13
+SP-BADM-88,Patna,2,0,1.4,14,299,Badminton Racq,,9,8,12,12,11,9,9,10
+SP-BADM-88,Vadodara,282,0,6.0,14,₹299,Badminton Racq,2.2,35,37,43,32,34,49,48,35
+SP-BADM-88,Ludhiana,81,37,5.2,7,Rs. 299,Badminton Racq,2.0,14,14,80,7,80,65,80,7
+SP-BADM-88,Agra,14,0,0.7,14,299.00,Badminton Racq,,6,4,4,6,4,5,4,5
+SP-BADM-89,Mumbai,107,0,6.0,10,₹299,Badminton Racq,2.0,35,50,52,32,43,42,33,33
+SP-BADM-89,Delhi,95,0,2.8,10,299,Badminton Racq,,19,24,23,17,17,22,19,20
+SP-BADM-89,Bengaluru,19,79,5.7,10,₹299,Badminton Racq,2.2,46,31,38,47,48,41,33,36
+SP-BADM-89,Hyderabad,65,29,3.8,7,Rs. 299,Badminton Racq,,29,28,27,32,21,25,24,20
+SP-BADM-89,Chennai,20,0,0.9,7,299,Badminton Racq,2.2,7,6,5,5,6,7,6,5
+SP-BADM-89,Kolkata,36,0,2.7,7,299.00,Badminton Racq,2.0,14,19,22,14,22,19,22,15
+,Pune,45,0,2.4,7,299.00,Badminton Racq,,16,18,20,20,13,13,19,13
+SP-BADM-89,Ahmedabad, 135 ,0,5.1,10,299,Badminton Racq,,37,32,44,34,43,44,40,33
+SP-BADM-89,Jaipur,28,7,1.0,10,299,Badminton Racq,2.2,8,7,9,5,6,6,8,8
+SP-BADM-89,Lucknow,5,34,3.1,14,₹299,Badminton Racq,,26,18,24,25,22,25,26,25
+SP-BADM-89,Surat,70,67,3.9,14,₹299,Badminton Racq,2.0,21,31,23,27,26,29,24,29
+SP-BADM-89,Indore,2,0,1.0,10,299,Badminton Racq,,9,6,7,9,8,6,6,6
+SP-BADM-89,Nagpur,111,0,3.8,10,₹299,Badminton Racq,2.2,20,27,30,27,33,31,28,30
+SP-BADM-89,Kochi,138,31,3.4,14,Rs. 299,Badminton Racq,2.2,30,30,20,21,25,18,24,19
+SP-BADM-89,Chandigarh,115.5,0,5.1,7,₹299,Badminton Racq,,41,41,35,35,45,28,28,38
+SP-BADM-89,Bhopal,131,0,3.6,14,299,Badminton Racq,2.2,10,55,10,5,45,5,5,45
+SP-BADM-89,Patna,6,0,2.0,7 days,299.00,Badminton Racq,,13,13,12,17,14,14,16,17
+SP-BADM-89,Vadodara,7,0,2.4,10,₹299,Badminton Racq,2.2,20,17,20,17,17,14,17,19
+SP-BADM-89,Ludhiana,77,0,2.5,14,Rs. 299,Badminton Racq,,19,20,20,16,16,20,17,19
+SP-BADM-89,Agra,48,11,2.1,7,₹299,Badminton Racq,2.0,16,11,16,18,15,16,18,16
+SP-BADM-90,Mumbai,77,0,4.7,10,"₹1,899",Badminton Racq,,32,26,30,36,37,37,34,39
+SP-BADM-90,Delhi,121,0,5.8,7,"₹1,899",Badminton Racq,,35,45,36,49,34,47,44,50
+SP-BADM-90,Bengaluru,24,0,2.6,7,"₹1,899",Badminton Racq,,21,21,20,14,20,18,18,14
+SP-BADM-90,Hyderabad,16,5,,14,1899,Badminton Racq,2.2,3,3,3,3,3,3,3,3
+SP-BADM-90,Chennai,47,65,5.8,10,1899,Badminton Racq,,50,47,43,38,41,37,39,33
+SP-BADM-90,Kolkata,38,0,1.4,10,"Rs. 1,899",Badminton Racq,,10,10,10,9,8,9,10,8
+SP-BADM-90,Pune,41,0,5.3,7,1899,Badminton Racq,,40,42,40,35,42,38,32,36
+SP-BADM-90,Ahmedabad,2,0,1.8,,1899,Badminton Racq,,14,12,13,11,14,10,10,12
+SP-BADM-90,Jaipur,88,0,4.9,7,1899,Badminton Racq,,42,38,28,32,41,27,32,40
+SP-BADM-90,Lucknow,57,0,3.1,7,"₹1,899",Badminton Racq,,26,17,20,18,17,27,25,21
+SP-BADM-90,Surat,71,0,5.5,14,"1,899.00",Badminton Racq,,32,33,44,46,29,31,40,40
+SP-BADM-90,Indore,79,0,2.2,14,1899,Badminton Racq,,17,17,14,16,16,18,15,19
+SP-BADM-90,Nagpur,24,0,0.8,14,"1,899.00",Badminton Racq,,10,2,12,1,2,1,10,12
+SP-BADM-90,Kochi,15,0,0.6,14,1899,Badminton Racq,,3,4,3,4,4,4,5,3
+SP-BADM-90,Kochi,15,0,0.6,14,1899,Badminton Racq,,3,4,3,4,4,4,5,3
+SP-BADM-90,Chandigarh,28,0,1.8,10,1899,Badminton Racq,,14,14,11,14,10,13,13,13
+SP-BADM-90,Bhopal,10,0,2.2,10,"Rs. 1,899",Badminton Racq,2.2,18,13,13,15,12,19,14,19
+SP-BADM-90,Patna,3,0,0.5,10,"₹1,899",Badminton Racq,,4,3,4,4,3,4,4,3
+SP-BADM-90,Vadodara,104,0,4.8,7,"₹1,899",Badminton Racq,2.0,35,35,31,28,33,33,27,33
+SP-BADM-90,Ludhiana,38,22,1.9,10,N/A,Badminton Racq,,12,14,12,14,10,14,13,13
+SP-BADM-90,Agra,64,30,5.5,7,"1,899.00",Badminton Racq,,35,36,45,43,36,41,47,32

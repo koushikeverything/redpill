@@ -1,5 +1,44 @@
 # Changelog
 
+## 2.1.2 — 2026-08-17 · CWD-pollution fix
+
+Engine **2.4.1 → 2.4.2**. Closes the wart recorded in Observations §19: without
+`--run-dir`, the engine wrote `data_gaps.csv` and (on blocked runs)
+`redpill_input_template.csv` into whatever directory it was invoked from, even when
+`--out`/`--report` pointed elsewhere — the stress-pack dry run kept dropping both
+into the repo root. Side outputs now land next to `--out` (falling back to
+`--report`) whenever either carries a directory; bare invocations keep writing to
+the CWD; an explicit `--gaps` path is always honored. Under `--run-dir` nothing
+moves except the blocked-run fill-in template, which now lands inside the run dir
+(it was the one file that still leaked to the CWD). Snapshot golden re-pinned;
+report verified byte-identical apart from the version string — no business figure
+changed. Suite 79 → **81 green** (two placement pins, each asserting the caller's
+CWD stays empty).
+
+## 2.1.1 — 2026-08-17 · domain stress pack + alias hardening
+
+New `examples/stress/` pack: one deliberately messy MIS file per retail domain the
+setup question serves (apparel, footwear, electronics, beauty, home & decor, sports,
+books & stationery, jewellery), plus a 25k-row scale file and a corrupted file whose
+correct outcome is a refusal. Deterministic generator (`gen_stress_pack.py`), ~92%
+clean rows per file, traps on fixed schedules. Every file ships as both `.csv` and a
+ready-to-try `.xlsx` workbook (`make_xlsx_pack.py`; trap-preserving, verified
+cell-for-cell and by engine-output parity), linked from the README's "Sample MIS
+files to try" section. See `examples/stress/README.md`.
+
+The pack's first dry run caught real mapper weaknesses, fixed as engine **2.4.0 →
+2.4.1** (alias table only; snapshot golden re-pinned, report verified byte-identical
+apart from the version string — no business figure changed):
+
+- sku: `product_code` promoted to exact (a generic `Item` column no longer outranks
+  it — this had put home & decor at 86% false quarantine); `design_code`, `isbn`,
+  `isbn_sku` added.
+- store: `showroom` added. qoo: `incoming` added. price: `tag_price` added
+  (`Value` deliberately NOT added — in real MIS files it usually means stock value,
+  and the engine never guesses).
+- Ambiguous-mapping disclosure verified end-to-end: home & decor runs DEGRADED with
+  "1 ambiguous column mapping — confirm before trusting". Suite stays **79 green**.
+
 ## 2.1.0 — 2026-08-14 · "timing honesty" release
 
 Closes the three genuinely-new gaps from the second external review (66-point list,

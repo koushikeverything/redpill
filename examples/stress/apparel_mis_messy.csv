@@ -1,0 +1,2329 @@
+SKU Code,Store Name,Closing Stock,In Transit,Avg Off-take/Day,Lead Time (Days),MRP,Style,Colour,Size,System Status,Sold Wk-8,Sold Wk-7,Sold Wk-6,Sold Wk-5,Sold Wk-4,Sold Wk-3,Sold Wk-2,Sold Wk-1
+CRE-BLA-S,Mumbai,55,0,3.0,12,"1,999.00",Crew Tee,Black,S,,22,24,17,19,17,24,23,16
+CRE-BLA-S,Delhi, 86 ,0,5.8,7,"₹1,999",Crew Tee,Black,S,OK,35,31,40,39,48,41,43,41
+CRE-BLA-S,Bengaluru,37,0,3.0,9,"Rs. 1,999",Crew Tee,Black,S,OK,18,19,16,24,20,25,20,26
+CRE-BLA-S,Hyderabad,13,11,1.7,5,"₹1,999",Crew Tee,Black,S,OK,13,11,11,9,11,14,10,13
+CRE-BLA-S,Chennai,5,9,0.8,12,1999,Crew Tee,Black,S,OK,5,5,5,7,4,7,7,6
+CRE-BLA-S,Kolkata, 69 ,0,1.7,12,"₹1,999",Crew Tee,Black,S,OK,12,9,13,14,11,9,10,13
+CRE-BLA-S,Pune,72,18,3.8,9,"Rs. 1,999",Crew Tee,Black,S,,28,24,23,28,30,22,28,27
+CRE-BLA-S,Ahmedabad,38,0,5.4,5,"₹1,999",Crew Tee,Black,S,Reorder,42,36,36,45,38,38,46,47
+CRE-BLA-S,Jaipur,8,0,1.8,5,"₹1,999",Crew Tee,Black,S,,12,11,10,11,13,16,10,10
+CRE-BLA-S,Lucknow,82,54,5.9,7,1999,Crew Tee,Black,S,OK,31,44,41,46,38,52,33,42
+CRE-BLA-S,Surat,103,0,5.5,7,"1,999.00",Crew Tee,Black,S,OK,30,45,47,29,38,29,42,36
+CRE-BLA-S,Indore,5,0,3.8,5,1999,Crew Tee,Black,S,OK,25,30,28,26,31,21,30,20
+CRE-BLA-S,Nagpur,70, 11 ,3.1,7,"Rs. 1,999",Crew Tee,Black,S,Excess,24,18,18,26,23,21,26,20
+CRE-BLA-S,Kochi,52,0,1.6,12,"Rs. 1,999",Crew Tee,Black,S,Excess,12,10,9,11,13,13,12,14
+CRE-BLA-S,Chandigarh,38,0,5.0,5,"Rs. 1,999",Crew Tee,Black,S,OK,35,38,39,41,37,32,41,31
+CRE-BLA-S,Bhopal,66,0,3.8,9,"Rs. 1,999",Crew Tee,Black,S,Excess,22,30,23,30,31,33,21,21
+CRE-BLA-S,Patna,27,0,5.8,7,1999,Crew Tee,Black,S,Reorder,41,31,35,46,41,50,41,51
+CRE-BLA-S,Vadodara,5,25,2.7,7,1999,Crew Tee,Black,S,Reorder,57,44,49,56,54,58,46,51
+CRE-BLA-S,Ludhiana,3,0,1.0,5,"1,999.00",Crew Tee,Black,S,Excess,8,6,8,8,6,6,7,7
+CRE-BLA-S,Agra,11,20,3.2,5,"Rs. 1,999",Crew Tee,Black,S,,26,18,18,23,25,83,25,27
+CRE-BLA-S,Nashik,47,0,3.7,5,1999,Crew Tee,Black,S,,56,10,10,46,56,10,56,10
+CRE-BLA-S,Meerut,13,0,1.6,5,"₹1,999",Crew Tee,Black,S,,14,11,14,9,9,9,14,11
+CRE-BLA-S,Rajkot,40,17,2.0,12,"Rs. 1,999",Crew Tee,Black,S,Excess,11,12,15,17,11,12,11,12
+CRE-BLA-S,Varanasi,7,0,1.8,12,1999,Crew Tee,Black,S,Reorder,14,14,15,10,13,15,13,13
+CRE-BLA-M,Mumbai,18,0,3.4,7,"Rs. 2,499",Crew Tee,Black,M,Excess,22,29,20,30,28,19,21,26
+CRE-BLA-M,Delhi,88.5,0,2.6,12,2499,Crew Tee,Black,M,Excess,21,15,19,17,21,17,20,19
+CRE-BLA-M,Bengaluru, 63 ,0,3.3,7,2499,Crew Tee,Black,M,OK,23,24,19,19,20,27,29,28
+CRE-BLA-M,Hyderabad,83,0,3.7,7,"2,499.00",Crew Tee,Black,M,Excess,26,25,27,20,29,30,22,25
+CRE-BLA-M,Chennai,38,0,2.7,7,N/A,Crew Tee,Black,M,Excess,22,22,23,23,20,16,20,17
+CRE-BLA-M,Kolkata,25,11,2.0,5,"2,499.00",Crew Tee,Black,M,Excess,13,14,12,12,12,16,13,11
+CRE-BLA-M,Pune,23,0,5.9,5,2499,Crew Tee,Black,M,OK,43,42,39,52,44,45,47,51
+CRE-BLA-M,Ahmedabad,13,3,1.1,5,2499,Crew Tee,Black,M,OK,6,7,7,7,8,7,8,9
+CRE-BLA-M,Jaipur,37,0,4.0,5,2499,Crew Tee,Black,M,,26,35,33,29,29,27,28,25
+CRE-BLA-M,Lucknow,61,0,3.8,9,"₹2,499",Crew Tee,Black,M,Excess,29,24,20,23,21,22,30,25
+CRE-BLA-M,Surat,45,-14,4.6,5,2499,Crew Tee,Black,M,Reorder,36,28,36,25,26,37,39,26
+CRE-BLA-M,Indore,3,0,3.8,,"₹2,499",Crew Tee,Black,M,Reorder,27,22,26,29,26,23,28,26
+CRE-BLA-M,Nagpur,32,0,5.7,7,2499,Crew Tee,Black,M,Reorder,37,35,44,41,42,43,45,34
+CRE-BLA-M,Kochi, 69 ,0,3.3,7,"₹2,499",Crew Tee,Black,M,Excess,18,18,20,21,26,28,19,20
+CRE-BLA-M,Chandigarh,20,0,3.2,9 days,"₹2,499",Crew Tee,Black,M,Excess,18,26,24,25,19,22,20,26
+CRE-BLA-M,Bhopal,11,0,1.3,9,"Rs. 2,499",Crew Tee,Black,M,OK,7,11,7,7,9,9,10,8
+CRE-BLA-M,Patna,19,0,,7,2499,Crew Tee,Black,M,Excess,6,8,5,7,6,8,6,6
+CRE-BLA-M,Vadodara,40,0,2.9,9,2499,Crew Tee,Black,M,Reorder,15,22,21,23,23,19,19,17
+CRE-BLA-M,Ludhiana,53,0,1.5,12,"₹2,499",Crew Tee,Black,M,Excess,9,9,8,12,10,11,9,11
+CRE-BLA-M,Agra,(7),0,0.9,5,2499,Crew Tee,Black,M,,5,7,6,7,6,6,8,7
+CRE-BLA-M,Nashik,38,21,3.2,5,"Rs. 2,499",Crew Tee,Black,M,OK,17,21,18,22,23,17,21,17
+CRE-BLA-M,Meerut,104,0,2.8,12,"Rs. 2,499",Crew Tee,Black,M,OK,16,17,19,18,24,15,18,16
+CRE-BLA-M,Rajkot,89,0,4.1,7,2499,Crew Tee,Black,M,Reorder,22,23,24,25,25,32,30,25
+CRE-BLA-M,Varanasi,38,0,5.4,12,2499,Crew Tee,Black,M,Reorder,39,44,38,36,46,41,43,30
+CRE-BLA-M,Varanasi,38,0,5.4,12,2499,Crew Tee,Black,M,Reorder,39,44,38,36,46,41,43,30
+CRE-BLA-L,Mumbai,60,22,2.7,7,1999,Crew Tee,Black,L,,22,15,23,23,22,23,18,17
+,Delhi,37,0,3.8,7,1999,Crew Tee,Black,L,Reorder,27,28,33,23,27,22,30,20
+CRE-BLA-L,Bengaluru,29,0,5.0,5,1999,Crew Tee,Black,L,,28,39,36,35,27,30,30,38
+CRE-BLA-L,Hyderabad,34,0,1.6,12,"Rs. 1,999",Crew Tee,Black,L,OK,12,14,12,9,9,9,12,12
+CRE-BLA-L,Chennai,60,22,4.1,5,"1,999.00",Crew Tee,Black,L,Excess,22,36,33,24,30,26,27,29
+CRE-BLA-L,Kolkata,129,0,5.7,12,1999,Crew Tee,Black,L,OK,36,49,41,44,37,46,32,33
+CRE-BLA-L,Pune,5,6,1.2,7,"₹1,999",Crew Tee,Black,L,Reorder,17,17,20,17,25,20,21,23
+CRE-BLA-L,Ahmedabad,98,0,5.0,12,1999,Crew Tee,Black,L,,32,40,31,43,36,31,30,32
+CRE-BLA-L,Jaipur,9,0,1.1,12,1999,Crew Tee,Black,L,Reorder,6,9,9,8,7,8,6,9
+CRE-BLA-L,Lucknow,38,0,3.6,5,"1,999.00",Crew Tee,Black,L,Reorder,24,23,20,30,22,30,25,28
+CRE-BLA-L,Surat,52,0,5.5,5,"₹1,999",Crew Tee,Black,L,OK,45,34,46,34,40,45,32,39
+CRE-BLA-L,Indore,22,0,3.0,12,1999,Crew Tee,Black,L,,23,20,22,24,16,18,21,17
+CRE-BLA-L,Nagpur,8,0,1.2,12,1999,Crew Tee,Black,L,,7,10,9,10,8,25,7,8
+CRE-BLA-L,Kochi,166,47,4.6,12,"₹1,999",Crew Tee,Black,L,,39,29,33,31,25,39,29,34
+CRE-BLA-L,Chandigarh,103,0,4.5,9,1999,Crew Tee,Black,L,Reorder,27,37,39,31,25,38,32,34
+CRE-BLA-L,Bhopal,140,0,5.3,9,1999,Crew Tee,Black,L,Reorder,7,7,7,81,7,66,7,14
+CRE-BLA-L,Patna,24,10,4.5,5,"Rs. 1,999",Crew Tee,Black,L,,33,24,24,38,28,31,38,39
+CRE-BLA-L,Vadodara,37,0,5.3,7,1999,Crew Tee,Black,L,OK,34,37,31,44,46,32,40,31
+CRE-BLA-L,Ludhiana,91,0,4.1,9,1999,Crew Tee,Black,L,Reorder,23,32,35,28,23,25,26,32
+CRE-BLA-L,Agra,23,0,2.0,7,1999,Crew Tee,Black,L,OK,17,15,12,13,17,15,12,15
+CRE-BLA-L,Nashik, 22 ,0,3.0,5,1999,Crew Tee,Black,L,OK,21,20,22,17,26,18,18,23
+CRE-BLA-L,Meerut,35,4,1.5,7,"₹1,999",Crew Tee,Black,L,Excess,13,8,8,12,13,10,10,8
+CRE-BLA-L,Rajkot,46,0,3.3,7,"₹1,999",Crew Tee,Black,L,,22,26,26,26,20,23,20,24
+CRE-BLA-L,Varanasi,26,14,1.9,7,"₹1,999",Crew Tee,Black,L,Reorder,10,13,13,13,12,15,10,16
+CRE-BLA-XL,Mumbai,20,0,3.9,5,1999,Crew Tee,Black,XL,,31,31,27,29,27,26,24,27
+CRE-BLA-XL,Delhi,15,0,0.8,12,1999,Crew Tee,Black,XL,OK,6,5,6,6,7,4,5,6
+CRE-BLA-XL,Bengaluru,38,0,2.7,9,1999,Crew Tee,Black,XL,Excess,23,20,17,15,22,18,15,16
+CRE-BLA-XL,Hyderabad,2,0,2.4,7,1999,Crew Tee,Black,XL,OK,20,20,20,14,20,20,14,16
+CRE-BLA-XL,Chennai,12,0,1.7,9,"Rs. 1,999",Crew Tee,Black,XL,OK,12,13,12,12,13,10,12,12
+CRE-BLA-XL,Kolkata,32,0,2.8,5,"1,999.00",Crew Tee,Black,XL,Excess,22,20,20,21,17,16,15,22
+CRE-BLA-XL,Pune,22.5,0,1.3,7,1999,Crew Tee,Black,XL,,9,11,9,8,11,10,8,10
+CRE-BLA-XL,Ahmedabad,8,0,0.7,7,"Rs. 1,999",Crew Tee,Black,XL,Excess,5,4,5,4,5,5,4,4
+CRE-BLA-XL,Jaipur,56,0,3.4,12,"₹1,999",Crew Tee,Black,XL,Excess,22,20,18,18,25,25,27,29
+CRE-BLA-XL,Lucknow,64,0,4.1,5,1999,Crew Tee,Black,XL,Excess,34,25,31,23,28,27,22,27
+CRE-BLA-XL,Surat,14,0,2.1,9,"₹1,999",Crew Tee,Black,XL,Excess,16,13,12,14,14,12,15,16
+CRE-BLA-XL,Indore,67,0,4.4,5,"₹1,999",Crew Tee,Black,XL,Excess,29,36,28,34,37,24,24,28
+CRE-BLA-XL,Nagpur,89,41,3.6,9,1999,Crew Tee,Black,XL,OK,19,28,22,20,20,26,27,20
+CRE-BLA-XL,Kochi,79,0,5.1,12,1999,Crew Tee,Black,XL,OK,32,36,35,27,38,32,31,31
+CRE-BLA-XL,Chandigarh,0,0,5.6,12,1999,Crew Tee,Black,XL,Reorder,46,48,36,36,47,36,0,0
+CRE-BLA-XL,Bhopal,98,0,4.3,7,N/A,Crew Tee,Black,XL,Reorder,35,27,29,28,33,30,32,28
+CRE-BLA-XL,Patna,114,0,5.5,7,"Rs. 1,999",Crew Tee,Black,XL,,45,39,42,30,41,37,38,36
+CRE-BLA-XL,Vadodara,34,0,3.3,12,"Rs. 1,999",Crew Tee,Black,XL,Excess,21,26,27,27,24,22,25,25
+CRE-BLA-XL,Ludhiana,23,0,4.9,7,"₹1,999",Crew Tee,Black,XL,,26,36,42,42,28,38,33,37
+CRE-BLA-XL,Agra,3,0,2.6,7,"₹1,999",Crew Tee,Black,XL,OK,42,46,52,43,55,53,54,38
+CRE-BLA-XL,Nashik,15,22,2.2,9,"Rs. 1,999",Crew Tee,Black,XL,,17,16,18,13,13,12,19,13
+CRE-BLA-XL,Meerut,22,0,2.9,7,"Rs. 1,999",Crew Tee,Black,XL,OK,18,16,17,21,21,17,15,23
+CRE-BLA-XL,Rajkot,7,0,0.5,9,"Rs. 1,999",Crew Tee,Black,XL,Reorder,3,3,4,4,3,4,4,3
+CRE-BLA-XL,Varanasi,134,0,5.7,7,"₹1,999",Crew Tee,Black,XL,Reorder,33,32,31,37,45,36,40,30
+CRE-WHI-S,Mumbai,0,0,0.9,9,2499,Crew Tee,White,S,,6,7,7,7,8,5,8,6
+CRE-WHI-S,Delhi,0,0,1.9,5,"Rs. 2,499",Crew Tee,White,S,OK,14,15,12,14,12,12,16,12
+CRE-WHI-S,Bengaluru,35,0,2.0,7,2499,Crew Tee,White,S,Excess,12,11,12,13,14,11,14,13
+CRE-WHI-S,Hyderabad,2,0,5.7,7,"₹2,499",Crew Tee,White,S,,50,39,49,34,38,44,33,35
+CRE-WHI-S,Chennai,153,0,5.7,9,2499,Crew Tee,White,S,OK,37,43,34,42,48,47,42,40
+CRE-WHI-S,Kolkata,21,12,1.2,12,"2,499.00",Crew Tee,White,S,,6,10,9,8,7,19,7,8
+CRE-WHI-S,Pune,51,14,2.3,9,2499,Crew Tee,White,S,OK,13,20,16,14,19,17,20,19
+CRE-WHI-S,Ahmedabad,6,0,3.3,9,2499,Crew Tee,White,S,,23,24,27,20,21,25,18,24
+CRE-WHI-S,Jaipur,72,0,5.3,5,"₹2,499",Crew Tee,White,S,,35,30,29,34,44,43,30,31
+CRE-WHI-S,Lucknow,25,-7,0.7,12,"Rs. 2,499",Crew Tee,White,S,Reorder,5,6,5,6,5,6,6,5
+CRE-WHI-S,Surat, 78 ,17,4.3,7,"₹2,499",Crew Tee,White,S,Excess,12,12,12,66,6,6,66,12
+CRE-WHI-S,Indore,16,33,4.7,7,"₹2,499",Crew Tee,White,S,OK,27,27,26,33,32,33,27,27
+CRE-WHI-S,Nagpur,60,22,5.3,,2499,Crew Tee,White,S,Reorder,36,29,36,33,36,46,33,41
+CRE-WHI-S,Kochi,2,0,0.6,9,"₹2,499",Crew Tee,White,S,OK,3,5,5,3,5,4,4,5
+CRE-WHI-S,Chandigarh,78,0,2.6,9,"₹2,499",Crew Tee,White,S,,14,15,18,18,20,14,16,14
+CRE-WHI-S,Bhopal,44,0,2.9,7,"2,499.00",Crew Tee,White,S,OK,19,22,17,25,17,19,17,19
+CRE-WHI-S,Patna,10,6,0.5,9,"2,499.00",Crew Tee,White,S,OK,3,4,4,4,3,3,4,4
+CRE-WHI-S,Vadodara,24,0,4.8,5,"₹2,499",Crew Tee,White,S,,36,34,30,31,29,35,33,42
+CRE-WHI-S,Ludhiana,10,0,1.4,5,"2,499.00",Crew Tee,White,S,Reorder,8,10,8,10,12,11,8,11
+CRE-WHI-S,Agra,16,0,1.3,5,2499,Crew Tee,White,S,Reorder,9,9,11,9,10,10,9,8
+CRE-WHI-S,Nashik,21,7,1.9,5,2499,Crew Tee,White,S,OK,11,17,16,11,14,12,14,11
+CRE-WHI-S,Meerut,45,0,2.9,12 days,"₹2,499",Crew Tee,White,S,Excess,24,16,21,21,19,17,16,19
+CRE-WHI-S,Rajkot,30,0,2.5,7,2499,Crew Tee,White,S,OK,14,19,16,15,22,19,20,15
+CRE-WHI-S,Varanasi, 10 ,0,2.2,12,"₹2,499",Crew Tee,White,S,OK,13,14,18,15,18,15,14,17
+CRE-WHI-M,Mumbai,53,0,2.7,7,"₹2,499",Crew Tee,White,M,OK,17,17,24,19,18,15,15,17
+CRE-WHI-M,Delhi,53,11,3.9,7,2499,Crew Tee,White,M,OK,33,21,31,26,31,26,27,26
+CRE-WHI-M,Bengaluru,41,0,2.9,5,"2,499.00",Crew Tee,White,M,Reorder,16,16,18,25,21,25,17,19
+CRE-WHI-M,Hyderabad, 13 ,17,,5,"Rs. 2,499",Crew Tee,White,M,Reorder,39,43,36,39,34,41,29,40
+CRE-WHI-M,Chennai,29,0,4.8,9,"Rs. 2,499",Crew Tee,White,M,,39,37,33,35,33,38,28,37
+CRE-WHI-M,Kolkata,21,18,2.3,12,"₹2,499",Crew Tee,White,M,,19,15,18,16,17,17,20,19
+CRE-WHI-M,Pune,10,0,2.6,5,"2,499.00",Crew Tee,White,M,Excess,15,23,17,15,18,18,18,22
+CRE-WHI-M,Ahmedabad,20,0,4.9,5,2499,Crew Tee,White,M,Excess,32,29,29,29,43,32,31,28
+CRE-WHI-M,Jaipur,12,0,3.8,9,"₹2,499",Crew Tee,White,M,,60,58,54,66,59,59,59,67
+CRE-WHI-M,Lucknow,20,0,1.4,7,2499,Crew Tee,White,M,,12,11,9,8,12,9,11,8
+CRE-WHI-M,Surat,95,0,4.3,9,"Rs. 2,499",Crew Tee,White,M,OK,26,37,24,37,32,24,36,24
+CRE-WHI-M,Indore,15.5,0,1.6,9,2499,Crew Tee,White,M,,9,11,9,13,14,14,14,11
+CRE-WHI-M,Nagpur,(3),26,3.4,7,"₹2,499",Crew Tee,White,M,Excess,19,24,24,29,25,19,21,22
+CRE-WHI-M,Kochi,116,0,5.7,7,2499,Crew Tee,White,M,OK,50,41,48,36,33,45,33,48
+CRE-WHI-M,Chandigarh,32,0,1.1,9,"₹2,499",Crew Tee,White,M,,8,9,9,8,6,7,9,7
+CRE-WHI-M,Bhopal, 72 ,37,5.1,12,"₹2,499",Crew Tee,White,M,Reorder,37,36,33,39,35,31,43,30
+CRE-WHI-M,Patna,33,0,1.7,12,2499,Crew Tee,White,M,Reorder,13,12,12,12,9,11,9,12
+CRE-WHI-M,Vadodara,53,0,4.2,7,"₹2,499",Crew Tee,White,M,Reorder,30,24,32,23,23,34,37,28
+CRE-WHI-M,Ludhiana,21,0,2.4,7,2499,Crew Tee,White,M,OK,13,17,16,13,20,14,14,20
+CRE-WHI-M,Agra,60,0,5.8,9,"Rs. 2,499",Crew Tee,White,M,OK,31,35,45,35,48,48,44,38
+CRE-WHI-M,Nashik,125,0,5.6,7,2499,Crew Tee,White,M,Excess,32,36,41,35,40,45,38,45
+CRE-WHI-M,Meerut,63,0,5.7,5,2499,Crew Tee,White,M,Excess,43,34,49,43,32,40,48,42
+CRE-WHI-M,Rajkot,72, 26 ,3.8,12,2499,Crew Tee,White,M,,25,21,22,22,30,73,20,23
+CRE-WHI-M,Varanasi,30,0,3.9,5,2499,Crew Tee,White,M,,25,32,28,30,24,31,23,22
+CRE-WHI-L,Mumbai,30,46,2.9,12,799,Crew Tee,White,L,,24,17,20,25,18,17,23,18
+CRE-WHI-L,Mumbai,30,46,2.9,12,799,Crew Tee,White,L,,24,17,20,25,18,17,23,18
+CRE-WHI-L,Delhi,12,0,1.4,9,799,Crew Tee,White,L,,10,12,10,9,7,10,9,10
+CRE-WHI-L,Bengaluru,12,0,0.8,9,N/A,Crew Tee,White,L,OK,5,4,6,5,7,6,5,7
+CRE-WHI-L,Hyderabad,45,12,2.8,5,799,Crew Tee,White,L,Reorder,20,24,21,21,19,18,21,16
+CRE-WHI-L,Chennai,121,0,4.9,9,799.00,Crew Tee,White,L,,38,26,40,42,37,34,37,37
+CRE-WHI-L,Kolkata,92,0,5.6,5,799,Crew Tee,White,L,,15,15,86,15,86,7,70,70
+,Pune,46,32,4.8,5,₹799,Crew Tee,White,L,,40,34,42,29,36,27,28,32
+CRE-WHI-L,Ahmedabad,1,0,2.0,7,799,Crew Tee,White,L,,17,13,17,15,17,16,13,12
+CRE-WHI-L,Jaipur,13,4,0.9,5,₹799,Crew Tee,White,L,,8,6,6,6,6,8,6,7
+CRE-WHI-L,Lucknow,31,0,1.7,7,Rs. 799,Crew Tee,White,L,OK,13,13,12,13,15,14,10,12
+CRE-WHI-L,Surat,14,0,3.4,7,799,Crew Tee,White,L,OK,27,25,29,21,27,18,19,19
+CRE-WHI-L,Indore,129,0,5.7,7,₹799,Crew Tee,White,L,Reorder,39,42,47,50,40,46,35,46
+CRE-WHI-L,Nagpur,7,0,4.2,12,799,Crew Tee,White,L,Excess,28,28,33,33,31,25,26,33
+CRE-WHI-L,Kochi,31,11,5.6,5,₹799,Crew Tee,White,L,OK,30,31,35,33,42,33,38,34
+CRE-WHI-L,Chandigarh,53,12,2.8,9,799,Crew Tee,White,L,,21,20,23,24,23,15,17,17
+CRE-WHI-L,Bhopal,20,0,2.9,9,Rs. 799,Crew Tee,White,L,,24,19,20,16,19,24,18,25
+CRE-WHI-L,Patna,11,4,0.8,5,799,Crew Tee,White,L,Excess,5,5,6,5,6,5,5,4
+CRE-WHI-L,Vadodara,23,24,5.0,5,799,Crew Tee,White,L,,35,35,42,43,38,28,27,34
+CRE-WHI-L,Ludhiana, 38 ,0,3.6,9,799.00,Crew Tee,White,L,,21,23,22,28,21,26,25,26
+CRE-WHI-L,Agra,76,0,4.1,7,₹799,Crew Tee,White,L,Excess,35,31,22,24,22,22,30,31
+CRE-WHI-L,Nashik,77,0,5.2,7,799,Crew Tee,White,L,Reorder,31,36,33,35,42,38,38,45
+CRE-WHI-L,Meerut,16,0,3.5,9,799,Crew Tee,White,L,Excess,51,52,64,69,60,64,57,70
+CRE-WHI-L,Rajkot,60, 17 ,5.3,7,799,Crew Tee,White,L,,29,43,38,39,30,29,34,46
+CRE-WHI-L,Varanasi,5,0,0.8,5,₹799,Crew Tee,White,L,Excess,5,6,4,6,5,4,5,4
+CRE-WHI-XL,Mumbai,0,0,2.1,5,₹799,Crew Tee,White,XL,Reorder,17,14,15,13,18,17,16,16
+CRE-WHI-XL,Delhi,41,22,2.8,12,799,Crew Tee,White,XL,OK,23,17,15,18,15,23,21,17
+CRE-WHI-XL,Bengaluru,45,21,1.6,12,₹799,Crew Tee,White,XL,Excess,12,12,13,9,9,11,10,11
+CRE-WHI-XL,Hyderabad,11,0,0.7,9,₹799,Crew Tee,White,XL,OK,6,6,5,6,5,6,6,5
+CRE-WHI-XL,Chennai,6,0,3.7,7,₹799,Crew Tee,White,XL,Reorder,25,26,24,27,28,20,22,28
+CRE-WHI-XL,Kolkata,68,0,3.8,7,₹799,Crew Tee,White,XL,OK,22,31,23,22,25,30,29,30
+CRE-WHI-XL,Pune,121,0,4.6,12,799,Crew Tee,White,XL,,29,26,24,35,38,29,38,35
+CRE-WHI-XL,Ahmedabad,43,0,4.4,7,₹799,Crew Tee,White,XL,,37,33,24,26,27,28,36,34
+CRE-WHI-XL,Jaipur,84,-4,5.6,9,₹799,Crew Tee,White,XL,OK,30,49,37,36,32,41,47,33
+CRE-WHI-XL,Lucknow,34,0,3.2,7,799,Crew Tee,White,XL,OK,17,19,22,26,24,25,25,25
+CRE-WHI-XL,Surat,6,0,2.4,5,₹799,Crew Tee,White,XL,Reorder,18,14,19,14,15,21,19,18
+CRE-WHI-XL,Indore,22,0,2.1,7,₹799,Crew Tee,White,XL,OK,12,15,14,12,15,15,14,15
+CRE-WHI-XL,Nagpur,19,0,5.9,5,799,Crew Tee,White,XL,OK,49,37,37,45,34,47,49,50
+CRE-WHI-XL,Kochi,24,0,5.5,,799,Crew Tee,White,XL,,42,47,32,36,45,44,31,48
+CRE-WHI-XL,Chandigarh,95,0,5.3,9,799,Crew Tee,White,XL,Excess,40,46,30,35,38,30,42,29
+CRE-WHI-XL,Bhopal,12,0,1.6,12,Rs. 799,Crew Tee,White,XL,OK,12,9,13,10,12,32,8,8
+CRE-WHI-XL,Patna,55.5,0,3.9,9,799,Crew Tee,White,XL,Excess,24,27,30,32,33,26,25,26
+CRE-WHI-XL,Vadodara,98,0,4.5,12,799,Crew Tee,White,XL,Excess,34,30,37,32,27,34,29,34
+CRE-WHI-XL,Ludhiana,2,0,1.0,5,799.00,Crew Tee,White,XL,OK,8,7,6,7,5,6,5,6
+CRE-WHI-XL,Agra,5,0,1.4,9,Rs. 799,Crew Tee,White,XL,,11,9,9,10,9,8,10,9
+CRE-WHI-XL,Nashik,91,23,4.8,12,799,Crew Tee,White,XL,OK,28,30,34,31,31,27,41,37
+CRE-WHI-XL,Meerut,98,28,3.0,12,799,Crew Tee,White,XL,OK,17,17,23,21,26,26,20,22
+CRE-WHI-XL,Rajkot,40,0,3.8,7,799,Crew Tee,White,XL,Reorder,30,20,22,22,22,21,32,30
+CRE-WHI-XL,Varanasi,12,0,1.7,12,Rs. 799,Crew Tee,White,XL,Reorder,10,14,10,9,13,12,14,14
+CRE-NAV-S,Mumbai,57,25,5.1,7,"₹2,499",Crew Tee,Navy,S,Reorder,78,64,78,14,7,64,7,78
+CRE-NAV-S,Delhi,38,0,5.1,9,2499,Crew Tee,Navy,S,Reorder,31,31,39,42,43,31,28,36
+CRE-NAV-S,Bengaluru,28,0,1.4,12,"₹2,499",Crew Tee,Navy,S,,8,10,9,8,10,10,12,11
+CRE-NAV-S,Hyderabad,75,0,2.7,9,"Rs. 2,499",Crew Tee,Navy,S,Excess,18,22,22,21,22,18,20,17
+CRE-NAV-S,Chennai,78,17,3.6,7 days,2499,Crew Tee,Navy,S,Reorder,26,27,26,29,25,20,20,28
+CRE-NAV-S,Kolkata, 161 ,41,4.9,12,2499,Crew Tee,Navy,S,,31,29,28,27,39,36,26,33
+CRE-NAV-S,Pune,20,0,2.3,5,"Rs. 2,499",Crew Tee,Navy,S,OK,20,19,17,13,19,13,17,13
+CRE-NAV-S,Ahmedabad,10,0,1.5,7,2499,Crew Tee,Navy,S,,12,11,10,12,11,9,11,10
+CRE-NAV-S,Jaipur,17,0,1.0,7,"₹2,499",Crew Tee,Navy,S,OK,6,7,7,7,6,6,7,7
+CRE-NAV-S,Lucknow,4,0,2.6,7,"2,499.00",Crew Tee,Navy,S,,15,18,16,20,15,15,15,18
+CRE-NAV-S,Surat,9,0,0.5,7,2499,Crew Tee,Navy,S,OK,8,10,10,9,9,9,8,8
+CRE-NAV-S,Indore,189,0,5.5,12,2499,Crew Tee,Navy,S,Excess,43,44,37,38,38,36,38,42
+CRE-NAV-S,Nagpur,21,0,5.8,7,2499,Crew Tee,Navy,S,OK,49,44,35,38,32,35,33,46
+CRE-NAV-S,Kochi, 50 ,0,3.7,12,N/A,Crew Tee,Navy,S,Excess,22,29,30,21,22,24,29,29
+CRE-NAV-S,Chandigarh,10,0,,12,"₹2,499",Crew Tee,Navy,S,,4,5,5,4,6,4,6,4
+CRE-NAV-S,Bhopal,6,0,2.2,12,2499,Crew Tee,Navy,S,,18,15,12,14,14,15,19,16
+CRE-NAV-S,Patna,8,6,0.9,7,"₹2,499",Crew Tee,Navy,S,,6,6,6,7,6,5,7,6
+CRE-NAV-S,Vadodara,22,0,4.9,5,"₹2,499",Crew Tee,Navy,S,,30,40,36,38,26,26,35,29
+CRE-NAV-S,Ludhiana,4,0,1.1,12,2499,Crew Tee,Navy,S,OK,9,9,9,8,8,8,8,8
+CRE-NAV-S,Agra,51,0,5.1,5,"₹2,499",Crew Tee,Navy,S,Reorder,37,29,40,36,40,32,43,27
+CRE-NAV-S,Nashik,193,0,5.4,12,"Rs. 2,499",Crew Tee,Navy,S,,37,46,39,42,30,37,33,32
+CRE-NAV-S,Meerut,76,0,5.6,5,"Rs. 2,499",Crew Tee,Navy,S,Reorder,39,40,32,36,30,44,46,40
+CRE-NAV-S,Rajkot,39,0,1.6,12,"₹2,499",Crew Tee,Navy,S,Excess,9,10,12,13,9,10,10,13
+CRE-NAV-S,Varanasi,138,57,3.5,12,2499,Crew Tee,Navy,S,Reorder,28,30,26,27,27,20,22,30
+CRE-NAV-M,Mumbai,27,11,1.7,5,1999,Crew Tee,Navy,M,,9,13,14,14,9,9,13,12
+CRE-NAV-M,Delhi, 82 ,0,5.2,7,1999,Crew Tee,Navy,M,OK,41,34,40,35,44,30,35,42
+CRE-NAV-M,Bengaluru,52,0,1.4,12,"Rs. 1,999",Crew Tee,Navy,M,Excess,11,12,11,7,12,10,11,10
+CRE-NAV-M,Hyderabad,5,0,1.0,5,1999,Crew Tee,Navy,M,Excess,8,9,8,9,7,5,7,7
+CRE-NAV-M,Chennai,27,9,2.5,5,1999,Crew Tee,Navy,M,,20,22,17,21,17,13,16,16
+CRE-NAV-M,Kolkata,-2,0,2.2,5,1999,Crew Tee,Navy,M,Excess,15,18,14,19,13,16,13,12
+CRE-NAV-M,Pune,29,0,2.8,9,"Rs. 1,999",Crew Tee,Navy,M,,19,23,24,22,23,24,16,18
+CRE-NAV-M,Ahmedabad,4,0,0.8,7,"₹1,999",Crew Tee,Navy,M,OK,5,5,5,5,7,4,5,7
+CRE-NAV-M,Jaipur,7,11,1.9,7,1999,Crew Tee,Navy,M,OK,17,16,16,12,15,35,14,10
+CRE-NAV-M,Lucknow,17,0,3.3,7,"₹1,999",Crew Tee,Navy,M,OK,27,26,26,27,23,23,20,25
+CRE-NAV-M,Surat,31,16,5.6,5,1999,Crew Tee,Navy,M,Reorder,38,40,35,35,47,36,45,37
+CRE-NAV-M,Indore,91,32,5.6,5,"₹1,999",Crew Tee,Navy,M,,41,42,48,35,34,34,32,30
+CRE-NAV-M,Nagpur,55,0,3.7,12,"₹1,999",Crew Tee,Navy,M,Reorder,25,25,24,27,26,23,21,24
+CRE-NAV-M,Kochi,21,0,1.8,7,"1,999.00",Crew Tee,Navy,M,OK,10,12,15,10,11,10,15,12
+CRE-NAV-M,Chandigarh,18,0,5.3,5,"1,999.00",Crew Tee,Navy,M,OK,29,36,43,33,43,32,35,43
+CRE-NAV-M,Bhopal,76,0,3.5,12,"₹1,999",Crew Tee,Navy,M,OK,21,24,22,25,19,27,23,19
+CRE-NAV-M,Patna,43,0,1.2,12,1999,Crew Tee,Navy,M,OK,10,7,6,7,7,10,9,8
+CRE-NAV-M,Vadodara,13,0,5.8,5,1999,Crew Tee,Navy,M,,47,33,37,33,40,31,48,44
+CRE-NAV-M,Ludhiana,107,0,5.4,7,"₹1,999",Crew Tee,Navy,M,Reorder,37,37,37,31,34,43,47,34
+CRE-NAV-M,Agra,50,0,5.4,9,"1,999.00",Crew Tee,Navy,M,,15,68,7,68,68,83,7,68
+CRE-NAV-M,Nashik,53,8,3.3,5,1999,Crew Tee,Navy,M,Reorder,19,23,25,19,19,18,18,22
+CRE-NAV-M,Meerut,1.5,0,5.0,5,1999,Crew Tee,Navy,M,OK,37,31,27,36,33,43,30,30
+CRE-NAV-M,Rajkot,38,0,2.8,5,"Rs. 1,999",Crew Tee,Navy,M,Reorder,18,17,17,24,20,22,20,17
+CRE-NAV-M,Varanasi,40,0,1.9,7,1999,Crew Tee,Navy,M,,30,27,26,35,29,27,38,27
+CRE-NAV-L,Mumbai,54,0,2.0,9,2499,Crew Tee,Navy,L,Reorder,15,15,13,13,14,12,15,17
+CRE-NAV-L,Delhi,36,0,4.2,7,2499,Crew Tee,Navy,L,Excess,30,32,30,30,26,24,29,35
+CRE-NAV-L,Delhi,36,0,4.2,7,2499,Crew Tee,Navy,L,Excess,30,32,30,30,26,24,29,35
+CRE-NAV-L,Bengaluru,12,0,0.6,12,2499,Crew Tee,Navy,L,,5,5,5,3,5,4,5,4
+CRE-NAV-L,Hyderabad,21,0,3.1,7,"₹2,499",Crew Tee,Navy,L,Reorder,26,20,19,24,19,20,25,22
+CRE-NAV-L,Chennai,58,0,2.5,7,"Rs. 2,499",Crew Tee,Navy,L,Excess,14,13,18,19,19,20,17,20
+CRE-NAV-L,Kolkata,11,0,4.2,9,2499,Crew Tee,Navy,L,Reorder,29,24,30,27,24,35,25,33
+CRE-NAV-L,Pune, 85 ,12,3.6,7,2499,Crew Tee,Navy,L,,25,27,25,21,23,24,30,20
+CRE-NAV-L,Ahmedabad,67,-9,5.0,5,2499,Crew Tee,Navy,L,Reorder,32,35,37,42,30,32,35,34
+CRE-NAV-L,Jaipur,41,44,2.9,12,2499,Crew Tee,Navy,L,Excess,23,18,25,21,19,18,22,20
+CRE-NAV-L,Lucknow,44,47,3.8,9,"2,499.00",Crew Tee,Navy,L,Excess,27,27,33,30,21,33,20,21
+CRE-NAV-L,Surat, 127 ,20,5.8,7,"₹2,499",Crew Tee,Navy,L,Reorder,32,37,40,50,44,48,42,49
+,Indore,45,14,3.1,9,"2,499.00",Crew Tee,Navy,L,Reorder,25,19,23,17,19,18,22,24
+CRE-NAV-L,Nagpur,13,0,0.6,9,"2,499.00",Crew Tee,Navy,L,OK,4,4,4,5,5,5,3,3
+CRE-NAV-L,Kochi,38,0,1.6,9,2499,Crew Tee,Navy,L,OK,14,12,11,11,12,13,13,10
+CRE-NAV-L,Chandigarh,44,0,5.2,,2499,Crew Tee,Navy,L,Excess,35,42,44,36,41,36,35,30
+CRE-NAV-L,Bhopal,9,47,4.3,9,2499,Crew Tee,Navy,L,,27,35,29,31,36,23,27,30
+CRE-NAV-L,Patna,57,15,3.4,9,"Rs. 2,499",Crew Tee,Navy,L,Reorder,25,19,22,25,29,23,28,27
+CRE-NAV-L,Vadodara,61, 20 ,5.5,9,2499,Crew Tee,Navy,L,Reorder,30,33,44,44,33,39,44,40
+CRE-NAV-L,Ludhiana,11,14,1.7,7,2499,Crew Tee,Navy,L,Reorder,13,11,14,12,14,15,14,14
+CRE-NAV-L,Agra,41,0,3.7,5,2499,Crew Tee,Navy,L,,25,23,23,28,31,24,23,25
+CRE-NAV-L,Nashik,48,22,3.7,5,2499,Crew Tee,Navy,L,,23,30,25,27,26,24,20,23
+CRE-NAV-L,Meerut,6,0,3.5,7,"₹2,499",Crew Tee,Navy,L,Reorder,19,29,19,22,30,27,28,29
+CRE-NAV-L,Rajkot,70,0,5.5,5,"₹2,499",Crew Tee,Navy,L,OK,42,32,34,30,40,40,43,37
+CRE-NAV-L,Varanasi,55,0,5.7,5,2499,Crew Tee,Navy,L,Reorder,31,47,37,40,50,37,35,47
+CRE-NAV-XL,Mumbai, 40 ,40,5.2,9,N/A,Crew Tee,Navy,XL,Excess,41,31,34,39,36,40,42,30
+CRE-NAV-XL,Delhi,85,0,4.1,9,Rs. 799,Crew Tee,Navy,XL,Reorder,27,23,23,26,27,80,26,25
+CRE-NAV-XL,Bengaluru,13,0,2.7,5,Rs. 799,Crew Tee,Navy,XL,OK,23,22,21,22,23,23,18,20
+CRE-NAV-XL,Hyderabad,8,4,0.7,9,799.00,Crew Tee,Navy,XL,,6,5,4,5,4,5,5,6
+CRE-NAV-XL,Chennai,46,0,1.8,9,799.00,Crew Tee,Navy,XL,OK,14,15,10,12,14,13,14,14
+CRE-NAV-XL,Kolkata,34,17,3.9,7,₹799,Crew Tee,Navy,XL,Excess,28,31,23,22,30,22,22,27
+CRE-NAV-XL,Pune,33,0,2.9,9,799,Crew Tee,Navy,XL,Reorder,16,20,21,17,16,25,25,25
+CRE-NAV-XL,Ahmedabad,51,18,4.5,7,₹799,Crew Tee,Navy,XL,,28,25,36,31,28,36,32,28
+CRE-NAV-XL,Jaipur,5,0,3.1,9,799,Crew Tee,Navy,XL,Reorder,22,24,17,21,23,21,23,20
+CRE-NAV-XL,Lucknow,87,0,5.0,12,799,Crew Tee,Navy,XL,,37,43,43,40,32,35,35,39
+CRE-NAV-XL,Surat,2,0,2.7,12,799,Crew Tee,Navy,XL,Excess,16,15,20,18,23,15,22,22
+CRE-NAV-XL,Indore,120, 28 ,3.3,12 days,799,Crew Tee,Navy,XL,Excess,27,25,19,28,19,23,23,19
+CRE-NAV-XL,Nagpur,24,0,3.2,7,₹799,Crew Tee,Navy,XL,Excess,69,54,55,68,60,55,63,63
+CRE-NAV-XL,Kochi,129,0,5.8,9,799,Crew Tee,Navy,XL,OK,34,47,43,43,32,38,45,33
+CRE-NAV-XL,Chandigarh,37,0,2.6,5,799,Crew Tee,Navy,XL,Reorder,32,40,32,32,3,40,7,3
+CRE-NAV-XL,Bhopal,47,0,2.6,7,₹799,Crew Tee,Navy,XL,,16,15,21,19,20,19,21,18
+CRE-NAV-XL,Patna,99,0,5.9,12,799,Crew Tee,Navy,XL,Reorder,37,49,49,38,32,43,44,51
+CRE-NAV-XL,Vadodara,54,0,1.4,12,₹799,Crew Tee,Navy,XL,,8,12,12,11,12,8,11,11
+CRE-NAV-XL,Ludhiana,20,0,0.6,12,Rs. 799,Crew Tee,Navy,XL,Reorder,4,5,4,4,5,4,4,3
+CRE-NAV-XL,Agra,23,7,1.7,7,₹799,Crew Tee,Navy,XL,Excess,13,10,13,10,12,13,14,12
+CRE-NAV-XL,Nashik,0,0,4.9,9,₹799,Crew Tee,Navy,XL,Excess,27,37,32,42,40,35,0,0
+CRE-NAV-XL,Meerut,10,0,2.6,5,₹799,Crew Tee,Navy,XL,OK,23,17,21,18,22,14,18,20
+CRE-NAV-XL,Rajkot,16,0,5.7,9,799.00,Crew Tee,Navy,XL,,33,42,45,37,36,32,31,34
+CRE-NAV-XL,Varanasi,51,24,3.6,7,799,Crew Tee,Navy,XL,,20,28,20,20,31,22,26,26
+POL-BLA-S,Mumbai,17,0,1.3,7,499,Polo,Black,S,Excess,7,9,8,11,10,8,9,7
+POL-BLA-S,Delhi,8,0,,7,499,Polo,Black,S,,6,8,6,7,5,6,8,5
+POL-BLA-S,Bengaluru,65.5,0,1.7,12,₹499,Polo,Black,S,Reorder,10,12,13,10,10,13,10,9
+POL-BLA-S,Hyderabad,99,0,5.3,7,₹499,Polo,Black,S,OK,32,29,29,39,29,44,46,31
+POL-BLA-S,Chennai,41,0,2.8,12,499.00,Polo,Black,S,Excess,15,21,18,22,19,17,24,19
+POL-BLA-S,Kolkata,20,0,4.8,9,Rs. 499,Polo,Black,S,OK,30,26,33,39,26,34,27,31
+POL-BLA-S,Pune,36,20,3.1,5,Rs. 499,Polo,Black,S,,18,22,20,24,23,16,19,23
+POL-BLA-S,Ahmedabad,45,51,3.2,12,499,Polo,Black,S,,24,24,22,22,28,27,22,26
+POL-BLA-S,Jaipur,82,10,4.9,5,₹499,Polo,Black,S,Excess,34,41,38,36,41,42,27,42
+POL-BLA-S,Lucknow,15,0,1.2,5,₹499,Polo,Black,S,Reorder,7,8,10,8,7,8,10,8
+POL-BLA-S,Surat,23,8,2.1,9,₹499,Polo,Black,S,Excess,15,18,14,15,17,11,17,17
+POL-BLA-S,Indore,11,0,1.3,5,499,Polo,Black,S,OK,7,8,8,9,10,7,8,10
+POL-BLA-S,Nagpur,7,0,0.8,7,₹499,Polo,Black,S,Reorder,4,6,6,7,6,6,5,6
+POL-BLA-S,Kochi, 31 ,0,5.8,7,499,Polo,Black,S,OK,44,39,42,33,35,40,33,45
+POL-BLA-S,Chandigarh, 31 ,0,6.0,12,499,Polo,Black,S,OK,43,41,49,40,47,42,37,48
+POL-BLA-S,Bhopal,14,10,1.7,7,₹499,Polo,Black,S,OK,14,14,12,10,13,10,10,9
+POL-BLA-S,Patna,2,0,1.6,12,499,Polo,Black,S,OK,9,14,8,9,8,12,11,9
+POL-BLA-S,Vadodara, 9 ,0,0.6,5,Rs. 499,Polo,Black,S,Reorder,3,5,4,4,4,5,3,4
+POL-BLA-S,Ludhiana,77,0,4.6,5,499,Polo,Black,S,Reorder,33,36,33,31,26,92,27,34
+POL-BLA-S,Agra,7,0,0.7,5,499,Polo,Black,S,OK,5,4,5,6,5,4,6,5
+POL-BLA-S,Nashik,22,0,3.4,5,499,Polo,Black,S,Excess,27,27,25,26,23,27,19,29
+POL-BLA-S,Meerut,94,0,5.4,12,499,Polo,Black,S,Reorder,35,43,37,45,41,38,43,33
+POL-BLA-S,Rajkot,-7,0,2.5,7,Rs. 499,Polo,Black,S,OK,16,16,15,20,22,14,16,14
+POL-BLA-S,Varanasi,117,35,5.4,9,₹499,Polo,Black,S,,37,36,43,34,30,38,31,29
+POL-BLA-M,Mumbai,87,41,4.3,7,"Rs. 1,999",Polo,Black,M,OK,30,24,36,28,26,24,31,28
+POL-BLA-M,Delhi,149,0,4.0,12,1999,Polo,Black,M,Excess,70,70,67,84,54,61,80,64
+POL-BLA-M,Bengaluru,15,0,1.0,9,1999,Polo,Black,M,,6,8,6,7,6,6,7,7
+POL-BLA-M,Hyderabad,90,0,4.1,12,1999,Polo,Black,M,Excess,36,36,23,35,31,28,26,30
+POL-BLA-M,Chennai,64,0,3.9,5,"Rs. 1,999",Polo,Black,M,Reorder,22,25,24,29,29,29,33,20
+POL-BLA-M,Kolkata,29,31,3.4,7,1999,Polo,Black,M,,20,28,21,22,29,18,26,18
+POL-BLA-M,Pune,46,-11,5.7,5,1999,Polo,Black,M,OK,32,32,40,50,46,43,45,34
+POL-BLA-M,Ahmedabad,8,0,0.6,5,"1,999.00",Polo,Black,M,Reorder,4,3,3,5,5,5,3,4
+POL-BLA-M,Jaipur,6,0,0.6,7,1999,Polo,Black,M,,4,3,5,4,5,3,5,5
+POL-BLA-M,Lucknow,13,0,3.6,5,1999,Polo,Black,M,OK,55,5,45,5,45,5,5,5
+POL-BLA-M,Surat,14,0,2.3,9,1999,Polo,Black,M,,19,13,14,15,18,18,20,19
+POL-BLA-M,Indore,66,0,4.6,5,N/A,Polo,Black,M,Reorder,36,28,27,37,30,36,40,30
+POL-BLA-M,Nagpur,36,0,3.1,7,1999,Polo,Black,M,OK,22,26,21,21,19,25,20,26
+POL-BLA-M,Kochi,0,0,0.7,5,1999,Polo,Black,M,Reorder,5,4,6,5,6,4,4,4
+POL-BLA-M,Chandigarh,4,0,0.6,5,"₹1,999",Polo,Black,M,,5,4,5,5,3,4,4,4
+POL-BLA-M,Bhopal,171,0,4.3,,"₹1,999",Polo,Black,M,,25,27,37,28,36,37,33,28
+POL-BLA-M,Patna,67,0,3.3,7,"₹1,999",Polo,Black,M,,24,28,20,21,28,20,19,21
+POL-BLA-M,Vadodara,20,5,2.5,5,"₹1,999",Polo,Black,M,OK,16,19,19,21,20,21,18,15
+POL-BLA-M,Ludhiana,17,0,0.8,12,1999,Polo,Black,M,OK,7,6,6,6,5,6,5,5
+POL-BLA-M,Agra,9,0,2.0,5,1999,Polo,Black,M,OK,17,14,13,16,14,12,17,12
+POL-BLA-M,Nashik,40,0,2.8,5,"₹1,999",Polo,Black,M,Reorder,18,18,17,24,24,18,20,18
+POL-BLA-M,Meerut,69,64,4.7,12,"1,999.00",Polo,Black,M,Excess,31,30,29,32,26,37,26,33
+POL-BLA-M,Rajkot,7,0,2.8,5,"1,999.00",Polo,Black,M,OK,22,18,15,20,16,19,22,16
+POL-BLA-M,Varanasi,68,0,4.6,5,1999,Polo,Black,M,,31,29,25,37,28,40,27,32
+POL-BLA-L,Mumbai,54,35,4.4,12,1299,Polo,Black,L,Excess,27,38,28,31,30,38,25,27
+POL-BLA-L,Delhi,7, 22 ,1.4,12,1299,Polo,Black,L,OK,9,11,10,8,9,8,11,10
+POL-BLA-L,Bengaluru,205,0,5.1,12,"₹1,299",Polo,Black,L,Reorder,40,42,30,27,42,28,33,29
+POL-BLA-L,Bengaluru,205,0,5.1,12,"₹1,299",Polo,Black,L,Reorder,40,42,30,27,42,28,33,29
+POL-BLA-L,Hyderabad,19,0,4.6,12,1299,Polo,Black,L,Reorder,39,27,35,34,40,25,40,25
+POL-BLA-L,Chennai,41,0,1.2,12,"₹1,299",Polo,Black,L,OK,7,9,8,8,8,8,10,7
+POL-BLA-L,Kolkata,74,0,3.2,9,"Rs. 1,299",Polo,Black,L,,17,27,19,23,20,27,27,27
+POL-BLA-L,Pune,106,0,3.5,12,"1,299.00",Polo,Black,L,OK,27,29,22,20,25,28,22,23
+POL-BLA-L,Ahmedabad,45.5,0,5.6,5,1299,Polo,Black,L,Reorder,36,30,31,34,44,44,36,47
+POL-BLA-L,Jaipur,24,6,1.0,9,"₹1,299",Polo,Black,L,Reorder,7,9,5,6,6,6,8,8
+POL-BLA-L,Lucknow,56,0,3.8,5,1299,Polo,Black,L,Excess,23,24,30,23,30,26,30,30
+POL-BLA-L,Surat,14,0,4.7,9,1299,Polo,Black,L,Excess,25,32,27,30,39,28,32,39
+POL-BLA-L,Indore,27,0,2.9,5,"₹1,299",Polo,Black,L,Excess,24,24,23,18,22,73,19,21
+POL-BLA-L,Nagpur,43,0,2.2,9,"Rs. 1,299",Polo,Black,L,OK,19,12,12,18,17,14,16,14
+POL-BLA-L,Kochi,39,0,2.0,9,"₹1,299",Polo,Black,L,,12,11,15,17,14,11,15,14
+POL-BLA-L,Chandigarh,15,0,3.4,5,"₹1,299",Polo,Black,L,Reorder,73,64,68,66,67,49,69,57
+POL-BLA-L,Bhopal,4,0,3.6,12,"Rs. 1,299",Polo,Black,L,Excess,25,31,31,28,26,20,20,27
+,Patna,20,0,1.6,5,1299,Polo,Black,L,Reorder,13,13,13,10,13,12,12,11
+POL-BLA-L,Vadodara,18,28,2.5,12,"₹1,299",Polo,Black,L,,18,18,15,14,20,20,16,15
+POL-BLA-L,Ludhiana,10,26,3.0,7 days,"Rs. 1,299",Polo,Black,L,OK,22,19,23,20,24,19,20,17
+POL-BLA-L,Agra, 2 ,37,3.8,12,1299,Polo,Black,L,OK,26,29,21,24,22,25,30,29
+POL-BLA-L,Nashik,22,0,5.3,5,1299,Polo,Black,L,Excess,46,41,44,32,33,41,33,44
+POL-BLA-L,Meerut,43,15,2.8,7,1299,Polo,Black,L,Reorder,22,19,22,15,21,23,19,22
+POL-BLA-L,Rajkot,48,15,3.3,9,"1,299.00",Polo,Black,L,Reorder,27,17,27,21,22,25,24,21
+POL-BLA-L,Varanasi,65,0,5.4,5,"₹1,299",Polo,Black,L,OK,31,44,29,38,36,46,40,33
+POL-BLA-XL,Mumbai,12,0,1.2,12,799,Polo,Black,XL,Reorder,8,7,7,10,10,8,8,8
+POL-BLA-XL,Delhi,7,0,1.1,12,799,Polo,Black,XL,OK,8,6,7,8,9,6,9,9
+POL-BLA-XL,Bengaluru,137,0,4.8,9,799,Polo,Black,XL,OK,38,40,34,29,35,40,37,38
+POL-BLA-XL,Hyderabad,58,0,5.7,7,₹799,Polo,Black,XL,OK,43,36,40,44,49,40,43,45
+POL-BLA-XL,Chennai,56,0,3.1,12,799,Polo,Black,XL,Excess,8,47,47,39,4,4,4,8
+POL-BLA-XL,Kolkata,7,0,2.1,12,Rs. 799,Polo,Black,XL,Reorder,12,11,16,14,14,16,14,11
+POL-BLA-XL,Pune,71,0,5.6,7,₹799,Polo,Black,XL,Excess,38,45,43,30,46,30,40,33
+POL-BLA-XL,Ahmedabad,26,0,1.2,9,₹799,Polo,Black,XL,Reorder,7,7,7,8,7,10,8,8
+POL-BLA-XL,Jaipur,18,9,1.5,5,799.00,Polo,Black,XL,Reorder,10,11,12,13,13,13,12,11
+POL-BLA-XL,Lucknow,13,0,1.6,7,Rs. 799,Polo,Black,XL,Excess,10,12,12,9,13,12,10,10
+POL-BLA-XL,Surat,20,0,4.3,7,799,Polo,Black,XL,OK,25,29,24,31,25,28,37,29
+POL-BLA-XL,Indore, 16 ,0,3.8,12,₹799,Polo,Black,XL,Reorder,24,32,30,28,32,25,28,33
+POL-BLA-XL,Nagpur,52,0,,12,Rs. 799,Polo,Black,XL,OK,31,31,27,30,26,40,25,27
+POL-BLA-XL,Kochi,3, 4 ,1.5,7,₹799,Polo,Black,XL,Excess,12,12,9,13,12,8,13,8
+POL-BLA-XL,Chandigarh,40,8,2.1,7,799,Polo,Black,XL,,14,18,15,15,17,15,14,12
+POL-BLA-XL,Bhopal,30,0,1.2,12,799,Polo,Black,XL,OK,8,9,6,10,10,8,10,9
+POL-BLA-XL,Patna,12,0,4.1,7,799,Polo,Black,XL,Reorder,25,24,28,24,25,29,31,23
+POL-BLA-XL,Vadodara,8,0,0.7,7,799,Polo,Black,XL,Excess,5,4,5,4,4,4,5,5
+POL-BLA-XL,Ludhiana,74,0,4.4,5,₹799,Polo,Black,XL,OK,24,25,29,30,32,37,26,27
+POL-BLA-XL,Agra,56,0,2.4,7,799,Polo,Black,XL,,16,15,19,13,21,15,14,16
+POL-BLA-XL,Nashik,31,0,2.2,12,799.00,Polo,Black,XL,Reorder,16,14,12,17,13,17,16,12
+POL-BLA-XL,Meerut,30,0,2.1,9,Rs. 799,Polo,Black,XL,Excess,13,14,16,13,14,16,11,18
+POL-BLA-XL,Rajkot,13,0,0.7,9,N/A,Polo,Black,XL,OK,4,6,5,4,5,4,4,6
+POL-BLA-XL,Varanasi,3,0,3.1,5,Rs. 799,Polo,Black,XL,Reorder,19,16,18,20,20,19,26,27
+POL-WHI-S,Mumbai,17,0,4.6,7,499,Polo,White,S,Reorder,28,37,36,34,25,26,37,40
+POL-WHI-S,Delhi,45,0,2.5,7,499.00,Polo,White,S,Reorder,21,21,16,15,17,17,21,20
+POL-WHI-S,Bengaluru,18,0,1.6,5,499,Polo,White,S,OK,13,10,12,12,14,11,10,13
+POL-WHI-S,Hyderabad,17,0,2.0,7,499,Polo,White,S,Reorder,44,33,36,38,39,33,33,29
+POL-WHI-S,Chennai,2,0,2.3,7,499,Polo,White,S,,18,15,14,19,15,38,16,19
+POL-WHI-S,Kolkata,10,-18,3.2,7,499,Polo,White,S,,19,20,23,20,20,18,18,27
+POL-WHI-S,Pune,2,0,1.3,5,Rs. 499,Polo,White,S,Reorder,8,9,8,7,9,8,11,11
+POL-WHI-S,Ahmedabad,16,31,2.0,12,₹499,Polo,White,S,Excess,15,17,15,12,15,14,12,16
+POL-WHI-S,Jaipur,9,37,4.9,12,₹499,Polo,White,S,Excess,28,26,41,35,41,39,27,28
+POL-WHI-S,Lucknow,41,0,3.4,12,₹499,Polo,White,S,OK,27,28,19,19,22,20,27,19
+POL-WHI-S,Surat,24,0,4.9,12,499,Polo,White,S,,29,38,37,27,34,30,28,39
+POL-WHI-S,Indore,26,24,4.2,5,₹499,Polo,White,S,Excess,36,36,31,34,25,25,25,30
+POL-WHI-S,Nagpur,55.5,0,2.2,9,499,Polo,White,S,OK,17,14,15,16,18,18,18,12
+POL-WHI-S,Kochi,9,0,0.6,5,Rs. 499,Polo,White,S,,4,4,3,4,4,4,4,4
+POL-WHI-S,Chandigarh,6,0,2.0,7,₹499,Polo,White,S,Reorder,16,17,11,11,11,14,12,11
+POL-WHI-S,Bhopal,(9),0,4.1,9,499,Polo,White,S,OK,24,25,33,33,29,29,32,30
+POL-WHI-S,Patna,31,0,5.1,,499,Polo,White,S,Reorder,42,35,33,40,35,37,41,39
+POL-WHI-S,Vadodara,68,27,5.5,12,Rs. 499,Polo,White,S,OK,39,48,40,42,40,34,48,36
+POL-WHI-S,Ludhiana,31,41,2.5,12,499.00,Polo,White,S,Reorder,16,18,18,17,20,17,21,20
+POL-WHI-S,Agra,21,13,4.6,5,499,Polo,White,S,OK,33,36,33,37,27,32,34,25
+POL-WHI-S,Nashik,135,62,5.2,12,₹499,Polo,White,S,Reorder,31,36,31,33,34,39,28,37
+POL-WHI-S,Meerut,9,0,4.4,5,499.00,Polo,White,S,OK,35,30,37,29,31,27,25,32
+POL-WHI-S,Rajkot,49,0,5.6,9,₹499,Polo,White,S,OK,48,41,45,49,42,34,49,47
+POL-WHI-S,Varanasi,9,0,1.0,12,499,Polo,White,S,,2,1,12,2,12,15,1,15
+POL-WHI-M,Mumbai,13,0,0.8,7,"₹2,499",Polo,White,M,,5,5,6,7,6,6,7,6
+POL-WHI-M,Delhi, 4 ,0,1.9,5,2499,Polo,White,M,OK,14,16,15,14,12,12,11,15
+POL-WHI-M,Bengaluru,7,0,1.7,5,"₹2,499",Polo,White,M,OK,11,14,9,12,12,11,10,12
+POL-WHI-M,Hyderabad,26,0,5.5,5,2499,Polo,White,M,OK,39,43,34,43,46,33,33,47
+POL-WHI-M,Chennai,6,5,0.8,5,2499,Polo,White,M,OK,7,6,7,5,7,7,5,4
+POL-WHI-M,Kolkata,23,0,1.7,9,2499,Polo,White,M,OK,11,13,11,11,15,12,13,14
+POL-WHI-M,Pune,10,0,2.1,9,2499,Polo,White,M,OK,12,17,17,12,18,17,18,18
+POL-WHI-M,Ahmedabad,100,0,5.8,7,"Rs. 2,499",Polo,White,M,Reorder,39,45,51,43,37,35,34,43
+POL-WHI-M,Jaipur,45,13,3.6,9,2499,Polo,White,M,,21,30,24,31,31,20,20,20
+POL-WHI-M,Lucknow,46,0,5.5,9,2499,Polo,White,M,OK,41,36,44,35,38,47,32,38
+POL-WHI-M,Surat,17,0,1.4,7,2499,Polo,White,M,,9,12,8,8,10,12,11,12
+POL-WHI-M,Indore,157,0,5.5,12,2499,Polo,White,M,OK,47,44,31,39,38,44,46,33
+POL-WHI-M,Nagpur,127,0,5.5,7,"Rs. 2,499",Polo,White,M,OK,41,42,46,36,38,38,48,39
+POL-WHI-M,Kochi,74,38,5.8,5,"₹2,499",Polo,White,M,,42,44,38,41,38,34,36,50
+POL-WHI-M,Chandigarh,79,0,3.5,12,2499,Polo,White,M,,19,23,29,22,30,19,20,24
+POL-WHI-M,Bhopal,49,0,4.9,7,"Rs. 2,499",Polo,White,M,Reorder,26,29,43,42,32,43,38,26
+POL-WHI-M,Patna,42,0,1.6,9,"₹2,499",Polo,White,M,Excess,25,25,23,22,27,22,34,25
+POL-WHI-M,Vadodara,149,0,4.5,12,2499,Polo,White,M,OK,29,26,36,30,37,30,25,32
+POL-WHI-M,Ludhiana,46,0,1.4,12,2499,Polo,White,M,Reorder,10,8,8,9,8,8,11,10
+POL-WHI-M,Agra,37,0,2.7,9,"Rs. 2,499",Polo,White,M,Excess,16,15,19,21,24,22,17,20
+POL-WHI-M,Nashik, 16 ,0,4.7,7,"₹2,499",Polo,White,M,Excess,34,35,36,36,37,35,27,34
+POL-WHI-M,Meerut,125,0,5.4,7,"₹2,499",Polo,White,M,,39,47,41,34,45,131,46,44
+POL-WHI-M,Rajkot,144,0,5.7,9,2499,Polo,White,M,Reorder,37,42,34,34,36,48,35,44
+POL-WHI-M,Varanasi,10,0,0.6,5,"Rs. 2,499",Polo,White,M,Excess,3,5,5,3,4,5,4,5
+POL-WHI-L,Mumbai,10,0,5.4,7,Rs. 499,Polo,White,L,OK,46,39,39,41,38,35,42,47
+POL-WHI-L,Delhi,60,0,4.0,5 days,₹499,Polo,White,L,,28,35,35,24,30,25,26,25
+POL-WHI-L,Bengaluru,55,0,5.4,5,₹499,Polo,White,L,Excess,33,29,35,46,35,35,42,33
+POL-WHI-L,Hyderabad,16,0,0.7,12,499.00,Polo,White,L,,6,4,5,5,6,6,6,4
+POL-WHI-L,Hyderabad,16,0,0.7,12,499.00,Polo,White,L,,6,4,5,5,6,6,6,4
+POL-WHI-L,Chennai,39,0,2.8,9,₹499,Polo,White,L,Excess,19,16,19,21,15,16,23,22
+POL-WHI-L,Kolkata,9,0,2.0,9,499,Polo,White,L,OK,14,14,14,13,17,15,14,11
+POL-WHI-L,Pune,17,0,3.4,7,499.00,Polo,White,L,,24,21,26,21,22,25,25,22
+POL-WHI-L,Ahmedabad,26,29,5.1,5,499,Polo,White,L,OK,28,29,42,38,32,42,32,35
+POL-WHI-L,Jaipur,142,0,5.2,9,₹499,Polo,White,L,Excess,29,34,37,37,30,32,42,30
+POL-WHI-L,Lucknow,15,0,2.5,7,N/A,Polo,White,L,Reorder,17,16,20,17,16,13,20,13
+POL-WHI-L,Surat,39,0,2.5,9,499,Polo,White,L,,20,20,20,14,15,19,19,21
+POL-WHI-L,Indore,7,0,3.4,5,499.00,Polo,White,L,,18,25,29,20,19,22,26,27
+POL-WHI-L,Nagpur,2,12,1.8,7,₹499,Polo,White,L,Excess,13,10,12,15,11,11,14,13
+POL-WHI-L,Kochi,71,0,4.8,12,499,Polo,White,L,OK,36,30,26,40,30,42,33,32
+POL-WHI-L,Chandigarh,30,0,1.9,5,499,Polo,White,L,Excess,14,11,12,10,17,13,16,12
+POL-WHI-L,Bhopal,26,3,0.8,12,₹499,Polo,White,L,OK,6,5,7,7,5,4,7,4
+POL-WHI-L,Patna,129,0,3.3,12,499,Polo,White,L,OK,18,21,27,20,19,27,29,29
+POL-WHI-L,Vadodara,35.5,0,1.6,7,499,Polo,White,L,Excess,10,13,9,12,13,9,10,9
+POL-WHI-L,Ludhiana,85,44,5.9,9,499,Polo,White,L,,16,16,74,8,74,16,90,90
+POL-WHI-L,Agra,27,0,3.7,7,Rs. 499,Polo,White,L,Reorder,24,27,25,26,27,29,21,22
+POL-WHI-L,Nashik,10,0,1.6,9,₹499,Polo,White,L,Reorder,11,12,12,14,9,10,13,10
+,Meerut,44,0,3.2,9,499,Polo,White,L,Excess,21,28,24,21,21,20,18,22
+POL-WHI-L,Rajkot,9,0,0.9,5,499,Polo,White,L,Excess,8,8,7,5,5,6,5,6
+POL-WHI-L,Varanasi,32,20,,7,₹499,Polo,White,L,OK,31,30,35,31,33,28,32,28
+POL-WHI-XL,Mumbai,12,0,4.4,5,2499,Polo,White,XL,Reorder,25,31,38,31,37,29,33,31
+POL-WHI-XL,Delhi,13,0,4.5,7,"₹2,499",Polo,White,XL,Reorder,32,24,39,34,27,33,29,32
+POL-WHI-XL,Bengaluru,129,0,5.9,12,"2,499.00",Polo,White,XL,OK,43,51,41,46,49,47,44,42
+POL-WHI-XL,Hyderabad,17,0,0.6,12,"Rs. 2,499",Polo,White,XL,Reorder,5,5,5,4,4,4,5,5
+POL-WHI-XL,Chennai,28,-2,2.4,7,"₹2,499",Polo,White,XL,Reorder,16,19,17,14,19,16,17,16
+POL-WHI-XL,Kolkata,84,0,5.6,5,"Rs. 2,499",Polo,White,XL,,91,105,97,108,95,115,103,87
+POL-WHI-XL,Pune,9,49,5.1,12,"₹2,499",Polo,White,XL,,41,39,39,40,31,39,44,40
+POL-WHI-XL,Ahmedabad,51,0,3.8,9,"2,499.00",Polo,White,XL,Excess,22,30,20,31,22,30,31,33
+POL-WHI-XL,Jaipur,69,0,2.6,9,2499,Polo,White,XL,,17,15,21,16,15,18,16,17
+POL-WHI-XL,Lucknow, 35 ,0,4.8,5,2499,Polo,White,XL,Reorder,34,30,36,33,26,36,42,41
+POL-WHI-XL,Surat,2,0,1.0,5,"₹2,499",Polo,White,XL,,6,6,8,8,6,7,8,7
+POL-WHI-XL,Indore,25,0,3.9,9,2499,Polo,White,XL,Excess,31,21,33,26,26,31,29,32
+POL-WHI-XL,Nagpur,8,0,2.0,12,"2,499.00",Polo,White,XL,Reorder,13,12,15,16,13,11,15,15
+POL-WHI-XL,Kochi,48,0,5.1,5,"Rs. 2,499",Polo,White,XL,Reorder,41,37,39,44,39,33,37,31
+POL-WHI-XL,Chandigarh,70,0,5.5,5,2499,Polo,White,XL,Reorder,32,38,35,32,38,105,42,31
+POL-WHI-XL,Bhopal,63,0,3.6,9,"₹2,499",Polo,White,XL,,24,28,29,27,22,19,22,26
+POL-WHI-XL,Patna,4,0,3.9,12,"₹2,499",Polo,White,XL,,22,32,25,30,32,23,22,24
+POL-WHI-XL,Vadodara,24,0,5.7,,2499,Polo,White,XL,Excess,46,30,43,35,44,46,46,34
+POL-WHI-XL,Ludhiana,70,0,3.6,7,"2,499.00",Polo,White,XL,,21,31,29,25,26,22,22,20
+POL-WHI-XL,Agra,96,0,5.0,9,2499,Polo,White,XL,Excess,31,41,39,31,31,27,36,33
+POL-WHI-XL,Nashik,40,0,4.1,7,2499,Polo,White,XL,OK,33,29,23,28,32,28,32,35
+POL-WHI-XL,Meerut,154,0,4.2,12,2499,Polo,White,XL,OK,29,26,25,33,30,33,25,29
+POL-WHI-XL,Rajkot,26,0,3.2,7,"₹2,499",Polo,White,XL,OK,24,25,22,24,24,21,24,24
+POL-WHI-XL,Varanasi,47,52,4.2,12,2499,Polo,White,XL,OK,34,36,27,24,28,36,32,24
+POL-NAV-S,Mumbai,86,0,4.6,12,1999,Polo,Navy,S,OK,33,37,38,27,27,34,30,29
+POL-NAV-S,Delhi,14,0,1.5,7,1999,Polo,Navy,S,OK,13,10,9,10,10,9,11,13
+POL-NAV-S,Bengaluru,18,15,4.0,7,"1,999.00",Polo,Navy,S,OK,30,27,24,27,23,30,30,33
+POL-NAV-S,Hyderabad,140,0,5.1,12,1999,Polo,Navy,S,,41,40,34,39,31,39,39,35
+POL-NAV-S,Chennai,29,17,2.5,5,"₹1,999",Polo,Navy,S,Reorder,18,15,21,20,14,19,19,20
+POL-NAV-S,Kolkata,49,0,4.6,5,1999,Polo,Navy,S,Excess,26,38,38,32,34,34,37,37
+POL-NAV-S,Pune,44,0,5.7,5,1999,Polo,Navy,S,Excess,34,32,35,41,50,38,36,45
+POL-NAV-S,Ahmedabad, 9 ,0,1.7,5,"Rs. 1,999",Polo,Navy,S,OK,13,11,14,14,14,13,11,12
+POL-NAV-S,Jaipur,-6,0,3.5,9,"Rs. 1,999",Polo,Navy,S,Excess,26,22,24,25,24,27,29,19
+POL-NAV-S,Lucknow,14,22,3.9,9,1999,Polo,Navy,S,OK,25,34,33,28,22,23,22,22
+POL-NAV-S,Surat,58,0,5.3,7,"Rs. 1,999",Polo,Navy,S,Reorder,30,40,42,40,29,35,28,40
+POL-NAV-S,Indore,4,15,2.4,12,1999,Polo,Navy,S,,19,16,16,16,14,19,17,19
+POL-NAV-S,Nagpur,35,0,4.8,9,1999,Polo,Navy,S,Excess,31,31,29,30,29,34,32,33
+POL-NAV-S,Kochi,97,0,4.0,12,"Rs. 1,999",Polo,Navy,S,Reorder,5,5,11,5,50,61,61,61
+POL-NAV-S,Chandigarh,12,6,1.7,7,"Rs. 1,999",Polo,Navy,S,,9,12,12,10,13,12,14,14
+POL-NAV-S,Bhopal,29,0,1.8,12,1999,Polo,Navy,S,,15,11,15,13,13,15,11,15
+POL-NAV-S,Patna,51,13,2.4,9,"₹1,999",Polo,Navy,S,Excess,20,16,16,17,15,20,17,17
+POL-NAV-S,Vadodara,50,0,4.1,5,"₹1,999",Polo,Navy,S,Excess,34,25,27,27,26,32,29,33
+POL-NAV-S,Ludhiana,57,0,2.7,12,"₹1,999",Polo,Navy,S,OK,39,45,58,59,49,58,56,55
+POL-NAV-S,Agra,22,17,3.4,9,"1,999.00",Polo,Navy,S,,20,29,21,19,26,23,27,23
+POL-NAV-S,Nashik,92,0,4.5,7,N/A,Polo,Navy,S,OK,30,28,24,36,34,39,29,33
+POL-NAV-S,Meerut,1,0,3.9,5,"₹1,999",Polo,Navy,S,,21,32,21,29,28,29,27,27
+POL-NAV-S,Rajkot,7.5,0,5.7,5,1999,Polo,Navy,S,,38,49,34,48,30,46,32,36
+POL-NAV-S,Varanasi,33,0,1.8,7,1999,Polo,Navy,S,,16,15,11,12,13,14,16,15
+POL-NAV-M,Mumbai,8,0,1.4,7,1999,Polo,Navy,M,Reorder,9,11,12,12,10,10,8,12
+POL-NAV-M,Delhi,23,0,1.1,12,1999,Polo,Navy,M,Excess,6,7,8,9,8,9,8,6
+POL-NAV-M,Bengaluru,31,0,5.1,7,"1,999.00",Polo,Navy,M,OK,28,39,34,31,39,41,31,27
+POL-NAV-M,Hyderabad,93,0,3.8,12,"₹1,999",Polo,Navy,M,,27,25,33,30,31,23,20,28
+POL-NAV-M,Chennai,6,19,3.9,5,"₹1,999",Polo,Navy,M,Excess,34,25,21,30,23,27,29,23
+POL-NAV-M,Kolkata,10,13,2.0,5,"₹1,999",Polo,Navy,M,OK,17,17,13,13,13,13,13,16
+POL-NAV-M,Pune,7,0,1.9,5,"1,999.00",Polo,Navy,M,OK,16,11,16,16,10,16,14,11
+POL-NAV-M,Ahmedabad,3,0,0.7,9,"₹1,999",Polo,Navy,M,OK,5,6,6,4,5,12,6,5
+POL-NAV-M,Jaipur, 33 ,0,2.7,7 days,"1,999.00",Polo,Navy,M,Excess,20,20,21,15,23,22,21,14
+POL-NAV-M,Lucknow,159,35,5.9,9,1999,Polo,Navy,M,Reorder,39,48,39,44,46,50,50,39
+POL-NAV-M,Surat,112,0,5.4,9,"1,999.00",Polo,Navy,M,OK,39,35,39,40,44,34,31,37
+POL-NAV-M,Indore,161,0,4.0,12,"Rs. 1,999",Polo,Navy,M,,24,31,31,27,32,30,32,21
+POL-NAV-M,Nagpur,100,30,5.3,7,1999,Polo,Navy,M,Reorder,30,31,38,32,35,46,45,31
+POL-NAV-M,Kochi,28,0,2.9,5,"Rs. 1,999",Polo,Navy,M,,25,15,20,25,19,24,17,20
+POL-NAV-M,Chandigarh,75,0,3.0,9,1999,Polo,Navy,M,,25,18,19,21,16,19,25,26
+POL-NAV-M,Bhopal,5,0,2.8,5,"₹1,999",Polo,Navy,M,Excess,18,16,18,15,17,20,20,23
+POL-NAV-M,Patna,16,0,2.7,5,1999,Polo,Navy,M,OK,18,17,22,22,21,17,23,15
+POL-NAV-M,Vadodara,23,27,4.5,5,1999,Polo,Navy,M,OK,37,34,38,37,26,25,38,28
+POL-NAV-M,Ludhiana,195,0,5.8,12,"₹1,999",Polo,Navy,M,Reorder,43,33,39,31,50,43,37,35
+POL-NAV-M,Agra,22,0,3.2,5,"₹1,999",Polo,Navy,M,OK,23,19,17,18,22,22,20,25
+POL-NAV-M,Nashik,51,0,3.6,12,"1,999.00",Polo,Navy,M,Excess,31,25,22,25,31,29,23,20
+POL-NAV-M,Meerut,73,0,4.6,12,1999,Polo,Navy,M,,35,38,34,26,35,28,37,39
+POL-NAV-M,Rajkot,9,0,5.2,5,"1,999.00",Polo,Navy,M,OK,32,37,45,34,33,38,44,39
+POL-NAV-M,Varanasi,6,0,0.7,9,"₹1,999",Polo,Navy,M,,6,4,6,4,6,5,4,5
+POL-NAV-L,Mumbai,70,34,4.9,5,"₹2,499",Polo,Navy,L,OK,41,31,26,36,35,42,40,34
+POL-NAV-L,Delhi,32,0,2.2,7,2499,Polo,Navy,L,Excess,15,12,14,16,13,14,15,13
+POL-NAV-L,Bengaluru,19,0,0.7,9,2499,Polo,Navy,L,OK,6,4,6,6,6,6,5,6
+POL-NAV-L,Hyderabad,34,-15,2.0,7,"Rs. 2,499",Polo,Navy,L,OK,13,16,17,14,15,16,11,14
+POL-NAV-L,Chennai,30,5,2.0,5,2499,Polo,Navy,L,Reorder,11,13,13,14,16,13,14,16
+POL-NAV-L,Chennai,30,5,2.0,5,2499,Polo,Navy,L,Reorder,11,13,13,14,16,13,14,16
+POL-NAV-L,Kolkata,3,0,0.9,9,"₹2,499",Polo,Navy,L,Excess,6,7,5,6,5,7,6,6
+POL-NAV-L,Pune,50,7,3.4,5,"₹2,499",Polo,Navy,L,Excess,29,29,27,23,20,29,26,18
+POL-NAV-L,Ahmedabad,7,0,1.5,9,"2,499.00",Polo,Navy,L,Reorder,26,33,28,22,32,28,26,32
+POL-NAV-L,Jaipur,74,21,2.7,12,"₹2,499",Polo,Navy,L,Reorder,41,7,3,7,41,7,3,7
+POL-NAV-L,Lucknow,65,28,2.3,9,2499,Polo,Navy,L,,13,16,14,17,14,12,14,16
+POL-NAV-L,Surat,4,0,,5,2499,Polo,Navy,L,OK,9,9,9,7,9,7,10,10
+POL-NAV-L,Indore,38,0,3.8,9,"₹2,499",Polo,Navy,L,OK,29,32,21,27,32,25,22,26
+POL-NAV-L,Nagpur, 39 ,22,2.6,7,"₹2,499",Polo,Navy,L,,19,21,21,17,22,14,16,15
+POL-NAV-L,Kochi,26,9,3.2,5,"Rs. 2,499",Polo,Navy,L,OK,23,22,27,20,22,26,21,22
+POL-NAV-L,Chandigarh,15,0,1.0,9,2499,Polo,Navy,L,,7,7,5,6,8,6,6,7
+POL-NAV-L,Bhopal,3,0,2.4,9,"Rs. 2,499",Polo,Navy,L,OK,13,13,16,15,15,20,13,15
+POL-NAV-L,Patna,46,0,5.8,12,2499,Polo,Navy,L,,38,42,39,46,50,44,33,42
+POL-NAV-L,Vadodara,69,0,5.4,9,2499,Polo,Navy,L,Reorder,33,30,37,38,42,36,35,46
+POL-NAV-L,Ludhiana,34,0,3.3,,"Rs. 2,499",Polo,Navy,L,OK,18,22,25,20,25,20,25,17
+POL-NAV-L,Agra,20,0,1.6,12,2499,Polo,Navy,L,,13,12,11,11,12,13,9,10
+POL-NAV-L,Nashik,12,7,1.4,5,2499,Polo,Navy,L,OK,11,10,8,8,11,9,11,8
+POL-NAV-L,Meerut,21,11,3.3,5,2499,Polo,Navy,L,OK,20,20,23,20,17,23,22,25
+POL-NAV-L,Rajkot,38,0,2.8,5,2499,Polo,Navy,L,Reorder,21,20,20,18,23,19,24,18
+POL-NAV-L,Varanasi,53,0,3.2,7,2499,Polo,Navy,L,OK,19,19,22,20,20,18,27,25
+POL-NAV-XL,Mumbai,68,0,3.0,9,799.00,Polo,Navy,XL,Excess,24,19,20,23,16,60,18,18
+POL-NAV-XL,Delhi,64,0,4.9,7,799,Polo,Navy,XL,Excess,41,42,33,41,33,34,30,38
+,Bengaluru,46,0,4.4,7,799,Polo,Navy,XL,Excess,37,36,29,29,34,32,35,28
+POL-NAV-XL,Hyderabad,6.5,0,0.8,12,799,Polo,Navy,XL,Excess,4,5,7,4,7,6,6,5
+POL-NAV-XL,Chennai, 8 ,0,2.4,5,₹799,Polo,Navy,XL,,20,16,13,20,14,14,13,20
+POL-NAV-XL,Kolkata,39,0,2.6,5,₹799,Polo,Navy,XL,,22,18,14,17,22,16,15,23
+POL-NAV-XL,Pune,11,7,1.1,9,₹799,Polo,Navy,XL,Excess,9,6,7,7,9,8,7,7
+POL-NAV-XL,Ahmedabad, 47 ,0,3.3,9,N/A,Polo,Navy,XL,OK,27,25,23,27,18,20,22,18
+POL-NAV-XL,Jaipur,42,0,2.2,12,₹799,Polo,Navy,XL,,16,13,14,13,18,14,19,15
+POL-NAV-XL,Lucknow,16,0,0.9,7,799,Polo,Navy,XL,Excess,7,6,6,7,7,6,6,6
+POL-NAV-XL,Surat,38,0,1.2,12,799,Polo,Navy,XL,OK,9,9,10,8,10,8,10,8
+POL-NAV-XL,Indore,7,0,1.1,5,Rs. 799,Polo,Navy,XL,Reorder,7,7,6,8,7,7,6,6
+POL-NAV-XL,Nagpur,68,68,5.5,12,799,Polo,Navy,XL,Excess,42,36,47,37,31,46,36,44
+POL-NAV-XL,Kochi,59,0,3.7,12,₹799,Polo,Navy,XL,Excess,27,20,25,27,25,20,29,25
+POL-NAV-XL,Chandigarh,12,0,1.5,12,Rs. 799,Polo,Navy,XL,,10,12,9,9,10,8,9,9
+POL-NAV-XL,Bhopal,22,0,4.0,7,799,Polo,Navy,XL,,31,22,32,27,30,24,29,34
+POL-NAV-XL,Patna,45,8,1.6,9,₹799,Polo,Navy,XL,OK,14,13,11,11,11,9,12,9
+POL-NAV-XL,Vadodara,7,9,1.4,5,799.00,Polo,Navy,XL,OK,8,12,9,12,7,9,12,10
+POL-NAV-XL,Ludhiana,22,0,4.9,5,Rs. 799,Polo,Navy,XL,Excess,42,40,29,26,32,39,40,31
+POL-NAV-XL,Agra,30,0,3.7,7,₹799,Polo,Navy,XL,Excess,21,31,21,31,22,26,25,29
+POL-NAV-XL,Nashik,75,0,5.8,5,Rs. 799,Polo,Navy,XL,OK,87,90,126,101,97,114,113,117
+POL-NAV-XL,Meerut,125,0,4.8,9,₹799,Polo,Navy,XL,Reorder,40,40,38,31,31,34,33,32
+POL-NAV-XL,Rajkot,27,0,1.3,12,₹799,Polo,Navy,XL,OK,8,10,8,9,7,7,11,9
+POL-NAV-XL,Varanasi,1,0,2.2,5,₹799,Polo,Navy,XL,Excess,16,13,16,16,19,16,14,12
+OXF-BLA-S,Mumbai,32,0,2.5,7,"₹2,499",Oxford Shirt,Black,S,Reorder,20,20,20,19,20,20,15,20
+OXF-BLA-S,Delhi,-7,0,1.9,12,"₹2,499",Oxford Shirt,Black,S,,15,10,11,14,16,15,11,16
+OXF-BLA-S,Bengaluru,1,0,1.4,7,2499,Oxford Shirt,Black,S,OK,10,8,11,9,8,10,8,12
+OXF-BLA-S,Hyderabad,88,0,2.2,12,"₹2,499",Oxford Shirt,Black,S,Excess,6,3,27,33,27,33,3,33
+OXF-BLA-S,Chennai,68,0,4.1,5,2499,Oxford Shirt,Black,S,OK,24,30,25,32,24,35,35,24
+OXF-BLA-S,Kolkata,21,0,1.3,9,2499,Oxford Shirt,Black,S,Excess,8,8,8,10,8,7,11,7
+OXF-BLA-S,Pune,21,0,5.2,5,"₹2,499",Oxford Shirt,Black,S,,29,40,36,42,30,43,40,44
+OXF-BLA-S,Ahmedabad,9,0,3.0,7,2499,Oxford Shirt,Black,S,Reorder,19,19,23,22,25,17,18,18
+OXF-BLA-S,Jaipur,69,0,2.2,12,2499,Oxford Shirt,Black,S,Excess,19,16,14,13,18,17,18,19
+OXF-BLA-S,Lucknow,3,6,1.6,5,2499,Oxford Shirt,Black,S,Excess,13,10,8,13,13,12,8,11
+OXF-BLA-S,Surat,27,0,3.1,5,2499,Oxford Shirt,Black,S,,17,22,21,17,21,18,24,25
+OXF-BLA-S,Indore,25,0,1.9,12,2499,Oxford Shirt,Black,S,Excess,11,11,16,14,12,10,15,14
+OXF-BLA-S,Nagpur,232,29,5.8,12,2499,Oxford Shirt,Black,S,Reorder,33,49,41,42,43,46,35,38
+OXF-BLA-S,Kochi,68,43,4.5,7,2499,Oxford Shirt,Black,S,OK,39,39,38,36,24,36,37,26
+OXF-BLA-S,Chandigarh,21,0,2.0,7,2499,Oxford Shirt,Black,S,Reorder,17,11,11,14,17,16,15,13
+OXF-BLA-S,Bhopal, 60 ,0,1.7,12 days,"₹2,499",Oxford Shirt,Black,S,OK,11,11,10,14,12,15,9,12
+OXF-BLA-S,Patna,112,0,4.1,9,2499,Oxford Shirt,Black,S,OK,29,32,24,36,36,28,28,33
+OXF-BLA-S,Vadodara,5,0,2.2,12,2499,Oxford Shirt,Black,S,OK,13,18,12,12,17,48,18,12
+OXF-BLA-S,Ludhiana,9,0,1.3,5,"₹2,499",Oxford Shirt,Black,S,Reorder,8,7,9,10,7,7,8,10
+OXF-BLA-S,Agra,0,10,1.6,5,"₹2,499",Oxford Shirt,Black,S,Reorder,12,14,13,14,13,11,12,10
+OXF-BLA-S,Nashik,71,0,5.3,7,"₹2,499",Oxford Shirt,Black,S,,44,38,30,37,29,34,44,35
+OXF-BLA-S,Meerut,4,3,0.6,5,"Rs. 2,499",Oxford Shirt,Black,S,,5,4,4,4,5,3,4,3
+OXF-BLA-S,Rajkot,71,23,4.3,7,"Rs. 2,499",Oxford Shirt,Black,S,Excess,26,36,35,26,31,25,34,24
+OXF-BLA-S,Varanasi,22,0,5.5,9,2499,Oxford Shirt,Black,S,OK,29,29,35,39,43,33,30,29
+OXF-BLA-M,Mumbai,65,0,1.7,12,499.00,Oxford Shirt,Black,M,OK,14,9,12,12,14,9,10,9
+OXF-BLA-M,Delhi,123,0,5.8,9,499,Oxford Shirt,Black,M,Reorder,46,37,40,35,43,46,42,48
+OXF-BLA-M,Bengaluru,121,-10,5.6,9,499,Oxford Shirt,Black,M,,29,44,30,39,46,44,38,36
+OXF-BLA-M,Hyderabad,42,0,5.6,9,Rs. 499,Oxford Shirt,Black,M,OK,37,33,46,30,48,32,38,35
+OXF-BLA-M,Chennai,8,0,0.8,5,499,Oxford Shirt,Black,M,,5,4,5,5,5,5,6,5
+OXF-BLA-M,Kolkata,37,0,5.5,5,499,Oxford Shirt,Black,M,,30,46,31,35,35,33,36,33
+OXF-BLA-M,Pune,65,0,2.8,7,₹499,Oxford Shirt,Black,M,Excess,20,18,23,16,17,18,16,20
+OXF-BLA-M,Ahmedabad,110,0,5.0,9,Rs. 499,Oxford Shirt,Black,M,Excess,29,34,43,44,42,39,27,35
+OXF-BLA-M,Jaipur,34.5,0,3.3,5,Rs. 499,Oxford Shirt,Black,M,Reorder,28,22,25,28,21,19,17,19
+OXF-BLA-M,Lucknow,21,0,5.4,5,₹499,Oxford Shirt,Black,M,OK,91,116,114,108,84,113,72,76
+OXF-BLA-M,Surat,88,0,3.8,7,499,Oxford Shirt,Black,M,Reorder,23,25,23,29,26,20,30,20
+OXF-BLA-M,Indore,14,0,1.8,9,499.00,Oxford Shirt,Black,M,Excess,10,10,10,15,16,12,11,14
+OXF-BLA-M,Nagpur,55,0,3.4,5,499,Oxford Shirt,Black,M,Reorder,29,19,19,20,27,20,26,24
+OXF-BLA-M,Kochi,23,0,5.4,9,Rs. 499,Oxford Shirt,Black,M,OK,44,29,46,43,38,37,43,43
+OXF-BLA-M,Chandigarh,55,0,5.9,9,499,Oxford Shirt,Black,M,OK,39,46,45,47,47,36,44,38
+OXF-BLA-M,Bhopal,3,3,0.8,7,499,Oxford Shirt,Black,M,OK,6,7,4,5,5,5,7,6
+OXF-BLA-M,Patna,33,0,1.7,12,Rs. 499,Oxford Shirt,Black,M,Reorder,11,11,9,11,13,15,14,14
+OXF-BLA-M,Vadodara,42,0,3.0,7,₹499,Oxford Shirt,Black,M,OK,25,20,26,20,17,19,17,24
+OXF-BLA-M,Ludhiana,110,0,5.2,7,N/A,Oxford Shirt,Black,M,Excess,33,40,42,29,38,30,40,36
+OXF-BLA-M,Agra,195,0,5.6,,₹499,Oxford Shirt,Black,M,,31,34,47,36,43,35,35,31
+OXF-BLA-M,Nashik,15,0,3.0,5,Rs. 499,Oxford Shirt,Black,M,Excess,24,23,23,24,20,19,16,20
+OXF-BLA-M,Meerut,4,5,,9,499,Oxford Shirt,Black,M,,5,4,5,5,5,6,5,6
+OXF-BLA-M,Rajkot,122,0,5.8,12,₹499,Oxford Shirt,Black,M,,73,73,89,89,89,73,73,73
+OXF-BLA-M,Varanasi,6,8,2.0,7,Rs. 499,Oxford Shirt,Black,M,Reorder,13,13,15,12,17,12,11,15
+OXF-BLA-L,Mumbai,12,0,1.2,5,2499,Oxford Shirt,Black,L,Reorder,8,6,10,8,6,9,10,7
+OXF-BLA-L,Delhi,14,6,0.5,9,"Rs. 2,499",Oxford Shirt,Black,L,,3,4,3,4,3,4,4,4
+OXF-BLA-L,Bengaluru,48,0,2.0,12,"Rs. 2,499",Oxford Shirt,Black,L,Excess,17,11,11,15,14,15,13,16
+OXF-BLA-L,Hyderabad,71,0,3.1,9,2499,Oxford Shirt,Black,L,,25,17,23,25,18,19,19,20
+OXF-BLA-L,Chennai,34,0,1.5,7,2499,Oxford Shirt,Black,L,Excess,11,9,11,11,9,11,13,13
+OXF-BLA-L,Kolkata, 26 ,9,2.0,7,"₹2,499",Oxford Shirt,Black,L,Excess,14,12,12,17,14,16,13,17
+OXF-BLA-L,Kolkata, 26 ,9,2.0,7,"₹2,499",Oxford Shirt,Black,L,Excess,14,12,12,17,14,16,13,17
+OXF-BLA-L,Pune,16,7,1.4,5,"2,499.00",Oxford Shirt,Black,L,,10,12,9,12,9,9,12,8
+OXF-BLA-L,Ahmedabad,36,7,2.6,7,2499,Oxford Shirt,Black,L,OK,16,15,17,18,18,15,15,20
+OXF-BLA-L,Jaipur,66,0,4.7,7,2499,Oxford Shirt,Black,L,Excess,37,34,25,34,39,32,40,30
+OXF-BLA-L,Lucknow,10,0,0.8,9,"₹2,499",Oxford Shirt,Black,L,OK,7,4,7,6,4,6,5,5
+OXF-BLA-L,Surat,30,0,3.7,5,2499,Oxford Shirt,Black,L,OK,21,23,21,23,29,92,26,28
+OXF-BLA-L,Indore,6,0,2.4,12,"Rs. 2,499",Oxford Shirt,Black,L,,14,21,14,20,17,17,16,20
+OXF-BLA-L,Nagpur,78,0,2.2,12,2499,Oxford Shirt,Black,L,Reorder,15,17,12,14,18,16,19,15
+OXF-BLA-L,Kochi,12,0,1.4,5,2499,Oxford Shirt,Black,L,OK,12,9,9,12,9,12,8,9
+OXF-BLA-L,Chandigarh,4,0,2.6,5,"₹2,499",Oxford Shirt,Black,L,Excess,20,15,22,21,22,22,22,22
+OXF-BLA-L,Bhopal,82,31,5.3,5,2499,Oxford Shirt,Black,L,OK,41,42,42,46,42,33,32,37
+OXF-BLA-L,Patna,99,0,5.1,9,2499,Oxford Shirt,Black,L,OK,29,33,34,36,33,28,34,36
+OXF-BLA-L,Vadodara,80,0,3.8,12,"₹2,499",Oxford Shirt,Black,L,OK,29,27,28,31,26,24,20,27
+OXF-BLA-L,Ludhiana,4,0,1.3,9,2499,Oxford Shirt,Black,L,,8,11,7,9,8,8,8,10
+OXF-BLA-L,Agra,100,0,5.7,12,"Rs. 2,499",Oxford Shirt,Black,L,Excess,41,47,35,37,45,31,44,33
+OXF-BLA-L,Nashik,78,0,2.5,12,"₹2,499",Oxford Shirt,Black,L,,15,14,19,18,19,16,14,13
+OXF-BLA-L,Meerut,41,0,3.6,5,"2,499.00",Oxford Shirt,Black,L,,27,19,29,30,25,27,22,23
+OXF-BLA-L,Rajkot,156,0,4.0,12,2499,Oxford Shirt,Black,L,Reorder,68,82,63,81,68,53,82,61
+OXF-BLA-L,Varanasi,21,6,1.8,7,"2,499.00",Oxford Shirt,Black,L,Excess,14,13,12,11,11,11,12,14
+OXF-WHI-S,Mumbai,31,0,3.0,12,₹499,Oxford Shirt,White,S,Reorder,17,24,26,18,16,21,19,26
+OXF-WHI-S,Delhi,99,0,3.6,12,₹499,Oxford Shirt,White,S,Reorder,24,27,29,21,27,23,31,26
+OXF-WHI-S,Bengaluru,76,0,3.4,9,499,Oxford Shirt,White,S,OK,28,26,20,29,24,25,20,29
+OXF-WHI-S,Hyderabad,99,0,5.3,12,499,Oxford Shirt,White,S,Excess,28,44,45,36,36,37,38,43
+OXF-WHI-S,Chennai,108,0,3.8,9,499.00,Oxford Shirt,White,S,Reorder,20,27,30,32,28,26,21,20
+OXF-WHI-S,Kolkata,29,0,4.1,12,499,Oxford Shirt,White,S,Reorder,35,30,33,23,23,24,32,34
+OXF-WHI-S,Pune,49,18,2.4,7,499,Oxford Shirt,White,S,,17,13,15,16,13,20,14,17
+,Ahmedabad, 17 ,18,4.8,5,₹499,Oxford Shirt,White,S,Excess,40,40,41,34,37,39,39,32
+OXF-WHI-S,Jaipur,37,0,2.3,12,499,Oxford Shirt,White,S,OK,16,15,13,13,16,12,18,14
+OXF-WHI-S,Lucknow,0,0,3.7,12,499,Oxford Shirt,White,S,Reorder,30,26,23,30,25,24,24,31
+OXF-WHI-S,Surat,78,0,5.5,5,₹499,Oxford Shirt,White,S,,46,31,37,32,41,44,32,46
+OXF-WHI-S,Indore,75,0,4.4,9,499,Oxford Shirt,White,S,Reorder,28,29,37,37,29,34,37,29
+OXF-WHI-S,Nagpur, 79 ,0,5.8,12,499,Oxford Shirt,White,S,,39,43,37,37,45,35,50,39
+OXF-WHI-S,Kochi,64.5,0,5.3,7,499,Oxford Shirt,White,S,,31,29,43,28,38,30,35,40
+OXF-WHI-S,Chandigarh, 7 ,0,0.7,5,499,Oxford Shirt,White,S,OK,5,5,6,6,5,5,5,5
+OXF-WHI-S,Bhopal,28,0,3.5,12,499,Oxford Shirt,White,S,OK,26,29,19,29,26,23,24,26
+OXF-WHI-S,Patna,9,0,4.5,9,499,Oxford Shirt,White,S,,24,25,30,35,26,32,24,32
+OXF-WHI-S,Vadodara,24,0,1.4,12,Rs. 499,Oxford Shirt,White,S,OK,3,3,21,21,21,17,21,3
+OXF-WHI-S,Ludhiana,(7),34,5.1,5,₹499,Oxford Shirt,White,S,OK,35,27,42,40,29,35,41,33
+OXF-WHI-S,Agra,2,40,6.0,5,₹499,Oxford Shirt,White,S,Reorder,47,52,47,32,38,38,52,44
+OXF-WHI-S,Nashik,21,0,3.4,5,Rs. 499,Oxford Shirt,White,S,OK,21,27,28,19,24,24,28,26
+OXF-WHI-S,Meerut,22,51,3.1,12,499.00,Oxford Shirt,White,S,Reorder,19,19,17,22,25,24,23,23
+OXF-WHI-S,Rajkot,53,0,3.8,12 days,₹499,Oxford Shirt,White,S,Reorder,27,26,31,26,27,29,24,33
+OXF-WHI-S,Varanasi,1,0,2.4,7,₹499,Oxford Shirt,White,S,Excess,15,21,18,16,18,14,17,21
+OXF-WHI-M,Mumbai,50,25,4.7,5,499,Oxford Shirt,White,M,OK,40,40,27,37,26,28,32,33
+OXF-WHI-M,Delhi,14,-4,4.2,7,499,Oxford Shirt,White,M,Excess,25,35,29,35,28,36,32,28
+OXF-WHI-M,Bengaluru,31,46,5.7,7,499,Oxford Shirt,White,M,Reorder,37,38,45,35,45,42,48,43
+OXF-WHI-M,Hyderabad,25,0,2.1,7,₹499,Oxford Shirt,White,M,OK,15,18,12,13,14,44,16,16
+OXF-WHI-M,Chennai,3,0,1.5,9,₹499,Oxford Shirt,White,M,OK,13,8,12,11,12,11,13,13
+OXF-WHI-M,Kolkata,56,0,5.4,5,N/A,Oxford Shirt,White,M,,30,34,36,37,41,38,46,30
+OXF-WHI-M,Pune,18,0,4.2,5,₹499,Oxford Shirt,White,M,OK,35,32,31,24,34,33,35,27
+OXF-WHI-M,Ahmedabad,7,0,0.8,12,499.00,Oxford Shirt,White,M,,6,6,6,6,6,6,5,6
+OXF-WHI-M,Jaipur,33,0,1.5,12,Rs. 499,Oxford Shirt,White,M,OK,11,13,11,11,8,9,10,10
+OXF-WHI-M,Lucknow,38,0,2.6,9,₹499,Oxford Shirt,White,M,OK,14,18,14,15,15,19,20,22
+OXF-WHI-M,Surat, 188 ,0,5.0,12,499.00,Oxford Shirt,White,M,,38,37,42,43,43,28,43,41
+OXF-WHI-M,Indore,9,0,0.5,9,499.00,Oxford Shirt,White,M,,11,7,9,10,10,7,10,7
+OXF-WHI-M,Nagpur,41,0,5.0,7,499,Oxford Shirt,White,M,Reorder,33,28,40,36,32,40,35,36
+OXF-WHI-M,Kochi,48,0,3.5,5,Rs. 499,Oxford Shirt,White,M,OK,27,20,28,26,25,22,22,30
+OXF-WHI-M,Chandigarh,6,8,0.8,9,Rs. 499,Oxford Shirt,White,M,,6,5,4,6,5,7,4,5
+OXF-WHI-M,Bhopal,19,19,2.2,9,499.00,Oxford Shirt,White,M,OK,13,16,15,15,17,18,12,18
+OXF-WHI-M,Patna,34,0,4.7,7,499.00,Oxford Shirt,White,M,Excess,40,31,27,40,40,30,28,33
+OXF-WHI-M,Vadodara,10,0,1.7,9,₹499,Oxford Shirt,White,M,,14,14,14,14,14,14,12,15
+OXF-WHI-M,Ludhiana,44,0,2.4,7,499,Oxford Shirt,White,M,Excess,19,17,16,18,13,20,14,15
+OXF-WHI-M,Agra,9,9,0.8,9,₹499,Oxford Shirt,White,M,OK,5,5,4,5,6,6,6,7
+OXF-WHI-M,Nashik,36,0,2.3,,Rs. 499,Oxford Shirt,White,M,,18,15,19,12,20,14,18,19
+OXF-WHI-M,Meerut,79,0,3.8,7,₹499,Oxford Shirt,White,M,,24,21,29,26,27,23,28,23
+OXF-WHI-M,Rajkot,36,0,5.8,12,499,Oxford Shirt,White,M,,37,31,31,46,42,41,35,45
+OXF-WHI-M,Varanasi,161,0,6.0,9,₹499,Oxford Shirt,White,M,,48,37,32,36,37,34,44,37
+OXF-WHI-L,Mumbai,107,0,3.8,9,499.00,Oxford Shirt,White,L,OK,24,31,30,24,22,27,28,33
+OXF-WHI-L,Delhi,57,0,3.8,9,₹499,Oxford Shirt,White,L,Reorder,26,30,26,30,23,24,28,26
+OXF-WHI-L,Bengaluru,3,15,2.8,5,499,Oxford Shirt,White,L,Reorder,19,22,23,24,23,21,21,18
+OXF-WHI-L,Hyderabad,85,0,4.3,12,499,Oxford Shirt,White,L,OK,29,23,28,33,24,28,29,26
+OXF-WHI-L,Chennai,4,0,0.9,5,499,Oxford Shirt,White,L,Excess,6,7,8,6,5,8,5,7
+OXF-WHI-L,Kolkata, 13 ,0,2.6,12,499,Oxford Shirt,White,L,OK,18,17,17,15,22,22,21,15
+OXF-WHI-L,Pune,28,0,1.1,9,₹499,Oxford Shirt,White,L,Reorder,7,6,8,9,8,7,7,7
+OXF-WHI-L,Ahmedabad,68,21,2.4,12,499,Oxford Shirt,White,L,OK,20,18,16,14,15,15,20,15
+OXF-WHI-L,Jaipur,136,0,,9,499,Oxford Shirt,White,L,,39,30,41,34,41,39,33,41
+OXF-WHI-L,Lucknow,2,0,4.4,5,₹499,Oxford Shirt,White,L,Reorder,36,35,25,33,30,30,35,38
+OXF-WHI-L,Surat,39,0,5.0,7,499,Oxford Shirt,White,L,OK,30,34,27,31,37,29,28,32
+OXF-WHI-L,Indore,20,0,3.4,9,Rs. 499,Oxford Shirt,White,L,Reorder,23,27,21,22,21,29,28,23
+OXF-WHI-L,Nagpur,33,0,4.1,5,499.00,Oxford Shirt,White,L,,11,5,51,63,63,5,63,63
+OXF-WHI-L,Kochi,60,0,4.6,5,₹499,Oxford Shirt,White,L,Reorder,36,29,27,30,40,34,24,25
+OXF-WHI-L,Chandigarh,22,0,3.2,12,499,Oxford Shirt,White,L,,18,21,24,28,20,18,23,23
+OXF-WHI-L,Bhopal,40,0,1.8,9,499,Oxford Shirt,White,L,Excess,12,14,13,15,12,10,13,11
+OXF-WHI-L,Patna,50,0,3.1,5,499,Oxford Shirt,White,L,Excess,17,17,21,25,25,21,22,18
+OXF-WHI-L,Vadodara,18,0,5.1,9,499.00,Oxford Shirt,White,L,OK,38,40,31,34,35,44,30,42
+OXF-WHI-L,Ludhiana,44.5,0,1.9,12,499,Oxford Shirt,White,L,Reorder,15,10,13,16,14,16,10,14
+OXF-WHI-L,Agra,10,0,1.6,9,499,Oxford Shirt,White,L,,11,9,11,12,11,12,8,9
+OXF-WHI-L,Nashik,7,0,0.8,5,₹499,Oxford Shirt,White,L,Reorder,4,6,5,6,7,19,5,6
+OXF-WHI-L,Meerut,7,21,3.5,12,₹499,Oxford Shirt,White,L,OK,21,20,27,21,20,30,28,24
+OXF-WHI-L,Rajkot,13,0,4.4,5,499,Oxford Shirt,White,L,,28,33,28,37,32,26,36,36
+OXF-WHI-L,Varanasi,7,0,4.5,9,₹499,Oxford Shirt,White,L,OK,38,39,31,30,26,26,26,36
+OXF-NAV-S,Mumbai,32,12,2.8,5,799,Oxford Shirt,Navy,S,OK,38,52,37,60,59,57,47,44
+OXF-NAV-S,Delhi,23,0,3.3,12,₹799,Oxford Shirt,Navy,S,OK,20,22,22,25,22,28,24,20
+OXF-NAV-S,Bengaluru,34,0,1.9,9,799,Oxford Shirt,Navy,S,Reorder,11,13,15,16,15,13,15,14
+OXF-NAV-S,Hyderabad,109,0,3.8,12,799,Oxford Shirt,Navy,S,Reorder,22,27,21,25,25,32,33,23
+OXF-NAV-S,Chennai,30,8,4.3,5,799,Oxford Shirt,Navy,S,,33,26,36,34,29,36,30,31
+OXF-NAV-S,Kolkata,102,0,5.5,9,Rs. 799,Oxford Shirt,Navy,S,Excess,42,41,35,44,36,48,48,38
+OXF-NAV-S,Pune,2,0,0.7,12,₹799,Oxford Shirt,Navy,S,Reorder,4,4,5,6,5,6,5,5
+OXF-NAV-S,Pune,2,0,0.7,12,₹799,Oxford Shirt,Navy,S,Reorder,4,4,5,6,5,6,5,5
+OXF-NAV-S,Ahmedabad, 8 ,0,1.6,7,₹799,Oxford Shirt,Navy,S,OK,9,9,13,11,11,10,11,14
+OXF-NAV-S,Jaipur,13,0,1.6,7,Rs. 799,Oxford Shirt,Navy,S,OK,13,10,10,12,13,13,14,13
+OXF-NAV-S,Lucknow,7,0,3.6,7,799,Oxford Shirt,Navy,S,,31,20,30,21,21,30,28,23
+OXF-NAV-S,Surat,1,0,1.1,7,₹799,Oxford Shirt,Navy,S,OK,9,6,9,8,7,6,7,9
+OXF-NAV-S,Indore,40,14,2.5,5,799,Oxford Shirt,Navy,S,Excess,16,17,19,15,17,18,20,22
+OXF-NAV-S,Nagpur, 14 ,0,2.5,5,799,Oxford Shirt,Navy,S,Excess,15,16,14,16,18,20,17,15
+OXF-NAV-S,Kochi,26,0,3.8,9,799,Oxford Shirt,Navy,S,,23,27,32,27,25,23,29,29
+OXF-NAV-S,Chandigarh,119,0,3.9,12,799,Oxford Shirt,Navy,S,Reorder,29,21,23,22,32,28,30,22
+OXF-NAV-S,Bhopal,2,23,4.5,9,799,Oxford Shirt,Navy,S,OK,36,30,33,26,38,37,25,28
+OXF-NAV-S,Patna,17,45,5.2,9,N/A,Oxford Shirt,Navy,S,,37,33,34,34,34,30,31,36
+OXF-NAV-S,Vadodara, 14 ,0,5.9,5,799,Oxford Shirt,Navy,S,Reorder,45,51,36,34,45,34,43,38
+OXF-NAV-S,Ludhiana,5,4,1.4,7,Rs. 799,Oxford Shirt,Navy,S,Excess,12,9,8,12,12,10,11,10
+OXF-NAV-S,Agra,140,0,4.8,9,₹799,Oxford Shirt,Navy,S,OK,28,37,39,39,42,42,35,36
+OXF-NAV-S,Nashik,79,49,5.7,7,799,Oxford Shirt,Navy,S,Excess,35,34,32,37,45,43,46,36
+OXF-NAV-S,Meerut,5,0,3.2,5,799,Oxford Shirt,Navy,S,Reorder,27,23,25,18,27,17,24,25
+OXF-NAV-S,Rajkot,21,0,4.4,7,₹799,Oxford Shirt,Navy,S,OK,35,32,30,29,33,32,25,37
+OXF-NAV-S,Varanasi,78,0,3.7,9,799,Oxford Shirt,Navy,S,,26,25,28,29,28,24,27,25
+OXF-NAV-M,Mumbai,15,-13,0.8,7,₹799,Oxford Shirt,Navy,M,Excess,7,6,6,6,6,6,5,6
+OXF-NAV-M,Delhi, 39 ,0,1.2,12,799,Oxford Shirt,Navy,M,,9,9,10,10,7,8,10,10
+OXF-NAV-M,Bengaluru,13,0,3.2,12,799.00,Oxford Shirt,Navy,M,Reorder,26,26,23,27,21,21,22,22
+OXF-NAV-M,Hyderabad,10,0,2.7,7,Rs. 799,Oxford Shirt,Navy,M,Reorder,23,15,15,14,16,20,18,23
+OXF-NAV-M,Chennai,41,0,5.3,12,799,Oxford Shirt,Navy,M,Excess,36,43,46,34,34,45,35,29
+OXF-NAV-M,Kolkata,58,0,3.2,7 days,799,Oxford Shirt,Navy,M,OK,18,23,19,22,24,17,22,23
+OXF-NAV-M,Pune,90,0,3.4,9,Rs. 799,Oxford Shirt,Navy,M,Excess,27,21,27,26,26,18,21,23
+OXF-NAV-M,Ahmedabad,71,0,3.3,9,₹799,Oxford Shirt,Navy,M,Reorder,41,50,50,9,4,4,4,4
+OXF-NAV-M,Jaipur,28,0,1.8,9,799,Oxford Shirt,Navy,M,,11,14,14,12,11,11,14,11
+OXF-NAV-M,Lucknow,0,19,3.7,12,799,Oxford Shirt,Navy,M,,26,23,29,27,28,23,27,27
+OXF-NAV-M,Surat,96,0,5.1,12,Rs. 799,Oxford Shirt,Navy,M,OK,33,29,42,29,28,43,34,31
+OXF-NAV-M,Indore,(9),4,1.3,7,799.00,Oxford Shirt,Navy,M,OK,11,8,9,8,7,8,8,9
+,Nagpur,47,24,1.8,12,799,Oxford Shirt,Navy,M,Reorder,12,11,12,13,14,16,12,13
+OXF-NAV-M,Kochi,126,0,4.0,12,₹799,Oxford Shirt,Navy,M,OK,67,65,87,61,87,201,64,81
+OXF-NAV-M,Chandigarh,19,0,2.5,5,799,Oxford Shirt,Navy,M,OK,16,15,15,16,17,19,14,19
+OXF-NAV-M,Bhopal,35,0,5.7,9,Rs. 799,Oxford Shirt,Navy,M,Reorder,46,33,47,34,30,41,35,34
+OXF-NAV-M,Patna,10,0,1.8,7,Rs. 799,Oxford Shirt,Navy,M,Excess,12,11,11,13,10,13,12,16
+OXF-NAV-M,Vadodara,110,0,5.2,7,799,Oxford Shirt,Navy,M,OK,44,30,27,40,36,37,27,30
+OXF-NAV-M,Ludhiana,73,11,2.6,9,799,Oxford Shirt,Navy,M,,17,18,17,15,23,18,17,22
+OXF-NAV-M,Agra,32,0,2.0,5,799.00,Oxford Shirt,Navy,M,Reorder,16,14,12,14,11,16,15,13
+OXF-NAV-M,Nashik,21,0,0.8,9,799,Oxford Shirt,Navy,M,Excess,6,7,4,5,5,6,5,5
+OXF-NAV-M,Meerut,61,0,4.9,,₹799,Oxford Shirt,Navy,M,OK,34,32,40,42,34,40,36,34
+OXF-NAV-M,Rajkot,3,0,4.1,7,799,Oxford Shirt,Navy,M,OK,32,22,24,35,31,34,25,24
+OXF-NAV-M,Varanasi,8.5,15,2.6,12,799,Oxford Shirt,Navy,M,Excess,16,15,15,21,21,14,15,20
+OXF-NAV-L,Mumbai,46,0,3.4,5,"Rs. 2,499",Oxford Shirt,Navy,L,OK,24,26,29,24,22,27,18,28
+OXF-NAV-L,Delhi,50,0,4.2,5,"₹2,499",Oxford Shirt,Navy,L,,32,35,28,36,27,22,25,32
+OXF-NAV-L,Bengaluru,86,0,4.5,9,2499,Oxford Shirt,Navy,L,Reorder,26,24,32,28,34,33,38,37
+OXF-NAV-L,Hyderabad,67,0,3.4,7,2499,Oxford Shirt,Navy,L,,29,25,26,19,21,19,26,25
+OXF-NAV-L,Chennai,138,0,5.7,12,2499,Oxford Shirt,Navy,L,,39,49,34,31,49,45,47,32
+OXF-NAV-L,Kolkata,51,0,2.4,9,"Rs. 2,499",Oxford Shirt,Navy,L,Reorder,17,21,17,21,13,16,13,13
+OXF-NAV-L,Pune,57,11,4.1,5,"₹2,499",Oxford Shirt,Navy,L,Reorder,29,30,32,30,23,26,24,23
+OXF-NAV-L,Ahmedabad,18,0,5.2,5,"₹2,499",Oxford Shirt,Navy,L,Reorder,40,28,45,41,43,31,43,37
+OXF-NAV-L,Jaipur,16,0,1.6,5,"₹2,499",Oxford Shirt,Navy,L,,12,10,10,12,11,11,12,9
+OXF-NAV-L,Lucknow,79,0,4.4,9,"Rs. 2,499",Oxford Shirt,Navy,L,Reorder,24,27,23,31,38,25,26,25
+OXF-NAV-L,Surat,18,0,6.0,5,"2,499.00",Oxford Shirt,Navy,L,OK,32,49,39,41,45,48,51,48
+OXF-NAV-L,Indore,39,0,4.7,5,"₹2,499",Oxford Shirt,Navy,L,,35,38,40,35,31,34,30,26
+OXF-NAV-L,Nagpur,64,0,4.3,9,2499,Oxford Shirt,Navy,L,OK,37,37,29,24,27,24,32,28
+OXF-NAV-L,Kochi,65,0,5.0,7,2499,Oxford Shirt,Navy,L,Excess,35,42,43,39,37,30,30,42
+OXF-NAV-L,Chandigarh,10,0,0.6,7,"2,499.00",Oxford Shirt,Navy,L,Reorder,5,4,4,4,4,5,4,4
+OXF-NAV-L,Bhopal, 1 ,0,5.7,12,"2,499.00",Oxford Shirt,Navy,L,OK,41,34,36,30,40,47,35,36
+OXF-NAV-L,Patna, 112 ,0,3.6,12,2499,Oxford Shirt,Navy,L,,19,20,29,30,28,25,31,21
+OXF-NAV-L,Vadodara,16,7,1.8,5,2499,Oxford Shirt,Navy,L,Reorder,15,12,12,12,12,11,11,10
+OXF-NAV-L,Ludhiana,13,0,1.4,7,"₹2,499",Oxford Shirt,Navy,L,OK,9,11,9,11,9,8,7,11
+OXF-NAV-L,Agra,4,0,,9,"₹2,499",Oxford Shirt,Navy,L,Reorder,24,33,24,28,25,30,26,30
+OXF-NAV-L,Nashik,10,0,1.6,5,"2,499.00",Oxford Shirt,Navy,L,OK,13,13,12,11,13,13,13,11
+OXF-NAV-L,Meerut,94,0,3.8,9,"Rs. 2,499",Oxford Shirt,Navy,L,OK,26,26,28,21,32,33,24,21
+OXF-NAV-L,Rajkot,42,0,2.3,12,"Rs. 2,499",Oxford Shirt,Navy,L,,14,12,14,18,19,17,18,18
+OXF-NAV-L,Varanasi,102,0,5.1,9,"₹2,499",Oxford Shirt,Navy,L,Excess,42,39,37,45,37,37,40,42
+SLI-BLA-S,Mumbai,33,0,1.2,12,499,Slim Jeans,Black,S,Excess,7,9,10,8,10,9,10,7
+SLI-BLA-S,Delhi,71,0,5.6,7,499.00,Slim Jeans,Black,S,Excess,48,34,32,47,36,33,41,39
+SLI-BLA-S,Bengaluru,31,0,5.6,5,₹499,Slim Jeans,Black,S,OK,19,176,19,215,19,215,215,176
+SLI-BLA-S,Hyderabad,11,17,1.4,9,N/A,Slim Jeans,Black,S,Excess,8,10,12,10,8,8,11,10
+SLI-BLA-S,Chennai,33,13,2.1,9,499,Slim Jeans,Black,S,,14,13,16,15,15,15,12,12
+SLI-BLA-S,Kolkata,21,22,2.4,9,499,Slim Jeans,Black,S,Reorder,14,15,13,20,19,19,18,19
+SLI-BLA-S,Pune,4,0,0.9,7,499,Slim Jeans,Black,S,Reorder,6,8,6,7,7,19,8,5
+SLI-BLA-S,Ahmedabad,1,0,0.8,5,499,Slim Jeans,Black,S,Excess,4,7,5,5,6,6,4,7
+SLI-BLA-S,Jaipur,7,0,3.3,5,Rs. 499,Slim Jeans,Black,S,,29,21,19,26,24,29,26,26
+SLI-BLA-S,Lucknow,17,0,0.7,12,₹499,Slim Jeans,Black,S,Reorder,6,4,5,5,4,4,6,5
+SLI-BLA-S,Surat,39,0,1.4,9,499,Slim Jeans,Black,S,OK,9,12,12,8,8,10,8,12
+SLI-BLA-S,Indore,18,0,0.7,12,499.00,Slim Jeans,Black,S,Reorder,6,4,5,6,6,4,4,6
+SLI-BLA-S,Nagpur,145,0,4.4,12,499,Slim Jeans,Black,S,Excess,26,34,26,36,32,23,33,33
+SLI-BLA-S,Kochi,10,0,4.6,9,₹499,Slim Jeans,Black,S,Excess,33,32,28,30,37,36,30,27
+SLI-BLA-S,Chandigarh,9,0,1.5,5,499,Slim Jeans,Black,S,OK,12,10,13,10,11,9,10,13
+SLI-BLA-S,Bhopal,81,28,4.1,7,499,Slim Jeans,Black,S,,23,23,28,35,22,29,22,28
+SLI-BLA-S,Patna,16,9,1.5,7,Rs. 499,Slim Jeans,Black,S,Excess,8,12,8,11,11,10,9,11
+SLI-BLA-S,Vadodara,11,0,1.8,9,₹499,Slim Jeans,Black,S,,15,14,10,14,13,11,15,13
+SLI-BLA-S,Ludhiana,46,0,3.1,7,₹499,Slim Jeans,Black,S,Reorder,18,27,23,23,21,22,26,18
+SLI-BLA-S,Agra,88,0,2.7,12,499,Slim Jeans,Black,S,Excess,18,16,15,22,15,19,21,21
+SLI-BLA-S,Nashik,35,0,3.2,9,499.00,Slim Jeans,Black,S,,27,22,19,19,17,20,17,25
+SLI-BLA-S,Meerut,12,7,0.7,9,499,Slim Jeans,Black,S,,4,4,5,6,4,4,4,5
+SLI-BLA-S,Rajkot,27,0,2.9,9,499.00,Slim Jeans,Black,S,OK,17,17,24,20,22,25,17,21
+SLI-BLA-S,Varanasi,10,-2,4.7,5,499,Slim Jeans,Black,S,OK,40,34,38,35,30,36,28,40
+SLI-BLA-M,Mumbai,59,0,2.5,7,"1,999.00",Slim Jeans,Black,M,,21,15,21,16,16,13,13,13
+SLI-BLA-M,Delhi,55,0,3.6,5,1999,Slim Jeans,Black,M,,30,24,29,28,29,30,20,21
+SLI-BLA-M,Bengaluru,17,0,1.9,7,1999,Slim Jeans,Black,M,Excess,10,14,12,16,15,12,12,15
+SLI-BLA-M,Hyderabad,153,0,5.9,12,"Rs. 1,999",Slim Jeans,Black,M,Excess,48,42,38,38,48,41,31,43
+SLI-BLA-M,Chennai,0.5,0,4.0,5,1999,Slim Jeans,Black,M,OK,22,34,23,25,33,33,23,30
+SLI-BLA-M,Kolkata,13,40,5.7,12,1999,Slim Jeans,Black,M,Reorder,39,47,46,44,40,30,47,41
+SLI-BLA-M,Pune,152,73,4.4,12,"₹1,999",Slim Jeans,Black,M,,25,26,26,38,35,26,32,34
+SLI-BLA-M,Ahmedabad,1,0,3.0,5,1999,Slim Jeans,Black,M,,26,20,21,22,17,21,25,20
+SLI-BLA-M,Ahmedabad,1,0,3.0,5,1999,Slim Jeans,Black,M,,26,20,21,22,17,21,25,20
+SLI-BLA-M,Jaipur,51,43,4.7,9,1999,Slim Jeans,Black,M,Reorder,31,41,28,31,26,37,38,30
+SLI-BLA-M,Lucknow,30,0,2.0,7,1999,Slim Jeans,Black,M,,12,11,15,16,16,12,13,14
+SLI-BLA-M,Surat,123,0,3.4,12,"1,999.00",Slim Jeans,Black,M,OK,23,29,26,27,19,19,18,28
+SLI-BLA-M,Indore,42,0,3.5,5,1999,Slim Jeans,Black,M,,19,24,24,27,29,28,19,30
+SLI-BLA-M,Nagpur,138,41,3.8,12 days,1999,Slim Jeans,Black,M,OK,32,32,29,28,21,24,29,24
+SLI-BLA-M,Kochi,0,8,1.9,9,"₹1,999",Slim Jeans,Black,M,OK,10,13,12,16,12,11,12,13
+SLI-BLA-M,Chandigarh,50,0,2.9,9,1999,Slim Jeans,Black,M,OK,17,19,18,21,19,18,18,23
+SLI-BLA-M,Bhopal,89,0,4.2,9,1999,Slim Jeans,Black,M,Excess,70,68,62,59,82,86,91,63
+SLI-BLA-M,Patna,13,0,1.1,9,"₹1,999",Slim Jeans,Black,M,OK,10,8,8,7,7,8,6,8
+SLI-BLA-M,Vadodara,1,0,2.7,5,"1,999.00",Slim Jeans,Black,M,Reorder,22,24,20,21,23,19,22,23
+SLI-BLA-M,Ludhiana,16,0,3.1,7,"1,999.00",Slim Jeans,Black,M,Reorder,17,26,24,27,19,21,18,24
+SLI-BLA-M,Agra,10,12,1.1,9,1999,Slim Jeans,Black,M,Excess,6,8,9,9,6,6,9,8
+SLI-BLA-M,Nashik,40,0,2.8,9,1999,Slim Jeans,Black,M,OK,20,23,23,15,22,16,19,16
+SLI-BLA-M,Meerut,130,28,3.7,12,1999,Slim Jeans,Black,M,OK,56,10,10,10,10,10,10,46
+SLI-BLA-M,Rajkot,65,0,3.1,,1999,Slim Jeans,Black,M,Reorder,26,25,26,19,17,25,27,25
+SLI-BLA-M,Varanasi,11,0,5.3,5,"₹1,999",Slim Jeans,Black,M,Excess,35,38,34,34,44,134,45,29
+SLI-BLA-L,Mumbai,18,23,3.9,7,1299,Slim Jeans,Black,L,,33,24,26,22,30,30,28,32
+SLI-BLA-L,Delhi, 56 ,0,5.2,5,"₹1,299",Slim Jeans,Black,L,,35,34,40,35,34,43,34,40
+SLI-BLA-L,Bengaluru,75,0,5.1,5,"₹1,299",Slim Jeans,Black,L,OK,44,35,36,40,44,31,36,39
+SLI-BLA-L,Hyderabad,18,0,4.4,12,"₹1,299",Slim Jeans,Black,L,Excess,26,29,26,38,31,27,28,27
+SLI-BLA-L,Chennai,-1,0,3.1,9,"1,299.00",Slim Jeans,Black,L,OK,23,22,20,17,17,27,19,17
+SLI-BLA-L,Kolkata, 54 ,0,2.9,12,1299,Slim Jeans,Black,L,,20,21,19,23,22,16,18,23
+SLI-BLA-L,Pune,31,10,3.1,5,1299,Slim Jeans,Black,L,Excess,23,19,19,24,22,25,24,18
+SLI-BLA-L,Ahmedabad,37,11,3.2,5,1299,Slim Jeans,Black,L,Reorder,20,17,21,17,21,19,21,21
+SLI-BLA-L,Jaipur,21,0,3.1,5,1299,Slim Jeans,Black,L,,24,20,26,23,24,22,17,18
+SLI-BLA-L,Lucknow,103,0,4.1,9,"₹1,299",Slim Jeans,Black,L,,22,26,26,30,31,35,23,28
+SLI-BLA-L,Surat,153,0,5.3,12,"₹1,299",Slim Jeans,Black,L,,35,44,40,39,46,39,37,42
+SLI-BLA-L,Indore,106,0,5.2,12,"₹1,299",Slim Jeans,Black,L,OK,41,42,39,35,40,44,39,28
+SLI-BLA-L,Nagpur,18,0,2.1,7,1299,Slim Jeans,Black,L,Excess,16,18,13,13,17,12,14,17
+SLI-BLA-L,Kochi,14,0,1.8,5,1299,Slim Jeans,Black,L,OK,14,15,14,12,15,14,11,9
+SLI-BLA-L,Chandigarh,100,62,5.3,9,N/A,Slim Jeans,Black,L,Excess,33,29,44,40,31,43,43,43
+SLI-BLA-L,Bhopal,14,0,1.4,7,1299,Slim Jeans,Black,L,Reorder,9,10,12,8,8,11,12,9
+SLI-BLA-L,Patna,46,0,4.0,7,1299,Slim Jeans,Black,L,Reorder,21,27,31,23,33,22,32,32
+,Vadodara,114, 41 ,4.6,9,"Rs. 1,299",Slim Jeans,Black,L,,39,30,39,39,28,32,38,35
+SLI-BLA-L,Ludhiana,17,14,1.9,7,"₹1,299",Slim Jeans,Black,L,,14,14,12,11,10,10,16,15
+SLI-BLA-L,Agra,25,0,2.1,7,"1,299.00",Slim Jeans,Black,L,Reorder,12,15,18,16,16,18,13,11
+SLI-BLA-L,Nashik,8,0,0.6,5,"1,299.00",Slim Jeans,Black,L,Reorder,4,4,4,4,4,3,4,4
+SLI-BLA-L,Meerut,15,0,1.0,12,"₹1,299",Slim Jeans,Black,L,,8,7,7,8,6,7,8,8
+SLI-BLA-L,Rajkot,26,0,1.6,12,1299,Slim Jeans,Black,L,Reorder,9,8,12,13,11,10,13,12
+SLI-BLA-L,Varanasi,108,0,5.2,9,"Rs. 1,299",Slim Jeans,Black,L,Excess,35,31,28,28,33,37,45,44
+SLI-WHI-S,Mumbai,41,0,2.4,12,"₹1,999",Slim Jeans,White,S,Reorder,17,17,18,16,15,20,20,14
+SLI-WHI-S,Delhi,55,0,4.4,7,"₹1,999",Slim Jeans,White,S,Excess,28,26,29,38,30,31,36,30
+SLI-WHI-S,Bengaluru,44,0,5.1,9,"₹1,999",Slim Jeans,White,S,,28,33,29,45,37,41,43,29
+SLI-WHI-S,Hyderabad,27,0,1.7,7,"₹1,999",Slim Jeans,White,S,,13,12,11,15,14,14,13,10
+SLI-WHI-S,Chennai,154,0,5.0,12,"₹1,999",Slim Jeans,White,S,OK,104,94,108,99,85,86,72,86
+SLI-WHI-S,Kolkata,24,0,2.7,12,"₹1,999",Slim Jeans,White,S,Excess,20,20,22,20,23,14,16,21
+SLI-WHI-S,Pune,3,0,,5,"₹1,999",Slim Jeans,White,S,OK,21,17,16,16,20,23,17,23
+SLI-WHI-S,Ahmedabad,88,0,5.8,5,"Rs. 1,999",Slim Jeans,White,S,Excess,32,36,50,34,50,50,40,33
+SLI-WHI-S,Jaipur,22,0,2.5,7,1999,Slim Jeans,White,S,Reorder,16,20,15,21,15,15,14,16
+SLI-WHI-S,Lucknow,71.5,69,4.3,12,1999,Slim Jeans,White,S,Reorder,32,23,30,36,24,30,27,30
+SLI-WHI-S,Surat, 72 ,0,2.9,9,"₹1,999",Slim Jeans,White,S,Excess,19,15,21,20,19,15,16,23
+SLI-WHI-S,Indore,57,0,2.9,9,1999,Slim Jeans,White,S,Excess,23,24,24,22,18,19,18,16
+SLI-WHI-S,Nagpur,47,0,2.0,9,1999,Slim Jeans,White,S,,14,15,14,13,11,16,15,14
+SLI-WHI-S,Kochi,20,0,3.7,9,1999,Slim Jeans,White,S,Reorder,31,31,20,28,28,30,30,20
+SLI-WHI-S,Chandigarh,97,0,3.5,9,"Rs. 1,999",Slim Jeans,White,S,Reorder,19,23,30,21,22,26,25,26
+SLI-WHI-S,Bhopal,11,0,1.4,7,1999,Slim Jeans,White,S,Reorder,10,10,10,10,8,11,9,12
+SLI-WHI-S,Patna,29,0,1.3,7,1999,Slim Jeans,White,S,Reorder,16,16,1,3,20,64,1,20
+SLI-WHI-S,Vadodara,68, 44 ,5.7,12,1999,Slim Jeans,White,S,,44,49,46,36,42,41,38,33
+SLI-WHI-S,Ludhiana,30,0,1.0,9,"1,999.00",Slim Jeans,White,S,OK,7,7,6,5,6,8,5,6
+SLI-WHI-S,Agra, 236 ,0,6.0,12,"₹1,999",Slim Jeans,White,S,Reorder,43,45,39,40,35,33,41,47
+SLI-WHI-S,Nashik,43,21,2.3,7,"Rs. 1,999",Slim Jeans,White,S,,14,17,13,14,18,15,16,19
+SLI-WHI-S,Meerut,26,0,3.2,5,1999,Slim Jeans,White,S,,25,27,28,19,27,22,27,27
+SLI-WHI-S,Rajkot,10,-20,1.1,9,"1,999.00",Slim Jeans,White,S,OK,9,7,7,6,6,9,6,10
+SLI-WHI-S,Varanasi,77,0,3.4,7,"₹1,999",Slim Jeans,White,S,,27,25,19,20,24,26,27,27
+SLI-WHI-M,Mumbai,4,0,0.7,5,"₹2,499",Slim Jeans,White,M,OK,5,5,5,6,6,6,4,5
+SLI-WHI-M,Delhi,49,0,2.6,9,"Rs. 2,499",Slim Jeans,White,M,Reorder,15,22,22,14,22,19,17,17
+SLI-WHI-M,Bengaluru,39,0,4.4,5,"Rs. 2,499",Slim Jeans,White,M,Excess,25,35,28,35,24,32,34,34
+SLI-WHI-M,Hyderabad,79,48,4.4,9,2499,Slim Jeans,White,M,,31,33,33,31,25,34,38,23
+SLI-WHI-M,Chennai,138,0,3.8,12,2499,Slim Jeans,White,M,Reorder,30,32,20,27,31,33,33,21
+SLI-WHI-M,Kolkata,23,0,3.1,12,2499,Slim Jeans,White,M,Reorder,19,23,17,26,23,27,24,27
+SLI-WHI-M,Pune,34,14,2.8,7,2499,Slim Jeans,White,M,,22,23,24,23,16,19,18,20
+SLI-WHI-M,Ahmedabad,41,0,2.2,9,"₹2,499",Slim Jeans,White,M,,12,17,17,15,18,18,13,17
+SLI-WHI-M,Jaipur,27,0,5.6,9,2499,Slim Jeans,White,M,OK,36,32,34,34,33,44,34,48
+SLI-WHI-M,Lucknow,27,0,1.5,9,"₹2,499",Slim Jeans,White,M,Reorder,11,11,10,12,13,12,8,10
+SLI-WHI-M,Surat,22,0,1.4,9,"₹2,499",Slim Jeans,White,M,Excess,7,10,9,10,9,8,10,10
+SLI-WHI-M,Indore,57, 14 ,4.3,5,"₹2,499",Slim Jeans,White,M,Excess,37,23,24,28,30,34,25,33
+SLI-WHI-M,Nagpur,130,70,5.0,12,"₹2,499",Slim Jeans,White,M,Reorder,29,29,27,36,34,28,29,31
+SLI-WHI-M,Kochi,98,0,5.5,7,2499,Slim Jeans,White,M,,30,47,40,47,32,32,43,33
+SLI-WHI-M,Chandigarh,105,0,4.3,9,2499,Slim Jeans,White,M,Reorder,25,35,24,34,33,24,27,38
+SLI-WHI-M,Bhopal,35,0,3.2,9,2499,Slim Jeans,White,M,OK,18,25,19,20,22,26,24,27
+SLI-WHI-M,Patna,69,0,3.2,12,"2,499.00",Slim Jeans,White,M,Excess,27,24,28,18,19,17,20,23
+SLI-WHI-M,Vadodara,10,0,2.0,7,2499,Slim Jeans,White,M,Reorder,42,40,34,32,41,35,34,26
+SLI-WHI-M,Ludhiana,63,0,5.2,5,2499,Slim Jeans,White,M,Excess,28,38,30,29,28,38,29,32
+SLI-WHI-M,Agra,49,0,1.9,12 days,"Rs. 2,499",Slim Jeans,White,M,OK,14,16,10,15,13,13,12,13
+SLI-WHI-M,Nashik,18,16,2.6,7,2499,Slim Jeans,White,M,,18,22,20,21,15,14,20,21
+SLI-WHI-M,Meerut,62,52,5.4,9,"₹2,499",Slim Jeans,White,M,OK,42,46,33,45,32,40,42,37
+SLI-WHI-M,Rajkot,29,43,5.3,7,"₹2,499",Slim Jeans,White,M,Reorder,44,46,31,41,38,33,46,34
+SLI-WHI-M,Varanasi,77,0,6.0,,2499,Slim Jeans,White,M,Reorder,34,33,41,51,41,49,45,50
+SLI-WHI-L,Mumbai, 143 ,87,5.9,12,Rs. 799,Slim Jeans,White,L,Excess,47,47,32,36,45,39,32,38
+SLI-WHI-L,Delhi,19,0,2.8,7,N/A,Slim Jeans,White,L,OK,21,15,15,19,23,23,24,21
+SLI-WHI-L,Bengaluru,35,15,3.1,9,799.00,Slim Jeans,White,L,Reorder,18,21,22,17,25,17,25,19
+SLI-WHI-L,Hyderabad,36,0,3.6,5,Rs. 799,Slim Jeans,White,L,Excess,20,24,24,31,20,23,26,25
+SLI-WHI-L,Chennai,102,52,5.7,7,₹799,Slim Jeans,White,L,Excess,43,45,43,37,31,43,47,42
+SLI-WHI-L,Kolkata,12,0,1.4,5,799,Slim Jeans,White,L,,8,8,12,10,10,11,12,12
+SLI-WHI-L,Pune,10,0,4.4,7,₹799,Slim Jeans,White,L,Reorder,31,32,35,30,24,30,38,30
+SLI-WHI-L,Ahmedabad,14,0,0.5,9,799.00,Slim Jeans,White,L,,4,4,3,4,3,4,4,3
+SLI-WHI-L,Jaipur,30,0,2.3,12,799.00,Slim Jeans,White,L,OK,14,14,17,16,20,15,15,17
+SLI-WHI-L,Jaipur,30,0,2.3,12,799.00,Slim Jeans,White,L,OK,14,14,17,16,20,15,15,17
+SLI-WHI-L,Lucknow,124,0,5.7,7,799,Slim Jeans,White,L,Excess,31,47,36,50,45,105,39,49
+SLI-WHI-L,Surat,4,0,3.1,5,799,Slim Jeans,White,L,Reorder,20,23,21,17,18,18,24,22
+SLI-WHI-L,Indore,13,0,5.1,5,799,Slim Jeans,White,L,Excess,7,7,7,14,14,14,14,7
+SLI-WHI-L,Nagpur,119,0,5.8,9,Rs. 799,Slim Jeans,White,L,OK,47,46,31,41,46,39,41,32
+SLI-WHI-L,Kochi,41,0,3.2,5,799,Slim Jeans,White,L,Excess,22,20,19,23,26,20,22,23
+SLI-WHI-L,Chandigarh,13.5,0,1.0,9,₹799,Slim Jeans,White,L,OK,6,7,6,7,8,8,5,8
+SLI-WHI-L,Bhopal,61,0,5.8,12,799,Slim Jeans,White,L,OK,42,40,39,44,48,42,44,45
+SLI-WHI-L,Patna,39,0,3.8,12,Rs. 799,Slim Jeans,White,L,Reorder,27,23,21,26,22,21,32,31
+SLI-WHI-L,Vadodara,184,0,5.5,12,799,Slim Jeans,White,L,,34,38,29,40,43,29,46,48
+SLI-WHI-L,Ludhiana,4,0,0.7,12,₹799,Slim Jeans,White,L,,5,5,4,5,5,4,5,4
+SLI-WHI-L,Agra,48,0,3.0,5,₹799,Slim Jeans,White,L,,16,22,22,18,18,24,24,19
+SLI-WHI-L,Nashik,29,34,5.6,9,799,Slim Jeans,White,L,Reorder,30,37,34,45,46,32,43,35
+SLI-WHI-L,Meerut,(6),0,1.4,5,Rs. 799,Slim Jeans,White,L,Reorder,12,9,9,10,9,11,9,12
+SLI-WHI-L,Rajkot,43,0,1.5,9,₹799,Slim Jeans,White,L,,10,12,10,13,13,13,9,8
+SLI-WHI-L,Varanasi,0,0,3.1,12,799,Slim Jeans,White,L,Excess,18,22,19,25,27,20,0,0
+SLI-NAV-S,Mumbai,36,0,3.0,12,"₹2,499",Slim Jeans,Navy,S,Reorder,20,22,19,26,20,25,23,17
+SLI-NAV-S,Delhi,36,0,1.3,12,"Rs. 2,499",Slim Jeans,Navy,S,Reorder,9,10,8,11,11,8,8,7
+SLI-NAV-S,Bengaluru,2,0,0.9,7,"₹2,499",Slim Jeans,Navy,S,OK,6,6,5,5,7,7,5,8
+SLI-NAV-S,Hyderabad,27,0,2.3,5,"Rs. 2,499",Slim Jeans,Navy,S,Excess,15,13,16,20,20,19,13,15
+SLI-NAV-S,Chennai,29,55,3.5,12,"₹2,499",Slim Jeans,Navy,S,OK,28,29,24,27,30,30,19,25
+SLI-NAV-S,Kolkata,13,0,3.5,5,"₹2,499",Slim Jeans,Navy,S,,30,28,23,27,20,30,27,19
+SLI-NAV-S,Pune,5,0,0.6,7,"Rs. 2,499",Slim Jeans,Navy,S,,12,11,13,13,13,10,9,9
+SLI-NAV-S,Ahmedabad,12,0,5.3,7,"₹2,499",Slim Jeans,Navy,S,Excess,32,41,36,39,32,40,32,41
+SLI-NAV-S,Jaipur,15,0,2.1,5,2499,Slim Jeans,Navy,S,OK,12,18,13,13,14,18,16,14
+SLI-NAV-S,Lucknow,15,5,1.3,9,2499,Slim Jeans,Navy,S,,9,8,10,9,7,7,10,7
+SLI-NAV-S,Surat,49,11,2.1,9,2499,Slim Jeans,Navy,S,OK,14,13,15,17,13,17,13,17
+SLI-NAV-S,Indore,43,0,4.5,7,"₹2,499",Slim Jeans,Navy,S,OK,29,25,24,33,26,37,38,30
+SLI-NAV-S,Nagpur,38,0,4.3,7,"2,499.00",Slim Jeans,Navy,S,Reorder,36,38,32,24,31,26,29,34
+SLI-NAV-S,Kochi, 141 ,0,5.2,12,2499,Slim Jeans,Navy,S,,42,33,35,32,33,36,30,41
+SLI-NAV-S,Chandigarh,5,0,5.0,12,2499,Slim Jeans,Navy,S,Reorder,41,32,39,37,42,43,31,37
+SLI-NAV-S,Bhopal,59,0,4.2,5,"Rs. 2,499",Slim Jeans,Navy,S,Excess,32,28,34,33,34,25,27,30
+SLI-NAV-S,Patna, 33 ,0,4.6,7,"2,499.00",Slim Jeans,Navy,S,Reorder,32,26,33,29,38,27,32,38
+SLI-NAV-S,Vadodara,42,0,,12,"2,499.00",Slim Jeans,Navy,S,Excess,35,37,41,31,38,35,45,38
+SLI-NAV-S,Ludhiana,6,0,2.2,7,2499,Slim Jeans,Navy,S,Reorder,15,17,14,14,13,16,14,15
+SLI-NAV-S,Agra,69,0,3.1,9,"2,499.00",Slim Jeans,Navy,S,OK,23,19,27,18,25,18,22,26
+SLI-NAV-S,Nashik,61,0,1.9,12,"₹2,499",Slim Jeans,Navy,S,OK,11,16,16,12,15,15,15,13
+SLI-NAV-S,Meerut,80,-19,4.3,12,"Rs. 2,499",Slim Jeans,Navy,S,Reorder,35,26,29,29,36,29,26,36
+,Rajkot, 10 ,10,1.6,9,2499,Slim Jeans,Navy,S,Reorder,9,9,14,10,10,12,12,14
+SLI-NAV-S,Varanasi,0,0,1.1,7,"₹2,499",Slim Jeans,Navy,S,Reorder,9,7,8,6,8,7,0,0
+SLI-NAV-M,Mumbai,52,18,4.1,7,Rs. 799,Slim Jeans,Navy,M,Reorder,36,33,32,28,23,34,24,23
+SLI-NAV-M,Delhi,123,0,4.9,9,799,Slim Jeans,Navy,M,Excess,38,27,39,37,42,39,41,26
+SLI-NAV-M,Bengaluru,24,0,4.2,5,799,Slim Jeans,Navy,M,Reorder,27,24,30,32,34,89,29,35
+SLI-NAV-M,Hyderabad,35,0,4.5,12,₹799,Slim Jeans,Navy,M,Reorder,29,27,33,37,25,34,36,26
+SLI-NAV-M,Chennai,2,0,1.0,9,799,Slim Jeans,Navy,M,OK,8,6,7,7,6,5,8,7
+SLI-NAV-M,Kolkata,43,17,2.8,5,₹799,Slim Jeans,Navy,M,Excess,16,18,15,17,21,16,23,17
+SLI-NAV-M,Pune,57,0,4.4,9,799,Slim Jeans,Navy,M,Reorder,55,12,55,6,55,67,12,6
+SLI-NAV-M,Ahmedabad,134,0,3.7,12,799,Slim Jeans,Navy,M,Reorder,30,21,27,24,23,26,28,23
+SLI-NAV-M,Jaipur, 0 ,5,0.9,9,₹799,Slim Jeans,Navy,M,OK,5,7,6,7,7,5,0,0
+SLI-NAV-M,Lucknow,33,0,3.9,5,₹799,Slim Jeans,Navy,M,Excess,32,25,25,33,34,25,32,33
+SLI-NAV-M,Surat,21,0,1.4,9,799.00,Slim Jeans,Navy,M,Reorder,12,12,11,8,11,9,9,10
+SLI-NAV-M,Indore,24,57,6.0,12,₹799,Slim Jeans,Navy,M,OK,52,46,44,38,49,43,39,38
+SLI-NAV-M,Nagpur,21,0,1.6,9,N/A,Slim Jeans,Navy,M,Excess,9,9,14,13,9,9,13,10
+SLI-NAV-M,Kochi, 22 ,0,3.4,5,Rs. 799,Slim Jeans,Navy,M,,29,21,18,23,24,26,23,18
+SLI-NAV-M,Chandigarh,14,0,2.9,5,799,Slim Jeans,Navy,M,OK,18,24,16,19,18,20,15,17
+SLI-NAV-M,Bhopal,38,0,3.0,5,₹799,Slim Jeans,Navy,M,OK,21,18,21,17,17,18,24,23
+SLI-NAV-M,Patna,12, 21 ,1.6,12,₹799,Slim Jeans,Navy,M,Reorder,13,11,14,10,12,13,11,11
+SLI-NAV-M,Vadodara,5,38,5.0,7,799.00,Slim Jeans,Navy,M,Reorder,26,36,35,36,40,43,39,40
+SLI-NAV-M,Ludhiana,28,13,5.1,5,₹799,Slim Jeans,Navy,M,Reorder,30,32,30,29,28,44,28,40
+SLI-NAV-M,Agra,13.5,24,2.9,7,799,Slim Jeans,Navy,M,,62,47,45,57,63,40,47,59
+SLI-NAV-M,Nashik,48,22,2.5,7,799,Slim Jeans,Navy,M,Reorder,19,18,19,14,20,20,20,19
+SLI-NAV-M,Meerut,9,2,0.7,5,799.00,Slim Jeans,Navy,M,,4,5,6,6,5,6,6,5
+SLI-NAV-M,Rajkot,88,0,2.3,12,799,Slim Jeans,Navy,M,OK,16,17,18,18,13,17,18,20
+SLI-NAV-M,Varanasi,182,0,5.2,12,Rs. 799,Slim Jeans,Navy,M,Reorder,40,44,38,42,43,36,38,45
+SLI-NAV-L,Mumbai,19,18,4.2,,"₹1,299",Slim Jeans,Navy,L,Reorder,23,34,35,24,36,27,29,24
+SLI-NAV-L,Delhi,39,0,5.0,12,"₹1,299",Slim Jeans,Navy,L,Excess,32,39,27,30,36,33,41,37
+SLI-NAV-L,Bengaluru,143,0,5.1,12 days,1299,Slim Jeans,Navy,L,,42,34,30,38,42,37,38,42
+SLI-NAV-L,Hyderabad,55,0,3.8,7,1299,Slim Jeans,Navy,L,,23,31,24,31,26,23,25,32
+SLI-NAV-L,Chennai,45,0,1.8,9,1299,Slim Jeans,Navy,L,,11,14,12,11,13,11,15,13
+SLI-NAV-L,Kolkata,11,0,1.5,7,1299,Slim Jeans,Navy,L,,13,10,12,12,10,12,8,11
+SLI-NAV-L,Pune,77,0,3.8,7,"₹1,299",Slim Jeans,Navy,L,Reorder,27,31,26,31,22,24,29,25
+SLI-NAV-L,Ahmedabad,45,0,4.4,7,"₹1,299",Slim Jeans,Navy,L,Reorder,29,28,37,34,38,36,33,27
+SLI-NAV-L,Jaipur,0,35,4.1,7,"₹1,299",Slim Jeans,Navy,L,,32,22,35,23,29,35,0,0
+SLI-NAV-L,Lucknow,18,0,5.7,7,"Rs. 1,299",Slim Jeans,Navy,L,,47,47,41,43,37,40,46,33
+SLI-NAV-L,Surat,22,0,5.7,12,1299,Slim Jeans,Navy,L,Reorder,38,37,42,42,32,37,30,42
+SLI-NAV-L,Indore,80,0,3.7,12,1299,Slim Jeans,Navy,L,Excess,21,21,25,23,27,31,24,20
+SLI-NAV-L,Nagpur,32,0,2.6,5,1299,Slim Jeans,Navy,L,Reorder,19,23,19,15,16,18,15,20
+SLI-NAV-L,Kochi,139,0,4.7,12,"₹1,299",Slim Jeans,Navy,L,OK,39,40,28,38,35,31,36,37
+SLI-NAV-L,Chandigarh,31,22,4.6,9,"Rs. 1,299",Slim Jeans,Navy,L,,33,40,26,27,28,29,39,28
+SLI-NAV-L,Bhopal,43,0,2.5,7,1299,Slim Jeans,Navy,L,Excess,15,21,16,15,14,17,15,20
+SLI-NAV-L,Patna,8,0,4.1,7,"Rs. 1,299",Slim Jeans,Navy,L,Excess,33,29,34,30,33,30,26,23
+SLI-NAV-L,Vadodara,50,0,2.1,9,"₹1,299",Slim Jeans,Navy,L,Excess,13,13,14,15,14,15,15,15
+SLI-NAV-L,Ludhiana,19,0,5.1,7,"₹1,299",Slim Jeans,Navy,L,OK,36,37,32,44,37,40,38,37
+SLI-NAV-L,Agra,74,0,3.0,9,"₹1,299",Slim Jeans,Navy,L,,17,23,22,25,22,54,18,21
+SLI-NAV-L,Nashik,27,0,3.5,12,1299,Slim Jeans,Navy,L,Excess,20,30,20,19,26,25,25,28
+SLI-NAV-L,Meerut,4,0,1.4,5,1299,Slim Jeans,Navy,L,Excess,8,9,11,12,9,11,11,10
+SLI-NAV-L,Rajkot,45,0,3.4,5,1299,Slim Jeans,Navy,L,OK,24,29,23,24,25,25,29,29
+SLI-NAV-L,Varanasi,7,5,1.0,9,"₹1,299",Slim Jeans,Navy,L,,5,7,7,7,5,8,6,7
+CHI-BLA-S,Mumbai,2,0,1.9,9,"₹1,999",Chino,Black,S,OK,13,13,14,16,11,14,11,14
+CHI-BLA-S,Delhi,21,0,1.7,9,"₹1,999",Chino,Black,S,Reorder,4,4,21,26,21,2,21,4
+CHI-BLA-S,Bengaluru,6,0,1.2,5,"Rs. 1,999",Chino,Black,S,OK,8,7,10,9,9,10,9,7
+CHI-BLA-S,Hyderabad,37,10,1.3,12,"Rs. 1,999",Chino,Black,S,,7,11,9,11,9,9,11,11
+CHI-BLA-S,Chennai,19,0,3.6,9,1999,Chino,Black,S,Reorder,19,23,19,23,23,23,31,26
+CHI-BLA-S,Kolkata,25,0,5.8,7,"Rs. 1,999",Chino,Black,S,Reorder,37,34,41,39,42,31,46,48
+CHI-BLA-S,Pune,14,0,1.6,5,1999,Chino,Black,S,Excess,9,10,13,9,10,9,10,10
+CHI-BLA-S,Ahmedabad,11,40,5.2,7,1999,Chino,Black,S,OK,40,41,31,35,34,34,38,38
+CHI-BLA-S,Jaipur,98,0,3.0,12,"₹1,999",Chino,Black,S,Reorder,62,56,48,52,41,42,53,51
+CHI-BLA-S,Lucknow,6,0,0.6,7,"₹1,999",Chino,Black,S,Excess,5,5,5,4,3,4,4,4
+CHI-BLA-S,Lucknow,6,0,0.6,7,"₹1,999",Chino,Black,S,Excess,5,5,5,4,3,4,4,4
+CHI-BLA-S,Surat,99,0,4.0,9,1999,Chino,Black,S,OK,24,30,30,23,32,33,35,33
+CHI-BLA-S,Indore,7,0,0.6,5,1999,Chino,Black,S,Reorder,4,5,4,3,4,4,5,4
+CHI-BLA-S,Nagpur,12,0,1.1,7,"₹1,999",Chino,Black,S,OK,6,8,6,8,6,7,9,8
+CHI-BLA-S,Kochi,51,14,3.7,5,1999,Chino,Black,S,OK,22,23,30,24,23,24,30,23
+CHI-BLA-S,Chandigarh,-3,0,2.8,9,1999,Chino,Black,S,Reorder,17,24,22,20,18,21,16,24
+CHI-BLA-S,Bhopal,54,0,5.0,12,1999,Chino,Black,S,Reorder,38,28,35,42,36,38,33,42
+CHI-BLA-S,Patna,24,0,2.7,12,"₹1,999",Chino,Black,S,OK,21,14,16,21,17,22,18,22
+CHI-BLA-S,Vadodara,30,25,4.2,12,1999,Chino,Black,S,Reorder,35,31,32,25,25,29,34,26
+CHI-BLA-S,Ludhiana,22,9,2.2,9,1999,Chino,Black,S,,15,13,12,15,12,13,15,16
+CHI-BLA-S,Agra,8,0,0.6,7,"Rs. 1,999",Chino,Black,S,Reorder,4,5,4,5,4,5,4,5
+CHI-BLA-S,Nashik,21,-18,1.9,5,"₹1,999",Chino,Black,S,OK,11,16,16,13,14,14,16,12
+CHI-BLA-S,Meerut,10,18,2.9,7,1999,Chino,Black,S,Excess,15,20,22,18,18,20,24,16
+CHI-BLA-S,Rajkot,75,0,4.1,9,"₹1,999",Chino,Black,S,Excess,28,30,31,32,26,23,24,24
+CHI-BLA-S,Varanasi,4,0,1.4,5,N/A,Chino,Black,S,OK,10,8,9,9,9,10,10,11
+CHI-BLA-M,Mumbai,2.5,0,0.8,12,₹499,Chino,Black,M,,5,6,5,7,7,6,6,5
+CHI-BLA-M,Delhi,105,0,4.9,7,499.00,Chino,Black,M,OK,42,38,35,33,28,35,33,42
+CHI-BLA-M,Bengaluru,32,0,2.4,7,499,Chino,Black,M,Excess,17,16,13,13,14,15,16,20
+CHI-BLA-M,Hyderabad,60,0,5.8,12,499.00,Chino,Black,M,Reorder,35,42,44,49,43,45,37,48
+CHI-BLA-M,Chennai,22,0,,12,499,Chino,Black,M,,9,9,11,8,7,8,7,9
+CHI-BLA-M,Kolkata, 7 ,0,1.5,5,499,Chino,Black,M,OK,8,9,11,10,10,10,13,12
+CHI-BLA-M,Pune,27,0,3.1,5,₹499,Chino,Black,M,OK,24,22,20,22,19,19,24,20
+CHI-BLA-M,Ahmedabad,24,0,0.7,12,₹499,Chino,Black,M,Excess,5,4,6,6,5,6,5,6
+CHI-BLA-M,Jaipur,225,0,5.8,12,499,Chino,Black,M,OK,46,46,39,37,50,35,47,43
+CHI-BLA-M,Lucknow,9,0,3.0,7,499,Chino,Black,M,Excess,19,20,18,16,21,22,17,19
+CHI-BLA-M,Surat,20,56,5.2,9,Rs. 499,Chino,Black,M,Reorder,44,40,45,43,31,32,33,28
+CHI-BLA-M,Indore, 0 , 36 ,4.4,7,₹499,Chino,Black,M,Excess,30,25,28,35,34,28,0,0
+CHI-BLA-M,Nagpur,20,0,4.7,7,499,Chino,Black,M,Excess,36,29,39,32,37,80,29,27
+CHI-BLA-M,Kochi,20,7,1.3,5,499,Chino,Black,M,Reorder,10,9,9,9,11,10,7,10
+CHI-BLA-M,Chandigarh,23,0,4.1,7,499,Chino,Black,M,OK,35,23,35,27,32,22,35,31
+CHI-BLA-M,Bhopal,113,0,4.2,12,499,Chino,Black,M,,36,32,34,23,23,34,30,26
+CHI-BLA-M,Patna,49,0,2.8,9,499,Chino,Black,M,,19,16,19,16,20,23,21,19
+CHI-BLA-M,Vadodara,113,0,3.8,9,499.00,Chino,Black,M,,23,20,30,31,20,28,28,26
+CHI-BLA-M,Ludhiana,132,31,3.3,12,499.00,Chino,Black,M,Reorder,22,18,26,24,17,23,22,27
+CHI-BLA-M,Agra,39,0,1.4,12,Rs. 499,Chino,Black,M,Excess,12,8,8,11,11,10,9,12
+CHI-BLA-M,Nashik,7,0,3.8,7,499,Chino,Black,M,Reorder,5,58,10,47,47,47,10,10
+CHI-BLA-M,Meerut,49,0,3.5,7,499,Chino,Black,M,Reorder,60,57,55,69,51,67,64,55
+CHI-BLA-M,Rajkot, 22 ,0,4.8,5,Rs. 499,Chino,Black,M,,37,40,37,39,32,31,40,39
+CHI-BLA-M,Varanasi,125,0,5.4,9,499,Chino,Black,M,Reorder,35,29,31,43,37,42,31,30
+CHI-BLA-L,Mumbai,3, 5 ,0.5,12,499,Chino,Black,L,OK,4,3,4,3,4,3,3,3
+CHI-BLA-L,Delhi, 33 ,0,2.3,,499,Chino,Black,L,Reorder,18,15,13,12,20,16,12,13
+CHI-BLA-L,Bengaluru,20,0,5.1,7,499.00,Chino,Black,L,OK,38,34,30,27,33,28,40,32
+,Hyderabad,40,40,4.4,7,₹499,Chino,Black,L,Excess,38,28,36,24,31,24,35,34
+CHI-BLA-L,Chennai,51,23,3.3,5,₹499,Chino,Black,L,,22,20,21,18,22,22,20,26
+CHI-BLA-L,Kolkata,19,0,5.9,12,499,Chino,Black,L,OK,34,31,47,50,32,36,48,38
+CHI-BLA-L,Pune,75,0,2.2,12,499.00,Chino,Black,L,Reorder,17,16,12,14,13,16,13,13
+CHI-BLA-L,Ahmedabad, 6 ,11,1.7,7,₹499,Chino,Black,L,,12,12,14,14,11,14,14,13
+CHI-BLA-L,Jaipur,4,0,1.0,7,499,Chino,Black,L,OK,8,6,8,6,6,6,9,8
+CHI-BLA-L,Lucknow,55,0,5.0,5 days,₹499,Chino,Black,L,Excess,38,40,43,37,36,28,34,29
+CHI-BLA-L,Surat,47,0,5.4,5,Rs. 499,Chino,Black,L,OK,32,30,32,40,39,39,45,45
+CHI-BLA-L,Indore,10,0,2.9,9,499,Chino,Black,L,,21,24,16,25,24,20,16,23
+CHI-BLA-L,Nagpur, 11 ,0,2.5,12,499,Chino,Black,L,OK,20,21,19,17,18,20,16,20
+CHI-BLA-L,Kochi,84,0,2.7,12,499,Chino,Black,L,OK,21,14,19,18,19,15,17,21
+CHI-BLA-L,Chandigarh,51,32,2.8,9,499,Chino,Black,L,OK,18,18,16,24,21,18,21,16
+CHI-BLA-L,Bhopal,72,0,3.2,9,499,Chino,Black,L,Reorder,26,21,21,18,25,25,19,19
+CHI-BLA-L,Patna,101,0,4.5,7,₹499,Chino,Black,L,Reorder,26,24,30,31,39,26,37,37
+CHI-BLA-L,Vadodara,56,40,5.9,9,499,Chino,Black,L,OK,38,39,40,39,45,40,33,39
+CHI-BLA-L,Ludhiana,0,0,1.2,12,499,Chino,Black,L,,6,7,8,6,6,8,8,9
+CHI-BLA-L,Agra,35,0,5.1,5,Rs. 499,Chino,Black,L,Excess,41,39,40,45,44,39,44,36
+CHI-BLA-L,Nashik,34,0,4.9,5,499,Chino,Black,L,OK,28,29,42,32,30,37,31,31
+CHI-BLA-L,Meerut,20,0,0.9,9,₹499,Chino,Black,L,Excess,7,6,5,7,6,8,7,7
+CHI-BLA-L,Rajkot,35,11,1.2,9,499,Chino,Black,L,Excess,9,10,10,6,10,8,7,7
+CHI-BLA-L,Varanasi,48,0,4.7,9,499,Chino,Black,L,OK,27,28,25,27,26,40,32,32
+CHI-BLA-XL,Mumbai,26,0,3.0,9,1999,Chino,Black,XL,OK,16,19,17,23,22,18,24,22
+CHI-BLA-XL,Delhi,5,0,1.0,12,"₹1,999",Chino,Black,XL,OK,6,5,7,8,8,7,7,6
+CHI-BLA-XL,Bengaluru,43,0,4.4,9,1999,Chino,Black,XL,OK,31,23,24,29,35,34,25,35
+CHI-BLA-XL,Hyderabad,49,0,4.7,5,1999,Chino,Black,XL,Reorder,34,31,31,32,39,28,38,29
+CHI-BLA-XL,Chennai,19,5,1.2,5,1999,Chino,Black,XL,,7,8,9,10,7,9,7,8
+CHI-BLA-XL,Kolkata,92.5,0,5.7,5,1999,Chino,Black,XL,Reorder,33,37,32,36,35,156,48,48
+CHI-BLA-XL,Pune,43,0,2.7,7,"₹1,999",Chino,Black,XL,,18,20,18,20,15,19,19,18
+CHI-BLA-XL,Ahmedabad,19,0,3.0,12,1999,Chino,Black,XL,Reorder,20,20,17,16,24,18,19,16
+CHI-BLA-XL,Jaipur,0,2,0.7,5,"1,999.00",Chino,Black,XL,Reorder,5,6,5,6,6,6,0,0
+CHI-BLA-XL,Lucknow,89,0,3.0,9,"Rs. 1,999",Chino,Black,XL,Excess,19,24,19,18,21,18,24,20
+CHI-BLA-XL,Surat,2,12,2.1,5,N/A,Chino,Black,XL,,38,46,43,29,33,32,31,38
+CHI-BLA-XL,Indore,145,0,4.0,12,"1,999.00",Chino,Black,XL,,32,33,28,30,24,23,33,30
+CHI-BLA-XL,Nagpur, 56 ,0,1.6,12,1999,Chino,Black,XL,Excess,12,8,13,13,12,11,13,9
+CHI-BLA-XL,Kochi,8, 2 ,0.5,7,1999,Chino,Black,XL,OK,4,3,3,3,4,4,4,4
+CHI-BLA-XL,Chandigarh,77,0,2.1,12,1999,Chino,Black,XL,OK,16,15,12,12,12,16,16,13
+CHI-BLA-XL,Bhopal,16,7,2.0,5,"₹1,999",Chino,Black,XL,Reorder,30,30,5,5,25,2,2,30
+CHI-BLA-XL,Patna,70,16,2.9,12,1999,Chino,Black,XL,OK,22,25,18,19,22,21,18,24
+CHI-BLA-XL,Vadodara,6,0,2.4,5,1999,Chino,Black,XL,Reorder,19,20,19,13,14,17,16,20
+CHI-BLA-XL,Ludhiana,23,0,2.9,7,"₹1,999",Chino,Black,XL,Excess,22,17,18,23,20,20,24,19
+CHI-BLA-XL,Agra,27,-5,3.2,9,"₹1,999",Chino,Black,XL,OK,25,18,26,21,18,20,27,26
+CHI-BLA-XL,Nashik,36,0,1.4,9,1999,Chino,Black,XL,Reorder,12,11,9,8,8,11,11,11
+CHI-BLA-XL,Meerut,0,0,1.1,5,"₹1,999",Chino,Black,XL,OK,7,8,8,8,8,8,6,6
+CHI-BLA-XL,Rajkot,13,0,5.4,7,1999,Chino,Black,XL,Excess,33,31,47,45,39,38,44,37
+CHI-BLA-XL,Varanasi,9,0,1.7,5,"₹1,999",Chino,Black,XL,Reorder,12,11,12,12,13,14,13,11
+CHI-WHI-S,Mumbai,11,0,2.2,5,1299,Chino,White,S,,15,12,16,14,14,19,15,14
+CHI-WHI-S,Delhi,65,12,6.0,5,1299,Chino,White,S,OK,34,48,36,35,35,44,33,35
+CHI-WHI-S,Bengaluru,17,0,3.3,12,"₹1,299",Chino,White,S,OK,19,25,25,24,21,28,29,20
+CHI-WHI-S,Hyderabad,119,0,4.2,9,"Rs. 1,299",Chino,White,S,OK,23,31,34,26,33,36,25,24
+CHI-WHI-S,Chennai,17,5,1.3,9,1299,Chino,White,S,,8,10,9,10,9,10,11,8
+CHI-WHI-S,Kolkata,10,0,0.6,7,1299,Chino,White,S,,5,4,3,4,5,4,4,4
+CHI-WHI-S,Pune,41,0,2.7,7,"Rs. 1,299",Chino,White,S,Excess,20,15,17,18,19,16,23,17
+CHI-WHI-S,Ahmedabad,(4),0,1.6,7,"₹1,299",Chino,White,S,,9,12,12,9,13,10,12,9
+CHI-WHI-S,Jaipur,28,0,1.9,5,"₹1,299",Chino,White,S,Reorder,13,12,10,16,14,13,12,15
+CHI-WHI-S,Lucknow,49,0,5.0,9,1299,Chino,White,S,Reorder,32,28,30,43,30,31,27,39
+CHI-WHI-S,Surat,14,0,2.4,12,"₹1,299",Chino,White,S,,19,20,20,17,16,20,14,13
+CHI-WHI-S,Surat,14,0,2.4,12,"₹1,299",Chino,White,S,,19,20,20,17,16,20,14,13
+CHI-WHI-S,Indore, 191 ,0,5.3,12,1299,Chino,White,S,,29,45,35,42,32,33,32,39
+CHI-WHI-S,Nagpur,44,0,4.9,9,1299,Chino,White,S,Reorder,33,27,34,27,36,26,36,42
+CHI-WHI-S,Kochi, 3 ,0,0.7,5,"₹1,299",Chino,White,S,OK,5,6,6,6,5,5,4,6
+CHI-WHI-S,Chandigarh,18,37,4.7,7,"1,299.00",Chino,White,S,Reorder,26,29,27,40,32,40,27,31
+CHI-WHI-S,Bhopal,20,0,,9,1299,Chino,White,S,Reorder,16,15,18,16,14,20,13,16
+CHI-WHI-S,Patna,17,0,1.5,9,"₹1,299",Chino,White,S,OK,9,8,10,9,12,12,8,11
+CHI-WHI-S,Vadodara,18,0,2.9,5,1299,Chino,White,S,Reorder,23,25,20,22,17,17,23,17
+CHI-WHI-S,Ludhiana,136,0,5.0,9,1299,Chino,White,S,Excess,31,39,44,41,35,36,37,32
+CHI-WHI-S,Agra,31,8,0.9,12,"₹1,299",Chino,White,S,Excess,6,7,8,6,7,5,6,5
+CHI-WHI-S,Nashik,50,0,5.2,12,"1,299.00",Chino,White,S,Reorder,42,35,29,32,38,41,45,39
+CHI-WHI-S,Meerut,112,0,5.5,7,"₹1,299",Chino,White,S,,42,48,38,33,37,35,40,37
+CHI-WHI-S,Rajkot,157,0,5.6,12,1299,Chino,White,S,OK,38,46,41,46,46,131,38,44
+CHI-WHI-S,Varanasi,87,33,5.2,12,"Rs. 1,299",Chino,White,S,,93,87,73,80,88,109,99,89
+CHI-WHI-M,Mumbai,19,59,4.8,12,"1,999.00",Chino,White,M,,31,39,36,41,38,36,41,39
+CHI-WHI-M,Delhi,104,0,3.9,12,1999,Chino,White,M,,25,31,27,31,33,27,26,30
+CHI-WHI-M,Bengaluru,26,28,5.5,,1999,Chino,White,M,OK,41,36,32,47,35,38,31,35
+CHI-WHI-M,Hyderabad,47,0,3.7,7,"₹1,999",Chino,White,M,OK,21,29,29,27,27,20,24,30
+CHI-WHI-M,Chennai,34,0,2.3,7,"1,999.00",Chino,White,M,,17,15,16,19,13,12,12,16
+CHI-WHI-M,Kolkata,39,0,5.8,9,"₹1,999",Chino,White,M,Reorder,47,44,46,36,32,38,47,32
+CHI-WHI-M,Pune,103,0,4.2,12,"1,999.00",Chino,White,M,Excess,27,35,23,23,35,29,25,32
+CHI-WHI-M,Ahmedabad,117,0,5.8,12,1999,Chino,White,M,OK,34,46,40,47,31,48,39,36
+CHI-WHI-M,Jaipur,88,0,4.9,9,1999,Chino,White,M,Reorder,29,30,31,31,31,32,29,34
+CHI-WHI-M,Lucknow,75,0,4.6,12,"₹1,999",Chino,White,M,OK,40,33,39,40,34,25,29,36
+CHI-WHI-M,Surat,10.5,0,0.7,12,"₹1,999",Chino,White,M,,0,1,8,1,8,0,1,1
+CHI-WHI-M,Indore,57,0,4.7,12,"₹1,999",Chino,White,M,,34,27,29,31,32,29,41,33
+CHI-WHI-M,Nagpur,22,0,2.6,5,"Rs. 1,999",Chino,White,M,Reorder,19,22,20,14,23,15,19,18
+CHI-WHI-M,Kochi,158,46,5.9,12,"₹1,999",Chino,White,M,Reorder,48,42,47,51,48,43,48,45
+CHI-WHI-M,Chandigarh,2,0,2.2,9,1999,Chino,White,M,Reorder,17,17,18,13,18,12,15,16
+CHI-WHI-M,Bhopal,17,0,2.2,9,"₹1,999",Chino,White,M,Reorder,19,12,14,13,12,18,19,18
+CHI-WHI-M,Patna,125,0,5.6,9 days,"₹1,999",Chino,White,M,,47,44,34,49,43,35,48,47
+CHI-WHI-M,Vadodara,7,0,0.6,9,"1,999.00",Chino,White,M,OK,4,3,4,5,5,3,4,4
+CHI-WHI-M,Ludhiana,104,0,5.3,9,"Rs. 1,999",Chino,White,M,Reorder,39,34,33,42,41,45,37,28
+CHI-WHI-M,Agra,63,0,3.6,7,"1,999.00",Chino,White,M,OK,21,27,25,28,23,24,28,26
+CHI-WHI-M,Nashik, 83 ,31,5.7,9,1999,Chino,White,M,OK,45,47,42,36,36,35,36,35
+CHI-WHI-M,Meerut,43,12,3.6,5,N/A,Chino,White,M,,24,23,22,30,30,25,25,26
+CHI-WHI-M,Rajkot,27,0,0.7,12,"₹1,999",Chino,White,M,Reorder,4,4,5,5,6,4,4,4
+CHI-WHI-M,Varanasi,44,23,3.0,7,"Rs. 1,999",Chino,White,M,OK,26,21,20,19,20,23,18,19
+CHI-WHI-L,Mumbai,0,0,3.7,5,"₹2,499",Chino,White,L,Excess,25,31,22,25,20,23,31,24
+CHI-WHI-L,Delhi,61,0,2.9,9,"Rs. 2,499",Chino,White,L,OK,16,16,16,24,25,21,16,24
+CHI-WHI-L,Bengaluru,4,0,0.6,7,"₹2,499",Chino,White,L,Reorder,3,4,4,5,4,5,4,4
+CHI-WHI-L,Hyderabad,46,0,3.3,5,2499,Chino,White,L,OK,26,22,23,25,28,27,19,19
+CHI-WHI-L,Chennai,23,0,2.1,9,2499,Chino,White,L,,14,16,17,12,15,15,17,15
+CHI-WHI-L,Kolkata, 75 ,0,5.0,12,"₹2,499",Chino,White,L,OK,42,35,43,26,43,30,42,34
+CHI-WHI-L,Pune,21,0,1.0,9,"Rs. 2,499",Chino,White,L,Excess,7,7,5,7,7,8,7,7
+CHI-WHI-L,Ahmedabad,69,0,2.2,12,2499,Chino,White,L,Excess,12,16,13,16,13,16,14,13
+,Jaipur,146,0,5.5,12,"Rs. 2,499",Chino,White,L,Excess,29,30,36,40,42,36,37,43
+CHI-WHI-L,Lucknow,24,20,2.2,7,"₹2,499",Chino,White,L,OK,13,18,19,18,19,18,12,12
+CHI-WHI-L,Surat,96,0,5.1,9,2499,Chino,White,L,Excess,31,41,42,29,42,43,40,42
+CHI-WHI-L,Indore,16,0,1.2,7,"₹2,499",Chino,White,L,OK,10,7,8,7,9,7,8,8
+CHI-WHI-L,Nagpur, 28 ,0,1.9,7,"₹2,499",Chino,White,L,Excess,32,39,31,32,31,28,31,27
+CHI-WHI-L,Kochi,25,7,1.1,7,"₹2,499",Chino,White,L,Excess,7,7,6,9,9,8,7,9
+CHI-WHI-L,Chandigarh,70,0,4.9,9,2499,Chino,White,L,Reorder,26,33,26,35,28,40,42,30
+CHI-WHI-L,Bhopal,2,0,1.2,7,2499,Chino,White,L,,8,9,7,7,7,28,10,8
+CHI-WHI-L,Patna,49,0,3.0,9,"2,499.00",Chino,White,L,Reorder,22,20,18,24,18,17,22,21
+CHI-WHI-L,Vadodara,90,49,5.7,7,2499,Chino,White,L,,38,34,47,44,39,33,50,44
+CHI-WHI-L,Ludhiana,16,-1,3.4,5,"Rs. 2,499",Chino,White,L,,19,22,21,29,19,24,29,24
+CHI-WHI-L,Agra,34,18,3.8,7,"Rs. 2,499",Chino,White,L,,33,22,21,21,24,26,25,25
+CHI-WHI-L,Nashik,43,12,4.1,5,"₹2,499",Chino,White,L,OK,29,30,30,27,29,28,23,29
+CHI-WHI-L,Meerut,13,0,1.7,5,2499,Chino,White,L,OK,12,13,13,14,13,12,13,13
+CHI-WHI-L,Rajkot,18,0,3.9,5,"Rs. 2,499",Chino,White,L,Reorder,30,31,27,28,28,21,27,33
+CHI-WHI-L,Varanasi,8,0,3.3,5,2499,Chino,White,L,OK,19,28,27,19,20,21,28,20
+CHI-WHI-XL,Mumbai,20,0,5.5,7,499,Chino,White,XL,,39,32,41,42,40,41,41,31
+CHI-WHI-XL,Delhi,121,17,4.1,9,₹499,Chino,White,XL,,32,33,23,33,33,33,31,22
+CHI-WHI-XL,Bengaluru,4,18,4.6,7,499,Chino,White,XL,Excess,27,29,35,35,27,31,27,37
+CHI-WHI-XL,Hyderabad,44,0,2.9,12,Rs. 499,Chino,White,XL,OK,15,24,21,15,21,24,17,16
+CHI-WHI-XL,Chennai, 50 ,10,2.5,7,499,Chino,White,XL,Reorder,17,15,18,15,16,15,19,18
+CHI-WHI-XL,Kolkata,28,0,2.1,7,499,Chino,White,XL,Excess,5,26,5,5,2,26,2,32
+CHI-WHI-XL,Pune,168,48,4.4,12,499,Chino,White,XL,OK,25,32,38,33,37,28,38,24
+CHI-WHI-XL,Ahmedabad,1,0,0.5,7,499.00,Chino,White,XL,Excess,4,3,3,4,3,4,4,3
+CHI-WHI-XL,Jaipur,7,29,4.6,5,499,Chino,White,XL,OK,24,27,35,29,38,35,29,26
+CHI-WHI-XL,Lucknow,65,0,4.0,7,₹499,Chino,White,XL,,33,35,27,26,24,26,21,24
+CHI-WHI-XL,Surat,30,9,1.3,7,₹499,Chino,White,XL,OK,10,9,8,8,10,11,9,7
+CHI-WHI-XL,Indore,98,0,3.3,9,499,Chino,White,XL,Reorder,19,23,19,22,19,23,26,21
+CHI-WHI-XL,Nagpur,96,0,3.7,9,499,Chino,White,XL,OK,29,28,22,21,25,26,23,21
+CHI-WHI-XL,Kochi,78,0,4.2,12,499,Chino,White,XL,OK,31,24,25,24,31,32,30,28
+CHI-WHI-XL,Chandigarh,18,0,3.6,5,₹499,Chino,White,XL,Reorder,31,23,26,26,25,24,31,22
+CHI-WHI-XL,Bhopal,15.5,0,5.2,12,499,Chino,White,XL,,33,44,45,43,41,34,30,31
+CHI-WHI-XL,Patna,40,17,4.5,5,499,Chino,White,XL,OK,31,36,30,33,24,29,34,37
+CHI-WHI-XL,Vadodara,16,0,1.5,12,499,Chino,White,XL,,9,13,10,10,12,11,8,12
+CHI-WHI-XL,Ludhiana,52,0,2.6,7,499,Chino,White,XL,Excess,23,18,22,21,21,17,15,17
+CHI-WHI-XL,Agra,65,48,4.7,9,499,Chino,White,XL,Reorder,33,34,28,32,26,38,33,34
+CHI-WHI-XL,Nashik,43,18,4.5,5,₹499,Chino,White,XL,OK,32,30,26,39,30,25,33,32
+CHI-WHI-XL,Meerut,88,0,2.7,12,499,Chino,White,XL,Reorder,16,19,19,22,23,20,19,23
+CHI-WHI-XL,Rajkot,60,0,5.5,9,Rs. 499,Chino,White,XL,OK,33,38,32,34,45,39,43,35
+CHI-WHI-XL,Varanasi,8,0,5.7,5,499,Chino,White,XL,Reorder,41,39,32,44,36,49,47,47
+CHI-NAV-S,Mumbai,-3,0,1.4,7,"₹1,299",Chino,Navy,S,Excess,11,10,11,8,10,12,9,12
+CHI-NAV-S,Delhi,9,21,4.7,5,1299,Chino,Navy,S,Excess,98,94,75,92,81,92,64,86
+CHI-NAV-S,Bengaluru,143,0,,12,"₹1,299",Chino,Navy,S,Excess,30,41,39,31,31,33,38,27
+CHI-NAV-S,Hyderabad,55,0,4.8,,1299,Chino,Navy,S,,29,38,36,33,40,29,34,28
+CHI-NAV-S,Chennai,19,0,1.0,9,"1,299.00",Chino,Navy,S,Reorder,7,7,5,7,8,5,7,6
+CHI-NAV-S,Kolkata,15,0,1.0,12,1299,Chino,Navy,S,OK,9,6,9,6,6,6,8,6
+CHI-NAV-S,Pune,60,31,3.2,9,"1,299.00",Chino,Navy,S,,21,27,22,21,20,22,23,24
+CHI-NAV-S,Ahmedabad,0,0,3.3,5,"₹1,299",Chino,Navy,S,Excess,22,28,23,23,28,21,20,26
+CHI-NAV-S,Jaipur,41,0,1.9,9,N/A,Chino,Navy,S,Reorder,13,16,11,11,15,35,13,15
+CHI-NAV-S,Lucknow,4,0,2.1,9,"1,299.00",Chino,Navy,S,,12,13,17,15,12,17,15,17
+CHI-NAV-S,Surat,9,6,1.1,12,"Rs. 1,299",Chino,Navy,S,OK,9,7,8,9,9,9,7,7
+CHI-NAV-S,Indore,25,21,4.4,9,"₹1,299",Chino,Navy,S,Reorder,25,31,33,27,24,28,25,36
+CHI-NAV-S,Indore,25,21,4.4,9,"₹1,299",Chino,Navy,S,Reorder,25,31,33,27,24,28,25,36
+CHI-NAV-S,Nagpur,13,10,3.1,5,1299,Chino,Navy,S,Reorder,22,25,24,26,19,25,24,22
+CHI-NAV-S,Kochi,5,0,0.5,5,"₹1,299",Chino,Navy,S,Reorder,4,3,4,4,4,4,4,4
+CHI-NAV-S,Chandigarh,16,0,2.3,9,1299,Chino,Navy,S,,19,19,20,19,14,20,15,13
+CHI-NAV-S,Bhopal,92,0,6.0,9,1299,Chino,Navy,S,Reorder,39,47,47,35,42,47,46,51
+CHI-NAV-S,Patna,8,0,4.0,9,1299,Chino,Navy,S,Reorder,32,34,22,28,31,33,35,33
+CHI-NAV-S,Vadodara,13,0,3.1,5,1299,Chino,Navy,S,Excess,24,21,20,27,27,23,24,27
+CHI-NAV-S,Ludhiana,9,0,0.6,7,"Rs. 1,299",Chino,Navy,S,Excess,5,5,5,3,4,5,5,4
+CHI-NAV-S,Agra,17,0,0.7,12,1299,Chino,Navy,S,,5,4,5,4,6,4,4,5
+CHI-NAV-S,Nashik,55,0,1.9,12,"1,299.00",Chino,Navy,S,,11,16,13,12,14,16,14,13
+CHI-NAV-S,Meerut,51,0,2.4,9,"₹1,299",Chino,Navy,S,Reorder,18,20,21,13,16,13,18,17
+CHI-NAV-S,Rajkot, 0 ,0,1.6,12,"₹1,299",Chino,Navy,S,Reorder,11,10,13,13,10,14,9,12
+CHI-NAV-S,Varanasi,51,0,5.5,12 days,"1,299.00",Chino,Navy,S,OK,48,30,33,35,34,40,42,32
+CHI-NAV-M,Mumbai,14,0,0.8,7,1299,Chino,Navy,M,,12,10,12,2,1,12,10,2
+CHI-NAV-M,Delhi,10,0,1.6,12,"₹1,299",Chino,Navy,M,Reorder,10,10,9,11,13,12,11,12
+CHI-NAV-M,Bengaluru,19,16,2.9,7,"1,299.00",Chino,Navy,M,,18,21,19,17,22,17,18,16
+CHI-NAV-M,Hyderabad,28,0,1.6,7,"1,299.00",Chino,Navy,M,,10,9,12,13,9,13,10,13
+CHI-NAV-M,Chennai,171,0,5.4,12,1299,Chino,Navy,M,OK,37,39,36,43,30,37,33,39
+CHI-NAV-M,Kolkata,79,0,3.6,9,"1,299.00",Chino,Navy,M,OK,22,20,27,29,23,31,28,26
+CHI-NAV-M,Pune,71,0,5.3,9,"₹1,299",Chino,Navy,M,OK,30,39,28,32,35,43,38,43
+CHI-NAV-M,Ahmedabad,19,0,1.8,9,1299,Chino,Navy,M,OK,10,15,15,15,10,14,15,11
+CHI-NAV-M,Jaipur, 15 ,0,1.1,5,"₹1,299",Chino,Navy,M,OK,7,7,7,6,7,8,8,6
+CHI-NAV-M,Lucknow,28,0,4.4,12,"₹1,299",Chino,Navy,M,OK,35,31,34,28,34,35,27,24
+CHI-NAV-M,Surat,16,0,5.7,5,1299,Chino,Navy,M,,38,46,43,48,43,47,38,46
+CHI-NAV-M,Indore,128,0,5.7,7,1299,Chino,Navy,M,OK,30,46,35,43,44,39,33,38
+CHI-NAV-M,Nagpur,12,0,1.2,5,"1,299.00",Chino,Navy,M,Excess,10,9,10,7,9,9,7,10
+CHI-NAV-M,Kochi,9,41,2.6,12,"₹1,299",Chino,Navy,M,Reorder,17,22,18,16,21,22,16,17
+CHI-NAV-M,Chandigarh,9, 41 ,3.4,9,"Rs. 1,299",Chino,Navy,M,Excess,52,69,74,67,74,73,73,66
+CHI-NAV-M,Bhopal,0,0,1.0,5,1299,Chino,Navy,M,OK,6,8,7,8,8,5,6,8
+CHI-NAV-M,Patna,5,0,0.8,9,"₹1,299",Chino,Navy,M,Excess,5,6,6,6,5,6,6,6
+CHI-NAV-M,Vadodara,15,-11,2.4,9,1299,Chino,Navy,M,Reorder,13,14,14,18,18,19,17,18
+CHI-NAV-M,Ludhiana,26,0,0.7,12,1299,Chino,Navy,M,OK,6,6,6,4,4,4,4,4
+CHI-NAV-M,Agra,45,0,1.3,12,"₹1,299",Chino,Navy,M,OK,8,8,9,8,8,8,8,10
+CHI-NAV-M,Nashik,41.5,0,3.1,5,"Rs. 1,299",Chino,Navy,M,,21,17,21,18,21,22,16,17
+CHI-NAV-M,Meerut,88,35,2.6,12,1299,Chino,Navy,M,OK,21,22,14,17,21,15,23,20
+CHI-NAV-M,Rajkot,61,64,5.3,9,"₹1,299",Chino,Navy,M,Excess,34,45,43,34,36,36,44,31
+CHI-NAV-M,Varanasi,96,0,3.1,12,"₹1,299",Chino,Navy,M,Excess,23,17,17,26,25,17,25,26
+CHI-NAV-L,Mumbai,17,23,3.6,9,799,Chino,Navy,L,Reorder,28,26,26,19,27,31,20,28
+CHI-NAV-L,Delhi,8,0,0.7,5,799,Chino,Navy,L,Excess,4,6,4,5,6,19,6,4
+CHI-NAV-L,Bengaluru,36,0,2.5,12,799,Chino,Navy,L,Reorder,18,20,19,16,21,22,19,20
+CHI-NAV-L,Hyderabad,5,0,2.6,7,799,Chino,Navy,L,Excess,16,14,16,22,22,20,21,14
+CHI-NAV-L,Chennai,46,0,5.9,5,₹799,Chino,Navy,L,Excess,47,37,41,43,47,34,34,46
+CHI-NAV-L,Kolkata,147,57,4.4,12,Rs. 799,Chino,Navy,L,OK,31,26,30,34,35,25,34,29
+CHI-NAV-L,Pune,27,0,3.5,5,₹799,Chino,Navy,L,OK,30,25,25,21,19,24,23,22
+CHI-NAV-L,Ahmedabad,58,0,5.5,9,₹799,Chino,Navy,L,OK,40,40,48,32,30,36,39,36
+CHI-NAV-L,Jaipur,11,0,5.2,5,Rs. 799,Chino,Navy,L,OK,45,31,32,40,44,42,34,39
+CHI-NAV-L,Lucknow,121,19,5.5,7,799,Chino,Navy,L,OK,41,44,30,33,47,41,31,46
+CHI-NAV-L,Surat,80,17,3.1,9,Rs. 799,Chino,Navy,L,OK,22,18,27,20,26,21,20,22
+CHI-NAV-L,Indore, 127 ,0,4.4,9,₹799,Chino,Navy,L,OK,26,28,36,25,25,30,29,35
+CHI-NAV-L,Nagpur,24,13,5.4,5,Rs. 799,Chino,Navy,L,Excess,40,35,36,46,36,38,36,31
+,Kochi,19,16,2.8,5,799,Chino,Navy,L,Excess,23,17,24,18,20,19,22,20
+CHI-NAV-L,Chandigarh,33,0,3.4,5,799.00,Chino,Navy,L,Excess,18,21,23,20,30,20,26,26
+CHI-NAV-L,Bhopal,35,0,3.9,12,Rs. 799,Chino,Navy,L,Excess,28,30,33,22,22,28,24,29
+CHI-NAV-L,Patna,98,0,4.6,7,799,Chino,Navy,L,,28,29,33,34,24,26,37,32
+CHI-NAV-L,Vadodara,29,0,2.1,5,Rs. 799,Chino,Navy,L,Reorder,12,12,17,16,16,17,16,14
+CHI-NAV-L,Ludhiana,11,0,3.9,7,Rs. 799,Chino,Navy,L,,30,31,21,25,31,21,24,30
+CHI-NAV-L,Agra,2,0,2.4,7,N/A,Chino,Navy,L,Excess,3,36,3,30,6,30,3,36
+CHI-NAV-L,Nashik,68,0,5.2,5,799.00,Chino,Navy,L,Reorder,41,37,40,37,44,38,28,40
+CHI-NAV-L,Meerut,12,7,0.7,9,₹799,Chino,Navy,L,OK,5,5,5,6,4,4,5,5
+CHI-NAV-L,Rajkot,58,0,4.2,5,799,Chino,Navy,L,Excess,27,34,33,33,28,32,34,35
+CHI-NAV-L,Varanasi,148,0,4.1,12,799,Chino,Navy,L,,33,27,35,33,24,24,35,24
+CHI-NAV-XL,Mumbai,1,0,1.1,12,2499,Chino,Navy,XL,Reorder,9,7,9,10,7,8,9,6
+CHI-NAV-XL,Delhi,50,0,2.1,9,2499,Chino,Navy,XL,OK,11,14,14,16,12,17,16,12
+CHI-NAV-XL,Bengaluru,1,0,0.6,7,2499,Chino,Navy,XL,OK,5,5,5,3,4,4,3,4
+CHI-NAV-XL,Hyderabad,115,0,5.5,9,"₹2,499",Chino,Navy,XL,,100,106,95,105,96,78,94,100
+CHI-NAV-XL,Chennai,45,0,4.2,,"₹2,499",Chino,Navy,XL,,27,22,31,27,32,25,33,33
+CHI-NAV-XL,Kolkata,44,0,2.8,7,2499,Chino,Navy,XL,,16,16,17,17,19,18,18,16
+CHI-NAV-XL,Pune,52,0,4.7,9,"Rs. 2,499",Chino,Navy,XL,Excess,38,31,34,33,38,26,31,29
+CHI-NAV-XL,Ahmedabad,44,8,1.6,12,"₹2,499",Chino,Navy,XL,,11,10,11,14,11,9,9,9
+CHI-NAV-XL,Jaipur,53,0,2.3,7,"₹2,499",Chino,Navy,XL,Excess,12,14,13,15,20,17,14,15
+CHI-NAV-XL,Lucknow,64,22,2.3,12,"₹2,499",Chino,Navy,XL,,15,15,19,17,19,18,19,19
+CHI-NAV-XL,Surat,115,0,4.6,9,2499,Chino,Navy,XL,Excess,34,34,37,28,37,37,27,40
+CHI-NAV-XL,Indore,3,13,2.6,7,"₹2,499",Chino,Navy,XL,Reorder,16,19,19,19,18,20,17,20
+CHI-NAV-XL,Nagpur,87,0,4.6,7,"Rs. 2,499",Chino,Navy,XL,,33,34,34,37,27,26,24,29
+CHI-NAV-XL,Kochi,38,0,,12,2499,Chino,Navy,XL,OK,15,16,11,16,14,15,14,15
+CHI-NAV-XL,Chandigarh,93,0,2.4,12,"₹2,499",Chino,Navy,XL,Excess,15,17,16,20,21,14,19,15
+CHI-NAV-XL,Bhopal,14,0,1.5,9,"Rs. 2,499",Chino,Navy,XL,OK,12,9,11,8,11,11,10,12
+CHI-NAV-XL,Patna,30,0,2.2,5,2499,Chino,Navy,XL,,14,12,12,13,12,13,14,13
+CHI-NAV-XL,Vadodara,(4),0,5.8,5,"₹2,499",Chino,Navy,XL,Excess,40,42,46,40,47,44,41,46
+CHI-NAV-XL,Ludhiana,1,7,1.5,5,2499,Chino,Navy,XL,,11,13,10,12,11,35,8,10
+CHI-NAV-XL,Agra,27,0,1.2,7,"₹2,499",Chino,Navy,XL,Reorder,7,10,6,8,8,6,9,10
+CHI-NAV-XL,Nashik,14,0,2.8,7,2499,Chino,Navy,XL,,21,19,19,20,24,23,17,17
+CHI-NAV-XL,Meerut,75,40,2.5,12,2499,Chino,Navy,XL,OK,16,20,15,17,17,19,16,21
+CHI-NAV-XL,Rajkot,62,0,5.1,12,2499,Chino,Navy,XL,,40,33,44,44,31,33,32,44
+CHI-NAV-XL,Varanasi,59,0,4.4,5,"Rs. 2,499",Chino,Navy,XL,OK,36,25,31,38,28,26,35,24
+HOO-BLA-S,Mumbai,78,51,5.5,7,1299,Hoodie,Black,S,Reorder,41,42,45,37,46,39,36,35
+HOO-BLA-S,Delhi,61.5,10,3.8,7,1299,Hoodie,Black,S,OK,31,26,31,31,24,30,30,27
+HOO-BLA-S,Bengaluru,1,4,1.2,5,1299,Hoodie,Black,S,Reorder,9,8,10,10,9,7,10,10
+HOO-BLA-S,Hyderabad,47,38,4.6,12,"₹1,299",Hoodie,Black,S,Excess,33,36,26,29,37,38,34,39
+HOO-BLA-S,Chennai,10,0,2.8,5,"₹1,299",Hoodie,Black,S,OK,20,20,24,24,18,19,17,23
+HOO-BLA-S,Kolkata,2,0,0.6,5,1299,Hoodie,Black,S,Excess,5,4,5,5,3,5,5,3
+HOO-BLA-S,Pune,89,0,2.7,12 days,"₹1,299",Hoodie,Black,S,,23,23,21,21,23,16,17,18
+HOO-BLA-S,Ahmedabad,13,12,0.9,12,1299,Hoodie,Black,S,Reorder,5,6,5,6,7,5,6,6
+HOO-BLA-S,Jaipur,32,19,2.4,9,1299,Hoodie,Black,S,Excess,13,16,18,18,13,19,20,21
+HOO-BLA-S,Lucknow,1,0,4.1,5,"₹1,299",Hoodie,Black,S,OK,28,27,26,32,33,35,32,35
+HOO-BLA-S,Surat,27,0,1.5,7,1299,Hoodie,Black,S,,11,11,9,12,12,9,12,13
+HOO-BLA-S,Indore,87,0,4.3,9,"₹1,299",Hoodie,Black,S,,29,34,24,25,36,28,27,24
+HOO-BLA-S,Nagpur,126,0,4.2,12,"₹1,299",Hoodie,Black,S,OK,23,32,24,23,23,23,27,24
+HOO-BLA-S,Nagpur,126,0,4.2,12,"₹1,299",Hoodie,Black,S,OK,23,32,24,23,23,23,27,24
+HOO-BLA-S,Kochi,45,0,5.1,5,"1,299.00",Hoodie,Black,S,OK,36,36,29,33,40,40,32,32
+HOO-BLA-S,Chandigarh,32,0,4.9,9,1299,Hoodie,Black,S,Reorder,61,75,13,61,6,13,61,6
+HOO-BLA-S,Bhopal,23,0,4.8,12,"Rs. 1,299",Hoodie,Black,S,,39,28,35,39,27,35,33,31
+HOO-BLA-S,Patna,36,-13,2.7,7,1299,Hoodie,Black,S,Reorder,53,56,39,58,44,43,43,57
+HOO-BLA-S,Vadodara,65,0,2.3,12,1299,Hoodie,Black,S,Reorder,19,16,15,17,17,20,16,15
+HOO-BLA-S,Ludhiana,18,0,1.2,7,1299,Hoodie,Black,S,OK,8,7,10,9,10,10,8,9
+HOO-BLA-S,Agra,91,79,5.0,12,"₹1,299",Hoodie,Black,S,,37,40,33,29,35,37,30,29
+HOO-BLA-S,Nashik,119,0,5.5,12,"Rs. 1,299",Hoodie,Black,S,OK,34,33,44,35,31,45,33,35
+HOO-BLA-S,Meerut,55,0,3.4,5,1299,Hoodie,Black,S,Excess,25,21,24,20,20,27,26,25
+HOO-BLA-S,Rajkot,124,0,5.7,12,1299,Hoodie,Black,S,Reorder,40,38,31,49,49,30,31,35
+HOO-BLA-S,Varanasi,28,0,3.3,12,"Rs. 1,299",Hoodie,Black,S,,18,26,28,22,23,23,25,28
+HOO-BLA-M,Mumbai,63,0,4.4,12,499,Hoodie,Black,M,Excess,34,25,29,26,24,30,26,25
+HOO-BLA-M,Delhi,17, 11 ,3.5,5,₹499,Hoodie,Black,M,OK,23,19,20,25,28,20,18,23
+HOO-BLA-M,Bengaluru,116,0,5.7,7,Rs. 499,Hoodie,Black,M,Reorder,44,45,33,41,39,43,47,33
+HOO-BLA-M,Hyderabad,40,0,2.4,9,499,Hoodie,Black,M,Reorder,15,18,15,18,14,20,18,14
+HOO-BLA-M,Chennai,11,0,2.6,12,499,Hoodie,Black,M,OK,20,14,20,22,17,20,22,21
+HOO-BLA-M,Kolkata,68,0,4.6,7,₹499,Hoodie,Black,M,Excess,28,38,34,30,30,37,27,40
+HOO-BLA-M,Pune,6,0,1.7,7,N/A,Hoodie,Black,M,OK,14,10,12,11,10,14,15,15
+HOO-BLA-M,Ahmedabad,9,13,3.9,7,499,Hoodie,Black,M,Excess,33,27,29,30,26,25,25,27
+HOO-BLA-M,Jaipur,66,0,1.9,12,499,Hoodie,Black,M,Reorder,15,13,12,14,15,16,15,13
+HOO-BLA-M,Lucknow,4,0,0.6,5,499,Hoodie,Black,M,Reorder,4,4,5,4,4,4,5,4
+HOO-BLA-M,Surat,8,0,0.7,5,₹499,Hoodie,Black,M,,4,6,5,6,5,4,5,6
+HOO-BLA-M,Indore,4,0,0.6,5,₹499,Hoodie,Black,M,Excess,4,5,4,4,5,12,3,4
+HOO-BLA-M,Nagpur,5,0,0.7,5,499,Hoodie,Black,M,,6,4,5,5,5,5,4,4
+HOO-BLA-M,Kochi,49,0,4.2,5,₹499,Hoodie,Black,M,Reorder,35,25,27,29,32,30,24,26
+HOO-BLA-M,Chandigarh,10,0,1.4,5,₹499,Hoodie,Black,M,,8,11,9,7,10,12,11,11
+HOO-BLA-M,Bhopal,71,0,4.6,5,499.00,Hoodie,Black,M,OK,38,26,37,32,29,35,28,38
+HOO-BLA-M,Patna,33,0,1.9,9,499,Hoodie,Black,M,,11,16,17,17,16,16,15,10
+HOO-BLA-M,Vadodara,40,42,5.4,12,Rs. 499,Hoodie,Black,M,,30,33,36,44,29,40,42,41
+HOO-BLA-M,Ludhiana, 79 ,0,5.2,5,499,Hoodie,Black,M,OK,37,41,40,36,36,43,30,39
+HOO-BLA-M,Agra,93,0,4.2,9,499,Hoodie,Black,M,OK,29,34,25,24,24,35,26,29
+HOO-BLA-M,Nashik,14,0,0.8,7,₹499,Hoodie,Black,M,Excess,6,6,5,7,6,5,6,6
+HOO-BLA-M,Meerut,76,0,4.7,7,₹499,Hoodie,Black,M,Reorder,28,33,33,37,27,29,40,30
+HOO-BLA-M,Rajkot,17,0,3.9,5,499,Hoodie,Black,M,Excess,25,24,26,33,24,23,31,23
+HOO-BLA-M,Varanasi,16,0,5.2,12,499,Hoodie,Black,M,,45,28,40,30,32,31,32,43
+HOO-WHI-S,Mumbai,9,7,1.3,7,Rs. 499,Hoodie,White,S,Reorder,7,8,9,8,8,8,11,11
+HOO-WHI-S,Delhi,30,0,1.8,7,499.00,Hoodie,White,S,Reorder,12,12,12,12,12,14,15,14
+HOO-WHI-S,Bengaluru,47,0,2.1,12,499,Hoodie,White,S,,12,17,14,12,15,16,17,14
+HOO-WHI-S,Hyderabad,50,0,5.4,5,499,Hoodie,White,S,OK,46,30,42,34,45,37,38,29
+HOO-WHI-S,Chennai,91,37,4.5,12,499,Hoodie,White,S,OK,39,24,29,35,25,29,27,28
+HOO-WHI-S,Kolkata,52,0,2.1,,499,Hoodie,White,S,OK,39,43,38,40,44,41,37,34
+HOO-WHI-S,Pune,74.5,0,4.8,12,₹499,Hoodie,White,S,OK,28,38,31,31,28,36,37,42
+HOO-WHI-S,Ahmedabad,2,0,1.1,9,499,Hoodie,White,S,,8,6,6,9,8,9,8,8
+HOO-WHI-S,Jaipur,3,27,3.9,9,Rs. 499,Hoodie,White,S,,21,23,23,23,33,34,22,25
+HOO-WHI-S,Lucknow,21,0,0.7,12,499,Hoodie,White,S,OK,1,10,8,10,8,0,8,0
+HOO-WHI-S,Surat,11,55,5.3,9,499.00,Hoodie,White,S,Excess,46,46,40,34,33,40,43,36
+HOO-WHI-S,Indore,76,31,4.5,12,499,Hoodie,White,S,,27,31,36,29,25,30,29,39
+HOO-WHI-S,Nagpur,2,0,2.8,7,499,Hoodie,White,S,Reorder,24,24,21,17,17,20,23,21
+HOO-WHI-S,Kochi,0,17,3.9,7,499,Hoodie,White,S,Excess,34,27,30,27,23,28,23,28
+HOO-WHI-S,Chandigarh,9,0,0.8,12,₹499,Hoodie,White,S,OK,7,6,4,6,5,5,6,5
+HOO-WHI-S,Bhopal,16,7,1.9,5,Rs. 499,Hoodie,White,S,OK,13,13,11,13,12,13,10,15
+HOO-WHI-S,Patna,16,0,1.0,12,499,Hoodie,White,S,OK,6,7,6,8,8,8,8,8
+HOO-WHI-S,Vadodara,31,0,1.2,9,499,Hoodie,White,S,OK,8,9,7,10,9,8,8,10
+,Ludhiana,89,50,4.4,12,499,Hoodie,White,S,,31,26,29,38,37,33,26,36
+HOO-WHI-S,Agra,29,0,1.2,9,499,Hoodie,White,S,OK,6,7,8,8,7,6,7,6
+HOO-WHI-S,Nashik,4,0,2.9,5,499,Hoodie,White,S,Reorder,19,17,18,19,15,16,23,22
+HOO-WHI-S,Meerut,42,0,2.4,9,₹499,Hoodie,White,S,Reorder,17,19,13,14,14,15,15,15
+HOO-WHI-S,Rajkot,36, 29 ,3.2,12,499,Hoodie,White,S,OK,25,18,18,23,27,25,17,22
+HOO-WHI-S,Varanasi,39,0,4.3,9,499,Hoodie,White,S,OK,27,35,24,33,30,34,36,32
+HOO-WHI-M,Mumbai,43,0,,9,"₹2,499",Hoodie,White,M,Excess,19,12,18,16,17,16,14,18
+HOO-WHI-M,Delhi,22,14,2.2,5,2499,Hoodie,White,M,,15,17,15,12,13,18,16,18
+HOO-WHI-M,Bengaluru,12,4,0.7,7,2499,Hoodie,White,M,OK,6,4,6,4,6,5,5,4
+HOO-WHI-M,Hyderabad,3,0,0.9,5,2499,Hoodie,White,M,OK,6,5,6,5,6,5,7,7
+HOO-WHI-M,Chennai,9,0,1.4,12,"Rs. 2,499",Hoodie,White,M,Excess,9,11,11,9,8,28,9,11
+HOO-WHI-M,Kolkata,151,0,4.4,12,2499,Hoodie,White,M,Excess,31,34,28,38,24,28,32,37
+HOO-WHI-M,Pune,29,15,3.5,5,"2,499.00",Hoodie,White,M,OK,22,20,30,27,21,20,22,22
+HOO-WHI-M,Ahmedabad,9,19,1.6,12,"2,499.00",Hoodie,White,M,,9,10,9,14,8,9,10,9
+HOO-WHI-M,Jaipur,17,0,3.0,5,"₹2,499",Hoodie,White,M,,24,24,23,20,22,21,23,26
+HOO-WHI-M,Lucknow,37,0,2.0,7,2499,Hoodie,White,M,Reorder,15,14,11,15,15,15,11,17
+HOO-WHI-M,Surat,-7,0,5.3,12,"₹2,499",Hoodie,White,M,OK,43,29,31,42,39,31,43,29
+HOO-WHI-M,Indore,154,0,5.1,12,"Rs. 2,499",Hoodie,White,M,Reorder,30,38,32,29,32,30,29,44
+HOO-WHI-M,Nagpur,73,0,5.7,9,2499,Hoodie,White,M,Excess,35,44,43,40,35,41,48,47
+HOO-WHI-M,Kochi,86,0,4.5,7 days,2499,Hoodie,White,M,,32,38,32,25,36,28,26,28
+HOO-WHI-M,Chandigarh,70,0,4.9,12,2499,Hoodie,White,M,,30,37,31,35,35,27,42,34
+HOO-WHI-M,Bhopal,46,-20,4.8,9,2499,Hoodie,White,M,Excess,33,32,34,40,32,39,41,35
+HOO-WHI-M,Patna,74,0,5.4,5,"₹2,499",Hoodie,White,M,Excess,47,38,34,37,37,31,40,37
+HOO-WHI-M,Vadodara,134,0,4.5,9,N/A,Hoodie,White,M,,26,30,33,28,31,36,31,28
+HOO-WHI-M,Ludhiana,87,0,3.7,7,"₹2,499",Hoodie,White,M,,70,78,52,64,75,68,77,59
+HOO-WHI-M,Agra,164,0,5.3,12,"Rs. 2,499",Hoodie,White,M,,39,41,46,43,37,34,34,31
+HOO-WHI-M,Nashik,4,0,1.2,9,2499,Hoodie,White,M,,10,8,8,8,8,10,7,7
+HOO-WHI-M,Meerut,2,0,3.9,9,2499,Hoodie,White,M,,23,32,33,23,25,31,27,30
+HOO-WHI-M,Rajkot, 1 ,0,0.8,7,"Rs. 2,499",Hoodie,White,M,Excess,7,5,7,5,7,5,4,5
+HOO-WHI-M,Varanasi,27,0,1.9,12,2499,Hoodie,White,M,OK,14,13,13,12,10,15,10,16
+HOO-NAV-S,Mumbai,10,0,4.5,7,499,Hoodie,Navy,S,Reorder,35,35,27,31,35,24,27,25
+HOO-NAV-S,Delhi,20,6,1.1,7,Rs. 499,Hoodie,Navy,S,Excess,8,9,8,6,6,6,9,9
+HOO-NAV-S,Bengaluru,107,0,5.3,7,499,Hoodie,Navy,S,OK,31,42,43,46,29,29,35,33
+HOO-NAV-S,Hyderabad,9,0,2.1,9,499,Hoodie,Navy,S,Excess,14,14,18,13,12,11,11,17
+HOO-NAV-S,Chennai,54,0,3.9,12,499,Hoodie,Navy,S,Reorder,60,49,5,49,5,49,10,49
+HOO-NAV-S,Kolkata,36,0,3.0,5,₹499,Hoodie,Navy,S,Excess,22,24,17,19,19,20,22,25
+HOO-NAV-S,Pune,116,54,3.6,12,₹499,Hoodie,Navy,S,OK,19,30,31,26,27,26,28,21
+HOO-NAV-S,Ahmedabad,14,0,0.7,9,499,Hoodie,Navy,S,Reorder,5,4,5,5,4,6,5,6
+HOO-NAV-S,Jaipur,141,0,5.3,12,₹499,Hoodie,Navy,S,,30,41,33,41,39,39,30,36
+HOO-NAV-S,Lucknow,73,0,4.6,5,₹499,Hoodie,Navy,S,,33,39,37,39,24,25,32,38
+HOO-NAV-S,Surat,21,0,2.4,5,₹499,Hoodie,Navy,S,,14,17,14,16,16,18,14,13
+HOO-NAV-S,Indore,124.5,34,5.6,9,499.00,Hoodie,Navy,S,Reorder,44,35,48,31,37,31,49,39
+HOO-NAV-S,Nagpur,11,0,4.3,5,Rs. 499,Hoodie,Navy,S,Excess,24,33,30,24,35,28,23,23
+HOO-NAV-S,Kochi,141,0,5.5,12,499,Hoodie,Navy,S,,33,43,47,46,47,35,40,47
+HOO-NAV-S,Kochi,141,0,5.5,12,499,Hoodie,Navy,S,,33,43,47,46,47,35,40,47
+HOO-NAV-S,Chandigarh,22,0,2.0,5,499,Hoodie,Navy,S,Reorder,12,17,13,17,17,14,15,13
+HOO-NAV-S,Bhopal,10,0,1.3,7,499,Hoodie,Navy,S,,9,11,9,9,9,10,8,11
+HOO-NAV-S,Patna,17,0,3.9,5,499.00,Hoodie,Navy,S,Excess,29,33,29,25,26,22,29,24
+HOO-NAV-S,Vadodara,38,0,3.0,7,499,Hoodie,Navy,S,OK,22,19,21,24,21,16,18,18
+HOO-NAV-S,Ludhiana,22,0,3.3,7,499,Hoodie,Navy,S,Reorder,19,22,23,27,20,24,18,20
+HOO-NAV-S,Agra,5,0,1.7,7,499,Hoodie,Navy,S,Excess,14,14,13,13,9,11,13,12
+HOO-NAV-S,Nashik,73,0,5.8,5,₹499,Hoodie,Navy,S,OK,33,38,51,33,31,39,45,46
+HOO-NAV-S,Meerut,95,35,5.6,9,₹499,Hoodie,Navy,S,Reorder,46,38,34,36,44,137,44,47
+HOO-NAV-S,Rajkot,37,0,3.9,9,Rs. 499,Hoodie,Navy,S,,33,33,27,26,31,21,28,24
+HOO-NAV-S,Varanasi, 73 ,40,4.3,7,₹499,Hoodie,Navy,S,Excess,26,27,30,25,24,25,34,34
+HOO-NAV-M,Mumbai,17,0,0.9,9,"₹1,999",Hoodie,Navy,M,OK,8,6,5,8,6,8,8,7
+HOO-NAV-M,Delhi,85,36,2.2,12,"Rs. 1,999",Hoodie,Navy,M,OK,17,14,17,16,13,19,14,12
+HOO-NAV-M,Bengaluru,47,0,1.9,9,1999,Hoodie,Navy,M,,15,16,15,12,14,10,14,15
+HOO-NAV-M,Hyderabad,8,0,1.2,12,1999,Hoodie,Navy,M,Excess,9,9,8,8,7,9,9,10
+HOO-NAV-M,Chennai,112,0,5.0,7,"₹1,999",Hoodie,Navy,M,Excess,42,42,35,40,29,38,42,29
+HOO-NAV-M,Kolkata,37,0,5.2,7,1999,Hoodie,Navy,M,,33,34,38,32,36,40,29,44
+HOO-NAV-M,Pune,25,0,1.9,,"₹1,999",Hoodie,Navy,M,OK,11,10,15,12,17,14,15,13
+HOO-NAV-M,Ahmedabad,32,0,2.6,9,1999,Hoodie,Navy,M,OK,39,45,48,39,53,41,55,42
+HOO-NAV-M,Jaipur,24,0,2.2,5,"1,999.00",Hoodie,Navy,M,OK,13,12,15,15,14,12,13,13
+HOO-NAV-M,Lucknow,25,12,3.8,5,1999,Hoodie,Navy,M,Excess,33,20,21,25,22,22,31,21
+HOO-NAV-M,Surat,181,0,5.6,12,1999,Hoodie,Navy,M,OK,38,47,49,44,42,49,33,43
+HOO-NAV-M,Indore,47,34,5.6,5,1999,Hoodie,Navy,M,Excess,33,36,49,31,49,44,44,33
+HOO-NAV-M,Nagpur,16,17,2.9,5,"Rs. 1,999",Hoodie,Navy,M,,20,17,18,17,22,22,25,24
+HOO-NAV-M,Kochi, 13 ,0,0.9,5,"Rs. 1,999",Hoodie,Navy,M,OK,5,6,6,6,5,6,6,6
+HOO-NAV-M,Chandigarh,0,0,5.3,12,"1,999.00",Hoodie,Navy,M,,36,45,38,38,32,36,0,0
+HOO-NAV-M,Bhopal,156,0,5.6,9,1999,Hoodie,Navy,M,Reorder,36,31,34,47,34,36,42,33
+HOO-NAV-M,Patna,9,9,1.1,12,"1,999.00",Hoodie,Navy,M,OK,6,8,6,7,9,8,6,6
+HOO-NAV-M,Vadodara,23,0,1.1,12,"Rs. 1,999",Hoodie,Navy,M,Reorder,9,6,7,6,9,8,6,6
+HOO-NAV-M,Ludhiana,39,0,2.8,5,1999,Hoodie,Navy,M,Excess,15,23,23,16,18,17,24,17
+HOO-NAV-M,Agra,14,0,3.5,5,1999,Hoodie,Navy,M,Reorder,27,28,27,28,24,26,19,21
+HOO-NAV-M,Nashik,68,0,5.4,12,"Rs. 1,999",Hoodie,Navy,M,Reorder,39,33,38,38,37,40,42,34
+HOO-NAV-M,Meerut,6,0,1.9,5,1999,Hoodie,Navy,M,Reorder,10,16,11,11,14,15,13,15
+HOO-NAV-M,Rajkot,19,19,2.8,5,"₹1,999",Hoodie,Navy,M,Excess,24,21,15,15,16,21,16,15
+HOO-NAV-M,Varanasi,15,0,2.5,5,1999,Hoodie,Navy,M,,3,7,7,38,7,3,31,7
+BOM-BLA-S,Mumbai,6,0,5.4,5,499,Bomber,Black,S,OK,32,47,39,31,34,43,41,31
+BOM-BLA-S,Delhi,33,0,1.8,9,₹499,Bomber,Black,S,Reorder,15,12,14,14,12,15,11,13
+BOM-BLA-S,Bengaluru,129,0,3.6,12,₹499,Bomber,Black,S,OK,27,31,21,31,28,25,30,19
+BOM-BLA-S,Hyderabad,0,0,5.3,9,499,Bomber,Black,S,Excess,39,41,35,30,43,41,45,35
+BOM-BLA-S,Chennai,45,0,5.6,12,N/A,Bomber,Black,S,,45,37,40,39,33,43,32,40
+BOM-BLA-S,Kolkata,47,0,3.4,5,₹499,Bomber,Black,S,Reorder,25,22,24,29,19,22,23,28
+BOM-BLA-S,Pune,17,0,1.4,5,₹499,Bomber,Black,S,OK,7,9,8,10,8,7,10,9
+BOM-BLA-S,Ahmedabad,10,38,5.1,9,₹499,Bomber,Black,S,Excess,36,43,41,27,42,41,42,29
+BOM-BLA-S,Jaipur,22,0,2.3,7,Rs. 499,Bomber,Black,S,,13,13,16,13,13,15,15,18
+BOM-BLA-S,Lucknow,111,30,4.2,9,499,Bomber,Black,S,Reorder,32,28,32,27,22,23,24,27
+BOM-BLA-S,Surat, 30 ,25,6.0,5,499,Bomber,Black,S,Excess,37,37,47,38,39,40,42,37
+BOM-BLA-S,Indore,83,0,,12,499,Bomber,Black,S,Reorder,38,32,44,42,42,45,29,34
+BOM-BLA-S,Nagpur,36,0,1.4,12,Rs. 499,Bomber,Black,S,Reorder,10,12,9,9,8,8,10,8
+BOM-BLA-S,Kochi,21,0,1.4,5,₹499,Bomber,Black,S,OK,11,7,10,12,8,10,8,11
+BOM-BLA-S,Chandigarh,1,-10,0.7,7,₹499,Bomber,Black,S,Excess,5,5,6,5,5,16,6,4
+BOM-BLA-S,Bhopal,16,0,2.2,7,499,Bomber,Black,S,OK,13,17,19,15,16,19,14,14
+BOM-BLA-S,Patna,30.5,0,1.7,7,₹499,Bomber,Black,S,Excess,9,14,13,9,11,11,11,14
+BOM-BLA-S,Vadodara,19,0,2.4,12,₹499,Bomber,Black,S,,20,18,15,18,18,21,20,16
+BOM-BLA-S,Ludhiana,68,0,5.3,7,499.00,Bomber,Black,S,Reorder,44,28,44,44,39,44,37,35
+BOM-BLA-S,Agra,117,0,5.0,12,499,Bomber,Black,S,OK,33,35,42,41,33,36,34,31
+BOM-BLA-S,Nashik,6,0,1.2,7 days,499,Bomber,Black,S,Excess,26,23,20,22,26,21,22,20
+BOM-BLA-S,Meerut,4,0,0.5,7,499,Bomber,Black,S,Excess,3,3,3,4,4,4,3,4
+BOM-BLA-S,Rajkot,20,0,1.0,7,₹499,Bomber,Black,S,Reorder,9,5,5,6,8,6,7,9
+,Varanasi, 12 ,14,1.1,12,499.00,Bomber,Black,S,OK,7,9,9,6,8,8,7,8
+BOM-BLA-M,Mumbai,67,0,3.3,9,1299,Bomber,Black,M,OK,20,27,21,24,28,28,24,24
+BOM-BLA-M,Delhi,42,0,2.8,12,"Rs. 1,299",Bomber,Black,M,Reorder,18,19,21,19,22,18,21,15
+BOM-BLA-M,Bengaluru,16,15,2.2,9,"₹1,299",Bomber,Black,M,OK,15,17,16,12,13,17,16,13
+BOM-BLA-M,Hyderabad,(9),0,1.7,9,1299,Bomber,Black,M,OK,11,14,10,12,13,12,12,12
+BOM-BLA-M,Chennai,62,57,4.6,12,1299,Bomber,Black,M,Excess,30,25,29,31,33,39,36,35
+BOM-BLA-M,Kolkata,26,0,2.5,12,1299,Bomber,Black,M,Excess,19,16,14,18,18,17,14,21
+BOM-BLA-M,Pune,185,0,5.0,12,1299,Bomber,Black,M,Excess,27,31,31,29,28,38,28,41
+BOM-BLA-M,Ahmedabad,12,33,4.9,5,"Rs. 1,299",Bomber,Black,M,OK,31,27,30,40,37,36,35,35
+BOM-BLA-M,Jaipur, 25 ,0,2.3,7,1299,Bomber,Black,M,,14,18,17,16,16,14,19,17
+BOM-BLA-M,Lucknow,13,0,0.8,7,1299,Bomber,Black,M,OK,6,6,6,5,5,6,7,4
+BOM-BLA-M,Surat,18,0,2.6,5,"Rs. 1,299",Bomber,Black,M,Reorder,18,22,22,16,21,16,20,18
+BOM-BLA-M,Indore,3,0,3.5,12,"Rs. 1,299",Bomber,Black,M,Reorder,19,25,20,28,27,25,28,29
+BOM-BLA-M,Nagpur,27,0,2.4,7,"₹1,299",Bomber,Black,M,Excess,14,20,20,19,18,17,20,13
+BOM-BLA-M,Kochi,9,0,1.1,9,1299,Bomber,Black,M,OK,9,6,7,9,9,7,8,10
+BOM-BLA-M,Chandigarh,12,0,4.3,7,"1,299.00",Bomber,Black,M,Reorder,35,36,24,23,23,31,27,27
+BOM-BLA-M,Bhopal,158,0,5.6,12,"Rs. 1,299",Bomber,Black,M,Excess,32,45,43,37,40,39,44,47
+BOM-BLA-M,Patna,74,0,4.5,7,"1,299.00",Bomber,Black,M,Excess,36,35,27,37,28,31,34,24
+BOM-BLA-M,Vadodara,12,0,2.2,7,"₹1,299",Bomber,Black,M,Reorder,15,13,16,18,14,14,19,17
+BOM-BLA-M,Ludhiana,50,18,3.1,5,1299,Bomber,Black,M,OK,47,47,47,4,4,4,8,47
+BOM-BLA-M,Agra,27,0,1.8,12,"₹1,299",Bomber,Black,M,Reorder,13,12,12,11,15,15,15,10
+BOM-BLA-M,Nashik,31,0,1.9,5,"₹1,299",Bomber,Black,M,Reorder,16,12,12,14,14,15,14,13
+BOM-BLA-M,Meerut,15,0,1.9,7,"₹1,299",Bomber,Black,M,Reorder,13,17,13,13,16,15,12,14
+BOM-BLA-M,Rajkot,63,20,2.2,12,1299,Bomber,Black,M,Reorder,12,14,16,19,15,16,16,12
+BOM-BLA-M,Varanasi,21,6,1.1,7,1299,Bomber,Black,M,,7,8,7,9,7,9,9,6
+BOM-BLA-L,Mumbai,18,0,3.4,5,1999,Bomber,Black,L,Reorder,27,22,29,18,18,22,24,30
+BOM-BLA-L,Delhi,20,0,1.9,5,1999,Bomber,Black,L,Reorder,16,12,10,10,16,12,11,15
+BOM-BLA-L,Bengaluru,25,9,2.4,5,1999,Bomber,Black,L,Excess,16,19,16,14,16,20,16,20
+BOM-BLA-L,Hyderabad,18,0,6.0,5,"1,999.00",Bomber,Black,L,Reorder,42,52,49,36,44,38,33,45
+BOM-BLA-L,Chennai,91,0,5.4,5,1999,Bomber,Black,L,Excess,32,28,31,40,46,37,45,40
+BOM-BLA-L,Kolkata,121,0,5.6,9,1999,Bomber,Black,L,Excess,30,35,35,42,45,40,44,36
+BOM-BLA-L,Pune,17,0,1.2,9,1999,Bomber,Black,L,,7,8,7,8,10,8,9,6
+BOM-BLA-L,Ahmedabad,90,0,5.9,,"Rs. 1,999",Bomber,Black,L,Excess,42,50,45,48,33,163,34,36
+BOM-BLA-L,Jaipur,161,0,5.3,9,1999,Bomber,Black,L,OK,42,42,44,29,37,39,37,36
+BOM-BLA-L,Lucknow,73,0,4.2,7,1999,Bomber,Black,L,OK,82,63,86,61,76,87,59,72
+BOM-BLA-L,Surat,39,0,3.8,5,"₹1,999",Bomber,Black,L,Reorder,32,31,26,26,28,31,28,27
+BOM-BLA-L,Indore,49,0,5.9,5,1999,Bomber,Black,L,Excess,50,50,51,32,38,39,40,36
+BOM-BLA-L,Nagpur,75,0,5.5,12,1999,Bomber,Black,L,,40,44,44,35,36,30,42,36
+BOM-BLA-L,Kochi,33,0,1.6,7,1999,Bomber,Black,L,Reorder,9,10,12,14,12,11,10,9
+BOM-BLA-L,Chandigarh,104,0,3.9,12,"₹1,999",Bomber,Black,L,OK,30,34,26,23,34,22,24,22
+BOM-BLA-L,Chandigarh,104,0,3.9,12,"₹1,999",Bomber,Black,L,OK,30,34,26,23,34,22,24,22
+BOM-BLA-L,Bhopal,23,0,1.6,7,N/A,Bomber,Black,L,OK,10,13,14,13,10,12,10,14
+BOM-BLA-L,Patna,122,0,3.5,12,"₹1,999",Bomber,Black,L,OK,21,27,29,29,25,20,27,29
+BOM-BLA-L,Vadodara,36,0,2.8,12,1999,Bomber,Black,L,Reorder,20,17,19,16,23,24,24,22
+BOM-BLA-L,Ludhiana,40,0,2.8,7,1999,Bomber,Black,L,OK,16,15,20,22,19,23,21,15
+BOM-BLA-L,Agra,8,0,0.9,12,"Rs. 1,999",Bomber,Black,L,,5,6,6,8,8,5,6,5
+BOM-BLA-L,Nashik,0,0,3.9,5,1999,Bomber,Black,L,Excess,27,32,30,31,34,25,0,0
+BOM-BLA-L,Meerut,0.5,0,3.9,12,1999,Bomber,Black,L,,31,22,29,30,26,30,30,25
+BOM-BLA-L,Rajkot,99,52,4.5,9,1999,Bomber,Black,L,Excess,24,29,30,34,28,36,27,28
+BOM-BLA-L,Varanasi,17,0,5.3,7,"₹1,999",Bomber,Black,L,Excess,46,29,33,34,30,40,42,33
+BOM-BLA-XL,Mumbai,11,0,0.7,12,499,Bomber,Black,XL,Reorder,6,4,4,5,6,6,6,5
+BOM-BLA-XL,Delhi,129,0,4.4,9,499.00,Bomber,Black,XL,OK,34,32,30,23,34,26,37,23
+BOM-BLA-XL,Bengaluru,34,0,2.1,9,499,Bomber,Black,XL,,18,13,15,14,13,17,14,15
+BOM-BLA-XL,Hyderabad,68,0,5.8,5,499.00,Bomber,Black,XL,Reorder,43,44,44,47,44,30,46,40
+BOM-BLA-XL,Chennai,2,0,2.8,5,Rs. 499,Bomber,Black,XL,Reorder,17,20,20,23,24,17,22,16
+BOM-BLA-XL,Kolkata,31,0,4.2,5,499,Bomber,Black,XL,OK,27,34,25,36,33,33,26,23
+BOM-BLA-XL,Pune,6,0,1.7,5,₹499,Bomber,Black,XL,Reorder,13,14,10,15,9,12,12,11
+BOM-BLA-XL,Ahmedabad,26,10,2.8,5,499,Bomber,Black,XL,,18,19,23,16,17,15,23,15
+BOM-BLA-XL,Jaipur,20,0,2.9,5,499,Bomber,Black,XL,,19,25,16,22,16,18,23,22
+BOM-BLA-XL,Lucknow,22,0,1.9,7,499,Bomber,Black,XL,Reorder,11,13,13,14,15,13,16,16
+BOM-BLA-XL,Surat,12,0,1.3,5,499,Bomber,Black,XL,Excess,7,9,8,10,8,8,9,11
+BOM-BLA-XL,Indore,2,0,1.7,7,499,Bomber,Black,XL,,14,11,10,12,14,11,14,9
+BOM-BLA-XL,Nagpur,1,18,3.5,7,Rs. 499,Bomber,Black,XL,Reorder,23,22,27,23,27,24,24,30
+BOM-BLA-XL,Kochi, 2 ,-3,5.7,7,499,Bomber,Black,XL,Excess,7,71,71,15,15,15,71,71
+BOM-BLA-XL,Chandigarh, 0 ,0,2.9,7,499,Bomber,Black,XL,,24,18,19,16,21,18,0,0
+BOM-BLA-XL,Bhopal,39,8,1.4,12,₹499,Bomber,Black,XL,Excess,8,9,9,12,9,11,8,9
+BOM-BLA-XL,Patna,7,0,1.3,9,499,Bomber,Black,XL,OK,11,9,9,9,10,9,11,10
+BOM-BLA-XL,Vadodara,13,0,4.7,7,Rs. 499,Bomber,Black,XL,Reorder,34,34,30,34,32,40,37,35
+BOM-BLA-XL,Ludhiana,11,0,1.4,7,₹499,Bomber,Black,XL,Reorder,10,9,9,10,12,8,11,10
+BOM-BLA-XL,Agra,48,15,2.8,7,₹499,Bomber,Black,XL,Excess,21,16,20,23,15,24,22,17
+BOM-BLA-XL,Nashik,51,0,5.4,9,499,Bomber,Black,XL,OK,29,43,43,32,37,42,46,30
+BOM-BLA-XL,Meerut,23,15,2.5,9,Rs. 499,Bomber,Black,XL,OK,20,14,20,15,14,14,17,19
+BOM-BLA-XL,Rajkot,3,0,,12,499,Bomber,Black,XL,,21,18,26,17,16,22,25,22
+BOM-BLA-XL,Varanasi,71,0,3.0,12,499,Bomber,Black,XL,Excess,25,18,20,16,25,19,24,20
+BOM-WHI-S,Mumbai, 27 ,0,2.7,5,₹499,Bomber,White,S,,22,21,19,19,15,57,16,20
+BOM-WHI-S,Delhi,77,0,4.8,7,499.00,Bomber,White,S,OK,33,26,34,39,35,26,40,40
+BOM-WHI-S,Bengaluru,45,0,2.4,9,₹499,Bomber,White,S,Excess,17,20,14,14,17,17,16,21
+BOM-WHI-S,Hyderabad,181,40,4.5,12 days,Rs. 499,Bomber,White,S,Excess,35,27,30,36,36,39,32,36
+BOM-WHI-S,Chennai,74,0,2.3,12,₹499,Bomber,White,S,Excess,12,14,15,18,15,20,16,15
+BOM-WHI-S,Kolkata, 3 ,0,2.7,7,499,Bomber,White,S,OK,18,16,17,21,23,16,22,19
+BOM-WHI-S,Pune,61,0,3.6,7,499,Bomber,White,S,Excess,28,23,26,31,20,28,19,29
+BOM-WHI-S,Ahmedabad,28,0,2.2,5,499.00,Bomber,White,S,,18,16,17,17,19,15,13,19
+BOM-WHI-S,Jaipur,5,0,3.0,7,499,Bomber,White,S,,23,21,19,17,16,25,24,23
+BOM-WHI-S,Lucknow,127,0,5.0,9,₹499,Bomber,White,S,Excess,27,42,33,41,35,37,37,35
+BOM-WHI-S,Surat,11,7,1.5,7,499,Bomber,White,S,Excess,13,12,10,11,11,12,12,12
+BOM-WHI-S,Indore,13,0,3.4,5,499,Bomber,White,S,Reorder,19,29,29,28,26,22,24,29
+BOM-WHI-S,Nagpur, 3 ,0,3.0,12,Rs. 499,Bomber,White,S,,23,20,17,17,20,24,17,16
+BOM-WHI-S,Kochi,52,0,3.2,5,₹499,Bomber,White,S,,23,21,23,23,20,19,27,18
+BOM-WHI-S,Chandigarh,46,18,2.4,7,499,Bomber,White,S,,15,17,20,17,19,14,18,18
+BOM-WHI-S,Bhopal,121,30,5.5,9,₹499,Bomber,White,S,Reorder,32,35,35,43,46,36,37,38
+BOM-WHI-S,Patna,101,14,2.8,12,₹499,Bomber,White,S,OK,20,15,18,17,19,24,24,16
+BOM-WHI-S,Vadodara,11,11,3.6,5,₹499,Bomber,White,S,,30,19,31,31,20,29,22,21
+BOM-WHI-S,Ludhiana,110,0,6.0,7,499,Bomber,White,S,,34,32,44,34,33,33,43,37
+BOM-WHI-S,Agra,11,0,0.8,9,₹499,Bomber,White,S,Excess,5,6,4,5,5,7,7,6
+BOM-WHI-S,Nashik,-6,0,2.6,9,499,Bomber,White,S,Excess,20,15,20,18,21,18,21,18
+BOM-WHI-S,Meerut,127,0,3.5,12,499,Bomber,White,S,OK,19,28,24,20,20,28,26,21
+BOM-WHI-S,Rajkot,5,0,5.5,5,₹499,Bomber,White,S,Reorder,36,34,30,29,42,35,48,30
+BOM-WHI-S,Varanasi,13,0,1.9,5,499,Bomber,White,S,,14,12,16,11,10,14,13,14
+BOM-WHI-M,Mumbai,48,39,4.5,12,Rs. 499,Bomber,White,M,Reorder,34,29,26,38,27,25,31,31
+BOM-WHI-M,Delhi,42,0,2.1,12,₹499,Bomber,White,M,Reorder,15,17,18,12,13,16,13,14
+BOM-WHI-M,Bengaluru,15.5,10,0.7,12,N/A,Bomber,White,M,OK,5,4,5,6,4,5,5,5
+BOM-WHI-M,Hyderabad,29,27,5.5,5,499,Bomber,White,M,Reorder,34,45,40,43,31,35,35,33
+,Chennai, 7 ,8,1.8,9,499,Bomber,White,M,OK,13,13,11,10,16,10,12,15
+BOM-WHI-M,Kolkata,94,0,5.3,9,499,Bomber,White,M,Excess,37,33,40,39,38,33,33,28
+BOM-WHI-M,Pune,44, 25 ,4.7,5,499,Bomber,White,M,Excess,30,35,29,39,29,41,26,30
+BOM-WHI-M,Ahmedabad,40,0,2.2,9,Rs. 499,Bomber,White,M,,14,15,15,17,17,14,15,19
+BOM-WHI-M,Jaipur,87,0,5.9,,499,Bomber,White,M,OK,74,16,74,74,90,90,90,16
+BOM-WHI-M,Lucknow,56,0,2.3,12,499,Bomber,White,M,Excess,17,16,18,13,12,13,19,13
+BOM-WHI-M,Surat,28,0,2.5,5,499,Bomber,White,M,OK,14,15,16,14,21,16,13,20
+BOM-WHI-M,Indore,125,0,4.2,12,499,Bomber,White,M,Excess,64,69,77,72,57,67,65,66
+BOM-WHI-M,Nagpur,18,0,1.0,9,499,Bomber,White,M,OK,7,5,8,6,8,5,7,6
+BOM-WHI-M,Kochi,17,15,1.8,7,499,Bomber,White,M,,14,12,11,10,11,12,12,15
+BOM-WHI-M,Chandigarh,73,0,3.6,12,499.00,Bomber,White,M,Excess,31,25,27,19,24,24,26,20
+BOM-WHI-M,Bhopal,121,0,4.3,12,499,Bomber,White,M,OK,24,28,32,36,25,24,30,25
+BOM-WHI-M,Patna,83,0,2.8,9,₹499,Bomber,White,M,OK,15,16,24,20,17,17,22,17
+BOM-WHI-M,Vadodara,19,0,1.3,9,499,Bomber,White,M,Reorder,9,10,10,8,9,32,9,11
+BOM-WHI-M,Ludhiana,8,0,4.3,5,Rs. 499,Bomber,White,M,Reorder,26,26,25,35,23,23,37,24
+BOM-WHI-M,Agra,19,0,2.1,9,499.00,Bomber,White,M,Reorder,14,13,17,13,16,18,11,13
+BOM-WHI-M,Nashik,102,0,4.6,7,₹499,Bomber,White,M,Excess,33,37,33,28,26,27,26,35
+BOM-WHI-M,Meerut,38,0,3.3,5,499,Bomber,White,M,Excess,21,26,24,26,23,23,21,19
+BOM-WHI-M,Rajkot, 15 ,0,2.7,12,₹499,Bomber,White,M,OK,19,22,18,23,19,15,17,18
+BOM-WHI-M,Varanasi,50,29,2.5,9,499,Bomber,White,M,Reorder,18,16,14,22,18,15,19,21
+BOM-WHI-L,Mumbai,50,0,3.0,9,Rs. 799,Bomber,White,L,Reorder,21,21,22,21,23,26,19,21
+BOM-WHI-L,Delhi,13,28,1.7,12,Rs. 799,Bomber,White,L,Reorder,11,10,10,11,10,14,15,9
+BOM-WHI-L,Bengaluru,73,0,5.8,5,799,Bomber,White,L,OK,42,33,43,47,33,31,47,43
+BOM-WHI-L,Hyderabad,23,0,0.8,9,₹799,Bomber,White,L,Reorder,6,6,4,6,6,6,6,6
+BOM-WHI-L,Chennai,21,0,4.0,5,Rs. 799,Bomber,White,L,Excess,29,27,30,23,25,33,28,26
+BOM-WHI-L,Kolkata,34,0,4.4,9,₹799,Bomber,White,L,,29,32,27,38,32,30,23,31
+BOM-WHI-L,Pune,9,4,0.5,9,Rs. 799,Bomber,White,L,Reorder,3,3,4,3,4,3,3,3
+BOM-WHI-L,Ahmedabad,14,5,1.9,5,Rs. 799,Bomber,White,L,Reorder,13,14,11,16,11,13,14,13
+BOM-WHI-L,Jaipur,10,10,1.3,7,Rs. 799,Bomber,White,L,Excess,11,11,9,8,8,8,9,8
+BOM-WHI-L,Lucknow,45,0,5.4,9,799,Bomber,White,L,OK,45,30,47,36,30,43,44,44
+BOM-WHI-L,Surat,53,0,3.7,7,799,Bomber,White,L,,20,25,30,32,24,26,20,23
+BOM-WHI-L,Indore,24,0,4.3,9,₹799,Bomber,White,L,OK,29,36,26,26,27,30,33,35
+BOM-WHI-L,Nagpur,9,-8,1.4,12,₹799,Bomber,White,L,,10,9,8,10,8,10,9,10
+BOM-WHI-L,Kochi,23,10,1.0,12,799,Bomber,White,L,,6,9,7,8,6,9,6,8
+BOM-WHI-L,Chandigarh,31,28,4.2,9,₹799,Bomber,White,L,,34,27,29,25,33,24,37,32
+BOM-WHI-L,Bhopal,49,0,1.8,9,799,Bomber,White,L,Excess,13,11,13,14,12,14,11,13
+BOM-WHI-L,Bhopal,49,0,1.8,9,799,Bomber,White,L,Excess,13,11,13,14,12,14,11,13
+BOM-WHI-L,Patna,7,0,3.4,9,799.00,Bomber,White,L,Excess,21,20,22,18,27,26,29,25
+BOM-WHI-L,Vadodara,2,0,0.7,9,₹799,Bomber,White,L,OK,5,4,5,6,6,5,5,5
+BOM-WHI-L,Ludhiana,71,0,3.8,12,799,Bomber,White,L,OK,23,31,30,32,28,27,28,26
+BOM-WHI-L,Agra,14,0,4.0,5,799.00,Bomber,White,L,Reorder,26,26,28,29,27,35,24,29
+BOM-WHI-L,Nashik,76,0,4.3,12,₹799,Bomber,White,L,Reorder,29,29,25,28,23,33,30,25
+BOM-WHI-L,Meerut,15,0,1.4,5,799.00,Bomber,White,L,,9,10,10,11,11,11,11,12
+BOM-WHI-L,Rajkot,99,0,3.8,9,799.00,Bomber,White,L,Reorder,30,25,22,27,20,27,20,22
+BOM-WHI-L,Varanasi,27,0,5.5,12,799,Bomber,White,L,OK,31,47,35,30,45,33,45,36
+BOM-WHI-XL,Mumbai,56,0,3.1,12,799,Bomber,White,XL,Reorder,41,63,57,63,58,60,47,55
+BOM-WHI-XL,Delhi,3,0,1.5,5,799,Bomber,White,XL,Reorder,11,8,10,10,13,13,11,12
+BOM-WHI-XL,Bengaluru,3,0,1.1,9,799.00,Bomber,White,XL,OK,8,6,9,9,6,7,7,7
+BOM-WHI-XL,Hyderabad,29,0,3.3,9,799,Bomber,White,XL,Excess,50,50,50,4,50,41,50,9
+BOM-WHI-XL,Chennai,5,0,1.0,9,799,Bomber,White,XL,Reorder,5,6,7,6,8,5,7,6
+BOM-WHI-XL,Kolkata,183,0,4.5,12,799,Bomber,White,XL,,37,29,26,35,38,32,30,33
+BOM-WHI-XL,Pune,65,0,1.7,12,799,Bomber,White,XL,OK,10,12,13,10,12,13,10,11
+BOM-WHI-XL,Ahmedabad,105.5,0,2.9,12,799,Bomber,White,XL,Excess,18,23,23,24,17,21,22,20
+BOM-WHI-XL,Jaipur, 89 ,0,6.0,7,799,Bomber,White,XL,OK,45,47,40,49,37,44,51,46
+BOM-WHI-XL,Lucknow,5,38,,12,799,Bomber,White,XL,,18,23,17,21,22,18,25,23
+BOM-WHI-XL,Surat,4,4,0.8,5 days,₹799,Bomber,White,XL,Excess,7,6,5,5,6,22,6,6
+BOM-WHI-XL,Indore,7,0,1.8,7,₹799,Bomber,White,XL,Reorder,10,11,15,15,14,14,12,10
+BOM-WHI-XL,Nagpur,15,0,4.4,7,₹799,Bomber,White,XL,Reorder,23,28,26,27,30,34,36,37
+BOM-WHI-XL,Kochi,32,0,1.4,12,N/A,Bomber,White,XL,Excess,10,12,11,8,10,11,10,12
+BOM-WHI-XL,Chandigarh,13,0,0.9,7,₹799,Bomber,White,XL,Excess,6,6,7,8,7,5,7,6
+BOM-WHI-XL,Bhopal,20,0,0.8,12,₹799,Bomber,White,XL,OK,7,4,5,6,6,7,5,7
+BOM-WHI-XL,Patna,93,0,3.1,12,₹799,Bomber,White,XL,,27,18,24,20,22,25,25,25
+BOM-WHI-XL,Vadodara,8,0,1.5,5,₹799,Bomber,White,XL,,8,8,13,11,12,12,13,10
+BOM-WHI-XL,Ludhiana,70,0,3.1,9,₹799,Bomber,White,XL,OK,21,26,27,25,24,21,24,21
+BOM-WHI-XL,Agra,68,0,4.3,9,₹799,Bomber,White,XL,Excess,37,28,23,32,29,32,28,24
+BOM-WHI-XL,Nashik,45,0,3.0,5,799.00,Bomber,White,XL,Excess,19,20,22,23,18,17,16,20
+BOM-WHI-XL,Meerut,6,0,2.3,5,799,Bomber,White,XL,Excess,19,15,18,16,17,16,13,16
+BOM-WHI-XL,Rajkot,29,0,1.1,9,₹799,Bomber,White,XL,Reorder,9,6,6,7,7,7,8,9
+BOM-WHI-XL,Varanasi,83,0,3.2,9,799,Bomber,White,XL,OK,22,23,26,24,19,19,25,28
+BOM-NAV-S,Mumbai,36,0,3.4,7,499,Bomber,Navy,S,OK,24,27,28,27,28,20,27,22
+BOM-NAV-S,Delhi, 6 ,0,1.1,9,499,Bomber,Navy,S,,6,7,9,7,8,7,8,7
+BOM-NAV-S,Bengaluru,28,0,2.1,5,Rs. 499,Bomber,Navy,S,OK,15,14,16,15,17,14,13,13
+BOM-NAV-S,Hyderabad, 21 ,0,5.2,12,499.00,Bomber,Navy,S,OK,36,36,42,41,30,30,29,31
+BOM-NAV-S,Chennai,10,0,0.9,12,499.00,Bomber,Navy,S,OK,5,6,7,5,5,6,7,7
+BOM-NAV-S,Kolkata,93,31,5.7,5,Rs. 499,Bomber,Navy,S,Reorder,38,32,37,39,32,47,48,35
+BOM-NAV-S,Pune, 52 ,0,4.7,5,499,Bomber,Navy,S,Excess,30,31,30,40,38,38,30,34
+BOM-NAV-S,Ahmedabad,16,0,1.0,12,499,Bomber,Navy,S,Excess,8,5,7,6,8,7,7,6
+BOM-NAV-S,Jaipur,25,0,1.3,9,499,Bomber,Navy,S,Excess,10,9,10,8,7,10,11,11
+BOM-NAV-S,Lucknow, 13 ,0,1.4,,499,Bomber,Navy,S,Reorder,8,7,12,8,11,10,8,9
+BOM-NAV-S,Surat,31,0,3.7,5,499,Bomber,Navy,S,Reorder,26,27,25,25,31,27,23,32
+BOM-NAV-S,Indore,10,0,1.1,9,₹499,Bomber,Navy,S,,7,8,6,7,8,8,9,8
+BOM-NAV-S,Nagpur,32,0,1.6,12,Rs. 499,Bomber,Navy,S,Reorder,9,9,11,13,13,13,11,9
+BOM-NAV-S,Kochi,-3,0,1.3,5,499,Bomber,Navy,S,Reorder,27,18,24,21,21,24,24,24
+BOM-NAV-S,Chandigarh,15,0,4.2,7,499,Bomber,Navy,S,Excess,25,25,22,34,23,30,25,33
+BOM-NAV-S,Bhopal,26,0,5.3,5,499.00,Bomber,Navy,S,Reorder,38,37,38,44,33,28,39,38
+BOM-NAV-S,Patna,160,0,5.1,12,₹499,Bomber,Navy,S,OK,32,37,39,33,44,40,40,42
+BOM-NAV-S,Vadodara,55,0,3.3,9,499,Bomber,Navy,S,Reorder,25,17,26,18,19,21,28,27
+BOM-NAV-S,Ludhiana,79,0,5.7,9,₹499,Bomber,Navy,S,,39,33,36,46,33,43,40,38
+BOM-NAV-S,Agra,30,0,3.5,7,499,Bomber,Navy,S,Reorder,31,26,30,24,23,28,30,20
+BOM-NAV-S,Nashik,53,0,5.6,9,₹499,Bomber,Navy,S,Excess,47,43,41,45,36,32,30,33
+BOM-NAV-S,Meerut,19,0,0.9,9,499,Bomber,Navy,S,Reorder,7,6,5,5,7,7,7,6
+BOM-NAV-S,Rajkot,11,18,3.1,12,₹499,Bomber,Navy,S,OK,8,47,4,4,8,4,4,8
+BOM-NAV-S,Varanasi,13,0,4.4,9,Rs. 499,Bomber,Navy,S,Excess,37,25,38,26,38,23,37,29
+BOM-NAV-M,Mumbai,91,0,4.5,7,1999,Bomber,Navy,M,Excess,31,31,31,34,28,24,27,38
+BOM-NAV-M,Delhi,89,0,5.3,7,"1,999.00",Bomber,Navy,M,OK,31,40,29,45,30,45,31,36
+BOM-NAV-M,Bengaluru,49,0,3.2,5,1999,Bomber,Navy,M,Excess,21,25,19,27,21,27,21,18
+BOM-NAV-M,Hyderabad,2,0,5.9,9,"₹1,999",Bomber,Navy,M,OK,41,45,47,43,44,131,50,34
+BOM-NAV-M,Chennai,114,0,4.6,12,"₹1,999",Bomber,Navy,M,Excess,27,39,38,32,33,29,33,32
+BOM-NAV-M,Kolkata,96,0,5.7,12,1999,Bomber,Navy,M,Reorder,49,31,38,46,48,40,30,36
+BOM-NAV-M,Pune,62,0,3.9,5,"Rs. 1,999",Bomber,Navy,M,Excess,27,33,20,27,30,33,28,22
+BOM-NAV-M,Ahmedabad,43,16,2.0,7,"1,999.00",Bomber,Navy,M,Excess,13,17,13,11,16,12,13,14
+BOM-NAV-M,Jaipur,20,0,2.6,7,"Rs. 1,999",Bomber,Navy,M,Reorder,17,21,14,18,21,18,14,20
+,Lucknow, 45 ,0,1.2,12,"₹1,999",Bomber,Navy,M,Excess,8,9,7,10,10,7,7,10
+BOM-NAV-M,Surat, 12 , 10 ,0.9,9,"₹1,999",Bomber,Navy,M,Excess,5,8,5,8,6,5,5,5
+BOM-NAV-M,Indore,4,-12,1.2,7,"₹1,999",Bomber,Navy,M,Reorder,7,6,7,10,10,10,7,9
+BOM-NAV-M,Nagpur,35.5,0,3.2,7,"1,999.00",Bomber,Navy,M,,21,21,27,27,17,21,17,18
+BOM-NAV-M,Kochi,16,0,3.4,5,"1,999.00",Bomber,Navy,M,Excess,22,28,26,28,28,27,20,21
+BOM-NAV-M,Chandigarh,7,0,4.1,7,"₹1,999",Bomber,Navy,M,OK,33,30,23,29,27,24,22,29
+BOM-NAV-M,Bhopal, 61 ,0,2.8,7,1999,Bomber,Navy,M,Reorder,20,23,23,22,22,21,19,23
+BOM-NAV-M,Patna,199,0,5.5,12,"Rs. 1,999",Bomber,Navy,M,Reorder,46,47,47,48,32,37,37,46
+BOM-NAV-M,Vadodara,83,0,4.9,5,"₹1,999",Bomber,Navy,M,OK,27,32,30,29,39,26,38,36
+BOM-NAV-M,Ludhiana,52,31,3.2,7,"₹1,999",Bomber,Navy,M,Excess,18,20,25,24,21,20,18,19
+BOM-NAV-M,Agra,28,17,3.9,7,"₹1,999",Bomber,Navy,M,Reorder,28,33,21,32,30,29,24,30
+BOM-NAV-M,Nashik,68,0,4.8,9,1999,Bomber,Navy,M,OK,40,28,31,42,40,30,36,38
+BOM-NAV-M,Meerut,25,0,1.3,9,1999,Bomber,Navy,M,,8,8,11,10,11,8,9,9
+BOM-NAV-M,Rajkot,16,0,0.8,9,"Rs. 1,999",Bomber,Navy,M,Reorder,6,5,6,5,4,7,6,6
+BOM-NAV-M,Varanasi,22,0,1.8,5,1999,Bomber,Navy,M,,12,13,15,15,14,15,13,14
+BOM-NAV-L,Mumbai,92,21,5.8,5,N/A,Bomber,Navy,L,,43,50,41,36,36,44,33,46
+BOM-NAV-L,Delhi,72,17,3.1,7,"₹1,999",Bomber,Navy,L,Excess,20,19,19,27,22,17,22,19
+BOM-NAV-L,Bengaluru, 98 ,0,5.3,9,"Rs. 1,999",Bomber,Navy,L,,85,106,83,80,71,87,84,70
+BOM-NAV-L,Hyderabad,26,26,2.3,9,1999,Bomber,Navy,L,,17,16,16,18,14,14,15,19
+BOM-NAV-L,Chennai,191,0,4.8,12,1999,Bomber,Navy,L,Excess,27,28,35,38,33,33,34,27
+BOM-NAV-L,Kolkata,46,0,3.7,9,"₹1,999",Bomber,Navy,L,Reorder,25,20,20,20,32,20,21,30
+BOM-NAV-L,Pune,34,0,3.0,7,"₹1,999",Bomber,Navy,L,Excess,21,20,20,18,20,17,23,24
+BOM-NAV-L,Ahmedabad,46,34,5.3,5,"₹1,999",Bomber,Navy,L,Reorder,32,43,36,34,36,44,39,29
+BOM-NAV-L,Jaipur,0,45,2.8,12,1999,Bomber,Navy,L,OK,16,16,19,17,21,22,0,0
+BOM-NAV-L,Lucknow, 192 ,0,5.9,12,"₹1,999",Bomber,Navy,L,Excess,34,41,34,44,31,45,48,36
+BOM-NAV-L,Surat,82,0,3.7,9,"Rs. 1,999",Bomber,Navy,L,Excess,20,32,32,21,21,25,24,24
+BOM-NAV-L,Indore,17,6,0.6,9,1999,Bomber,Navy,L,Reorder,4,4,5,5,5,5,3,4
+BOM-NAV-L,Nagpur,6,0,4.5,7,1999,Bomber,Navy,L,Excess,38,31,30,35,39,37,31,29
+BOM-NAV-L,Kochi,40,0,1.9,7,1999,Bomber,Navy,L,,10,14,15,13,11,15,16,12
+BOM-NAV-L,Chandigarh, 0 ,48,3.5,12,"Rs. 1,999",Bomber,Navy,L,,28,30,25,20,24,18,0,0
+BOM-NAV-L,Bhopal,24,9,2.4,9,1999,Bomber,Navy,L,,15,15,19,17,14,15,18,21
+BOM-NAV-L,Patna,8,0,1.7,5,"₹1,999",Bomber,Navy,L,Reorder,13,13,13,11,12,15,14,13
+BOM-NAV-L,Patna,8,0,1.7,5,"₹1,999",Bomber,Navy,L,Reorder,13,13,13,11,12,15,14,13
+BOM-NAV-L,Vadodara,3,0,0.5,7 days,"₹1,999",Bomber,Navy,L,,7,7,0,7,1,1,0,1
+BOM-NAV-L,Ludhiana,88,69,5.9,9,"Rs. 1,999",Bomber,Navy,L,OK,32,49,41,33,33,39,42,44
+BOM-NAV-L,Agra,63,0,3.2,7,1999,Bomber,Navy,L,OK,21,19,24,19,25,20,23,23
+BOM-NAV-L,Nashik,20,0,,7,"₹1,999",Bomber,Navy,L,Excess,7,11,8,8,8,28,9,8
+BOM-NAV-L,Meerut, 74 ,0,4.9,5,"Rs. 1,999",Bomber,Navy,L,,34,37,39,34,37,29,35,42
+BOM-NAV-L,Rajkot,14,19,3.6,5,"₹1,999",Bomber,Navy,L,,31,21,26,25,30,27,21,31
+BOM-NAV-L,Varanasi,25,11,1.7,7,"1,999.00",Bomber,Navy,L,Excess,12,15,10,14,11,12,10,12
+BOM-NAV-XL,Mumbai,21,0,1.7,9,"1,999.00",Bomber,Navy,XL,Reorder,14,10,11,11,10,12,9,14
+BOM-NAV-XL,Delhi,7,0,3.8,5,1999,Bomber,Navy,XL,Reorder,26,30,26,30,22,31,24,31
+BOM-NAV-XL,Bengaluru,42,0,6.0,5,1999,Bomber,Navy,XL,Excess,51,49,33,38,49,32,39,36
+BOM-NAV-XL,Hyderabad,21,0,2.2,12,"₹1,999",Bomber,Navy,XL,,12,15,18,17,14,12,17,13
+BOM-NAV-XL,Chennai,29,0,2.3,7,"Rs. 1,999",Bomber,Navy,XL,OK,19,19,17,15,18,16,14,12
+BOM-NAV-XL,Kolkata,28,0,1.7,5,"₹1,999",Bomber,Navy,XL,Reorder,14,13,10,15,12,11,13,13
+BOM-NAV-XL,Pune, 30 ,0,2.3,5,"1,999.00",Bomber,Navy,XL,Excess,12,17,16,19,13,17,20,15
+BOM-NAV-XL,Ahmedabad,2,0,0.7,5,1999,Bomber,Navy,XL,Excess,5,4,6,6,5,6,5,5
+BOM-NAV-XL,Jaipur,2,6,0.8,7,1999,Bomber,Navy,XL,Excess,7,5,7,7,4,6,5,7
+BOM-NAV-XL,Lucknow,181,0,5.4,12,"1,999.00",Bomber,Navy,XL,,45,31,35,30,44,41,32,29
+BOM-NAV-XL,Surat,1,0,0.8,,1999,Bomber,Navy,XL,Reorder,5,5,7,7,5,6,5,6
+BOM-NAV-XL,Indore,16,0,2.3,5,"Rs. 1,999",Bomber,Navy,XL,,19,14,16,12,19,16,12,15
+BOM-NAV-XL,Nagpur,42,0,3.7,5,"₹1,999",Bomber,Navy,XL,Reorder,27,29,32,32,29,30,32,25
+BOM-NAV-XL,Kochi,72,28,4.1,9,"Rs. 1,999",Bomber,Navy,XL,Reorder,22,29,31,31,26,31,29,22
+BOM-NAV-XL,Chandigarh,85,13,5.9,5,"Rs. 1,999",Bomber,Navy,XL,,50,32,34,43,33,48,50,42
+BOM-NAV-XL,Bhopal,9,13,1.4,12,1999,Bomber,Navy,XL,OK,23,21,23,27,29,21,27,18
+BOM-NAV-XL,Patna,2,0,2.2,5,1999,Bomber,Navy,XL,,17,16,19,18,18,14,14,14
+BOM-NAV-XL,Vadodara,11.5,9,1.2,7,1999,Bomber,Navy,XL,,10,7,7,9,8,8,9,7
+BOM-NAV-XL,Ludhiana,12,0,1.5,5,1999,Bomber,Navy,XL,Reorder,9,12,12,13,9,11,13,9
+BOM-NAV-XL,Agra,5,0,2.8,7,1999,Bomber,Navy,XL,,15,21,16,17,18,15,16,16
+BOM-NAV-XL,Nashik,52,0,3.8,7,1999,Bomber,Navy,XL,,31,33,32,24,23,28,33,31
+BOM-NAV-XL,Meerut,41,85,6.0,12,1999,Bomber,Navy,XL,OK,35,43,50,51,50,50,33,40
+BOM-NAV-XL,Rajkot,85,0,3.6,9,"₹1,999",Bomber,Navy,XL,Reorder,25,22,30,31,19,23,29,21
+BOM-NAV-XL,Varanasi,0,0,4.8,5,"Rs. 1,999",Bomber,Navy,XL,Reorder,42,39,38,25,32,31,0,0
+KUR-BLA-S,Mumbai,12,17,1.9,7,"₹1,999",Kurta,Black,S,Reorder,12,11,12,15,15,11,16,11
+KUR-BLA-S,Delhi,78,16,5.3,7,"1,999.00",Kurta,Black,S,Excess,30,44,46,28,29,39,36,39
+KUR-BLA-S,Bengaluru,90,0,4.5,7,"₹1,999",Kurta,Black,S,OK,30,29,36,35,26,33,32,32
+KUR-BLA-S,Hyderabad,24,0,3.0,7,1999,Kurta,Black,S,,19,20,26,20,25,18,17,18
+KUR-BLA-S,Chennai,13,0,2.2,9,"₹1,999",Kurta,Black,S,OK,14,12,17,17,18,17,15,12
+KUR-BLA-S,Kolkata, 18 ,0,0.6,12,"₹1,999",Kurta,Black,S,OK,4,4,5,4,3,5,4,4
+KUR-BLA-S,Pune,(2),0,2.3,9,"1,999.00",Kurta,Black,S,,16,19,14,19,14,19,19,12
+KUR-BLA-S,Ahmedabad,89,0,3.8,7,1999,Kurta,Black,S,OK,24,20,25,29,33,24,21,26
+KUR-BLA-S,Jaipur,30,12,1.6,7,"₹1,999",Kurta,Black,S,OK,14,12,11,11,11,11,9,10
+KUR-BLA-S,Lucknow, 0 ,0,0.8,5,"1,999.00",Kurta,Black,S,Excess,4,7,5,7,4,5,6,5
+KUR-BLA-S,Surat,33,-16,2.9,5,"1,999.00",Kurta,Black,S,Reorder,25,19,17,22,23,18,21,19
+KUR-BLA-S,Indore,33,0,4.5,5,N/A,Kurta,Black,S,Excess,30,32,38,32,38,26,37,31
+KUR-BLA-S,Nagpur,47,9,3.3,5,1999,Kurta,Black,S,,50,4,9,50,4,4,9,41
+KUR-BLA-S,Kochi,73,0,4.6,9,"₹1,999",Kurta,Black,S,Excess,34,35,31,32,32,96,26,37
+KUR-BLA-S,Chandigarh,91,58,4.7,12,1999,Kurta,Black,S,OK,32,35,35,30,26,28,36,39
+KUR-BLA-S,Bhopal,50,0,5.5,12,1999,Kurta,Black,S,Reorder,47,37,42,30,39,40,43,45
+KUR-BLA-S,Patna,83,0,2.6,12,"Rs. 1,999",Kurta,Black,S,Excess,21,15,17,14,15,15,18,19
+KUR-BLA-S,Vadodara,8,0,1.9,5,1999,Kurta,Black,S,,16,14,15,11,14,15,12,14
+KUR-BLA-S,Ludhiana,70,0,2.1,12,"Rs. 1,999",Kurta,Black,S,Reorder,13,12,11,16,14,17,18,15
+KUR-BLA-S,Agra,27,0,5.3,7,"Rs. 1,999",Kurta,Black,S,Reorder,40,40,44,44,36,30,42,31
+KUR-BLA-S,Nashik,106,0,4.7,9,"Rs. 1,999",Kurta,Black,S,,30,31,36,29,26,28,29,35
+KUR-BLA-S,Meerut,96,0,5.6,9,"₹1,999",Kurta,Black,S,Excess,47,45,42,41,38,43,46,33
+KUR-BLA-S,Rajkot,59,0,3.4,9,1999,Kurta,Black,S,OK,26,27,28,21,25,24,24,29
+KUR-BLA-S,Varanasi,50,0,1.6,12,1999,Kurta,Black,S,Reorder,13,14,11,14,13,14,10,14
+KUR-BLA-M,Mumbai,74,10,3.2,7,499,Kurta,Black,M,,20,27,28,28,23,25,18,21
+KUR-BLA-M,Delhi,70,0,4.7,5,499,Kurta,Black,M,Reorder,27,30,25,31,28,28,30,26
+KUR-BLA-M,Bengaluru,90,0,4.1,9,499.00,Kurta,Black,M,Excess,26,33,33,30,30,35,33,32
+KUR-BLA-M,Hyderabad,100,0,3.5,9,499,Kurta,Black,M,,25,29,27,25,29,24,22,26
+KUR-BLA-M,Chennai,5,0,0.8,5,Rs. 499,Kurta,Black,M,Reorder,17,11,16,13,14,14,14,13
+KUR-BLA-M,Kolkata,83,37,4.5,7,499.00,Kurta,Black,M,OK,24,35,32,31,30,37,29,27
+KUR-BLA-M,Pune, 13 ,0,2.8,7,Rs. 499,Kurta,Black,M,Reorder,20,19,23,18,24,21,20,18
+KUR-BLA-M,Ahmedabad,27,8,2.7,7,₹499,Kurta,Black,M,,22,24,19,15,22,15,22,16
+KUR-BLA-M,Jaipur,77,0,5.7,9,499,Kurta,Black,M,Reorder,41,43,47,48,30,34,40,36
+KUR-BLA-M,Lucknow,24,0,4.9,7,₹499,Kurta,Black,M,Reorder,29,32,34,28,31,41,32,41
+KUR-BLA-M,Surat,18,0,1.2,7,Rs. 499,Kurta,Black,M,,7,9,8,10,10,9,10,9
+KUR-BLA-M,Indore,4,9,1.9,5,499,Kurta,Black,M,,12,17,11,12,11,15,14,12
+KUR-BLA-M,Nagpur,26,0,3.1,7,Rs. 499,Kurta,Black,M,,26,27,26,25,27,22,17,26
+KUR-BLA-M,Kochi,0,0,4.1,9,₹499,Kurta,Black,M,OK,34,31,22,26,29,24,27,29
+,Chandigarh,54,0,5.8,12,499,Kurta,Black,M,,35,37,38,42,40,46,32,49
+KUR-BLA-M,Bhopal,98,0,3.8,12,499.00,Kurta,Black,M,Reorder,20,27,26,25,25,20,27,26
+KUR-BLA-M,Patna,12,0,5.6,5,₹499,Kurta,Black,M,,39,40,44,45,32,44,39,36
+KUR-BLA-M,Vadodara,26,0,0.7,12,Rs. 499,Kurta,Black,M,,5,5,5,4,5,6,4,4
+KUR-BLA-M,Ludhiana,32, 16 ,2.7,5,₹499,Kurta,Black,M,Excess,20,18,19,16,18,15,15,17
+KUR-BLA-M,Agra,108,0,5.1,7,₹499,Kurta,Black,M,OK,42,33,27,38,27,38,43,35
+KUR-BLA-M,Nashik,53,0,3.2,5,₹499,Kurta,Black,M,Excess,21,17,24,26,17,18,23,24
+KUR-BLA-M,Meerut,96,0,5.3,7,499.00,Kurta,Black,M,,42,39,44,31,32,30,45,33
+KUR-BLA-M,Rajkot,23.5,0,1.6,5,499,Kurta,Black,M,OK,13,9,12,14,9,12,10,11
+KUR-BLA-M,Varanasi, 58 ,11,4.6,5,499,Kurta,Black,M,Reorder,25,29,25,40,30,34,36,33
+KUR-WHI-S,Mumbai,4,0,3.7,7 days,2499,Kurta,White,S,OK,32,27,24,28,20,24,29,20
+KUR-WHI-S,Delhi,38,0,3.0,9,2499,Kurta,White,S,Reorder,18,22,20,22,22,26,21,17
+KUR-WHI-S,Bengaluru,9,19,2.9,5,2499,Kurta,White,S,OK,18,23,22,23,20,19,21,21
+KUR-WHI-S,Hyderabad,16,0,2.2,9,"Rs. 2,499",Kurta,White,S,Reorder,12,15,17,19,17,14,19,15
+KUR-WHI-S,Chennai,2,0,5.8,7,"Rs. 2,499",Kurta,White,S,Reorder,36,32,36,44,34,35,34,42
+KUR-WHI-S,Kolkata,8,0,1.9,5,"₹2,499",Kurta,White,S,OK,12,12,16,16,16,10,15,14
+KUR-WHI-S,Pune,3,0,2.5,7,"₹2,499",Kurta,White,S,OK,14,21,20,13,15,60,19,20
+KUR-WHI-S,Ahmedabad,59,0,,12,"₹2,499",Kurta,White,S,Excess,21,26,2,26,21,2,4,21
+KUR-WHI-S,Jaipur,19,0,1.4,9,"₹2,499",Kurta,White,S,Excess,9,10,12,10,11,8,10,9
+KUR-WHI-S,Lucknow,7, 56 ,4.6,9,"₹2,499",Kurta,White,S,Excess,25,25,33,34,37,36,36,27
+KUR-WHI-S,Surat,26,5,0.9,12,2499,Kurta,White,S,OK,7,5,5,5,8,5,8,8
+KUR-WHI-S,Indore,27,0,4.4,,"Rs. 2,499",Kurta,White,S,Excess,32,30,35,26,33,36,25,29
+KUR-WHI-S,Nagpur,44,40,5.8,7,"₹2,499",Kurta,White,S,Excess,39,48,35,36,50,48,34,32
+KUR-WHI-S,Kochi, 22 ,0,4.9,9,2499,Kurta,White,S,Reorder,36,42,40,29,33,32,28,30
+KUR-WHI-S,Chandigarh,9,0,1.3,5,2499,Kurta,White,S,OK,10,8,9,9,9,8,9,10
+KUR-WHI-S,Bhopal,62,0,4.1,9,"Rs. 2,499",Kurta,White,S,Reorder,22,32,24,24,22,30,34,33
+KUR-WHI-S,Patna,24,0,2.9,7,2499,Kurta,White,S,,22,18,19,24,19,19,18,17
+KUR-WHI-S,Vadodara,15,14,2.4,7,"2,499.00",Kurta,White,S,Reorder,40,41,34,45,39,36,44,45
+KUR-WHI-S,Vadodara,15,14,2.4,7,"2,499.00",Kurta,White,S,Reorder,40,41,34,45,39,36,44,45
+KUR-WHI-S,Ludhiana,30,0,4.3,7,2499,Kurta,White,S,OK,28,37,28,28,27,30,26,26
+KUR-WHI-S,Agra,171,0,4.5,12,2499,Kurta,White,S,,31,32,30,31,27,38,37,27
+KUR-WHI-S,Nashik,5,18,2.5,9,"2,499.00",Kurta,White,S,OK,14,14,17,22,13,21,20,21
+KUR-WHI-S,Meerut,27,0,1.2,9,2499,Kurta,White,S,,7,8,8,9,10,7,10,8
+KUR-WHI-S,Rajkot,102,0,3.2,12,N/A,Kurta,White,S,OK,19,24,21,22,19,26,20,27
+KUR-WHI-S,Varanasi,2,0,3.2,9,"Rs. 2,499",Kurta,White,S,,22,28,28,21,24,22,26,24
+KUR-WHI-M,Mumbai,2,4,1.4,5,₹799,Kurta,White,M,Reorder,12,12,10,12,11,8,11,8
+KUR-WHI-M,Delhi,2,0,2.8,7,799,Kurta,White,M,OK,23,15,15,23,21,19,22,22
+KUR-WHI-M,Bengaluru,36,0,2.5,7,799.00,Kurta,White,M,,15,14,21,17,21,16,20,15
+KUR-WHI-M,Hyderabad,52,0,5.6,5,799,Kurta,White,M,Excess,36,43,38,38,45,31,35,47
+KUR-WHI-M,Chennai,4,29,5.9,5,₹799,Kurta,White,M,OK,48,38,42,34,32,34,43,48
+KUR-WHI-M,Kolkata, 9 ,0,1.1,12,₹799,Kurta,White,M,Reorder,10,8,8,7,7,9,9,9
+KUR-WHI-M,Pune,32,0,1.9,5,799,Kurta,White,M,OK,13,16,13,12,16,15,11,12
+KUR-WHI-M,Ahmedabad,67,0,4.7,5,799,Kurta,White,M,OK,35,33,37,39,32,26,30,28
+KUR-WHI-M,Jaipur,79,0,3.8,7,799,Kurta,White,M,,21,29,21,21,28,26,21,23
+KUR-WHI-M,Lucknow, 22 ,-4,4.3,9,799,Kurta,White,M,Excess,30,35,29,27,34,37,30,27
+KUR-WHI-M,Surat,48,0,4.4,9,799,Kurta,White,M,,30,26,35,36,33,33,28,25
+KUR-WHI-M,Indore,50,0,5.6,5,₹799,Kurta,White,M,OK,42,47,45,36,46,41,43,40
+KUR-WHI-M,Nagpur,90,0,4.3,12,799,Kurta,White,M,OK,23,25,36,28,35,30,37,33
+KUR-WHI-M,Kochi,32,11,5.1,5,₹799,Kurta,White,M,Reorder,40,38,27,39,42,37,38,41
+KUR-WHI-M,Chandigarh,30,0,4.4,5,799,Kurta,White,M,Excess,32,29,27,29,33,29,23,33
+KUR-WHI-M,Bhopal,1,35,5.1,5,799,Kurta,White,M,Reorder,44,28,37,41,31,35,27,30
+KUR-WHI-M,Patna,1,0,4.8,7,₹799,Kurta,White,M,OK,38,26,28,39,40,34,39,29
+KUR-WHI-M,Vadodara,153,69,4.7,12,799,Kurta,White,M,Reorder,30,28,38,25,34,34,36,29
+KUR-WHI-M,Ludhiana, 13 ,0,5.6,5,799,Kurta,White,M,OK,35,34,47,41,29,35,46,45
+KUR-WHI-M,Agra,46,0,3.2,5,799,Kurta,White,M,OK,19,20,19,24,26,19,23,24
+KUR-WHI-M,Nashik,46,0,3.1,7,799,Kurta,White,M,Excess,22,27,18,23,23,19,19,19
+KUR-WHI-M,Meerut,12,0,1.5,9,799,Kurta,White,M,,12,8,13,9,8,11,13,10
+KUR-WHI-M,Rajkot,11,0,1.4,9,Rs. 799,Kurta,White,M,Reorder,11,12,9,9,9,12,10,9
+KUR-WHI-M,Varanasi,-6,0,5.2,9,₹799,Kurta,White,M,OK,45,33,30,44,31,115,39,36
+KUR-NAV-S,Mumbai,181,0,4.7,12,1299,Kurta,Navy,S,OK,29,38,39,37,36,41,37,26
+KUR-NAV-S,Delhi,39,0,4.6,7,"1,299.00",Kurta,Navy,S,Reorder,27,35,25,37,40,25,31,32
+KUR-NAV-S,Bengaluru,4,0,5.5,12,1299,Kurta,Navy,S,Reorder,15,84,69,7,84,84,7,15
+KUR-NAV-S,Hyderabad,48.5,0,4.9,5,"₹1,299",Kurta,Navy,S,Reorder,32,41,32,27,41,40,27,31
+KUR-NAV-S,Chennai,108,0,4.2,9,"₹1,299",Kurta,Navy,S,Reorder,36,35,26,25,31,34,35,28
+KUR-NAV-S,Kolkata,85,0,2.3,12,1299,Kurta,Navy,S,Excess,16,16,15,14,14,13,14,20
+KUR-NAV-S,Pune,24,0,3.1,5,1299,Kurta,Navy,S,OK,46,57,48,48,47,60,42,64
+KUR-NAV-S,Ahmedabad,44,0,3.9,5,"Rs. 1,299",Kurta,Navy,S,Excess,31,24,24,24,32,26,28,22
+KUR-NAV-S,Jaipur,175,48,5.6,12,"₹1,299",Kurta,Navy,S,Reorder,38,35,36,41,47,48,45,30
+KUR-NAV-S,Lucknow,66,49,4.5,12,"1,299.00",Kurta,Navy,S,Excess,33,29,36,29,33,34,37,35
+KUR-NAV-S,Surat,29,0,2.9,7,1299,Kurta,Navy,S,OK,23,24,16,25,16,20,19,20
+KUR-NAV-S,Indore,22,0,2.2,7,"₹1,299",Kurta,Navy,S,OK,14,18,14,14,19,14,14,12
+KUR-NAV-S,Nagpur,62,0,3.7,12,1299,Kurta,Navy,S,Excess,26,31,23,21,27,29,20,27
+KUR-NAV-S,Kochi,84,0,5.5,7,1299,Kurta,Navy,S,OK,43,30,31,32,46,43,41,41
+KUR-NAV-S,Chandigarh,21,0,1.9,5,"₹1,299",Kurta,Navy,S,Reorder,14,13,14,15,15,12,15,13
+KUR-NAV-S,Bhopal,38,0,3.9,9,1299,Kurta,Navy,S,OK,22,24,22,21,26,24,28,28
+KUR-NAV-S,Patna,8,4,0.7,12,"₹1,299",Kurta,Navy,S,Excess,5,5,5,6,6,5,4,5
+KUR-NAV-S,Vadodara,27,0,5.3,7,"Rs. 1,299",Kurta,Navy,S,OK,38,39,33,32,35,40,31,44
+KUR-NAV-S,Ludhiana,25,0,5.2,7,"1,299.00",Kurta,Navy,S,Reorder,30,45,30,44,44,32,30,38
+KUR-NAV-S,Agra,9,0,3.5,7,"Rs. 1,299",Kurta,Navy,S,OK,22,23,29,25,30,24,19,28
+KUR-NAV-S,Nashik,27,0,0.7,12,1299,Kurta,Navy,S,Reorder,6,4,5,4,4,6,6,5
+KUR-NAV-S,Meerut,102,19,4.1,9,1299,Kurta,Navy,S,OK,25,35,29,24,25,23,35,29
+KUR-NAV-S,Rajkot,154,0,5.7,9,1299,Kurta,Navy,S,OK,49,39,32,44,43,35,35,43
+KUR-NAV-S,Varanasi,37,8,2.0,9,1299,Kurta,Navy,S,Excess,12,16,16,12,11,12,15,15
+KUR-NAV-M,Mumbai,143, 55 ,5.2,12,"₹1,299",Kurta,Navy,M,Excess,45,45,34,45,40,39,30,41
+KUR-NAV-M,Delhi,80,0,4.7,7,1299,Kurta,Navy,M,OK,26,35,32,41,30,40,31,28
+KUR-NAV-M,Bengaluru,158,0,4.6,12,"₹1,299",Kurta,Navy,M,Reorder,28,38,31,26,33,27,27,39
+KUR-NAV-M,Hyderabad,2,0,2.1,7,"₹1,299",Kurta,Navy,M,Excess,18,12,13,16,18,12,18,13
+KUR-NAV-M,Chennai,34,0,5.7,7,1299,Kurta,Navy,M,OK,34,44,30,37,40,45,33,49
+KUR-NAV-M,Kolkata,40,31,5.9,7,1299,Kurta,Navy,M,OK,31,44,51,49,39,48,49,32
+KUR-NAV-M,Pune,60,0,2.5,12,1299,Kurta,Navy,M,,18,18,18,18,18,16,15,17
+KUR-NAV-M,Ahmedabad,49,0,5.3,9 days,"₹1,299",Kurta,Navy,M,,35,45,37,32,30,28,32,33
+KUR-NAV-M,Jaipur,16,0,1.5,12,"₹1,299",Kurta,Navy,M,,8,13,12,8,11,13,10,12
+KUR-NAV-M,Lucknow,123,0,4.1,9,N/A,Kurta,Navy,M,Excess,27,28,36,35,32,28,30,35
+KUR-NAV-M,Surat,138, 46 ,3.9,12,1299,Kurta,Navy,M,,29,31,28,23,26,30,28,24
+KUR-NAV-M,Indore,194,0,5.3,12,1299,Kurta,Navy,M,Excess,41,31,43,39,30,41,31,43
+KUR-NAV-M,Nagpur,111,0,2.8,,1299,Kurta,Navy,M,Excess,19,19,15,15,18,20,22,24
+KUR-NAV-M,Kochi,120,0,5.8,9,1299,Kurta,Navy,M,Reorder,36,38,41,39,31,39,31,45
+KUR-NAV-M,Chandigarh,32,0,4.6,5,"Rs. 1,299",Kurta,Navy,M,Reorder,39,30,28,35,40,35,31,40
+KUR-NAV-M,Bhopal,15,0,2.5,12,1299,Kurta,Navy,M,Excess,19,14,17,14,18,13,16,17
+KUR-NAV-M,Patna,39,0,2.4,5,"Rs. 1,299",Kurta,Navy,M,Reorder,18,19,18,15,20,51,17,18
+KUR-NAV-M,Vadodara,0,0,0.9,12,1299,Kurta,Navy,M,Reorder,6,8,7,8,6,5,0,0
+KUR-NAV-M,Ludhiana,18,0,,5,"Rs. 1,299",Kurta,Navy,M,Reorder,23,22,30,28,24,22,25,24
+,Agra,20,0,1.8,5,1299,Kurta,Navy,M,Excess,36,32,30,32,38,26,34,31
+KUR-NAV-M,Nashik,44,11,2.1,9,"₹1,299",Kurta,Navy,M,Reorder,13,12,14,16,17,14,11,13
+KUR-NAV-M,Meerut,12,0,0.6,9,1299,Kurta,Navy,M,Excess,0,1,9,7,1,1,9,1
+KUR-NAV-M,Rajkot,80,0,3.5,7,1299,Kurta,Navy,M,Reorder,24,30,29,27,23,22,24,21
+KUR-NAV-M,Varanasi,7,0,2.9,7,1299,Kurta,Navy,M,,16,16,16,16,23,20,23,19
+BLA-BLA-S,Mumbai,131,76,5.2,12,499,Blazer,Black,S,OK,33,45,36,43,45,31,32,38
+BLA-BLA-S,Delhi,68,0,4.6,9,499,Blazer,Black,S,,31,30,40,25,33,40,34,36
+BLA-BLA-S,Bengaluru,45,0,4.4,5,499,Blazer,Black,S,OK,29,26,31,26,37,36,36,36
+BLA-BLA-S,Hyderabad,62,18,3.1,9,₹499,Blazer,Black,S,,17,24,25,20,26,18,21,25
+BLA-BLA-S,Chennai,51,30,3.8,7,₹499,Blazer,Black,S,Reorder,25,22,25,31,26,28,24,30
+BLA-BLA-S,Kolkata,0,6,0.7,9,499.00,Blazer,Black,S,Reorder,6,5,5,5,6,4,0,0
+BLA-BLA-S,Pune,40,0,4.7,7,499,Blazer,Black,S,Reorder,28,39,35,32,26,33,26,29
+BLA-BLA-S,Ahmedabad,55,0,1.7,12,₹499,Blazer,Black,S,OK,12,14,10,13,14,10,15,13
+BLA-BLA-S,Jaipur,10.5,-6,2.0,7,499,Blazer,Black,S,OK,12,12,15,17,16,15,16,14
+BLA-BLA-S,Lucknow, 101 ,50,4.4,9,499,Blazer,Black,S,Reorder,33,27,29,29,38,38,31,32
+BLA-BLA-S,Surat,3,0,0.6,9,₹499,Blazer,Black,S,,5,5,5,3,5,4,4,4
+BLA-BLA-S,Indore,4,0,4.2,7,Rs. 499,Blazer,Black,S,Excess,23,30,24,24,24,23,30,36
+BLA-BLA-S,Nagpur,21,13,3.7,5,₹499,Blazer,Black,S,Excess,20,24,31,29,29,27,32,29
+BLA-BLA-S,Kochi,7,0,5.3,7,₹499,Blazer,Black,S,,46,37,40,46,31,29,37,35
+BLA-BLA-S,Chandigarh,94,0,5.8,5,499.00,Blazer,Black,S,Reorder,50,51,32,51,46,43,51,47
+BLA-BLA-S,Bhopal,69,0,1.9,12,₹499,Blazer,Black,S,OK,14,15,15,12,10,11,13,16
+BLA-BLA-S,Patna,44,0,3.5,12,499,Blazer,Black,S,,26,19,21,25,29,22,23,26
+BLA-BLA-S,Vadodara,33,0,3.0,5,₹499,Blazer,Black,S,OK,19,23,17,17,21,24,19,22
+BLA-BLA-S,Ludhiana,60,33,4.3,12,499,Blazer,Black,S,OK,31,26,36,33,27,36,32,23
+BLA-BLA-S,Ludhiana,60,33,4.3,12,499,Blazer,Black,S,OK,31,26,36,33,27,36,32,23
+BLA-BLA-S,Agra,30,0,4.0,5,₹499,Blazer,Black,S,Reorder,27,32,22,26,27,30,30,26
+BLA-BLA-S,Nashik,1,0,1.3,9,499,Blazer,Black,S,Excess,7,9,11,10,11,8,7,7
+BLA-BLA-S,Meerut,75,28,4.6,7,499.00,Blazer,Black,S,Reorder,28,38,30,31,26,25,36,36
+BLA-BLA-S,Rajkot,25,0,5.1,5,499,Blazer,Black,S,Reorder,32,31,33,42,42,38,39,33
+BLA-BLA-S,Varanasi,85,25,5.5,5,Rs. 499,Blazer,Black,S,Reorder,42,39,43,35,47,39,30,34
+BLA-BLA-M,Mumbai,2,2,0.7,7,1299,Blazer,Black,M,Reorder,4,5,5,6,6,4,4,5
+BLA-BLA-M,Delhi,89,0,2.7,12,"₹1,299",Blazer,Black,M,Reorder,21,21,20,20,21,21,21,20
+BLA-BLA-M,Bengaluru,20,0,0.8,9,1299,Blazer,Black,M,Reorder,6,6,7,6,7,5,5,5
+BLA-BLA-M,Hyderabad,56,0,2.4,7,"₹1,299",Blazer,Black,M,Reorder,15,13,19,16,14,19,18,16
+BLA-BLA-M,Chennai,17,0,1.1,5,"₹1,299",Blazer,Black,M,,6,8,10,9,8,7,9,9
+BLA-BLA-M,Kolkata,73,0,4.8,7,"Rs. 1,299",Blazer,Black,M,Reorder,34,32,36,35,42,27,36,31
+BLA-BLA-M,Pune,93,0,4.1,12,"1,299.00",Blazer,Black,M,Excess,24,22,31,35,34,23,26,29
+BLA-BLA-M,Ahmedabad,45,32,5.6,9,1299,Blazer,Black,M,,47,42,48,30,41,46,49,37
+BLA-BLA-M,Jaipur,18,0,1.2,5,"₹1,299",Blazer,Black,M,Reorder,19,16,26,25,23,16,22,19
+BLA-BLA-M,Lucknow,16,0,2.1,12,"₹1,299",Blazer,Black,M,OK,17,11,16,14,17,41,16,13
+BLA-BLA-M,Surat,22,0,2.1,5,"₹1,299",Blazer,Black,M,Reorder,13,18,14,14,18,12,15,14
+BLA-BLA-M,Indore,58,22,2.7,12,"Rs. 1,299",Blazer,Black,M,Reorder,22,15,17,23,19,15,18,15
+BLA-BLA-M,Nagpur,79,0,5.7,5,"₹1,299",Blazer,Black,M,,49,41,45,41,33,49,47,39
+BLA-BLA-M,Kochi,3,0,5.9,5,"₹1,299",Blazer,Black,M,OK,45,34,31,39,44,34,48,40
+BLA-BLA-M,Chandigarh,166,0,5.9,9,1299,Blazer,Black,M,Excess,46,34,32,39,45,42,38,51
+BLA-BLA-M,Bhopal,28,0,2.9,5,"₹1,299",Blazer,Black,M,OK,25,16,17,24,24,16,18,21
+BLA-BLA-M,Patna,(4),0,3.0,5,1299,Blazer,Black,M,Reorder,46,8,4,4,46,8,8,37
+BLA-BLA-M,Vadodara,16,0,0.9,12,1299,Blazer,Black,M,Reorder,5,7,6,8,7,7,5,8
+BLA-BLA-M,Ludhiana,17,3,1.2,7,"1,299.00",Blazer,Black,M,Reorder,8,8,7,10,10,7,7,9
+BLA-BLA-M,Agra, 26 ,0,2.6,5,"1,299.00",Blazer,Black,M,Reorder,22,14,18,19,17,18,16,16
+BLA-BLA-M,Nashik,34,0,3.8,5,N/A,Blazer,Black,M,Excess,23,20,22,27,31,28,22,29
+BLA-BLA-M,Meerut,22,0,1.9,7,"Rs. 1,299",Blazer,Black,M,,11,13,14,12,11,10,15,13
+BLA-BLA-M,Rajkot,58,35,2.7,12,1299,Blazer,Black,M,Excess,20,18,14,23,17,21,22,21
+BLA-BLA-M,Varanasi,34,0,5.5,5,"1,299.00",Blazer,Black,M,Excess,45,40,46,34,32,33,36,46
+BLA-BLA-L,Mumbai,86,0,3.3,12,"₹1,299",Blazer,Black,L,OK,26,18,22,28,25,19,22,26
+BLA-BLA-L,Delhi,6,0,5.9,5,1299,Blazer,Black,L,OK,49,42,39,48,42,35,41,45
+BLA-BLA-L,Bengaluru,22,0,2.6,12,1299,Blazer,Black,L,OK,20,18,23,14,20,16,17,19
+BLA-BLA-L,Hyderabad,71,0,4.9,12,"₹1,299",Blazer,Black,L,,26,26,42,38,26,37,30,34
+BLA-BLA-L,Chennai,71,0,2.1,12,1299,Blazer,Black,L,Excess,12,16,18,15,15,14,16,12
+BLA-BLA-L,Kolkata,15,0,2.7,9,1299,Blazer,Black,L,Reorder,22,23,17,18,21,20,21,18
+BLA-BLA-L,Pune,8,0,6.0,12,1299,Blazer,Black,L,Reorder,51,49,46,49,40,40,35,37
+BLA-BLA-L,Ahmedabad,8,0,3.2,12,1299,Blazer,Black,L,OK,25,27,21,19,25,17,23,19
+BLA-BLA-L,Jaipur,44,0,2.7,7,1299,Blazer,Black,L,Reorder,18,16,23,21,22,19,19,18
+BLA-BLA-L,Lucknow,18,0,0.9,7,1299,Blazer,Black,L,OK,8,7,7,6,8,5,6,8
+BLA-BLA-L,Surat,90,0,4.6,9,"1,299.00",Blazer,Black,L,OK,28,39,27,32,38,25,34,40
+BLA-BLA-L,Indore,13,0,2.2,9,"Rs. 1,299",Blazer,Black,L,Excess,16,18,16,14,18,17,12,17
+BLA-BLA-L,Nagpur,9,0,1.5,7,1299,Blazer,Black,L,Reorder,12,12,11,8,10,9,9,11
+BLA-BLA-L,Kochi,125.5,0,4.5,,"₹1,299",Blazer,Black,L,Excess,29,38,30,29,26,35,33,29
+BLA-BLA-L,Chandigarh,3,0,4.2,5 days,1299,Blazer,Black,L,OK,27,27,32,26,32,36,29,24
+BLA-BLA-L,Bhopal, 25 ,14,3.7,9,"₹1,299",Blazer,Black,L,Excess,28,23,21,20,23,26,20,28
+BLA-BLA-L,Patna,39,0,1.1,12,"₹1,299",Blazer,Black,L,OK,6,7,9,9,9,6,8,9
+BLA-BLA-L,Vadodara,27,0,2.5,7,1299,Blazer,Black,L,Excess,14,16,17,21,18,14,17,22
+BLA-BLA-L,Ludhiana,20,0,2.4,9,"₹1,299",Blazer,Black,L,Excess,21,18,16,20,19,13,16,19
+BLA-BLA-L,Agra,38,0,2.1,9,"₹1,299",Blazer,Black,L,OK,11,13,18,13,17,12,14,16
+BLA-BLA-L,Nashik,83,0,3.6,7,"₹1,299",Blazer,Black,L,Excess,20,21,31,23,23,26,27,28
+BLA-BLA-L,Meerut,17,0,2.5,5,"₹1,299",Blazer,Black,L,,42,44,34,48,45,36,35,54
+BLA-BLA-L,Rajkot,11,0,0.6,7,"Rs. 1,299",Blazer,Black,L,,4,3,4,4,4,5,4,5
+BLA-BLA-L,Varanasi,124,0,5.4,12,"₹1,299",Blazer,Black,L,,41,38,33,35,47,46,40,38
+BLA-BLA-XL,Mumbai,10,0,1.2,7,Rs. 499,Blazer,Black,XL,Reorder,10,8,7,8,10,7,7,10
+BLA-BLA-XL,Delhi,3,0,2.4,7,Rs. 499,Blazer,Black,XL,,19,16,19,21,14,20,14,15
+BLA-BLA-XL,Bengaluru,5,0,1.8,5,₹499,Blazer,Black,XL,,12,10,15,11,15,44,10,15
+BLA-BLA-XL,Hyderabad,71,0,4.0,9,499.00,Blazer,Black,XL,,25,30,32,21,31,22,32,30
+BLA-BLA-XL,Chennai, 0 ,15,1.6,9,499,Blazer,Black,XL,Excess,11,11,9,10,11,11,11,12
+BLA-BLA-XL,Kolkata,61,0,,5,499,Blazer,Black,XL,Reorder,32,27,32,26,32,27,32,23
+BLA-BLA-XL,Pune,22,11,3.8,5,499.00,Blazer,Black,XL,,28,30,25,24,30,27,31,27
+BLA-BLA-XL,Ahmedabad,7,-20,1.1,5,499.00,Blazer,Black,XL,,9,9,7,7,9,6,8,6
+BLA-BLA-XL,Jaipur,100,23,3.5,12,499,Blazer,Black,XL,OK,20,19,30,20,21,24,27,28
+BLA-BLA-XL,Lucknow,52,0,2.4,7,₹499,Blazer,Black,XL,Reorder,20,20,15,13,15,17,13,15
+BLA-BLA-XL,Surat,0,0,5.9,7,Rs. 499,Blazer,Black,XL,Reorder,49,48,44,40,38,44,49,33
+BLA-BLA-XL,Indore,67,16,5.1,7,499,Blazer,Black,XL,Reorder,7,14,64,7,64,64,7,78
+BLA-BLA-XL,Nagpur,25,0,1.5,9,499,Blazer,Black,XL,OK,8,12,9,11,9,9,10,9
+BLA-BLA-XL,Kochi, 29 ,17,3.0,7,₹499,Blazer,Black,XL,Reorder,17,19,20,17,20,25,21,18
+BLA-BLA-XL,Chandigarh,61,0,5.6,5,499,Blazer,Black,XL,Reorder,37,34,33,47,36,34,46,37
+BLA-BLA-XL,Bhopal,23,0,1.8,7,₹499,Blazer,Black,XL,Excess,11,15,15,13,10,15,15,10
+BLA-BLA-XL,Patna,25,0,4.0,5,₹499,Blazer,Black,XL,OK,22,30,35,31,27,29,29,34
+BLA-BLA-XL,Vadodara,15,0,5.3,12,499,Blazer,Black,XL,,30,41,29,41,45,30,42,29
+BLA-BLA-XL,Ludhiana,64,0,3.9,12,499,Blazer,Black,XL,,33,33,28,23,33,24,28,23
+BLA-BLA-XL,Agra,163,0,4.5,12,Rs. 499,Blazer,Black,XL,OK,37,27,25,36,28,31,36,32
+BLA-BLA-XL,Nashik,83,0,4.9,7,499,Blazer,Black,XL,Excess,42,38,27,29,43,38,32,28
+BLA-BLA-XL,Meerut,75,0,3.9,7,499,Blazer,Black,XL,Excess,21,25,26,23,26,32,25,29
+BLA-BLA-XL,Rajkot,65, 28 ,5.4,9,Rs. 499,Blazer,Black,XL,Excess,39,31,38,35,47,30,39,30
+BLA-BLA-XL,Varanasi,24,0,0.6,12,499,Blazer,Black,XL,OK,4,3,4,5,4,5,4,5
+,Mumbai,6,0,4.6,9,1999,Blazer,White,S,OK,27,26,35,35,31,39,29,31
+BLA-WHI-S,Delhi,1,0,0.7,9,1999,Blazer,White,S,,5,4,5,4,5,6,4,5
+BLA-WHI-S,Bengaluru,73,0,5.3,7,"₹1,999",Blazer,White,S,,40,44,39,36,41,31,30,40
+BLA-WHI-S,Hyderabad,16,0,1.6,5,"1,999.00",Blazer,White,S,OK,12,9,11,14,12,13,11,12
+BLA-WHI-S,Chennai, 3 ,0,2.6,5,1999,Blazer,White,S,OK,14,18,18,16,21,21,20,14
+BLA-WHI-S,Kolkata,47,0,5.9,12,1999,Blazer,White,S,Excess,38,47,51,45,44,35,47,33
+BLA-WHI-S,Pune,31,0,1.1,12,"₹1,999",Blazer,White,S,Reorder,7,8,8,7,9,8,6,8
+BLA-WHI-S,Ahmedabad,46,0,5.1,7,N/A,Blazer,White,S,OK,45,35,29,39,29,44,43,36
+BLA-WHI-S,Jaipur,40,0,1.7,12,1999,Blazer,White,S,,10,14,13,11,12,10,11,10
+BLA-WHI-S,Lucknow,72,0,2.1,12,1999,Blazer,White,S,OK,13,13,17,15,13,17,14,17
+BLA-WHI-S,Surat,4,0,3.4,7,"1,999.00",Blazer,White,S,Reorder,74,66,66,51,50,72,46,69
+BLA-WHI-S,Indore,33,0,2.6,7,1999,Blazer,White,S,Reorder,18,19,19,17,14,15,16,15
+BLA-WHI-S,Nagpur,23,0,2.2,5,"₹1,999",Blazer,White,S,,19,15,15,15,14,18,13,12
+BLA-WHI-S,Kochi,54,27,3.2,7,1999,Blazer,White,S,Excess,21,17,27,19,21,22,21,20
+BLA-WHI-S,Chandigarh,54,0,4.1,9,1999,Blazer,White,S,OK,35,23,26,24,32,31,35,28
+BLA-WHI-S,Bhopal,76,0,5.0,7,"1,999.00",Blazer,White,S,,27,40,32,41,29,42,44,41
+BLA-WHI-S,Patna,0,0,0.9,5,"₹1,999",Blazer,White,S,OK,7,7,5,5,7,6,6,7
+BLA-WHI-S,Vadodara,34,0,3.5,9,"1,999.00",Blazer,White,S,Reorder,25,24,28,23,19,27,21,26
+BLA-WHI-S,Ludhiana,111.5,0,5.5,7,1999,Blazer,White,S,Excess,36,37,43,44,34,44,47,32
+BLA-WHI-S,Agra,105,54,3.9,12,1999,Blazer,White,S,Excess,27,23,25,27,31,99,22,24
+BLA-WHI-S,Agra,105,54,3.9,12,1999,Blazer,White,S,Excess,27,23,25,27,31,99,22,24
+BLA-WHI-S,Nashik,12,0,1.4,12,1999,Blazer,White,S,Excess,11,10,8,11,9,8,7,8
+BLA-WHI-S,Meerut,37,17,4.5,7,1999,Blazer,White,S,,37,35,28,37,27,38,37,30
+BLA-WHI-S,Rajkot,38,0,2.8,7,"₹1,999",Blazer,White,S,,20,20,24,23,23,16,18,24
+BLA-WHI-S,Varanasi,13,0,1.3,5,1999,Blazer,White,S,OK,9,10,9,8,9,8,7,11
+BLA-WHI-M,Mumbai,31,0,2.7,9,₹499,Blazer,White,M,OK,20,14,20,16,23,19,20,23
+BLA-WHI-M,Delhi,11,0,0.7,9,₹499,Blazer,White,M,Excess,4,6,5,5,4,4,6,5
+BLA-WHI-M,Bengaluru,66,32,5.6,7,499.00,Blazer,White,M,Reorder,42,33,49,34,38,34,36,41
+BLA-WHI-M,Hyderabad,30,0,1.9,7,₹499,Blazer,White,M,,11,12,16,11,11,16,16,12
+BLA-WHI-M,Chennai,33,0,3.9,9,₹499,Blazer,White,M,OK,22,26,24,22,31,23,24,31
+BLA-WHI-M,Kolkata,41,0,4.8,5,499,Blazer,White,M,Reorder,30,34,26,32,38,39,30,42
+BLA-WHI-M,Pune,37,17,3.4,5,₹499,Blazer,White,M,OK,9,9,52,9,42,4,42,4
+BLA-WHI-M,Ahmedabad,94,46,5.5,9,499,Blazer,White,M,,45,32,38,39,34,46,46,36
+BLA-WHI-M,Jaipur,18,0,1.0,9,499.00,Blazer,White,M,Reorder,8,6,7,8,5,6,6,8
+BLA-WHI-M,Lucknow,-5,17,2.7,9,499,Blazer,White,M,Reorder,17,21,19,16,23,17,18,17
+BLA-WHI-M,Surat,41,0,4.3,7,499,Blazer,White,M,Reorder,24,25,38,24,35,33,30,33
+BLA-WHI-M,Indore,2,0,3.3,7,499,Blazer,White,M,Excess,24,28,22,25,26,19,20,19
+BLA-WHI-M,Nagpur, 33 ,7,3.2,5,499,Blazer,White,M,,24,27,17,24,24,20,24,20
+BLA-WHI-M,Kochi,21,0,0.8,12,499,Blazer,White,M,,5,6,5,5,6,7,6,5
+BLA-WHI-M,Chandigarh,17,0,1.9,,499,Blazer,White,M,Reorder,12,14,16,15,15,12,10,12
+BLA-WHI-M,Bhopal,52,0,4.4,5,499,Blazer,White,M,OK,32,26,34,26,33,25,35,32
+BLA-WHI-M,Patna,27,0,1.7,9,₹499,Blazer,White,M,OK,14,15,14,13,10,11,9,14
+BLA-WHI-M,Vadodara,9,0,0.8,7,499,Blazer,White,M,OK,6,7,6,6,7,5,4,5
+BLA-WHI-M,Ludhiana,11,0,1.5,5,499,Blazer,White,M,OK,13,12,8,12,13,10,10,9
+BLA-WHI-M,Agra,156,33,4.4,12,499,Blazer,White,M,Reorder,32,34,33,36,35,24,32,32
+BLA-WHI-M,Nashik,14,0,0.7,9,499.00,Blazer,White,M,,5,6,5,4,5,4,4,4
+BLA-WHI-M,Meerut,34,12,2.3,5 days,499,Blazer,White,M,OK,18,13,15,16,17,16,18,15
+BLA-WHI-M,Rajkot,1,6,1.8,5,499.00,Blazer,White,M,Excess,10,15,13,11,14,11,10,10
+BLA-WHI-M,Varanasi,71,39,4.5,7,499,Blazer,White,M,Excess,67,61,88,62,94,74,70,63
+BLA-WHI-L,Mumbai,93,0,5.3,9,799.00,Blazer,White,L,OK,38,45,34,44,45,34,39,37
+BLA-WHI-L,Delhi,6,0,4.5,7,799,Blazer,White,L,,24,29,38,32,28,28,24,39
+BLA-WHI-L,Bengaluru,48,36,5.7,5,₹799,Blazer,White,L,Reorder,48,43,46,33,33,35,49,42
+BLA-WHI-L,Hyderabad,33,0,2.3,5,₹799,Blazer,White,L,Reorder,13,14,15,19,12,13,17,13
+BLA-WHI-L,Chennai,65,0,4.3,7,₹799,Blazer,White,L,,36,27,29,23,37,29,36,27
+BLA-WHI-L,Kolkata,63,26,2.1,12,799,Blazer,White,L,Excess,15,17,11,15,16,14,15,17
+BLA-WHI-L,Pune,26,-12,4.8,12,₹799,Blazer,White,L,,26,40,29,40,34,33,39,32
+BLA-WHI-L,Ahmedabad,19,0,1.1,7,₹799,Blazer,White,L,Reorder,8,6,7,6,7,9,6,8
+BLA-WHI-L,Jaipur, 76 ,0,2.7,12,₹799,Blazer,White,L,OK,18,15,21,21,17,21,18,14
+BLA-WHI-L,Lucknow,100,0,6.0,7,799,Blazer,White,L,,40,34,48,34,33,47,45,38
+BLA-WHI-L,Surat,109,0,4.3,9,₹799,Blazer,White,L,,24,23,33,25,32,36,33,34
+BLA-WHI-L,Indore,7,0,2.7,9,799,Blazer,White,L,,15,21,22,18,15,22,19,19
+BLA-WHI-L,Nagpur,39,0,4.0,7,₹799,Blazer,White,L,,26,24,24,24,35,86,29,30
+BLA-WHI-L,Kochi,21,0,1.2,9,799,Blazer,White,L,OK,10,7,9,7,8,8,7,7
+BLA-WHI-L,Chandigarh,6,0,1.7,9,799.00,Blazer,White,L,OK,13,12,9,15,9,11,11,10
+BLA-WHI-L,Bhopal,100,0,4.9,7,Rs. 799,Blazer,White,L,Reorder,40,27,36,31,42,35,27,26
+BLA-WHI-L,Patna,11,0,,5,799,Blazer,White,L,OK,8,6,6,8,9,9,8,6
+BLA-WHI-L,Vadodara,51,41,3.9,9,799,Blazer,White,L,Reorder,24,29,21,26,21,32,33,31
+BLA-WHI-L,Ludhiana,39,0,3.1,5,N/A,Blazer,White,L,OK,22,24,27,26,23,17,24,20
+BLA-WHI-L,Agra,77,0,4.7,5,799,Blazer,White,L,Excess,27,27,40,27,34,28,31,40
+BLA-WHI-L,Nashik,37,14,4.1,5,₹799,Blazer,White,L,OK,31,33,29,33,25,35,27,29
+BLA-WHI-L,Meerut, 44 ,0,5.2,7,799,Blazer,White,L,Excess,41,37,37,36,44,41,44,28
+BLA-WHI-L,Rajkot,35,0,4.1,5,799,Blazer,White,L,Reorder,29,22,22,30,30,26,24,35
+BLA-WHI-L,Varanasi,79.5,0,4.9,5,799,Blazer,White,L,Reorder,27,38,28,32,36,40,32,33
+BLA-WHI-XL,Mumbai,79,0,3.8,9,799.00,Blazer,White,XL,OK,27,26,21,21,30,31,28,24
+BLA-WHI-XL,Delhi,23,19,2.3,7,₹799,Blazer,White,XL,Excess,3,6,6,6,35,6,3,28
+BLA-WHI-XL,Bengaluru,48,0,6.0,5,₹799,Blazer,White,XL,OK,44,34,52,33,41,33,51,38
+BLA-WHI-XL,Hyderabad,14,0,1.2,9,₹799,Blazer,White,XL,OK,9,7,8,9,8,9,10,9
+BLA-WHI-XL,Chennai,94,0,6.0,9,Rs. 799,Blazer,White,XL,Reorder,34,45,41,49,42,47,32,49
+BLA-WHI-XL,Kolkata,41,0,4.2,12,799,Blazer,White,XL,Excess,28,27,30,33,30,35,32,25
+BLA-WHI-XL,Pune,10,0,0.8,12,Rs. 799,Blazer,White,XL,OK,5,7,5,6,5,7,6,5
+BLA-WHI-XL,Ahmedabad,7,40,3.3,9,Rs. 799,Blazer,White,XL,Reorder,23,26,29,26,21,18,27,19
+BLA-WHI-XL,Jaipur,8,0,3.2,9,₹799,Blazer,White,XL,,19,22,22,20,27,22,26,20
+BLA-WHI-XL,Lucknow,64,0,4.4,7,Rs. 799,Blazer,White,XL,Excess,35,29,32,28,27,38,29,23
+BLA-WHI-XL,Surat,52,58,3.9,12,799,Blazer,White,XL,OK,22,30,25,22,22,26,33,27
+BLA-WHI-XL,Indore,39,0,4.7,5,799.00,Blazer,White,XL,OK,38,31,40,28,31,39,39,39
+BLA-WHI-XL,Nagpur,50,12,2.6,7,799,Blazer,White,XL,OK,40,52,39,40,57,52,49,57
+BLA-WHI-XL,Kochi,10,0,3.7,7,₹799,Blazer,White,XL,Reorder,32,23,32,30,24,28,20,28
+BLA-WHI-XL,Chandigarh,8,0,3.5,7,₹799,Blazer,White,XL,,22,27,24,27,27,28,22,26
+BLA-WHI-XL,Bhopal,9,0,3.3,9,Rs. 799,Blazer,White,XL,,20,22,20,23,26,25,27,20
+BLA-WHI-XL,Patna,81,0,2.9,9,799,Blazer,White,XL,OK,24,16,18,18,15,16,25,21
+BLA-WHI-XL,Vadodara,37,0,4.9,5,₹799,Blazer,White,XL,,26,33,32,37,38,36,28,39
+BLA-WHI-XL,Ludhiana,10,0,5.6,7,₹799,Blazer,White,XL,OK,33,40,32,33,33,44,41,44
+BLA-WHI-XL,Agra,12,0,2.3,7,799,Blazer,White,XL,,14,15,18,17,19,19,17,18
+BLA-WHI-XL,Nashik,21,16,1.5,12,799,Blazer,White,XL,OK,10,8,11,9,8,11,12,11
+BLA-WHI-XL,Meerut,65,0,2.1,12,799,Blazer,White,XL,Reorder,15,12,14,16,12,15,15,15
+BLA-WHI-XL,Rajkot,66,0,5.0,7,799.00,Blazer,White,XL,OK,41,41,27,34,35,40,32,44
+BLA-WHI-XL,Varanasi,38,21,3.0,7,Rs. 799,Blazer,White,XL,OK,17,21,19,16,21,24,22,19
+BLA-NAV-S,Mumbai, 45 ,0,4.5,7,499,Blazer,Navy,S,OK,38,38,34,37,36,32,38,35
+BLA-NAV-S,Delhi,11,0,5.6,7,499.00,Blazer,Navy,S,,34,34,48,33,42,34,43,30
+BLA-NAV-S,Bengaluru,31,35,3.4,9,499,Blazer,Navy,S,Excess,26,22,26,22,20,19,25,26
+BLA-NAV-S,Hyderabad,2,7,3.1,5,₹499,Blazer,Navy,S,Reorder,25,18,23,21,17,16,19,19
+BLA-NAV-S,Chennai,53,0,4.7,9,₹499,Blazer,Navy,S,,29,36,32,37,40,35,25,36
+,Kolkata,5,0,2.6,7,499,Blazer,Navy,S,OK,16,17,20,19,19,44,18,22
+BLA-NAV-S,Pune,44,0,1.7,12,499,Blazer,Navy,S,,12,10,13,13,13,14,12,14
+BLA-NAV-S,Ahmedabad,8,0,1.2,9,Rs. 499,Blazer,Navy,S,Excess,7,9,9,9,9,10,8,7
+BLA-NAV-S,Jaipur,170,0,5.7,9,Rs. 499,Blazer,Navy,S,Excess,35,39,48,49,43,49,45,34
+BLA-NAV-S,Lucknow,20,6,1.8,5,499,Blazer,Navy,S,Excess,13,10,11,14,15,13,11,15
+BLA-NAV-S,Surat,115,0,3.8,12,499,Blazer,Navy,S,Excess,29,24,28,32,24,24,27,29
+BLA-NAV-S,Indore,80,0,3.0,9,₹499,Blazer,Navy,S,Excess,25,21,20,23,25,18,17,22
+BLA-NAV-S,Nagpur,53,0,5.9,5,Rs. 499,Blazer,Navy,S,,51,43,37,40,45,48,46,41
+BLA-NAV-S,Kochi,62,39,5.4,9,499.00,Blazer,Navy,S,Reorder,42,37,34,40,38,38,29,35
+BLA-NAV-S,Chandigarh,37,0,5.0,7,499,Blazer,Navy,S,Excess,34,31,37,36,39,34,43,36
+BLA-NAV-S,Bhopal,1,0,3.3,,Rs. 499,Blazer,Navy,S,OK,22,27,25,21,22,18,18,18
+BLA-NAV-S,Patna,6,0,1.5,12,₹499,Blazer,Navy,S,Excess,12,12,9,11,9,11,11,11
+BLA-NAV-S,Vadodara, 12 ,7,1.3,7,₹499,Blazer,Navy,S,Reorder,7,8,10,7,9,8,9,11
+BLA-NAV-S,Ludhiana,1,0,5.2,5,499.00,Blazer,Navy,S,,34,31,44,39,29,31,45,29
+BLA-NAV-S,Agra,30,0,1.3,7,499.00,Blazer,Navy,S,Excess,7,10,8,7,11,9,7,11
+BLA-NAV-S,Nashik,10,0,3.1,5,499,Blazer,Navy,S,Reorder,39,8,8,47,4,8,47,47
+BLA-NAV-S,Nashik,10,0,3.1,5,499,Blazer,Navy,S,Reorder,39,8,8,47,4,8,47,47
+BLA-NAV-S,Meerut,69,0,5.8,5,Rs. 499,Blazer,Navy,S,Excess,35,44,39,39,36,33,44,31
+BLA-NAV-S,Rajkot,36,7,2.3,7,499,Blazer,Navy,S,Reorder,15,16,14,17,18,14,17,15
+BLA-NAV-S,Varanasi,56,0,2.0,12,499,Blazer,Navy,S,OK,17,14,17,12,17,16,16,17
+BLA-NAV-M,Mumbai,73,0,5.8,12,Rs. 499,Blazer,Navy,M,Excess,45,35,31,41,36,49,34,45
+BLA-NAV-M,Delhi,47,0,2.7,7,499,Blazer,Navy,M,OK,52,47,58,50,40,55,52,56
+BLA-NAV-M,Bengaluru,-2,22,3.2,12,₹499,Blazer,Navy,M,,21,28,23,22,27,21,20,22
+BLA-NAV-M,Hyderabad,23,0,4.1,12,499,Blazer,Navy,M,OK,29,32,31,31,29,29,27,34
+BLA-NAV-M,Chennai,34.5,0,1.9,7 days,₹499,Blazer,Navy,M,Reorder,13,16,12,10,12,15,14,13
+BLA-NAV-M,Kolkata,6,-14,3.3,9,N/A,Blazer,Navy,M,,24,26,24,18,26,18,22,28
+BLA-NAV-M,Pune,127,0,4.2,9,₹499,Blazer,Navy,M,Reorder,23,23,35,30,36,36,30,28
+BLA-NAV-M,Ahmedabad,42, 22 ,1.6,12,499,Blazer,Navy,M,Excess,12,13,11,9,11,12,10,12
+BLA-NAV-M,Jaipur,37,0,2.4,7,499,Blazer,Navy,M,,18,14,16,17,15,18,18,19
+BLA-NAV-M,Lucknow,0,11,4.6,5,Rs. 499,Blazer,Navy,M,OK,36,34,35,29,31,24,38,34
+BLA-NAV-M,Surat,51,0,5.0,7,₹499,Blazer,Navy,M,Reorder,36,41,33,43,32,30,32,28
+BLA-NAV-M,Indore,26,0,5.9,7,₹499,Blazer,Navy,M,Reorder,41,50,48,42,44,42,40,32
+BLA-NAV-M,Nagpur,16,0,4.8,5,499.00,Blazer,Navy,M,,29,26,31,35,32,28,33,26
+BLA-NAV-M,Kochi,57,47,5.5,7,499,Blazer,Navy,M,,31,42,48,42,35,47,45,45
+BLA-NAV-M,Chandigarh, 157 ,0,5.7,9,499,Blazer,Navy,M,OK,35,47,40,46,32,43,41,46
+BLA-NAV-M,Bhopal,41,0,4.6,12,₹499,Blazer,Navy,M,Reorder,38,27,40,35,32,40,32,37
+BLA-NAV-M,Patna,84,0,5.2,12,499,Blazer,Navy,M,OK,40,34,41,40,45,42,28,45
+BLA-NAV-M,Vadodara,56,0,3.3,9,₹499,Blazer,Navy,M,OK,20,22,28,21,27,24,19,19
+BLA-NAV-M,Ludhiana, 61 ,0,3.6,9,₹499,Blazer,Navy,M,OK,27,25,27,29,21,26,23,26
+BLA-NAV-M,Agra,89,0,4.6,7,₹499,Blazer,Navy,M,Reorder,37,37,28,32,33,39,29,32
+BLA-NAV-M,Nashik,58,17,3.3,12,Rs. 499,Blazer,Navy,M,Excess,24,20,21,19,21,19,18,25
+BLA-NAV-M,Meerut,39,0,1.2,12,499,Blazer,Navy,M,OK,10,9,10,7,9,7,10,8
+BLA-NAV-M,Rajkot,10,0,1.3,5,₹499,Blazer,Navy,M,Reorder,9,8,11,9,9,32,9,9
+BLA-NAV-M,Varanasi,44,0,1.7,12,₹499,Blazer,Navy,M,Reorder,11,15,14,10,9,10,14,13
+BLA-NAV-L,Mumbai,22,0,1.3,7,499,Blazer,Navy,L,OK,11,8,11,7,10,10,11,8
+BLA-NAV-L,Delhi,9,17,1.6,9,499.00,Blazer,Navy,L,OK,10,9,9,13,14,13,12,14
+BLA-NAV-L,Bengaluru,3,0,2.0,7,499,Blazer,Navy,L,OK,12,11,17,12,13,12,17,12
+BLA-NAV-L,Hyderabad,21,11,,12,499.00,Blazer,Navy,L,Excess,15,15,10,10,13,10,14,10
+BLA-NAV-L,Chennai,29,6,1.2,9,₹499,Blazer,Navy,L,,8,7,7,10,8,9,9,10
+BLA-NAV-L,Kolkata,10,0,2.1,5,₹499,Blazer,Navy,L,Reorder,11,15,13,15,16,13,12,11
+BLA-NAV-L,Pune,171,68,6.0,12,499,Blazer,Navy,L,Reorder,39,49,32,42,37,34,48,44
+BLA-NAV-L,Ahmedabad,113,0,6.0,9,499,Blazer,Navy,L,,52,34,47,45,49,40,48,32
+BLA-NAV-L,Jaipur,79,0,4.2,9,₹499,Blazer,Navy,L,Excess,29,35,32,32,34,30,30,33
+BLA-NAV-L,Lucknow,53,30,3.5,7,499,Blazer,Navy,L,Excess,27,31,26,27,28,24,23,26
+BLA-NAV-L,Surat,84,27,2.2,12,499,Blazer,Navy,L,OK,16,19,15,14,16,19,14,14
+BLA-NAV-L,Indore,6,0,0.6,5,499.00,Blazer,Navy,L,Reorder,3,5,4,5,4,5,4,3
+BLA-NAV-L,Nagpur,18,0,0.6,9,499,Blazer,Navy,L,,3,5,3,4,5,4,4,5
+BLA-NAV-L,Kochi,26,0,2.3,7,499.00,Blazer,Navy,L,OK,13,13,18,13,18,17,15,19
+BLA-NAV-L,Chandigarh,62,0,4.9,7,499,Blazer,Navy,L,Excess,93,86,96,86,91,79,78,77
+BLA-NAV-L,Bhopal,48,0,5.0,7,499,Blazer,Navy,L,Excess,7,63,14,14,63,7,7,63
+BLA-NAV-L,Patna,1,0,4.7,12,₹499,Blazer,Navy,L,Excess,40,28,33,34,34,25,32,30
+BLA-NAV-L,Vadodara,47,0,2.8,9,499,Blazer,Navy,L,OK,18,20,22,16,19,18,23,18
+BLA-NAV-L,Ludhiana,43,0,3.3,5,499,Blazer,Navy,L,,22,20,19,26,22,27,18,25
+BLA-NAV-L,Agra,42,0,3.7,9,Rs. 499,Blazer,Navy,L,Reorder,27,23,22,22,28,21,31,22
+BLA-NAV-L,Nashik,81,0,2.3,12,499,Blazer,Navy,L,Reorder,19,15,17,13,15,13,19,13
+BLA-NAV-L,Meerut,88,0,6.0,5,Rs. 499,Blazer,Navy,L,OK,33,47,36,38,42,40,51,45
+BLA-NAV-L,Rajkot,73,0,4.6,5,499,Blazer,Navy,L,Excess,35,39,40,38,33,25,33,38
+BLA-NAV-L,Varanasi,56,0,1.9,9,Rs. 499,Blazer,Navy,L,Excess,17,10,16,10,13,11,15,15
+BLA-NAV-XL,Mumbai,7,0,1.1,7,1999,Blazer,Navy,XL,Reorder,7,9,6,8,8,9,6,6
+BLA-NAV-XL,Delhi,106,0,3.2,12,1999,Blazer,Navy,XL,OK,26,19,26,22,18,26,27,19
+BLA-NAV-XL,Bengaluru,6,0,0.9,7,"₹1,999",Blazer,Navy,XL,Reorder,6,5,7,6,6,6,5,5
+BLA-NAV-XL,Hyderabad,29,14,1.6,7,1999,Blazer,Navy,XL,Reorder,13,12,12,10,11,12,9,11
+BLA-NAV-XL,Chennai,96,0,2.4,12,"₹1,999",Blazer,Navy,XL,OK,17,20,15,18,13,20,16,18
+BLA-NAV-XL,Kolkata,58,0,4.0,5,1999,Blazer,Navy,XL,Excess,30,22,24,21,26,22,33,27
+BLA-NAV-XL,Pune,107,0,4.5,12,"1,999.00",Blazer,Navy,XL,Excess,37,24,31,27,25,37,33,32
+BLA-NAV-XL,Ahmedabad,36,0,1.0,12,"1,999.00",Blazer,Navy,XL,Reorder,9,8,9,6,8,7,5,7
+BLA-NAV-XL,Jaipur,69,0,4.7,5,1999,Blazer,Navy,XL,Excess,40,31,37,32,37,40,41,40
+BLA-NAV-XL,Lucknow,179.5,0,5.0,12,1999,Blazer,Navy,XL,Reorder,28,36,34,41,37,41,41,41
+BLA-NAV-XL,Surat, 74 ,0,5.1,9,"₹1,999",Blazer,Navy,XL,Reorder,29,34,27,36,42,35,30,35
+BLA-NAV-XL,Indore,51,0,3.6,9,"1,999.00",Blazer,Navy,XL,Excess,28,25,28,31,27,21,23,29
+BLA-NAV-XL,Nagpur,50,0,4.8,5,"₹1,999",Blazer,Navy,XL,OK,36,42,26,29,27,29,36,42
+BLA-NAV-XL,Kochi,68,0,5.0,5,1999,Blazer,Navy,XL,Reorder,32,34,42,28,39,39,39,27
+BLA-NAV-XL,Chandigarh,55,25,2.6,7,1999,Blazer,Navy,XL,Reorder,20,14,22,14,19,20,17,21
+BLA-NAV-XL,Bhopal,30,0,1.3,12,1999,Blazer,Navy,XL,Reorder,9,11,7,9,11,35,11,11
+BLA-NAV-XL,Patna,6,10,3.6,,N/A,Blazer,Navy,XL,Reorder,24,27,28,20,23,19,31,27
+BLA-NAV-XL,Vadodara,174,0,5.6,12,"₹1,999",Blazer,Navy,XL,OK,30,38,31,33,39,48,41,40
+BLA-NAV-XL,Ludhiana,9,0,1.6,9,"1,999.00",Blazer,Navy,XL,Excess,10,10,11,14,8,9,12,10
+BLA-NAV-XL,Agra,51,0,5.9,5,"Rs. 1,999",Blazer,Navy,XL,Excess,45,41,52,44,35,35,38,40
+BLA-NAV-XL,Nashik,113,0,5.9,12,"Rs. 1,999",Blazer,Navy,XL,Excess,38,40,42,36,43,47,50,37
+BLA-NAV-XL,Meerut,9,7,1.6,9,1999,Blazer,Navy,XL,Excess,9,13,13,9,11,12,11,13
+BLA-NAV-XL,Rajkot,39,0,2.6,9,1999,Blazer,Navy,XL,Excess,17,18,18,15,17,20,15,14
+BLA-NAV-XL,Varanasi,63,17,2.5,9,"₹1,999",Blazer,Navy,XL,,18,20,18,18,15,15,22,22
+TRA-BLA-S,Mumbai,16,0,1.2,7,"Rs. 1,999",Track Pant,Black,S,,10,8,10,8,10,7,7,7
+TRA-BLA-S,Delhi, 36 ,9,2.0,7,1999,Track Pant,Black,S,OK,14,13,15,15,15,12,12,11
+TRA-BLA-S,Bengaluru,29,7,3.3,5,"₹1,999",Track Pant,Black,S,Excess,28,18,18,19,23,24,17,20
+TRA-BLA-S,Hyderabad,24,46,5.8,7,1999,Track Pant,Black,S,,122,99,95,100,116,79,113,94
+TRA-BLA-S,Chennai,143,-9,4.8,9,1999,Track Pant,Black,S,OK,26,38,37,37,26,28,28,41
+TRA-BLA-S,Kolkata,5,0,5.1,7,1999,Track Pant,Black,S,Reorder,33,42,41,39,36,41,36,42
+TRA-BLA-S,Pune,79,0,2.9,9,1999,Track Pant,Black,S,,21,23,25,23,15,20,24,16
+TRA-BLA-S,Ahmedabad,18,0,1.9,5,"₹1,999",Track Pant,Black,S,,12,15,12,15,13,15,12,13
+TRA-BLA-S,Jaipur,27,0,5.1,12,"₹1,999",Track Pant,Black,S,,44,43,36,28,38,29,34,37
+TRA-BLA-S,Lucknow,54,0,2.2,9,"₹1,999",Track Pant,Black,S,Reorder,19,18,13,18,15,18,14,17
+,Surat,40,0,4.8,5,1999,Track Pant,Black,S,,6,73,73,6,73,60,6,6
+TRA-BLA-S,Indore,60,22,4.6,9 days,"₹1,999",Track Pant,Black,S,Excess,26,32,38,37,25,27,28,38
+TRA-BLA-S,Nagpur,53,0,4.8,12,"₹1,999",Track Pant,Black,S,Reorder,37,38,31,26,39,26,31,26
+TRA-BLA-S,Kochi,62,0,3.9,9,1999,Track Pant,Black,S,Excess,31,24,31,21,23,33,26,28
+TRA-BLA-S,Chandigarh,98,17,3.0,12,"₹1,999",Track Pant,Black,S,Reorder,19,17,19,19,23,17,22,18
+TRA-BLA-S,Bhopal,31,18,5.4,7,1999,Track Pant,Black,S,,47,47,31,40,39,31,29,37
+TRA-BLA-S,Patna,61,0,4.9,12,1999,Track Pant,Black,S,Reorder,26,33,27,42,34,43,40,39
+TRA-BLA-S,Vadodara,0,0,1.3,5,1999,Track Pant,Black,S,Reorder,10,10,7,8,8,9,0,0
+TRA-BLA-S,Ludhiana,20,0,1.8,5,"₹1,999",Track Pant,Black,S,,15,12,14,10,11,14,10,15
+TRA-BLA-S,Agra,(9),0,2.1,7,"Rs. 1,999",Track Pant,Black,S,Excess,13,16,12,16,18,17,13,16
+TRA-BLA-S,Nashik,1,0,3.1,5,1999,Track Pant,Black,S,Excess,21,23,26,20,25,23,21,22
+TRA-BLA-S,Meerut, 60 ,0,1.5,12,1999,Track Pant,Black,S,Excess,10,10,9,12,9,10,13,12
+TRA-BLA-S,Meerut, 60 ,0,1.5,12,1999,Track Pant,Black,S,Excess,10,10,9,12,9,10,13,12
+TRA-BLA-S,Rajkot,1,0,1.9,5,"Rs. 1,999",Track Pant,Black,S,Excess,14,11,13,17,12,15,14,15
+TRA-BLA-S,Varanasi,0,19,1.9,9,1999,Track Pant,Black,S,Reorder,14,13,16,13,11,11,0,0
+TRA-BLA-M,Mumbai,52,7,1.8,9,₹799,Track Pant,Black,M,OK,14,13,11,11,9,11,12,16
+TRA-BLA-M,Delhi,36,0,2.8,7,799,Track Pant,Black,M,Excess,23,17,23,16,19,15,16,17
+TRA-BLA-M,Bengaluru,7,6,1.0,5,Rs. 799,Track Pant,Black,M,Excess,8,8,8,8,7,6,7,6
+TRA-BLA-M,Hyderabad,43,0,2.5,9,₹799,Track Pant,Black,M,,14,15,22,21,14,18,18,16
+TRA-BLA-M,Chennai,9,0,1.8,7,₹799,Track Pant,Black,M,Reorder,15,10,11,12,13,14,13,14
+TRA-BLA-M,Kolkata,13,0,4.8,7,799,Track Pant,Black,M,Reorder,33,31,33,26,32,34,37,31
+TRA-BLA-M,Pune,35,0,5.2,5,Rs. 799,Track Pant,Black,M,Reorder,37,32,28,31,32,40,42,30
+TRA-BLA-M,Ahmedabad,9,0,5.5,5,799,Track Pant,Black,M,,40,35,47,39,43,46,31,42
+TRA-BLA-M,Jaipur,54,0,5.3,9,Rs. 799,Track Pant,Black,M,OK,36,35,44,42,40,99,44,31
+TRA-BLA-M,Lucknow,16,0,2.2,9,Rs. 799,Track Pant,Black,M,Reorder,16,14,12,14,13,13,15,15
+TRA-BLA-M,Surat,47,0,2.8,5,799.00,Track Pant,Black,M,Excess,19,20,20,15,23,18,23,20
+TRA-BLA-M,Indore,24,0,1.1,12,799.00,Track Pant,Black,M,Reorder,8,7,7,7,7,8,9,7
+TRA-BLA-M,Nagpur,160,0,4.9,12,₹799,Track Pant,Black,M,Reorder,40,33,39,42,39,30,42,26
+TRA-BLA-M,Kochi,54,0,5.3,5,Rs. 799,Track Pant,Black,M,Reorder,43,41,33,36,33,43,40,33
+TRA-BLA-M,Chandigarh,20.5,0,,9,Rs. 799,Track Pant,Black,M,Reorder,21,24,32,30,21,30,22,25
+TRA-BLA-M,Bhopal,13,0,3.4,5,799.00,Track Pant,Black,M,,29,26,28,21,21,24,29,23
+TRA-BLA-M,Patna,113,31,4.8,7,799,Track Pant,Black,M,,68,68,64,97,75,63,92,69
+TRA-BLA-M,Vadodara,75,67,5.1,12,799.00,Track Pant,Black,M,Reorder,32,39,27,36,34,44,32,42
+TRA-BLA-M,Ludhiana,183,76,5.8,12,Rs. 799,Track Pant,Black,M,,50,35,31,33,49,34,38,40
+TRA-BLA-M,Agra,95,0,3.6,12,799,Track Pant,Black,M,OK,25,27,28,27,25,21,22,30
+TRA-BLA-M,Nashik,61,0,2.7,9,799,Track Pant,Black,M,Excess,20,21,17,21,23,23,23,15
+TRA-BLA-M,Meerut,3,14,1.2,12,Rs. 799,Track Pant,Black,M,Reorder,8,8,9,10,9,6,6,7
+TRA-BLA-M,Rajkot,120,16,4.0,9,Rs. 799,Track Pant,Black,M,Excess,26,25,29,23,25,28,22,25
+TRA-BLA-M,Varanasi,69,0,5.7,12,₹799,Track Pant,Black,M,Excess,35,46,34,31,41,48,39,38
+TRA-WHI-S,Mumbai,117,0,5.6,7,"₹2,499",Track Pant,White,S,OK,44,38,31,33,48,49,39,31
+TRA-WHI-S,Delhi,1,0,5.7,7,2499,Track Pant,White,S,,36,45,47,31,49,34,37,30
+TRA-WHI-S,Bengaluru,3,9,1.6,7,"2,499.00",Track Pant,White,S,,11,9,10,10,12,10,14,9
+TRA-WHI-S,Hyderabad,46,30,3.8,12,N/A,Track Pant,White,S,Reorder,26,27,30,33,25,27,31,22
+TRA-WHI-S,Chennai,25,0,2.6,7,"₹2,499",Track Pant,White,S,,16,19,15,17,17,20,22,20
+TRA-WHI-S,Kolkata,10,0,2.4,7,"2,499.00",Track Pant,White,S,,3,36,3,3,30,36,36,3
+TRA-WHI-S,Pune,14,14,3.5,5,2499,Track Pant,White,S,Excess,24,27,19,26,26,23,28,30
+TRA-WHI-S,Ahmedabad,30,0,1.4,12,"2,499.00",Track Pant,White,S,OK,8,11,8,9,7,8,10,12
+TRA-WHI-S,Jaipur,5,0,0.6,12,2499,Track Pant,White,S,Reorder,4,4,5,3,4,5,4,3
+TRA-WHI-S,Lucknow,3,0,0.5,5,2499,Track Pant,White,S,Reorder,3,4,4,3,4,3,3,3
+TRA-WHI-S,Surat,0,0,5.9,5,"₹2,499",Track Pant,White,S,Excess,40,35,45,40,36,39,35,32
+TRA-WHI-S,Indore,93,0,3.7,9,"₹2,499",Track Pant,White,S,Excess,25,29,29,29,21,28,25,29
+TRA-WHI-S,Nagpur,24,20,5.8,7,2499,Track Pant,White,S,Reorder,48,34,40,38,38,39,36,48
+TRA-WHI-S,Kochi,8,17,3.2,7,"₹2,499",Track Pant,White,S,Excess,23,21,23,27,23,27,22,22
+TRA-WHI-S,Chandigarh,33,9,1.1,12,2499,Track Pant,White,S,,7,6,8,9,7,7,8,10
+TRA-WHI-S,Bhopal,36,19,3.0,5,"2,499.00",Track Pant,White,S,Excess,26,18,16,24,21,24,17,21
+TRA-WHI-S,Patna,4,0,2.8,5,"₹2,499",Track Pant,White,S,,16,23,19,24,22,16,16,18
+TRA-WHI-S,Vadodara,163,0,5.9,,2499,Track Pant,White,S,Reorder,37,34,45,42,49,43,35,46
+TRA-WHI-S,Ludhiana,12,0,5.8,7,"2,499.00",Track Pant,White,S,OK,36,46,37,48,41,32,31,35
+TRA-WHI-S,Agra,0,0,0.8,7,"2,499.00",Track Pant,White,S,,4,6,5,7,5,6,4,5
+TRA-WHI-S,Nashik,8,0,1.0,5,"2,499.00",Track Pant,White,S,,7,9,9,6,6,6,8,7
+TRA-WHI-S,Meerut,13,0,3.9,12,"2,499.00",Track Pant,White,S,Excess,30,32,28,23,28,24,24,22
+TRA-WHI-S,Rajkot,42,0,3.3,9,"₹2,499",Track Pant,White,S,OK,27,17,22,27,20,26,21,28
+TRA-WHI-S,Varanasi,86,0,5.1,7,"2,499.00",Track Pant,White,S,,36,34,32,37,29,30,30,36
+TRA-WHI-M,Mumbai,113,31,4.2,9,799,Track Pant,White,M,Reorder,30,35,35,32,24,29,35,27
+TRA-WHI-M,Delhi,5,6,1.9,5,799.00,Track Pant,White,M,,12,15,11,15,16,41,14,11
+TRA-WHI-M,Bengaluru,30,0,1.6,7,799.00,Track Pant,White,M,OK,13,10,9,8,9,13,13,9
+TRA-WHI-M,Hyderabad,7,-13,5.5,7,799.00,Track Pant,White,M,,35,46,35,33,43,44,33,34
+TRA-WHI-M,Chennai,17, 20 ,2.6,7,₹799,Track Pant,White,M,,18,16,17,16,22,23,20,20
+TRA-WHI-M,Kolkata,50,0,5.0,5,799,Track Pant,White,M,Excess,105,107,101,100,87,93,97,68
+TRA-WHI-M,Pune,14,0,0.7,9,799,Track Pant,White,M,,6,4,5,4,4,5,5,5
+TRA-WHI-M,Ahmedabad,41,0,2.7,9,799,Track Pant,White,M,OK,21,20,23,16,18,21,21,21
+TRA-WHI-M,Jaipur,115,77,4.6,12,Rs. 799,Track Pant,White,M,,24,33,39,29,28,27,30,32
+TRA-WHI-M,Lucknow,9,8,1.7,5,Rs. 799,Track Pant,White,M,OK,10,10,10,11,12,9,14,9
+TRA-WHI-M,Surat,30,0,3.2,5,Rs. 799,Track Pant,White,M,Reorder,28,26,17,24,25,22,26,26
+TRA-WHI-M,Indore,1,0,3.6,5,799.00,Track Pant,White,M,,29,21,30,28,22,19,30,23
+TRA-WHI-M,Nagpur,33, 40 ,3.7,9,₹799,Track Pant,White,M,Excess,20,30,25,20,26,30,27,23
+TRA-WHI-M,Kochi,0,7,0.8,9,₹799,Track Pant,White,M,,6,6,5,4,4,5,6,6
+TRA-WHI-M,Chandigarh, 60 ,0,6.0,7,799,Track Pant,White,M,OK,48,36,42,32,47,35,52,47
+TRA-WHI-M,Bhopal,51,0,4.9,7,799,Track Pant,White,M,,32,37,36,28,38,30,43,42
+TRA-WHI-M,Patna,126,0,3.2,12,Rs. 799,Track Pant,White,M,Reorder,21,20,28,22,18,28,24,28
+TRA-WHI-M,Vadodara,37,0,1.7,12,Rs. 799,Track Pant,White,M,,13,12,14,14,11,14,14,9
+TRA-WHI-M,Ludhiana,20,0,5.7,7 days,799,Track Pant,White,M,Excess,30,32,45,42,33,48,34,31
+TRA-WHI-M,Agra,4.5,0,2.2,7,₹799,Track Pant,White,M,Reorder,13,17,16,12,12,12,12,15
+TRA-WHI-M,Nashik,37,0,4.4,5,799.00,Track Pant,White,M,,26,34,33,27,25,30,32,29
+TRA-WHI-M,Meerut,89,0,4.7,9,799.00,Track Pant,White,M,OK,32,26,30,41,35,26,28,38
+TRA-WHI-M,Rajkot,27,86,5.4,12,799,Track Pant,White,M,Reorder,42,35,42,47,34,30,32,33
+TRA-WHI-M,Varanasi,3, 1 ,0.5,5,₹799,Track Pant,White,M,OK,4,4,4,3,3,3,4,3
+TRA-NAV-S,Mumbai,72,0,3.5,12,1999,Track Pant,Navy,S,,4,44,4,44,9,53,4,9
+TRA-NAV-S,Delhi,7,0,1.6,9,1999,Track Pant,Navy,S,,13,14,10,13,12,8,10,13
+TRA-NAV-S,Bengaluru,10,0,1.1,9,1999,Track Pant,Navy,S,OK,8,8,6,9,7,8,8,6
+TRA-NAV-S,Hyderabad,65,29,4.4,5,1999,Track Pant,Navy,S,,29,33,34,29,31,33,35,24
+TRA-NAV-S,Chennai,73,38,4.4,12,1999,Track Pant,Navy,S,Reorder,38,38,27,24,38,38,26,37
+TRA-NAV-S,Kolkata,57,24,4.0,7,1999,Track Pant,Navy,S,Excess,34,22,28,21,34,34,26,24
+TRA-NAV-S,Pune,39,0,1.4,9,"Rs. 1,999",Track Pant,Navy,S,Excess,12,10,10,11,10,10,8,11
+TRA-NAV-S,Ahmedabad,4,0,3.3,12,1999,Track Pant,Navy,S,Excess,20,26,27,22,26,18,24,19
+TRA-NAV-S,Jaipur,59,0,5.8,5,1999,Track Pant,Navy,S,Excess,47,44,34,42,33,42,49,34
+TRA-NAV-S,Lucknow,2,0,2.3,9,"1,999.00",Track Pant,Navy,S,Excess,13,20,20,13,19,16,16,12
+TRA-NAV-S,Surat,15,0,0.9,9,1999,Track Pant,Navy,S,,5,6,6,8,6,5,6,6
+TRA-NAV-S,Indore,138,0,4.9,9,1999,Track Pant,Navy,S,,37,33,39,32,35,39,40,41
+TRA-NAV-S,Nagpur,(1),0,2.3,12,1999,Track Pant,Navy,S,OK,15,18,15,12,19,13,15,17
+TRA-NAV-S,Kochi,34,23,6.0,7,"1,999.00",Track Pant,Navy,S,Reorder,39,52,32,51,40,51,33,37
+TRA-NAV-S,Chandigarh,42,7,1.3,12,N/A,Track Pant,Navy,S,,11,9,8,11,8,10,8,10
+,Bhopal,80,22,4.9,5,"₹1,999",Track Pant,Navy,S,Excess,29,41,29,37,37,39,28,36
+TRA-NAV-S,Patna,22,11,2.1,5,"₹1,999",Track Pant,Navy,S,Excess,14,18,13,16,17,15,18,14
+TRA-NAV-S,Vadodara,37,20,2.7,7,1999,Track Pant,Navy,S,Excess,22,15,18,23,15,16,22,20
+TRA-NAV-S,Ludhiana,2,0,1.1,7,"₹1,999",Track Pant,Navy,S,Reorder,20,19,24,21,23,70,23,15
+TRA-NAV-S,Agra,5,0,4.8,9,1999,Track Pant,Navy,S,OK,27,42,32,40,28,39,37,27
+TRA-NAV-S,Nashik,7,1,0.6,5,1999,Track Pant,Navy,S,OK,3,5,5,4,4,4,4,4
+TRA-NAV-S,Meerut,50,0,2.3,7,"₹1,999",Track Pant,Navy,S,OK,20,13,16,18,15,14,18,13
+TRA-NAV-S,Rajkot,39,15,1.6,12,1999,Track Pant,Navy,S,Reorder,13,11,10,11,12,13,12,14
+TRA-NAV-S,Rajkot,39,15,1.6,12,1999,Track Pant,Navy,S,Reorder,13,11,10,11,12,13,12,14
+TRA-NAV-S,Varanasi,27,22,2.8,9,"₹1,999",Track Pant,Navy,S,OK,24,23,21,19,17,18,22,24
+TRA-NAV-M,Mumbai,4,0,2.6,7,2499,Track Pant,Navy,M,,17,17,22,17,22,19,16,16
+TRA-NAV-M,Delhi,8,0,,5,2499,Track Pant,Navy,M,,19,19,20,21,25,31,29,19
+TRA-NAV-M,Bengaluru,67, 72 ,4.9,12,2499,Track Pant,Navy,M,Excess,42,42,40,27,27,30,36,28
+TRA-NAV-M,Hyderabad,42,0,5.0,5,2499,Track Pant,Navy,M,OK,30,43,33,35,36,36,40,33
+TRA-NAV-M,Chennai,15,71,5.8,9,2499,Track Pant,Navy,M,Excess,41,34,34,45,48,42,37,36
+TRA-NAV-M,Kolkata,47,0,3.9,5,"Rs. 2,499",Track Pant,Navy,M,Reorder,31,29,24,32,30,30,26,28
+TRA-NAV-M,Pune,39,0,1.0,12,"₹2,499",Track Pant,Navy,M,,5,6,7,8,8,6,7,6
+TRA-NAV-M,Ahmedabad,97,0,5.9,12,"Rs. 2,499",Track Pant,Navy,M,Reorder,51,51,47,34,44,40,45,40
+TRA-NAV-M,Jaipur,3,0,1.9,12,"Rs. 2,499",Track Pant,Navy,M,Excess,13,12,15,11,10,15,13,11
+TRA-NAV-M,Lucknow,26,20,4.1,12,"Rs. 2,499",Track Pant,Navy,M,Reorder,32,31,33,35,26,26,28,34
+TRA-NAV-M,Surat, 35 ,6,1.5,7,"Rs. 2,499",Track Pant,Navy,M,OK,12,8,11,9,8,11,9,10
+TRA-NAV-M,Indore,10,0,0.8,7,2499,Track Pant,Navy,M,,7,6,7,6,5,4,7,6
+TRA-NAV-M,Nagpur,72,0,2.1,12,"₹2,499",Track Pant,Navy,M,Excess,18,11,16,17,17,17,13,17
+TRA-NAV-M,Kochi,16,10,3.0,5,"₹2,499",Track Pant,Navy,M,OK,22,20,22,23,25,19,24,24
+TRA-NAV-M,Chandigarh,34,0,5.3,12,"2,499.00",Track Pant,Navy,M,,33,38,37,38,45,35,40,37
+TRA-NAV-M,Bhopal,25,0,1.1,9,2499,Track Pant,Navy,M,OK,8,9,6,9,6,7,9,9
+TRA-NAV-M,Patna,79,26,2.7,12,"₹2,499",Track Pant,Navy,M,Reorder,20,17,17,21,22,15,22,22
+TRA-NAV-M,Vadodara,40,0,1.6,12,"₹2,499",Track Pant,Navy,M,,13,12,14,12,9,10,10,10
+TRA-NAV-M,Ludhiana,7,13,2.8,,2499,Track Pant,Navy,M,OK,19,18,19,20,15,17,15,21
+TRA-NAV-M,Agra,12,0,1.4,12,"₹2,499",Track Pant,Navy,M,OK,21,3,17,1,21,17,1,1
+TRA-NAV-M,Nashik,66,0,2.0,12,2499,Track Pant,Navy,M,OK,14,16,14,11,16,12,13,16
+TRA-NAV-M,Meerut,43,0,3.1,9,"₹2,499",Track Pant,Navy,M,Reorder,18,22,25,21,26,27,18,25
+TRA-NAV-M,Rajkot,16,0,3.8,5,"₹2,499",Track Pant,Navy,M,Excess,20,30,21,30,25,29,29,29
+TRA-NAV-M,Varanasi,20, 11 ,1.5,7,"Rs. 2,499",Track Pant,Navy,M,Excess,9,9,10,12,11,10,11,9

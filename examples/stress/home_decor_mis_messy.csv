@@ -1,0 +1,850 @@
+product_code,site,on_hand,pending_po,offtake,lead_time_in_days,asp,Item
+HD-001-CUSH,Mumbai,0,0,0.1,12,Rs. 399,Cushion Velvet
+HD-001-CUSH,Delhi,31,12,0.4,25,Rs. 399,Cushion Velvet
+HD-001-CUSH,Bengaluru,54,0,0.9,18,₹399,Cushion Velvet
+HD-001-CUSH,Hyderabad, 0 ,0,0.3,25,₹399,Cushion Velvet
+HD-001-CUSH,Chennai,21,0,0.6,25,Rs. 399,Cushion Velvet
+HD-001-CUSH,Kolkata,33,0,0,12,₹399,Cushion Velvet
+HD-001-CUSH,Pune,5,6,0.6,12,399,Cushion Velvet
+HD-001-CUSH,Ahmedabad,32,18,0.9,18,₹399,Cushion Velvet
+HD-001-CUSH,Jaipur,22,0,1.0,25,Rs. 399,Cushion Velvet
+HD-001-CUSH,Lucknow,2,0,0.5,18,₹399,Cushion Velvet
+HD-001-CUSH,Surat,25,0,0.7,18,399,Cushion Velvet
+HD-001-CUSH,Indore,45,0,0.9,18,399,Cushion Velvet
+HD-002-CUSH,Mumbai,0,0,0.0,25,799,Cushion Velvet
+HD-002-CUSH,Delhi,20,0,0.5,25,₹799,Cushion Velvet
+HD-002-CUSH,Bengaluru,32,0,1.2,18,₹799,Cushion Velvet
+HD-002-CUSH,Hyderabad,2,2,0.1,25,₹799,Cushion Velvet
+HD-002-CUSH,Chennai,2,25,1.0,25,799,Cushion Velvet
+HD-002-CUSH,Kolkata,0,0,0.2,18,Rs. 799,Cushion Velvet
+HD-002-CUSH,Pune,2,0,0,18,₹799,Cushion Velvet
+HD-002-CUSH,Ahmedabad,4,0,0.9,25,799,Cushion Velvet
+HD-002-CUSH,Jaipur,8,2,0.1,25,₹799,Cushion Velvet
+HD-002-CUSH,Lucknow,7,0,0.5,12,799.00,Cushion Velvet
+HD-002-CUSH,Surat,9,0,0.9,12,799,Cushion Velvet
+HD-002-CUSH,Indore,19,4,0.6,18,₹799,Cushion Velvet
+HD-003-CUSH,Mumbai,33,0,1.2,12,799,Cushion Velvet
+HD-003-CUSH,Delhi,19.5,13,1.0,12,799,Cushion Velvet
+HD-003-CUSH,Bengaluru,1,0,0.1,25,Rs. 799,Cushion Velvet
+HD-003-CUSH,Hyderabad,0,0,0.1,12,799,Cushion Velvet
+HD-003-CUSH,Chennai,28,14,0.9,12,N/A,Cushion Velvet
+HD-003-CUSH,Kolkata,11,0,0.4,25,799,Cushion Velvet
+HD-003-CUSH,Pune,19,0,0.7,25,799,Cushion Velvet
+HD-003-CUSH,Ahmedabad,7,0,0,18,799,Cushion Velvet
+HD-003-CUSH,Jaipur,3,0,0.8,12,Rs. 799,Cushion Velvet
+HD-003-CUSH,Lucknow,15,0,0.6,12,799,Cushion Velvet
+HD-003-CUSH,Surat, 17 ,-16,0.9,25,799,Cushion Velvet
+HD-003-CUSH,Indore,0,0,0.1,,799,Cushion Velvet
+HD-004-CUSH,Mumbai,9,3,0.4,12,"₹1,499",Cushion Velvet
+HD-004-CUSH,Delhi,53,21,0.9,18,1499,Cushion Velvet
+HD-004-CUSH,Bengaluru,9,0,0.8,12 days,"₹1,499",Cushion Velvet
+HD-004-CUSH,Hyderabad,0,0,0.0,18,"Rs. 1,499",Cushion Velvet
+HD-004-CUSH,Chennai,22,0,,25,1499,Cushion Velvet
+HD-004-CUSH,Kolkata,12,0,0.5,18,"₹1,499",Cushion Velvet
+HD-004-CUSH,Pune,12,0,0.7,25,1499,Cushion Velvet
+HD-004-CUSH,Ahmedabad,-9,0,0.4,18,"₹1,499",Cushion Velvet
+HD-004-CUSH,Jaipur,15,0,0,12,1499,Cushion Velvet
+HD-004-CUSH,Lucknow,10,0,0.5,18,1499,Cushion Velvet
+HD-004-CUSH,Surat,4,14,0.9,18,"₹1,499",Cushion Velvet
+HD-004-CUSH,Indore,39,0,0.8,25,1499,Cushion Velvet
+HD-004-CUSH,Indore,39,0,0.8,25,1499,Cushion Velvet
+HD-005-CUSH,Mumbai,4,0,0.7,12,399,Cushion Velvet
+,Delhi,6,0,0.6,25,₹399,Cushion Velvet
+HD-005-CUSH,Bengaluru,3,0,0.5,18,399,Cushion Velvet
+HD-005-CUSH,Hyderabad,15,0,0.4,12,399,Cushion Velvet
+HD-005-CUSH,Chennai,22,0,0.7,12,Rs. 399,Cushion Velvet
+HD-005-CUSH,Kolkata,8,11,0.5,18,399.00,Cushion Velvet
+HD-005-CUSH,Pune,11,0,0.4,25,399.00,Cushion Velvet
+HD-005-CUSH,Ahmedabad,2,0,0.8,12,Rs. 399,Cushion Velvet
+HD-005-CUSH,Jaipur,1,0,0.2,12,399,Cushion Velvet
+HD-005-CUSH,Lucknow,3,0,0,18,399,Cushion Velvet
+HD-005-CUSH,Surat,51,0,1.0,25,399,Cushion Velvet
+HD-005-CUSH,Indore,20,10,0.7,18,Rs. 399,Cushion Velvet
+HD-006-CUSH,Mumbai,21,0,1.0,18,799,Cushion Velvet
+HD-006-CUSH,Delhi,0,0,0.0,25,799,Cushion Velvet
+HD-006-CUSH,Bengaluru,1,0,0.2,18,799.00,Cushion Velvet
+HD-006-CUSH,Hyderabad,15,6,0.8,12,₹799,Cushion Velvet
+HD-006-CUSH,Chennai,1,0,0.9,12,799,Cushion Velvet
+HD-006-CUSH,Kolkata,20,9,0.6,12,799,Cushion Velvet
+HD-006-CUSH,Pune,0,0,0.1,18,799,Cushion Velvet
+HD-006-CUSH,Ahmedabad,28,15,1.0,12,799,Cushion Velvet
+HD-006-CUSH,Jaipur,12,0,0.8,12,799.00,Cushion Velvet
+HD-006-CUSH,Lucknow,23,6,0.9,12,₹799,Cushion Velvet
+HD-006-CUSH,Surat,47,12,0,25,₹799,Cushion Velvet
+HD-006-CUSH,Indore,21,0,0.6,12,Rs. 799,Cushion Velvet
+HD-007-CUSH,Mumbai,13,6,0.4,12,1499,Cushion Velvet
+HD-007-CUSH,Delhi,65,19,1.0,25,1499,Cushion Velvet
+HD-007-CUSH,Bengaluru,34,0,1.1,12,"1,499.00",Cushion Velvet
+HD-007-CUSH,Hyderabad,51,0,0.8,25,1499,Cushion Velvet
+HD-007-CUSH,Chennai,48,0,1.0,25,1499,Cushion Velvet
+HD-007-CUSH,Kolkata,10,4,0.2,18,1499,Cushion Velvet
+HD-007-CUSH,Pune,50.5,0,0.9,18,1499,Cushion Velvet
+HD-007-CUSH,Ahmedabad,11,0,0.7,25,"₹1,499",Cushion Velvet
+HD-007-CUSH,Jaipur,58,15,1.0,25,"₹1,499",Cushion Velvet
+HD-007-CUSH,Lucknow,3,0,0.2,12,"₹1,499",Cushion Velvet
+HD-007-CUSH,Surat,3,3,0.3,18,"Rs. 1,499",Cushion Velvet
+HD-007-CUSH,Indore,2,0,0,12,"1,499.00",Cushion Velvet
+HD-008-VASE,Mumbai,13,0,0.6,12,399,Vase Ceramic
+HD-008-VASE,Delhi,32,0,0.6,18,₹399,Vase Ceramic
+HD-008-VASE,Bengaluru,33,0,0.7,25,₹399,Vase Ceramic
+HD-008-VASE,Hyderabad,17,0,0.4,18,N/A,Vase Ceramic
+HD-008-VASE,Chennai,14,0,0.2,25,₹399,Vase Ceramic
+HD-008-VASE,Kolkata,3,0,0.2,18,₹399,Vase Ceramic
+HD-008-VASE,Pune,20,0,0.5,12,Rs. 399,Vase Ceramic
+HD-008-VASE,Ahmedabad,34,0,0.9,12,399.00,Vase Ceramic
+HD-008-VASE,Jaipur,20,8,0.9,12,399,Vase Ceramic
+HD-008-VASE,Lucknow,7,0,0.3,12,Rs. 399,Vase Ceramic
+HD-008-VASE,Surat,6,9,0.8,18,399.00,Vase Ceramic
+HD-008-VASE,Indore, 1 ,0,0.1,12,399.00,Vase Ceramic
+HD-009-VASE,Mumbai,11,0,0,25,"₹1,499",Vase Ceramic
+HD-009-VASE,Delhi,30,0,0.8,12,1499,Vase Ceramic
+HD-009-VASE,Bengaluru,11,0,0.6,12,1499,Vase Ceramic
+HD-009-VASE,Hyderabad,21,0,0.7,18,1499,Vase Ceramic
+HD-009-VASE,Chennai,20,0,0.7,12,1499,Vase Ceramic
+HD-009-VASE,Kolkata,12,0,1.0,25,"₹1,499",Vase Ceramic
+HD-009-VASE,Pune,35,0,0.6,25,1499,Vase Ceramic
+HD-009-VASE,Ahmedabad,34,28,1.1,25,"₹1,499",Vase Ceramic
+HD-009-VASE,Jaipur,2,0,0.1,12,"Rs. 1,499",Vase Ceramic
+HD-009-VASE,Lucknow,29,-2,0.5,18,"1,499.00",Vase Ceramic
+HD-009-VASE,Surat, 40 ,14,1.1,12,"₹1,499",Vase Ceramic
+HD-009-VASE,Indore,0,0,0.1,12,"₹1,499",Vase Ceramic
+HD-010-VASE,Mumbai,20,0,0.9,,"2,999.00",Vase Ceramic
+HD-010-VASE,Delhi,43,0,0,18,2999,Vase Ceramic
+HD-010-VASE,Bengaluru,27,16,0.9,25,"Rs. 2,999",Vase Ceramic
+HD-010-VASE,Hyderabad,36,5,0.7,18,"₹2,999",Vase Ceramic
+HD-010-VASE,Chennai,5,1,0.1,18,2999,Vase Ceramic
+HD-010-VASE,Kolkata,4, 2 ,0.1,25,2999,Vase Ceramic
+HD-010-VASE,Pune,9,0,0.7,18,"₹2,999",Vase Ceramic
+HD-010-VASE,Ahmedabad,0,0,0.0,12,2999,Vase Ceramic
+HD-010-VASE,Jaipur,49,0,1.2,25,"2,999.00",Vase Ceramic
+HD-010-VASE,Lucknow,4,0,0.1,18 days,"₹2,999",Vase Ceramic
+HD-010-VASE,Surat,65,0,1.2,25,2999,Vase Ceramic
+HD-010-VASE,Indore,35,7,0.9,12,2999,Vase Ceramic
+HD-011-VASE,Mumbai,1,0,0.3,12,"Rs. 5,999",Vase Ceramic
+HD-011-VASE,Delhi,2,0,0.4,12,"₹5,999",Vase Ceramic
+HD-011-VASE,Bengaluru,37,0,0,18,"Rs. 5,999",Vase Ceramic
+HD-011-VASE,Hyderabad,9,0,,12,"5,999.00",Vase Ceramic
+HD-011-VASE,Chennai,35,0,0.6,18,5999,Vase Ceramic
+HD-011-VASE,Kolkata,4,0,0.6,12,"Rs. 5,999",Vase Ceramic
+HD-011-VASE,Pune,41,0,0.8,25,5999,Vase Ceramic
+HD-011-VASE,Ahmedabad,2,0,0.6,12,5999,Vase Ceramic
+HD-011-VASE,Jaipur,22,0,1.0,18,"₹5,999",Vase Ceramic
+HD-011-VASE,Lucknow,0,0,0.1,25,5999,Vase Ceramic
+HD-011-VASE,Surat,15, 11 ,1.2,12,5999,Vase Ceramic
+HD-011-VASE,Indore,4.5,0,0.4,18,"5,999.00",Vase Ceramic
+HD-012-VASE,Mumbai,(2),2,0.3,12,"₹2,999",Vase Ceramic
+HD-012-VASE,Delhi,0,0,0.5,25,"₹2,999",Vase Ceramic
+HD-012-VASE,Bengaluru,39,0,0.9,25,2999,Vase Ceramic
+HD-012-VASE,Hyderabad,21,0,0,18,"₹2,999",Vase Ceramic
+HD-012-VASE,Chennai,37,0,1.1,12,2999,Vase Ceramic
+HD-012-VASE,Kolkata,18,0,0.3,18,2999,Vase Ceramic
+HD-012-VASE,Pune, 47 ,0,0.9,25,2999,Vase Ceramic
+HD-012-VASE,Ahmedabad,1,0,0.5,12,"₹2,999",Vase Ceramic
+HD-012-VASE,Jaipur,58,0,0.8,25,"₹2,999",Vase Ceramic
+HD-012-VASE,Lucknow,12,3,0.2,25,"2,999.00",Vase Ceramic
+HD-012-VASE,Surat,13,0,0.4,25,2999,Vase Ceramic
+HD-012-VASE,Indore,15,0,0.3,18,2999,Vase Ceramic
+HD-013-VASE,Mumbai,54,0,1.0,25,2999,Vase Ceramic
+HD-013-VASE,Mumbai,54,0,1.0,25,2999,Vase Ceramic
+HD-013-VASE,Delhi,80,0,1.2,25,"2,999.00",Vase Ceramic
+HD-013-VASE,Bengaluru,6,0,0.3,18,N/A,Vase Ceramic
+HD-013-VASE,Hyderabad,10,0,0.7,25,2999,Vase Ceramic
+HD-013-VASE,Chennai,20,0,0,25,2999,Vase Ceramic
+HD-013-VASE,Kolkata,0,0,0.3,12,2999,Vase Ceramic
+,Pune,0,0,0.1,18,"2,999.00",Vase Ceramic
+HD-013-VASE,Ahmedabad,20,0,0.9,18,2999,Vase Ceramic
+HD-013-VASE,Jaipur, 6 ,0,0.3,12,2999,Vase Ceramic
+HD-013-VASE,Lucknow,13,19,0.7,25,"Rs. 2,999",Vase Ceramic
+HD-013-VASE,Surat,0,0,0.0,25,2999,Vase Ceramic
+HD-013-VASE,Indore,0,1,0.2,12,"₹2,999",Vase Ceramic
+HD-014-VASE,Mumbai,11,0,0.4,12,"₹5,999",Vase Ceramic
+HD-014-VASE,Delhi,12,0,1.1,25,5999,Vase Ceramic
+HD-014-VASE,Bengaluru,15,0,1.1,25,5999,Vase Ceramic
+HD-014-VASE,Hyderabad,11,0,0.3,12,5999,Vase Ceramic
+HD-014-VASE,Chennai,54,0,0.8,25,5999,Vase Ceramic
+HD-014-VASE,Kolkata,19,0,0,18,5999,Vase Ceramic
+HD-014-VASE,Pune,16,11,0.8,25,5999,Vase Ceramic
+HD-014-VASE,Ahmedabad,45,0,0.9,18,"₹5,999",Vase Ceramic
+HD-014-VASE,Jaipur,8,16,0.9,18,"₹5,999",Vase Ceramic
+HD-014-VASE,Lucknow,23,0,0.9,12,"5,999.00",Vase Ceramic
+HD-014-VASE,Surat,13,2,0.4,12,"₹5,999",Vase Ceramic
+HD-014-VASE,Indore,8,0,0.5,12,5999,Vase Ceramic
+HD-015-WALL,Mumbai,17,0,0.4,18,"₹2,999",Wall Clock Oak
+HD-015-WALL,Delhi,22,7,0.6,12,"Rs. 2,999",Wall Clock Oak
+HD-015-WALL,Bengaluru,24,4,0.4,25,"2,999.00",Wall Clock Oak
+HD-015-WALL,Hyderabad,16,0,0.5,18,2999,Wall Clock Oak
+HD-015-WALL,Chennai,0,0,0.0,25,2999,Wall Clock Oak
+HD-015-WALL,Kolkata,5,4,0.4,12,2999,Wall Clock Oak
+HD-015-WALL,Pune,47,15,0,18,2999,Wall Clock Oak
+HD-015-WALL,Ahmedabad,26,0,0.7,18,"Rs. 2,999",Wall Clock Oak
+HD-015-WALL,Jaipur,6,-20,0.5,18,"₹2,999",Wall Clock Oak
+HD-015-WALL,Lucknow,3,0,0.2,25,2999,Wall Clock Oak
+HD-015-WALL,Surat,34,25,1.2,18,2999,Wall Clock Oak
+HD-015-WALL,Indore,8,0,0.6,18,2999,Wall Clock Oak
+HD-016-WALL,Mumbai,24,0,0.7,12,1499,Wall Clock Oak
+HD-016-WALL,Delhi,43,0,0.7,,1499,Wall Clock Oak
+HD-016-WALL,Bengaluru,5,10,1.1,12,1499,Wall Clock Oak
+HD-016-WALL,Hyderabad,3,0,0.1,12,"1,499.00",Wall Clock Oak
+HD-016-WALL,Chennai,22.5,0,1.0,18,"Rs. 1,499",Wall Clock Oak
+HD-016-WALL,Kolkata,16,0,0.3,25,"1,499.00",Wall Clock Oak
+HD-016-WALL,Pune,62,14,0.9,25,"Rs. 1,499",Wall Clock Oak
+HD-016-WALL,Ahmedabad,11,24,0,25,"₹1,499",Wall Clock Oak
+HD-016-WALL,Jaipur,12,0,0.7,18,1499,Wall Clock Oak
+HD-016-WALL,Lucknow,11,0,0.2,25,"₹1,499",Wall Clock Oak
+HD-016-WALL,Surat,0,0,0.0,12,"₹1,499",Wall Clock Oak
+HD-016-WALL,Indore,11,4,0.2,25,"₹1,499",Wall Clock Oak
+HD-017-WALL,Mumbai,43,0,1.2,25,2999,Wall Clock Oak
+HD-017-WALL,Delhi,20,9,0.7,25,2999,Wall Clock Oak
+HD-017-WALL,Bengaluru,32,0,0.8,12,"Rs. 2,999",Wall Clock Oak
+HD-017-WALL,Hyderabad,17,0,0.4,18,"₹2,999",Wall Clock Oak
+HD-017-WALL,Chennai,10,20,0.9,18 days,2999,Wall Clock Oak
+HD-017-WALL,Kolkata,0,0,0.0,12,2999,Wall Clock Oak
+HD-017-WALL,Pune,67,0,0.9,25,2999,Wall Clock Oak
+HD-017-WALL,Ahmedabad,32,0,1.1,18,"₹2,999",Wall Clock Oak
+HD-017-WALL,Jaipur,20,0,0,18,"Rs. 2,999",Wall Clock Oak
+HD-017-WALL,Lucknow,0,0,0.0,12,"Rs. 2,999",Wall Clock Oak
+HD-017-WALL,Surat, 30 ,12,1.1,12,2999,Wall Clock Oak
+HD-017-WALL,Indore, 13 ,9,0.7,12,2999,Wall Clock Oak
+HD-018-WALL,Mumbai,4,0,1.0,12,5999,Wall Clock Oak
+HD-018-WALL,Delhi,11,0,0.5,12,N/A,Wall Clock Oak
+HD-018-WALL,Bengaluru,4,0,,25,"5,999.00",Wall Clock Oak
+HD-018-WALL,Hyderabad,45,0,0.8,18,"₹5,999",Wall Clock Oak
+HD-018-WALL,Chennai,46,0,0.9,18,5999,Wall Clock Oak
+HD-018-WALL,Kolkata,18,5,0.5,18,5999,Wall Clock Oak
+HD-018-WALL,Pune,1,0,0.6,12,5999,Wall Clock Oak
+HD-018-WALL,Ahmedabad,11,0,0.3,12,"Rs. 5,999",Wall Clock Oak
+HD-018-WALL,Jaipur,0,0,0.0,12,5999,Wall Clock Oak
+HD-018-WALL,Lucknow,29,6,0,18,5999,Wall Clock Oak
+HD-018-WALL,Surat,2,0,0.6,12,5999,Wall Clock Oak
+HD-018-WALL,Indore,25,0,0.7,12,"₹5,999",Wall Clock Oak
+HD-019-WALL,Mumbai,22,0,1.1,12,₹399,Wall Clock Oak
+HD-019-WALL,Delhi,44,0,0.6,25,₹399,Wall Clock Oak
+HD-019-WALL,Bengaluru,20,0,0.6,18,399,Wall Clock Oak
+HD-019-WALL,Hyderabad,44,0,0.7,25,Rs. 399,Wall Clock Oak
+HD-019-WALL,Chennai,29,0,1.0,18,399,Wall Clock Oak
+HD-019-WALL,Kolkata,(1),11,0.9,12,Rs. 399,Wall Clock Oak
+HD-019-WALL,Pune,20,0,0.8,18,₹399,Wall Clock Oak
+HD-019-WALL,Ahmedabad, 2 ,0,0.3,12,399,Wall Clock Oak
+HD-019-WALL,Jaipur,5,0,1.1,12,399,Wall Clock Oak
+HD-019-WALL,Lucknow,13,0,1.0,18,399,Wall Clock Oak
+HD-019-WALL,Surat, 11 ,0,0,25,Rs. 399,Wall Clock Oak
+HD-019-WALL,Indore,43,11,0.6,25,₹399,Wall Clock Oak
+HD-020-WALL,Mumbai,4,3,0.4,18,1499,Wall Clock Oak
+HD-020-WALL,Delhi,1,2,0.2,12,1499,Wall Clock Oak
+HD-020-WALL,Bengaluru,19,0,1.2,18,1499,Wall Clock Oak
+HD-020-WALL,Hyderabad,53,0,0.8,25,"Rs. 1,499",Wall Clock Oak
+HD-020-WALL,Chennai,17,0,0.9,12,"₹1,499",Wall Clock Oak
+HD-020-WALL,Kolkata,6,10,0.7,12,1499,Wall Clock Oak
+HD-020-WALL,Pune,10,0,0.5,18,1499,Wall Clock Oak
+HD-020-WALL,Ahmedabad,13,4,0.2,25,1499,Wall Clock Oak
+HD-020-WALL,Jaipur,28,0,0.6,18,1499,Wall Clock Oak
+HD-020-WALL,Lucknow,17.5,0,0.6,25,"₹1,499",Wall Clock Oak
+HD-020-WALL,Surat,5,0,0.1,25,1499,Wall Clock Oak
+HD-020-WALL,Indore,11,0,0,25,1499,Wall Clock Oak
+HD-021-WALL,Mumbai,12,15,1.0,18,399,Wall Clock Oak
+HD-021-WALL,Delhi,0,0,0.1,12,Rs. 399,Wall Clock Oak
+HD-021-WALL,Delhi,0,0,0.1,12,Rs. 399,Wall Clock Oak
+HD-021-WALL,Bengaluru,59,0,0.7,25,399.00,Wall Clock Oak
+HD-021-WALL,Hyderabad,13,0,0.9,18,Rs. 399,Wall Clock Oak
+HD-021-WALL,Chennai,9,0,0.4,12,Rs. 399,Wall Clock Oak
+HD-021-WALL,Kolkata,55,0,1.1,18,Rs. 399,Wall Clock Oak
+HD-021-WALL,Pune,8,0,0.2,25,399,Wall Clock Oak
+HD-021-WALL,Ahmedabad, 0 ,-19,0.0,18,399,Wall Clock Oak
+HD-021-WALL,Jaipur,14,0,0.5,18,₹399,Wall Clock Oak
+HD-021-WALL,Lucknow,2,0,0.1,12,399,Wall Clock Oak
+HD-021-WALL,Surat,3,17,0.9,18,399,Wall Clock Oak
+,Indore,21,0,0.9,12,399,Wall Clock Oak
+HD-022-LAMP,Mumbai,32,0,0,25,Rs. 799,Lamp Brass
+HD-022-LAMP,Delhi,3,0,0.6,18,799.00,Lamp Brass
+HD-022-LAMP,Bengaluru,35,7,1.1,,799,Lamp Brass
+HD-022-LAMP,Hyderabad,29,0,0.6,25,₹799,Lamp Brass
+HD-022-LAMP,Chennai,37,0,1.1,18,799,Lamp Brass
+HD-022-LAMP,Kolkata,8,4,0.2,18,₹799,Lamp Brass
+HD-022-LAMP,Pune,0,0,0.0,18,799,Lamp Brass
+HD-022-LAMP,Ahmedabad,35,20,0.9,18,799,Lamp Brass
+HD-022-LAMP,Jaipur, 9 ,0,0.5,18,₹799,Lamp Brass
+HD-022-LAMP,Lucknow,0,0,0.0,12,Rs. 799,Lamp Brass
+HD-022-LAMP,Surat,1,0,0.5,25,Rs. 799,Lamp Brass
+HD-022-LAMP,Indore, 43 ,23,1.1,18,₹799,Lamp Brass
+HD-023-LAMP,Mumbai,5,0,0.8,18,N/A,Lamp Brass
+HD-023-LAMP,Delhi,24,0,0,25,5999,Lamp Brass
+HD-023-LAMP,Bengaluru,16,0,1.1,18,"₹5,999",Lamp Brass
+HD-023-LAMP,Hyderabad,0,0,0.0,25,"Rs. 5,999",Lamp Brass
+HD-023-LAMP,Chennai,4,0,0.1,18,"5,999.00",Lamp Brass
+HD-023-LAMP,Kolkata, 11 ,0,0.4,18,"5,999.00",Lamp Brass
+HD-023-LAMP,Pune,2,0,0.1,25,"Rs. 5,999",Lamp Brass
+HD-023-LAMP,Ahmedabad,15,9,0.3,25,"₹5,999",Lamp Brass
+HD-023-LAMP,Jaipur, 16 ,0,0.3,25,"₹5,999",Lamp Brass
+HD-023-LAMP,Lucknow,12,0,0.4,25,5999,Lamp Brass
+HD-023-LAMP,Surat,4,0,0.9,12,5999,Lamp Brass
+HD-023-LAMP,Indore,38,8,0.6,25 days,5999,Lamp Brass
+HD-024-LAMP,Mumbai,22,4,0.3,25,₹399,Lamp Brass
+HD-024-LAMP,Delhi,15,0,0.5,25,399,Lamp Brass
+HD-024-LAMP,Bengaluru,37,6,0,18,₹399,Lamp Brass
+HD-024-LAMP,Hyderabad, 5 ,0,0.6,12,Rs. 399,Lamp Brass
+HD-024-LAMP,Chennai,10,8,0.6,25,399,Lamp Brass
+HD-024-LAMP,Kolkata,23,0,0.9,25,399,Lamp Brass
+HD-024-LAMP,Pune,6,2,0.2,12,399,Lamp Brass
+HD-024-LAMP,Ahmedabad,14,0,0.4,18,399,Lamp Brass
+HD-024-LAMP,Jaipur,27,0,0.5,18,₹399,Lamp Brass
+HD-024-LAMP,Lucknow,6,0,0.1,25,₹399,Lamp Brass
+HD-024-LAMP,Surat,53,0,0.7,25,399,Lamp Brass
+HD-024-LAMP,Indore,45,0,1.2,12,Rs. 399,Lamp Brass
+HD-025-LAMP,Mumbai,13,0,0.3,18,"Rs. 5,999",Lamp Brass
+HD-025-LAMP,Delhi,35,0,,18,5999,Lamp Brass
+HD-025-LAMP,Bengaluru,40.5,13,1.0,25,"₹5,999",Lamp Brass
+HD-025-LAMP,Hyderabad, 3 ,5,0,18,5999,Lamp Brass
+HD-025-LAMP,Chennai,17,0,1.0,25,"₹5,999",Lamp Brass
+HD-025-LAMP,Kolkata,51,0,0.8,25,"₹5,999",Lamp Brass
+HD-025-LAMP,Pune,23,0,0.9,25,5999,Lamp Brass
+HD-025-LAMP,Ahmedabad,14,4,0.2,25,"₹5,999",Lamp Brass
+HD-025-LAMP,Jaipur,42,0,1.0,25,"Rs. 5,999",Lamp Brass
+HD-025-LAMP,Lucknow,1,0,0.7,12,5999,Lamp Brass
+HD-025-LAMP,Surat,44,0,0.7,25,5999,Lamp Brass
+HD-025-LAMP,Indore,19,5,0.6,12,"₹5,999",Lamp Brass
+HD-026-LAMP,Mumbai,5,0,0.1,18,2999,Lamp Brass
+HD-026-LAMP,Delhi,23,0,0.7,12,2999,Lamp Brass
+HD-026-LAMP,Bengaluru,1,0,1.1,18,"2,999.00",Lamp Brass
+HD-026-LAMP,Hyderabad,21,16,1.2,12,"₹2,999",Lamp Brass
+HD-026-LAMP,Chennai,29,0,0,25,"2,999.00",Lamp Brass
+HD-026-LAMP,Kolkata, 6 ,2,0.2,12,2999,Lamp Brass
+HD-026-LAMP,Pune,4,0,0.2,18,2999,Lamp Brass
+HD-026-LAMP,Ahmedabad,18, 29 ,1.2,18,"₹2,999",Lamp Brass
+HD-026-LAMP,Jaipur, 68 ,0,1.2,18,"Rs. 2,999",Lamp Brass
+HD-026-LAMP,Lucknow,40,0,0.9,18,"₹2,999",Lamp Brass
+HD-026-LAMP,Surat,(3),1,0.2,12,2999,Lamp Brass
+HD-026-LAMP,Indore,49,0,1.0,18,2999,Lamp Brass
+HD-027-LAMP,Mumbai,16,0,0.4,25,799,Lamp Brass
+HD-027-LAMP,Delhi,18,11,0.9,18,Rs. 799,Lamp Brass
+HD-027-LAMP,Bengaluru,16,0,0.6,12,799,Lamp Brass
+HD-027-LAMP,Hyderabad,5,22,0.9,18,₹799,Lamp Brass
+HD-027-LAMP,Chennai,6,0,0.8,18,799,Lamp Brass
+HD-027-LAMP,Kolkata,33,0,0,25,799,Lamp Brass
+HD-027-LAMP,Pune,13,-12,0.4,25,₹799,Lamp Brass
+HD-027-LAMP,Ahmedabad,1,3,0.4,12,799,Lamp Brass
+HD-027-LAMP,Jaipur, 0 ,0,0.0,18,₹799,Lamp Brass
+HD-027-LAMP,Lucknow,4,3,0.1,25,799,Lamp Brass
+HD-027-LAMP,Surat,0,12,0.6,25,₹799,Lamp Brass
+HD-027-LAMP,Indore,37,0,0.9,18,N/A,Lamp Brass
+HD-028-LAMP,Mumbai,8,0,0.3,12,₹399,Lamp Brass
+HD-028-LAMP,Delhi,7,6,0.3,18,₹399,Lamp Brass
+HD-028-LAMP,Bengaluru,1,0,0.1,12,399,Lamp Brass
+HD-028-LAMP,Hyderabad,6,0,0.1,,399,Lamp Brass
+HD-028-LAMP,Chennai,14,0,0.5,18,399,Lamp Brass
+HD-028-LAMP,Kolkata,18,0,0.4,25,Rs. 399,Lamp Brass
+HD-028-LAMP,Pune,60,0,0,25,399,Lamp Brass
+HD-028-LAMP,Ahmedabad,7,0,0.8,18,₹399,Lamp Brass
+HD-028-LAMP,Jaipur,2,0,0.2,12,₹399,Lamp Brass
+HD-028-LAMP,Lucknow,55,0,1.1,18,399,Lamp Brass
+HD-028-LAMP,Surat,82,28,1.2,25,399,Lamp Brass
+HD-028-LAMP,Indore,14,0,0.5,25,399,Lamp Brass
+HD-029-RUG,Mumbai,44,0,0.7,25,2999,Rug Jute 4x6
+HD-029-RUG,Delhi,44,0,0.8,18,"Rs. 2,999",Rug Jute 4x6
+HD-029-RUG,Bengaluru,14,0,1.1,12,"₹2,999",Rug Jute 4x6
+HD-029-RUG,Bengaluru,14,0,1.1,12,"₹2,999",Rug Jute 4x6
+HD-029-RUG,Hyderabad,4,10,0.7,18,"₹2,999",Rug Jute 4x6
+HD-029-RUG,Chennai,47,0,0.9,25,2999,Rug Jute 4x6
+HD-029-RUG,Kolkata,6,5,0.4,12,2999,Rug Jute 4x6
+HD-029-RUG,Pune,1,0,0.1,12,2999,Rug Jute 4x6
+HD-029-RUG,Ahmedabad,11.5,0,0,25,"Rs. 2,999",Rug Jute 4x6
+HD-029-RUG,Jaipur,26,0,1.1,12,2999,Rug Jute 4x6
+HD-029-RUG,Lucknow,12,0,0.8,18,2999,Rug Jute 4x6
+HD-029-RUG,Surat,7,3,0.2,18,2999,Rug Jute 4x6
+HD-029-RUG,Indore,6,2,0.2,18,"₹2,999",Rug Jute 4x6
+HD-030-RUG,Mumbai,3,0,0.1,18,₹799,Rug Jute 4x6
+HD-030-RUG,Delhi,2,2,0.1,25,799,Rug Jute 4x6
+HD-030-RUG,Bengaluru,0,0,0.0,18,799,Rug Jute 4x6
+HD-030-RUG,Hyderabad,7,0,0.1,25,₹799,Rug Jute 4x6
+,Chennai,39,0,1.1,25,799,Rug Jute 4x6
+HD-030-RUG,Kolkata,33,0,1.1,12,₹799,Rug Jute 4x6
+HD-030-RUG,Pune,21,0,0.7,12 days,₹799,Rug Jute 4x6
+HD-030-RUG,Ahmedabad,34,0,1.1,12,Rs. 799,Rug Jute 4x6
+HD-030-RUG,Jaipur,2,0,0,12,799,Rug Jute 4x6
+HD-030-RUG,Lucknow,1,0,0.4,25,₹799,Rug Jute 4x6
+HD-030-RUG,Surat,27,0,1.1,18,799,Rug Jute 4x6
+HD-030-RUG,Indore,1,0,0.1,18,799,Rug Jute 4x6
+HD-031-RUG,Mumbai,0,0,0.0,25,₹399,Rug Jute 4x6
+HD-031-RUG,Delhi,23,0,1.2,12,Rs. 399,Rug Jute 4x6
+HD-031-RUG,Bengaluru,10,0,1.2,18,Rs. 399,Rug Jute 4x6
+HD-031-RUG,Hyderabad,32,18,0.8,18,399,Rug Jute 4x6
+HD-031-RUG,Chennai,43,0,1.2,12,₹399,Rug Jute 4x6
+HD-031-RUG,Kolkata,27,0,0.6,18,399,Rug Jute 4x6
+HD-031-RUG,Pune,34,0,0.6,18,399.00,Rug Jute 4x6
+HD-031-RUG,Ahmedabad,2,0,0.3,12,₹399,Rug Jute 4x6
+HD-031-RUG,Jaipur,0,0,0.0,25,399.00,Rug Jute 4x6
+HD-031-RUG,Lucknow,29,7,0,12,399,Rug Jute 4x6
+HD-031-RUG,Surat,1,0,1.2,18,399,Rug Jute 4x6
+HD-031-RUG,Indore,0,0,0.1,25,399,Rug Jute 4x6
+HD-032-RUG,Mumbai,28,10,,25,5999,Rug Jute 4x6
+HD-032-RUG,Delhi,38,0,1.0,12,5999,Rug Jute 4x6
+HD-032-RUG,Bengaluru,11,0,0.4,18,"₹5,999",Rug Jute 4x6
+HD-032-RUG,Hyderabad,1,1,0.2,12,5999,Rug Jute 4x6
+HD-032-RUG,Chennai,41,21,1.1,25,"₹5,999",Rug Jute 4x6
+HD-032-RUG,Kolkata,0,6,0.8,12,"₹5,999",Rug Jute 4x6
+HD-032-RUG,Pune,2,0,0.2,12,"₹5,999",Rug Jute 4x6
+HD-032-RUG,Ahmedabad,3,0,0.4,12,"Rs. 5,999",Rug Jute 4x6
+HD-032-RUG,Jaipur,1,0,1.2,18,"Rs. 5,999",Rug Jute 4x6
+HD-032-RUG,Lucknow,8,0,0.7,12,"₹5,999",Rug Jute 4x6
+HD-032-RUG,Surat,2,0,0,12,N/A,Rug Jute 4x6
+HD-032-RUG,Indore,19,0,0.4,18,"₹5,999",Rug Jute 4x6
+HD-033-RUG,Mumbai,9,7,0.3,25,"₹2,999",Rug Jute 4x6
+HD-033-RUG,Delhi,2,0,0.4,12,"₹2,999",Rug Jute 4x6
+HD-033-RUG,Bengaluru,2,0,0.1,12,2999,Rug Jute 4x6
+HD-033-RUG,Hyderabad, 8 ,0,0.5,12,"Rs. 2,999",Rug Jute 4x6
+HD-033-RUG,Chennai,0,0,0.0,12,"₹2,999",Rug Jute 4x6
+HD-033-RUG,Kolkata, 24 ,-6,0.4,18,2999,Rug Jute 4x6
+HD-033-RUG,Pune,4,0,0.4,18,2999,Rug Jute 4x6
+HD-033-RUG,Ahmedabad,9,0,0.6,12,"Rs. 2,999",Rug Jute 4x6
+HD-033-RUG,Jaipur,24,0,0.9,12,2999,Rug Jute 4x6
+HD-033-RUG,Lucknow,3,0,0.1,25,2999,Rug Jute 4x6
+HD-033-RUG,Surat,19,0,0.9,12,2999,Rug Jute 4x6
+HD-033-RUG,Indore,64,31,0,25,"₹2,999",Rug Jute 4x6
+HD-034-RUG,Mumbai,40.5,0,0.8,25,₹799,Rug Jute 4x6
+HD-034-RUG,Delhi,9,0,0.6,18,Rs. 799,Rug Jute 4x6
+HD-034-RUG,Bengaluru,7,0,0.1,25,799,Rug Jute 4x6
+HD-034-RUG,Hyderabad,(6),0,1.1,12,799,Rug Jute 4x6
+HD-034-RUG,Chennai,0,0,0.1,,799.00,Rug Jute 4x6
+HD-034-RUG,Kolkata,0,0,0.0,18,799,Rug Jute 4x6
+HD-034-RUG,Pune,8,0,0.3,18,Rs. 799,Rug Jute 4x6
+HD-034-RUG,Ahmedabad,6,0,1.0,12,₹799,Rug Jute 4x6
+HD-034-RUG,Jaipur,3,0,0.1,12,Rs. 799,Rug Jute 4x6
+HD-034-RUG,Lucknow,11,0,1.2,12,₹799,Rug Jute 4x6
+HD-034-RUG,Surat,51,11,1.1,18,799,Rug Jute 4x6
+HD-034-RUG,Indore,15,0,0.5,25,Rs. 799,Rug Jute 4x6
+HD-035-RUG,Mumbai,10,0,0,12,Rs. 799,Rug Jute 4x6
+HD-035-RUG,Delhi,32,0,0.4,25,799,Rug Jute 4x6
+HD-035-RUG,Bengaluru,32,0,1.0,12,799,Rug Jute 4x6
+HD-035-RUG,Hyderabad,0,0,0.9,18,₹799,Rug Jute 4x6
+HD-035-RUG,Chennai,26,0,0.8,12,799,Rug Jute 4x6
+HD-035-RUG,Kolkata,4,0,0.2,12,₹799,Rug Jute 4x6
+HD-035-RUG,Pune, 11 ,0,0.6,18,799,Rug Jute 4x6
+HD-035-RUG,Ahmedabad,12,0,0.6,12,799.00,Rug Jute 4x6
+HD-035-RUG,Jaipur,2,0,1.1,25,799,Rug Jute 4x6
+HD-035-RUG,Lucknow,0,7,0.7,12,799,Rug Jute 4x6
+HD-035-RUG,Surat,46,0,1.1,18,799.00,Rug Jute 4x6
+HD-035-RUG,Indore, 0 ,0,0.0,18,799,Rug Jute 4x6
+HD-036-PLAN,Mumbai,21,10,0.7,12,₹799,Planter Set
+HD-036-PLAN,Delhi, 65 ,0,0,25,₹799,Planter Set
+HD-036-PLAN,Bengaluru,20,0,0.3,25,Rs. 799,Planter Set
+HD-036-PLAN,Hyderabad,31,0,0.7,25,Rs. 799,Planter Set
+HD-036-PLAN,Chennai,1,0,0.2,12,₹799,Planter Set
+HD-036-PLAN,Kolkata,79,0,1.1,25,799,Planter Set
+HD-036-PLAN,Pune, 9 ,0,0.4,18,799,Planter Set
+HD-036-PLAN,Ahmedabad,13,0,0.6,12,₹799,Planter Set
+HD-036-PLAN,Jaipur,8,2,0.3,18,799,Planter Set
+HD-036-PLAN,Lucknow,34,0,0.9,25,Rs. 799,Planter Set
+HD-036-PLAN,Surat,8,0,0.3,25,799.00,Planter Set
+HD-036-PLAN,Indore,5,0,0.6,18,799.00,Planter Set
+HD-037-PLAN,Mumbai,45,0,0.8,25,2999,Planter Set
+HD-037-PLAN,Delhi,25,0,1.1,18 days,"₹2,999",Planter Set
+HD-037-PLAN,Bengaluru,43,0,0,25,"₹2,999",Planter Set
+HD-037-PLAN,Hyderabad,19,0,1.1,18,"₹2,999",Planter Set
+HD-037-PLAN,Hyderabad,19,0,1.1,18,"₹2,999",Planter Set
+HD-037-PLAN,Chennai,3,0,0.2,12,2999,Planter Set
+HD-037-PLAN,Kolkata,79,0,1.0,25,"₹2,999",Planter Set
+HD-037-PLAN,Pune,18,0,1.0,18,"₹2,999",Planter Set
+HD-037-PLAN,Ahmedabad,8,4,0.2,18,"₹2,999",Planter Set
+HD-037-PLAN,Jaipur,0,0,0.0,25,"₹2,999",Planter Set
+HD-037-PLAN,Lucknow,19,0,0.3,25,N/A,Planter Set
+HD-037-PLAN,Surat,7,0,0.3,18,"₹2,999",Planter Set
+HD-037-PLAN,Indore,27,0,1.0,25,2999,Planter Set
+HD-038-PLAN,Mumbai,1,0,0.5,18,799,Planter Set
+HD-038-PLAN,Delhi,31,0,0.8,18,799,Planter Set
+HD-038-PLAN,Bengaluru,20,0,0.4,25,₹799,Planter Set
+HD-038-PLAN,Hyderabad,11,0,0,18,₹799,Planter Set
+HD-038-PLAN,Chennai,29,16,0.7,18,799.00,Planter Set
+HD-038-PLAN,Kolkata,13.5,0,1.0,12,₹799,Planter Set
+HD-038-PLAN,Pune,3,0,0.4,25,₹799,Planter Set
+HD-038-PLAN,Ahmedabad,41,0,1.1,18,₹799,Planter Set
+HD-038-PLAN,Jaipur,13,0,0.7,18,₹799,Planter Set
+,Lucknow,23,0,0.4,25,799,Planter Set
+HD-038-PLAN,Surat,5,0,0.1,25,₹799,Planter Set
+HD-038-PLAN,Indore,29,0,,12,799,Planter Set
+HD-039-PLAN,Mumbai,36,0,0.7,18,1499,Planter Set
+HD-039-PLAN,Delhi,9,0,0.8,25,"Rs. 1,499",Planter Set
+HD-039-PLAN,Bengaluru,7,0,0.3,12,1499,Planter Set
+HD-039-PLAN,Hyderabad,14,0,1.0,12,1499,Planter Set
+HD-039-PLAN,Chennai,3,-11,0,12,"₹1,499",Planter Set
+HD-039-PLAN,Kolkata,57,10,1.0,25,1499,Planter Set
+HD-039-PLAN,Pune,6,0,0.3,12,"₹1,499",Planter Set
+HD-039-PLAN,Ahmedabad,0,0,0.1,18,"₹1,499",Planter Set
+HD-039-PLAN,Jaipur,12,0,0.4,25,1499,Planter Set
+HD-039-PLAN,Lucknow,0,0,0.0,18,1499,Planter Set
+HD-039-PLAN,Surat,11, 8 ,0.3,25,"₹1,499",Planter Set
+HD-039-PLAN,Indore,11,0,0.5,18,"Rs. 1,499",Planter Set
+HD-040-PLAN,Mumbai,7,3,0.2,12,"Rs. 1,499",Planter Set
+HD-040-PLAN,Delhi,7,5,0.9,12,1499,Planter Set
+HD-040-PLAN,Bengaluru,9,0,0.4,12,1499,Planter Set
+HD-040-PLAN,Hyderabad,75,0,0.9,25,"1,499.00",Planter Set
+HD-040-PLAN,Chennai,63,0,0.9,25,1499,Planter Set
+HD-040-PLAN,Kolkata,10,4,0,,1499,Planter Set
+HD-040-PLAN,Pune,35,0,1.1,18,"₹1,499",Planter Set
+HD-040-PLAN,Ahmedabad,0,0,0.9,12,1499,Planter Set
+HD-040-PLAN,Jaipur,6,0,0.6,25,1499,Planter Set
+HD-040-PLAN,Lucknow,43,0,1.0,25,1499,Planter Set
+HD-040-PLAN,Surat,28,0,1.1,12,"₹1,499",Planter Set
+HD-040-PLAN,Indore,6,12,1.0,12,"₹1,499",Planter Set
+HD-041-PLAN,Mumbai,61,0,0.9,25,₹399,Planter Set
+HD-041-PLAN,Delhi,22,0,0.6,18,₹399,Planter Set
+HD-041-PLAN,Bengaluru, 6 ,0,0.9,18,₹399,Planter Set
+HD-041-PLAN,Hyderabad,21,0,0.9,18,399,Planter Set
+HD-041-PLAN,Chennai,3,0,0.2,12,399,Planter Set
+HD-041-PLAN,Kolkata,4,0,1.0,18,₹399,Planter Set
+HD-041-PLAN,Pune, 1 ,0,0,12,₹399,Planter Set
+HD-041-PLAN,Ahmedabad,8,0,1.0,12,399,Planter Set
+HD-041-PLAN,Jaipur,-7, 8 ,0.3,25,₹399,Planter Set
+HD-041-PLAN,Lucknow,10,0,0.3,25,399,Planter Set
+HD-041-PLAN,Surat,2,10,0.4,25,₹399,Planter Set
+HD-041-PLAN,Indore,20,9,0.6,12,399,Planter Set
+HD-042-PLAN,Mumbai,17,0,0.6,18,399.00,Planter Set
+HD-042-PLAN,Delhi,2,3,0.3,25,399,Planter Set
+HD-042-PLAN,Bengaluru,11,0,0.9,18,Rs. 399,Planter Set
+HD-042-PLAN,Hyderabad,1,0,0.7,12,399,Planter Set
+HD-042-PLAN,Chennai,88,0,1.2,25,399,Planter Set
+HD-042-PLAN,Kolkata,11,0,0.3,12,₹399,Planter Set
+HD-042-PLAN,Pune, 0 ,0,0.2,18,399,Planter Set
+HD-042-PLAN,Ahmedabad,18,0,0,25,399,Planter Set
+HD-042-PLAN,Jaipur,25,0,0.5,18,N/A,Planter Set
+HD-042-PLAN,Lucknow, 3 ,0,0.2,25,Rs. 399,Planter Set
+HD-042-PLAN,Surat,78.5,0,1.0,25,₹399,Planter Set
+HD-042-PLAN,Indore,4,0,0.6,12,399,Planter Set
+HD-043-PHOT,Mumbai,0,0,0.0,12,2999,Photo Frame A4
+HD-043-PHOT,Delhi,22,0,0.5,18,2999,Photo Frame A4
+HD-043-PHOT,Bengaluru,85,0,1.2,25,2999,Photo Frame A4
+HD-043-PHOT,Hyderabad,3,0,0.5,12,2999,Photo Frame A4
+HD-043-PHOT,Chennai,6,0,0.5,12,"₹2,999",Photo Frame A4
+HD-043-PHOT,Kolkata, 34 ,0,0.7,25,"₹2,999",Photo Frame A4
+HD-043-PHOT,Pune,0,0,0.0,12,"2,999.00",Photo Frame A4
+HD-043-PHOT,Ahmedabad,0,0,0.2,12,2999,Photo Frame A4
+HD-043-PHOT,Jaipur,4,0,0,12 days,"2,999.00",Photo Frame A4
+HD-043-PHOT,Lucknow,0,1,0.1,12,"Rs. 2,999",Photo Frame A4
+HD-043-PHOT,Surat,6,1,0.1,25,"Rs. 2,999",Photo Frame A4
+HD-043-PHOT,Indore,5,4,1.0,12,2999,Photo Frame A4
+HD-044-PHOT,Mumbai,33,0,1.2,25,"₹1,499",Photo Frame A4
+HD-044-PHOT,Delhi,0,0,0.0,25,1499,Photo Frame A4
+HD-044-PHOT,Bengaluru,8,0,0.1,25,"Rs. 1,499",Photo Frame A4
+HD-044-PHOT,Hyderabad,9,4,0.5,12,"1,499.00",Photo Frame A4
+HD-044-PHOT,Chennai,7,0,0.2,18,"₹1,499",Photo Frame A4
+HD-044-PHOT,Kolkata,22,0,0.7,25,"₹1,499",Photo Frame A4
+HD-044-PHOT,Pune,1,0,0.6,12,"1,499.00",Photo Frame A4
+HD-044-PHOT,Ahmedabad,3,2,0.1,25,1499,Photo Frame A4
+HD-044-PHOT,Jaipur,5, 1 ,0.1,25,"₹1,499",Photo Frame A4
+HD-044-PHOT,Lucknow,5,0,0,18,"₹1,499",Photo Frame A4
+HD-044-PHOT,Surat,40,0,0.7,25,1499,Photo Frame A4
+HD-044-PHOT,Indore,43,0,0.6,25,"₹1,499",Photo Frame A4
+HD-045-PHOT,Mumbai,52,26,1.1,25,"₹1,499",Photo Frame A4
+HD-045-PHOT,Delhi, 10 ,0,0.4,18,"₹1,499",Photo Frame A4
+HD-045-PHOT,Bengaluru,17,12,0.4,25,1499,Photo Frame A4
+HD-045-PHOT,Hyderabad,24,-11,0.3,25,"₹1,499",Photo Frame A4
+HD-045-PHOT,Chennai,8,0,0.1,25,"Rs. 1,499",Photo Frame A4
+HD-045-PHOT,Chennai,8,0,0.1,25,"Rs. 1,499",Photo Frame A4
+HD-045-PHOT,Kolkata, 0 ,0,0.0,12,"Rs. 1,499",Photo Frame A4
+HD-045-PHOT,Pune,10,9,0.6,12,"₹1,499",Photo Frame A4
+HD-045-PHOT,Ahmedabad,19,0,0.5,12,"Rs. 1,499",Photo Frame A4
+HD-045-PHOT,Jaipur,31,0,0.4,25,1499,Photo Frame A4
+HD-045-PHOT,Lucknow,90,0,1.2,25,"Rs. 1,499",Photo Frame A4
+HD-045-PHOT,Surat,33,0,0,12,1499,Photo Frame A4
+HD-045-PHOT,Indore,17,0,1.1,25,"1,499.00",Photo Frame A4
+HD-046-PHOT,Mumbai,7,0,0.3,25,"1,499.00",Photo Frame A4
+HD-046-PHOT,Delhi,3,0,0.2,12,1499,Photo Frame A4
+HD-046-PHOT,Bengaluru,31,0,1.1,12,1499,Photo Frame A4
+HD-046-PHOT,Hyderabad,10,0,0.3,18,"₹1,499",Photo Frame A4
+HD-046-PHOT,Chennai,4,0,1.0,12,1499,Photo Frame A4
+HD-046-PHOT,Kolkata,3,0,0.3,18,"Rs. 1,499",Photo Frame A4
+HD-046-PHOT,Pune, 89 ,0,1.1,,"₹1,499",Photo Frame A4
+HD-046-PHOT,Ahmedabad,30,0,1.2,18,"Rs. 1,499",Photo Frame A4
+HD-046-PHOT,Jaipur,42,0,0.9,25,"₹1,499",Photo Frame A4
+HD-046-PHOT,Lucknow,0,0,0.0,18,"₹1,499",Photo Frame A4
+HD-046-PHOT,Surat, 41 ,15,1.1,12,"₹1,499",Photo Frame A4
+HD-046-PHOT,Indore,12,0,0,25,"₹1,499",Photo Frame A4
+HD-047-PHOT,Mumbai, 34 ,0,0.5,25,"₹5,999",Photo Frame A4
+HD-047-PHOT,Delhi,2,0,1.0,18,"Rs. 5,999",Photo Frame A4
+,Bengaluru,0,0,0.0,12,5999,Photo Frame A4
+HD-047-PHOT,Hyderabad,8.5,0,0.3,12,"Rs. 5,999",Photo Frame A4
+HD-047-PHOT,Chennai,10,0,0.6,12,"₹5,999",Photo Frame A4
+HD-047-PHOT,Kolkata,8,0,0.4,18,"₹5,999",Photo Frame A4
+HD-047-PHOT,Pune,1,0,0.5,12,"₹5,999",Photo Frame A4
+HD-047-PHOT,Ahmedabad,18,0,0.8,18,N/A,Photo Frame A4
+HD-047-PHOT,Jaipur, 11 ,0,0.6,25,"5,999.00",Photo Frame A4
+HD-047-PHOT,Lucknow,25,0,0.8,25,"₹5,999",Photo Frame A4
+HD-047-PHOT,Surat, 44 ,0,1.1,12,"₹5,999",Photo Frame A4
+HD-047-PHOT,Indore,22,0,0.7,18,5999,Photo Frame A4
+HD-048-PHOT,Mumbai,0,0,0,18,₹799,Photo Frame A4
+HD-048-PHOT,Delhi,4,2,0.2,12,799,Photo Frame A4
+HD-048-PHOT,Bengaluru,1,0,0.3,25,799,Photo Frame A4
+HD-048-PHOT,Hyderabad,23,0,0.7,12,799,Photo Frame A4
+HD-048-PHOT,Chennai,22,0,1.0,12,₹799,Photo Frame A4
+HD-048-PHOT,Kolkata,25,21,1.1,25,799.00,Photo Frame A4
+HD-048-PHOT,Pune,7,1,0.2,18,Rs. 799,Photo Frame A4
+HD-048-PHOT,Ahmedabad,5,0,0.3,12,₹799,Photo Frame A4
+HD-048-PHOT,Jaipur,18,8,0.7,18,₹799,Photo Frame A4
+HD-048-PHOT,Lucknow,10,0,0.8,12,799.00,Photo Frame A4
+HD-048-PHOT,Surat,1,3,0.8,12,₹799,Photo Frame A4
+HD-048-PHOT,Indore,24,0,0.4,18,799,Photo Frame A4
+HD-049-PHOT,Mumbai,1,0,0.1,12,₹799,Photo Frame A4
+HD-049-PHOT,Delhi,(2),16,0,25,799.00,Photo Frame A4
+HD-049-PHOT,Bengaluru,0,0,0.0,12,799,Photo Frame A4
+HD-049-PHOT,Hyderabad,1,11,1.2,12,799,Photo Frame A4
+HD-049-PHOT,Chennai,27,0,0.7,12,799,Photo Frame A4
+HD-049-PHOT,Kolkata,21,0,0.5,25,799,Photo Frame A4
+HD-049-PHOT,Pune,32,0,0.7,18,₹799,Photo Frame A4
+HD-049-PHOT,Ahmedabad,18,0,0.4,18,Rs. 799,Photo Frame A4
+HD-049-PHOT,Jaipur,3,1,0.1,25,₹799,Photo Frame A4
+HD-049-PHOT,Lucknow,4,8,0.5,18,799,Photo Frame A4
+HD-049-PHOT,Surat,10, 4 ,0.6,12,Rs. 799,Photo Frame A4
+HD-049-PHOT,Indore,25,0,0.7,25,₹799,Photo Frame A4
+HD-050-CAND,Mumbai,4,1,0.1,18,2999,Candle Soy
+HD-050-CAND,Delhi,8,0,1.1,12,"₹2,999",Candle Soy
+HD-050-CAND,Bengaluru,0,0,0,18,2999,Candle Soy
+HD-050-CAND,Hyderabad, 5 ,0,0.2,25 days,2999,Candle Soy
+HD-050-CAND,Chennai,1,0,0.1,12,2999,Candle Soy
+HD-050-CAND,Kolkata,41,0,0.6,25,"₹2,999",Candle Soy
+HD-050-CAND,Pune,9,0,0.9,12,2999,Candle Soy
+HD-050-CAND,Ahmedabad,6,0,0.4,12,"₹2,999",Candle Soy
+HD-050-CAND,Jaipur,0,0,0.0,12,"₹2,999",Candle Soy
+HD-050-CAND,Lucknow,2,0,0.1,18,2999,Candle Soy
+HD-050-CAND,Surat,67,0,1.2,18,"₹2,999",Candle Soy
+HD-050-CAND,Indore,4,0,0.9,18,"₹2,999",Candle Soy
+HD-051-CAND,Mumbai,0,0,0.0,25,799,Candle Soy
+HD-051-CAND,Delhi,4,0,0.4,25,799,Candle Soy
+HD-051-CAND,Bengaluru,0,-8,0.0,25,799,Candle Soy
+HD-051-CAND,Hyderabad,23,0,0,12,799,Candle Soy
+HD-051-CAND,Chennai,4,0,0.1,25,₹799,Candle Soy
+HD-051-CAND,Kolkata,37,0,0.9,18,799,Candle Soy
+HD-051-CAND,Pune,5,10,0.7,12,799,Candle Soy
+HD-051-CAND,Ahmedabad,25,0,0.5,25,Rs. 799,Candle Soy
+HD-051-CAND,Jaipur,37.5,8,1.0,12,₹799,Candle Soy
+HD-051-CAND,Lucknow,44,0,1.1,25,₹799,Candle Soy
+HD-051-CAND,Surat,11,0,0.2,18,₹799,Candle Soy
+HD-051-CAND,Indore,10,9,0.6,18,Rs. 799,Candle Soy
+HD-052-CAND,Mumbai,30,0,1.0,18,Rs. 799,Candle Soy
+HD-052-CAND,Delhi,51,0,0.8,25,₹799,Candle Soy
+HD-052-CAND,Bengaluru,40,0,0.9,18,799.00,Candle Soy
+HD-052-CAND,Hyderabad,42,0,0.7,25,799,Candle Soy
+HD-052-CAND,Chennai,11,0,0,18,799,Candle Soy
+HD-052-CAND,Kolkata,13,0,1.0,25,799,Candle Soy
+HD-052-CAND,Pune,49,0,0.7,25,N/A,Candle Soy
+HD-052-CAND,Ahmedabad,1,5,0.4,,799,Candle Soy
+HD-052-CAND,Jaipur,42,0,0.5,25,799,Candle Soy
+HD-052-CAND,Lucknow,0,0,,25,799,Candle Soy
+HD-052-CAND,Surat,11, 4 ,0.4,18,799.00,Candle Soy
+HD-052-CAND,Indore,11,0,0.4,25,799.00,Candle Soy
+HD-053-CAND,Mumbai,23,0,0.8,12,799,Candle Soy
+HD-053-CAND,Delhi,23,8,0.6,12,₹799,Candle Soy
+HD-053-CAND,Bengaluru,14,0,1.1,25,799,Candle Soy
+HD-053-CAND,Hyderabad,6,6,0.5,12,₹799,Candle Soy
+HD-053-CAND,Chennai,37,15,0.6,25,Rs. 799,Candle Soy
+HD-053-CAND,Kolkata,6,0,0,18,799,Candle Soy
+HD-053-CAND,Kolkata,6,0,0,18,799,Candle Soy
+HD-053-CAND,Pune,22,18,1.2,12,₹799,Candle Soy
+HD-053-CAND,Ahmedabad,17,0,1.2,25,₹799,Candle Soy
+HD-053-CAND,Jaipur,8,5,0.7,18,799,Candle Soy
+HD-053-CAND,Lucknow,3,0,1.1,12,799,Candle Soy
+HD-053-CAND,Surat,5,5,0.2,25,Rs. 799,Candle Soy
+HD-053-CAND,Indore,25,0,1.0,25,799,Candle Soy
+HD-054-CAND,Mumbai,6,0,0.6,18,1499,Candle Soy
+HD-054-CAND,Delhi,13,0,0.6,12,1499,Candle Soy
+HD-054-CAND,Bengaluru,0,0,0.1,12,"1,499.00",Candle Soy
+HD-054-CAND,Hyderabad,1,5,0.4,25,1499,Candle Soy
+HD-054-CAND,Chennai,7,0,0.8,18,"₹1,499",Candle Soy
+HD-054-CAND,Kolkata,20,8,0.6,12,1499,Candle Soy
+HD-054-CAND,Pune,8,0,0,18,"Rs. 1,499",Candle Soy
+HD-054-CAND,Ahmedabad,26,0,0.7,12,1499,Candle Soy
+HD-054-CAND,Jaipur,22,0,0.7,18,"Rs. 1,499",Candle Soy
+HD-054-CAND,Lucknow,0,0,0.0,12,1499,Candle Soy
+HD-054-CAND,Surat,60,9,1.1,18,1499,Candle Soy
+HD-054-CAND,Indore,20,0,0.4,25,"1,499.00",Candle Soy
+HD-055-CAND,Mumbai,29,10,0.4,25,5999,Candle Soy
+HD-055-CAND,Delhi,5,0,0.1,18,"Rs. 5,999",Candle Soy
+HD-055-CAND,Bengaluru,44,0,0.8,18,5999,Candle Soy
+HD-055-CAND,Hyderabad,8,0,0.6,25,"Rs. 5,999",Candle Soy
+HD-055-CAND,Chennai,23,0,0.6,12,"₹5,999",Candle Soy
+HD-055-CAND,Kolkata,10,0,0.7,25,5999,Candle Soy
+HD-055-CAND,Pune,44,14,0.6,25,5999,Candle Soy
+,Ahmedabad,30,0,0,12,5999,Candle Soy
+HD-055-CAND,Jaipur,5,0,0.5,18,5999,Candle Soy
+HD-055-CAND,Lucknow,45,0,1.1,25,5999,Candle Soy
+HD-055-CAND,Surat,1,0,0.2,25,"Rs. 5,999",Candle Soy
+HD-055-CAND,Indore,12,22,1.2,18,"5,999.00",Candle Soy
+HD-056-CAND,Mumbai,7,2,0.2,12,Rs. 799,Candle Soy
+HD-056-CAND,Delhi,0.5,0,0.6,18,₹799,Candle Soy
+HD-056-CAND,Bengaluru,4,0,0.6,18,799.00,Candle Soy
+HD-056-CAND,Hyderabad,11,0,0.3,12,799,Candle Soy
+HD-056-CAND,Chennai,6,0,0.2,18,₹799,Candle Soy
+HD-056-CAND,Kolkata,15,0,1.0,25,799,Candle Soy
+HD-056-CAND,Pune,-4,0,0.0,18,Rs. 799,Candle Soy
+HD-056-CAND,Ahmedabad,26,0,0.7,25,₹799,Candle Soy
+HD-056-CAND,Jaipur,0,0,0,25,799,Candle Soy
+HD-056-CAND,Lucknow,58,0,1.1,25,799,Candle Soy
+HD-056-CAND,Surat,6,0,0.9,12 days,799,Candle Soy
+HD-056-CAND,Indore,3,3,0.1,25,799,Candle Soy
+HD-057-THRO,Mumbai,22,0,0.5,18,"₹2,999",Throw Blanket
+HD-057-THRO,Delhi,6,-12,0.2,25,2999,Throw Blanket
+HD-057-THRO,Bengaluru,7,0,0.1,25,2999,Throw Blanket
+HD-057-THRO,Hyderabad,3,11,0.7,25,2999,Throw Blanket
+HD-057-THRO,Chennai,16,0,0.7,18,"₹2,999",Throw Blanket
+HD-057-THRO,Kolkata,26,0,0.7,18,N/A,Throw Blanket
+HD-057-THRO,Pune,23,0,0.6,18,"Rs. 2,999",Throw Blanket
+HD-057-THRO,Ahmedabad,4,0,0.4,25,"2,999.00",Throw Blanket
+HD-057-THRO,Jaipur,8,0,0.7,25,"₹2,999",Throw Blanket
+HD-057-THRO,Lucknow,78,0,0,25,"₹2,999",Throw Blanket
+HD-057-THRO,Surat,12,10,0.5,18,"Rs. 2,999",Throw Blanket
+HD-057-THRO,Indore, 86 ,0,1.2,25,"₹2,999",Throw Blanket
+HD-058-THRO,Mumbai,2,0,0.6,12,799,Throw Blanket
+HD-058-THRO,Delhi,3,0,0.6,18,₹799,Throw Blanket
+HD-058-THRO,Bengaluru,5,0,0.2,25,799,Throw Blanket
+HD-058-THRO,Hyderabad,28,0,1.1,18,₹799,Throw Blanket
+HD-058-THRO,Chennai,10,0,0.4,18,799.00,Throw Blanket
+HD-058-THRO,Kolkata,16,0,0.4,25,799,Throw Blanket
+HD-058-THRO,Pune,0,0,0.0,25,₹799,Throw Blanket
+HD-058-THRO,Ahmedabad,20,0,0.8,12,799.00,Throw Blanket
+HD-058-THRO,Jaipur, 5 ,0,0.1,,799,Throw Blanket
+HD-058-THRO,Lucknow, 1 ,0,0.1,12,799,Throw Blanket
+HD-058-THRO,Surat, 1 ,0,0,12,799,Throw Blanket
+HD-058-THRO,Indore,5,0,0.3,12,Rs. 799,Throw Blanket
+HD-059-THRO,Mumbai, 12 ,0,1.1,18,"₹1,499",Throw Blanket
+HD-059-THRO,Delhi,53,0,0.7,25,"₹1,499",Throw Blanket
+HD-059-THRO,Bengaluru,1,0,0.3,18,"₹1,499",Throw Blanket
+HD-059-THRO,Hyderabad,14,0,0.9,18,"₹1,499",Throw Blanket
+HD-059-THRO,Chennai,2,9,0.4,25,"1,499.00",Throw Blanket
+HD-059-THRO,Kolkata,2,0,1.1,18,1499,Throw Blanket
+HD-059-THRO,Pune, 40 ,0,1.0,18,"₹1,499",Throw Blanket
+HD-059-THRO,Ahmedabad,3,0,0.2,18,"₹1,499",Throw Blanket
+HD-059-THRO,Jaipur,12,0,,12,"₹1,499",Throw Blanket
+HD-059-THRO,Lucknow,11,0,0.7,25,1499,Throw Blanket
+HD-059-THRO,Surat,0,0,0.9,12,1499,Throw Blanket
+HD-059-THRO,Indore,43,0,0,12,1499,Throw Blanket
+HD-060-THRO,Mumbai, 19 ,0,0.8,25,₹799,Throw Blanket
+HD-060-THRO,Delhi,41,0,0.7,18,799.00,Throw Blanket
+HD-060-THRO,Bengaluru,30,0,0.4,25,Rs. 799,Throw Blanket
+HD-060-THRO,Hyderabad,17,0,1.0,12,799,Throw Blanket
+HD-060-THRO,Chennai,0,0,0.0,12,799,Throw Blanket
+HD-060-THRO,Kolkata,30,11,0.8,12,₹799,Throw Blanket
+HD-060-THRO,Pune,1.5,11,1.1,12,799,Throw Blanket
+HD-060-THRO,Ahmedabad,12,0,1.2,18,₹799,Throw Blanket
+HD-060-THRO,Jaipur,29,14,1.0,25,799,Throw Blanket
+HD-060-THRO,Lucknow,0,0,0.0,12,Rs. 799,Throw Blanket
+HD-060-THRO,Surat,2,0,0.3,18,799,Throw Blanket
+HD-060-THRO,Indore,34,0,0.8,25,₹799,Throw Blanket
+HD-061-THRO,Mumbai,6,11,0,25,2999,Throw Blanket
+HD-061-THRO,Delhi,47,0,0.8,18,2999,Throw Blanket
+HD-061-THRO,Bengaluru,3,0,1.0,12,"Rs. 2,999",Throw Blanket
+HD-061-THRO,Hyderabad,26,0,0.8,12,2999,Throw Blanket
+HD-061-THRO,Chennai,1,8,0.3,25,"Rs. 2,999",Throw Blanket
+HD-061-THRO,Kolkata,28,7,0.7,18,"₹2,999",Throw Blanket
+HD-061-THRO,Pune,10,0,0.2,18,"₹2,999",Throw Blanket
+HD-061-THRO,Pune,10,0,0.2,18,"₹2,999",Throw Blanket
+HD-061-THRO,Ahmedabad,30,14,0.6,18,"Rs. 2,999",Throw Blanket
+HD-061-THRO,Jaipur,12,0,0.9,12,"Rs. 2,999",Throw Blanket
+HD-061-THRO,Lucknow,29,0,1.2,25,2999,Throw Blanket
+HD-061-THRO,Surat,13,0,0.3,25,"₹2,999",Throw Blanket
+HD-061-THRO,Indore,6,0,0.3,12,2999,Throw Blanket
+HD-062-THRO,Mumbai,14,0,0.5,12,"Rs. 2,999",Throw Blanket
+HD-062-THRO,Delhi,8,5,0,18,"Rs. 2,999",Throw Blanket
+HD-062-THRO,Bengaluru, 7 ,8,0.8,25,"2,999.00",Throw Blanket
+HD-062-THRO,Hyderabad,0,0,0.0,18,"₹2,999",Throw Blanket
+HD-062-THRO,Chennai,33,0,0.9,12,N/A,Throw Blanket
+HD-062-THRO,Kolkata,4,0,0.2,25,"₹2,999",Throw Blanket
+HD-062-THRO,Pune,23,0,0.5,18,"₹2,999",Throw Blanket
+HD-062-THRO,Ahmedabad,70,0,1.0,25,"2,999.00",Throw Blanket
+HD-062-THRO,Jaipur,0,1,0.1,12,2999,Throw Blanket
+HD-062-THRO,Lucknow,11,0,0.4,18,"Rs. 2,999",Throw Blanket
+HD-062-THRO,Surat,3,0,1.0,12,2999,Throw Blanket
+HD-062-THRO,Indore,20,8,0.5,18,"2,999.00",Throw Blanket
+HD-063-THRO,Mumbai,0,-5,0.0,18,"₹5,999",Throw Blanket
+HD-063-THRO,Delhi,8,6,0.3,18,"5,999.00",Throw Blanket
+HD-063-THRO,Bengaluru,0,0,0,18,5999,Throw Blanket
+HD-063-THRO,Hyderabad,10,0,0.9,25,"₹5,999",Throw Blanket
+HD-063-THRO,Chennai,28,0,0.9,12,"Rs. 5,999",Throw Blanket
+HD-063-THRO,Kolkata,5,0,1.2,18 days,"₹5,999",Throw Blanket
+HD-063-THRO,Pune,0,0,0.0,12,"₹5,999",Throw Blanket
+HD-063-THRO,Ahmedabad,31,0,0.6,25,"₹5,999",Throw Blanket
+HD-063-THRO,Jaipur,35,22,1.0,18,5999,Throw Blanket
+HD-063-THRO,Lucknow,18,0,0.4,25,"₹5,999",Throw Blanket
+HD-063-THRO,Surat,5,0,0.1,25,5999,Throw Blanket
+HD-063-THRO,Indore,-8,19,0.9,25,"Rs. 5,999",Throw Blanket
+,Mumbai,32,0,0.4,25,5999,Mirror Round
+HD-064-MIRR,Delhi,19,0,0.3,25,"₹5,999",Mirror Round
+HD-064-MIRR,Bengaluru,44,19,0.7,25,"₹5,999",Mirror Round
+HD-064-MIRR,Hyderabad,6,0,0,12,"₹5,999",Mirror Round
+HD-064-MIRR,Chennai,5,5,0.3,18,"Rs. 5,999",Mirror Round
+HD-064-MIRR,Kolkata,24,0,0.8,18,5999,Mirror Round
+HD-064-MIRR,Pune,31,33,1.2,25,5999,Mirror Round
+HD-064-MIRR,Ahmedabad,12,0,0.6,25,"₹5,999",Mirror Round
+HD-064-MIRR,Jaipur,39,0,0.7,18,"₹5,999",Mirror Round
+HD-064-MIRR,Lucknow,21,0,0.9,,"5,999.00",Mirror Round
+HD-064-MIRR,Surat,18,0,1.1,18,"₹5,999",Mirror Round
+HD-064-MIRR,Indore,2.5,2,0.1,18,"Rs. 5,999",Mirror Round
+HD-065-MIRR,Mumbai,74,0,1.0,25,₹399,Mirror Round
+HD-065-MIRR,Delhi,16,3,0.2,25,Rs. 399,Mirror Round
+HD-065-MIRR,Bengaluru,47,0,1.1,25,₹399,Mirror Round
+HD-065-MIRR,Hyderabad,0,0,0.3,18,Rs. 399,Mirror Round
+HD-065-MIRR,Chennai,0,0,0,12,399,Mirror Round
+HD-065-MIRR,Kolkata,16,0,1.1,12,Rs. 399,Mirror Round
+HD-065-MIRR,Pune,2,0,0.1,12,Rs. 399,Mirror Round
+HD-065-MIRR,Ahmedabad,32,0,1.1,18,₹399,Mirror Round
+HD-065-MIRR,Jaipur,29,6,0.8,12,399,Mirror Round
+HD-065-MIRR,Lucknow, 2 ,0,0.2,18,399.00,Mirror Round
+HD-065-MIRR,Surat,29,0,0.9,12,399,Mirror Round
+HD-065-MIRR,Indore,11,0,0.6,12,₹399,Mirror Round
+HD-066-MIRR,Mumbai,23,0,0.3,25,2999,Mirror Round
+HD-066-MIRR,Delhi,46,7,0.9,18,2999,Mirror Round
+HD-066-MIRR,Bengaluru,13,0,1.1,25,"₹2,999",Mirror Round
+HD-066-MIRR,Hyderabad,53,0,1.0,25,2999,Mirror Round
+HD-066-MIRR,Chennai,35,15,0.8,18,"Rs. 2,999",Mirror Round
+HD-066-MIRR,Kolkata,7,0,0,25,2999,Mirror Round
+HD-066-MIRR,Pune,3,0,0.1,12,2999,Mirror Round
+HD-066-MIRR,Ahmedabad,15,29,,25,"Rs. 2,999",Mirror Round
+HD-066-MIRR,Jaipur,6,0,0.4,12,"2,999.00",Mirror Round
+HD-066-MIRR,Lucknow,40,0,0.7,18,"2,999.00",Mirror Round
+HD-066-MIRR,Surat,10,0,0.2,25,"₹2,999",Mirror Round
+HD-066-MIRR,Indore,34,24,1.1,18,"₹2,999",Mirror Round
+HD-067-MIRR,Mumbai,9,0,0.3,18,399,Mirror Round
+HD-067-MIRR,Delhi,0,0,0.2,25,399,Mirror Round
+HD-067-MIRR,Bengaluru,36,0,0.9,12,399,Mirror Round
+HD-067-MIRR,Hyderabad,4,0,1.2,12,N/A,Mirror Round
+HD-067-MIRR,Chennai,12,0,1.0,25,Rs. 399,Mirror Round
+HD-067-MIRR,Kolkata,16,0,0.5,12,₹399,Mirror Round
+HD-067-MIRR,Pune,14,0,0,12,399.00,Mirror Round
+HD-067-MIRR,Ahmedabad,0,0,1.0,12,399,Mirror Round
+HD-067-MIRR,Jaipur,7,0,0.4,12,399,Mirror Round
+HD-067-MIRR,Lucknow,51,23,0.8,25,399,Mirror Round
+HD-067-MIRR,Surat,7,0,0.7,18,Rs. 399,Mirror Round
+HD-067-MIRR,Indore,13,0,0.2,25,399.00,Mirror Round
+HD-068-MIRR,Mumbai,5,0,0.1,25,1499,Mirror Round
+HD-068-MIRR,Delhi,20,0,0.8,25,"1,499.00",Mirror Round
+HD-068-MIRR,Bengaluru,0,8,0.8,12,"1,499.00",Mirror Round
+HD-068-MIRR,Hyderabad,13,0,0.7,12,"₹1,499",Mirror Round
+HD-068-MIRR,Chennai, 52 ,0,0.8,25,1499,Mirror Round
+HD-068-MIRR,Kolkata,25,0,0.4,25,1499,Mirror Round
+HD-068-MIRR,Pune, 10 ,0,1.0,12,"1,499.00",Mirror Round
+HD-068-MIRR,Ahmedabad,1,0,0,12,1499,Mirror Round
+HD-068-MIRR,Jaipur,46,30,1.2,18,"₹1,499",Mirror Round
+HD-068-MIRR,Lucknow,5,0,0.1,18,1499,Mirror Round
+HD-068-MIRR,Surat,11,0,0.7,12,"Rs. 1,499",Mirror Round
+HD-068-MIRR,Indore,2,-19,0.4,25,1499,Mirror Round
+HD-069-MIRR,Mumbai,46,9,1.1,18,399,Mirror Round
+HD-069-MIRR,Delhi,0,0,0.1,12,Rs. 399,Mirror Round
+HD-069-MIRR,Bengaluru,2,0,0.6,25,₹399,Mirror Round
+HD-069-MIRR,Hyderabad,14,0,0.3,18,399,Mirror Round
+HD-069-MIRR,Chennai,18.5,0,1.0,18,399,Mirror Round
+HD-069-MIRR,Kolkata,2,0,0.4,12,399,Mirror Round
+HD-069-MIRR,Pune,30,17,0.5,25,399,Mirror Round
+HD-069-MIRR,Ahmedabad,6,0,0.1,25,₹399,Mirror Round
+HD-069-MIRR,Ahmedabad,6,0,0.1,25,₹399,Mirror Round
+HD-069-MIRR,Jaipur,16,0,0,25,399,Mirror Round
+HD-069-MIRR,Lucknow,2,0,0.2,18,₹399,Mirror Round
+HD-069-MIRR,Surat,50,0,1.0,18,Rs. 399,Mirror Round
+HD-069-MIRR,Indore,26,0,1.0,18,₹399,Mirror Round
+HD-070-MIRR,Mumbai,31,0,0.5,25 days,1499,Mirror Round
+HD-070-MIRR,Delhi,62,0,1.1,18,1499,Mirror Round
+HD-070-MIRR,Bengaluru,2,0,0.1,12,"Rs. 1,499",Mirror Round
+HD-070-MIRR,Hyderabad,16,0,0.9,12,"Rs. 1,499",Mirror Round
+HD-070-MIRR,Chennai,16,0,0.4,18,"1,499.00",Mirror Round
+HD-070-MIRR,Kolkata, 46 ,0,0.8,18,1499,Mirror Round
+HD-070-MIRR,Pune,11,0,0.8,18,"Rs. 1,499",Mirror Round
+HD-070-MIRR,Ahmedabad,10,0,0.3,25,1499,Mirror Round
+HD-070-MIRR,Jaipur,2,0,0.1,12,1499,Mirror Round
+HD-070-MIRR,Lucknow,21,0,0,25,"1,499.00",Mirror Round
+HD-070-MIRR,Surat,0,0,0.0,,"₹1,499",Mirror Round
+HD-070-MIRR,Indore,74,23,0.9,25,"₹1,499",Mirror Round

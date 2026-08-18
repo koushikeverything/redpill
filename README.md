@@ -663,6 +663,32 @@ quarantined?* → open `quarantine.csv`; every row has a reason and a suggested 
 *Numbers differ from your ERP's status column?* → by design: Red Pill recomputes from raw
 inputs and flags disagreements — that's usually how you find out the ERP is stale.
 
+## Sample MIS files to try
+
+One deliberately messy stock workbook per retail domain, ready to drop into a
+conversation ("run redpill on this"). Each is ~92% clean, honest data with a few
+planted real-world problems — currency strings, "7 days" lead times, blank cells that
+aren't zeros, negative stock, duplicate rows — so you can watch the quarantine,
+ask-back, and honest-verdict machinery work on data shaped like your own. Details and
+per-file storylines: [examples/stress/README.md](examples/stress/README.md).
+
+| Try this | Domain flavour |
+|---|---|
+| [Apparel](examples/stress/apparel_mis_messy.xlsx) | promo spikes, size curves, an ERP status column that lies |
+| [Footwear](examples/stress/footwear_mis_messy.xlsx) | UK size runs with broken core sizes |
+| [Electronics](examples/stress/electronics_mis_messy.xlsx) | inbound ETAs, over-committed pipelines |
+| [Beauty](examples/stress/beauty_mis_messy.xlsx) | fast movers, online-reserved & damaged stock |
+| [Home & decor](examples/stress/home_decor_mis_messy.xlsx) | dead stock + an ambiguous header the run honestly flags |
+| [Sports](examples/stress/sports_mis_messy.xlsx) | volatile weekend demand |
+| [Books & stationery](examples/stress/books_stationery_mis_messy.xlsx) | 200-SKU long tail of near-zero movers |
+| [Jewellery](examples/stress/jewellery_mis_messy.xlsx) | high value, 45-day lead times, verify-first bait |
+| [Mega mix](examples/stress/mega_mix_mis.xlsx) | 25,000 rows — the scale test |
+| [Corrupted](examples/stress/corrupted_mis.xlsx) | banner rows, junk headers — the *correct* result is a refusal |
+
+The same files exist as `.csv` beside each workbook, and everything regenerates
+deterministically (`examples/stress/gen_stress_pack.py` → CSVs,
+`make_xlsx_pack.py` → workbooks).
+
 ## License
 
 MIT © 2026 — see [LICENSE](LICENSE).

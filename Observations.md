@@ -626,3 +626,61 @@ strategy). S0 delivers the intake swap's foundation with the engine untouched:
   rerun, manifest contract, provenance coverage, skip counts, pass-through analogs,
   vendor defaults, receipt-only-with-inbound, and 8 engine-integration assertions).
   Engine goldens untouched — the S-track adds beside, never inside.
+
+
+---
+
+## 19. Domain stress pack — the messy-MIS gauntlet (2026-08-17, engine 2.4.1)
+
+User asked for messy MIS sheets for every retail domain the setup question serves —
+varied SKUs, medium-to-many stores, mostly-right data with a few planted problems —
+so anyone can stress-test the pipeline on data shaped like their own. Shipped as
+`examples/stress/` (8 domain files + 25k-row mega mix + corrupted refusal demo),
+generated deterministically by `gen_stress_pack.py`: ~92% clean rows, traps on fixed
+row schedules, a different header dialect / SKU convention / store count (8 → 50)
+per file. Grocery & pharmacy deliberately absent (SPEC §0 non-goals).
+
+The dry run did its job — it broke things:
+
+- **Mapper tie-break bug (real)**: `item` was an *exact* sku alias while
+  `product_code` was only *high*, so home & decor's generic `Item` name column beat
+  its `product_code` column → SKU = product name → 735/849 rows (86%) falsely
+  quarantined as duplicates, verdict BLOCKED. Fixed by promoting `product_code` to
+  exact; the file now runs DEGRADED with the honest disclosure "1 ambiguous column
+  mapping — confirm before trusting" (`product_code` chosen, `Item` listed) and 8.2%
+  quarantine — the disclosure itself is now the file's storyline.
+- **Alias gaps (real)**: `ISBN/SKU`, `Design Code`, `Showroom`, `Incoming`,
+  `Tag Price` — all common trade headers — hard-failed the mapping. Added as 2.4.1
+  aliases. `Value` deliberately NOT added as a price alias (in real MIS files it
+  usually means stock *value*, qty × price — guessing it would be wrong-guess
+  behavior); the jewellery generator uses `Tag Price` instead.
+- **Golden discipline held**: engine 2.4.0 → 2.4.1 broke the frozen-report sha on
+  purpose; re-pinned with reason after proving the report byte-identical modulo the
+  version string — zero business figures moved. Suite 79 green; pack regenerates
+  byte-identical (two-run diff).
+- Balance verified per file: HEALTHY verdicts at ~8% quarantine (beauty 17.4% — all
+  planted-trap fallout, reasons audited from quarantine.csv), corrupted file refuses
+  with mapping report + fill-in template, mega mix (25,258 rows) in ~2.6 s.
+- Engine also confirmed to write `data_gaps.csv` / `redpill_input_template.csv` into
+  the CWD on bare runs (no `--run-dir`) — noted as a future wart, not fixed here.
+  **Closed in 2.4.2 (§20).**
+
+
+---
+
+## 20. CWD-pollution wart closed (2026-08-17, engine 2.4.2 / plugin 2.1.2)
+
+The §19 wart, fixed: one `aux_out_path()` rule sends side outputs (`data_gaps.csv`,
+blocked-run `redpill_input_template.csv`) next to `--out` — falling back to
+`--report` — whenever either carries a directory, so a run pointed at another
+directory never drops files into the caller's CWD. Bare defaults (no directory
+anywhere) keep the old CWD behavior; an explicit `--gaps` path is always honored;
+`--rerun`'s `os.devnull` sinks are excluded as anchors. Under `--run-dir` nothing
+moves except the blocked-run template, which now lands inside the run dir — it was
+the one file that still leaked to the CWD even in run-dir mode.
+
+Discipline held: golden intentionally broke on the version string; re-pinned after
+proving the report byte-identical modulo `"version"` (normalized sha matched the
+2.4.1 pin exactly — zero business figures moved). Suite 79 → **81 green**: two new
+placement pins (gap file next to `--out`; blocked-run template next to `--report`),
+each also asserting the caller's CWD stays empty.

@@ -47,7 +47,7 @@ import shutil
 import sys
 from datetime import date, timedelta
 
-ENGINE_VERSION = "2.4.0"
+ENGINE_VERSION = "2.4.2"
 SCHEMA_VERSION = "2.4.0"
 
 STATUSES = ["OUT_OF_STOCK", "INCOMING", "CRITICAL", "REORDER", "OVERSTOCK", "OPTIMAL"]
@@ -67,16 +67,17 @@ def norm_header(h):
 
 # target -> (exact aliases, high-confidence aliases). Confidence classes per G33.
 ALIASES = {
-    "sku":       (["sku", "sku_code", "product", "item"],
+    "sku":       (["sku", "sku_code", "product", "item", "product_code"],
                   ["item_code", "article", "article_code", "style_code", "variant_code",
-                   "product_code", "sku_id"]),
+                   "sku_id", "design_code", "isbn", "isbn_sku"]),
     "store":     (["store", "location", "branch", "outlet"],
-                  ["shop", "site", "store_name", "outlet_name", "store_code"]),
+                  ["shop", "site", "store_name", "outlet_name", "store_code", "showroom"]),
     "soh":       (["soh", "stock_on_hand", "closing_stock", "stock"],
                   ["current_stock", "on_hand", "qty_on_hand", "closing_qty", "stock_qty",
                    "shelf_stock"]),
     "qoo":       (["qoo", "quantity_on_order", "in_transit", "pending_po", "on_order"],
-                  ["open_po", "inbound", "po_qty", "intransit", "qty_on_order", "in_transit_qty"]),
+                  ["open_po", "inbound", "po_qty", "intransit", "qty_on_order", "in_transit_qty",
+                   "incoming"]),
     "ads":       (["ads", "avg_daily_sales", "average_daily_sales", "daily_sales", "offtake"],
                   ["off_take", "avg_off_take", "avg_off_take_day", "avg_offtake_day",
                    "daily_offtake", "sales_per_day", "run_rate", "avg_sales_day"]),
@@ -84,7 +85,7 @@ ALIASES = {
                   ["leadtime_days", "supplier_lead_time", "replenishment_days",
                    "lead_time_in_days"]),
     "price":     (["price", "unit_price", "cost", "unit_cost", "mrp"],
-                  ["rate", "selling_price", "asp", "unit_mrp"]),
+                  ["rate", "selling_price", "asp", "unit_mrp", "tag_price"]),
     # optional, carried for later phases (schema hedges — G6/G26/G34)
     "reserved":  (["reserved", "reserved_qty"], ["online_reserved", "reserved_stock"]),
     "damaged":   (["damaged", "damaged_qty"], ["defective", "damaged_stock"]),
@@ -320,6 +321,20 @@ def write_template(path, known_rows=None):
         for line in TEMPLATE_LEGEND:
             w.writerow(line)
     return path
+
+
+def aux_out_path(args, name):
+    """Destination for side outputs (gap file, fill-in template): next to
+    --out / --report when either carries a directory, so a run pointed at
+    another directory never drops files into the caller's CWD. Bare-name
+    defaults keep the old CWD behavior; --run-dir rewrites --out/--report
+    first, so side outputs land inside the run dir."""
+    for anchor in (getattr(args, "out", None), getattr(args, "report", None)):
+        if anchor and anchor != os.devnull:
+            d = os.path.dirname(anchor)
+            if d:
+                return os.path.join(d, name)
+    return name
 
 
 # ---------------------------------------------------------------- helpers
@@ -596,7 +611,7 @@ def run(args):
             f"required columns not found: {missing}",
             f"columns seen: {[norm_header(h) for h in headers]}"]
         jdump(report_min, args.report)
-        path = write_template("redpill_input_template.csv")
+        path = write_template(aux_out_path(args, "redpill_input_template.csv"))
         sys.exit(f"Missing required columns: {missing}. Mapping report -> {args.report}. "
                  f"A fill-in template was written to {path}.")
 
@@ -1218,7 +1233,9 @@ def main():
                         "expected-delivery dates and reproducibility.")
     p.add_argument("--out", default="computed.csv")
     p.add_argument("--summary", default="summary.json")
-    p.add_argument("--gaps", default="data_gaps.csv")
+    p.add_argument("--gaps", default=None,
+                   help="quarantined-rows file (default: data_gaps.csv next to "
+                        "--out/--report, or CWD when neither has a directory)")
     p.add_argument("--report", default="report.json")
     p.add_argument("--template", action="store_true")
     p.add_argument("--buffer-factor", type=float, default=1.5)
@@ -1250,13 +1267,15 @@ def main():
     if args.rerun:
         sys.exit(rerun(args.rerun))
     if args.template or not args.input:
-        path = write_template("redpill_input_template.csv")
+        path = write_template(aux_out_path(args, "redpill_input_template.csv"))
         print(f"Template written to {path}. Fill it in (one row per SKU x Store) and rerun:")
         print(f"  python redpill_engine.py {path}")
         return
     if args.as_of is None:
         args.as_of = date.today().isoformat()
     date.fromisoformat(args.as_of)  # validate early
+    if args.gaps is None:
+        args.gaps = aux_out_path(args, "data_gaps.csv")
     if args.run_dir:
         setup_run_dir(args)
     run(args)

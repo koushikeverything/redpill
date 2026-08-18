@@ -1,0 +1,1456 @@
+Item Code,Outlet,stock_qty,inbound,daily_sales,supplier_lead_time,unit_cost,Model,Case Pack,Expected Receipt Date
+EL-POW-001,Mumbai,71,111,3.0,30,1299,PowerBank 10K,6,2026-08-21
+EL-POW-001,Delhi,471,105,4.9,30,1299,PowerBank 10K,12,2026-08-22
+EL-POW-001,Bengaluru,111,29,2.2,30,"Rs. 1,299",PowerBank 10K,6,2026-09-07
+EL-POW-001,Hyderabad,14,0,0.9,15,"₹1,299",PowerBank 10K,12,
+EL-POW-001,Chennai, 47 ,0,0.9,20,"1,299.00",PowerBank 10K,12,
+EL-POW-001,Kolkata,36,0,2.9,20,1299,PowerBank 10K,,
+EL-POW-001,Pune,3,0,0.6,15,"Rs. 1,299",PowerBank 10K,6,
+EL-POW-001,Ahmedabad,108,0,3.5,20,"1,299.00",PowerBank 10K,12,
+EL-POW-001,Jaipur,63,0,2.6,15,1299,PowerBank 10K,,
+EL-POW-001,Lucknow,212,0,4.7,30,1299,PowerBank 10K,24,
+EL-POW-001,Surat,22,0,0.5,15,"Rs. 1,299",PowerBank 10K,24,
+EL-POW-001,Indore,147,0,1.5,30,"Rs. 1,299",PowerBank 10K,12,
+EL-POW-001,Nagpur,51,0,1.1,15,"₹1,299",PowerBank 10K,12,
+EL-POW-001,Kochi,265,0,4.2,20,1299,PowerBank 10K,,
+EL-POW-001,Chandigarh,393,53,4.3,30,1299,PowerBank 10K,,2026-09-19
+EL-POW-001,Bhopal,12,0,1.2,15,1299,PowerBank 10K,24,
+EL-POW-001,Patna,189,0,5.0,30,1299,PowerBank 10K,6,
+EL-POW-001,Vadodara,71,0,2.4,15,"Rs. 1,299",PowerBank 10K,,
+EL-POW-002,Mumbai,208,0,4.1,30,1299,PowerBank 10K,,
+EL-POW-002,Delhi,240,0,4.1,20,1299,PowerBank 10K,,
+EL-POW-002,Bengaluru,97,0,1.9,20,1299,PowerBank 10K,12,
+EL-POW-002,Hyderabad,28,8,0.8,20,1299,PowerBank 10K,6,2026-08-28
+EL-POW-002,Chennai,1,27,0.3,15,"₹1,299",PowerBank 10K,,
+EL-POW-002,Kolkata,101,0,2.6,30,"₹1,299",PowerBank 10K,6,
+EL-POW-002,Pune,38,0,2.2,15,1299,PowerBank 10K,12,
+EL-POW-002,Ahmedabad,3.5,0,1.4,20,1299,PowerBank 10K,24,
+EL-POW-002,Jaipur,138,0,3.2,15,1299,PowerBank 10K,12,
+EL-POW-002,Lucknow,98,0,1.6,20,1299,PowerBank 10K,24,
+EL-POW-002,Surat,178,0,4.1,20,N/A,PowerBank 10K,6,
+EL-POW-002,Indore,35,49,4.2,15,"₹1,299",PowerBank 10K,6,2026-09-07
+EL-POW-002,Nagpur,38,0,0.8,15,1299,PowerBank 10K,,
+EL-POW-002,Kochi,270,103,4.0,20,1299,PowerBank 10K,24,2026-08-24
+EL-POW-002,Chandigarh,226,45,2.6,30,1299,PowerBank 10K,6,2026-09-10
+EL-POW-002,Bhopal,34,0,2.2,15,"₹1,299",PowerBank 10K,12,
+EL-POW-002,Patna,87,-17,4.4,30,"Rs. 1,299",PowerBank 10K,12,
+EL-POW-002,Vadodara,19,0,1.9,,"₹1,299",PowerBank 10K,12,
+EL-POW-003,Mumbai,100,0,4.2,20,"1,299.00",PowerBank 10K,6,
+EL-POW-003,Delhi,11,0,0.4,30,"₹1,299",PowerBank 10K,12,
+EL-POW-003,Bengaluru,67,0,4.1,20 days,"1,299.00",PowerBank 10K,,
+EL-POW-003,Hyderabad,8,0,1.5,20,"Rs. 1,299",PowerBank 10K,6,
+EL-POW-003,Chennai,135,0,,15,1299,PowerBank 10K,12,
+EL-POW-003,Kolkata,0,0,1.8,30,1299,PowerBank 10K,12,
+EL-POW-003,Pune,56,19,1.2,15,1299,PowerBank 10K,6,2026-08-23
+EL-POW-003,Ahmedabad,(4),0,2.3,15,1299,PowerBank 10K,12,
+EL-POW-003,Jaipur,155,0,4.8,20,"₹1,299",PowerBank 10K,,
+EL-POW-003,Lucknow,30,0,0.8,15,"Rs. 1,299",PowerBank 10K,,
+EL-POW-003,Surat,67,41,3.3,30,"Rs. 1,299",PowerBank 10K,24,2026-08-27
+EL-POW-003,Indore,204,72,4.4,15,"Rs. 1,299",PowerBank 10K,12,2026-09-12
+EL-POW-003,Indore,204,72,4.4,15,"Rs. 1,299",PowerBank 10K,12,2026-09-12
+EL-POW-003,Nagpur,293,0,3.8,30,"₹1,299",PowerBank 10K,12,
+,Kochi,143,0,2.9,15,"1,299.00",PowerBank 10K,24,
+EL-POW-003,Chandigarh,156,0,2.6,30,"₹1,299",PowerBank 10K,6,
+EL-POW-003,Bhopal,137,0,4.1,15,"₹1,299",PowerBank 10K,12,
+EL-POW-003,Patna, 160 ,0,2.2,30,"1,299.00",PowerBank 10K,12,
+EL-POW-003,Vadodara,38,0,1.5,20,"Rs. 1,299",PowerBank 10K,,
+EL-POW-004,Mumbai,14,0,0.4,20,"Rs. 1,299",PowerBank 10K,24,
+EL-POW-004,Delhi,105,26,2.2,20,1299,PowerBank 10K,6,2026-08-22
+EL-POW-004,Bengaluru,101,0,4.4,20,"Rs. 1,299",PowerBank 10K,12,
+EL-POW-004,Hyderabad,149,0,3.9,15,"1,299.00",PowerBank 10K,6,
+EL-POW-004,Chennai,73,0,1.4,30,"1,299.00",PowerBank 10K,12,
+EL-POW-004,Kolkata,202,0,3.4,20,1299,PowerBank 10K,,
+EL-POW-004,Pune,168,0,4.2,30,"₹1,299",PowerBank 10K,24,
+EL-POW-004,Ahmedabad,1,36,4.5,20,"₹1,299",PowerBank 10K,12,2026-08-28
+EL-POW-004,Jaipur, 20 ,0,0.6,15,1299,PowerBank 10K,24,
+EL-POW-004,Lucknow,219,0,4.6,20,"Rs. 1,299",PowerBank 10K,6,
+EL-POW-004,Surat,39,0,2.4,30,1299,PowerBank 10K,6,
+EL-POW-004,Indore,240,0,4.0,20,1299,PowerBank 10K,,
+EL-POW-004,Nagpur,21,0,3.8,15,"₹1,299",PowerBank 10K,12,
+EL-POW-004,Kochi, 11 ,0,0.5,15,1299,PowerBank 10K,6,
+EL-POW-004,Chandigarh,220,0,4.1,30,"₹1,299",PowerBank 10K,24,
+EL-POW-004,Bhopal,33,132,1.1,20,1299,PowerBank 10K,,
+EL-POW-004,Patna,112,61,3.8,15,1299,PowerBank 10K,24,2026-08-23
+EL-POW-004,Vadodara,22,0,1.2,15,"Rs. 1,299",PowerBank 10K,,
+EL-POW-005,Mumbai,10,5,0.3,30,"₹1,299",PowerBank 10K,12,2026-08-25
+EL-POW-005,Delhi,52,0,1.2,15,"₹1,299",PowerBank 10K,24,
+EL-POW-005,Bengaluru,39,0,1.9,15,1299,PowerBank 10K,6,
+EL-POW-005,Hyderabad,16,0,0.4,20,"₹1,299",PowerBank 10K,24,
+EL-POW-005,Chennai,138,0,3.9,20,1299,PowerBank 10K,24,
+EL-POW-005,Kolkata,79,0,3.8,15,"₹1,299",PowerBank 10K,24,
+EL-POW-005,Pune,85.5,49,1.4,30,"1,299.00",PowerBank 10K,6,2026-08-17
+EL-POW-005,Ahmedabad,54,0,1.0,30,"₹1,299",PowerBank 10K,24,
+EL-POW-005,Jaipur,1,0,0.7,15,"₹1,299",PowerBank 10K,12,
+EL-POW-005,Lucknow,44,0,0.9,30,1299,PowerBank 10K,12,
+EL-POW-005,Surat,25,0,0.7,15,"Rs. 1,299",PowerBank 10K,24,
+EL-POW-005,Indore,146,0,3.7,15,"₹1,299",PowerBank 10K,12,
+EL-POW-005,Nagpur,59, 149 ,4.8,30,1299,PowerBank 10K,6,2026-08-25
+EL-POW-005,Kochi,18,0,2.3,15,1299,PowerBank 10K,12,
+EL-POW-005,Chandigarh,14,0,1.8,15,"₹1,299",PowerBank 10K,6,
+EL-POW-005,Bhopal,187,85,4.3,15,N/A,PowerBank 10K,6,2026-08-28
+EL-POW-005,Patna, 151 ,0,4.9,15,"₹1,299",PowerBank 10K,6,
+EL-POW-005,Vadodara,132,22,2.6,20,1299,PowerBank 10K,6,2026-09-14
+EL-POW-006,Mumbai,195,0,3.8,20,"Rs. 1,299",PowerBank 10K,12,
+EL-POW-006,Delhi,36,0,2.4,30,"₹1,299",PowerBank 10K,12,
+EL-POW-006,Bengaluru,230,0,3.9,20,1299,PowerBank 10K,12,
+EL-POW-006,Hyderabad,239,0,2.8,30,"1,299.00",PowerBank 10K,12,
+EL-POW-006,Chennai,187,51,3.4,30,"1,299.00",PowerBank 10K,,2026-08-21
+EL-POW-006,Kolkata,31,15,0.8,15,1299,PowerBank 10K,24,2026-09-20
+EL-POW-006,Pune,53,0,2.0,20,1299,PowerBank 10K,12,
+EL-POW-006,Ahmedabad,50,0,1.1,20,"1,299.00",PowerBank 10K,,
+EL-POW-006,Jaipur,265,0,4.0,30,1299,PowerBank 10K,24,
+EL-POW-006,Lucknow,3,4,0.4,15,"₹1,299",PowerBank 10K,12,2026-08-26
+EL-POW-006,Surat,74,0,3.5,20,"1,299.00",PowerBank 10K,6,
+EL-POW-006,Indore,140,0,4.1,30,"1,299.00",PowerBank 10K,6,
+EL-POW-006,Nagpur,85,0,4.9,20,"₹1,299",PowerBank 10K,24,
+EL-POW-006,Kochi,156,0,2.9,20,"₹1,299",PowerBank 10K,24,
+EL-POW-006,Chandigarh,141,0,4.1,30,"₹1,299",PowerBank 10K,6,
+EL-POW-006,Bhopal,118,-11,2.8,15,1299,PowerBank 10K,,
+EL-POW-006,Patna,28,0,1.2,20,"₹1,299",PowerBank 10K,6,
+EL-POW-006,Vadodara,173,0,2.5,30,1299,PowerBank 10K,24,
+EL-POW-007,Mumbai,20,0,2.0,,1299,PowerBank 10K,12,
+EL-POW-007,Delhi,48,0,0.6,30,"Rs. 1,299",PowerBank 10K,,
+EL-POW-007,Bengaluru,177,0,2.7,20,"₹1,299",PowerBank 10K,6,
+EL-POW-007,Hyderabad,148,0,3.2,30,"₹1,299",PowerBank 10K,12,
+EL-POW-007,Chennai,100,0,3.7,15,"₹1,299",PowerBank 10K,12,
+EL-POW-007,Kolkata,270,0,2.7,30,"₹1,299",PowerBank 10K,6,
+EL-POW-007,Pune,76,0,4.3,20,1299,PowerBank 10K,12,
+EL-POW-007,Ahmedabad,156,0,3.9,30,1299,PowerBank 10K,6,
+EL-POW-007,Jaipur,22,153,1.7,15,"₹1,299",PowerBank 10K,12,
+EL-POW-007,Lucknow,10,0,0.4,15 days,1299,PowerBank 10K,,
+EL-POW-007,Surat,60,0,3.4,15,1299,PowerBank 10K,,
+EL-POW-007,Indore,5,58,4.0,15,1299,PowerBank 10K,12,2026-09-04
+EL-POW-007,Nagpur,16,0,3.0,15,1299,PowerBank 10K,12,
+EL-POW-007,Kochi,24,64,1.6,30,"₹1,299",PowerBank 10K,6,2026-08-22
+EL-POW-007,Chandigarh,34,0,1.3,15,"Rs. 1,299",PowerBank 10K,24,
+EL-POW-007,Bhopal,66,0,,30,"₹1,299",PowerBank 10K,24,
+EL-POW-007,Patna, 46 ,0,0.9,20,1299,PowerBank 10K,6,
+EL-POW-007,Vadodara,3,22,2.0,15,1299,PowerBank 10K,6,2026-09-10
+EL-POW-008,Mumbai,6,0,2.3,20,1299,PowerBank 10K,,
+EL-POW-008,Delhi,194,0,2.4,30,"1,299.00",PowerBank 10K,6,
+EL-POW-008,Bengaluru,64,0,1.9,30,"₹1,299",PowerBank 10K,24,
+EL-POW-008,Hyderabad, 16 ,2,0.4,15,"1,299.00",PowerBank 10K,12,2026-08-30
+EL-POW-008,Chennai,37,0,4.4,20,"₹1,299",PowerBank 10K,12,
+EL-POW-008,Kolkata,248.5,0,3.3,30,"₹1,299",PowerBank 10K,12,
+EL-POW-008,Pune,-3,0,3.0,30,"Rs. 1,299",PowerBank 10K,12,
+EL-POW-008,Ahmedabad,124,40,1.6,30,1299,PowerBank 10K,24,2026-08-20
+EL-POW-008,Jaipur,209,59,4.0,20,"Rs. 1,299",PowerBank 10K,,2026-09-19
+EL-POW-008,Lucknow,92,0,1.6,20,"1,299.00",PowerBank 10K,12,
+EL-POW-008,Surat,150,0,3.8,30,"₹1,299",PowerBank 10K,,
+EL-POW-008,Indore, 184 ,0,3.3,20,1299,PowerBank 10K,12,
+EL-POW-008,Nagpur,230,0,3.4,30,1299,PowerBank 10K,24,
+EL-POW-008,Kochi,33,0,1.5,20,"Rs. 1,299",PowerBank 10K,24,
+EL-POW-008,Chandigarh,215,0,3.3,20,1299,PowerBank 10K,6,
+EL-POW-008,Bhopal,138,68,3.3,30,"Rs. 1,299",PowerBank 10K,,2026-08-28
+EL-POW-008,Patna,172,0,3.6,30,"1,299.00",PowerBank 10K,12,
+EL-POW-008,Vadodara,47,0,1.9,30,1299,PowerBank 10K,,
+EL-POW-009,Mumbai,230,0,2.6,30,"₹1,299",PowerBank 10K,12,
+EL-POW-009,Mumbai,230,0,2.6,30,"₹1,299",PowerBank 10K,12,
+EL-POW-009,Delhi,63,0,4.5,20,"₹1,299",PowerBank 10K,,
+EL-POW-009,Bengaluru,115,0,2.6,20,N/A,PowerBank 10K,,
+EL-POW-009,Hyderabad,11,0,0.4,20,"1,299.00",PowerBank 10K,,
+EL-POW-009,Chennai,83,68,3.6,15,1299,PowerBank 10K,,2026-08-21
+EL-POW-009,Kolkata,153,0,4.0,20,1299,PowerBank 10K,12,
+,Pune,110,54,2.3,30,"Rs. 1,299",PowerBank 10K,6,2026-08-23
+EL-POW-009,Ahmedabad,28,0,4.8,20,"1,299.00",PowerBank 10K,6,
+EL-POW-009,Jaipur,37,91,3.7,20,1299,PowerBank 10K,,2026-09-10
+EL-POW-009,Lucknow,53,0,1.0,20,"Rs. 1,299",PowerBank 10K,12,
+EL-POW-009,Surat,21,0,2.4,30,"1,299.00",PowerBank 10K,12,
+EL-POW-009,Indore,76,0,2.2,20,"₹1,299",PowerBank 10K,24,
+EL-POW-009,Nagpur,233,0,4.7,30,"₹1,299",PowerBank 10K,12,
+EL-POW-009,Kochi,315,120,5.0,30,1299,PowerBank 10K,24,2026-08-30
+EL-POW-009,Chandigarh,5,0,2.0,15,"₹1,299",PowerBank 10K,24,
+EL-POW-009,Bhopal,149,94,3.9,20,"1,299.00",PowerBank 10K,24,2026-08-20
+EL-POW-009,Patna,38,131,3.2,30,"₹1,299",PowerBank 10K,12,2026-08-21
+EL-POW-009,Vadodara,86,0,3.4,30,"₹1,299",PowerBank 10K,6,
+EL-POW-010,Mumbai,112,0,1.6,30,"₹1,299",PowerBank 10K,12,
+EL-POW-010,Delhi,124,468,3.9,20,"₹1,299",PowerBank 10K,24,
+EL-POW-010,Bengaluru,18,0,0.4,15,"₹1,299",PowerBank 10K,12,
+EL-POW-010,Hyderabad,9,0,2.8,15,1299,PowerBank 10K,,
+EL-POW-010,Chennai,59,0,4.9,30,"1,299.00",PowerBank 10K,,
+EL-POW-010,Kolkata,0,0,0.5,20,"Rs. 1,299",PowerBank 10K,12,
+EL-POW-010,Pune,29,0,0.5,30,"₹1,299",PowerBank 10K,12,
+EL-POW-010,Ahmedabad,286,0,3.3,30,"1,299.00",PowerBank 10K,6,
+EL-POW-010,Jaipur,35,0,1.5,15,"₹1,299",PowerBank 10K,6,
+EL-POW-010,Lucknow,10,8,1.1,15,1299,PowerBank 10K,6,2026-08-18
+EL-POW-010,Surat,47,0,0.7,20,"Rs. 1,299",PowerBank 10K,24,
+EL-POW-010,Indore,311,0,3.4,30,"1,299.00",PowerBank 10K,24,
+EL-POW-010,Nagpur,47,0,1.2,15,1299,PowerBank 10K,,
+EL-POW-010,Kochi, 44 ,0,1.5,15,1299,PowerBank 10K,6,
+EL-POW-010,Chandigarh,30,-17,4.9,15,"₹1,299",PowerBank 10K,6,
+EL-POW-010,Bhopal,318,0,3.6,30,"Rs. 1,299",PowerBank 10K,12,
+EL-POW-010,Patna,148,0,3.0,15,"Rs. 1,299",PowerBank 10K,12,
+EL-POW-010,Vadodara,115,66,1.8,30,1299,PowerBank 10K,,2026-09-24
+EL-TWS-011,Mumbai,174,0,4.0,20,2999,TWS Buds Pro,6,
+EL-TWS-011,Delhi,77,0,3.3,,"2,999.00",TWS Buds Pro,6,
+EL-TWS-011,Bengaluru,56,157,4.1,30,"₹2,999",TWS Buds Pro,,2026-09-27
+EL-TWS-011,Hyderabad,136,0,5.0,20,"Rs. 2,999",TWS Buds Pro,12,
+EL-TWS-011,Chennai,36.5,0,0.6,20,"₹2,999",TWS Buds Pro,,
+EL-TWS-011,Kolkata,68,26,1.7,20,2999,TWS Buds Pro,,2026-09-03
+EL-TWS-011,Pune,47,0,1.3,15,"Rs. 2,999",TWS Buds Pro,12,
+EL-TWS-011,Ahmedabad,119,0,2.7,30,"₹2,999",TWS Buds Pro,24,
+EL-TWS-011,Jaipur,27,37,2.4,20,2999,TWS Buds Pro,6,2026-09-06
+EL-TWS-011,Lucknow,169,0,3.8,20,2999,TWS Buds Pro,6,
+EL-TWS-011,Surat,52,0,1.9,20,2999,TWS Buds Pro,12,
+EL-TWS-011,Indore,134,0,2.7,15,2999,TWS Buds Pro,,
+EL-TWS-011,Nagpur,206,0,2.1,30,2999,TWS Buds Pro,24,
+EL-TWS-011,Kochi,59,50,3.7,20,"2,999.00",TWS Buds Pro,,2026-08-26
+EL-TWS-011,Chandigarh,57,0,2.1,15,"Rs. 2,999",TWS Buds Pro,6,
+EL-TWS-011,Bhopal,205,0,4.2,15,2999,TWS Buds Pro,24,
+EL-TWS-011,Patna,237,0,4.9,15 days,2999,TWS Buds Pro,,
+EL-TWS-011,Vadodara,22, 24 ,1.3,15,"Rs. 2,999",TWS Buds Pro,24,2026-09-15
+EL-TWS-012,Mumbai,67,0,1.6,15,2999,TWS Buds Pro,12,
+EL-TWS-012,Delhi,2,0,1.0,30,2999,TWS Buds Pro,6,
+EL-TWS-012,Bengaluru,39,0,0.7,20,2999,TWS Buds Pro,12,
+EL-TWS-012,Hyderabad,198,0,4.2,20,"2,999.00",TWS Buds Pro,,
+EL-TWS-012,Chennai,242,0,3.2,30,2999,TWS Buds Pro,,
+EL-TWS-012,Kolkata,121, 67 ,2.7,20,"₹2,999",TWS Buds Pro,6,2026-09-08
+EL-TWS-012,Pune,54,0,2.0,15,2999,TWS Buds Pro,,
+EL-TWS-012,Ahmedabad,276,0,4.6,30,N/A,TWS Buds Pro,12,
+EL-TWS-012,Jaipur,22,0,,20,"2,999.00",TWS Buds Pro,24,
+EL-TWS-012,Lucknow,16,0,0.6,15,"Rs. 2,999",TWS Buds Pro,6,
+EL-TWS-012,Surat,58,46,3.1,20,2999,TWS Buds Pro,6,2026-08-29
+EL-TWS-012,Indore,28,5,0.4,30,2999,TWS Buds Pro,12,2026-09-14
+EL-TWS-012,Nagpur,280,900,5.0,30,"2,999.00",TWS Buds Pro,6,
+EL-TWS-012,Kochi,34,0,0.8,20,2999,TWS Buds Pro,24,
+EL-TWS-012,Chandigarh,189,0,4.8,15,2999,TWS Buds Pro,24,
+EL-TWS-012,Bhopal,119,0,4.1,20,2999,TWS Buds Pro,6,
+EL-TWS-012,Patna, 41 ,0,1.8,20,"2,999.00",TWS Buds Pro,12,
+EL-TWS-012,Vadodara,99,0,4.0,15,2999,TWS Buds Pro,6,
+EL-TWS-013,Mumbai,35,0,1.0,20,"2,999.00",TWS Buds Pro,6,
+EL-TWS-013,Delhi, 186 ,0,3.2,20,2999,TWS Buds Pro,12,
+EL-TWS-013,Bengaluru,9,0,2.3,15,"₹2,999",TWS Buds Pro,,
+EL-TWS-013,Hyderabad,227,0,4.9,30,2999,TWS Buds Pro,,
+EL-TWS-013,Chennai,70,0,3.4,15,"₹2,999",TWS Buds Pro,24,
+EL-TWS-013,Kolkata,-5,0,1.3,30,"Rs. 2,999",TWS Buds Pro,,
+EL-TWS-013,Pune,175,0,4.2,15,2999,TWS Buds Pro,12,
+EL-TWS-013,Ahmedabad,44,21,1.2,30,"₹2,999",TWS Buds Pro,12,2026-08-30
+EL-TWS-013,Jaipur,88,0,2.0,15,"Rs. 2,999",TWS Buds Pro,,
+EL-TWS-013,Lucknow,35,25,0.8,30,2999,TWS Buds Pro,24,2026-08-18
+EL-TWS-013,Surat,68,0,1.9,15,"Rs. 2,999",TWS Buds Pro,24,
+EL-TWS-013,Indore,1,0,1.6,20,"Rs. 2,999",TWS Buds Pro,12,
+EL-TWS-013,Nagpur,52,38,2.5,15,"₹2,999",TWS Buds Pro,6,2026-08-21
+EL-TWS-013,Kochi,343,0,3.5,30,"₹2,999",TWS Buds Pro,24,
+EL-TWS-013,Chandigarh,3,0,2.6,15,"2,999.00",TWS Buds Pro,,
+EL-TWS-013,Bhopal,233,0,2.4,30,2999,TWS Buds Pro,12,
+EL-TWS-013,Patna,93,0,1.4,20,"₹2,999",TWS Buds Pro,12,
+EL-TWS-013,Vadodara,29,0,4.1,15,2999,TWS Buds Pro,12,
+EL-TWS-014,Mumbai,149,55,4.3,15,2999,TWS Buds Pro,6,2026-08-27
+EL-TWS-014,Delhi,45,0,1.1,30,"2,999.00",TWS Buds Pro,12,
+EL-TWS-014,Bengaluru,11,0,0.5,15,2999,TWS Buds Pro,,
+EL-TWS-014,Hyderabad,75.5,0,2.6,15,"₹2,999",TWS Buds Pro,24,
+EL-TWS-014,Chennai,123,0,4.1,30,2999,TWS Buds Pro,24,
+EL-TWS-014,Kolkata,105,66,2.4,20,"₹2,999",TWS Buds Pro,12,2026-09-04
+EL-TWS-014,Pune,28,12,0.6,30,"₹2,999",TWS Buds Pro,,2026-08-21
+EL-TWS-014,Ahmedabad,170,0,4.0,20,2999,TWS Buds Pro,12,
+EL-TWS-014,Ahmedabad,170,0,4.0,20,2999,TWS Buds Pro,12,
+EL-TWS-014,Jaipur,179,0,2.8,20,"Rs. 2,999",TWS Buds Pro,,
+EL-TWS-014,Lucknow,55,0,1.0,20,"2,999.00",TWS Buds Pro,6,
+EL-TWS-014,Surat,136,0,4.6,15,"₹2,999",TWS Buds Pro,,
+EL-TWS-014,Indore,407,0,4.5,30,"2,999.00",TWS Buds Pro,24,
+EL-TWS-014,Nagpur,25,0,2.0,20,"Rs. 2,999",TWS Buds Pro,,
+EL-TWS-014,Kochi,147,-5,2.8,20,2999,TWS Buds Pro,24,
+EL-TWS-014,Chandigarh,53,0,3.0,15,2999,TWS Buds Pro,,
+EL-TWS-014,Bhopal,0,0,0.6,15,2999,TWS Buds Pro,6,
+EL-TWS-014,Patna,172,0,4.3,15,"₹2,999",TWS Buds Pro,6,
+,Vadodara,34,0,2.6,15,2999,TWS Buds Pro,24,
+EL-TWS-015,Mumbai,11,0,3.0,30,"₹2,999",TWS Buds Pro,6,
+EL-TWS-015,Delhi,8,0,4.3,15,2999,TWS Buds Pro,24,
+EL-TWS-015,Bengaluru,112,0,3.7,,2999,TWS Buds Pro,6,
+EL-TWS-015,Hyderabad,30,0,1.2,20,2999,TWS Buds Pro,24,
+EL-TWS-015,Chennai,123,0,1.3,30,2999,TWS Buds Pro,6,
+EL-TWS-015,Kolkata,137,420,3.5,20,2999,TWS Buds Pro,24,
+EL-TWS-015,Pune,12,0,0.8,30,2999,TWS Buds Pro,24,
+EL-TWS-015,Ahmedabad,28,0,1.1,20,"₹2,999",TWS Buds Pro,6,
+EL-TWS-015,Jaipur,183,85,5.0,15,2999,TWS Buds Pro,12,2026-09-25
+EL-TWS-015,Lucknow,182,38,2.9,20,2999,TWS Buds Pro,,2026-08-28
+EL-TWS-015,Surat,96,0,1.4,30,"₹2,999",TWS Buds Pro,,
+EL-TWS-015,Indore,24,0,0.4,20,"2,999.00",TWS Buds Pro,6,
+EL-TWS-015,Nagpur,240,52,3.0,30,N/A,TWS Buds Pro,,2026-08-17
+EL-TWS-015,Kochi,35,0,2.2,20,2999,TWS Buds Pro,24,
+EL-TWS-015,Chandigarh,8,0,0.7,15,"2,999.00",TWS Buds Pro,6,
+EL-TWS-015,Bhopal,21,0,0.3,30,2999,TWS Buds Pro,,
+EL-TWS-015,Patna,101,0,1.6,30,"2,999.00",TWS Buds Pro,12,
+EL-TWS-015,Vadodara,27,45,3.8,20,"2,999.00",TWS Buds Pro,24,2026-09-07
+EL-TWS-016,Mumbai,9,36,1.5,20,"₹2,999",TWS Buds Pro,12,2026-08-23
+EL-TWS-016,Delhi,183,0,4.8,30,2999,TWS Buds Pro,24,
+EL-TWS-016,Bengaluru,90,0,2.5,20,2999,TWS Buds Pro,24,
+EL-TWS-016,Hyderabad,188,29,4.3,15,"₹2,999",TWS Buds Pro,6,2026-08-26
+EL-TWS-016,Chennai,158,0,3.2,20,2999,TWS Buds Pro,,
+EL-TWS-016,Kolkata,213,0,4.4,30 days,2999,TWS Buds Pro,6,
+EL-TWS-016,Pune,81,0,2.2,15,"₹2,999",TWS Buds Pro,6,
+EL-TWS-016,Ahmedabad,267,0,3.4,30,"₹2,999",TWS Buds Pro,12,
+EL-TWS-016,Jaipur,131,0,3.0,20,"₹2,999",TWS Buds Pro,12,
+EL-TWS-016,Lucknow,37,131,4.7,30,"Rs. 2,999",TWS Buds Pro,6,2026-08-20
+EL-TWS-016,Surat, 70 ,0,0.8,30,"2,999.00",TWS Buds Pro,24,
+EL-TWS-016,Indore, 255 ,0,4.6,20,"₹2,999",TWS Buds Pro,,
+EL-TWS-016,Nagpur,49,0,1.0,20,2999,TWS Buds Pro,,
+EL-TWS-016,Kochi,65,0,3.8,30,2999,TWS Buds Pro,6,
+EL-TWS-016,Chandigarh,59,0,0.7,30,"2,999.00",TWS Buds Pro,6,
+EL-TWS-016,Bhopal,16,0,1.4,30,"₹2,999",TWS Buds Pro,12,
+EL-TWS-016,Patna,186,0,2.9,20,"2,999.00",TWS Buds Pro,,
+EL-TWS-016,Vadodara, 24 ,0,1.0,15,"₹2,999",TWS Buds Pro,24,
+EL-TWS-017,Mumbai,53,0,2.1,20,"₹2,999",TWS Buds Pro,12,
+EL-TWS-017,Delhi,36,0,,30,2999,TWS Buds Pro,6,
+EL-TWS-017,Bengaluru,45.5,41,1.9,30,"Rs. 2,999",TWS Buds Pro,12,2026-09-15
+EL-TWS-017,Hyderabad,17,0,1.1,15,2999,TWS Buds Pro,24,
+EL-TWS-017,Chennai,282,117,4.4,30,2999,TWS Buds Pro,,2026-08-19
+EL-TWS-017,Kolkata,10,0,2.1,20,2999,TWS Buds Pro,24,
+EL-TWS-017,Pune,19,0,0.7,20,2999,TWS Buds Pro,6,
+EL-TWS-017,Ahmedabad,130,0,4.2,20,2999,TWS Buds Pro,,
+EL-TWS-017,Jaipur, 76 ,0,2.8,30,"Rs. 2,999",TWS Buds Pro,12,
+EL-TWS-017,Lucknow,35,48,2.9,15,2999,TWS Buds Pro,,2026-08-24
+EL-TWS-017,Surat,95,0,4.0,30,"2,999.00",TWS Buds Pro,24,
+EL-TWS-017,Indore,27,0,2.7,15,2999,TWS Buds Pro,12,
+EL-TWS-017,Nagpur,81,0,1.5,30,2999,TWS Buds Pro,6,
+EL-TWS-017,Kochi,43, 9 ,0.9,15,2999,TWS Buds Pro,24,2026-08-28
+EL-TWS-017,Chandigarh,63,22,1.3,15,2999,TWS Buds Pro,6,2026-09-27
+EL-TWS-017,Bhopal,154,0,2.9,30,"₹2,999",TWS Buds Pro,12,
+EL-TWS-017,Patna,57,168,1.4,20,"2,999.00",TWS Buds Pro,6,
+EL-TWS-017,Vadodara,97,0,5.0,15,2999,TWS Buds Pro,12,
+EL-TWS-018,Mumbai,35,94,4.5,20,2999,TWS Buds Pro,12,2026-08-19
+EL-TWS-018,Delhi,82,0,1.8,15,"Rs. 2,999",TWS Buds Pro,24,
+EL-TWS-018,Bengaluru,18,0,0.8,20,"Rs. 2,999",TWS Buds Pro,24,
+EL-TWS-018,Hyderabad,115,0,2.5,20,"₹2,999",TWS Buds Pro,12,
+EL-TWS-018,Chennai,-2,0,3.2,20,2999,TWS Buds Pro,6,
+EL-TWS-018,Kolkata,21,0,4.6,30,"Rs. 2,999",TWS Buds Pro,12,
+EL-TWS-018,Pune, 177 ,0,4.6,30,2999,TWS Buds Pro,,
+EL-TWS-018,Ahmedabad,31,48,2.1,20,"2,999.00",TWS Buds Pro,,2026-08-26
+EL-TWS-018,Jaipur,95,0,2.9,15,"₹2,999",TWS Buds Pro,12,
+EL-TWS-018,Lucknow,67,0,3.3,20,2999,TWS Buds Pro,6,
+EL-TWS-018,Surat,162,0,3.9,15,"₹2,999",TWS Buds Pro,12,
+EL-TWS-018,Indore,110,26,1.2,30,2999,TWS Buds Pro,,2026-09-15
+EL-TWS-018,Nagpur,132,-15,2.3,30,2999,TWS Buds Pro,12,
+EL-TWS-018,Kochi,88,0,4.5,15,"₹2,999",TWS Buds Pro,12,
+EL-TWS-018,Chandigarh,101,0,4.3,15,"Rs. 2,999",TWS Buds Pro,12,
+EL-TWS-018,Bhopal,222,0,4.4,15,"₹2,999",TWS Buds Pro,24,
+EL-TWS-018,Patna,96,0,1.4,30,"₹2,999",TWS Buds Pro,,
+EL-TWS-018,Vadodara,62,0,2.6,30,N/A,TWS Buds Pro,,
+EL-TWS-019,Mumbai,14,0,1.3,20,2999,TWS Buds Pro,,
+EL-TWS-019,Delhi,121,0,3.7,30,2999,TWS Buds Pro,6,
+EL-TWS-019,Bengaluru, 86 ,27,1.8,15,2999,TWS Buds Pro,6,2026-09-11
+EL-TWS-019,Hyderabad,41,53,3.7,,"₹2,999",TWS Buds Pro,,2026-08-28
+EL-TWS-019,Chennai,29,0,2.0,15,2999,TWS Buds Pro,24,
+EL-TWS-019,Kolkata,25,0,0.7,30,2999,TWS Buds Pro,6,
+EL-TWS-019,Pune,23,56,2.7,20,2999,TWS Buds Pro,12,2026-08-17
+EL-TWS-019,Ahmedabad,156,0,2.8,20,"₹2,999",TWS Buds Pro,,
+EL-TWS-019,Jaipur,246,0,3.5,30,"Rs. 2,999",TWS Buds Pro,6,
+EL-TWS-019,Lucknow,119,0,2.9,20,"Rs. 2,999",TWS Buds Pro,,
+EL-TWS-019,Surat,136,51,2.7,20,"₹2,999",TWS Buds Pro,12,2026-08-21
+EL-TWS-019,Indore,104, 58 ,2.6,30,2999,TWS Buds Pro,6,2026-09-20
+EL-TWS-019,Nagpur,9,0,0.4,30,2999,TWS Buds Pro,24,
+EL-TWS-019,Kochi,51,0,2.4,20,"₹2,999",TWS Buds Pro,,
+EL-TWS-019,Chandigarh,198,0,3.4,20,2999,TWS Buds Pro,,
+EL-TWS-019,Chandigarh,198,0,3.4,20,2999,TWS Buds Pro,,
+EL-TWS-019,Bhopal,199,0,3.6,20,2999,TWS Buds Pro,12,
+EL-TWS-019,Patna,201,0,4.7,20,"₹2,999",TWS Buds Pro,24,
+EL-TWS-019,Vadodara,164,0,3.4,20,"₹2,999",TWS Buds Pro,,
+EL-TWS-020,Mumbai,424,0,5.0,30,2999,TWS Buds Pro,6,
+EL-TWS-020,Delhi,199.5,0,2.6,30,2999,TWS Buds Pro,24,
+EL-TWS-020,Bengaluru,64,106,4.0,20,"Rs. 2,999",TWS Buds Pro,6,2026-09-02
+EL-TWS-020,Hyderabad,7,0,0.8,15,"₹2,999",TWS Buds Pro,24,
+EL-TWS-020,Chennai,134,50,3.7,15,2999,TWS Buds Pro,,2026-08-19
+EL-TWS-020,Kolkata,26,0,2.6,15,2999,TWS Buds Pro,6,
+EL-TWS-020,Pune,36,0,0.9,15,"2,999.00",TWS Buds Pro,24,
+EL-TWS-020,Ahmedabad,186,0,3.6,20,2999,TWS Buds Pro,24,
+EL-TWS-020,Jaipur,42,0,0.5,30,"₹2,999",TWS Buds Pro,12,
+EL-TWS-020,Lucknow,157,396,4.4,15,"Rs. 2,999",TWS Buds Pro,12,
+,Surat,51,0,2.5,20,2999,TWS Buds Pro,,
+EL-TWS-020,Indore,143,0,3.7,20,"Rs. 2,999",TWS Buds Pro,24,
+EL-TWS-020,Nagpur,76,97,3.7,20 days,"2,999.00",TWS Buds Pro,12,2026-08-27
+EL-TWS-020,Kochi,11,0,0.8,20,2999,TWS Buds Pro,24,
+EL-TWS-020,Chandigarh,18,0,4.0,20,2999,TWS Buds Pro,,
+EL-TWS-020,Bhopal,71,0,2.5,20,2999,TWS Buds Pro,6,
+EL-TWS-020,Patna,182,0,3.6,30,"₹2,999",TWS Buds Pro,,
+EL-TWS-020,Vadodara,46,0,3.3,20,2999,TWS Buds Pro,12,
+EL-SMA-021,Mumbai,64,0,3.0,15,4999,SmartWatch S,6,
+EL-SMA-021,Delhi,128,55,2.2,20,"₹4,999",SmartWatch S,24,2026-08-22
+EL-SMA-021,Bengaluru,9,0,1.6,30,4999,SmartWatch S,24,
+EL-SMA-021,Hyderabad,37,0,3.5,15,"4,999.00",SmartWatch S,12,
+EL-SMA-021,Chennai,8,0,0.4,30,4999,SmartWatch S,12,
+EL-SMA-021,Kolkata,50,0,1.4,15,"₹4,999",SmartWatch S,24,
+EL-SMA-021,Pune,178,0,3.5,30,4999,SmartWatch S,6,
+EL-SMA-021,Ahmedabad,234,0,4.6,20,"4,999.00",SmartWatch S,6,
+EL-SMA-021,Jaipur,35,0,2.0,30,4999,SmartWatch S,,
+EL-SMA-021,Lucknow,99,19,2.3,15,4999,SmartWatch S,,2026-08-30
+EL-SMA-021,Surat,125,31,4.2,15,4999,SmartWatch S,6,2026-08-17
+EL-SMA-021,Indore,76,0,3.2,20,"₹4,999",SmartWatch S,6,
+EL-SMA-021,Nagpur,20,0,,20,"4,999.00",SmartWatch S,6,
+EL-SMA-021,Kochi,89,0,1.7,20,"₹4,999",SmartWatch S,12,
+EL-SMA-021,Chandigarh,14,0,0.3,20,4999,SmartWatch S,,
+EL-SMA-021,Bhopal, 54 ,0,4.0,15,4999,SmartWatch S,6,
+EL-SMA-021,Patna,22,0,5.0,15,"Rs. 4,999",SmartWatch S,,
+EL-SMA-021,Vadodara,21,0,1.9,20,"₹4,999",SmartWatch S,,
+EL-SMA-022,Mumbai,13,0,0.8,20,4999,SmartWatch S,,
+EL-SMA-022,Delhi,63,0,1.6,30,4999,SmartWatch S,,
+EL-SMA-022,Bengaluru,108,0,2.2,15,"Rs. 4,999",SmartWatch S,12,
+EL-SMA-022,Hyderabad,201,0,3.6,30,"₹4,999",SmartWatch S,24,
+EL-SMA-022,Chennai,37,52,2.4,20,N/A,SmartWatch S,,2026-08-29
+EL-SMA-022,Kolkata,98,0,4.3,20,"₹4,999",SmartWatch S,,
+EL-SMA-022,Pune,24,0,0.7,20,"₹4,999",SmartWatch S,6,
+EL-SMA-022,Ahmedabad,136,66,2.7,20,4999,SmartWatch S,,2026-08-18
+EL-SMA-022,Jaipur,99,0,1.6,30,"Rs. 4,999",SmartWatch S,24,
+EL-SMA-022,Lucknow, 32 ,19,1.1,15,"₹4,999",SmartWatch S,24,2026-08-20
+EL-SMA-022,Surat, 366 ,0,4.5,30,4999,SmartWatch S,24,
+EL-SMA-022,Indore,90,-19,2.3,20,"4,999.00",SmartWatch S,24,
+EL-SMA-022,Nagpur,121,0,1.2,30,"Rs. 4,999",SmartWatch S,,
+EL-SMA-022,Kochi,53,0,1.0,20,"₹4,999",SmartWatch S,6,
+EL-SMA-022,Chandigarh,36,130,4.6,30,4999,SmartWatch S,6,2026-09-10
+EL-SMA-022,Bhopal,27,65,3.6,15,4999,SmartWatch S,12,2026-08-26
+EL-SMA-022,Patna,10,0,4.6,15,4999,SmartWatch S,6,
+EL-SMA-022,Vadodara,20,0,2.6,15,"₹4,999",SmartWatch S,12,
+EL-SMA-023,Mumbai,85.5,0,3.1,30,"₹4,999",SmartWatch S,12,
+EL-SMA-023,Delhi,315,121,3.8,30,"₹4,999",SmartWatch S,24,2026-08-30
+EL-SMA-023,Bengaluru,38,126,0.7,30,4999,SmartWatch S,12,
+EL-SMA-023,Hyderabad,(8),0,2.2,30,"₹4,999",SmartWatch S,,
+EL-SMA-023,Chennai,4,0,4.4,,"4,999.00",SmartWatch S,24,
+EL-SMA-023,Kolkata,169,0,1.9,30,4999,SmartWatch S,6,
+EL-SMA-023,Pune,198,0,2.9,30,"₹4,999",SmartWatch S,,
+EL-SMA-023,Ahmedabad,45,0,0.9,20,4999,SmartWatch S,24,
+EL-SMA-023,Jaipur,197, 78 ,4.7,15,"Rs. 4,999",SmartWatch S,,2026-09-09
+EL-SMA-023,Lucknow,45,0,1.6,30,4999,SmartWatch S,6,
+EL-SMA-023,Surat,45,71,4.8,20,"Rs. 4,999",SmartWatch S,6,2026-08-27
+EL-SMA-023,Indore,16,0,0.8,30,"Rs. 4,999",SmartWatch S,6,
+EL-SMA-023,Nagpur,18,0,3.8,15,4999,SmartWatch S,,
+EL-SMA-023,Kochi,91,32,1.4,30,"Rs. 4,999",SmartWatch S,24,2026-08-30
+EL-SMA-023,Chandigarh,101,0,2.8,20,4999,SmartWatch S,,
+EL-SMA-023,Bhopal,54,0,1.9,20,"₹4,999",SmartWatch S,,
+EL-SMA-023,Patna,293,65,4.6,20,"₹4,999",SmartWatch S,24,2026-08-19
+EL-SMA-023,Vadodara,25,0,4.7,20,"4,999.00",SmartWatch S,24,
+EL-SMA-024,Mumbai,172,0,4.4,30,4999,SmartWatch S,,
+EL-SMA-024,Delhi,173,0,3.9,30,"₹4,999",SmartWatch S,12,
+EL-SMA-024,Bengaluru,123,48,1.5,30,"Rs. 4,999",SmartWatch S,12,2026-09-21
+EL-SMA-024,Hyderabad,17,0,0.5,15,4999,SmartWatch S,12,
+EL-SMA-024,Chennai, 211 ,92,4.0,20,4999,SmartWatch S,12,2026-08-25
+EL-SMA-024,Kolkata,215,0,4.6,20,4999,SmartWatch S,6,
+EL-SMA-024,Pune,1,0,3.7,20,4999,SmartWatch S,24,
+EL-SMA-024,Ahmedabad, 55 ,0,1.9,20,4999,SmartWatch S,,
+EL-SMA-024,Jaipur,44,22,3.0,15,"₹4,999",SmartWatch S,12,2026-09-27
+EL-SMA-024,Lucknow,169,0,3.3,20,"₹4,999",SmartWatch S,6,
+EL-SMA-024,Surat,123,86,4.9,20,4999,SmartWatch S,12,2026-08-17
+EL-SMA-024,Indore,32,0,4.6,20,4999,SmartWatch S,12,
+EL-SMA-024,Nagpur,153,65,2.5,20,"₹4,999",SmartWatch S,24,2026-08-19
+EL-SMA-024,Kochi,36,18,1.5,15,"₹4,999",SmartWatch S,,2026-08-20
+EL-SMA-024,Chandigarh,28,0,0.5,30,4999,SmartWatch S,,
+EL-SMA-024,Bhopal,76,0,0.8,30,"₹4,999",SmartWatch S,12,
+EL-SMA-024,Patna,63,0,3.4,20,"4,999.00",SmartWatch S,12,
+EL-SMA-024,Vadodara,38,0,4.9,15,"₹4,999",SmartWatch S,24,
+EL-SMA-025,Mumbai,76,0,2.0,20,"Rs. 4,999",SmartWatch S,12,
+EL-SMA-025,Delhi,94,103,4.1,20 days,4999,SmartWatch S,12,2026-08-26
+EL-SMA-025,Bengaluru, 17 ,20,0.7,30,4999,SmartWatch S,6,2026-09-12
+EL-SMA-025,Hyderabad,13,0,1.0,15,4999,SmartWatch S,24,
+EL-SMA-025,Hyderabad,13,0,1.0,15,4999,SmartWatch S,24,
+EL-SMA-025,Chennai,195,0,4.2,30,4999,SmartWatch S,12,
+EL-SMA-025,Kolkata,108,0,3.6,30,4999,SmartWatch S,,
+EL-SMA-025,Pune,46,0,1.8,20,4999,SmartWatch S,6,
+EL-SMA-025,Ahmedabad,148,0,4.5,20,4999,SmartWatch S,24,
+EL-SMA-025,Jaipur,88,67,2.5,20,4999,SmartWatch S,6,2026-09-05
+EL-SMA-025,Lucknow,138,103,4.1,20,N/A,SmartWatch S,24,2026-08-22
+EL-SMA-025,Surat,22,55,2.8,20,"4,999.00",SmartWatch S,6,2026-08-23
+EL-SMA-025,Indore,6,0,0.5,20,"Rs. 4,999",SmartWatch S,,
+EL-SMA-025,Nagpur,115,0,3.2,30,"₹4,999",SmartWatch S,24,
+EL-SMA-025,Kochi,227,516,4.3,20,"4,999.00",SmartWatch S,6,2026-08-26
+EL-SMA-025,Chandigarh,6,16,1.3,20,4999,SmartWatch S,,2026-09-11
+EL-SMA-025,Bhopal,305,0,5.0,30,4999,SmartWatch S,12,
+EL-SMA-025,Patna,152,0,3.0,15,"₹4,999",SmartWatch S,,
+EL-SMA-025,Vadodara,24.5,0,4.8,20,4999,SmartWatch S,12,
+EL-SMA-026,Mumbai,45,0,2.0,30,4999,SmartWatch S,,
+EL-SMA-026,Delhi, 46 ,0,2.1,15,"₹4,999",SmartWatch S,,
+EL-SMA-026,Bengaluru,47,0,4.0,15,"Rs. 4,999",SmartWatch S,,
+,Hyderabad,114,41,2.0,20,"4,999.00",SmartWatch S,,2026-08-20
+EL-SMA-026,Chennai,89,0,1.6,20,4999,SmartWatch S,6,
+EL-SMA-026,Kolkata,123,0,,20,4999,SmartWatch S,24,
+EL-SMA-026,Pune,291,0,3.9,30,"Rs. 4,999",SmartWatch S,6,
+EL-SMA-026,Ahmedabad,95,92,2.7,30,"₹4,999",SmartWatch S,12,2026-08-24
+EL-SMA-026,Jaipur,0,6,0.6,20,4999,SmartWatch S,12,2026-09-23
+EL-SMA-026,Lucknow,35,0,0.5,30,"₹4,999",SmartWatch S,24,
+EL-SMA-026,Surat,51,-1,2.0,30,"₹4,999",SmartWatch S,,
+EL-SMA-026,Indore,50,23,1.0,30,4999,SmartWatch S,,2026-09-26
+EL-SMA-026,Nagpur,271,0,4.7,30,4999,SmartWatch S,12,
+EL-SMA-026,Kochi,33,0,0.8,20,4999,SmartWatch S,,
+EL-SMA-026,Chandigarh,80,0,2.9,15,4999,SmartWatch S,12,
+EL-SMA-026,Bhopal,27,0,4.0,15,"₹4,999",SmartWatch S,12,
+EL-SMA-026,Patna,148,0,4.2,15,"Rs. 4,999",SmartWatch S,6,
+EL-SMA-026,Vadodara,9, 63 ,4.0,15,4999,SmartWatch S,24,2026-09-05
+EL-SMA-027,Mumbai,229,0,3.6,20,"Rs. 4,999",SmartWatch S,12,
+EL-SMA-027,Delhi,165,0,3.2,20,4999,SmartWatch S,,
+EL-SMA-027,Bengaluru,221,70,3.5,30,"Rs. 4,999",SmartWatch S,,2026-09-08
+EL-SMA-027,Hyderabad,150,89,4.9,15,4999,SmartWatch S,,2026-08-24
+EL-SMA-027,Chennai,8,50,1.8,30,"₹4,999",SmartWatch S,6,2026-08-25
+EL-SMA-027,Kolkata, 18 ,14,0.9,,"₹4,999",SmartWatch S,6,2026-09-11
+EL-SMA-027,Pune,54,0,2.7,20,"Rs. 4,999",SmartWatch S,24,
+EL-SMA-027,Ahmedabad,33,0,3.2,20,4999,SmartWatch S,,
+EL-SMA-027,Jaipur,5,0,0.7,20,4999,SmartWatch S,,
+EL-SMA-027,Lucknow,29,0,2.6,15,4999,SmartWatch S,12,
+EL-SMA-027,Surat,81,0,2.1,20,4999,SmartWatch S,12,
+EL-SMA-027,Indore,58,0,2.7,15,4999,SmartWatch S,6,
+EL-SMA-027,Nagpur,39,0,0.9,30,"Rs. 4,999",SmartWatch S,12,
+EL-SMA-027,Kochi,75,0,2.3,20,"₹4,999",SmartWatch S,12,
+EL-SMA-027,Chandigarh, 37 ,45,1.8,30,4999,SmartWatch S,6,2026-09-07
+EL-SMA-027,Bhopal,271,0,4.5,20,"₹4,999",SmartWatch S,12,
+EL-SMA-027,Patna,12,0,2.1,30,4999,SmartWatch S,,
+EL-SMA-027,Vadodara,81,0,1.9,30,"4,999.00",SmartWatch S,24,
+EL-SMA-028,Mumbai,38,10,0.4,30,4999,SmartWatch S,12,2026-08-27
+EL-SMA-028,Delhi,249,0,2.9,30,4999,SmartWatch S,6,
+EL-SMA-028,Bengaluru,-9,0,4.9,30,"₹4,999",SmartWatch S,6,
+EL-SMA-028,Hyderabad,192,0,4.1,15,"₹4,999",SmartWatch S,6,
+EL-SMA-028,Chennai,2,29,1.5,30,"₹4,999",SmartWatch S,12,2026-08-17
+EL-SMA-028,Kolkata,401,167,4.4,30,4999,SmartWatch S,6,2026-09-16
+EL-SMA-028,Pune,76,333,3.7,15,"4,999.00",SmartWatch S,24,
+EL-SMA-028,Ahmedabad,9,0,2.9,15,4999,SmartWatch S,24,
+EL-SMA-028,Jaipur,240,0,4.4,30,"Rs. 4,999",SmartWatch S,6,
+EL-SMA-028,Lucknow,118,0,2.2,30,4999,SmartWatch S,,
+EL-SMA-028,Surat,74,0,0.8,30,4999,SmartWatch S,24,
+EL-SMA-028,Indore,7,0,2.0,20,"Rs. 4,999",SmartWatch S,24,
+EL-SMA-028,Nagpur,113,67,2.9,30,"Rs. 4,999",SmartWatch S,6,2026-08-25
+EL-SMA-028,Kochi,1,63,4.2,30,4999,SmartWatch S,,2026-08-26
+EL-SMA-028,Chandigarh,4,0,0.8,15,N/A,SmartWatch S,,
+EL-SMA-028,Bhopal,28,0,1.2,30,"₹4,999",SmartWatch S,12,
+EL-SMA-028,Patna,131.5,0,2.7,20,"Rs. 4,999",SmartWatch S,24,
+EL-SMA-028,Vadodara,23,0,1.1,20,4999,SmartWatch S,12,
+EL-SMA-029,Mumbai,147,0,3.7,20,"₹4,999",SmartWatch S,12,
+EL-SMA-029,Delhi,139,54,2.8,15,"Rs. 4,999",SmartWatch S,6,2026-08-18
+EL-SMA-029,Bengaluru,5,0,0.6,20,4999,SmartWatch S,,
+EL-SMA-029,Hyderabad,0,0,4.1,15,4999,SmartWatch S,,
+EL-SMA-029,Chennai,24,0,0.5,15,4999,SmartWatch S,6,
+EL-SMA-029,Kolkata, 176 ,0,4.7,20,4999,SmartWatch S,12,
+EL-SMA-029,Pune,89,0,2.3,20,4999,SmartWatch S,6,
+EL-SMA-029,Ahmedabad,202,0,3.6,30,4999,SmartWatch S,24,
+EL-SMA-029,Jaipur,43,0,1.6,30 days,"Rs. 4,999",SmartWatch S,6,
+EL-SMA-029,Lucknow,98,0,3.8,20,"₹4,999",SmartWatch S,24,
+EL-SMA-029,Surat,12,0,1.9,20,4999,SmartWatch S,12,
+EL-SMA-029,Indore,34,64,3.2,15,4999,SmartWatch S,,2026-09-13
+EL-SMA-029,Nagpur,149,0,4.5,15,"4,999.00",SmartWatch S,24,
+EL-SMA-029,Kochi,196,0,4.3,20,4999,SmartWatch S,12,
+EL-SMA-029,Chandigarh,87,0,3.7,20,"Rs. 4,999",SmartWatch S,12,
+EL-SMA-029,Bhopal,391,0,4.1,30,4999,SmartWatch S,6,
+EL-SMA-029,Patna,125,0,4.1,20,"₹4,999",SmartWatch S,6,
+EL-SMA-029,Vadodara,203,0,4.6,15,"4,999.00",SmartWatch S,24,
+EL-SMA-030,Mumbai,27,0,3.0,20,4999,SmartWatch S,24,
+EL-SMA-030,Delhi,267, 156 ,4.4,30,"₹4,999",SmartWatch S,,2026-08-24
+EL-SMA-030,Bengaluru,38,0,1.2,30,"₹4,999",SmartWatch S,,
+EL-SMA-030,Hyderabad, 45 ,0,4.2,20,4999,SmartWatch S,24,
+EL-SMA-030,Chennai,51,28,1.7,15,4999,SmartWatch S,,2026-08-27
+EL-SMA-030,Kolkata,72,0,0.9,30,4999,SmartWatch S,,
+EL-SMA-030,Pune, 8 ,0,1.5,15,"₹4,999",SmartWatch S,,
+EL-SMA-030,Ahmedabad,17,0,1.7,15,"Rs. 4,999",SmartWatch S,,
+EL-SMA-030,Jaipur,107,17,1.1,30,4999,SmartWatch S,6,2026-09-15
+EL-SMA-030,Lucknow, 14 ,-15,1.1,20,"₹4,999",SmartWatch S,24,
+EL-SMA-030,Surat,107,0,2.8,15,"₹4,999",SmartWatch S,,
+EL-SMA-030,Surat,107,0,2.8,15,"₹4,999",SmartWatch S,,
+EL-SMA-030,Indore,56,0,0.6,30,"Rs. 4,999",SmartWatch S,,
+EL-SMA-030,Nagpur,18,0,1.4,15,"Rs. 4,999",SmartWatch S,12,
+EL-SMA-030,Kochi, 129 ,0,4.3,15,"4,999.00",SmartWatch S,6,
+EL-SMA-030,Chandigarh,46,0,2.1,20,4999,SmartWatch S,24,
+EL-SMA-030,Bhopal,148,0,3.4,15,4999,SmartWatch S,,
+EL-SMA-030,Patna,38,47,,15,4999,SmartWatch S,12,2026-08-25
+EL-SMA-030,Vadodara,170,540,4.5,20,4999,SmartWatch S,,2026-09-24
+EL-BT-031,Mumbai,18,81,4.3,30,"1,799.00",BT Speaker Mini,12,2026-08-27
+EL-BT-031,Delhi,107,0,1.1,30,"Rs. 1,799",BT Speaker Mini,,
+EL-BT-031,Bengaluru,175,0,3.4,20,"₹1,799",BT Speaker Mini,12,
+EL-BT-031,Hyderabad,43,0,2.5,15,"₹1,799",BT Speaker Mini,12,
+EL-BT-031,Chennai,143,0,4.8,15,"1,799.00",BT Speaker Mini,,
+EL-BT-031,Kolkata,193,0,2.9,20,1799,BT Speaker Mini,,
+EL-BT-031,Pune,212,159,3.9,,"1,799.00",BT Speaker Mini,6,2026-08-19
+EL-BT-031,Ahmedabad,131,93,2.4,30,1799,BT Speaker Mini,6,2026-08-20
+EL-BT-031,Jaipur,254,0,4.4,30,"₹1,799",BT Speaker Mini,6,
+EL-BT-031,Lucknow,167,0,2.1,30,"₹1,799",BT Speaker Mini,6,
+EL-BT-031,Surat,29,0,4.0,15,1799,BT Speaker Mini,6,
+EL-BT-031,Indore,1,0,2.6,15,1799,BT Speaker Mini,12,
+EL-BT-031,Nagpur,98,0,3.9,20,"₹1,799",BT Speaker Mini,,
+EL-BT-031,Kochi,47,33,2.1,20,1799,BT Speaker Mini,,2026-08-26
+,Chandigarh,136,103,3.7,30,1799,BT Speaker Mini,6,2026-09-12
+EL-BT-031,Bhopal,74.5,0,2.8,15,1799,BT Speaker Mini,24,
+EL-BT-031,Patna,14,0,1.6,15,"₹1,799",BT Speaker Mini,,
+EL-BT-031,Vadodara, 248 ,0,4.4,20,1799,BT Speaker Mini,,
+EL-BT-032,Mumbai,155,40,2.5,30,1799,BT Speaker Mini,24,2026-08-17
+EL-BT-032,Delhi,60,0,3.2,15,N/A,BT Speaker Mini,24,
+EL-BT-032,Bengaluru,226,47,3.4,20,"₹1,799",BT Speaker Mini,12,2026-09-05
+EL-BT-032,Hyderabad,46,0,1.2,15,"Rs. 1,799",BT Speaker Mini,24,
+EL-BT-032,Chennai,59,0,2.4,15,1799,BT Speaker Mini,24,
+EL-BT-032,Kolkata,104,0,3.3,20,1799,BT Speaker Mini,,
+EL-BT-032,Pune,177,0,3.0,30,1799,BT Speaker Mini,6,
+EL-BT-032,Ahmedabad,34,0,1.4,15,"₹1,799",BT Speaker Mini,6,
+EL-BT-032,Jaipur, 132 ,0,4.7,15,"1,799.00",BT Speaker Mini,24,
+EL-BT-032,Lucknow,150, 53 ,4.2,15,1799,BT Speaker Mini,6,2026-08-28
+EL-BT-032,Surat,168,0,3.0,20,"Rs. 1,799",BT Speaker Mini,,
+EL-BT-032,Indore,36,0,0.5,30,1799,BT Speaker Mini,24,
+EL-BT-032,Nagpur,150,69,2.6,20,"Rs. 1,799",BT Speaker Mini,6,2026-08-17
+EL-BT-032,Kochi,216,127,4.7,20,1799,BT Speaker Mini,12,2026-08-18
+EL-BT-032,Chandigarh,116,0,3.3,15,"₹1,799",BT Speaker Mini,,
+EL-BT-032,Bhopal,6,0,3.5,15,"₹1,799",BT Speaker Mini,12,
+EL-BT-032,Patna,155,0,3.9,20,"Rs. 1,799",BT Speaker Mini,12,
+EL-BT-032,Vadodara,39,0,1.1,15,1799,BT Speaker Mini,12,
+EL-BT-033,Mumbai,120,0,2.3,20,"1,799.00",BT Speaker Mini,12,
+EL-BT-033,Delhi,(7),0,1.9,15,1799,BT Speaker Mini,,
+EL-BT-033,Bengaluru,48,15,1.1,15,1799,BT Speaker Mini,,2026-09-23
+EL-BT-033,Hyderabad,136,0,2.6,30,"Rs. 1,799",BT Speaker Mini,6,
+EL-BT-033,Chennai,193,0,3.0,30,"₹1,799",BT Speaker Mini,12,
+EL-BT-033,Kolkata,0,0,0.3,15,1799,BT Speaker Mini,24,
+EL-BT-033,Pune,42,24,0.6,30,"Rs. 1,799",BT Speaker Mini,6,2026-08-29
+EL-BT-033,Ahmedabad,37, 10 ,0.4,30,"Rs. 1,799",BT Speaker Mini,24,2026-08-30
+EL-BT-033,Jaipur,194,0,4.9,15,"₹1,799",BT Speaker Mini,12,
+EL-BT-033,Lucknow,89,26,1.0,30,1799,BT Speaker Mini,12,2026-08-18
+EL-BT-033,Surat,79,228,1.9,20,"Rs. 1,799",BT Speaker Mini,12,
+EL-BT-033,Indore,188,0,3.8,15,1799,BT Speaker Mini,,
+EL-BT-033,Nagpur,278,57,3.8,30,1799,BT Speaker Mini,24,2026-08-21
+EL-BT-033,Kochi,26,0,2.5,30,1799,BT Speaker Mini,24,
+EL-BT-033,Chandigarh,189,0,2.9,20,1799,BT Speaker Mini,24,
+EL-BT-033,Bhopal,121,0,1.2,30 days,1799,BT Speaker Mini,6,
+EL-BT-033,Patna,202,0,3.2,20,"1,799.00",BT Speaker Mini,,
+EL-BT-033,Vadodara,45,0,1.9,20,1799,BT Speaker Mini,,
+EL-BT-034,Mumbai,14,0,2.2,15,"₹1,799",BT Speaker Mini,6,
+EL-BT-034,Delhi,18,0,0.8,20,"Rs. 1,799",BT Speaker Mini,24,
+EL-BT-034,Bengaluru,215,0,4.8,15,1799,BT Speaker Mini,24,
+EL-BT-034,Hyderabad,58,0,1.2,15,"₹1,799",BT Speaker Mini,12,
+EL-BT-034,Chennai,113,0,4.6,15,1799,BT Speaker Mini,24,
+EL-BT-034,Kolkata, 22 ,0,0.9,30,"Rs. 1,799",BT Speaker Mini,,
+EL-BT-034,Pune, 13 ,3,0.4,20,1799,BT Speaker Mini,12,2026-08-21
+EL-BT-034,Ahmedabad,222,121,3.1,30,"1,799.00",BT Speaker Mini,6,2026-08-22
+EL-BT-034,Jaipur,71,-4,4.4,15,"Rs. 1,799",BT Speaker Mini,12,
+EL-BT-034,Lucknow,58,0,1.1,20,"Rs. 1,799",BT Speaker Mini,12,
+EL-BT-034,Surat,279,0,4.3,30,1799,BT Speaker Mini,24,
+EL-BT-034,Indore,130,0,3.1,20,"₹1,799",BT Speaker Mini,24,
+EL-BT-034,Nagpur,101,0,2.4,30,1799,BT Speaker Mini,,
+EL-BT-034,Kochi,16,0,3.2,30,1799,BT Speaker Mini,,
+EL-BT-034,Chandigarh,27.5,0,1.0,15,1799,BT Speaker Mini,,
+EL-BT-034,Bhopal, 54 ,0,2.9,15,"₹1,799",BT Speaker Mini,6,
+EL-BT-034,Patna,61,42,1.6,20,1799,BT Speaker Mini,,2026-08-17
+EL-BT-034,Vadodara,7,0,1.6,30,1799,BT Speaker Mini,,
+EL-BT-035,Mumbai,87,32,3.1,15,"₹1,799",BT Speaker Mini,,2026-08-19
+EL-BT-035,Delhi,13,26,0.7,30,"1,799.00",BT Speaker Mini,,2026-08-20
+EL-BT-035,Bengaluru,5,0,2.3,15,1799,BT Speaker Mini,24,
+EL-BT-035,Hyderabad,173,0,1.9,30,"Rs. 1,799",BT Speaker Mini,6,
+EL-BT-035,Chennai,385,0,4.2,30,1799,BT Speaker Mini,,
+EL-BT-035,Kolkata,35,0,2.5,15,"Rs. 1,799",BT Speaker Mini,24,
+EL-BT-035,Pune,53,0,3.0,20,N/A,BT Speaker Mini,12,
+EL-BT-035,Ahmedabad,172,0,3.7,,1799,BT Speaker Mini,,
+EL-BT-035,Jaipur,188,34,3.7,15,"Rs. 1,799",BT Speaker Mini,24,2026-09-25
+EL-BT-035,Lucknow,121,0,,30,"Rs. 1,799",BT Speaker Mini,,
+EL-BT-035,Surat,143,95,3.8,30,"1,799.00",BT Speaker Mini,6,2026-08-29
+EL-BT-035,Indore,24,0,0.6,20,"1,799.00",BT Speaker Mini,24,
+EL-BT-035,Nagpur,13,0,1.8,30,1799,BT Speaker Mini,24,
+EL-BT-035,Kochi,78,0,4.5,30,1799,BT Speaker Mini,12,
+EL-BT-035,Chandigarh,113,0,1.3,30,"₹1,799",BT Speaker Mini,,
+EL-BT-035,Bhopal,62,0,1.2,20,1799,BT Speaker Mini,24,
+EL-BT-035,Patna,49,0,2.4,15,"Rs. 1,799",BT Speaker Mini,12,
+EL-BT-035,Vadodara,33,0,1.7,20,1799,BT Speaker Mini,12,
+EL-BT-035,Vadodara,33,0,1.7,20,1799,BT Speaker Mini,12,
+EL-BT-036,Mumbai,1,0,0.8,15,"₹1,799",BT Speaker Mini,24,
+EL-BT-036,Delhi,51,0,4.3,20,"Rs. 1,799",BT Speaker Mini,12,
+EL-BT-036,Bengaluru,22,0,1.6,15,1799,BT Speaker Mini,24,
+EL-BT-036,Hyderabad,286,792,4.4,30,1799,BT Speaker Mini,,
+EL-BT-036,Chennai,45,0,1.7,15,1799,BT Speaker Mini,24,
+EL-BT-036,Kolkata, 78 ,0,2.0,20,1799,BT Speaker Mini,12,
+EL-BT-036,Pune,10,0,1.1,30,1799,BT Speaker Mini,12,
+EL-BT-036,Ahmedabad,270,0,4.7,20,1799,BT Speaker Mini,24,
+EL-BT-036,Jaipur,45,19,0.5,30,1799,BT Speaker Mini,12,2026-09-16
+EL-BT-036,Lucknow,111,0,2.5,30,"1,799.00",BT Speaker Mini,12,
+EL-BT-036,Surat,328,0,3.6,30,"Rs. 1,799",BT Speaker Mini,12,
+EL-BT-036,Indore,6,0,1.4,15,1799,BT Speaker Mini,,
+EL-BT-036,Nagpur,35,0,2.8,15,"1,799.00",BT Speaker Mini,12,
+EL-BT-036,Kochi,43,0,1.7,20,1799,BT Speaker Mini,12,
+EL-BT-036,Chandigarh,66,0,4.3,20,1799,BT Speaker Mini,,
+EL-BT-036,Bhopal,33,0,1.2,30,"1,799.00",BT Speaker Mini,12,
+EL-BT-036,Patna, 55 ,0,1.2,20,1799,BT Speaker Mini,24,
+EL-BT-036,Vadodara,128,0,4.6,15,"1,799.00",BT Speaker Mini,,
+EL-BT-037,Mumbai,23,83,3.2,20,"1,799.00",BT Speaker Mini,6,2026-08-29
+EL-BT-037,Delhi, 40 ,0,1.2,15,1799,BT Speaker Mini,24,
+EL-BT-037,Bengaluru,164,0,4.3,30,"₹1,799",BT Speaker Mini,12,
+EL-BT-037,Hyderabad,324,0,3.6,30,1799,BT Speaker Mini,6,
+EL-BT-037,Chennai,4,0,4.2,20,1799,BT Speaker Mini,24,
+EL-BT-037,Kolkata,65,0,4.0,20,"Rs. 1,799",BT Speaker Mini,24,
+EL-BT-037,Pune,25,0,3.9,20,"₹1,799",BT Speaker Mini,,
+,Ahmedabad,107,0,2.0,30,1799,BT Speaker Mini,,
+EL-BT-037,Jaipur,70,0,2.4,20,1799,BT Speaker Mini,6,
+EL-BT-037,Lucknow,8,15,0.7,20,"Rs. 1,799",BT Speaker Mini,24,2026-08-24
+EL-BT-037,Surat,73,0,4.4,15,"1,799.00",BT Speaker Mini,,
+EL-BT-037,Indore,97,17,1.6,20,"1,799.00",BT Speaker Mini,,2026-09-24
+EL-BT-037,Nagpur, 75 ,0,4.3,15,"₹1,799",BT Speaker Mini,12,
+EL-BT-037,Kochi,193.5,0,3.9,15,1799,BT Speaker Mini,12,
+EL-BT-037,Chandigarh,45,0,0.7,30,"1,799.00",BT Speaker Mini,6,
+EL-BT-037,Bhopal,150,0,3.3,20,"₹1,799",BT Speaker Mini,12,
+EL-BT-037,Patna, 132 ,0,1.7,30,"1,799.00",BT Speaker Mini,,
+EL-BT-037,Vadodara,66,0,4.1,20,"₹1,799",BT Speaker Mini,12,
+EL-BT-038,Mumbai,-4,0,1.6,15,"1,799.00",BT Speaker Mini,,
+EL-BT-038,Delhi, 123 ,0,3.0,15,"1,799.00",BT Speaker Mini,12,
+EL-BT-038,Bengaluru,90,0,3.7,15,"₹1,799",BT Speaker Mini,,
+EL-BT-038,Hyderabad,106,0,2.1,15,1799,BT Speaker Mini,12,
+EL-BT-038,Chennai,417,0,4.6,30 days,1799,BT Speaker Mini,6,
+EL-BT-038,Kolkata,25,12,0.8,30,"1,799.00",BT Speaker Mini,,2026-09-09
+EL-BT-038,Pune,19,29,2.1,15,"1,799.00",BT Speaker Mini,24,2026-08-25
+EL-BT-038,Ahmedabad,5,-16,2.2,15,"₹1,799",BT Speaker Mini,,
+EL-BT-038,Jaipur,46,99,3.9,20,1799,BT Speaker Mini,,2026-09-12
+EL-BT-038,Lucknow,10,7,0.6,15,1799,BT Speaker Mini,6,2026-08-28
+EL-BT-038,Surat,389,67,4.0,30,1799,BT Speaker Mini,6,2026-08-29
+EL-BT-038,Indore,118,0,3.4,15,N/A,BT Speaker Mini,,
+EL-BT-038,Nagpur,145,84,2.2,30,"₹1,799",BT Speaker Mini,12,2026-08-17
+EL-BT-038,Kochi,55,0,1.0,30,"1,799.00",BT Speaker Mini,6,
+EL-BT-038,Chandigarh,135,297,3.3,15,1799,BT Speaker Mini,,2026-09-05
+EL-BT-038,Bhopal,131,0,4.7,15,"₹1,799",BT Speaker Mini,,
+EL-BT-038,Patna,0,0,0.8,15,1799,BT Speaker Mini,12,
+EL-BT-038,Vadodara,213,0,3.6,20,1799,BT Speaker Mini,6,
+EL-BT-039,Mumbai,83,0,1.8,15,"₹1,799",BT Speaker Mini,6,
+EL-BT-039,Delhi,51,0,2.5,20,1799,BT Speaker Mini,12,
+EL-BT-039,Bengaluru,73,0,2.0,20,1799,BT Speaker Mini,24,
+EL-BT-039,Hyderabad,251,73,2.8,30,"₹1,799",BT Speaker Mini,,2026-08-28
+EL-BT-039,Chennai,13,0,0.5,20,"1,799.00",BT Speaker Mini,6,
+EL-BT-039,Kolkata,128,81,2.8,30,1799,BT Speaker Mini,6,2026-09-14
+EL-BT-039,Pune,238,0,4.0,20,"1,799.00",BT Speaker Mini,12,
+EL-BT-039,Ahmedabad,38,0,1.5,20,1799,BT Speaker Mini,12,
+EL-BT-039,Jaipur,79,0,2.2,,1799,BT Speaker Mini,6,
+EL-BT-039,Lucknow,115,0,3.0,20,"Rs. 1,799",BT Speaker Mini,,
+EL-BT-039,Surat,18,0,1.2,15,"₹1,799",BT Speaker Mini,6,
+EL-BT-039,Indore,179,0,1.8,30,1799,BT Speaker Mini,6,
+EL-BT-039,Nagpur,149,129,3.8,30,"₹1,799",BT Speaker Mini,24,2026-08-23
+EL-BT-039,Kochi,104,0,4.1,15,"₹1,799",BT Speaker Mini,6,
+EL-BT-039,Chandigarh,159,0,3.6,20,"₹1,799",BT Speaker Mini,24,
+EL-BT-039,Bhopal,40,32,1.3,30,"₹1,799",BT Speaker Mini,6,2026-08-26
+EL-BT-039,Patna,17,7,0.5,20,1799,BT Speaker Mini,,2026-08-27
+EL-BT-039,Vadodara, 134 ,0,2.6,30,"Rs. 1,799",BT Speaker Mini,,
+EL-BT-040,Mumbai,46,0,4.5,15,"Rs. 1,799",BT Speaker Mini,,
+EL-BT-040,Delhi,25,0,0.9,15,"₹1,799",BT Speaker Mini,,
+EL-BT-040,Bengaluru,0,79,,30,"Rs. 1,799",BT Speaker Mini,,2026-09-02
+EL-BT-040,Hyderabad,64,0,1.8,30,1799,BT Speaker Mini,24,
+EL-BT-040,Chennai,25,0,2.8,20,1799,BT Speaker Mini,6,
+EL-BT-040,Kolkata, 27 ,51,2.3,20,"Rs. 1,799",BT Speaker Mini,6,2026-09-05
+EL-BT-040,Pune,194,0,4.9,20,1799,BT Speaker Mini,12,
+EL-BT-040,Ahmedabad,8,0,4.0,30,1799,BT Speaker Mini,24,
+EL-BT-040,Jaipur,33,0,2.0,30,"₹1,799",BT Speaker Mini,12,
+EL-BT-040,Lucknow,64,0,4.1,20,"₹1,799",BT Speaker Mini,6,
+EL-BT-040,Surat,16,5,0.5,20,"₹1,799",BT Speaker Mini,12,2026-08-25
+EL-BT-040,Indore,33,0,1.8,15,"₹1,799",BT Speaker Mini,12,
+EL-BT-040,Nagpur,10.5,0,1.1,15,1799,BT Speaker Mini,24,
+EL-BT-040,Kochi,55,0,3.4,20,1799,BT Speaker Mini,12,
+EL-BT-040,Chandigarh,315,0,3.2,30,1799,BT Speaker Mini,24,
+EL-BT-040,Bhopal,9,0,1.1,15,"Rs. 1,799",BT Speaker Mini,,
+EL-BT-040,Patna,238,0,5.0,20,1799,BT Speaker Mini,12,
+EL-BT-040,Vadodara,54,0,1.3,20,"₹1,799",BT Speaker Mini,24,
+EL-CAB-041,Mumbai,18,0,0.5,20,299,Cable USB-C 1m,24,
+EL-CAB-041,Delhi,200,0,4.5,20,₹299,Cable USB-C 1m,24,
+EL-CAB-041,Bengaluru,99,0,4.3,15,Rs. 299,Cable USB-C 1m,,
+EL-CAB-041,Hyderabad, 50 ,94,4.5,20,₹299,Cable USB-C 1m,,2026-08-24
+EL-CAB-041,Chennai,96,0,3.1,15,299,Cable USB-C 1m,24,
+EL-CAB-041,Kolkata,67,0,3.4,20,₹299,Cable USB-C 1m,6,
+EL-CAB-041,Pune,148,0,3.0,15,299,Cable USB-C 1m,12,
+EL-CAB-041,Pune,148,0,3.0,15,299,Cable USB-C 1m,12,
+EL-CAB-041,Ahmedabad,39,84,0.7,20,₹299,Cable USB-C 1m,24,2026-08-28
+EL-CAB-041,Jaipur,230,0,4.3,20,299,Cable USB-C 1m,24,
+EL-CAB-041,Lucknow,0,0,2.3,15,299,Cable USB-C 1m,,
+EL-CAB-041,Surat,16,32,3.3,20,₹299,Cable USB-C 1m,,2026-08-17
+EL-CAB-041,Indore,75,0,1.6,20,299.00,Cable USB-C 1m,,
+EL-CAB-041,Nagpur,16,31,2.1,30,299,Cable USB-C 1m,,2026-08-19
+EL-CAB-041,Kochi,103,0,2.4,20,299,Cable USB-C 1m,,
+EL-CAB-041,Chandigarh,61,0,1.2,20,299,Cable USB-C 1m,6,
+EL-CAB-041,Bhopal,246,81,2.5,30,299,Cable USB-C 1m,12,2026-08-22
+EL-CAB-041,Patna,200,166,4.0,30,N/A,Cable USB-C 1m,24,2026-08-23
+EL-CAB-041,Vadodara,10,42,1.5,30,299.00,Cable USB-C 1m,,2026-09-22
+EL-CAB-042,Mumbai,13,0,1.0,15,₹299,Cable USB-C 1m,24,
+EL-CAB-042,Delhi,29,0,0.8,15,299,Cable USB-C 1m,24,
+EL-CAB-042,Bengaluru, 28 ,0,0.6,20,₹299,Cable USB-C 1m,12,
+EL-CAB-042,Hyderabad,98,0,1.2,30,₹299,Cable USB-C 1m,,
+EL-CAB-042,Chennai,19,0,0.4,15,299,Cable USB-C 1m,,
+EL-CAB-042,Kolkata,242,0,3.6,20,299,Cable USB-C 1m,12,
+EL-CAB-042,Pune,121,-18,2.5,20,Rs. 299,Cable USB-C 1m,24,
+EL-CAB-042,Ahmedabad,21,0,0.8,20,₹299,Cable USB-C 1m,,
+EL-CAB-042,Jaipur,10,8,0.8,15,299,Cable USB-C 1m,6,2026-09-04
+EL-CAB-042,Lucknow,144,0,4.7,20,₹299,Cable USB-C 1m,6,
+EL-CAB-042,Surat,297,70,3.5,30,Rs. 299,Cable USB-C 1m,6,2026-08-21
+EL-CAB-042,Indore,122,0,2.0,30 days,Rs. 299,Cable USB-C 1m,,
+EL-CAB-042,Nagpur,115,0,4.6,15,299,Cable USB-C 1m,6,
+EL-CAB-042,Kochi,55,0,2.4,15,299,Cable USB-C 1m,6,
+EL-CAB-042,Chandigarh,40,7,0.8,15,₹299,Cable USB-C 1m,12,2026-09-10
+EL-CAB-042,Bhopal,25,0,1.2,20,Rs. 299,Cable USB-C 1m,24,
+EL-CAB-042,Patna,107,0,2.1,30,299,Cable USB-C 1m,12,
+EL-CAB-042,Vadodara,(7),0,0.3,20,Rs. 299,Cable USB-C 1m,,
+,Mumbai,10,0,0.4,30,299,Cable USB-C 1m,24,
+EL-CAB-043,Delhi,144,0,3.5,15,299,Cable USB-C 1m,12,
+EL-CAB-043,Bengaluru,20,0,0.5,15,299,Cable USB-C 1m,6,
+EL-CAB-043,Hyderabad,43,74,4.6,30,Rs. 299,Cable USB-C 1m,6,2026-08-20
+EL-CAB-043,Chennai,45,0,0.7,30,₹299,Cable USB-C 1m,12,
+EL-CAB-043,Kolkata,28,0,0.5,20,299,Cable USB-C 1m,12,
+EL-CAB-043,Pune,192,79,4.4,15,299,Cable USB-C 1m,6,2026-08-23
+EL-CAB-043,Ahmedabad,235,116,5.0,30,₹299,Cable USB-C 1m,6,2026-08-24
+EL-CAB-043,Jaipur,66,0,1.9,20,299,Cable USB-C 1m,,
+EL-CAB-043,Lucknow,64,0,1.8,,299,Cable USB-C 1m,6,
+EL-CAB-043,Surat,1,0,1.7,30,299.00,Cable USB-C 1m,12,
+EL-CAB-043,Indore,193.5,0,4.5,15,₹299,Cable USB-C 1m,,
+EL-CAB-043,Nagpur,11,0,3.0,15,299,Cable USB-C 1m,,
+EL-CAB-043,Kochi, 87 ,0,2.4,15,299,Cable USB-C 1m,12,
+EL-CAB-043,Chandigarh,170,0,4.3,15,Rs. 299,Cable USB-C 1m,6,
+EL-CAB-043,Bhopal,71,0,3.8,15,299,Cable USB-C 1m,6,
+EL-CAB-043,Patna,23,120,4.8,20,₹299,Cable USB-C 1m,12,2026-08-19
+EL-CAB-043,Vadodara,124,0,2.6,20,₹299,Cable USB-C 1m,,
+EL-CAB-044,Mumbai,118,288,3.2,15,₹299,Cable USB-C 1m,24,2026-08-21
+EL-CAB-044,Delhi,41,0,3.8,20,₹299,Cable USB-C 1m,,
+EL-CAB-044,Bengaluru,45,0,1.7,30,₹299,Cable USB-C 1m,,
+EL-CAB-044,Hyderabad,201,0,4.7,15,₹299,Cable USB-C 1m,6,
+EL-CAB-044,Chennai,147,0,2.5,30,₹299,Cable USB-C 1m,,
+EL-CAB-044,Kolkata,32,7,1.2,15,299,Cable USB-C 1m,,2026-09-24
+EL-CAB-044,Pune,116,0,4.1,15,299,Cable USB-C 1m,6,
+EL-CAB-044,Ahmedabad,68,0,2.4,20,₹299,Cable USB-C 1m,6,
+EL-CAB-044,Jaipur,52,0,1.3,15,₹299,Cable USB-C 1m,24,
+EL-CAB-044,Lucknow,205,0,3.2,30,Rs. 299,Cable USB-C 1m,6,
+EL-CAB-044,Surat,51,29,1.4,20,299,Cable USB-C 1m,,2026-08-17
+EL-CAB-044,Indore,135,0,4.3,20,Rs. 299,Cable USB-C 1m,,
+EL-CAB-044,Nagpur,147,0,4.0,20,299,Cable USB-C 1m,12,
+EL-CAB-044,Kochi,243,82,,30,₹299,Cable USB-C 1m,24,2026-08-20
+EL-CAB-044,Chandigarh,32,0,1.3,15,₹299,Cable USB-C 1m,,
+EL-CAB-044,Bhopal,104,0,2.6,30,299,Cable USB-C 1m,,
+EL-CAB-044,Patna,54,42,2.5,15,₹299,Cable USB-C 1m,12,2026-08-23
+EL-CAB-044,Vadodara,35,29,2.0,30,Rs. 299,Cable USB-C 1m,12,2026-09-09
+EL-CAB-045,Mumbai, 64 ,0,3.4,30,Rs. 299,Cable USB-C 1m,12,
+EL-CAB-045,Delhi,137,26,2.9,20,₹299,Cable USB-C 1m,24,2026-08-26
+EL-CAB-045,Bengaluru,44,0,0.7,30,₹299,Cable USB-C 1m,12,
+EL-CAB-045,Hyderabad,117,0,2.9,20,N/A,Cable USB-C 1m,,
+EL-CAB-045,Chennai,116,0,1.5,30,₹299,Cable USB-C 1m,6,
+EL-CAB-045,Kolkata,126,0,2.2,20,299,Cable USB-C 1m,12,
+EL-CAB-045,Pune,132,0,3.7,15,299,Cable USB-C 1m,,
+EL-CAB-045,Ahmedabad,19,0,0.7,20,Rs. 299,Cable USB-C 1m,24,
+EL-CAB-045,Jaipur,12,27,2.2,15,Rs. 299,Cable USB-C 1m,24,2026-09-05
+EL-CAB-045,Lucknow,108,0,4.8,30,299,Cable USB-C 1m,24,
+EL-CAB-045,Surat,13,0,3.2,15,₹299,Cable USB-C 1m,6,
+EL-CAB-045,Indore,57,0,4.6,15,₹299,Cable USB-C 1m,,
+EL-CAB-045,Nagpur,53,0,4.4,15,299,Cable USB-C 1m,24,
+EL-CAB-045,Kochi,28,20,1.1,20,299,Cable USB-C 1m,24,2026-08-26
+EL-CAB-045,Chandigarh,90,0,3.7,15,299,Cable USB-C 1m,,
+EL-CAB-045,Bhopal,131,0,2.4,20,₹299,Cable USB-C 1m,6,
+EL-CAB-045,Patna,67,0,3.7,15,299,Cable USB-C 1m,,
+EL-CAB-045,Vadodara, 60 ,0,1.7,15,Rs. 299,Cable USB-C 1m,24,
+EL-CAB-046,Mumbai,18,0,1.3,15,₹299,Cable USB-C 1m,,
+EL-CAB-046,Delhi,102,0,3.8,20,299,Cable USB-C 1m,24,
+EL-CAB-046,Bengaluru,12,0,0.8,20,299,Cable USB-C 1m,12,
+EL-CAB-046,Hyderabad,5,0,1.4,20,299,Cable USB-C 1m,6,
+EL-CAB-046,Chennai,50,0,1.4,15,299.00,Cable USB-C 1m,6,
+EL-CAB-046,Kolkata,90,-16,0.9,30,299,Cable USB-C 1m,12,
+EL-CAB-046,Pune,172,24,3.8,15,Rs. 299,Cable USB-C 1m,,2026-08-23
+EL-CAB-046,Ahmedabad,149,87,3.8,20,299,Cable USB-C 1m,12,2026-08-24
+EL-CAB-046,Jaipur,133,89,3.2,30,Rs. 299,Cable USB-C 1m,24,2026-09-23
+EL-CAB-046,Lucknow,197,0,4.2,15,₹299,Cable USB-C 1m,,
+EL-CAB-046,Surat,46.5,0,1.0,15,₹299,Cable USB-C 1m,6,
+EL-CAB-046,Indore,31,72,0.8,15,Rs. 299,Cable USB-C 1m,,
+EL-CAB-046,Nagpur,115,0,2.3,20,299,Cable USB-C 1m,6,
+EL-CAB-046,Kochi,89,0,1.4,20,Rs. 299,Cable USB-C 1m,,
+EL-CAB-046,Kochi,89,0,1.4,20,Rs. 299,Cable USB-C 1m,,
+EL-CAB-046,Chandigarh,297,0,3.6,30,₹299,Cable USB-C 1m,,
+EL-CAB-046,Bhopal,195,0,3.3,20,299.00,Cable USB-C 1m,6,
+EL-CAB-046,Patna,293,51,3.7,30,299.00,Cable USB-C 1m,,2026-08-19
+EL-CAB-046,Vadodara,81,0,1.8,15,₹299,Cable USB-C 1m,6,
+EL-CAB-047,Mumbai,58,0,1.4,20 days,299,Cable USB-C 1m,,
+EL-CAB-047,Delhi,136,0,2.7,20,₹299,Cable USB-C 1m,6,
+EL-CAB-047,Bengaluru,18,0,0.4,20,299,Cable USB-C 1m,12,
+EL-CAB-047,Hyderabad,147,0,3.7,15,299,Cable USB-C 1m,6,
+EL-CAB-047,Chennai,217,0,4.6,20,299,Cable USB-C 1m,12,
+EL-CAB-047,Kolkata,39,26,1.1,30,₹299,Cable USB-C 1m,12,2026-09-11
+EL-CAB-047,Pune,142,142,3.9,30,₹299,Cable USB-C 1m,6,2026-08-27
+EL-CAB-047,Ahmedabad,210,0,4.4,20,299.00,Cable USB-C 1m,6,
+EL-CAB-047,Jaipur,29,0,1.9,20,Rs. 299,Cable USB-C 1m,24,
+EL-CAB-047,Lucknow,65,0,1.1,20,299,Cable USB-C 1m,,
+EL-CAB-047,Surat,132,0,4.6,,299,Cable USB-C 1m,,
+EL-CAB-047,Indore,182,0,3.8,15,299,Cable USB-C 1m,6,
+EL-CAB-047,Nagpur,240,65,3.6,20,299,Cable USB-C 1m,12,2026-08-21
+EL-CAB-047,Kochi,45,0,1.8,30,Rs. 299,Cable USB-C 1m,24,
+EL-CAB-047,Chandigarh,48,0,1.4,20,₹299,Cable USB-C 1m,24,
+EL-CAB-047,Bhopal, 59 ,0,2.7,15,299,Cable USB-C 1m,6,
+EL-CAB-047,Patna,-5,0,0.8,30,299,Cable USB-C 1m,24,
+EL-CAB-047,Vadodara,50,0,1.0,20,299.00,Cable USB-C 1m,6,
+EL-CAB-048,Mumbai,57,0,2.5,30,Rs. 299,Cable USB-C 1m,6,
+EL-CAB-048,Delhi, 0 ,0,3.0,20,Rs. 299,Cable USB-C 1m,6,
+EL-CAB-048,Bengaluru,89,0,1.6,20,Rs. 299,Cable USB-C 1m,24,
+EL-CAB-048,Hyderabad,125,0,3.4,20,₹299,Cable USB-C 1m,,
+EL-CAB-048,Chennai, 62 ,12,1.3,15,299.00,Cable USB-C 1m,6,2026-08-17
+EL-CAB-048,Kolkata,49,19,1.0,15,299,Cable USB-C 1m,6,2026-09-16
+EL-CAB-048,Pune,42,0,1.4,15,Rs. 299,Cable USB-C 1m,6,
+EL-CAB-048,Ahmedabad,133,0,2.7,30,Rs. 299,Cable USB-C 1m,,
+EL-CAB-048,Jaipur,15,0,0.4,15,N/A,Cable USB-C 1m,12,
+EL-CAB-048,Lucknow,125,0,4.8,15,299,Cable USB-C 1m,12,
+EL-CAB-048,Surat,108,0,2.5,15,299,Cable USB-C 1m,,
+,Indore,4,0,1.2,20,299,Cable USB-C 1m,6,
+EL-CAB-048,Nagpur, 9 ,0,0.3,20,₹299,Cable USB-C 1m,6,
+EL-CAB-048,Kochi,15,0,0.5,15,299.00,Cable USB-C 1m,24,
+EL-CAB-048,Chandigarh,149,0,4.6,20,₹299,Cable USB-C 1m,6,
+EL-CAB-048,Bhopal,187,0,2.8,30,299,Cable USB-C 1m,,
+EL-CAB-048,Patna,180,0,2.9,30,Rs. 299,Cable USB-C 1m,,
+EL-CAB-048,Vadodara,135,50,4.3,15,299,Cable USB-C 1m,24,2026-09-01
+EL-CAB-049,Mumbai,105,0,3.6,15,299,Cable USB-C 1m,12,
+EL-CAB-049,Delhi,90,0,2.2,15,₹299,Cable USB-C 1m,6,
+EL-CAB-049,Bengaluru,114,0,5.0,30,299,Cable USB-C 1m,,
+EL-CAB-049,Hyderabad,134,0,3.6,20,₹299,Cable USB-C 1m,,
+EL-CAB-049,Chennai,213,456,3.8,20,299,Cable USB-C 1m,,
+EL-CAB-049,Kolkata,3,0,3.3,30,₹299,Cable USB-C 1m,6,
+EL-CAB-049,Pune,19,0,,15,299.00,Cable USB-C 1m,,
+EL-CAB-049,Ahmedabad,59,0,3.1,30,Rs. 299,Cable USB-C 1m,,
+EL-CAB-049,Jaipur,89,0,3.7,30,299,Cable USB-C 1m,6,
+EL-CAB-049,Lucknow,55.5,0,1.2,20,299,Cable USB-C 1m,,
+EL-CAB-049,Surat,65,24,1.6,20,299,Cable USB-C 1m,6,2026-08-27
+EL-CAB-049,Indore,25,0,1.8,15,299,Cable USB-C 1m,12,
+EL-CAB-049,Nagpur,167,0,1.8,30,299,Cable USB-C 1m,12,
+EL-CAB-049,Kochi,0,0,3.5,30,₹299,Cable USB-C 1m,6,
+EL-CAB-049,Chandigarh,97,40,3.0,20,299.00,Cable USB-C 1m,6,2026-09-16
+EL-CAB-049,Bhopal,185,0,4.0,15,299.00,Cable USB-C 1m,6,
+EL-CAB-049,Patna,199,0,3.3,20,299,Cable USB-C 1m,24,
+EL-CAB-049,Vadodara,213,0,3.5,20,299,Cable USB-C 1m,12,
+EL-CAB-050,Mumbai,242,53,4.8,20,₹299,Cable USB-C 1m,24,2026-08-23
+EL-CAB-050,Delhi,6,0,3.3,15,₹299,Cable USB-C 1m,6,
+EL-CAB-050,Bengaluru,256,0,4.6,30,299,Cable USB-C 1m,6,
+EL-CAB-050,Hyderabad,77,0,1.1,30,₹299,Cable USB-C 1m,6,
+EL-CAB-050,Chennai,34,-10,1.9,15,299.00,Cable USB-C 1m,24,
+EL-CAB-050,Kolkata, 14 ,0,1.1,30,299,Cable USB-C 1m,12,
+EL-CAB-050,Pune,13,0,0.7,15,299,Cable USB-C 1m,,
+EL-CAB-050,Ahmedabad,36,8,0.8,20,Rs. 299,Cable USB-C 1m,12,2026-08-30
+EL-CAB-050,Jaipur,3,0,0.3,30,299.00,Cable USB-C 1m,6,
+EL-CAB-050,Lucknow,54,0,3.3,30,299,Cable USB-C 1m,24,
+EL-CAB-050,Surat,75,0,1.3,20,₹299,Cable USB-C 1m,6,
+EL-CAB-050,Indore,36,0,1.0,20,₹299,Cable USB-C 1m,6,
+EL-CAB-050,Nagpur,2,0,3.9,20,299,Cable USB-C 1m,24,
+EL-CAB-050,Kochi,198,0,2.7,30,₹299,Cable USB-C 1m,,
+EL-CAB-050,Chandigarh,200,0,2.2,30,Rs. 299,Cable USB-C 1m,6,
+EL-CAB-050,Bhopal,10,0,0.6,15,Rs. 299,Cable USB-C 1m,24,
+EL-CAB-050,Patna,304,0,5.0,20,299,Cable USB-C 1m,12,
+EL-CAB-050,Vadodara,44,18,3.0,15,Rs. 299,Cable USB-C 1m,6,2026-09-24
+EL-CHA-051,Mumbai,90,0,1.0,30,"₹1,599",Charger 65W,6,
+EL-CHA-051,Delhi,179,0,3.9,30,"1,599.00",Charger 65W,24,
+EL-CHA-051,Bengaluru,47,0,1.0,20,1599,Charger 65W,24,
+EL-CHA-051,Hyderabad, 52 ,0,3.9,30,"Rs. 1,599",Charger 65W,,
+EL-CHA-051,Chennai,50,0,4.3,30,"₹1,599",Charger 65W,6,
+EL-CHA-051,Kolkata, 63 ,0,2.1,30,1599,Charger 65W,24,
+EL-CHA-051,Pune,29,0,4.5,15,1599,Charger 65W,6,
+EL-CHA-051,Ahmedabad,135,0,4.2,15 days,1599,Charger 65W,,
+EL-CHA-051,Jaipur,60,28,4.4,15,1599,Charger 65W,6,2026-09-06
+EL-CHA-051,Lucknow,107,0,3.4,30,1599,Charger 65W,12,
+EL-CHA-051,Surat,63,0,4.0,15,1599,Charger 65W,12,
+EL-CHA-051,Indore,244,0,4.5,,1599,Charger 65W,,
+EL-CHA-051,Nagpur,21,0,2.1,30,"Rs. 1,599",Charger 65W,6,
+EL-CHA-051,Kochi,69,0,2.8,20,N/A,Charger 65W,24,
+EL-CHA-051,Chandigarh,87,0,3.5,15,1599,Charger 65W,6,
+EL-CHA-051,Bhopal,39,420,3.5,20,1599,Charger 65W,6,
+EL-CHA-051,Patna,98,0,3.5,30,"Rs. 1,599",Charger 65W,6,
+EL-CHA-051,Vadodara,428,103,4.8,30,"₹1,599",Charger 65W,,2026-09-15
+EL-CHA-052,Mumbai,24,0,0.4,20,1599,Charger 65W,12,
+EL-CHA-052,Delhi,48,58,3.8,15,"₹1,599",Charger 65W,6,2026-08-20
+EL-CHA-052,Bengaluru,90,0,3.4,15,1599,Charger 65W,24,
+EL-CHA-052,Bengaluru,90,0,3.4,15,1599,Charger 65W,24,
+EL-CHA-052,Hyderabad,55,0,1.1,15,"₹1,599",Charger 65W,6,
+EL-CHA-052,Chennai,326,0,4.0,30,1599,Charger 65W,6,
+EL-CHA-052,Kolkata,7,0,0.3,30,1599,Charger 65W,12,
+EL-CHA-052,Pune,227,0,2.9,30,"₹1,599",Charger 65W,24,
+EL-CHA-052,Ahmedabad,284,0,3.1,30,1599,Charger 65W,24,
+EL-CHA-052,Jaipur,60.5,74,4.1,30,1599,Charger 65W,12,2026-09-11
+EL-CHA-052,Lucknow,131,0,4.3,15,"₹1,599",Charger 65W,12,
+EL-CHA-052,Surat,52,0,3.2,20,"₹1,599",Charger 65W,,
+EL-CHA-052,Indore,33,0,1.7,30,"Rs. 1,599",Charger 65W,,
+EL-CHA-052,Nagpur,137,0,3.5,20,1599,Charger 65W,12,
+EL-CHA-052,Kochi, 81 ,0,2.2,20,1599,Charger 65W,12,
+EL-CHA-052,Chandigarh,360,0,3.9,30,1599,Charger 65W,6,
+EL-CHA-052,Bhopal,-3,0,3.5,30,1599,Charger 65W,24,
+EL-CHA-052,Patna,69,0,0.7,30,"₹1,599",Charger 65W,,
+EL-CHA-052,Vadodara,124,0,3.4,20,"₹1,599",Charger 65W,12,
+EL-CHA-053,Mumbai,1,0,1.1,30,"₹1,599",Charger 65W,24,
+EL-CHA-053,Delhi,150,79,3.9,30,1599,Charger 65W,12,2026-08-24
+EL-CHA-053,Bengaluru,91,0,0.9,30,"1,599.00",Charger 65W,6,
+EL-CHA-053,Hyderabad,0,24,0.9,30,"₹1,599",Charger 65W,6,2026-08-26
+EL-CHA-053,Chennai,217,119,3.3,30,"Rs. 1,599",Charger 65W,,2026-08-27
+EL-CHA-053,Kolkata,50,39,1.1,30,"₹1,599",Charger 65W,24,2026-09-26
+EL-CHA-053,Pune,84,0,3.6,15,"Rs. 1,599",Charger 65W,12,
+EL-CHA-053,Ahmedabad,136,0,4.9,30,"Rs. 1,599",Charger 65W,24,
+EL-CHA-053,Jaipur,38,0,1.9,20,1599,Charger 65W,12,
+EL-CHA-053,Lucknow,148,0,2.4,20,1599,Charger 65W,24,
+EL-CHA-053,Surat,8,0,4.4,30,"₹1,599",Charger 65W,,
+EL-CHA-053,Indore,66,0,1.8,15,"₹1,599",Charger 65W,12,
+EL-CHA-053,Nagpur,65,0,2.3,30,"Rs. 1,599",Charger 65W,12,
+EL-CHA-053,Kochi,66,0,3.2,15,1599,Charger 65W,,
+EL-CHA-053,Chandigarh,404,0,4.8,30,"1,599.00",Charger 65W,6,
+EL-CHA-053,Bhopal,16,0,1.7,20,1599,Charger 65W,24,
+EL-CHA-053,Patna,253,55,4.0,20,"Rs. 1,599",Charger 65W,6,2026-08-25
+EL-CHA-053,Vadodara,42,0,,20,"Rs. 1,599",Charger 65W,,
+EL-CHA-054,Mumbai,131,0,4.7,15,1599,Charger 65W,24,
+EL-CHA-054,Delhi, 28 ,0,2.6,15,1599,Charger 65W,24,
+EL-CHA-054,Bengaluru,2,0,2.6,15,1599,Charger 65W,,
+EL-CHA-054,Hyderabad,142,-1,4.7,15,"Rs. 1,599",Charger 65W,6,
+,Chennai,149,0,3.5,30,"Rs. 1,599",Charger 65W,6,
+EL-CHA-054,Kolkata,107,0,3.9,20,1599,Charger 65W,12,
+EL-CHA-054,Pune,49,0,0.5,30,"₹1,599",Charger 65W,6,
+EL-CHA-054,Ahmedabad,97,48,1.5,30,1599,Charger 65W,,2026-08-22
+EL-CHA-054,Jaipur,86,252,2.1,20,1599,Charger 65W,,
+EL-CHA-054,Lucknow,32,28,1.6,15,1599,Charger 65W,12,2026-08-24
+EL-CHA-054,Surat,214,0,2.4,30,"₹1,599",Charger 65W,24,
+EL-CHA-054,Indore,77,16,1.1,30,"Rs. 1,599",Charger 65W,,2026-09-10
+EL-CHA-054,Nagpur,25,0,2.4,20,"Rs. 1,599",Charger 65W,12,
+EL-CHA-054,Kochi,123,0,1.9,20,"Rs. 1,599",Charger 65W,,
+EL-CHA-054,Chandigarh,62,37,4.7,15,1599,Charger 65W,6,2026-09-13
+EL-CHA-054,Bhopal,78,0,2.9,15,"1,599.00",Charger 65W,24,
+EL-CHA-054,Patna, 13 ,0,0.5,20,"1,599.00",Charger 65W,6,
+EL-CHA-054,Vadodara,209,0,4.7,20,1599,Charger 65W,,
+EL-CHA-055,Mumbai,35,0,0.6,20,N/A,Charger 65W,12,
+EL-CHA-055,Delhi,170,0,3.7,15,"₹1,599",Charger 65W,12,
+EL-CHA-055,Bengaluru,176,37,1.9,30,1599,Charger 65W,,2026-09-19
+EL-CHA-055,Hyderabad,7, 47 ,3.7,15,1599,Charger 65W,24,2026-08-22
+EL-CHA-055,Chennai, 200 ,51,3.5,30,"Rs. 1,599",Charger 65W,6,2026-08-23
+EL-CHA-055,Kolkata,24,0,4.9,15,"Rs. 1,599",Charger 65W,24,
+EL-CHA-055,Pune,42,0,4.9,20,1599,Charger 65W,,
+EL-CHA-055,Ahmedabad,186.5,0,2.8,20,"Rs. 1,599",Charger 65W,24,
+EL-CHA-055,Jaipur,20,0,3.3,30,1599,Charger 65W,12,
+EL-CHA-055,Lucknow,22,0,0.8,20,1599,Charger 65W,24,
+EL-CHA-055,Surat,121,0,4.3,30,"₹1,599",Charger 65W,12,
+EL-CHA-055,Indore,0,0,0.6,20,"Rs. 1,599",Charger 65W,6,
+EL-CHA-055,Nagpur,23,39,2.4,,"₹1,599",Charger 65W,24,2026-08-17
+EL-CHA-055,Kochi,95,0,4.7,30,"₹1,599",Charger 65W,24,
+EL-CHA-055,Chandigarh,116,0,2.2,20 days,"Rs. 1,599",Charger 65W,,
+EL-CHA-055,Bhopal,18,0,4.6,20,1599,Charger 65W,24,
+EL-CHA-055,Patna,20,0,0.5,30,"₹1,599",Charger 65W,12,
+EL-CHA-055,Vadodara,144,0,2.6,20,"Rs. 1,599",Charger 65W,24,
+EL-CHA-056,Mumbai,66,0,1.1,30,1599,Charger 65W,,
+EL-CHA-056,Delhi,118,0,1.8,20,1599,Charger 65W,,
+EL-CHA-056,Bengaluru,17,0,4.8,15,1599,Charger 65W,12,
+EL-CHA-056,Hyderabad,208,0,5.0,15,"1,599.00",Charger 65W,24,
+EL-CHA-056,Chennai,257,0,4.1,30,"₹1,599",Charger 65W,,
+EL-CHA-056,Kolkata, 41 ,0,0.7,20,1599,Charger 65W,24,
+EL-CHA-056,Pune, 37 ,41,4.7,20,"Rs. 1,599",Charger 65W,12,2026-08-29
+EL-CHA-056,Ahmedabad,77,0,2.3,20,1599,Charger 65W,,
+EL-CHA-056,Jaipur,125,27,2.5,20,"₹1,599",Charger 65W,6,2026-09-16
+EL-CHA-056,Lucknow,132,0,3.0,30,1599,Charger 65W,6,
+EL-CHA-056,Surat,245,0,3.9,20,"Rs. 1,599",Charger 65W,6,
+EL-CHA-056,Indore,47,0,1.2,20,1599,Charger 65W,12,
+EL-CHA-056,Nagpur,101,0,1.6,20,"₹1,599",Charger 65W,6,
+EL-CHA-056,Kochi,126,0,2.3,20,"₹1,599",Charger 65W,6,
+EL-CHA-056,Chandigarh,164,0,4.3,20,"1,599.00",Charger 65W,6,
+EL-CHA-056,Bhopal,54,0,4.3,15,"₹1,599",Charger 65W,12,
+EL-CHA-056,Patna,179,72,3.6,15,"Rs. 1,599",Charger 65W,,2026-08-27
+EL-CHA-056,Vadodara,18,12,0.9,30,"1,599.00",Charger 65W,24,2026-09-12
+EL-CHA-057,Mumbai,5,0,2.3,30,1599,Charger 65W,12,
+EL-CHA-057,Delhi,125,396,2.2,30,"₹1,599",Charger 65W,24,2026-08-30
+EL-CHA-057,Bengaluru,63,0,1.3,15,1599,Charger 65W,,
+EL-CHA-057,Hyderabad,39,0,1.9,20,"1,599.00",Charger 65W,,
+EL-CHA-057,Chennai,124,0,2.4,20,"₹1,599",Charger 65W,12,
+EL-CHA-057,Kolkata,181,0,3.9,20,"₹1,599",Charger 65W,24,
+EL-CHA-057,Pune,1,0,4.0,20,"₹1,599",Charger 65W,,
+EL-CHA-057,Ahmedabad,11,0,2.9,15,"Rs. 1,599",Charger 65W,,
+EL-CHA-057,Jaipur,57,36,1.9,15,1599,Charger 65W,24,2026-09-21
+EL-CHA-057,Lucknow,34,0,1.1,15,"₹1,599",Charger 65W,24,
+EL-CHA-057,Lucknow,34,0,1.1,15,"₹1,599",Charger 65W,24,
+EL-CHA-057,Surat, 117 ,0,4.2,15,"₹1,599",Charger 65W,24,
+EL-CHA-057,Indore,101,34,2.3,15,"1,599.00",Charger 65W,12,2026-09-24
+EL-CHA-057,Nagpur,0,0,0.3,15,"Rs. 1,599",Charger 65W,24,
+EL-CHA-057,Kochi,78,0,1.3,20,1599,Charger 65W,,
+EL-CHA-057,Chandigarh,-8,0,2.4,15,1599,Charger 65W,12,
+EL-CHA-057,Bhopal,175,0,3.0,20,"₹1,599",Charger 65W,6,
+EL-CHA-057,Patna,167,0,3.9,30,1599,Charger 65W,,
+EL-CHA-057,Vadodara,96,92,3.0,30,1599,Charger 65W,12,2026-09-03
+EL-CHA-058,Mumbai, 49 ,0,2.4,15,1599,Charger 65W,6,
+EL-CHA-058,Delhi,10,50,1.9,20,1599,Charger 65W,24,2026-08-20
+EL-CHA-058,Bengaluru,29,-18,1.0,15,"1,599.00",Charger 65W,,
+EL-CHA-058,Hyderabad,127,0,2.1,20,1599,Charger 65W,12,
+EL-CHA-058,Chennai,87,64,4.2,15,"₹1,599",Charger 65W,,2026-08-23
+EL-CHA-058,Kolkata,39,51,2.8,20,N/A,Charger 65W,,2026-09-09
+EL-CHA-058,Pune,44.5,25,1.7,30,1599,Charger 65W,,2026-08-25
+EL-CHA-058,Ahmedabad,145,0,3.3,20,1599,Charger 65W,12,
+EL-CHA-058,Jaipur,113,0,3.6,15,"₹1,599",Charger 65W,6,
+EL-CHA-058,Lucknow,71,0,1.5,15,"Rs. 1,599",Charger 65W,24,
+EL-CHA-058,Surat,20,0,,15,1599,Charger 65W,,
+EL-CHA-058,Indore,92,0,4.9,20,1599,Charger 65W,24,
+EL-CHA-058,Nagpur,52,0,1.5,15,1599,Charger 65W,12,
+EL-CHA-058,Kochi,63,0,4.3,30,"Rs. 1,599",Charger 65W,12,
+EL-CHA-058,Chandigarh,179,0,3.1,30,"₹1,599",Charger 65W,6,
+EL-CHA-058,Bhopal,49,0,3.5,30,1599,Charger 65W,24,
+EL-CHA-058,Patna,12,0,2.6,15,1599,Charger 65W,6,
+EL-CHA-058,Vadodara,167,64,2.7,20,1599,Charger 65W,12,2026-09-08
+EL-CHA-059,Mumbai,5,51,1.3,30,"Rs. 1,599",Charger 65W,,2026-08-25
+EL-CHA-059,Delhi,30,0,2.5,15,1599,Charger 65W,,
+EL-CHA-059,Bengaluru,108,50,2.8,15,1599,Charger 65W,24,2026-09-11
+EL-CHA-059,Hyderabad, 9 ,0,0.4,15,"1,599.00",Charger 65W,24,
+EL-CHA-059,Chennai,104,84,2.2,30,1599,Charger 65W,24,2026-08-29
+EL-CHA-059,Kolkata,27,0,0.8,15,"₹1,599",Charger 65W,,
+EL-CHA-059,Pune,194,44,3.1,30,"₹1,599",Charger 65W,24,2026-08-17
+EL-CHA-059,Ahmedabad,263,0,4.4,20,"₹1,599",Charger 65W,,
+EL-CHA-059,Jaipur,148,0,4.3,20,1599,Charger 65W,,
+EL-CHA-059,Lucknow, 68 ,0,4.1,30,"₹1,599",Charger 65W,12,
+EL-CHA-059,Surat,169,0,3.9,20,1599,Charger 65W,12,
+EL-CHA-059,Indore,36,0,1.1,20,"Rs. 1,599",Charger 65W,,
+EL-CHA-059,Nagpur,16,306,3.4,15,"1,599.00",Charger 65W,6,2026-08-23
+EL-CHA-059,Kochi,31,0,1.7,,"₹1,599",Charger 65W,,
+EL-CHA-059,Chandigarh,21,0,4.4,20,"Rs. 1,599",Charger 65W,,
+,Bhopal,80,0,4.2,15,"Rs. 1,599",Charger 65W,,
+EL-CHA-059,Patna,14,58,3.2,20,"₹1,599",Charger 65W,,2026-08-27
+EL-CHA-059,Vadodara,65,0,4.6,20,"₹1,599",Charger 65W,12,
+EL-CHA-060,Mumbai,11,34,1.8,20,"₹1,599",Charger 65W,24,2026-08-29
+EL-CHA-060,Delhi,71,0,1.8,15,1599,Charger 65W,24,
+EL-CHA-060,Bengaluru,103,0,4.8,15,1599,Charger 65W,6,
+EL-CHA-060,Hyderabad,96,0,1.6,30 days,"1,599.00",Charger 65W,24,
+EL-CHA-060,Chennai,4,3,0.5,15,1599,Charger 65W,,2026-08-19
+EL-CHA-060,Kolkata,112,0,1.5,30,1599,Charger 65W,24,
+EL-CHA-060,Pune,2,0,0.5,20,"₹1,599",Charger 65W,12,
+EL-CHA-060,Ahmedabad,81,0,3.3,15,"₹1,599",Charger 65W,12,
+EL-CHA-060,Jaipur,39,0,1.5,20,"₹1,599",Charger 65W,24,
+EL-CHA-060,Lucknow,58,0,3.0,20,"₹1,599",Charger 65W,24,
+EL-CHA-060,Surat,136,0,3.4,15,1599,Charger 65W,,
+EL-CHA-060,Indore,64,0,2.6,15,1599,Charger 65W,24,
+EL-CHA-060,Nagpur,69,0,1.5,15,1599,Charger 65W,24,
+EL-CHA-060,Kochi,68,0,3.7,30,1599,Charger 65W,12,
+EL-CHA-060,Chandigarh,62,61,4.4,15,"1,599.00",Charger 65W,,2026-09-14
+EL-CHA-060,Bhopal,1,0,1.1,20,"₹1,599",Charger 65W,6,
+EL-CHA-060,Patna,67,88,5.0,15,"₹1,599",Charger 65W,6,2026-08-17
+EL-CHA-060,Vadodara, 10 ,0,0.9,30,1599,Charger 65W,6,
+EL-MOU-061,Mumbai, 30 ,0,0.7,20,₹899,Mouse Wireless,,
+EL-MOU-061,Delhi,283,0,4.6,30,Rs. 899,Mouse Wireless,24,
+EL-MOU-061,Bengaluru,54,38,4.7,15,₹899,Mouse Wireless,24,2026-09-07
+EL-MOU-061,Hyderabad,13,0,4.6,15,899,Mouse Wireless,6,
+EL-MOU-061,Chennai,13,0,1.8,20,899,Mouse Wireless,24,
+EL-MOU-061,Kolkata,424.5,0,4.9,30,₹899,Mouse Wireless,,
+EL-MOU-061,Pune,41,0,1.0,15,899,Mouse Wireless,,
+EL-MOU-061,Ahmedabad,9,8,0.4,20,899,Mouse Wireless,12,2026-08-28
+EL-MOU-061,Jaipur,41,0,0.9,15,Rs. 899,Mouse Wireless,6,
+EL-MOU-061,Lucknow,51,0,1.1,15,899,Mouse Wireless,6,
+EL-MOU-061,Surat,151,0,3.2,30,N/A,Mouse Wireless,6,
+EL-MOU-061,Indore,0,0,0.3,30,899.00,Mouse Wireless,,
+EL-MOU-061,Nagpur,158,0,2.9,20,₹899,Mouse Wireless,,
+EL-MOU-061,Kochi,182,88,4.0,20,899,Mouse Wireless,6,2026-08-20
+EL-MOU-061,Chandigarh,11,61,1.9,30,₹899,Mouse Wireless,12,2026-09-19
+EL-MOU-061,Bhopal,60,0,0.7,30,899,Mouse Wireless,12,
+EL-MOU-061,Patna,0,0,0.6,30,₹899,Mouse Wireless,6,
+EL-MOU-061,Vadodara, 47 ,19,1.3,15,899,Mouse Wireless,24,2026-09-22
+EL-MOU-062,Mumbai,24,0,1.0,15,899,Mouse Wireless,,
+EL-MOU-062,Delhi,29,-3,2.4,20,899,Mouse Wireless,12,
+EL-MOU-062,Bengaluru,5,0,4.0,15,899,Mouse Wireless,,
+EL-MOU-062,Hyderabad,31,0,1.2,15,₹899,Mouse Wireless,,
+EL-MOU-062,Chennai,153,0,4.0,30,899,Mouse Wireless,24,
+EL-MOU-062,Kolkata,174,324,1.8,30,899,Mouse Wireless,24,
+EL-MOU-062,Pune,50,0,4.8,30,899,Mouse Wireless,12,
+EL-MOU-062,Ahmedabad,108,0,3.3,20,₹899,Mouse Wireless,24,
+EL-MOU-062,Jaipur,6,0,1.2,20,899.00,Mouse Wireless,,
+EL-MOU-062,Lucknow,338,0,3.4,30,899,Mouse Wireless,,
+EL-MOU-062,Surat,103,27,1.4,30,₹899,Mouse Wireless,6,2026-08-21
+EL-MOU-062,Indore, 14 ,0,0.8,30,₹899,Mouse Wireless,6,
+EL-MOU-062,Nagpur,79,0,2.4,30,₹899,Mouse Wireless,24,
+EL-MOU-062,Kochi,-2,0,3.9,30,899.00,Mouse Wireless,6,
+EL-MOU-062,Chandigarh,43,29,0.9,30,899,Mouse Wireless,,2026-09-10
+EL-MOU-062,Bhopal,4,0,1.2,20,₹899,Mouse Wireless,12,
+EL-MOU-062,Patna,33,0,2.7,15,899,Mouse Wireless,,
+EL-MOU-062,Patna,33,0,2.7,15,899,Mouse Wireless,,
+EL-MOU-062,Vadodara,3,2,0.3,15,899,Mouse Wireless,,2026-09-13
+EL-MOU-063,Mumbai,24,0,2.4,20,899,Mouse Wireless,24,
+EL-MOU-063,Delhi,96,33,3.4,15,₹899,Mouse Wireless,,2026-08-30
+EL-MOU-063,Bengaluru,52,0,1.2,15,₹899,Mouse Wireless,24,
+EL-MOU-063,Hyderabad,20,0,,15,899,Mouse Wireless,,
+EL-MOU-063,Chennai,174,0,3.9,20,899,Mouse Wireless,,
+EL-MOU-063,Kolkata,29,0,0.6,15,Rs. 899,Mouse Wireless,24,
+EL-MOU-063,Pune,37,0,2.3,20,₹899,Mouse Wireless,6,
+EL-MOU-063,Ahmedabad, 59 ,0,1.8,30,899,Mouse Wireless,6,
+EL-MOU-063,Jaipur,54,0,3.8,15,Rs. 899,Mouse Wireless,,
+EL-MOU-063,Lucknow,63,0,1.4,20,899,Mouse Wireless,6,
+EL-MOU-063,Surat,29, 15 ,1.1,15,899,Mouse Wireless,6,2026-08-27
+EL-MOU-063,Indore,2,0,1.1,15,899,Mouse Wireless,12,
+EL-MOU-063,Nagpur,137, 39 ,1.9,30,Rs. 899,Mouse Wireless,6,2026-08-29
+EL-MOU-063,Kochi, 166 ,0,3.6,30,899,Mouse Wireless,6,
+EL-MOU-063,Chandigarh,9,0,0.6,,₹899,Mouse Wireless,12,
+EL-MOU-063,Bhopal,175,0,4.4,20,Rs. 899,Mouse Wireless,,
+EL-MOU-063,Patna,52,0,3.5,15,Rs. 899,Mouse Wireless,24,
+EL-MOU-063,Vadodara,9,0,2.5,20,899,Mouse Wireless,12,
+EL-MOU-064,Mumbai,113,0,4.7,20,₹899,Mouse Wireless,,
+EL-MOU-064,Delhi,82,0,3.4,20,899.00,Mouse Wireless,,
+EL-MOU-064,Bengaluru,205, 160 ,4.9,30,899,Mouse Wireless,,2026-09-21
+EL-MOU-064,Hyderabad,74,0,1.6,20,899,Mouse Wireless,6,
+EL-MOU-064,Chennai,39.5,0,0.9,30,Rs. 899,Mouse Wireless,6,
+EL-MOU-064,Kolkata,178,0,3.9,30,Rs. 899,Mouse Wireless,6,
+EL-MOU-064,Pune,273, 167 ,4.4,30,899,Mouse Wireless,6,2026-08-27
+EL-MOU-064,Ahmedabad,24,0,2.6,30,899,Mouse Wireless,12,
+EL-MOU-064,Jaipur,3,49,1.8,20,899,Mouse Wireless,,2026-09-27
+EL-MOU-064,Lucknow,6,0,0.7,15,899.00,Mouse Wireless,,
+EL-MOU-064,Surat,176,83,2.0,30 days,899,Mouse Wireless,24,2026-08-17
+EL-MOU-064,Indore,147,55,4.1,15,₹899,Mouse Wireless,12,2026-09-03
+EL-MOU-064,Nagpur,74,0,2.2,20,₹899,Mouse Wireless,24,
+EL-MOU-064,Kochi,68,0,1.6,15,Rs. 899,Mouse Wireless,24,
+EL-MOU-064,Chandigarh,117,0,1.2,30,Rs. 899,Mouse Wireless,,
+EL-MOU-064,Bhopal,140,0,1.5,30,N/A,Mouse Wireless,12,
+EL-MOU-064,Patna,213,600,5.0,20,899,Mouse Wireless,6,
+EL-MOU-064,Vadodara,6,4,0.4,20,899,Mouse Wireless,,2026-09-09
+EL-MOU-065,Mumbai,396,0,4.9,30,899,Mouse Wireless,6,
+EL-MOU-065,Delhi,17,0,0.4,15,899,Mouse Wireless,,
+EL-MOU-065,Bengaluru,284,68,2.8,30,₹899,Mouse Wireless,24,2026-09-12
+EL-MOU-065,Hyderabad, 157 ,0,2.7,30,₹899,Mouse Wireless,6,
+EL-MOU-065,Chennai,99,0,1.3,30,Rs. 899,Mouse Wireless,6,
+EL-MOU-065,Kolkata,22,0,0.4,30,₹899,Mouse Wireless,6,
+EL-MOU-065,Pune,70,0,1.0,30,899,Mouse Wireless,12,
+EL-MOU-065,Ahmedabad,143,0,4.0,15,899,Mouse Wireless,,
+,Jaipur,51,0,3.0,15,₹899,Mouse Wireless,6,
+EL-MOU-065,Lucknow,34,0,1.3,30,Rs. 899,Mouse Wireless,6,
+EL-MOU-065,Surat,7,59,3.3,30,₹899,Mouse Wireless,6,2026-08-23
+EL-MOU-065,Indore,6,0,3.7,30,₹899,Mouse Wireless,24,
+EL-MOU-065,Nagpur,303,0,4.6,20,899.00,Mouse Wireless,12,
+EL-MOU-065,Kochi,72,0,1.3,20,899,Mouse Wireless,,
+EL-MOU-065,Chandigarh,99,0,3.2,15,₹899,Mouse Wireless,24,
+EL-MOU-065,Bhopal,155,0,3.4,15,899,Mouse Wireless,,
+EL-MOU-065,Patna,24,0,4.5,20,Rs. 899,Mouse Wireless,,
+EL-MOU-065,Vadodara,178,0,2.2,30,899,Mouse Wireless,12,
+EL-MOU-066,Mumbai,20,-9,0.6,15,899,Mouse Wireless,,
+EL-MOU-066,Delhi, 246 ,0,3.1,30,₹899,Mouse Wireless,24,
+EL-MOU-066,Bengaluru,72,0,2.5,20,899,Mouse Wireless,12,
+EL-MOU-066,Hyderabad,63,0,1.6,30,Rs. 899,Mouse Wireless,12,
+EL-MOU-066,Chennai,2,8,0.5,15,₹899,Mouse Wireless,12,2026-08-21
+EL-MOU-066,Kolkata, 39 ,0,1.4,20,899,Mouse Wireless,6,
+EL-MOU-066,Pune,33,0,0.5,30,₹899,Mouse Wireless,12,
+EL-MOU-066,Ahmedabad,365,133,4.3,30,899,Mouse Wireless,6,2026-08-24
+EL-MOU-066,Jaipur,123,0,4.8,15,899.00,Mouse Wireless,24,
+EL-MOU-066,Lucknow,70,0,1.1,20,Rs. 899,Mouse Wireless,24,
+EL-MOU-066,Surat,257,0,4.9,30,Rs. 899,Mouse Wireless,6,
+EL-MOU-066,Indore,17,0,0.7,30,899,Mouse Wireless,24,
+EL-MOU-066,Nagpur,39,0,3.9,30,₹899,Mouse Wireless,12,
+EL-MOU-066,Kochi,201,53,3.2,20,899,Mouse Wireless,,2026-08-30
+EL-MOU-066,Chandigarh,135,0,2.2,20,₹899,Mouse Wireless,,
+EL-MOU-066,Bhopal,48,0,3.6,15,899,Mouse Wireless,12,
+EL-MOU-066,Patna,222,0,2.5,30,899,Mouse Wireless,24,
+EL-MOU-066,Vadodara, 7 ,0,2.5,15,899.00,Mouse Wireless,24,
+EL-MOU-067,Mumbai, 161 ,0,2.2,30,₹899,Mouse Wireless,6,
+EL-MOU-067,Delhi,64,65,2.8,20,₹899,Mouse Wireless,12,2026-08-22
+EL-MOU-067,Bengaluru,72,0,3.0,20,899.00,Mouse Wireless,6,
+EL-MOU-067,Hyderabad,336.5,137,3.5,30,899,Mouse Wireless,,2026-08-24
+EL-MOU-067,Chennai,149,0,2.9,20,899,Mouse Wireless,24,
+EL-MOU-067,Kolkata,114,0,3.8,15,Rs. 899,Mouse Wireless,12,
+EL-MOU-067,Pune,102,0,2.1,15,₹899,Mouse Wireless,12,
+EL-MOU-067,Ahmedabad,53,0,1.4,20,₹899,Mouse Wireless,12,
+EL-MOU-067,Jaipur,75,0,1.6,20,899,Mouse Wireless,24,
+EL-MOU-067,Lucknow,13,72,0.4,30,899,Mouse Wireless,24,
+EL-MOU-067,Surat,52,28,1.2,30,Rs. 899,Mouse Wireless,24,2026-08-17
+EL-MOU-067,Indore,210,0,2.7,30,₹899,Mouse Wireless,24,
+EL-MOU-067,Nagpur,(7),0,4.2,30,₹899,Mouse Wireless,6,
+EL-MOU-067,Kochi,159,0,2.2,30,899.00,Mouse Wireless,6,
+EL-MOU-067,Chandigarh,84,0,,15,₹899,Mouse Wireless,12,
+EL-MOU-067,Bhopal,18,0,1.0,,899,Mouse Wireless,24,
+EL-MOU-067,Patna,5,0,4.0,30,₹899,Mouse Wireless,24,
+EL-MOU-067,Vadodara,209,0,3.6,30,899,Mouse Wireless,,
+EL-MOU-068,Mumbai,25,0,4.9,20,Rs. 899,Mouse Wireless,,
+EL-MOU-068,Delhi,6,0,0.4,20,₹899,Mouse Wireless,6,
+EL-MOU-068,Bengaluru,117,77,4.2,15,N/A,Mouse Wireless,12,2026-09-13
+EL-MOU-068,Hyderabad,44,0,4.3,15,899,Mouse Wireless,,
+EL-MOU-068,Chennai,38,0,1.5,15,₹899,Mouse Wireless,12,
+EL-MOU-068,Kolkata,62,0,0.7,30,₹899,Mouse Wireless,,
+EL-MOU-068,Kolkata,62,0,0.7,30,₹899,Mouse Wireless,,
+EL-MOU-068,Pune,45,0,2.7,15,899,Mouse Wireless,,
+EL-MOU-068,Ahmedabad,149,0,4.8,15,₹899,Mouse Wireless,12,
+EL-MOU-068,Jaipur,5,94,4.9,15,₹899,Mouse Wireless,6,2026-09-19
+EL-MOU-068,Lucknow,177,0,4.4,20,₹899,Mouse Wireless,6,
+EL-MOU-068,Surat,44,0,1.4,30,899,Mouse Wireless,6,
+EL-MOU-068,Indore,320,146,3.8,30,₹899,Mouse Wireless,,2026-09-22
+EL-MOU-068,Nagpur,95,0,2.7,15,₹899,Mouse Wireless,,
+EL-MOU-068,Kochi,68,0,1.4,15,Rs. 899,Mouse Wireless,24,
+EL-MOU-068,Chandigarh,13,0,3.8,15,899,Mouse Wireless,,
+EL-MOU-068,Bhopal, 30 ,0,0.5,30,899.00,Mouse Wireless,,
+EL-MOU-068,Patna,169, 79 ,4.8,15,899,Mouse Wireless,24,2026-08-29
+EL-MOU-068,Vadodara,239,0,4.8,15 days,₹899,Mouse Wireless,,
+EL-MOU-069,Mumbai,0,0,0.4,15,899.00,Mouse Wireless,24,
+EL-MOU-069,Delhi,115,0,2.6,20,899,Mouse Wireless,24,
+EL-MOU-069,Bengaluru,57,21,1.2,15,899,Mouse Wireless,,2026-09-04
+EL-MOU-069,Hyderabad,114,0,4.0,15,₹899,Mouse Wireless,,
+EL-MOU-069,Chennai,25,0,2.4,20,899,Mouse Wireless,,
+EL-MOU-069,Kolkata,309,127,3.3,30,899,Mouse Wireless,24,2026-09-07
+EL-MOU-069,Pune,73,0,2.2,15,899,Mouse Wireless,24,
+EL-MOU-069,Ahmedabad,46, 24 ,1.4,15,899,Mouse Wireless,12,2026-08-24
+EL-MOU-069,Jaipur,327,0,4.7,30,899,Mouse Wireless,24,
+EL-MOU-069,Lucknow, 51 ,0,4.7,20,₹899,Mouse Wireless,,
+EL-MOU-069,Surat,35,0,2.0,30,₹899,Mouse Wireless,24,
+EL-MOU-069,Indore,35,0,4.1,20,899,Mouse Wireless,12,
+EL-MOU-069,Nagpur,14,0,0.4,15,Rs. 899,Mouse Wireless,6,
+EL-MOU-069,Kochi,24,0,1.8,15,899,Mouse Wireless,,
+EL-MOU-069,Chandigarh,0,0,0.3,30,899.00,Mouse Wireless,12,
+EL-MOU-069,Bhopal,9,0,4.8,20,899,Mouse Wireless,,
+EL-MOU-069,Patna, 89 ,0,2.3,20,899,Mouse Wireless,,
+EL-MOU-069,Vadodara,24,-15,4.4,15,899.00,Mouse Wireless,24,
+EL-MOU-070,Mumbai,43,0,1.6,15,899,Mouse Wireless,12,
+EL-MOU-070,Delhi,354,0,4.8,30,Rs. 899,Mouse Wireless,6,
+EL-MOU-070,Bengaluru,37.5,108,1.2,15,₹899,Mouse Wireless,24,2026-09-09
+EL-MOU-070,Hyderabad,108,0,2.6,20,Rs. 899,Mouse Wireless,12,
+EL-MOU-070,Chennai,32,0,1.6,15,Rs. 899,Mouse Wireless,24,
+EL-MOU-070,Kolkata,9,4,0.5,15,899.00,Mouse Wireless,12,2026-09-12
+EL-MOU-070,Pune,126,0,3.2,15,899,Mouse Wireless,,
+EL-MOU-070,Ahmedabad,2,0,1.3,20,899,Mouse Wireless,6,
+EL-MOU-070,Jaipur,129,0,2.8,15,Rs. 899,Mouse Wireless,24,
+EL-MOU-070,Lucknow,109,0,3.1,15,₹899,Mouse Wireless,24,
+EL-MOU-070,Surat,3,0,1.0,20,899,Mouse Wireless,24,
+EL-MOU-070,Indore,32,0,1.0,15,Rs. 899,Mouse Wireless,12,
+EL-MOU-070,Nagpur,9,0,4.7,20,899.00,Mouse Wireless,,
+EL-MOU-070,Kochi,1,0,2.2,15,₹899,Mouse Wireless,12,
+EL-MOU-070,Chandigarh,19,0,0.3,30,899,Mouse Wireless,24,
+EL-MOU-070,Bhopal,42,0,1.5,20,899.00,Mouse Wireless,6,
+EL-MOU-070,Patna,112,53,1.3,30,Rs. 899,Mouse Wireless,12,2026-08-25
+EL-MOU-070,Vadodara,100,0,4.6,20,899,Mouse Wireless,24,
+EL-KEY-071,Mumbai,50,0,1.5,30,3499,Keyboard Mech,12,
+,Delhi,8,0,0.7,15,"Rs. 3,499",Keyboard Mech,,
+EL-KEY-071,Bengaluru,34,0,0.8,20,3499,Keyboard Mech,6,
+EL-KEY-071,Hyderabad,2,0,0.4,15,"3,499.00",Keyboard Mech,6,
+EL-KEY-071,Chennai,106,0,3.7,30,"₹3,499",Keyboard Mech,24,
+EL-KEY-071,Kolkata,94,0,2.6,15,"₹3,499",Keyboard Mech,,
+EL-KEY-071,Pune,142,0,4.7,20,"₹3,499",Keyboard Mech,6,
+EL-KEY-071,Ahmedabad,53,0,3.3,15,N/A,Keyboard Mech,6,
+EL-KEY-071,Jaipur,143,0,3.6,15,"₹3,499",Keyboard Mech,,
+EL-KEY-071,Lucknow,1,5,0.5,15,"₹3,499",Keyboard Mech,24,2026-08-22
+EL-KEY-071,Surat,138,0,4.4,20,"₹3,499",Keyboard Mech,24,
+EL-KEY-071,Indore, 14 ,0,1.1,15,"₹3,499",Keyboard Mech,12,
+EL-KEY-071,Nagpur,65,0,4.3,20,3499,Keyboard Mech,12,
+EL-KEY-071,Kochi,109,0,4.7,20,"₹3,499",Keyboard Mech,24,
+EL-KEY-071,Chandigarh,97,49,2.8,15,"₹3,499",Keyboard Mech,12,2026-09-12
+EL-KEY-071,Bhopal,87,0,2.5,30,3499,Keyboard Mech,,
+EL-KEY-071,Patna,151, 70 ,4.1,,3499,Keyboard Mech,12,2026-08-29
+EL-KEY-071,Vadodara,116,0,3.6,30,3499,Keyboard Mech,24,
+EL-KEY-072,Mumbai,181, 130 ,4.0,30,"Rs. 3,499",Keyboard Mech,24,2026-08-17
+EL-KEY-072,Delhi,111,0,3.2,30,"3,499.00",Keyboard Mech,12,
+EL-KEY-072,Bengaluru,15,0,3.6,30,"₹3,499",Keyboard Mech,24,
+EL-KEY-072,Hyderabad,37,0,0.9,20,3499,Keyboard Mech,,
+EL-KEY-072,Chennai,11,18,1.7,20,"3,499.00",Keyboard Mech,12,2026-08-23
+EL-KEY-072,Kolkata,89,0,1.8,15,3499,Keyboard Mech,24,
+EL-KEY-072,Pune,161, 87 ,3.9,20,3499,Keyboard Mech,6,2026-08-25
+EL-KEY-072,Ahmedabad,39, 47 ,,20,"₹3,499",Keyboard Mech,12,2026-08-26
+EL-KEY-072,Jaipur,146,0,1.7,30,"₹3,499",Keyboard Mech,12,
+EL-KEY-072,Lucknow,30,0,0.7,15,3499,Keyboard Mech,,
+EL-KEY-072,Surat,4,0,4.4,15,3499,Keyboard Mech,,
+EL-KEY-072,Indore,-6,0,4.3,15,3499,Keyboard Mech,6,
+EL-KEY-072,Nagpur,6,0,0.4,15,3499,Keyboard Mech,6,
+EL-KEY-072,Kochi,33,270,1.5,30,3499,Keyboard Mech,12,
+EL-KEY-072,Chandigarh, 57 ,0,1.5,20,3499,Keyboard Mech,6,
+EL-KEY-072,Bhopal,40,67,4.8,20,3499,Keyboard Mech,24,2026-08-20
+EL-KEY-072,Patna,19,26,2.7,15,"₹3,499",Keyboard Mech,,2026-08-21
+EL-KEY-072,Vadodara,8,0,3.4,15,"3,499.00",Keyboard Mech,12,
+EL-KEY-073,Mumbai,38,0,1.7,15,3499,Keyboard Mech,,
+EL-KEY-073,Delhi,308.5,169,4.3,30,"₹3,499",Keyboard Mech,24,2026-08-24
+EL-KEY-073,Bengaluru,29,0,1.4,20,"Rs. 3,499",Keyboard Mech,6,
+EL-KEY-073,Hyderabad,70,0,1.1,30,"₹3,499",Keyboard Mech,6,
+EL-KEY-073,Chennai,51,0,2.2,15,3499,Keyboard Mech,12,
+EL-KEY-073,Kolkata,22,0,0.8,30,"₹3,499",Keyboard Mech,24,
+EL-KEY-073,Pune,101,0,1.8,30 days,3499,Keyboard Mech,,
+EL-KEY-073,Ahmedabad,75,0,2.5,15,3499,Keyboard Mech,,
+EL-KEY-073,Jaipur,28,0,2.8,20,3499,Keyboard Mech,,
+EL-KEY-073,Lucknow,148,0,3.1,15,3499,Keyboard Mech,12,
+EL-KEY-073,Surat,43, 37 ,1.8,30,"3,499.00",Keyboard Mech,6,2026-08-19
+EL-KEY-073,Indore,437,0,4.3,30,"₹3,499",Keyboard Mech,24,
+EL-KEY-073,Nagpur,5,0,2.6,30,"Rs. 3,499",Keyboard Mech,,
+EL-KEY-073,Nagpur,5,0,2.6,30,"Rs. 3,499",Keyboard Mech,,
+EL-KEY-073,Kochi,107,0,4.1,20,"₹3,499",Keyboard Mech,12,
+EL-KEY-073,Chandigarh,41,0,3.5,15,"₹3,499",Keyboard Mech,12,
+EL-KEY-073,Bhopal,28,0,1.3,20,"Rs. 3,499",Keyboard Mech,12,
+EL-KEY-073,Patna,45,-2,1.0,15,3499,Keyboard Mech,12,
+EL-KEY-073,Vadodara,0,0,0.9,15,3499,Keyboard Mech,6,
+EL-KEY-074,Mumbai,71, 57 ,3.5,15,"Rs. 3,499",Keyboard Mech,12,2026-08-27
+EL-KEY-074,Delhi,40,0,4.2,20,"₹3,499",Keyboard Mech,24,
+EL-KEY-074,Bengaluru,209,0,3.9,30,"₹3,499",Keyboard Mech,6,
+EL-KEY-074,Hyderabad,100,65,3.7,30,3499,Keyboard Mech,6,2026-08-30
+EL-KEY-074,Chennai,112,58,1.6,30,"₹3,499",Keyboard Mech,,2026-08-17
+EL-KEY-074,Kolkata,67,0,4.0,15,3499,Keyboard Mech,24,
+EL-KEY-074,Pune,24,0,2.8,30,3499,Keyboard Mech,,
+EL-KEY-074,Ahmedabad,213,0,4.3,15,3499,Keyboard Mech,6,
+EL-KEY-074,Jaipur,193,63,2.0,30,"Rs. 3,499",Keyboard Mech,24,2026-09-07
+EL-KEY-074,Lucknow,77,0,1.4,20,"₹3,499",Keyboard Mech,24,
+EL-KEY-074,Surat,123,0,3.4,15,3499,Keyboard Mech,12,
+EL-KEY-074,Indore, 144 ,0,4.7,30,"Rs. 3,499",Keyboard Mech,12,
+EL-KEY-074,Nagpur,81,0,2.0,15,N/A,Keyboard Mech,6,
+EL-KEY-074,Kochi,50,0,4.7,20,"Rs. 3,499",Keyboard Mech,12,
+EL-KEY-074,Chandigarh,213,74,3.2,30,"₹3,499",Keyboard Mech,6,2026-09-13
+EL-KEY-074,Bhopal,101,0,2.0,15,"₹3,499",Keyboard Mech,,
+EL-KEY-074,Patna,45,0,1.0,20,3499,Keyboard Mech,6,
+EL-KEY-074,Vadodara,61,0,1.2,20,"Rs. 3,499",Keyboard Mech,,
+EL-KEY-075,Mumbai,44,29,1.9,15,"Rs. 3,499",Keyboard Mech,24,2026-08-19
+EL-KEY-075,Delhi,91,0,1.4,20,3499,Keyboard Mech,,
+EL-KEY-075,Bengaluru,28,0,4.6,15,"₹3,499",Keyboard Mech,6,
+EL-KEY-075,Hyderabad,144,100,4.1,20,"₹3,499",Keyboard Mech,24,2026-08-22
+EL-KEY-075,Chennai,105,0,2.1,20,"3,499.00",Keyboard Mech,12,
+EL-KEY-075,Kolkata,25,0,5.0,15,"Rs. 3,499",Keyboard Mech,6,
+EL-KEY-075,Pune,54,162,0.9,30,3499,Keyboard Mech,6,
+EL-KEY-075,Ahmedabad,10,32,2.7,20,"₹3,499",Keyboard Mech,,2026-08-26
+EL-KEY-075,Jaipur,7,0,1.5,20,3499,Keyboard Mech,,
+EL-KEY-075,Lucknow,19,0,1.8,15,3499,Keyboard Mech,6,
+EL-KEY-075,Surat, 19 ,0,3.6,30,"₹3,499",Keyboard Mech,,
+EL-KEY-075,Indore,44,0,0.7,20,"₹3,499",Keyboard Mech,,
+EL-KEY-075,Nagpur,13,0,0.4,15,"3,499.00",Keyboard Mech,,
+EL-KEY-075,Kochi,5,0,0.4,15,3499,Keyboard Mech,6,
+EL-KEY-075,Chandigarh,2,0,2.5,20,3499,Keyboard Mech,6,
+EL-KEY-075,Bhopal,105,0,1.9,20,"₹3,499",Keyboard Mech,12,
+EL-KEY-075,Patna,13,0,0.4,30,"3,499.00",Keyboard Mech,12,
+EL-KEY-075,Vadodara,189,0,3.3,,3499,Keyboard Mech,,
+EL-KEY-076,Mumbai,77.5,0,3.1,20,3499,Keyboard Mech,24,
+EL-KEY-076,Delhi,73,0,3.3,20,3499,Keyboard Mech,,
+EL-KEY-076,Bengaluru,75,59,2.5,20,"Rs. 3,499",Keyboard Mech,24,2026-09-10
+EL-KEY-076,Hyderabad,398,0,4.9,30,3499,Keyboard Mech,6,
+EL-KEY-076,Chennai,24,0,3.7,20,3499,Keyboard Mech,,
+EL-KEY-076,Kolkata,1,0,0.3,15,3499,Keyboard Mech,,
+EL-KEY-076,Pune,385,0,4.2,30,"₹3,499",Keyboard Mech,6,
+EL-KEY-076,Ahmedabad,27,0,0.6,30,"₹3,499",Keyboard Mech,,
+EL-KEY-076,Jaipur, 175 ,0,2.1,30,"Rs. 3,499",Keyboard Mech,6,
+EL-KEY-076,Lucknow,57,0,1.2,20,"Rs. 3,499",Keyboard Mech,12,
+EL-KEY-076,Surat,219, 54 ,2.2,30,3499,Keyboard Mech,6,2026-08-21
+EL-KEY-076,Indore,121,0,3.6,15,3499,Keyboard Mech,,
+,Nagpur,112,0,3.9,15,3499,Keyboard Mech,6,
+EL-KEY-076,Kochi,13,10,0.7,20,"3,499.00",Keyboard Mech,,2026-08-24
+EL-KEY-076,Chandigarh,137,0,4.7,15,"₹3,499",Keyboard Mech,6,
+EL-KEY-076,Bhopal,13,0,0.6,30,3499,Keyboard Mech,6,
+EL-KEY-076,Patna,28,34,1.2,30,"Rs. 3,499",Keyboard Mech,12,2026-08-27
+EL-KEY-076,Vadodara,74,26,2.7,15,3499,Keyboard Mech,12,2026-09-12
+EL-KEY-077,Mumbai,4,0,,30,3499,Keyboard Mech,,
+EL-KEY-077,Delhi,7,0,1.4,15,"3,499.00",Keyboard Mech,12,
+EL-KEY-077,Bengaluru,145,49,2.6,30,"Rs. 3,499",Keyboard Mech,6,2026-09-15
+EL-KEY-077,Hyderabad,40,23,1.2,15,"₹3,499",Keyboard Mech,,2026-08-18
+EL-KEY-077,Chennai,3,0,3.0,15,"₹3,499",Keyboard Mech,6,
+EL-KEY-077,Kolkata,149,0,3.9,20,"₹3,499",Keyboard Mech,6,
+EL-KEY-077,Pune, 15 ,0,0.9,20,3499,Keyboard Mech,6,
+EL-KEY-077,Ahmedabad,27,0,0.7,15,3499,Keyboard Mech,6,
+EL-KEY-077,Jaipur, 46 ,0,2.8,15,"3,499.00",Keyboard Mech,,
+EL-KEY-077,Lucknow,9,0,0.4,20,3499,Keyboard Mech,,
+EL-KEY-077,Surat,-2,0,2.2,15,3499,Keyboard Mech,24,
+EL-KEY-077,Indore,433,0,5.0,30,"3,499.00",Keyboard Mech,,
+EL-KEY-077,Nagpur,236,104,3.8,20,3499,Keyboard Mech,,2026-08-27
+EL-KEY-077,Kochi,211,54,4.8,15 days,"₹3,499",Keyboard Mech,,2026-08-28
+EL-KEY-077,Chandigarh,5,50,2.6,15,3499,Keyboard Mech,,2026-09-27
+EL-KEY-077,Bhopal,38,-4,1.6,15,"₹3,499",Keyboard Mech,24,
+EL-KEY-077,Patna,118,0,2.5,15,"₹3,499",Keyboard Mech,12,
+EL-KEY-077,Vadodara,175,396,4.4,15,N/A,Keyboard Mech,,2026-09-03
+EL-KEY-078,Mumbai,116,0,3.0,15,3499,Keyboard Mech,6,
+EL-KEY-078,Delhi,159,0,4.4,15,3499,Keyboard Mech,,
+EL-KEY-078,Bengaluru,119,0,2.3,20,"₹3,499",Keyboard Mech,24,
+EL-KEY-078,Hyderabad,22,27,2.3,30,3499,Keyboard Mech,,2026-08-22
+EL-KEY-078,Chennai,98,0,4.6,15,"₹3,499",Keyboard Mech,12,
+EL-KEY-078,Kolkata,18,16,0.5,30,"3,499.00",Keyboard Mech,12,2026-09-09
+EL-KEY-078,Pune,118,0,2.4,15,3499,Keyboard Mech,24,
+EL-KEY-078,Ahmedabad,24,49,1.3,30,3499,Keyboard Mech,12,2026-08-26
+EL-KEY-078,Jaipur,265,54,3.0,30,"₹3,499",Keyboard Mech,6,2026-09-12
+EL-KEY-078,Lucknow,90,29,2.1,15,3499,Keyboard Mech,12,2026-08-28
+EL-KEY-078,Surat,57,0,4.7,20,"3,499.00",Keyboard Mech,24,
+EL-KEY-078,Indore, 253 ,0,2.9,30,"3,499.00",Keyboard Mech,6,
+EL-KEY-078,Nagpur,17,60,4.3,15,3499,Keyboard Mech,6,2026-08-17
+EL-KEY-078,Kochi,16,5,0.5,15,3499,Keyboard Mech,12,2026-08-20
+EL-KEY-078,Chandigarh,127, 87 ,3.4,20,3499,Keyboard Mech,,2026-09-05
+EL-KEY-078,Bhopal,150,27,3.3,15,3499,Keyboard Mech,24,2026-08-22
+EL-KEY-078,Patna, 3 ,11,1.2,20,"3,499.00",Keyboard Mech,12,2026-08-23
+EL-KEY-078,Vadodara,50.5,43,2.3,15,"₹3,499",Keyboard Mech,24,2026-09-08
+EL-KEY-079,Mumbai,3,87,4.6,15,"3,499.00",Keyboard Mech,24,2026-08-25
+EL-KEY-079,Delhi,81,0,1.8,20,3499,Keyboard Mech,6,
+EL-KEY-079,Delhi,81,0,1.8,20,3499,Keyboard Mech,6,
+EL-KEY-079,Bengaluru,9,0,1.7,15,"₹3,499",Keyboard Mech,24,
+EL-KEY-079,Hyderabad,42,0,1.5,15,"Rs. 3,499",Keyboard Mech,24,
+EL-KEY-079,Chennai,174, 53 ,2.8,20,3499,Keyboard Mech,24,2026-08-29
+EL-KEY-079,Kolkata,1,0,0.4,30,"₹3,499",Keyboard Mech,24,
+EL-KEY-079,Pune, 228 ,0,3.8,30,"₹3,499",Keyboard Mech,12,
+EL-KEY-079,Ahmedabad,177,0,2.7,20,3499,Keyboard Mech,12,
+EL-KEY-079,Jaipur,26,0,1.7,15,3499,Keyboard Mech,12,
+EL-KEY-079,Lucknow,64,0,0.8,30,3499,Keyboard Mech,12,
+EL-KEY-079,Surat,97,0,4.2,15,"Rs. 3,499",Keyboard Mech,24,
+EL-KEY-079,Indore,53,0,1.1,15,"3,499.00",Keyboard Mech,6,
+EL-KEY-079,Nagpur,5,4,0.6,20,"₹3,499",Keyboard Mech,6,2026-08-23
+EL-KEY-079,Kochi,40,41,2.7,15,"₹3,499",Keyboard Mech,6,2026-08-24
+EL-KEY-079,Chandigarh,179,0,4.0,30,3499,Keyboard Mech,24,
+EL-KEY-079,Bhopal,137,0,3.5,30,3499,Keyboard Mech,,
+EL-KEY-079,Patna,185,0,4.5,20,3499,Keyboard Mech,24,
+EL-KEY-079,Vadodara,27,31,2.4,15,"₹3,499",Keyboard Mech,6,2026-09-26
+EL-KEY-080,Mumbai,192,0,4.5,,3499,Keyboard Mech,24,
+EL-KEY-080,Delhi,208,0,4.1,15,"Rs. 3,499",Keyboard Mech,12,
+EL-KEY-080,Bengaluru,21,18,1.4,15,"Rs. 3,499",Keyboard Mech,,2026-09-02
+EL-KEY-080,Hyderabad,33,0,2.6,15,"Rs. 3,499",Keyboard Mech,,
+EL-KEY-080,Chennai,96,0,1.2,30,"₹3,499",Keyboard Mech,24,
+EL-KEY-080,Kolkata,129,0,4.4,30,"Rs. 3,499",Keyboard Mech,12,
+EL-KEY-080,Pune,91,0,1.2,30,3499,Keyboard Mech,12,
+EL-KEY-080,Ahmedabad,46,16,0.6,30,3499,Keyboard Mech,6,2026-08-22
+EL-KEY-080,Jaipur,369,0,4.3,30,3499,Keyboard Mech,24,
+EL-KEY-080,Lucknow,95,48,3.0,20,3499,Keyboard Mech,24,2026-08-24
+EL-KEY-080,Surat,72,234,1.3,30,"₹3,499",Keyboard Mech,6,
+EL-KEY-080,Indore,17,71,3.1,20,"Rs. 3,499",Keyboard Mech,,2026-09-11
+EL-KEY-080,Nagpur,76,0,2.8,20,3499,Keyboard Mech,24,
+EL-KEY-080,Kochi,81,0,1.6,20,"3,499.00",Keyboard Mech,,
+EL-KEY-080,Chandigarh,70,61,2.3,20,3499,Keyboard Mech,,2026-09-14
+EL-KEY-080,Bhopal,41,0,3.2,15,3499,Keyboard Mech,12,
+EL-KEY-080,Patna,205,0,3.1,30,"3,499.00",Keyboard Mech,6,
+EL-KEY-080,Vadodara,26,0,0.9,30,3499,Keyboard Mech,24,
